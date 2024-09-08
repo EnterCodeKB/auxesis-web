@@ -1,0 +1,80 @@
+.info {
+  width: 1200px;
+  padding: 40px;
+  margin-top: -10px;
+}
+
+.h2 {
+  font-size: 62px;
+}
+
+.ptext {
+  font-size: 24px;
+}
+
+.h3 {
+  font-size: 34px;
+}
+
+.imgprodukt {
+  width: 1000px;
+}
+.imgcoxypet {
+  width: 700px;
+}
+
+.info {
+  font-size: x-large;
+}
+.produkt {
+  width: 1200px;
+  padding: 40px;
+  margin-top: -10px;
+}
+
+.h2 {
+  font-size: 62px;
+}
+
+.ptext {
+  font-size: 24px;
+}
+
+.h3 {
+  font-size: 34px;
+}
+
+.imgprodukt {
+  width: 700px;
+}
+
+.scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 60px;
+  background-color: #c1eaff;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.scrollToTop:hover {
+  background-color: #194276;
+}
+.imgmicroskop {
+  width: 350px;
+  display: flex;
+  margin-left: 850px;
+  margin-top: -20px;
+}
+.effekt {
+  width: 70%;
+  margin-top: -320px;
+}

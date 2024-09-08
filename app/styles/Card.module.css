@@ -1,0 +1,696 @@
+.div43 {
+  color: var(--Dark-blue, #282938);
+  text-align: center;
+  margin-left: 25%;
+  font-family: Poppins;
+  padding: 40px;
+  margin-top: 60px;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 57px */
+  letter-spacing: 0.304px;
+  width: 640px;
+  font: 600 38px/57px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+}
+@media (max-width: 991px) {
+  .div43 {
+    max-width: 50%;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .div43 {
+    max-width: 30%;
+    margin-top: 20px;
+    margin-left: 1%;
+    margin-bottom: 10px;
+  }
+}
+.div44 {
+  align-self: center;
+  margin-top: 67px;
+  margin-left: 40px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 50px;
+}
+@media (max-width: 991px) {
+  .div44 {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .div44 {
+    max-width: 80%;
+    margin-top: 40px;
+  }
+}
+.div45 {
+  gap: 20px;
+  display: flex;
+}
+@media (max-width: 991px) {
+  .div45 {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .div45 {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0px;
+  }
+}
+.column3 {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  margin-left: 0;
+}
+
+@media (max-width: 991px) {
+  .column3 {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .column3 {
+    width: 80%;
+  }
+}
+
+.div46 {
+  background-color: var(--Grey, #f4f6fc);
+  display: flex;
+  flex-direction: column;
+  color: var(--Dark-blue, #282938);
+  width: 100%; /* Changed to 100% to fill container */
+  padding: 0; /* Adjust padding as needed */
+  position: relative; /* Ensure positioning context for the overlay */
+}
+
+@media (max-width: 991px) {
+  .div46 {
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 768px) {
+  .div46 {
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+}
+
+.imgContainer {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Ensure the container takes the full height */
+  overflow: hidden; /* Hide any overflow */
+}
+
+.img9 {
+  width: 100%;
+  height: 400px;
+  object-fit: cover; /* Ensure image covers the container */
+  display: block; /* Remove inline spacing */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly opaque background */
+  color: var(--Dark-blue, #282938);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.3s ease; /* Smooth transition */
+  padding: 20px;
+  text-align: center;
+}
+
+.imgContainer:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.div47 {
+  margin-top: 0;
+  font: 500 24px/150% Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.div48 {
+  margin-top: 10px;
+  width: 80%;
+  font: 400 16px/28px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+}
+.column4 {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 33%;
+  margin-left: 20px;
+}
+
+@media (max-width: 991px) {
+  .column4 {
+    width: 100%;
+    margin-left: 0; /* Lägg till detta om du vill att marginalen ska tas bort på mindre skärmar */
+  }
+}
+@media (max-width: 768px) {
+  .column4 {
+    width: 80%;
+    margin-left: 0; /* Ta bort marginalen på mindre skärmar */
+  }
+}
+
+.div49 {
+  background-color: var(--Grey, #f4f6fc);
+  display: flex;
+  flex-direction: column;
+  color: var(--Dark-blue, #282938);
+  width: 100%; /* Justera till 100% för att fylla tillgängligt utrymme */
+  padding: 0; /* Ta bort padding så att overlay fyller hela container */
+  position: relative; /* Ställ in relativ position för overlay */
+}
+
+@media (max-width: 991px) {
+  .div49 {
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 768px) {
+  .div49 {
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+}
+
+.imgContainer {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Gör containern till full höjd */
+  overflow: hidden; /* Dölj eventuellt överflöd */
+}
+
+.img10 {
+  width: 100%;
+  height: 400px;
+  object-fit: cover; /* Gör att bilden täcker hela containern */
+  display: block; /* Ta bort eventuell inline spacing */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Halvtransparent bakgrund */
+  color: var(--Dark-blue, #282938);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Startar dolt */
+  transition: opacity 0.3s ease; /* Smidig övergång */
+  padding: 20px;
+  text-align: center;
+}
+
+.imgContainer:hover .overlay {
+  opacity: 1; /* Visa overlay vid hovring */
+}
+
+.div50 {
+  margin-top: 0;
+  font: 500 24px/150% Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.div51 {
+  margin-top: 10px;
+  width: 80%;
+  font: 400 16px/28px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.column5 {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 33%;
+  margin-left: 20px;
+}
+
+@media (max-width: 991px) {
+  .column5 {
+    width: 100%;
+    margin-left: 0; /* Ta bort marginalen på mindre skärmar */
+  }
+}
+@media (max-width: 768px) {
+  .column5 {
+    width: 80%;
+    margin-left: 0; /* Ta bort marginalen på mindre skärmar */
+  }
+}
+
+.div52 {
+  background-color: var(--Grey, #f4f6fc);
+  display: flex;
+  flex-direction: column;
+  color: var(--Dark-blue, #282938);
+  width: 100%; /* Ändra till 100% för att fylla hela utrymmet */
+  padding: 0; /* Ta bort padding så att overlay fyller hela containern */
+  position: relative; /* Nödvändigt för att overlay ska vara korrekt positionerad */
+}
+
+@media (max-width: 991px) {
+  .div52 {
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 768px) {
+  .div52 {
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+}
+.imgContainer {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Gör att containern fyller hela utrymmet */
+  overflow: hidden; /* Dölj eventuellt överflöd */
+}
+
+.img11 {
+  width: 100%;
+  height: 400px;
+  object-fit: cover; /* Se till att bilden täcker hela containern */
+  display: block; /* Ta bort eventuell inline spacing */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Halvtransparent bakgrund för att visa texten tydligare */
+  color: var(--Dark-blue, #282938);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Börjar dolt */
+  transition: opacity 0.3s ease; /* Smidig övergång när overlay visas */
+  padding: 20px;
+  text-align: center;
+}
+
+.imgContainer:hover .overlay {
+  opacity: 1; /* Visa overlay vid hovring */
+}
+
+.div53 {
+  margin-top: 0; /* Ta bort övre marginal */
+  font: 500 24px/150% Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.div54 {
+  margin-top: 10px; /* Justera marginalen för avstånd */
+  width: 80%;
+  font: 400 16px/28px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.div55 {
+  min-height: 0px;
+  max-width: 0px;
+}
+.div56 {
+  align-self: center;
+  margin-top: 67px;
+  margin-left: 40px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 50px;
+}
+@media (max-width: 991px) {
+  .div56 {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .div56 {
+    max-width: 80%;
+    margin-top: 40px;
+  }
+}
+.div57 {
+  gap: 20px;
+  display: flex;
+}
+@media (max-width: 991px) {
+  .div57 {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .div57 {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0px;
+  }
+}
+.column6 {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 33%;
+  margin-left: 0; /* Ta bort eventuell vänstermarginal */
+}
+
+@media (max-width: 991px) {
+  .column6 {
+    width: 100%; /* Gör kolumnen full bredd på mindre skärmar */
+  }
+}
+@media (max-width: 768px) {
+  .column6 {
+    width: 80%; /* Gör kolumnen 80% bredd på mindre skärmar */
+  }
+}
+
+.div58 {
+  background-color: var(--Grey, #f4f6fc);
+  display: flex;
+  flex-direction: column;
+  color: var(--Dark-blue, #282938);
+  width: 100%; /* Gör så att den fyller tillgängligt utrymme */
+  padding: 0; /* Ta bort padding så att overlay fyller hela container */
+  position: relative; /* För att overlay ska positioneras absolut */
+}
+
+@media (max-width: 991px) {
+  .div58 {
+    margin-top: 40px;
+    padding: 0 20px; /* Justera padding för mindre skärmar */
+  }
+}
+
+@media (max-width: 768px) {
+  .div58 {
+    margin-top: 40px;
+    padding: 0 20px; /* Justera padding för mindre skärmar */
+  }
+}
+.imgContainer {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Gör containern till full höjd */
+  overflow: hidden; /* Dölj eventuellt överflöd */
+}
+
+.img12 {
+  width: 100%;
+  height: 400px;
+  object-fit: cover; /* Se till att bilden täcker hela containern */
+  display: block; /* Ta bort eventuell inline spacing */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Halvtransparent bakgrund */
+  color: var(--Dark-blue, #282938);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Startar dolt */
+  transition: opacity 0.3s ease; /* Smidig övergång */
+  padding: 20px;
+  text-align: center;
+}
+
+.imgContainer:hover .overlay {
+  opacity: 1; /* Visa overlay vid hovring */
+}
+
+.div59 {
+  margin-top: 0;
+  font: 500 24px/150% Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.div60 {
+  margin-top: 10px;
+  width: 80%;
+  font: 400 16px/28px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.column7 {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 33%;
+  margin-left: 20px;
+}
+
+@media (max-width: 991px) {
+  .column7 {
+    width: 100%; /* Gör kolumnen full bredd på mindre skärmar */
+  }
+}
+@media (max-width: 768px) {
+  .column7 {
+    width: 80%; /* Gör kolumnen 80% bredd på mindre skärmar */
+  }
+}
+
+.div61 {
+  background-color: var(--Grey, #f4f6fc);
+  display: flex;
+  flex-direction: column;
+  color: var(--Dark-blue, #282938);
+  width: 100%; /* Gör så att den fyller tillgängligt utrymme */
+  padding: 0; /* Ta bort padding så att overlay fyller hela container */
+  position: relative; /* För att overlay ska positioneras absolut */
+}
+
+@media (max-width: 991px) {
+  .div61 {
+    margin-top: 40px;
+    padding: 0 20px; /* Justera padding för mindre skärmar */
+  }
+}
+@media (max-width: 768px) {
+  .div61 {
+    margin-top: 40px;
+    padding: 0 20px; /* Justera padding för mindre skärmar */
+  }
+}
+
+.imgContainer {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Gör containern till full höjd */
+  overflow: hidden; /* Dölj eventuellt överflöd */
+}
+
+.img13 {
+  width: 100%;
+  height: 400px;
+  object-fit: cover; /* Se till att bilden täcker hela containern */
+  display: block; /* Ta bort eventuell inline spacing */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Halvtransparent bakgrund */
+  color: var(--Dark-blue, #282938);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Startar dolt */
+  transition: opacity 0.3s ease; /* Smidig övergång */
+  padding: 20px;
+  text-align: center;
+}
+
+.imgContainer:hover .overlay {
+  opacity: 1; /* Visa overlay vid hovring */
+}
+
+.div62 {
+  margin-top: 0;
+  font: 500 24px/150% Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.div63 {
+  margin-top: 10px;
+  width: 80%;
+  font: 400 16px/28px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.column8 {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 33%;
+  margin-left: 20px;
+}
+
+@media (max-width: 991px) {
+  .column8 {
+    width: 100%; /* Gör kolumnen full bredd på mindre skärmar */
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .column8 {
+    width: 80%; /* Gör kolumnen 80% bredd på mindre skärmar */
+    align-items: center;
+  }
+}
+.div64 {
+  background-color: var(--Grey, #f4f6fc);
+  display: flex;
+  flex-direction: column;
+  color: var(--Dark-blue, #282938);
+  width: 100%; /* Gör så att den fyller tillgängligt utrymme */
+  padding: 0; /* Ta bort padding så att overlay fyller hela container */
+  position: relative; /* För att overlay ska positioneras absolut */
+}
+
+@media (max-width: 991px) {
+  .div64 {
+    margin-top: 40px;
+    padding: 0 20px; /* Justera padding för mindre skärmar */
+  }
+}
+@media (max-width: 768px) {
+  .div64 {
+    margin-top: 40px;
+    padding: 0 20px; /* Justera padding för mindre skärmar */
+  }
+}
+
+.imgContainer {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Gör containern till full höjd */
+  overflow: hidden; /* Dölj eventuellt överflöd */
+}
+
+.img14 {
+  width: 100%;
+  height: 400px;
+  object-fit: cover; /* Se till att bilden täcker hela containern */
+  display: block; /* Ta bort eventuell inline spacing */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Halvtransparent bakgrund */
+  color: var(--Dark-blue, #282938);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Startar dolt */
+  transition: opacity 0.3s ease; /* Smidig övergång */
+  padding: 20px;
+  text-align: center;
+}
+
+.imgContainer:hover .overlay {
+  opacity: 1; /* Visa overlay vid hovring */
+}
+
+.div65 {
+  margin-top: -10px;
+  width: 80%;
+  font: 500 24px/150% Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.div66 {
+  margin-top: 10px;
+  width: 80%;
+  font: 400 16px/28px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .div43 {
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  .div54 {
+    white-space: initial;
+  }
+  .div56 {
+    white-space: initial;
+  }
+  .div58 {
+    white-space: initial;
+  }
+  .div60 {
+    white-space: initial;
+  }
+  .div62 {
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+}
+
+.scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 60px;
+  background-color: #c1eaff;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.scrollToTop:hover {
+  background-color: #194276;
+}

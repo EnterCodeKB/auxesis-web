@@ -1,0 +1,45 @@
+.kontakt {
+  width: 1200px;
+  padding: 60px;
+  z-index: 999;
+  margin-top: -40px;
+  line-height: 3rem;
+}
+
+.fettext {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.h2 {
+  font-size: 62px;
+}
+
+.h3 {
+  font-size: 62px;
+}
+
+.adressen {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 250px;
+}
+
+.ptext {
+  font-size: 24px;
+}
+
+.h4 {
+  font-size: 34px;
+}
+.world {
+  width: 700px;
+  display: flex;
+  justify-content: center; /* Centrera bilden horisontellt */
+  align-items: center; /* Centrera bilden vertikalt */
+  margin-top: -70px;
+}
+.ledning {
+  font-size: 24px;
+}

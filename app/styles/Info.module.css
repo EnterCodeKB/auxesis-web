@@ -1,0 +1,148 @@
+.spotlights {
+  background-color: #f4f6fc;
+  padding: 10px;
+  text-align: center;
+  margin: 50px auto;
+  width: 90%; /* Gör bredden mer flexibel */
+  max-width: 1200px; /* Sätt en maxbredd för stora skärmar */
+}
+
+.title {
+  font-size: 2rem; /* Använd rem för bättre skalbarhet */
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #1c1e53;
+}
+
+.newsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Centrera items när de är få */
+}
+
+.newsContainerFullPage {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  row-gap: 80px;
+}
+
+.newsItem {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Gör item bredd flexibel */
+  max-width: 300px; /* Sätt maxbredd för att hålla proportioner */
+  overflow: hidden;
+  text-align: left;
+  padding: 0 20px 60px; /* Lägg till padding för utrymme för knappen */
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.del1 {
+  position: relative;
+}
+
+.content {
+  padding: 20px;
+}
+
+.newsTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #282938;
+}
+.description {
+  font-size: 1rem;
+  color: #6f7287;
+  margin-top: 10px;
+}
+.readMoreButton {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.readMoreButton:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .newsItem {
+    width: 90%;
+    max-width: none; /* Ta bort maxbredd för små skärmar */
+  }
+
+  .newsContainer {
+    gap: 10px;
+  }
+}
+.scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 60px;
+  background-color: #c1eaff;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.scrollToTop:hover {
+  background-color: #194276;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+  width: 80%;
+  max-width: 100%;
+  margin-left: 15%;
+  font-size: larger;
+  text-align: center;
+}
+
+.articlesimage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.image1,
+.image2 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.image1 {
+  width: 400px;
+}

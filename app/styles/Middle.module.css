@@ -1,0 +1,120 @@
+.div67 {
+  align-self: center;
+  margin-top: 100px;
+  width: 100%;
+  max-width: 1300px;
+  margin-left: 150px;
+}
+
+.div68 {
+  gap: 20px;
+  display: flex;
+}
+
+.div69 {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  color: #232536;
+  font-weight: 400;
+  margin: auto 0;
+  padding: 0 20px;
+  margin-left: 60px;
+}
+
+.div70 {
+  letter-spacing: 0.09px;
+  font: 18px/150% Poppins, sans-serif;
+}
+
+.div71 {
+  letter-spacing: 0.3px;
+  margin-top: 30px;
+  font: 600 38px/57px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.div72 {
+  color: var(--Dark-blue, #282938);
+  margin-top: 37px;
+  font: 16px/24px Poppins, sans-serif;
+}
+
+.column9 {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 80%;
+  margin-left: 20px;
+}
+
+.img15 {
+  aspect-ratio: 1.45;
+  object-fit: auto;
+  object-position: center;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 60px;
+  background-color: #c1eaff;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.scrollToTop:hover {
+  background-color: #194276;
+}
+
+@media (max-width: 991px) {
+  .div67 {
+    max-width: 100%;
+    margin-left: 0; /* Ta bort vänstermarginalen på ännu mindre skärmar */
+    margin-top: 40px; /* Minska toppmarginalen */
+  }
+
+  .div68 {
+    flex-direction: column; /* Visa element i kolumn på mindre skärmar */
+  }
+
+  .div69 {
+    margin-left: 0; /* Ta bort vänstermarginalen */
+    padding: 0 10px; /* Minska padding */
+  }
+
+  .div71 {
+    font-size: 28px; /* Minska fontstorleken för bättre läsbarhet */
+    line-height: 40px; /* Justera radavståndet */
+  }
+
+  .div72 {
+    font-size: 14px; /* Minska fontstorleken */
+  }
+
+  .column9 {
+    width: 100%; /* Ta upp hela bredden */
+    margin-left: 0; /* Ta bort vänstermarginalen */
+  }
+
+  .img15 {
+    width: 100%; /* Säkerställ att bilden täcker hela bredden */
+  }
+}
+
+@media (max-width: 768px) {
+  .scrollToTop {
+    right: 20px; /* Justera högerpositionen */
+    font-size: 20px; /* Minska fontstorleken för knappen */
+    padding: 8px; /* Minska padding */
+  }
+}

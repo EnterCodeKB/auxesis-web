@@ -1,0 +1,19 @@
+.languageSwitcher {
+  margin-bottom: 20px;
+}
+
+.languageSwitcher button {
+  background-color: #00aaf3;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  margin: 0 7px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.languageSwitcher button:hover {
+  background-color: #005bb5;
+}
