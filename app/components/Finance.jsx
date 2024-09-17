@@ -39,7 +39,7 @@ export default function Finance() {
                       >
                         <Link
                           className={styles.link}
-                          href="/nyheter "
+                          href="/nyheter/euroclear "
                           scroll={true}
                         >
                           Läs mer

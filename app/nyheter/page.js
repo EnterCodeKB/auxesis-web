@@ -126,7 +126,7 @@ const newsItems = [
       <p>AUXESIS PHARMA HOLDING AB (publ) är nu avstämningsbolag och igång med Euroclear Sweden AB som värdepappersinstitut. Detta är sista fasen, enligt ABL, på vägen mot börsnotering och nu ska vi välja vilken Corporate Finance grupp vi kommer att samarbeta med, för att ta oss dit.</p>
       `,
     imageUrl: "/Loganstext.png",
-    slug: "#",
+    slug: "euroclear",
   },
   {
     title: "Östersund​",

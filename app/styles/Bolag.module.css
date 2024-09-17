@@ -1,34 +1,40 @@
 .auxesis,
 .medtech,
 .animalcare {
-  width: 1200px;
+  width: 90%; /* Use percentage for responsiveness */
+  max-width: 1200px; /* Set a max-width */
   padding: 60px;
-  margin-top: -10px;
+  margin: 0 auto; /* Center the container */
 }
-
 .h2 {
   font-size: 62px;
+  margin-bottom: 20px; /* Add some space below the heading */
 }
 
 .ptext {
   font-size: 24px;
+  margin-bottom: 20px; /* Add some space below paragraphs */
 }
 
 .h3 {
   font-size: 34px;
+  margin-top: 40px; /* Add space above the subheading */
 }
 
 .imgprodukt {
-  width: 1000px;
+  width: 100%; /* Make image responsive */
+  max-width: 1000px; /* Set a max-width */
 }
+
 .imgcoxypet {
-  width: 700px;
+  width: 100%; /* Make image responsive */
+  max-width: 700px; /* Set a max-width */
 }
 
 .scrollToTop {
   position: fixed;
   bottom: 20px;
-  right: 60px;
+  right: 20px; /* Adjusted for smaller screens */
   background-color: #c1eaff;
   color: white;
   padding: 10px;
@@ -44,4 +50,20 @@
 
 .scrollToTop:hover {
   background-color: #194276;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  .h2 {
+    font-size: 48px; /* Adjust heading size for smaller screens */
+    margin-top: -40px;
+  }
+
+  .ptext {
+    font-size: 20px; /* Adjust paragraph size for smaller screens */
+  }
+
+  .h3 {
+    font-size: 28px; /* Adjust subheading size for smaller screens */
+  }
 }

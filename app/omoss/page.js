@@ -4,8 +4,8 @@ export default function About() {
   return (
     <>
       <div className={styles.info}>
-        <h2>Om Auxesis Pharma Holding AB</h2>
-        <p>
+        <h2 className={styles.h2}>Om Auxesis Pharma Holding AB</h2>
+        <p className={styles.p}>
           Auxesis Pharma är ett publikt aktiebolag som fokuserar på utveckling
           av läkemedel för människor och djur inom kategorin ”smärta och
           irritation på hud”. Vår vision är: Att omdefiniera kategorin smärta
@@ -15,8 +15,8 @@ export default function About() {
           enbart tillfälligt lindrande. Dessutom krävs upprepade behandlingar då
           smärtan snabbt återkommer.
         </p>
-        <h2>Patentansökan pågår</h2>
-        <p>
+        <h2 className={styles.h2}>Patentansökan pågår</h2>
+        <p className={styles.p}>
           Auxesis Pharma har kommit långt i forskningen. Bolaget lämnade i
           november 2023 in den första patentansökan till PRV. Forskningsteamet
           förbereder nu för kliniska tester på människor för det som ska bli den
@@ -27,11 +27,15 @@ export default function About() {
           Advokater, Granath Reklam med flera.
         </p>
         <div>
-          <img className={styles.imgmicroskop} src="/microskop.png" alt="" />
+          <img
+            className={styles.imgmicroskop}
+            src="/microskop.png"
+            alt="Mikroskop"
+          />
         </div>
         <div className={styles.effekt}>
-          <h2>Produkt med snabb effekt</h2>
-          <p>
+          <h2 className={styles.h2}>Produkt med snabb effekt</h2>
+          <p className={styles.p}>
             Auxesis Pharma tar nu fram den första receptfria konsumentprodukten
             som snabbt blockerar smärtsignalen till hjärnan och tar bort smärta
             och irritation på hud – ASA.P®. Produkten har snabb verkan och

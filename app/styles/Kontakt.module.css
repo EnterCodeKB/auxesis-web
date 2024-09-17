@@ -1,45 +1,83 @@
 .kontakt {
-  width: 1200px;
-  padding: 60px;
+  max-width: 1200px; /* Use max-width instead of width */
+  padding: 20px; /* Reduce padding for smaller screens */
   z-index: 999;
-  margin-top: -40px;
-  line-height: 3rem;
+  margin: 20px auto; /* Center the container */
+  line-height: 1.5rem; /* Adjust line height for better readability */
 }
 
 .fettext {
   font-weight: bold;
-  font-size: 28px;
+  font-size: 2rem; /* Use rem for scalability */
 }
 
 .h2 {
-  font-size: 62px;
+  font-size: 4rem; /* Use rem for scalability */
 }
 
 .h3 {
-  font-size: 62px;
+  font-size: 4rem; /* Use rem for scalability */
 }
 
 .adressen {
   display: flex;
   flex-direction: row;
-  justify-content: start;
-  gap: 250px;
+  justify-content: space-between; /* Use space-between for better spacing */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 20px; /* Reduce gap for smaller screens */
+}
+
+.column1 {
+  flex: 1; /* Allow columns to grow equally */
+  min-width: 250px; /* Set a minimum width for columns */
 }
 
 .ptext {
-  font-size: 24px;
+  font-size: 1.5rem; /* Use rem for scalability */
 }
 
 .h4 {
-  font-size: 34px;
+  font-size: 2rem; /* Use rem for scalability */
 }
+
 .world {
-  width: 700px;
+  width: 100%; /* Make the image responsive */
+  max-width: 700px; /* Set a max width */
   display: flex;
-  justify-content: center; /* Centrera bilden horisontellt */
-  align-items: center; /* Centrera bilden vertikalt */
-  margin-top: -70px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto; /* Center the image */
 }
+
 .ledning {
-  font-size: 24px;
+  font-size: 1.5rem; /* Use rem for scalability */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .kontakt {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  .h2,
+  .h3 {
+    font-size: 3rem; /* Reduce font size */
+  }
+
+  .fettext {
+    font-size: 1.5rem; /* Reduce font size */
+  }
+
+  .ptext {
+    font-size: 1.2rem; /* Reduce font size */
+  }
+
+  .h4 {
+    font-size: 1.5rem; /* Reduce font size */
+  }
+
+  .adressen {
+    flex-direction: column; /* Stack columns on smaller screens */
+    gap: 10px; /* Reduce gap */
+  }
 }

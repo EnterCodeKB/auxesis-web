@@ -13,21 +13,20 @@ export default function Spotlights() {
       description:
         "Auxesis MedTech AB blev registrerat 2024-05-23 och ägs av Auxesis Pharma Holding AB.",
       imageUrl: "./Nyheter/5216B2EC-B52C-4624-8893-85EED9576B09.jpeg",
-      Url: "https://auxesis.se/auxesis-medtech-ab/",
+      //Url: "https://auxesis.se/auxesis-medtech-ab/",
     },
     {
       title: "2024-03-01",
       description:
         "Värdering AUXESIS 03/2024 Fintegrity AB – Scenario One Pager värdering av aktierna i AUXESIS PHARMA HOLDING AB (publ).",
       imageUrl: "./Nyheter/auxesisbild1.png",
-      Url: "https://auxesis.se/vardering-auxesis-03-2024/",
     },
     {
       title: "2024-01-23",
       description:
         "Auxesis Pharma Holding AB har den 2024-01-23 fått sin ansökan godkänd och erhållit SME status som ett ”Micro/Linked” bolag från Europeiska läkemedelsmyndigheten (EMA).",
       imageUrl: "./Nyheter/auxesisbild2.png",
-      Url: "https://auxesis.se/european-medicines-agency-sme-status/",
+      // Url: "https://auxesis.se/european-medicines-agency-sme-status/",
     },
   ];
 

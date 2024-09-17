@@ -1,80 +1,111 @@
 .info {
-  width: 1200px;
+  max-width: 1200px;
   padding: 40px;
-  margin-top: -10px;
+  margin: 0 auto;
 }
 
 .h2 {
-  font-size: 62px;
+  font-size: 2.5rem; /* Använd rem för responsivitet */
 }
 
-.ptext {
-  font-size: 24px;
+.p {
+  font-size: 1.5rem; /* Använd rem för responsivitet */
 }
 
-.h3 {
-  font-size: 34px;
+.imgmicroskop {
+  width: 100%;
+  max-width: 350px;
+  margin: 20px auto;
+  display: block;
 }
 
-.imgprodukt {
-  width: 1000px;
-}
-.imgcoxypet {
-  width: 700px;
-}
-
-.info {
-  font-size: x-large;
-}
-.produkt {
-  width: 1200px;
-  padding: 40px;
-  margin-top: -10px;
-}
-
-.h2 {
-  font-size: 62px;
-}
-
-.ptext {
-  font-size: 24px;
-}
-
-.h3 {
-  font-size: 34px;
-}
-
-.imgprodukt {
-  width: 700px;
+.effekt {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
 }
 
 .scrollToTop {
   position: fixed;
   bottom: 20px;
-  right: 60px;
+  right: 20px;
   background-color: #c1eaff;
   color: white;
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 1.5rem;
   z-index: 1000;
 }
 
 .scrollToTop:hover {
   background-color: #194276;
 }
-.imgmicroskop {
-  width: 350px;
-  display: flex;
-  margin-left: 850px;
-  margin-top: -20px;
+
+/*Produkten*/
+.produkt {
+  max-width: 1200px; /* Limit the maximum width */
+  padding: 20px; /* Add padding for spacing */
+  margin: 0 auto; /* Center the content */
 }
-.effekt {
-  width: 70%;
-  margin-top: -320px;
+
+.h3 {
+  font-size: 2.5rem; /* Use rem for responsiveness */
+  margin-bottom: 1rem; /* Add space below headings */
+}
+
+.ptext {
+  font-size: 1.5rem; /* Use rem for responsiveness */
+  line-height: 1.6; /* Improve readability */
+  margin-bottom: 1rem; /* Add space below paragraphs */
+}
+
+.ulList {
+  margin: 1rem 0; /* Add margin for spacing */
+  padding-left: 20px; /* Indent the list */
+}
+
+.imgprodukt {
+  width: 100%; /* Make the image responsive */
+  max-width: 700px; /* Set a max-width */
+  margin: 20px auto; /* Center the image */
+  display: block; /* Ensure it's a block element */
+}
+
+/* Media queries för mindre skärmar */
+@media (max-width: 768px) {
+  .h2 {
+    font-size: 2rem; /* Minska storleken på rubriker */
+  }
+
+  .p {
+    font-size: 1.2rem; /* Minska storleken på text */
+  }
+
+  .imgmicroskop {
+    max-width: 100%;
+  }
+
+  .info {
+    padding: 20px;
+  }
+}
+/*Produkt sida*/
+@media (max-width: 768px) {
+  .h3 {
+    font-size: 2rem; /* Decrease heading size */
+  }
+
+  .ptext {
+    font-size: 1.2rem; /* Decrease paragraph size */
+  }
+
+  .imgprodukt {
+    max-width: 100%; /* Make the image fully responsive */
+  }
+
+  .produkt {
+    padding: 10px; /* Decrease padding on smaller screens */
+  }
 }

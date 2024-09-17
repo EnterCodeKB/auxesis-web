@@ -1,7 +1,70 @@
+.team {
+  margin: 50px auto; /* Center the container */
+  width: 90%; /* Use percentage for responsiveness */
+  max-width: 1200px; /* Set a max-width */
+  padding: 10px;
+  text-align: center;
+}
+
+.huvudtitle {
+  font-size: 64px;
+  font-weight: 700;
+  margin: -30px 0 50px; /* Combine margin properties */
+  color: #333333;
+}
+
+.rubrik {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 10px 0 20px; /* Combine margin properties */
+  color: #333333;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 10px 0 20px; /* Combine margin properties */
+  color: #4f4f4f;
+}
+
+.ContainerFullPage {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  row-gap: 80px;
+}
+
+.Item {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Fixed width for items */
+  overflow: hidden;
+  text-align: left;
+  flex-shrink: 0; /* Ensure items don't shrink */
+}
+
+.image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.content {
+  padding: 20px;
+}
+
+.description {
+  font-size: 16px;
+  color: #666666;
+  margin-top: 10px;
+}
+
 .scrollToTop {
   position: fixed;
   bottom: 20px;
-  right: 60px;
+  right: 20px; /* Adjusted for smaller screens */
   background-color: #c1eaff;
   color: white;
   padding: 10px;
@@ -18,91 +81,16 @@
 .scrollToTop:hover {
   background-color: #194276;
 }
-.team {
-  margin-left: 120px;
-  width: 1200px;
-  margin-top: 50px;
 
-  padding: 10px 10px;
-  text-align: center;
-}
-
-.rubrik {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  color: #333333;
-}
-.huvudtitle {
-  font-size: 64px;
-  font-weight: 700;
-  margin-bottom: 50px;
-  margin-top: -30px;
-  color: #333333;
-}
-.title {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  color: #4f4f4f;
-}
-
-.Container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-.ContainerFullPage {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 40px;
-  row-gap: 80px;
-}
-.Item {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  overflow: hidden;
-  text-align: left;
-  flex-shrink: 0; /* Ensure items don't shrink */
-}
-
-.image {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
-
-.content {
-  padding: 20px;
-}
-
-.Title {
-  font-size: 24px;
-  font-weight: 600;
-  color: #4f4f4f;
-}
-
-.description {
-  font-size: 16px;
-  color: #666666;
-  margin-top: 10px;
-}
-
+/* Media queries for smaller screens */
 @media (max-width: 768px) {
-  .Container {
-    flex-direction: column; /* Ensure column direction */
-    height: auto; /* Adjust height for smaller screens */
-    overflow-y: auto; /* Enable vertical scrolling */
+  .ContainerFullPage {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
   }
 
   .Item {
-    width: 90%; /* Adjust width to fit smaller screens */
+    width: 90%; /* Full width for smaller screens */
     margin-bottom: 20px; /* Add margin for spacing */
   }
 
