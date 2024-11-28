@@ -1,12 +1,23 @@
+/*background-color: #c9e7f153;*/
 .partners {
-  background-color: #f4f6fc;
+  background-color: #c9e7f153;
   text-align: center;
-  margin: 30px auto; /* Center the container */
-  width: 90%; /* Use percentage for responsiveness */
-  max-width: 1300px; /* Set a max-width */
+  margin: 40px auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; /* Använder gap för avstånd mellan .container */
+  padding: 20px; /* Lägger till padding för bättre struktur */
+  margin-left: 40px;
+}
+.ptext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 100px;
 }
 
 .title {
@@ -21,18 +32,24 @@
   font-weight: 700;
   margin: 40px 0 20px; /* Combine margin properties */
   color: #1c1e53;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 70px;
 }
 
+.underubrik {
+  color: #a4b7d1d3;
+}
 .container {
   display: flex;
-  justify-content: center; /* Center items */
-  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
   background-color: white;
-  gap: 30px;
-  width: 100%; /* Use full width */
+  gap: 15px; /* Gap inom container */
+  width: 90%;
   border-radius: 10px;
-  margin-bottom: 40px;
-  padding: 20px; /* Add padding for spacing */
+  padding: 20px;
 }
 
 .image {
@@ -53,6 +70,7 @@
 }
 
 .infoButton {
+  margin-left: 270px;
   background-color: #fff;
   color: #6f7287; /* Gray text */
   border: 1px solid #ddd;
@@ -65,8 +83,12 @@
   text-align: center;
   padding: 10px;
   margin-top: 20px;
+  text-decoration: none;
 }
 
+.infoButton {
+  text-decoration: none;
+}
 .infoButton:hover {
   background-color: #f9f9f9;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);

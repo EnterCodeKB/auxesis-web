@@ -1,13 +1,14 @@
 .div229 {
   background-color: #fff;
   display: flex;
+  justify-content: space-between; /* Justera hur innehållet placeras horisontellt */
   width: 100%;
-  gap: 20px;
+  padding: 10px 20px; /* Lägg till padding om det behövs */
   font-weight: 500;
-
   max-width: 100%;
   overflow-x: hidden;
 }
+
 @media (max-width: 991px) {
   .div229 {
     max-width: 80%;

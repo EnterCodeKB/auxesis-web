@@ -1,0 +1,145 @@
+/*background-color: #c9e7f153;*/
+
+.huvuddiv {
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.press {
+  margin-top: -30px;
+}
+
+.media {
+  text-align: center;
+  margin: 20px auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; /* Använder gap för avstånd mellan .container */
+  padding: 20px; /* Lägger till padding för bättre struktur */
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  color: #1c1e53;
+}
+
+.rubrik {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 40px 0 20px; /* Combine margin properties */
+  color: #1c1e53;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 70px;
+}
+
+.underubrik {
+  color: #a4b7d1d3;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  flex-direction: row;
+  background-color: white;
+  gap: 15px; /* Gap inom container */
+  width: 120%;
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 50px;
+}
+
+.image {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+.content {
+  padding: 20px;
+  width: 70%; /* Use percentage for responsiveness */
+}
+
+.description {
+  font-size: 16px;
+  color: #6f7287;
+  margin-top: 1px;
+}
+
+.infoButton {
+  margin-left: 660px;
+  background-color: #fff;
+  color: #6f7287; /* Gray text */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, background-color 0.3s;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.infoButton {
+  text-decoration: none;
+}
+.infoButton:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+  }
+
+  .content {
+    width: 100%; /* Full width for smaller screens */
+  }
+
+  .image {
+    width: 100%; /* Make image responsive */
+    max-width: 250px; /* Set a max-width */
+  }
+}
+
+.scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; /* Adjusted for smaller screens */
+  background-color: #c1eaff;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.scrollToTop:hover {
+  background-color: #194276;
+}
+
+/*PDFMEDIA*/
+
+.subsida {
+  margin-top: 100px;
+  width: 113%;
+}

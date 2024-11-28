@@ -2,7 +2,7 @@
 import React from "react";
 import RootLayout from "./layout";
 import Card from "./components/Card";
-import Hero from "./components/heroSection";
+import Hero from "./components/HeroSection";
 import Middle from "./components/middleSection";
 import Blog from "./components/Blog";
 import Quiry from "./components/Quiry";
@@ -17,7 +17,6 @@ export default function HomePage() {
   return (
     <>
       <div className={styles.div}>
-        <Spotlights />
         <Middle />
         <Card />
         <Finance />

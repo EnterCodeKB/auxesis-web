@@ -1,0 +1,138 @@
+@media (min-width: 1200px) {
+  .heroSection {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 120%;
+    margin-top: -80px;
+  }
+
+  .div13 {
+    background-image: url("/agenda2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 260px;
+  }
+  .div14 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: none;
+  }
+
+  .div16 {
+    display: flex;
+    flex-direction: column;
+    margin-top: -40px;
+    margin-right: 600px;
+    background: none;
+  }
+
+  .divh1 {
+    color: #23559b;
+    font-size: 50px;
+    line-height: 1.2;
+    margin: 0;
+    animation: slideInLeft 1.5s ease forwards;
+  }
+
+  .h2 {
+    color: #23559b;
+    font-size: 50px;
+    line-height: 1.2;
+    margin: 10px 0 0 0;
+    animation: slideInRight 1.5s ease forwards;
+    animation-delay: 0.5s;
+  }
+}
+
+/*HUVUDRUBRIKEN /HEM*/
+
+@media (max-width: 991px) {
+  .div13 {
+    padding: 80px 40px;
+    height: 400px;
+  }
+
+  .div16 {
+    font-size: 42px;
+    line-height: 52px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .div14,
+  .div18 {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .column2 {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .div19 {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .img2,
+  .img4,
+  .img5 {
+    width: 120px;
+  }
+}
+@media (max-width: 768px) {
+  .div13 {
+    padding: 50px 20px;
+    height: auto;
+  }
+
+  .div16 {
+    font-size: 36px;
+    line-height: 46px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .div14,
+  .div18 {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .column2 {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .div19 {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .img2,
+  .img4,
+  .img5 {
+    width: 100px;
+  }
+}

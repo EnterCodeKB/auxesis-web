@@ -1,50 +1,101 @@
+"use client";
+import { useEffect, useRef } from "react";
 import styles from "../styles/Omoss.module.css";
 
 export default function About() {
+  const animatedBoxRef = useRef(null);
+  const imgspelRef = useRef(null);
+  const effektRef = useRef(null);
+  const beeRef = useRef(null);
+
+  useEffect(() => {
+    const observerOptions = {
+      threshold: 0.1, // 10% synlighet
+    };
+
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add(styles.visible);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
+
+    if (animatedBoxRef.current) observer.observe(animatedBoxRef.current);
+    if (imgspelRef.current) observer.observe(imgspelRef.current);
+    if (effektRef.current) observer.observe(effektRef.current);
+    if (beeRef.current) observer.observe(beeRef.current);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
     <>
-      <div className={styles.info}>
-        <h2 className={styles.h2}>Om Auxesis Pharma Holding AB</h2>
-        <p className={styles.p}>
-          Auxesis Pharma är ett publikt aktiebolag som fokuserar på utveckling
-          av läkemedel för människor och djur inom kategorin ”smärta och
-          irritation på hud”. Vår vision är: Att omdefiniera kategorin smärta
-          och irritation på huden genom vetenskap. I dagsläget finns inte något
-          receptfritt läkemedel (OTC) som snabbt blockerar smärtsignalen och tar
-          bort smärta och irritation på hud. De produkter som finns i dag är
-          enbart tillfälligt lindrande. Dessutom krävs upprepade behandlingar då
-          smärtan snabbt återkommer.
+      <section className={styles.section}>
+        <h2>Nytt läkemedelsföretag förändrar spelplanen </h2>
+        <p className={styles.ptext}>
+          AUXESIS PHARMA HOLDING AB (publ) är ett publikt företag som fokuserar
+          på utveckling av läkemedel för människor och djur inom kategorin
+          ”lokal smärta och irritation på huden”.
         </p>
-        <h2 className={styles.h2}>Patentansökan pågår</h2>
-        <p className={styles.p}>
-          Auxesis Pharma har kommit långt i forskningen. Bolaget lämnade i
-          november 2023 in den första patentansökan till PRV. Forskningsteamet
-          förbereder nu för kliniska tester på människor för det som ska bli den
-          första receptfria produkten på världsmarknaden (ASA.P®) för att
-          blockera smärtsignalen vid smärta på hud. Auxesis Pharma har inlett
-          samarbete med väletablerade företag som hjälper oss att ta produkten
-          till marknaden. Några av dessa är AFRY, RegSmart Life Science, Ramberg
-          Advokater, Granath Reklam med flera.
+        <p
+          ref={animatedBoxRef}
+          className={`${styles.animatedBox} ${styles.hidden} text-xl leading-tight border-2 border-gray-500 p-6 rounded-lg shadow-lg bg-gray-100`}
+        >
+          Vår affärsidé: Auxesis utvecklar, baserat på eget patent, innovativa
+          läkemedel som snabbt tar bort smärta och irritation på huden hos både
+          människor och djur och som är lättillgängliga för konsumenter och
+          olika yrkesgrupper.
         </p>
-        <div>
-          <img
-            className={styles.imgmicroskop}
-            src="/microskop.png"
-            alt="Mikroskop"
-          />
+        <h2>Unik innovation som blockerar smärtsignalen </h2>
+        <p className={styles.ptext}>
+          Efter många års forskning och tusentals försök har Auxesis,
+          tillsammans med professor Moustapha Hassan och hans team på Karolinska
+          Institutet, Stockholm lyckats göra det som ingen annan har gjort
+          tidigare: att stabilisera Acetylsalicylsyra (ASA) i flytande form. Den
+          här innovationen gör det möjligt att applicera Acetylsalicylsyran på
+          huden. <br />
+          Auxesis tar nu fram den första receptfria konsumentprodukten som
+          snabbt tar bort smärta och irritation på hud. Produktens namn är
+          ASA.P®.
+        </p>
+        <div className={`${styles.andrast} flex items-center justify-between`}>
+          <div ref={imgspelRef} className={styles.imgdiv}>
+            <img
+              ref={beeRef}
+              className={`${styles.bee} ${styles.hidden}`}
+              src="/bin.png"
+              alt="Bee"
+            />
+          </div>{" "}
+          <div ref={effektRef} className={`${styles.effekt} ${styles.hidden}`}>
+            <h2 className={styles.h2}>Receptfritt läkemedel</h2>
+            <p className={styles.ptext}>
+              ASA.P® är ett receptfritt läkemedel för humant bruk för behandling
+              av smärta och irritation på huden orsakad av insektsbett, maneter,
+              brännässlor och andra allergiframkallande växter, mindre
+              brännskador, solbränna, utslag och eksem.
+            </p>
+            <p className={styles.ptext}>
+              Preparatet ASA.P® har snabb verkan och blockerar smärtsignalen
+              till hjärnan inom några minuter. ASA.P® blockerar smärtan med
+              bibehållen effekt tills kroppen läker sig själv. ASA.P® har också
+              antiinflammatoriska egenskaper.{" "}
+            </p>
+            <p className={styles.ptext}>
+              För närvarande finns två varumärken registrerade globalt: ASA.P®
+              och CoxyPet®.
+            </p>
+          </div>
         </div>
-        <div className={styles.effekt}>
-          <h2 className={styles.h2}>Produkt med snabb effekt</h2>
-          <p className={styles.p}>
-            Auxesis Pharma tar nu fram den första receptfria konsumentprodukten
-            som snabbt blockerar smärtsignalen till hjärnan och tar bort smärta
-            och irritation på hud – ASA.P®. Produkten har snabb verkan och
-            blockerar smärtsignalen inom fyra till sex minuter vid applicering
-            på huden. Effekten är långsiktig och smärtan kommer inte tillbaka.
-            ASA.P® är också antiinflammatorisk.
-          </p>
-        </div>
-      </div>
+      </section>
     </>
   );
 }

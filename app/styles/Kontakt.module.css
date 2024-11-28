@@ -1,83 +1,124 @@
+.kontaktsection {
+  margin-top: 150px;
+  width: 90%;
+  margin-left: 145px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
+  height: 400px;
+}
+
 .kontakt {
-  max-width: 1200px; /* Use max-width instead of width */
-  padding: 20px; /* Reduce padding for smaller screens */
-  z-index: 999;
-  margin: 20px auto; /* Center the container */
-  line-height: 1.5rem; /* Adjust line height for better readability */
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 120px;
+  flex-wrap: wrap;
+  margin-left: 600px; /* Lägg till flex-wrap för att möjliggöra innehåll under de två sektionerna */
 }
 
-.fettext {
-  font-weight: bold;
-  font-size: 2rem; /* Use rem for scalability */
+.section1 {
+  width: 100%; /* Båda sektionerna tar 50% av sidan */
+  box-sizing: border-box;
+  margin-top: 70px;
 }
 
-.h2 {
-  font-size: 4rem; /* Use rem for scalability */
+.section2 {
+  width: 100%; /* Båda sektionerna tar 50% av sidan */
+  box-sizing: border-box;
 }
 
-.h3 {
-  font-size: 4rem; /* Use rem for scalability */
+.squarecontainer {
+  margin-left: -250px;
+  width: 100%;
 }
 
-.adressen {
+.section1 {
+  padding: 30px;
+  gap: 10px;
+}
+
+.h1div {
+  font-size: 3.5rem;
+  margin-bottom: 100px;
+}
+
+.section2 {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-top: -200px;
+  width: 850px;
+  margin-left: -200px;
+  margin-bottom: 100px;
+}
+
+.kontaktinner {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; /* Use space-between for better spacing */
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
-  gap: 20px; /* Reduce gap for smaller screens */
+  gap: 20px;
+  align-items: center;
 }
 
-.column1 {
-  flex: 1; /* Allow columns to grow equally */
-  min-width: 250px; /* Set a minimum width for columns */
+.kontaktikoner {
+  width: 70px;
+  background-color: #23559b;
 }
 
 .ptext {
-  font-size: 1.5rem; /* Use rem for scalability */
+  font-size: 1.7rem;
+  color: #1c1e53;
 }
 
-.h4 {
-  font-size: 2rem; /* Use rem for scalability */
-}
-
-.world {
-  width: 100%; /* Make the image responsive */
-  max-width: 700px; /* Set a max width */
+/* Placera circlecontainer under section2 */
+.circlecontainer {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 20px auto; /* Center the image */
+  width: 50%; /* Anpassa till förälderbredd */
+  margin-left: -200px;
+  margin-top: -100px;
+  margin-bottom: 60px;
+  gap: 20px;
 }
 
-.ledning {
-  font-size: 1.5rem; /* Use rem for scalability */
+.circle {
+  width: 10px;
+  height: 10px;
+  background-color: #06327dde;
+  border-radius: 50%;
 }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-  .kontakt {
-    padding: 10px; /* Reduce padding on smaller screens */
+  .section1,
+  .section2 {
+    width: 100%; /* Sektionerna blir 100% breda */
+    padding: 15px; /* Mindre padding för bättre passform */
   }
 
-  .h2,
-  .h3 {
-    font-size: 3rem; /* Reduce font size */
+  .circlecontainer {
+    flex-direction: column; /* Gör cirklarna vertikala för bättre mobilanpassning */
+    align-items: center;
+    width: 100%;
+    gap: 10px;
   }
 
-  .fettext {
-    font-size: 1.5rem; /* Reduce font size */
+  .circle {
+    width: 10px; /* Minska storleken på cirklarna */
+    height: 10px;
+  }
+
+  .h2div {
+    font-size: 2rem; /* Ytterligare minskning av textstorlek */
   }
 
   .ptext {
-    font-size: 1.2rem; /* Reduce font size */
-  }
-
-  .h4 {
-    font-size: 1.5rem; /* Reduce font size */
-  }
-
-  .adressen {
-    flex-direction: column; /* Stack columns on smaller screens */
-    gap: 10px; /* Reduce gap */
+    font-size: 1.2rem; /* Anpassa textstorleken på kontaktinfo för mobil */
   }
 }

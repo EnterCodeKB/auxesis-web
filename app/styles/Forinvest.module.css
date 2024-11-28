@@ -1,11 +1,14 @@
+/*IR kontakt*/
+
 .ir-container {
   display: flex;
   align-items: flex-start; /* Align items to the start */
   justify-content: center;
-  padding: 60px;
   width: 90%; /* Use percentage for responsiveness */
   max-width: 1200px; /* Set a max-width */
   margin: 0 auto; /* Center the container */
+  margin-top: 150px;
+  margin-bottom: 100px;
 }
 
 .ir {
@@ -15,7 +18,6 @@
 }
 
 .h2 {
-  font-size: 62px;
   margin-bottom: 20px; /* Add space below the heading */
 }
 
@@ -28,7 +30,6 @@
 }
 
 .h4 {
-  font-size: 34px;
   margin-top: 20px; /* Add space above each name */
 }
 
@@ -53,6 +54,101 @@
   margin-top: 20px; /* Add space above the text */
 }
 
+/*VISION*/
+.vision {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 60px;
+}
+
+.h2vision {
+  margin-left: 330px;
+  color: #23559b;
+}
+
+.container2 {
+  margin-top: -40px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.affärside {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+/*ÄGARE*/
+.section {
+  width: 100%;
+}
+
+.aegare {
+  padding: 20px;
+  margin-top: -50px;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.aegarecontainer {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-left: 50px;
+  gap: 20px;
+  width: 100%;
+}
+
+.aegaretext {
+  display: flex;
+  justify-content: flex-start;
+  width: 40%;
+  margin-left: 40px;
+}
+
+.h2 {
+  margin-left: 20px;
+  color: #23559b;
+  margin-left: 50px;
+}
+.h2div {
+  margin-left: 550px;
+  color: #23559b;
+}
+
+.ptext {
+  font-size: 20px; /* Use rem for responsiveness */
+  line-height: 1.2; /* Improve readability */
+  margin-bottom: 1rem;
+  color: #555;
+  margin-top: 34px;
+}
+
+.ptext1 {
+  font-size: 20px; /* Use rem for responsiveness */
+  line-height: 1.2; /* Improve readability */
+  margin-bottom: 1rem;
+  color: #555;
+  margin-top: 34px;
+  margin-left: 100px;
+}
+
+/*STYRELSE*/
+.styrelse {
+  margin-top: 60px;
+}
+
+.ulList {
+  font-size: 20px; /* Use rem for responsiveness */
+  line-height: 1.2; /* Improve readability */
+  margin-bottom: 1rem;
+  color: #555;
+  margin: 1rem 0; /* Add margin for spacing */
+  padding-left: 50px; /* Indent the list */
+}
+
 @media (max-width: 768px) {
   .ir-container {
     flex-direction: column; /* Stack items vertically */
@@ -74,7 +170,10 @@
   }
 
   .ptext {
-    font-size: 20px; /* Adjust paragraph size for smaller screens */
+    font-size: 20px; /* Use rem for responsiveness */
+    line-height: 1.2; /* Improve readability */
+    margin-bottom: 1rem;
+    color: #555;
   }
 
   .world {
@@ -90,4 +189,11 @@
   .styrelse,
   .agare {
   }
+}
+
+.vision {
+  margin-top: 100px;
+}
+.aegare {
+  margin-top: 100px;
 }

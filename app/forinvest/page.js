@@ -1,4 +1,4 @@
-import styles from "../styles/Info.module.css";
+  import styles from "../../styles/Forinvest.module.css";
 
 export default function Invest() {
   return (

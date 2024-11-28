@@ -1,111 +1,94 @@
-.info {
-  max-width: 1200px;
-  padding: 40px;
-  margin: 0 auto;
+/* Döljer elementet initialt */
+.hidden {
+  opacity: 0;
+  transform: translateY(60px); /* Startar nedanför sin normala position */
+  transition: opacity 1s ease, transform 1s ease;
 }
 
+/*UNIKA PRODUKTER*/
+
+/* Visar elementet när det blivit synligt */
+.visible {
+  opacity: 1;
+  transform: translateY(0); /* Flyttar till sin normala position */
+}
+
+/* Sektionens styling */
+.section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-bottom: 60px;
+}
+
+/* Styling för rubriker */
 .h2 {
-  font-size: 2.5rem; /* Använd rem för responsivitet */
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
-.p {
-  font-size: 1.5rem; /* Använd rem för responsivitet */
-}
-
-.imgmicroskop {
-  width: 100%;
-  max-width: 350px;
-  margin: 20px auto;
-  display: block;
-}
-
-.effekt {
-  width: 100%;
-  max-width: 800px;
-  margin: 20px auto;
-}
-
-.scrollToTop {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #c1eaff;
-  color: white;
-  padding: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  font-size: 1.5rem;
-  z-index: 1000;
-}
-
-.scrollToTop:hover {
-  background-color: #194276;
-}
-
-/*Produkten*/
-.produkt {
-  max-width: 1200px; /* Limit the maximum width */
-  padding: 20px; /* Add padding for spacing */
-  margin: 0 auto; /* Center the content */
-}
-
-.h3 {
-  font-size: 2.5rem; /* Use rem for responsiveness */
-  margin-bottom: 1rem; /* Add space below headings */
-}
-
+/* Styling för textparagrafer */
 .ptext {
-  font-size: 1.5rem; /* Use rem for responsiveness */
-  line-height: 1.6; /* Improve readability */
-  margin-bottom: 1rem; /* Add space below paragraphs */
+  font-size: 20px; /* Use rem for responsiveness */
+  line-height: 1.2; /* Improve readability */
+  margin-bottom: 1rem;
+  color: #555;
 }
 
-.ulList {
-  margin: 1rem 0; /* Add margin for spacing */
-  padding-left: 20px; /* Indent the list */
+/* Animerad box som visar affärsidé */
+.animatedBox {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  border: 2px solid #888;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.imgprodukt {
-  width: 100%; /* Make the image responsive */
-  max-width: 700px; /* Set a max-width */
-  margin: 20px auto; /* Center the image */
-  display: block; /* Ensure it's a block element */
+/* Styling för bildspelet och bilden */
+.andrast {
+  margin-bottom: 100px;
 }
 
-/* Media queries för mindre skärmar */
-@media (max-width: 768px) {
-  .h2 {
-    font-size: 2rem; /* Minska storleken på rubriker */
-  }
-
-  .p {
-    font-size: 1.2rem; /* Minska storleken på text */
-  }
-
-  .imgmicroskop {
-    max-width: 100%;
-  }
-
-  .info {
-    padding: 20px;
-  }
+.imgdiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
-/*Produkt sida*/
-@media (max-width: 768px) {
-  .h3 {
-    font-size: 2rem; /* Decrease heading size */
-  }
 
-  .ptext {
-    font-size: 1.2rem; /* Decrease paragraph size */
-  }
+.bee {
+  max-width: 60%;
+  height: auto;
+}
 
-  .imgprodukt {
-    max-width: 100%; /* Make the image fully responsive */
-  }
+/* Specifik stil för bilder i spel */
+.imgspel {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
 
-  .produkt {
-    padding: 10px; /* Decrease padding on smaller screens */
-  }
+/* Effektsektion för receptfritt läkemedel */
+.effekt {
+  background-color: #c9e7f153;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
 }

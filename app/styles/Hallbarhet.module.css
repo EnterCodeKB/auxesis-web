@@ -1,0 +1,36 @@
+.section {
+  max-width: 100%; /* Limit the maximum width */
+  padding: 20px; /* Add padding for spacing */
+  margin: 0 auto; /* Center the content */
+  margin-top: 70px;
+}
+.imgbox {
+  background-color: #ebf4f9;
+  margin-top: 50px;
+  margin-left: 30px;
+  width: 100%;
+}
+.divh2 {
+  font-size: 2rem; /* Använd rem för bättre skalbarhet */
+  font-weight: 700;
+  color: #1c1e53;
+}
+.ptext {
+  font-size: 20px; /* Use rem for responsiveness */
+  line-height: 1.2; /* Improve readability */
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.divli {
+  font-size: 1.2rem; /* Use rem for responsiveness */
+  line-height: 1.6; /* Improve readability */
+  margin-bottom: 1rem;
+}
+.section1,
+.section2,
+.section3,
+.section4 {
+  margin-top: 60px;
+}
+/*AGENDA*/

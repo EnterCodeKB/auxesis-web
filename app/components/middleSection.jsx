@@ -3,7 +3,7 @@ import styles from "../styles/Middle.module.css";
 export default function middleSection() {
   return (
     <>
-      <div className={styles.div67}>
+      <section className={styles.div67}>
         <div className={styles.div68}>
           <div className={styles.column9}>
             <video
@@ -19,20 +19,18 @@ export default function middleSection() {
 
           <div className={styles.column}>
             <div className={styles.div69}>
-              <div className={styles.div71}>
-                Ett team bestående av medicinsk expertis
-              </div>
-              <div className={styles.div72}>
+              <h2>Ett team bestående av medicinsk expertis</h2>
+              <p className={styles.ptext}>
                 Auxesis Pharma är ett publikt företag som fokuserar på
                 utveckling av läkemedel för människor och djur inom kategorin
                 “lokal smärta och irritation på huden”. Auxesis har bred
                 kompetens inom forskning och utveckling samt en erfaren
                 företagsledning.
-              </div>
+              </p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

@@ -1,23 +1,38 @@
+"use client";
+
 import Footer2 from "./components/underFooter";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import "./globals.module.css";
-import Hero from "./components/heroSection";
+import "./globals.css";
+import Hero from "./components/HeroSection";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import { usePathname } from "next/navigation";
 
 export default function RootLayout({ children }) {
+  const pathname = usePathname();
+  const hideHeroPaths = ["/produkter"];
+  const shouldHideHero = hideHeroPaths.some((path) =>
+    pathname.startsWith(path)
+  );
+
   return (
     <html lang="sv">
       <head>
-        <title>Min AUXESIS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Your Website Title</title>
+        <meta name="description" content="Your Website Description" />
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+          rel="stylesheet"
+        />
       </head>
       <body>
-        <Hero />
-
+        <Header />
+        {!shouldHideHero && <Hero />}
         <div className="container">
           <main>{children}</main>
-          <Footer />
         </div>
-
+        <Footer />
         <Footer2 />
       </body>
     </html>

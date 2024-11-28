@@ -1,0 +1,15 @@
+.divh1 {
+  margin-left: 70px;
+  line-height: 3.5rem;
+  display: flex;
+  text-align: center;
+}
+
+.section {
+  margin-top: 120px;
+  margin-bottom: 60px;
+}
+
+.section2 {
+  margin-top: 60px;
+}

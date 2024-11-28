@@ -1,61 +1,24 @@
-"use client";
-
-import * as React from "react";
-import { useRouter } from "next/navigation";
+// Spotlights.jsx
+import React from "react";
+import Carousel from "./Carousel";
 import styles from "../styles/Spotlights.module.css";
+import { latestNews } from "../nyheter/senastenytt/page";
 
-export default function Spotlights() {
-  const router = useRouter();
-
-  const newsItems = [
-    {
-      title: "2024-05-23",
-      description:
-        "Auxesis MedTech AB blev registrerat 2024-05-23 och ägs av Auxesis Pharma Holding AB.",
-      imageUrl: "./Nyheter/5216B2EC-B52C-4624-8893-85EED9576B09.jpeg",
-      //Url: "https://auxesis.se/auxesis-medtech-ab/",
-    },
-    {
-      title: "2024-03-01",
-      description:
-        "Värdering AUXESIS 03/2024 Fintegrity AB – Scenario One Pager värdering av aktierna i AUXESIS PHARMA HOLDING AB (publ).",
-      imageUrl: "./Nyheter/auxesisbild1.png",
-    },
-    {
-      title: "2024-01-23",
-      description:
-        "Auxesis Pharma Holding AB har den 2024-01-23 fått sin ansökan godkänd och erhållit SME status som ett ”Micro/Linked” bolag från Europeiska läkemedelsmyndigheten (EMA).",
-      imageUrl: "./Nyheter/auxesisbild2.png",
-      // Url: "https://auxesis.se/european-medicines-agency-sme-status/",
-    },
-  ];
-
-  const handleReadMoreClick = () => {
-    router.push("/nyheter");
-  };
+const Spotlights = () => {
   return (
     <div className={styles.spotlights}>
-      <h2 className={styles.title}>Nyheter</h2>
-      <div className={styles.newsContainer}>
-        {newsItems.map((item, index) => (
-          <div key={index} className={styles.newsItem}>
-            <a href={item.Url} target="_blank" rel="noopener noreferrer">
-              <img
-                src={item.imageUrl}
-                alt={item.title}
-                className={styles.image}
-              />
-            </a>
-            <div className={styles.content}>
-              <h3 className={styles.newsTitle}>{item.title}</h3>
-              <p className={styles.description}>{item.description}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-      <button className={styles.readMoreButton} onClick={handleReadMoreClick}>
+      <h2>Nyheter</h2>
+      <Carousel items={latestNews} />
+      <button
+        className={styles.readMoreButton}
+        onClick={() =>
+          (window.location.href = "/nyheter/senastenyheter/page.js")
+        }
+      >
         Läs mer
       </button>
     </div>
   );
-}
+};
+
+export default Spotlights;
