@@ -8,7 +8,8 @@ import Blog from "./components/Blog";
 import Quiry from "./components/Quiry";
 import styles from "./styles/Page.module.css";
 import Finance from "./components/Finance";
-import Spotlights from "./components/Spotlights";
+import LatestNews from "./components/LatestNews";
+import { newsItems } from "./data/newsItems"; // Anpassa vägen om det behövs
 
 export default function HomePage() {
   const scrollToTop = () => {
@@ -16,8 +17,18 @@ export default function HomePage() {
   };
   return (
     <>
+      <LatestNews newsItems={newsItems} />
       <div className={styles.div}>
-        <Middle />
+        <section>
+          {/* <div className={styles.background}>
+            <img
+              src="/secondbgbild.jpg"
+              alt="Background"
+              className={styles.backgroundImage}
+            />
+          </div>*/}
+          <Middle />
+        </section>
         <Card />
         <Finance />
       </div>

@@ -10,7 +10,7 @@ export default function Vardering() {
         PHARMA HOLDING AB (publ) inför lansering av bolagets smärtstillande
         produkt ASA.P® finns nu tillgänglig.
       </p>
-      <div className={styles.articlesimage}>
+      <div className={styles.articlesimage3}>
         <img
           className={styles.image1}
           src="/Nyheter/värdering.jpeg"

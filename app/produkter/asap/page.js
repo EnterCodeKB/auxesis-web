@@ -27,8 +27,8 @@ export default function AsaP() {
           <div>
             <img
               className={styles.imgirritation}
-              src="/produkter/irritatio.jpeg"
-              alt="en sjuk bebis"
+              src="/produkter/B5FC1967-6242-4F3A-9F8D-2B48204D2492.jpeg"
+              alt="klias i myggbett"
             />
           </div>
         </div>

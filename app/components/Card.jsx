@@ -19,7 +19,7 @@ export default function Card() {
         <div className={styles.div44}>
           <div className={styles.div45}>
             {/*första bilden */}
-            <div className={styles.column3}>
+            <div className={styles.column}>
               <div className={styles.div46}>
                 <div className={styles.imgContainer}>
                   <img loading="mygg" src="/mygg.jpeg" className={styles.img} />
@@ -40,8 +40,8 @@ export default function Card() {
             </div>
 
             {/*andra bild getting */}
-            <div className={styles.column4}>
-              <div className={styles.div49}>
+            <div className={styles.column}>
+              <div className={styles.div46}>
                 <div className={styles.imgContainer}>
                   <img loading="lazy" src="/bin.png" className={styles.img} />
                   <div className={styles.overlay}>
@@ -59,8 +59,8 @@ export default function Card() {
             </div>
 
             {/*tredje bild hund och katt */}
-            <div className={styles.column5}>
-              <div className={styles.div52}>
+            <div className={styles.column}>
+              <div className={styles.div46}>
                 <div className={styles.imgContainer}>
                   <img
                     loading="hund och katt"
@@ -85,10 +85,10 @@ export default function Card() {
         </div>
         {/*fjärde bild maneter */}
 
-        <div className={styles.div56}>
-          <div className={styles.div57}>
-            <div className={styles.column6}>
-              <div className={styles.div58}>
+        <div className={styles.div44}>
+          <div className={styles.div45}>
+            <div className={styles.column}>
+              <div className={styles.div46}>
                 <div className={styles.imgContainer}>
                   <img
                     loading="manet"
@@ -111,18 +111,22 @@ export default function Card() {
             </div>
 
             {/*femte bild baby */}
-            <div className={styles.column7}>
-              <div className={styles.div61}>
+            <div className={styles.column}>
+              <div className={styles.div46}>
                 <div className={styles.imgContainer}>
-                  <img loading="lazy" src="/baby.jpeg" className={styles.img} />
+                  <img
+                    loading="lazy"
+                    src="/flicka.jpeg"
+                    className={styles.img}
+                  />
                   <div className={styles.overlay}>
                     <div className={styles.div47}>Små barn</div>
                     <div className={styles.div48}>
-                      Små bebisar kan uppleva irritation och smärta från olika
-                      tillstånd tex som barnsjukdomar eller efter blöjor, vilket
-                      kan vara obehagligt för dem. För att lindra dessa symtom
+                      Små barn kan uppleva irritation och smärta från olika
+                      tillstånd tex som barnsjukdomar eller bett, vilket kan
+                      vara obehagligt för dem. För att lindra dessa symtom
                       behövs smärtstillande medel, men det finns för närvarande
-                      inga salvor som är helt säkra för spädbarn.
+                      inga salvor som är helt säkra för barn.
                     </div>
                   </div>
                 </div>
@@ -130,8 +134,8 @@ export default function Card() {
             </div>
 
             {/*sista bild hästen */}
-            <div className={styles.column8}>
-              <div className={styles.div64}>
+            <div className={styles.column}>
+              <div className={styles.div46}>
                 <div className={styles.imgContainer}>
                   <img
                     loading="lazy"

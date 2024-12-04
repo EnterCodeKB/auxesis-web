@@ -9,8 +9,8 @@ export default function Styrelse() {
 
         <p className={styles.ptext}>
           Auxesis Pharma har en väl sammansatt styrelse och ledning som
-          representerar olika kompetenser. Här finns en presentation av <Link href="/omoss/vartteam" > Vårt
-          team.</Link>
+          representerar olika kompetenser. Här finns en presentation av{" "}
+          <Link href="/omoss/vartteam"> Vårt team.</Link>
         </p>
 
         <h2 className={styles.h2}>Auxesis Pharma ledningsgrupp</h2>
@@ -19,7 +19,7 @@ export default function Styrelse() {
           <li>Roar Adelsten, VD </li>
           <li>Charlotta Larsson, sälj och marknad</li>
           <li>Lars Larsson, ekonomi och finans</li>
-          <li>Peter Åberg, organisationsutveckling och hållbarhet</li>
+          <li>Peter Åberg, Läkemedelsutvecking och hållbarhet</li>
           <li>
             Rune Nordström, arbetande styrelseordförande, affärsrådgivning, PR,
             HR och IR
@@ -32,7 +32,6 @@ export default function Styrelse() {
           <li>Roar Adelsten, VD och styrelseledamot</li>
           <li>Rune Nordström, styrelseordförande</li>
           <li>Charlotta Larsson, styrelseledamot</li>
-          <li>Moustapha Hassan, styrelseledamot</li>
         </ul>
 
         {/*  <div>

@@ -48,10 +48,17 @@
   color: #555;
 }
 
+.ptextinramat {
+  font-size: 2rem; /* Use rem for responsiveness */
+  line-height: 1.2; /* Improve readability */
+  margin-bottom: 1rem;
+  color: #555;
+}
+
 /* Animerad box som visar affärsidé */
 .animatedBox {
   text-align: center;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 1.6;
   border: 2px solid #888;
   padding: 16px;

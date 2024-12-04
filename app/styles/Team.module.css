@@ -1,13 +1,43 @@
 /* Första grid för första raden */
 .team {
-  margin-right: 100px;
+  margin-left: 100px;
   width: 100%;
+}
+
+.medarbetare {
+  width: 100%;
+  margin-left: -5px;
+  margin-top: -2px;
+}
+
+.team3 {
+  width: 100%;
+  margin-left: -5px;
+  margin-top: -20px;
+}
+
+.bolagsstyrelse {
+  width: 100%;
+  margin-left: -5px;
+  margin-top: 80px;
+}
+.ContainerFullPage1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 450px; /* Fixed width for items */
+  overflow: hidden;
+  text-align: left;
+  flex-shrink: 0; /* Ensure items don't shrink */
+  margin-left: 370px;
 }
 .firstRow {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Två kolumner */
   gap: 24px; /* Mellanrum mellan kolumner */
-  margin-bottom: 24px; /* Mellanrum mellan första och andra grid */
 }
 .content {
   padding: 20px;
@@ -16,13 +46,12 @@
 .presentation {
   font-size: 2rem;
   margin-top: 70px;
-  margin-bottom: 50px;
   color: #1c1e53;
-  margin-left: -300px;
+  margin-left: -30px;
 }
 
 .infografik {
-  width: 700px;
+  width: 1000px;
   margin-left: 30px;
 }
 /* Andra grid för övriga rader */
@@ -65,7 +94,6 @@
 }
 
 .secondGrid {
-  margin-top: 24px; /* För att få pyramid-effekt */
 }
 
 .ptext {
@@ -101,20 +129,6 @@
   flex-wrap: wrap;
   gap: 24px;
   row-gap: 80px;
-}
-.ContainerFullPage1 {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  width: 450px; /* Fixed width for items */
-  overflow: hidden;
-  text-align: left;
-  flex-shrink: 0; /* Ensure items don't shrink */
-  margin-left: 370px;
-  margin-bottom: 50px;
 }
 
 .Item {

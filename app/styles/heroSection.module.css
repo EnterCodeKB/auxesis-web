@@ -10,6 +10,15 @@
     margin-top: 40px;
   }
 
+  .div15 {
+    margin-top: -200px;
+  }
+  .logo {
+    width: 150px;
+    height: auto;
+    margin-right: 1200px;
+  }
+
   .div13 {
     background-image: url("/webbg.jpg");
     background-size: cover;
@@ -36,9 +45,9 @@
   .div16 {
     display: flex;
     flex-direction: column;
-    margin-top: -40px;
     margin-right: 600px;
     background: none;
+    margin-top: 40px;
   }
 
   .divh1 {

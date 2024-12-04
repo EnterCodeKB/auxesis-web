@@ -57,9 +57,9 @@ export default function Teamet() {
       <p>Helena är också grundare av EnterCode Sweden KB, som bedriver verksamhet inom webbutveckling, webbproduktion och webbprogrammering med fokus på kundanpassade tjänster samt erbjuder teknisk support.</p>
 
       `,
+
       imageUrl: "../team/A095535F-73B4-48B8-AB4C-2E9498AB43A2.png",
     },
-    /*
     {
       rubrik: "Peter Hedberg",
       title: "Immateriella rättigheter, affärsjuridiska avtal & tvistlösning",
@@ -70,16 +70,15 @@ export default function Teamet() {
 `,
       imageUrl: "../team/Peter-Ramberg600_web.jpg",
     },
-*/
+
     {
       rubrik: "Peter Åberg",
       title:
-        "Affärsrådgivare, organisationsutvecklare inom medtech och läkemedel  ",
+        "Organisationsutvecklare och affärsrådgivare inom medtech och läkemedel ",
       description: `
-      <p>Peter Åberg har mer än tjugo års erfarenhet som organisationsutvecklare och ledare. Har utvecklat framgångsrika organisationer och innehaft positioner som VD, marknads- och hållbarhetsdirektör från start-up till börsbolag inom medicinteknik, farmakologi, tillverkningsindustrin och tjänsteföretag.</p>
-      <p>Inom vården har Peter varit klinisk chef för läkare och administrativ personal. Har varit VD och hållbarhetsdirektör för ett rekryteringsföretag och utsågs två år i rad till Dagens Industris Supergasell som Sveriges snabbast växande företag i alla kategorier.</p>
-      <p>Peter har en Med kand med toxikolog samt genomgått IFL på Handelshögskolans executive program samt Försvarsmaktens olika ledarprogram. Dessutom utvecklar han internationella hållbarhetsstandarder, ISO, inom ledarskap, organisation, hållbarhet och är FN-representant i Sverige för hållbar miljö, kvalité och affärsutveckling. </p>
-      <p>Peter är för närvarande en av ALMI:s hållbarhetsexperter.</p>
+      <p>Peter Åberg har mer än tjugo års erfarenhet som organisationsutvecklare och ledare. Har utvecklat framgångsrika organisationer som VD, marknads- och hållbarhetsdirektör från start-up till börsbolag inom medicinteknik, farmakologi, tillverkningsindustrin. </p>
+      <p>Utsågs som VD till Dagens Industris Supergasell som Sveriges snabbast växande företag i alla kategorier. Inom sjukvården har Peter varit klinikchef för läkare och administrativ personal. </p>
+      <p>Peter har en Med kand, toxikolog, samt genomgått Handelshögskolans executive program och Försvarsmaktens olika ledarprogram. Dessutom utvecklar han internationella hållbarhetsstandarder, ISO, inom ledarskap, med tech, hållbarhet och är FN-representant i Sverige för hållbar miljö, kvalité och affärsutveckling. Peter är för närvarande en av ALMI:s hållbarhetsexperter. </p>
 `,
       imageUrl: "/team/Peter1.png",
     },
@@ -96,7 +95,7 @@ export default function Teamet() {
   ];
 
   return (
-    <section className={styles.team}>
+    <section className={styles.medarbetare}>
       <h2 className={styles.presentation}>MEDARBETARE </h2>
 
       <div className={styles.ContainerFullPage}>

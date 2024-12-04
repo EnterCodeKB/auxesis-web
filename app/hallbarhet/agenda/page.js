@@ -26,7 +26,7 @@ const Agenda = () => {
         <p className={styles.ptext}>
           Under 2025 inleder Auxesis Pharma arbetet med ISO-certifiering för
           14001 (miljö) och 9001 (kvalitet). Det stärker vårt systematiska
-          hållbarhetsarbete och gör att vi kan möta EU:s kommande regelverk för
+          hållbarhetsarbete och gör att vi möter EU:s kommande regelverk inom
           hållbarhet.
         </p>
         <p className={styles.ptext}>
@@ -78,8 +78,8 @@ const Agenda = () => {
             bekämpning av korruption och ansvarsfulla marknadsföringsmetoder.
           </li>
           <li className={styles.divli}>
-            Konsumentfrågor: Vi prioriterar produkters och tjänsters säkerhet
-            och kvalitet.
+            Konsumentfrågor: Vi prioriterar produkters och tjänsters säkerhet,
+            tillgänglighet och kvalitet.
           </li>
           <li className={styles.divli}>
             Samhällsengagemang och utveckling: Vi ger bidrag till

@@ -27,9 +27,7 @@ const Miljo = () => {
           samhället.{" "}
         </p>
       </div>
-      <div className={styles.imgbox}>
-        <img src="/hallbarhet1.svg" alt="Hållbarhet Auxesis" />
-      </div>
+      <div></div>
     </section>
   );
 };

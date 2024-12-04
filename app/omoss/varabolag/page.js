@@ -76,10 +76,41 @@ export default function Bolag() {
               </div>
               <div className={styles.auxesistext}>
                 <p className={styles.ptext}>
-                  Auxesis Pharma Holding AB är moderbolag och äger rättigheterna
-                  till patent inom specifika medicinska forskningsområden.
-                  Auxesis Pharma Holding äger i sin tur två dotterbolag: Auxesis
-                  MedTech AB och Auxesis Animal Care AB.
+                  <span>Auxesis Pharma Holding AB (publ)</span> är ett publikt
+                  avstämningsbolag, vilket innebär att det är ett aktiebolag
+                  vars bolagsordning innehåller ett förbehåll om att företagets
+                  aktier ska vara registrerade i ett avstämningsregister (läs
+                  mer på Bolagsverket). Företaget är moderbolag och innehar
+                  rättigheterna till patent inom specifika medicinska
+                  forskningsområden. Auxesis Pharma Holding AB (publ) fokuserar
+                  på utveckling av innovativa läkemedel för behandling av lokal
+                  smärta och irritation på huden, både för människor och djur.{" "}
+                  <br />
+                  <br />
+                  <span>
+                    <h4>Auxesis affärsidé:</h4>
+                  </span>{" "}
+                  Med utgångspunkt i egna patent utvecklar Auxesis innovativa
+                  läkemedel som effektivt lindrar smärta och irritation på
+                  huden. Produkterna är enkla att använda och tillgängliga för
+                  både konsumenter och professionella yrkesgrupper. Efter flera
+                  års forskning och tusentals tester har Auxesis, i samarbete
+                  med forskarteamet vid Karolinska Institutet i Stockholm,
+                  uppnått något unikt: att stabilisera acetylsalicylsyra (ASA) i
+                  flytande form. Denna stabilisering, kombinerad med andra redan
+                  godkända läkemedel, möjliggör en applicering direkt på huden.{" "}
+                  <br />
+                  <br />{" "}
+                  <span>
+                    <h4>Milstolpar och framtid</h4>{" "}
+                  </span>
+                  Sommaren 2025 firar bolaget 10 år. Sedan starten har Auxesis
+                  genomgått en resa från idéstadiet, via forskning och
+                  kapitalisering, till prekliniska tester och globalt
+                  PCT-patentskydd. Målet är att uppnå godkännande för den
+                  banbrytande produkten ASA.PÒ år 2026, följt av en
+                  börsintroduktion. För närvarande har Auxesis två globala
+                  varumärken registrerade: ASA.P® och CoxyPet®.
                 </p>
               </div>
             </div>
@@ -100,8 +131,8 @@ export default function Bolag() {
                   etablerar vi en egen, toppmodern fabrik i Östersund. Fabriken
                   skräddarsys för att producera våra egna produkter. Genom att
                   ha full kontroll över produktionsprocessen kan vi garantera en
-                  unik och anpassad kvalitet av våra produkter samt
-                  kontrollerade leveranser.
+                  unik och anpassad kvalitet av produkterna samt kontrollerade
+                  leveranser.
                 </p>
               </div>
             </div>

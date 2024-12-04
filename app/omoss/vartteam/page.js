@@ -111,7 +111,7 @@ export default function Team() {
         Auxesis har ett kvalificerat team med en bra sammansättning av
         kompetenser för att hantera bolagets samlade uppdrag och utmaningar:
       </p>
-      <img className={styles.infografik} src="/team/infografik.png" alt="" />
+      <img className={styles.infografik} src="/team/infografik1.png" alt="" />
 
       <div className={styles.firstRow}></div>
 
@@ -141,29 +141,30 @@ export default function Team() {
           </div>
         </div>
       </div>
+      <div className={styles.bolagsstyrelse}>
+        <h2 className={styles.presentation}>BOLAGSSTYRELSE </h2>
 
-      <h2 className={styles.presentation}>BOLAGSSTYRELSE </h2>
-
-      <div className={styles.ContainerFullPage}>
-        {Items.map((item, index) => (
-          <div key={index} className={styles.Item}>
-            <a href={item.Url} target="_blank" rel="noopener noreferrer">
-              <img
-                src={item.imageUrl}
-                alt={item.title}
-                className={styles.image}
-              />
-            </a>
-            <div className={styles.content}>
-              <h3 className={styles.rubrik}>{item.rubrik}</h3>
-              <h5 className={styles.title}>{item.title}</h5>
-              <div
-                className={styles.description}
-                dangerouslySetInnerHTML={{ __html: item.description }}
-              />
+        <div className={styles.ContainerFullPage}>
+          {Items.map((item, index) => (
+            <div key={index} className={styles.Item}>
+              <a href={item.Url} target="_blank" rel="noopener noreferrer">
+                <img
+                  src={item.imageUrl}
+                  alt={item.title}
+                  className={styles.image}
+                />
+              </a>
+              <div className={styles.content}>
+                <h3 className={styles.rubrik}>{item.rubrik}</h3>
+                <h5 className={styles.title}>{item.title}</h5>
+                <div
+                  className={styles.description}
+                  dangerouslySetInnerHTML={{ __html: item.description }}
+                />
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
       <Teamet />
       <UtvecklingsTeamet />

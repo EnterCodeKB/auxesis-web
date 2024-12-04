@@ -9,6 +9,23 @@
   width: 100%;
 }
 
+.background {
+  position: relative;
+  background-image: url("/secondbgbild.jpg");
+  background-position: center;
+  width: 100%;
+  max-width: 1500px;
+}
+.backgroundImage {
+  height: 450px; /* Anpassa höjden som passar din design */
+  width: 200vh;
+}
+
+.div {
+  margin-top: 20px;
+  padding: 20px;
+}
+
 .languageSwitcher {
   margin-bottom: 20px;
 }

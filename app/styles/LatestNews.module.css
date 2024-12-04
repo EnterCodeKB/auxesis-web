@@ -1,0 +1,94 @@
+.latestNewsSection {
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 140px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1c1e53;
+}
+
+.newsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.newsCard {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 330px;
+  padding: 20px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.newsImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.newsTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #282938;
+  margin: 10px 0;
+}
+
+.newsSubtitle {
+  font-size: 1rem;
+  color: #6f7287;
+  margin-bottom: 20px;
+}
+
+.readMoreButton {
+  margin-top: auto;
+  padding: 10px 20px;
+  background-color: #ebf4f9;
+  color: #007bff;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #007bff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.readMoreButton:hover {
+  background-color: #0056b3;
+}
+
+.nwesblockButton {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 150px;
+  margin-top: 20px;
+}
+
+.nwesblockreadmore {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.nwesblockreadmore:hover {
+  background-color: #0056b3;
+}

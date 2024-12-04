@@ -28,15 +28,6 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      {/* Logo */}
-      <Link href="/">
-        <img
-          src="/278149D3-C96F-4CEE-BC16-3D7AB9E4DABE.png"
-          alt="Loggan"
-          className={styles.logo}
-        />
-      </Link>
-
       {/* Hamburger Button */}
       <button className={styles.hamburgerBtn} onClick={toggleMenu}>
         <img
@@ -49,17 +40,18 @@ export default function Header() {
       {/* Sliding Menu */}
       <div
         className={`${styles.menu} ${isMenuOpen ? styles.menuOpen : ""}`}
-        onClick={(e) => e.stopPropagation()}
+        onClick={(e) => e.stopPropagation()} // Förhindrar att klick på menyn stänger allt
       >
+        {/* Close Button */}
         <button className={styles.closeBtn} onClick={closeMenu}>
-          &times;
+          &times; {/* Kryssikonen */}
         </button>
 
-        {/* Language Switcher */}
+        {/* Language Switcher 
         <div className={styles.languageContainer}>
           <LanguageSwitcher />
         </div>
-
+*/}
         <nav className={styles.nav}>
           <Link href="/" onClick={closeMenu}>
             <div className={styles.mainLink}>HEM</div>
@@ -88,9 +80,64 @@ export default function Header() {
                   <div className={styles.subLink}>Partners</div>
                 </Link>
 
-                {/* Sub-dropdown: För investorer */}
+                {/* Sub-dropdown: 
                 <div className={styles.subDropdown}>
                   <div className={styles.subLink}>För investorer</div>
+                  <div className={styles.subDropdownContent}>
+                    <Link href="/omoss/investorer/agare" onClick={closeMenu}>
+                      <div className={styles.subSubLink}>Ägare</div>
+                    </Link>
+                    <Link href="/omoss/investorer/styrelse" onClick={closeMenu}>
+                      <div className={styles.subSubLink}>
+                        Styrelse och ledning
+                      </div>
+                    </Link>
+                    <Link href="/omoss/investorer/vision" onClick={closeMenu}>
+                      <div className={styles.subSubLink}>
+                        Affärsidé och vision
+                      </div>
+                    </Link>
+                    <Link
+                      href="/omoss/investorer/ir-kontakt"
+                      onClick={closeMenu}
+                    >
+                      <div className={styles.subSubLink}>IR-kontakt</div>
+                    </Link>
+                  </div>
+                </div>*/}
+              </div>
+            )}
+          </div>
+
+          {/* Dropdown: För investorer */}
+          <div className={styles.dropdown}>
+            <div
+              className={styles.mainLink}
+              onClick={() => toggleDropdown("forinvest")}
+            >
+              FÖR INVESTORER
+            </div>
+            {activeDropdown === "forinvest" && (
+              <div className={styles.dropdownContent}>
+                <Link href="/forinvest/agare" onClick={closeMenu}>
+                  <div className={styles.subLink}>Ägare</div>
+                </Link>
+                <Link href="/forinvest/styrelse" onClick={closeMenu}>
+                  <div className={styles.subLink}>Styrelse och ledning</div>
+                </Link>
+                <Link href="/forinvest/vision" onClick={closeMenu}>
+                  <div className={styles.subLink}>Affärsidé och vision</div>
+                </Link>
+                <Link href="/forinvest/finansrapport" onClick={closeMenu}>
+                  <div className={styles.subLink}>Finansiella rapporter</div>
+                </Link>
+                <Link href="/forinvest/ir-kontakt" onClick={closeMenu}>
+                  <div className={styles.subLink}>IR-kontakt</div>
+                </Link>
+
+                {/* Sub-dropdown: För investorer */}
+                <div className={styles.subDropdown}>
+                  <div className={styles.subLink}> </div>
                   <div className={styles.subDropdownContent}>
                     <Link href="/omoss/investorer/agare" onClick={closeMenu}>
                       <div className={styles.subSubLink}>Ägare</div>
@@ -159,7 +206,7 @@ export default function Header() {
                   <div className={styles.subLink}>Senaste nytt</div>
                 </Link>
                 <Link href="/produkter/nyhetsbrev" onClick={closeMenu}>
-                  <div className={styles.subLink}>Nyhets brev</div>
+                  <div className={styles.subLink}>Arkiv</div>
                 </Link>
               </div>
             )}

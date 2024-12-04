@@ -19,7 +19,7 @@ export default function Produktion() {
         src="/Nyheter/ostersund_web-scaled.jpg"
         alt="Östersund"
       />
-      <h1>
+      <h1 className={styles.h1div}>
         Auxesis MedTech AB tecknade avtal om en ny produktionsanläggning i
         Östersund
       </h1>
@@ -58,11 +58,6 @@ export default function Produktion() {
         Läs mer på ÖP
       </button>
       <div className={styles.articlesimage}>
-        <img
-          className={styles.image1}
-          src="/Nyheter/fabriklokal.jpeg"
-          alt="Östersunds Auxesis MedTech AB lokal"
-        />
         <img
           className={styles.image2}
           src="/Nyheter/entrelokal.jpeg"

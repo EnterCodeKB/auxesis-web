@@ -18,8 +18,13 @@ export default function Afry() {
         </p>
         <p>https://afry.com/sv</p>
       </div>
-      <div className={styles.articlesimage}>
-        <img className={styles.image1} src="/partners/afry.jpeg" alt="Afry" />
+      <div className={styles.articlesimage2}>
+        <img
+          className={styles.image1}
+          src="/partners/Afry2.png
+        "
+          alt="Afry"
+        />
       </div>
     </div>
   );

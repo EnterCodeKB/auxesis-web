@@ -1,6 +1,6 @@
 .spotlights {
   text-align: center;
-  width: 80%; /* Anpassa till 80% bredd */
+  width: 100%; /* Anpassa till 80% bredd */
   height: 300px; /* Justera till auto */
   display: flex;
   justify-content: center;
@@ -26,7 +26,7 @@
 }
 
 .newsItem {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column; /* Ändra till column om du vill att varje artikel ska staplas vertikalt */
   justify-content: center;
@@ -64,7 +64,6 @@
   margin-top: 20px;
   width: 100px;
   height: 50px;
-  background-color: #1c1e53db;
   color: #fff;
   border: none;
   border-radius: 5px;

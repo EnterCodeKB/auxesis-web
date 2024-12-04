@@ -18,9 +18,9 @@ export default function UtvecklingsTeamet() {
       rubrik: "Susanna Liljedahl,",
       title: "Civilingenjör, PM, anläggning ",
       description: `
-        <p>- Över 10 års erfarenhet från AstraZenecas
+        <p>Över 10 års erfarenhet från AstraZenecas
         forskningsavdelning  </p>
-        <p>- På Zelmic är hon specialiserad på topisk leverans
+        <p>På Zelmic är hon specialiserad på topisk leverans
         av läkemedel med in-vitro modellering,
         formuleringsutveckling, hållbarhetsstudier, hudens
         penetrationsförmåga, valideringsstudier och
@@ -33,10 +33,9 @@ export default function UtvecklingsTeamet() {
       rubrik: "Marie Gårdmark",
       title: "Msci Pharm, PhD ",
       description: `
-      <p>- Regulatorisk FoU; utveckling och
-      implementering av globala regulatoriska
-      strategier</p>
-      <p>- Bakgrund inom Läkemedelsverket</p>
+      <p>Dr Gårdmark har 10 års erfarenhet från ledande roller i små och stora läkemedelsföretag främst inom regulatorisk FoU, vilket exemplifieras av utveckling och implementering av globala regulatoriska strategier, due diligence-aktiviteter och vetenskapliga rådgivningsmöten i EU och USA.</p>
+      <p>Hennes huvudfokus har varit klinisk och preklinisk forskning med flera års erfarenhet från tidig läkemedelsutveckling.  Hennes vetenskapliga bakgrund är inom klinisk farmakologi och farmakometri.</p>
+      <p>Bakgrund inom Läkemedelsverket</p>
  
       `,
       imageUrl: "/team/Marie Gårdmark.jpg",
@@ -46,17 +45,17 @@ export default function UtvecklingsTeamet() {
       rubrik: "Agneta Larhed",
       title: "Msci Pharm, PhD",
       description: `
-      <p>- Varit verksam som forskare och chef inom
-      både akademisk och industriell
-      läkemedelsinnovation</p>
-      <p>- Bakgrund inom Läkemedelsverket</p>
+      <p>Agneta har varit verksam som forskare och chef inom både akademisk och industriell läkemedelsinnovation och produktutveckling i mer än 10 år.</p>
+      <p>Hennes arbete fokuserade på läkemedelsabsorption, läkemedelsleverans och formuleringsutveckling, och täckte en rad formuleringar och doseringsformer som tabletter, geler och mikropartiklar. Dessutom har hon varit delaktig i utvecklingen av kurser och symposier och är idag styrelseledamot i den vetenskapliga sektionen Farmaceutik i Läkemedelsakademien.</p>
+
+      <p>Bakgrund inom Läkemedelsverket</p>
       `,
       imageUrl: "/team/Agneta Larhed.jpg",
     },
   ];
 
   return (
-    <section className={styles.team}>
+    <section className={styles.team3}>
       <h2 className={styles.presentation}>
         TEAMET BAKOM ASA.P LÄKEMEDELSUTVECKLING
       </h2>

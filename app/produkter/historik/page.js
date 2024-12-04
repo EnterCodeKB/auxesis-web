@@ -46,9 +46,9 @@ export default function Historik() {
               Auxesis utvecklar flera preparat som blockerar smärtsignalen till
               hjärnan och tar bort smärta på huden. <br /> <br /> Forskningen
               omfattar produkter för människa och kan också vara användbar för
-              husdjur och boskap även om vissa receptanpassningar per djurart
-              krävs. Kosmetika- och hudvårdsindustrin är ytterligare en
-              målgrupp.
+              husdjur och boskap även om vissa receptanpassningar behöver
+              anpassas per djurart krävs. Kosmetika- och hudvårdsindustrin är
+              ytterligare en målgrupp.
             </p>
           </div>
         </div>

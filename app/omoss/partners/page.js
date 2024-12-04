@@ -173,10 +173,11 @@ export default function Partners() {
             <h3 className={styles.title}>Zelmic AB</h3>
             <div className={styles.description}>
               <p>
-                Zelmic är ett erfaret, privatägt CRO (Contract Research
-                Organisation) och CDMO (Contract Development and Manufacturing
-                Organization) som helt fokuserar på utvecklingen av topikala och
-                transdermala läkemedelsformuleringar.
+                Zelmic utvecklar topikala och transdermala
+                läkemedelsformuleringar och stödjer och verifierar Auxesis
+                formuleringar. Zelmic är ett erfaret, privatägt CRO (Contract
+                Research Organisation) och CDMO (Contract Development and
+                Manufacturing Organization).
               </p>
 
               <div className={styles.itemsUrl}>www.zelmic.se</div>
@@ -194,6 +195,41 @@ export default function Partners() {
             </div>
           </div>
         </div>
+
+        <div className={styles.container}>
+          <Link href="https://afry.com/sv">
+            <img
+              src="/partners/Afry.jpeg"
+              alt="AFRY"
+              className={styles.image}
+            />
+          </Link>
+          <div className={styles.content}>
+            <h3 className={styles.title}>AFRY</h3>
+            <div className={styles.description}>
+              <p>
+                AFRY hjälper Auxesis i processen att planera och konstruera en
+                hållbar produktionsmodell. AFRY är den företagsgrupp som stöttar
+                Auxesis med allt mellan den pågående medicinska forskningen,
+                Läkemedelsverket och uppförandet av den planerade fabriksenheten
+                i Östersund.
+              </p>
+
+              <div className={styles.itemsUrl}>www.afry.com/sv </div>
+            </div>
+            <div>
+              <Link href="https://afry.com/sv">
+                <button
+                  className={styles.infoButton}
+                  onClick={() => handleInfoClick(itemsUrl)}
+                >
+                  Mer om AFRY
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
+
         <div className={styles.container}>
           <Link href="https://eip.com/global/">
             <img
@@ -207,9 +243,9 @@ export default function Partners() {
             <div className={styles.description}>
               <p>
                 Auxesis samarbetar med EIP gällande patent för ASA.P® och andra
-                kommande patentansökningar. EIP har en avgörande kompetens när
-                det gäller att formulera bra patentansökningar över hela
-                världen.
+                kommande patentansökningar. EIP har bred och internationell en
+                avgörande kompetens när det gäller att formulera bra
+                patentansökningar över hela världen.
               </p>
               <div className={styles.itemsUrl}>www.eip.com/global</div>
               <div>
@@ -240,8 +276,8 @@ export default function Partners() {
             <div className={styles.description}>
               <p>
                 Auxesis har Edlund & Partners som revisionsfirma. Edlund &
-                Partners har kompetens och rätt att hjälpa bolag med
-                börsnoteringar.
+                Partners har kompetens och erfarenhet och rätt att hjälpa bolag
+                med börsnoteringar.
               </p>
               <div className={styles.itemsUrl}>www.edlundpartners.se</div>{" "}
             </div>

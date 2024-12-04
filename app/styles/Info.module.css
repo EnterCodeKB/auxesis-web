@@ -4,14 +4,13 @@
   align-items: center;
   text-align: center;
   background-color: #c9e7f153;
-  padding: 16px;
+  padding: 10px;
   text-align: center;
   margin-left: 80px;
   margin-top: 100px;
   width: 100%; /* Gör bredden mer flexibel */
   max-width: 1100px; /* Sätt en maxbredd för stora skärmar */
 }
-
 .title {
   font-size: 2rem; /* Använd rem för bättre skalbarhet */
   font-weight: 700;
@@ -21,6 +20,9 @@
   margin-bottom: -50px;
 }
 
+.h1div {
+  line-height: 4rem;
+}
 .newsContainer {
   display: flex;
   flex-wrap: wrap;
@@ -33,14 +35,14 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 24px;
   row-gap: 60px;
   margin-top: 40px;
 }
 
 .newsItem {
   background: white;
-  height: 350px;
+  height: 200px;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   width: 100%; /* Gör item bredd flexibel */
@@ -48,6 +50,13 @@
   overflow: hidden;
   text-align: left;
   padding: 0 20px 40px; /* Lägg till padding för utrymme för knappen */
+}
+
+.date {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: -20px;
+  margin-bottom: 10px;
 }
 
 .image {
@@ -61,13 +70,13 @@
 }
 
 .content {
-  padding: 20px;
+  padding: 10px;
 }
 
 .newsTitle {
   font-size: 1.5rem;
-  font-weight: 600;
-  color: #282938;
+  font-weight: 590;
+  color: #23559b;
 }
 .description {
   font-size: 1rem;
@@ -84,25 +93,21 @@
   cursor: pointer;
   font-size: 1rem;
   font-weight: 500;
-  transition: background-color 0.3s;
 }
 
 .readMoreButton:hover {
-  background-color: #0056b3;
+  background-color: lightcyan;
 }
 
-.infoButton {
+.infoButton1 {
   margin-top: 30px;
   padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
+
   border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 500;
-  transition: background-color 0.3s;
-  margin-left: 100px;
+  margin-bottom: 20px;
 }
 
 .infoButton:hover {
@@ -172,19 +177,37 @@
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.articlesimage2 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.articlesimage3 {
+  width: 100vh;
+  height: auto;
+  object-fit: cover;
+}
+
+.asap1 {
+  width: 500px;
+  height: auto;
+}
+.asap2 {
+  width: 500px;
+  height: auto;
 }
 .image1 {
   width: 200%;
   margin-bottom: 20px;
 }
-
-.image2 {
-  width: 50vh;
-  height: auto;
-  margin-bottom: 20px;
-}
 .image1 {
   width: 400px;
+}
+.image2 {
+  width: 500px;
+  height: auto;
 }

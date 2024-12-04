@@ -36,9 +36,9 @@ export default function Vision() {
             sig själv. Studier pekar på att ASA.P stannar på huden och inte går
             ut i blodomloppet.
             <br /> <br />
-            Baserat på eget patent är Auxesis först med att utveckla innovativa
-            och tillgängliga läkemedel som inte bara lindrar utan snabbt tar
-            bort smärta och irritation på huden.
+            Baserat på egna patenter är Auxesis först med att utveckla
+            innovativa och tillgängliga läkemedel som inte bara lindrar utan
+            snabbt tar bort smärta och irritation på huden.
           </p>
         </div>
       </section>

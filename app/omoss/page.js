@@ -53,20 +53,30 @@ export default function About() {
         >
           Vår affärsidé: Auxesis utvecklar, baserat på eget patent, innovativa
           läkemedel som snabbt tar bort smärta och irritation på huden hos både
-          människor och djur och som är lättillgängliga för konsumenter och
+          människor och djur och som är lättillgängligt för konsumenter och
           olika yrkesgrupper.
         </p>
-        <h2>Unik innovation som blockerar smärtsignalen </h2>
+        <h2>Banbrytande innovation som blockerar smärtsignalen </h2>
         <p className={styles.ptext}>
-          Efter många års forskning och tusentals försök har Auxesis,
-          tillsammans med professor Moustapha Hassan och hans team på Karolinska
-          Institutet, Stockholm lyckats göra det som ingen annan har gjort
-          tidigare: att stabilisera Acetylsalicylsyra (ASA) i flytande form. Den
-          här innovationen gör det möjligt att applicera Acetylsalicylsyran på
-          huden. <br />
-          Auxesis tar nu fram den första receptfria konsumentprodukten som
-          snabbt tar bort smärta och irritation på hud. Produktens namn är
-          ASA.P®.
+          Acetylsalicylsyra (ASA) är en av de mest välkända substanserna för
+          smärtlindring och har använts i läkemedel sedan slutet av 1800-talet,
+          inklusive Treo, Bamyl, Aspirin. <br /> <br />
+          Efter flera års forskning och tusentals försök har Auxesis tillsammans
+          med professor Moustapha Hassan och hans team lyckats göra det som
+          ingen annan har lyckats med förut: Att stabilisera ASA i flytande
+          form. <br /> <br />
+          Med ASA i flytande form finns möjligheter att utveckla helt nya
+          beredningsformer som enkelt kan appliceras direkt på huden och ta
+          bortsmärta eller irritation inom några minuter. <br /> <br />
+          Genom att tillsätta andra farmaceutiska aktiva substanser bibehålls
+          effekten till dess att kroppen har läkt sig själv. Studier pekar på
+          att ASA.P stannar på huden och inte går ut i blodomloppet. <br />{" "}
+          <br />
+          Baserat på eget patent är Auxesis först med att utveckla innovativa
+          och lättillgängliga läkemedel som inte bara lindrar utan snabbt tar
+          bort smärta och irritation på huden, både hos människor och djur.{" "}
+          <br />
+          Produktens namn är ASA.P®.
         </p>
         <div className={`${styles.andrast} flex items-center justify-between`}>
           <div ref={imgspelRef} className={styles.imgdiv}>
