@@ -4,7 +4,7 @@ export default function Euroclear() {
   return (
     <div className={styles.details}>
       <h1> Euroclear​</h1>
-      <h4>22023-08-18</h4>
+      <h4>2023-08-18</h4>
       <p>
         AUXESIS PHARMA HOLDING AB (publ) är nu avstämningsbolag och igång med
         Euroclear Sweden AB som värdepappersinstitut. Detta är sista fasen,

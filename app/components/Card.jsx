@@ -4,16 +4,18 @@ export default function Card() {
   return (
     <section>
       <div className={styles.cardsdiv}>
-        <h1>OLIKA SMÄRTOR</h1>
-        <p>
-          Smärta kan yttra sig på olika sätt beroende på dess orsak och
-          intensitet. Den kan sträcka sig från mild obehag, såsom klåda eller
-          irritation orsakad av insektsbett, till mer intensiva känslor som
-          brännande, stickande eller svullnad från giftiga stick eller skador.
-          Hos människor kan smärta ofta beskrivas och behandlas effektivt, men
-          hos djur varierar uttrycken för smärta, vilket gör det svårare att
-          diagnostisera och hantera.
-        </p>
+        <div className={styles.text1}>
+          <h1>OLIKA SMÄRTOR</h1>
+          <p className={styles.ptext}>
+            Smärta kan yttra sig på olika sätt beroende på dess orsak och
+            intensitet. Den kan sträcka sig från mild obehag, såsom klåda eller
+            irritation orsakad av insektsbett, till mer intensiva känslor som
+            brännande, stickande eller svullnad från giftiga stick eller skador.
+            Hos människor kan smärta ofta beskrivas och behandlas effektivt, men
+            hos djur varierar uttrycken för smärta, vilket gör det svårare att
+            diagnostisera och hantera.
+          </p>
+        </div>
         <div className={styles.div44}>
           <div className={styles.div45}>
             {/*första bilden */}

@@ -92,7 +92,7 @@ const Agenda = () => {
       <div>
         <img
           className={styles.imgbox}
-          src="  /produkter/helhetssyn3.png"
+          src="  /produkter/helhetssyn4.png"
           alt="Agenda Auxesis"
         />
       </div>

@@ -13,6 +13,13 @@
   transform: translateY(0); /* Flyttar till sin normala position */
 }
 
+.h1div {
+  line-height: 3rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 /* Sektionens styling */
 .section {
   padding: 20px;

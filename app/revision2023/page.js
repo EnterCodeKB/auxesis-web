@@ -7,13 +7,13 @@ export default function Revision() {
   };
   return (
     <>
-      <div className={styles.revision}>
+      <section>
         <img
           loading="revision"
           src="/Finance/revisionberät.2023_Sida_1.jpg"
           className={styles.imgrevision}
         />
-      </div>
+      </section>
       <div className={styles.scrollToTop} onClick={scrollToTop}>
         ⬆️
       </div>

@@ -39,7 +39,9 @@ export default function About() {
   return (
     <>
       <section className={styles.section}>
-        <h2>Nytt läkemedelsföretag förändrar spelplanen </h2>
+        <h1 className={styles.h1div}>
+          Nytt läkemedelsföretag förändrar spelplanen{" "}
+        </h1>
         <p className={styles.ptext}>
           AUXESIS PHARMA HOLDING AB (publ) är ett publikt företag som fokuserar
           på utveckling av läkemedel för människor och djur inom kategorin

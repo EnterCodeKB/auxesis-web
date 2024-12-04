@@ -201,7 +201,7 @@ export default function Nyheter() {
   };
 
   return (
-    <div>
+    <section>
       <h2 className={styles.title}>Alla Nyheter</h2>
       <div className={styles.spotlights}>
         <div className={styles.newsContainerFullPage}>
@@ -231,6 +231,6 @@ export default function Nyheter() {
           ⬆️
         </div>
       </div>
-    </div>
+    </section>
   );
 }

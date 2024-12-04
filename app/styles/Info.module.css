@@ -6,8 +6,8 @@
   background-color: #c9e7f153;
   padding: 16px;
   text-align: center;
-  margin-left: 150px;
-  margin-top: 60px;
+  margin-left: 80px;
+  margin-top: 100px;
   width: 100%; /* Gör bredden mer flexibel */
   max-width: 1100px; /* Sätt en maxbredd för stora skärmar */
 }
@@ -17,7 +17,8 @@
   font-weight: 700;
   text-align: center;
   color: #1c1e53;
-  margin-left: 100px;
+  margin-left: 80px;
+  margin-bottom: -50px;
 }
 
 .newsContainer {

@@ -111,22 +111,9 @@ export default function Team() {
         Auxesis har ett kvalificerat team med en bra sammansättning av
         kompetenser för att hantera bolagets samlade uppdrag och utmaningar:
       </p>
-      <div className={styles.firstRow}>
-        <h3 className={styles.divli1}>Styrning och ledning.</h3>
-        <h3 className={styles.divli2}>Forskning och utveckling.</h3>
-      </div>
-      <div className={styles.secondGrid}>
-        <h3 className={styles.divli3}>Produktion.</h3>
-        <h3 className={styles.divli4}>
-          Regulatoriska frågor kopplat till läkemedelsprocessen.
-        </h3>
-        <h3 className={styles.divli5}>Affärsjuridik och varumärken.</h3>
-        <h3 className={styles.divli6}>
-          Kommunikation, PR, Investor relation och Public Affairs.
-        </h3>
-        <h3 className={styles.divli7}>Försäljning och marknadsföring.</h3>
-        <h3 className={styles.divli8}>Ekonomi och finansiering.</h3>
-      </div>
+      <img className={styles.infografik} src="/team/infografik.png" alt="" />
+
+      <div className={styles.firstRow}></div>
 
       <h2 className={styles.presentation}>VD OCH GRUNDAREN </h2>
 
@@ -136,6 +123,7 @@ export default function Team() {
           alt="title1"
           className={styles.image}
         />
+
         <div className={styles.content}>
           <h3 className={styles.rubrik1}>Roar Adelsten </h3>
           <h5 className={styles.title1}>VD, grundare och styrelseledamot</h5>

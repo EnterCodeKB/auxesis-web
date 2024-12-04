@@ -5,40 +5,23 @@ export default function Protokol() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
   return (
     <>
-      <div className={styles.protokol}>
-        <img
-          loading="protokol"
-          src="/Protokoll-Arsstamma-Auxesis-2023/1724271742284-b8619053-9216-41dc-89c2-44c6d549763a_1.jpg"
-          className={styles.imgprotokol}
-        />
-        <img
-          loading="protokol"
-          src="/Protokoll-Arsstamma-Auxesis-2023/1724271742284-b8619053-9216-41dc-89c2-44c6d549763a_2.jpg"
-          className={styles.imgprotokol}
-        />
-        <img
-          loading="protokol"
-          src="/Protokoll-Arsstamma-Auxesis-2023/1724271742284-b8619053-9216-41dc-89c2-44c6d549763a_3.jpg"
-          className={styles.imgprotokol}
-        />
-        <img
-          loading="protokol"
-          src="/Protokoll-Arsstamma-Auxesis-2023/1724271742284-b8619053-9216-41dc-89c2-44c6d549763a_4.jpg"
-          className={styles.imgprotokol}
-        />
-        <img
-          loading="protokol"
-          src="/Protokoll-Arsstamma-Auxesis-2023/1724271742284-b8619053-9216-41dc-89c2-44c6d549763a_5.jpg"
-          className={styles.imgprotokol}
-        />
-        <img
-          loading="protokol"
-          src="/Protokoll-Arsstamma-Auxesis-2023/1724271742284-b8619053-9216-41dc-89c2-44c6d549763a_6.jpg"
-          className={styles.imgprotokol}
-        />
-      </div>
+      <section className={styles.protokolSection}>
+        <h2>Protokoll från Årsstämman 2023</h2>
+        <p>
+          Du kan ladda ner protokollet som en PDF-fil genom att klicka på
+          knappen nedan.
+        </p>
+        <a
+          href="/Finance/240618 Protokoll årsstämma.pdf"
+          download="Protokoll-Arsstamma-Auxesis-2023.pdf"
+          className={styles.downloadButton}
+        >
+          Ladda ner PDF
+        </a>
+      </section>
       <div className={styles.scrollToTop} onClick={scrollToTop}>
         ⬆️
       </div>
