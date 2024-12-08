@@ -1,4 +1,18 @@
+//app/data/newsItems.js
+
 export const newsItems = [
+  {
+    title: " Auxesis Pharma har ansökt om internationellt patent ",
+    subtitle: "2024/11/29",
+    description: `
+        <p></p>
+          `,
+    imageUrl: "/patent/D4DB271D-DC40-4CAE-A2F2-E55F9A89A57C.jpeg",
+
+    slug: "internationelltpatent",
+    isLatest: true, // Märkt som senaste
+  },
+
   {
     title: "Auxesis MedTech AB ",
     subtitle: "2024/09/21",
@@ -42,18 +56,18 @@ export const newsItems = [
     isLatest: true, // Märkt som senaste
   },
   {
-    title: "Ny partner – Zelmic AB",
+    title: "Ny partner Zelmic AB",
     subtitle: "2024/07/10",
     description: `
           <p></p>
           `,
     imageUrl: "/partners/zelmic.png",
-    slug: "#",
+    slug: "nypartnerzelmic",
     isLatest: true, // Märkt som senaste
   },
   {
-    title: "Auxesis MedTech AB",
-    subtitle: "2024-05-23",
+    title: "Auxesis MedTech AB är nu registrerad",
+    subtitle: "2024/05/23",
     description: `
           <p></p>
           `,
@@ -62,14 +76,24 @@ export const newsItems = [
     isLatest: true, // Märkt som senaste
   },
   {
+    title: "Viktig aktionärinformation ",
+    subtitle: "2024/05/24",
+    description: `
+          <p></p>
+          `,
+    imageUrl: "",
+    slug: "avstamningsbolag",
+    isLatest: true,
+  },
+  {
     title: "AUXESIS Kallelse till årsstämma",
     subtitle: "2024/06/18",
     description: `
           <p></p>
           `,
-    imageUrl: "/Loganstext.png",
+    imageUrl: "",
     slug: "kallelse2024",
-    isLatest: true, // Ej senaste
+    isLatest: true,
   },
   {
     title: "Värdering AUXESIS",
@@ -108,19 +132,10 @@ export const newsItems = [
           <p></p>
           `,
     imageUrl: "/Loganstext.png",
-    slug: "#",
-    isLatest: true, // Ej senaste
+    slug: "patentasokanregistrerad",
+    isLatest: true,
   },
-  {
-    title: "Produktionsplats​",
-    subtitle: "2023/10/04",
-    description: `
-          <p></p>
-          `,
-    imageUrl: "/Loganstext.png",
-    slug: "#",
-    isLatest: true, // Ej senaste
-  },
+
   {
     title: "Euroclear Sweden AB​",
     subtitle: "2023/08/15",
@@ -131,16 +146,16 @@ export const newsItems = [
     slug: "euroclear",
     isLatest: true, // Ej senaste
   },
-  {
-    title: "Östersund​",
-    subtitle: "2023/08/11",
-    description: `
-          <p></p>
-          `,
-    imageUrl: "/Loganstext.png",
-    slug: "#",
-    isLatest: true, // Ej senaste
-  },
+  //{
+  // title: "Östersund​",
+  // subtitle: "2023/08/11",
+  // description: `
+  //     <p></p>
+  //     `,
+  //imageUrl: "/Loganstext.png",
+  // slug: "#",
+  // isLatest: true, // Ej senaste
+  //},
   {
     title: "Värdering AUXESIS 03/2023​",
     subtitle: "2023/03/01",
@@ -152,7 +167,7 @@ export const newsItems = [
     slug: "vardering2023",
     isLatest: true, // Ej senaste
   },
-  {
+  /*{
     title: "Nyheter Euroclear Sverige​",
     subtitle: "2022/05/12",
     description: `
@@ -162,7 +177,7 @@ export const newsItems = [
     imageUrl: "/Loganstext.png",
     slug: "#",
     isLatest: true, // Ej senaste
-  },
+  },*/
   {
     title: "Publikt Aktiebolag​",
     subtitle: "2022/09/21",
@@ -171,11 +186,18 @@ export const newsItems = [
           
           `,
     imageUrl: "/Loganstext.png",
-    slug: "#",
-    isLatest: true, // Ej senaste
+    slug: "publiktaktiebolag",
+    isLatest: true,
   },
 ];
 
+// Hjälpfunktion för paginering
+export const paginate = (items, page, itemsPerPage) => {
+  const startIndex = (page - 1) * itemsPerPage;
+  return items.slice(startIndex, startIndex + itemsPerPage);
+};
+
+// Filtrera senaste nyheter
 export const latestNews = newsItems
   .filter((item) => item.isLatest)
   .map(({ title, subtitle }) => ({ title, subtitle }));

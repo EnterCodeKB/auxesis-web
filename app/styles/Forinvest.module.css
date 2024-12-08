@@ -11,6 +11,11 @@
   margin-bottom: 100px;
 }
 
+.h1div {
+}
+.h2divdark {
+  color: #1c1e53;
+}
 .ir {
   flex-grow: 1;
   width: 60%; /* More space for text */
@@ -41,7 +46,7 @@
 .world {
   width: 100%; /* Make image responsive */
   max-width: 700px; /* Set a max-width */
-  margin-top: 20px; /* Adjust margin for better spacing */
+  margin-top: 120px; /* Adjust margin for better spacing */
   display: block; /* Ensure it behaves like a block element */
 }
 .fettext {
@@ -96,34 +101,81 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
-  margin-left: 50px;
+  margin-left: 100px;
   gap: 20px;
-  width: 100%;
+  width: 80%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-left: 150px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.whiteboard1 {
+  padding: 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-left: 60px;
+  gap: 20px;
+}
+
+.whiteboard2 {
+  padding: 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 80%;
+  margin-left: 150px;
+  margin-top: -30px;
 }
 
 .aegaretext {
   display: flex;
   justify-content: flex-start;
   width: 40%;
-  margin-left: 40px;
+  margin-left: 60px;
 }
 
 .h2 {
-  margin-left: 20px;
+  margin-left: -130px;
   color: #23559b;
-  margin-left: 50px;
 }
 .h2div {
   margin-left: 550px;
   color: #23559b;
 }
-
+.h2roar {
+  margin-left: -175px;
+  color: #23559b;
+}
+.h1div {
+  font-size: 58px; /* Använd rem för bättre skalbarhet */
+  font-weight: 700;
+  color: #1c1e53;
+  display: flex;
+  justify-content: center;
+}
 .ptext {
   font-size: 20px; /* Use rem for responsiveness */
   line-height: 1.2; /* Improve readability */
   margin-bottom: 1rem;
   color: #555;
   margin-top: 34px;
+  margin-left: 60px;
+}
+.ptext2 {
+  font-size: 20px; /* Use rem for responsiveness */
+  line-height: 1.2; /* Improve readability */
+  margin-bottom: 1rem;
+  color: #555;
+  margin-top: 34px;
+  margin-left: 3s0px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .ptext1 {

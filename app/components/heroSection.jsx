@@ -30,9 +30,9 @@ export default function HeroSection() {
                 />
               </Link>
               <div className={styles.div16}>
-                <h1 className={styles.divh1}>
+                <h2 className={styles.divh1}>
                   ETT INNOVATIVT <br /> LÄKEMEDELSFÖRETAG
-                </h1>
+                </h2>
                 <h2 className={styles.h2}>MED BANBRYTANDE PATENT</h2>
               </div>
               <div className={styles.div18}></div>

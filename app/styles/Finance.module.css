@@ -5,8 +5,38 @@
   justify-content: center;
   width: 100%;
   gap: 20px;
-  margin-top: 50px;
+  margin-top: 150px;
   margin-left: 60px;
+}
+
+.whiteboard {
+  padding: 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.section {
+  max-width: 100%; /* Limit the maximum width */
+  margin-left: 100px;
+}
+.ptext {
+  font-size: 20px; /* Use rem for responsiveness */
+  line-height: 1.2; /* Improve readability */
+  margin-bottom: 1rem;
+  color: #555;
+  display: flex;
+  text-align: left;
+  align-items: flex-start;
+  margin-left: 30px;
+}
+
+.h2divdark {
+  color: #1c1e53;
 }
 
 .ptextunder {
@@ -25,7 +55,25 @@
   display: flex;
   margin-top: 20px;
   flex-direction: column;
-  padding: 0 17px;
+  margin-bottom: 20px;
+  margin-right: 40px;
+  align-items: baseline;
+}
+
+.textcontainer2 {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-right: 40px;
+}
+.textcontainer3 {
+  display: flex;
+  margin-top: 15px;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-right: 40px;
+  align-items: baseline;
 }
 
 .textrubriken {
@@ -103,18 +151,22 @@
   gap: 32px; /* Avstånd mellan knapparna */
   justify-content: center; /* Centrerar knapparna */
   align-items: center;
+  text-align: center;
   margin-top: 20px;
-  margin-left: 130px;
+  margin-left: 50px;
   margin-bottom: 50px;
 }
 
 .column {
-  min-width: 32%; /* Ser till att kolumnerna inte blir för små */
   max-height: 500px;
-  margin-bottom: 50px;
+  width: 30%;
   display: flex;
   flex-direction: column;
   gap: 24px;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  align-items: baseline;
 }
 
 .imgdiv {
@@ -188,6 +240,41 @@
   transition: background-color 0.3s;
   border-radius: 8px;
 }
+
+.buttongradient2 {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.16px;
+  justify-content: center;
+  width: 130px;
+  height: 50px;
+  background-color: #06327d;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  border-radius: 8px;
+  margin-left: 30px;
+  margin-top: 60px;
+}
+
+.buttongradient3 {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.16px;
+  justify-content: center;
+  width: 130px;
+  height: 50px;
+  background-color: #06327d;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  border-radius: 8px;
+  margin-top: -40px;
+  margin-bottom: 10px;
+}
+
 .button:hover {
   border-color: #a3dcef;
 }

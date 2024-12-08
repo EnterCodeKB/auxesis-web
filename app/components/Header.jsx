@@ -115,7 +115,7 @@ export default function Header() {
               className={styles.mainLink}
               onClick={() => toggleDropdown("forinvest")}
             >
-              FÖR INVESTORER
+              FÖR INVESTERARE
             </div>
             {activeDropdown === "forinvest" && (
               <div className={styles.dropdownContent}>

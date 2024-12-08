@@ -59,13 +59,10 @@ export default function Finance() {
                   loading="finance-bild2"
                   srcSet="/finance-bild2.png"
                   className={styles.imgfront}
-                />{" "}
+                />
               </div>
-              <div className={styles.textcontainer}>
-                <div className={styles.textrubriken}>
-                  Protokoll Årsstämman 2023/ Protocol Annual General Meeting
-                  2023
-                </div>
+              <div className={styles.textcontainer2}>
+                <div className={styles.textrubriken}>Protokoll Årsstämman</div>
                 <p className={styles.ptext}>
                   Protokoll från Årsstämman 2023 för AUXESIS PHARMA HOLDING AB
                   (publ) med organisationsnummer 559195-6486.{" "}
@@ -73,7 +70,7 @@ export default function Finance() {
                 <div className={styles.btncontainer}>
                   <div className={styles.btnbox}>
                     <button
-                      className={styles.buttongradient}
+                      className={styles.buttongradient2}
                       onClick={() => handleScrollToTop()}
                     >
                       <Link
@@ -98,7 +95,7 @@ export default function Finance() {
                   className={styles.imgfront}
                 />{" "}
               </div>
-              <div className={styles.textcontainer}>
+              <div className={styles.textcontainer3}>
                 <div className={styles.textrubriken}>
                   Revisionsberättelse 2023
                 </div>
@@ -111,7 +108,7 @@ export default function Finance() {
                 <div className={styles.btncontainer}>
                   <div className={styles.btnbox}>
                     <button
-                      className={styles.buttongradient}
+                      className={styles.buttongradient3}
                       onClick={() => handleScrollToTop()}
                     >
                       <Link

@@ -5,14 +5,14 @@ export default function IrKontakt() {
     <>
       <div className={styles["ir-container"]}>
         <div className={styles.ir}>
-          <h2 className={styles.h2}>IR-kontakter</h2>
-          <h3 className={styles.h3}>Rune Nordström</h3>
+          <h1 className={styles.h1div}>IR-kontakter</h1>
+          <h2 className={styles.h2}>Rune Nordström</h2>
           <p className={styles.ptext}>
             Styrelseordförande <br />
             E-post: rune.nordstrom@auxesispharma.com <br />
             Mobil: 46 (0) 70-602 65 20
           </p>
-          <h3 className={styles.h3}>Roar Adelsten</h3>
+          <h2 className={styles.h2roar}>Roar Adelsten</h2>
           <p className={styles.ptext}>
             VD och grundare <br />
             E-post: roar.adelsten@auxesispharma.com <br />

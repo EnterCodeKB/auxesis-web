@@ -14,7 +14,9 @@ export default function ProduktUtveckling() {
             <img className={styles.imgakne} src="/produkter/akne.png" alt="" />
           </div>
           <div className={styles.textcontainer}>
-            <h2 className={styles.h3}>Nya produkter lanseras i snabb takt</h2>
+            <h2 className={styles.h2utveckling}>
+              Nya produkter lanseras i snabb takt
+            </h2>
             <p className={styles.ptext}>
               Produktutvecklingsstrategin är att utveckla innovativa läkemedel
               som snabbt tar bort smärta och irritation på huden hos både

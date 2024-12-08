@@ -1,9 +1,13 @@
 import styles from "../../styles/Info.module.css";
 
-export default function Afry() {
+export default function RegSmart() {
   return (
     <div className={styles.details}>
-      <h1 className={styles.h1div}> Ny partner – RegSmart Life Sciences AB​</h1>
+      <h1 className={styles.h1div}>
+        {" "}
+        Ny partner – <br />
+        RegSmart Life Sciences AB​
+      </h1>
       <h4>2024-07-11</h4>
       <div className={styles.ptext}>
         <p>

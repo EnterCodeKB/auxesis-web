@@ -18,39 +18,6 @@ const AuxesisMedia = () => {
       <section className={styles.press}>
         <div className={styles.media}>
           <div className={styles.container}>
-            <Link href="https://ostersundsfk.se/ostersunds-fotbollsklubb-erhaller-donation-fran-captigenics-capital-ab/">
-              <img src="/media/ofk-19.png" alt="ÖFK" className={styles.image} />
-            </Link>
-            <div className={styles.content}>
-              <h3 className={styles.title}>
-                Svenska Fotbollsklubben Östersund Fotbolls Klubb
-              </h3>
-              <div className={styles.description}>
-                <p>
-                  I september 2023 kommer Auxesis Pharma att lämna in en
-                  patentansökan till Patent- och registreringsverket Sverige.
-                  När det är klart riktas planerna mot Östersund. – Vi vill
-                  bygga en fabrik där uppe. Vi börjar planera fabriken när
-                  forskargruppen på Karolinska i Stockholm är klara med sitt
-                  jobb. Vi vill också stödja fotbollen och vill lära känna
-                  kommunen där vi ska etablera oss, säger Roar Adelsten.
-                </p>
-              </div>
-
-              <div>
-                <Link href="https://ostersundsfk.se/ostersunds-fotbollsklubb-erhaller-donation-fran-captigenics-capital-ab/">
-                  <button
-                    className={styles.infoButton}
-                    onClick={() => handleInfoClick(itemsUrl)}
-                  >
-                    Läs mer här
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className={styles.container}>
             <Link href="">
               <img
                 src="/media/ostersunds-posten.svg"

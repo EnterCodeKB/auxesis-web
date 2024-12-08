@@ -141,6 +141,10 @@
   width: 100%; /* Make the image responsive */
   max-width: 500px; /* Set a max-width */
   margin-left: 100px;
+  margin-top: 50px;
+}
+.h2utveckling {
+  margin-left: -60px;
 }
 
 /*PATENT*/

@@ -37,7 +37,7 @@ section {
   max-width: 100%; /* Limit the maximum width */
   padding: 20px; /* Add padding for spacing */
   margin: 0 auto; /* Center the content */
-  margin-top: 100px;
+  margin-top: 60px;
   margin-left: 60px;
 }
 
@@ -45,6 +45,16 @@ a {
   text-decoration: none; /* Tar bort understrykning från länkar */
 }
 
+.whiteboard {
+  padding: 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
 i {
   color: white;
   font-size: 24px; /* Storlek */
@@ -66,14 +76,17 @@ h2 {
   font-size: 2.5rem;
   display: flex;
   justify-content: center;
+  line-height: 3rem;
+  font-weight: 570;
 }
 
 h1 {
   font-size: 58px; /* Använd rem för bättre skalbarhet */
-  font-weight: 700;
+  font-weight: 570;
   color: #1c1e53;
   display: flex;
   justify-content: center;
+  line-height: 4rem;
 }
 
 ul,
