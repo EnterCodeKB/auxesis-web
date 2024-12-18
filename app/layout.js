@@ -3,7 +3,7 @@
 import Footer2 from "./components/underFooter";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import "./styles/globals.css";
+import "./globals.css";
 
 import Hero from "./components/HeroSection";
 import "bootstrap-icons/font/bootstrap-icons.css";
