@@ -1,3 +1,5 @@
+/*app/globals.css:*/
+
 @tailwind components;
 @tailwind utilities;
 
@@ -5,12 +7,24 @@
 /*Loggans färg: HEX: #23559B
 h2 färg: color: #23559B;
 h1 färg:   color: #1c1e53;
+background-color: #91C2D3 - test
 */
 /* backgroundsfärgen: #ebf4f9*/
 /* ikoner adress: <i className="bi bi-geo-alt"></i>*/
 /* postadress: <i class="bi bi-envelope"></i>
 /* knappar: #06327d*/
-
+/*.whiteboard {
+  padding: 40px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}*/
 /* styles/globals.css */
 span {
   font-weight: bold;
@@ -65,8 +79,9 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  background-color: #ebf4f9;
+  /*background-image: url("/bgbild2.jpg");*/
   font: 500 24px/150% Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+  background-color: #c9e7f153;
 }
 
 /* globals.css */
@@ -105,6 +120,8 @@ p,
   line-height: 1.2; /* Improve readability */
   margin-bottom: 1rem;
   color: #555;
+  margin: 0;
+  color: inherit;
 }
 
 .div {
@@ -184,16 +201,63 @@ h3 {
     color: white; /* Mörk text för mindre skärmar */
   }
 }
-@media (max-width: 768px) {
-  h1 {
-    font-size: 28px;
-    line-height: 36px;
+@media (max-width: 991px) {
+  /* h1 {
+    font-size: 3rem; /* 48px 
     margin: 0 auto;
     width: 90%;
   }
 
   h2 {
-    font-size: 24px;
-    margin-top: 10px;
+    font-size: 2rem;
+  }
+
+  p,
+  .ptext {
+    font-size: 0.95rem; /* Slightly smaller text
+  }
+
+  section {
+    padding: 20px;
+  } */
+
+  .scrollToTop {
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+  }
+}
+
+/* Small screens (max-width: 768px) */
+@media (max-width: 768px) {
+  /* h1 {
+    font-size: 2.5rem; /* 40px
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  p,
+  .ptext {
+    font-size: 0.875rem; /* Smaller text 
+    line-height: 1.5;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  .div {
+    flex-direction: column;
+    align-items: center;
+  }*/
+
+  .scrollToTop {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
   }
 }

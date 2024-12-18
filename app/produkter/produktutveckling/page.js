@@ -8,7 +8,7 @@ export default function ProduktUtveckling() {
   };
   return (
     <>
-      <section className={styles.section}>
+      <section className={styles.sectionU}>
         <div className={styles.container1}>
           <div>
             <img className={styles.imgakne} src="/produkter/akne.png" alt="" />

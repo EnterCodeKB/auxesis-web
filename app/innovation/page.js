@@ -9,24 +9,33 @@ const Innovation = () => {
           Ständig utveckling och bestående förändring
         </h1>
         <p className={styles.ptext}>
-          Innovation ligger i vårt DNA. Auxesis verksamhet startade med en
-          glödande övertygelse om att vilja upptäcka något nytt och nyttigt för
-          mänskligheten. Det blev startskottet för en omdanande forskningsinsats
-          som tog flera år och flera tusen försök innan vi lyckades nå vårt mål:
-          att stabilisera Acetylsalicylsyra i flytande form för att kunna
-          applicera den på huden.
+          Innovation är mer än bara ett ord för oss – det är kärnan i allt vi
+          gör. Auxesis grundades med en passionerad vision: att skapa något
+          banbrytande som kan förbättra människors liv. Med den visionen som
+          drivkraft inledde vi en forskningsresa fylld av uthållighet,
+          kreativitet och en aldrig sinande tro på att det omöjliga kunde bli
+          möjligt. <br /> <br />
+          Efter flera års intensivt arbete och tusentals experiment uppnådde vi
+          det som tidigare bara varit en dröm: att stabilisera acetylsalicylsyra
+          i flytande form och göra det möjligt att applicera den direkt på
+          huden. Detta genombrott blev början på något stort.
         </p>
       </div>
       <div className={styles.section2}>
-        <h2 className={styles.divh2}>Naturlig innovativ kultur</h2>
+        <h2 className={styles.divh2}>
+          En kultur som främjar innovation och hållbarhet
+        </h2>
         <p className={styles.ptext}>
-          Baserat på upptäckten har en helt ny koncern bildats och vi har alla
-          förutsättningar att låta vår verksamhet växa vidare utanför Sveriges
-          gränser. Vi har en naturlig innovativ affärskultur där idéer föds och
-          formas, och där det är högt i tak. Samtidigt vill vi göra gott och där
-          knyter vår hållbarhetsstrategi an till vår innovationskultur. En god
-          innovation är en god affär bara om vi samtidigt gör gott för människa,
-          djur och planet.
+          Vår upptäckt lade grunden för en ny koncern med ambitioner som
+          sträcker sig långt bortom Sveriges gränser.
+          <br /> På Auxesis skapar vi en miljö där innovation inte bara
+          uppmuntras – den blomstrar. Här föds och formas idéer i en atmosfär av
+          samarbete och högt i tak, där varje röst får höras. <br /> <br />
+          Vår innovationskultur är tätt sammanflätad med vår
+          hållbarhetsstrategi. För oss är en riktigt god innovation också en god
+          handling. Vi strävar efter att varje framsteg vi gör ska bidra
+          positivt till människor, djur och vår planet. För i slutändan vet vi
+          att en hållbar framtid är den bästa investeringen för oss alla.
         </p>
       </div>
     </section>

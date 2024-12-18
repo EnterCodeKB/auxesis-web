@@ -1,0 +1,220 @@
+.ir-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  gap: 20px; /* Add spacing between elements */
+}
+
+.irptext {
+  font-size: 24px;
+  margin-bottom: 2%;
+  color: #555;
+  text-align: center; /* Centrera texten horisontellt */
+  display: flex; /* Gör det möjligt att använda flexbox */
+  justify-content: center; /* Centrera horisontellt */
+  align-items: center; /* Centrera vertikalt */
+  flex-direction: column; /* Säkerställ att text förblir i kolumnlayout */
+}
+.ir {
+  flex-grow: 1;
+  width: 60%;
+  margin-right: 2%;
+}
+
+.h1div {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1c1e53;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.h2namn {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.irptext {
+  font-size: 24px;
+  margin-bottom: 2%;
+  color: #555;
+  text-align: center; /* Centrera texten horisontellt */
+  display: flex; /* Gör det möjligt att använda flexbox */
+  justify-content: center; /* Centrera horisontellt */
+  align-items: center; /* Centrera vertikalt */
+  flex-direction: column; /* Säkerställ att text förblir i kolumnlayout */
+}
+
+.world {
+  width: 40%;
+  margin-left: 30%;
+  border-radius: 10px; /* Rounded corners for the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  margin-top: 20px;
+}
+
+.h2 {
+  color: #1c1e53;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.h2 {
+  margin-bottom: 20px; /* Add space below the heading */
+}
+
+.h4 {
+  margin-top: 20px; /* Add space above each name */
+}
+
+.fettext {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.h2 {
+  margin-left: -130px;
+  color: #23559b;
+}
+.h2div {
+  margin-left: 550px;
+  color: #23559b;
+}
+
+.h1div {
+  font-size: 58px; /* Använd rem för bättre skalbarhet */
+  font-weight: 700;
+  color: #1c1e53;
+  display: flex;
+  justify-content: center;
+}
+
+/*STYRELSE CSS*/
+/* För tablets och mindre skärmar */
+@media (max-width: 991px) {
+  .ir-container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    margin-top: 20%;
+    margin-bottom: 6%;
+    margin-left: 15%;
+  }
+
+  .ir {
+    width: 100%; /* Full width for text */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .h1div {
+    font-size: 36px; /* Reduce size for smaller screens */
+    margin-bottom: 15px;
+  }
+
+  .h2namn {
+    font-size: 24px;
+  }
+
+  .irptext {
+    font-size: 18px;
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  .world {
+    max-width: 80%; /* Reduce image size */
+  }
+
+  .ptext {
+    font-size: 18px;
+    text-align: left; /* Behåll vänsterjusteringen */
+  }
+}
+
+/* För mobiler och ännu mindre skärmar */
+@media (max-width: 768px) {
+  .ir-container {
+    margin-left: 10%;
+    margin-top: -1%;
+  }
+  .h1div {
+    font-size: 32px; /* Further reduce heading size */
+  }
+
+  .irptext {
+    font-size: 16px;
+    line-height: 1.4; /* Adjust line height */
+  }
+
+  .world {
+    max-width: 100%; /* Make image fill the available width */
+  }
+
+  .fettext {
+    font-size: 20px; /* Anpassa fet textstorlek */
+  }
+
+  .ledning {
+    font-size: 16px; /* Anpassa textstorlek */
+  }
+
+  .styrelse {
+    margin-left: 10px;
+    padding: 10px;
+  }
+
+  .h1styrelse {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .h2ul {
+    font-size: 20px;
+  }
+
+  .menu {
+    align-items: flex-start; /* Align menu items to the start */
+    width: 100%;
+  }
+}
+
+/*ÄGARE CSS*/
+/* För tablets och mindre skärmar */
+
+/* För mobiler och mindre skärmar */
+
+@media (min-width: 1200px) {
+  .vision {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+
+  .h2vision {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .effekt {
+    max-width: 800px;
+    padding: 20px;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .affärside {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 0;
+  }
+
+  .ptext {
+    font-size: 20px;
+    line-height: 1.8;
+  }
+}

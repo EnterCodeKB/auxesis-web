@@ -7,6 +7,7 @@ import "./globals.css";
 import Hero from "./components/HeroSection";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { usePathname } from "next/navigation";
+import CookieBanner from "./components/CookieBanner";
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
         </div>
         <Footer />
         <Footer2 />
+        <CookieBanner /> {/* Lägg till cookie-bannern här */}
       </body>
     </html>
   );

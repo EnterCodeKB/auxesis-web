@@ -1,5 +1,5 @@
 "use client";
-import styles from "../../styles/Produkter.module.css";
+import styles from "../../styles/ProduktPatent.module.css";
 
 export default function Patent() {
   const scrollToTop = () => {
@@ -48,7 +48,7 @@ export default function Patent() {
             – månad 30.
           </li>
         </ol>
-        <p>
+        <p className={styles.ptext}>
           Patentprocessens första 30 månader syftar till att skapa en bra
           ansökan med så stora möjligheter som möjligt till framtida
           registrering och godkända patent i utvalda länder.

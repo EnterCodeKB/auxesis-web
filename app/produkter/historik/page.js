@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
 
-import styles from "../../styles/Produkter.module.css";
+import styles from "../../styles/ProduktHistorik.module.css";
 
 export default function Historik() {
   const animatedBoxRef = useRef(null);

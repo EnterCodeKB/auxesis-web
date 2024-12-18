@@ -8,7 +8,7 @@ export default function Finance() {
     <>
       <div className={styles.financesection}>
         <div className={styles.div73}>
-          <h1>Finansiell information</h1>
+          <h1 className={styles.h1div}>Finansiell information</h1>
           <p className={styles.ptextunder}>
             Här presenterar vi information för partners och investerare med
             nyheter och uppdateringar från Auxesis Pharma.
@@ -75,7 +75,8 @@ export default function Finance() {
                     >
                       <Link
                         className={styles.link}
-                        href="/protokoll2023"
+                        href="/forinvest/finansrapport/bolagsstamma
+                        "
                         scroll={true}
                       >
                         Läs mer

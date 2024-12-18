@@ -1,4 +1,4 @@
-import styles from "../../styles/Info.module.css";
+import styles from "../usabrand/index.module.css";
 
 export default function Usabrand() {
   return (
@@ -18,7 +18,7 @@ export default function Usabrand() {
         ansökt skydd för. Vi har även ansökt nya länder i Syd America och Afrika
         denna hösten.
       </p>
-      <div className={styles.articlesimage}>
+      <div className={styles.articlesimage1}>
         <img
           className={styles.asap1}
           src="/Nyheter/ASA.P - USA reg.79372694 (1)_Sida_2/1.png"

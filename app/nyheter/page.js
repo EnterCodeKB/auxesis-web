@@ -24,7 +24,7 @@ export default function Nyheter() {
   }
 
   return (
-    <section>
+    <section className={styles.sectionN}>
       <h2 className={styles.title}>Alla Nyheter</h2>
       <div className={styles.spotlights}>
         <div className={styles.newsContainerFullPage}>

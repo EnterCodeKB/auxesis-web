@@ -14,7 +14,7 @@ export const newsItems = [
   },
 
   {
-    title: "Auxesis MedTech AB ",
+    title: "Auxesis MedTech AB har en produktionsanläggning",
     subtitle: "2024/09/21",
     description: `
         <p></p>
@@ -72,7 +72,7 @@ export const newsItems = [
           <p></p>
           `,
     imageUrl: "/maskiner.jpeg",
-    slug: "produktion",
+    slug: "medtechreg",
     isLatest: true, // Märkt som senaste
   },
   {

@@ -55,7 +55,7 @@ export default function Ofksponsor() {
       <p>
         https://www.op.se/2023-12-15/ofk-sponsor-ett-steg-narmare-fabrik-i-ostersund
       </p>
-      <div className={styles.articlesimage}>
+      <div className={styles.articlesimage1}>
         <img
           className={styles.image1}
           src="/Nyheter/ostersund_web-scaled.jpg"

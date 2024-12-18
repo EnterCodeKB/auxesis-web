@@ -14,8 +14,9 @@
   background-image: url("/secondbgbild.jpg");
   background-position: center;
   width: 100%;
-  max-width: 1500px;
+  background-repeat: no-repeat;
 }
+
 .backgroundImage {
   height: 450px; /* Anpassa höjden som passar din design */
   width: 200vh;

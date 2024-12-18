@@ -1,7 +1,8 @@
+/*app/styles/Card.module.css*/
 /* Base styles */
 .cardsdiv {
-  margin-top: -40px;
-  margin-left: 60px;
+  margin-top: -60px;
+  margin-left: 20px;
 }
 
 .text1 {
@@ -14,6 +15,12 @@
   width: 100%;
   max-width: 1400px;
   padding: 0 10px;
+}
+
+.h2div {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .div45 {
@@ -99,27 +106,30 @@
 .imgContainer:focus-within .overlay {
   opacity: 1;
 }*/
-
-/* Media Query för små skärmar (mobil) */
-@media (max-width: 600px) {
+/* För medelstora skärmar (tablets och små laptops) */
+@media (max-width: 991px) {
   .cardsdiv {
-    margin-left: 0;
-    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
     margin-top: 20px;
+    width: 100%;
+    margin-left: 20px;
   }
 
   .text1 {
     text-align: center;
-    margin-left: -40px;
+    margin-left: 10px;
+    margin-bottom: 20px; /* Lägg till utrymme under text */
   }
 
   .div44 {
-    padding: 0 0px;
+    padding: 0;
   }
 
   .div45 {
     flex-direction: column;
-    gap: 10px;
   }
 
   .column {
@@ -129,130 +139,82 @@
   }
 
   .img {
-    height: auto;
-    width: 110%; /* Justera bildbredden för små skärmar */
+    width: 100%;
+  }
+  .imgContainer {
   }
 
+  .img {
+    object-fit: cover; /* Fyll containern utan att förvränga bilden */
+  }
   .div47 {
-    font-size: 1rem; /* Justera fontstorlek för titeln */
+    font-size: 1.2rem; /* Anpassa rubrikstorlek */
+    text-align: center; /* Centrera text */
   }
 
   .div48 {
-    font-size: 0.8rem; /* Justera fontstorlek för beskrivningen */
-    line-height: 1rem;
-    width: 100%;
-  }
-
-  .imgContainer {
-    width: 180%;
-    height: auto;
-    position: relative;
-  }
-
-  /* När man pekar på bilden på mobil (hover) */
-  .imgContainer:hover .overlay,
-  .imgContainer:focus-within .overlay {
-    opacity: 1;
-  }
-
-  /* Gör overlayn synlig */
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    color: var(--Dark-blue, #282938);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    padding: 16px;
-    text-align: center;
-    pointer-events: none; /* Gör så att overlayn inte blockeras av muspekaren på mobil */
-  }
-
-  /* Om du vill att texten ska bli synlig vid hover på mobilen, använd pointer-events */
-  .imgContainer:active .overlay {
-    opacity: 1;
+    font-size: 1rem; /* Anpassa textstorlek */
+    line-height: 1.4;
+    text-align: justify;
+    width: 100%; /* Anpassa bredd */
   }
 }
 
-/* Media Query för medelstora skärmar (tablets och små laptops) */
-@media (max-width: 1024px) {
+/* För små skärmar (mobiler) */
+@media (max-width: 768px) {
   .cardsdiv {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-left: 30;
     padding: 0 10px;
-    margin-top: 20px;
-    width: 90%;
   }
 
   .text1 {
     text-align: center;
-    margin-left: -20px;
+    margin-left: 0; /* Justera centrering */
+    margin-bottom: 20px; /* Lägg till mellanrum under text */
   }
 
   .div44 {
-    padding: 0 0px;
+    padding: 0;
   }
 
   .div45 {
     flex-direction: column;
-    gap: 10px;
+    gap: 10px; /* Mindre avstånd mellan bilder */
   }
 
   .column {
     width: 100%;
     margin-left: 0;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   .img {
-    height: 600px;
-    width: 650px; /* Justera bildstorlek för små skärmar */
+    width: 100%;
+    height: auto; /* Anpassa för mindre skärmar */
   }
 
   .div47 {
-    font-size: 2.5rem; /* Justera fontstorlek för titeln */
-  }
-
-  .div48 {
-    font-size: 1.5rem; /* Justera fontstorlek för beskrivningen */
-    line-height: 1.6rem;
-    width: 100%; /* Gör texten bredare på tablets */
-    max-width: 80%; /* Begränsa bredden */
-  }
-
-  .imgContainer {
-    width: 100%;
-    height: auto;
-  }
-
-  .overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    color: var(--Dark-blue, #282938);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    padding: 16px;
+    font-size: 1rem; /* Mindre rubrikstorlek */
     text-align: center;
   }
 
-  .imgContainer:hover .overlay {
-    opacity: 1;
+  .div48 {
+    font-size: 0.9rem; /* Anpassa textstorlek */
+    line-height: 1.3;
+    text-align: justify;
+    padding: 0 5px; /* Lägg till padding för bättre läsbarhet */
+  }
+
+  .imgContainer {
+    height: 180px; /* Mindre höjd för mobiler */
+    height: auto;
+  }
+  .img {
+    object-fit: cover; /* Fyll containern utan att förvränga bilden */
+    height: 400px; /* Mindre höjd för mobiler */
+  }
+  .overlay {
+    padding: 10px;
+    font-size: 0.9rem;
   }
 }

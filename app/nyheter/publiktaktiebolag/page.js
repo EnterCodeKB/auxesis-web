@@ -20,6 +20,8 @@ Ett publikt aktiebolag har rätt att sprida aktier, teckningsrätter och andra v
           allmänheten, vilket öppnar upp nya möjligheter för framtida expansion
           och investeringar.
         </p>
+        <br />
+
         <p>
           Som publikt aktiebolag tar AUXESIS PHARMA ytterligare ett steg i sin
           tillväxtresa och fortsätter att stärka sitt engagemang för att
@@ -27,6 +29,7 @@ Ett publikt aktiebolag har rätt att sprida aktier, teckningsrätter och andra v
           reflekterar bolagets långsiktiga vision om transparens och
           tillgänglighet på kapitalmarknaden.
         </p>
+        <br />
         <p>
           Vi ser fram emot att dela denna spännande resa med våra aktieägare och
           välkomnar nya investerare som vill bli en del av vår utveckling.

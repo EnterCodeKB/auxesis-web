@@ -1,5 +1,5 @@
-.section {
-  max-width: 100%; /* Limit the maximum width */
+.sectionU {
+  width: 100%;
   padding: 20px; /* Add padding for spacing */
   margin: 0 auto; /* Center the content */
   margin-top: 200px;
@@ -7,69 +7,11 @@
   margin-left: 60px;
 }
 
-.h3 {
-  font-size: 2.5rem; /* Use rem for responsiveness */
-  margin-bottom: 1rem; /* Add space below headings */
-}
-
-.produktinfo {
-  display: flex;
-  flex-direction: row;
-  margin-top: 50px;
-}
-
-.servettext {
-  width: 100%;
-}
-
-.servettdiv {
-  margin-left: -30px;
-  margin-top: 50px;
-}
-
-.servett {
-  width: 60vh;
-}
-
-.hands {
-  width: 50vh;
-  margin-left: 100px;
-}
-
 .ptext {
   font-size: 20px; /* Use rem for responsiveness */
   line-height: 1.2; /* Improve readability */
   margin-bottom: 1rem;
   color: #555;
-}
-
-.ulList,
-.olList {
-  font-size: 20px; /* Use rem for responsiveness */
-  line-height: 1.2; /* Improve readability */
-  margin-bottom: 1rem;
-  color: #555;
-  margin: 1rem 0; /* Add margin for spacing */
-  padding-left: 20px; /* Indent the list */
-}
-.imgprodukt {
-  width: 100%; /* Make the image responsive */
-  max-width: 700px; /* Set a max-width */
-  margin: 20px auto; /* Center the image */
-  display: block; /* Ensure it's a block element */
-}
-
-.sistadiv {
-  margin-top: 100px;
-}
-
-/*ASAP*/
-
-.imgirritation {
-  width: 100%; /* Make the image responsive */
-  max-width: 500px; /* Set a max-width */
-  margin-top: 30px;
-  margin-left: 100px;
 }
 
 .container1 {
@@ -83,60 +25,6 @@
   width: 90%;
 }
 
-.divh2 {
-  margin-top: -50px;
-  margin-right: 210px;
-}
-
-/*COXYPET*/
-
-.sectionC {
-  padding: 20px; /* Add padding for spacing */
-  margin: 0 auto; /* Center the content */
-  margin-top: 250px;
-  margin-bottom: 70px;
-  margin-left: 60px;
-}
-.coxypet {
-  width: 50vh;
-  margin-top: -150px;
-}
-.bildsectionhgr,
-.produktsection {
-  width: 100%; /* Make the image responsive */
-  margin-top: 50px;
-  margin-right: 100px;
-  display: flex;
-  flex-direction: row;
-  margin-top: 50px;
-  gap: 80px;
-}
-
-.dogimg {
-  width: 200px;
-}
-
-.koimg {
-  width: 70vh;
-  margin-right: -70px;
-  margin-top: -50px;
-}
-
-.imgcoxypet {
-  width: 100%; /* Make the image responsive */
-  max-width: 700px; /* Set a max-width */
-  margin-left: 100px;
-  margin-top: -20px;
-}
-
-.textcontainer2 {
-  margin-right: 20px;
-  width: 90%;
-  margin-top: -200px;
-}
-
-/*PRODUKTUTVECKLING*/
-
 .imgakne {
   width: 100%; /* Make the image responsive */
   max-width: 500px; /* Set a max-width */
@@ -145,96 +33,6 @@
 }
 .h2utveckling {
   margin-left: -60px;
-}
-
-/*PATENT*/
-
-.patentsection {
-  max-width: 100%; /* Limit the maximum width */
-  padding: 20px; /* Add padding for spacing */
-  margin: 0 auto; /* Center the content */
-  margin-top: 250px;
-  margin-bottom: 70px;
-  margin-left: 60px;
-}
-
-.imgpatent {
-  width: 80%; /* Make the image responsive */
-  margin-left: 150px;
-  margin-top: 60px;
-}
-
-.fasdiv {
-  margin-right: 1000px;
-}
-
-/* ANIMATION: Döljer elementet initialt */
-
-.animations {
-  margin-top: -100px;
-}
-
-.hidden {
-  opacity: 0;
-  transform: translateY(60px); /* Startar nedanför sin normala position */
-  transition: opacity 1s ease, transform 1s ease;
-}
-
-/* Visar elementet när det blivit synligt */
-.visible {
-  opacity: 1;
-  transform: translateY(0); /* Flyttar till sin normala position */
-}
-
-/* Animerad box som visar affärsidé */
-.animatedBox {
-  text-align: center;
-  font-size: 18px;
-  line-height: 1.6;
-  border: 2px solid #888;
-  padding: 16px;
-  border-radius: 8px;
-  background-color: #f0f0f0;
-  color: #333;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-/* Specifik stil för bilder i spel */
-.imgspel {
-  width: 150px;
-  height: auto;
-  border-radius: 50%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-right: 20px;
-}
-
-/* Effektsektion för receptfritt läkemedel */
-.effekt {
-  background-color: #c9e7f153;
-  padding: 16px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/*PATENT*/
-.olList {
-  list-style-type: decimal; /* Standard för numrerad lista, kan även vara upper-roman, lower-alpha, etc. */
-  padding-left: 20px; /* För intryckning från vänster */
-  margin-top: 10px;
-}
-
-.olList li {
-  margin-bottom: 8px; /* Avstånd mellan listpunkterna */
-}
-
-/*Sista diven*/
-
-.imgallaprodukter {
-  width: 160vh;
 }
 
 .scrollToTop {
@@ -253,4 +51,62 @@
 
 .scrollToTop:hover {
   background-color: #194276;
+}
+@media (max-width: 991px) {
+  .container1 {
+    margin-right: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .sectionU {
+    margin-left: 100px;
+    width: 100%;
+    margin-top: 200px;
+  }
+
+  .ptext {
+    font-size: 18px; /* Justera textstorlek för mindre skärmar */
+  }
+  .ulList {
+    text-align: left;
+    margin-top: -20px;
+  }
+
+  .ptext {
+    font-size: 18px; /* Justera textstorlek för mindre skärmar */
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ptext {
+    font-size: 16px;
+    margin-left: 40px;
+  }
+
+  .sectionU {
+    margin-left: 70px;
+    width: 90%;
+    margin-top: 180px;
+  }
+
+  .h2utveckling {
+    margin-left: 30px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ptext {
+    font-size: 22px;
+    line-height: 1.8;
+    color: #555;
+  }
+
+  .scrollToTop {
+    font-size: 2rem; /* Gör knappen större */
+    bottom: 30px; /* Ger mer utrymme nedtill */
+    right: 30px;
+  }
 }

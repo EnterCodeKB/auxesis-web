@@ -1,4 +1,4 @@
-import styles from "../../styles/Info.module.css";
+import styles from "../regsmart/index.module.css";
 
 export default function RegSmart() {
   return (
@@ -15,6 +15,8 @@ export default function RegSmart() {
           att få vägledning mot aktuella sökande och godkännande processer hos
           Svenska Läkemedelsverket.{" "}
         </p>
+        <br />
+
         <p>
           RegSmart Life Science är ett regulatoriskt konsultföretag inom
           läkemedel och medicintekniska produkter som hjälper kunden att
@@ -22,11 +24,15 @@ export default function RegSmart() {
           lång regulatorisk erfarenhet från ledande befattningar på en
           tillsynsmyndighet och från små och stora life science-företag
           underlättar vi kundens arbete genom att veta ”vad som ska göras, när
-          och hur”. RegSmart Life Sciences tillhandahåller lämpliga råd och stöd
-          i förhållande till europeiska och amerikanska regulatoriska krav,
-          vilket hjälper kunden att utveckla en regulatorisk plan som en del av
-          din övergripande projektstrategi.
+          och hur”. <br />
+          <br />
+          RegSmart Life Sciences tillhandahåller lämpliga råd och stöd i
+          förhållande till europeiska och amerikanska regulatoriska krav, vilket
+          hjälper kunden att utveckla en regulatorisk plan som en del av din
+          övergripande projektstrategi.
         </p>
+        <br />
+
         <p>
           Företagets expertis är att analysera och tolka den vägledning som
           tillhandahålls och beslut som tas av tillsynsmyndigheter i EU och USA

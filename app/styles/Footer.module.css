@@ -1,57 +1,109 @@
 .div201 {
-  width: 99vw; /* Gör att footern täcker hela bredden av visningsfönstret */
+  width: 100vw; /* Ensure the footer spans the entire viewport width */
   background-color: #06327d;
-  padding: 20px; /* Lägg till lite padding */
+  padding: 20px; /* Add padding for spacing */
   box-sizing: border-box;
   color: white;
   display: flex;
   justify-content: space-around;
+  align-items: flex-start;
 }
 
 .footertext {
   color: white;
   font-size: 20px; /* Use rem for responsiveness */
-  line-height: 1.2; /* Improve readability */
-  margin-bottom: 1rem;
+  line-height: 1.5; /* Improve readability */
+  margin-bottom: 0.5rem;
 }
 
 .div202 {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin-left: 150px;
+  margin: 0 auto; /* Center the content */
+  max-width: 1200px; /* Limit maximum width for larger screens */
 }
 
 .column {
-  flex: 1; /* Gör varje kolumn lika stor */
-  margin: 0 20px; /* Lägger till marginal mellan kolumnerna */
+  flex: 1; /* Make all columns equal in width */
+  margin: 0 20px; /* Add spacing between columns */
 }
 
-.divh4,
-.divh3 {
+.divh4 {
   color: white;
-  margin-bottom: 10px; /* Lägger till avstånd under rubrikerna */
-  font-size: 1.3rem;
+  margin-bottom: 10px; /* Add spacing below headings */
+  font-size: 1.5rem; /* Slightly larger font for headings */
 }
 
 .imglinkedin {
   width: 50px;
-  margin-top: 10px; /* Justera avståndet för LinkedIn-loggan */
+  margin-top: 10px; /* Adjust spacing for LinkedIn logo */
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Add hover effect */
 }
 
-@media (max-width: 768px) {
+.imglinkedin:hover {
+  transform: scale(1.1); /* Enlarge slightly on hover */
+}
+
+/* Responsive Styles */
+
+/* Medium Screens (max-width: 991px) */
+@media (max-width: 991px) {
   .div201 {
-    flex-direction: column; /* Ändra till vertikal layout för mindre skärmar */
-    align-items: center; /* Centrera kolumnerna */
+    flex-direction: column; /* Switch to vertical layout */
+    align-items: center;
+    padding: 30px 20px; /* Add extra padding for smaller screens */
   }
 
   .div202 {
-    flex-direction: column; /* Stapla kolumnerna vertikalt */
-    align-items: center; /* Centrera innehållet */
+    flex-direction: column; /* Stack columns vertically */
+    align-items: center;
+    gap: 20px; /* Add spacing between columns */
   }
 
   .column {
-    margin: 10px 0; /* Lägga till utrymme mellan kolumnerna */
-    width: 80%; /* Anpassa bredden */
+    margin: 10px 0; /* Add margin between columns */
+    width: 90%; /* Reduce column width */
+    text-align: center; /* Center text for better alignment */
+  }
+
+  .footertext {
+    font-size: 18px; /* Slightly smaller text */
+  }
+
+  .divh4 {
+    font-size: 1.3rem; /* Adjust heading size */
+  }
+}
+
+/* Small Screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .div201 {
+    padding: 20px 15px; /* Adjust padding for smaller screens */
+  }
+
+  .div202 {
+    flex-direction: column; /* Stack columns vertically */
+    align-items: center;
+  }
+
+  .column {
+    margin: 10px 0; /* Add spacing between sections */
+    width: 100%; /* Full width for columns */
+  }
+
+  .footertext {
+    font-size: 16px; /* Reduce text size for smaller screens */
+    line-height: 1.4; /* Improve spacing */
+  }
+
+  .divh4 {
+    font-size: 1.2rem; /* Reduce heading size */
+  }
+
+  .imglinkedin {
+    width: 40px; /* Smaller LinkedIn logo */
+    margin-top: 5px; /* Adjust spacing */
   }
 }

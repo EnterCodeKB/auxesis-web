@@ -1,28 +1,30 @@
+/*app/styles/Finance.module.css*/
+/* För Invest */
 .financesection {
   align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  gap: 20px;
-  margin-top: 150px;
-  margin-left: 60px;
+  margin-top: 6%;
+  margin-left: 6%;
+  margin-bottom: 6%;
+}
+.redovdiv {
+  margin-top: 160px;
+  margin-bottom: 6%;
+  width: 100%;
 }
 
-.whiteboard {
-  padding: 20px;
-  background-color: #f9f9f9;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-left: 100px;
-  margin-bottom: 60px;
-  margin-top: 60px;
+.frapportsection {
+  max-width: 80%; /* Limit the maximum width */
+  margin: 0 auto; /* Center the content */
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-bottom: 6%;
 }
-
-.section {
-  max-width: 100%; /* Limit the maximum width */
-  margin-left: 100px;
+.h1 {
+  margin-left: 13%;
 }
 .ptext {
   font-size: 20px; /* Use rem for responsiveness */
@@ -32,7 +34,81 @@
   display: flex;
   text-align: left;
   align-items: flex-start;
-  margin-left: 30px;
+  margin-left: 3%;
+}
+
+.imgdiv1 {
+  display: flex;
+  flex-wrap: wrap; /* Gör att knappar bryts till nästa rad vid behov */
+  justify-content: center; /* Centrera knapparna horisontellt */
+  gap: 20px; /* Lägg till mellanrum mellan knapparna */
+  margin: 0 auto; /* Centrera hela sektionen */
+}
+
+.imgFinanceButton {
+  background: #f9f9f9;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px; /* Rundade hörn */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 30%; /* Anpassa knappbredd */
+  min-width: 200px; /* Säkerställ minsta bredd */
+  height: auto; /* Automatisera höjden */
+}
+
+.imgFinanceButton img {
+  width: 60%; /* Anpassa bildstorlek */
+  transition: transform 0.2s ease-in-out;
+}
+
+.imgFinanceButton span {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #23559b;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Hover-effekter */
+.imgFinanceButton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.imgFinanceButton img:hover {
+  transform: scale(1.1);
+}
+
+.imgdiv1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap; /* Lägg knapparna på en rad */
+  margin-left: 10%;
+}
+
+.scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #23559b;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.scrollToTop:hover {
+  background-color: #1d4a8b;
+  transform: scale(1.1);
 }
 
 .h2divdark {
@@ -47,32 +123,32 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: -20px;
-  margin-left: -40px;
+  margin-top: -2%;
+  margin-left: -4%;
 }
 
 .textcontainer {
   display: flex;
-  margin-top: 20px;
+  margin-top: 2%;
   flex-direction: column;
-  margin-bottom: 20px;
-  margin-right: 40px;
+  margin-bottom: 2%;
+  margin-right: 4%;
   align-items: baseline;
 }
 
 .textcontainer2 {
   display: flex;
-  margin-top: 20px;
+  margin-top: 2%;
   flex-direction: column;
-  margin-bottom: 20px;
-  margin-right: 40px;
+  margin-bottom: 2%;
+  margin-right: 4%;
 }
 .textcontainer3 {
   display: flex;
-  margin-top: 15px;
+  margin-top: 2%;
   flex-direction: column;
-  margin-bottom: 10px;
-  margin-right: 40px;
+  margin-bottom: 1%;
+  margin-right: 4%;
   align-items: baseline;
 }
 
@@ -89,11 +165,11 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  margin-left: 200px;
-  gap: 20px;
+  margin-left: 20%;
+  gap: 2%;
 }
 .divh1 {
-  margin-right: 40px;
+  margin-right: 4%;
 }
 .divh2,
 .divh1 {
@@ -109,16 +185,17 @@
 .protokol {
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 10%;
 }
 .imgprotokol {
-  width: 900px;
-  margin-top: -20px;
+  width: 90%;
+  margin-top: -2%;
 }
 
 .section {
   text-align: center;
   margin: 2rem;
+  margin-left: 5%;
 }
 
 .downloadButton {
@@ -130,6 +207,7 @@
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  margin-top: 2%;
 }
 
 .downloadButton:hover {
@@ -140,10 +218,10 @@
 .revision {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 5%;
 }
 .imgrevision {
-  width: 1300px;
+  width: 130%;
 }
 
 .div81 {
@@ -152,26 +230,26 @@
   justify-content: center; /* Centrerar knapparna */
   align-items: center;
   text-align: center;
-  margin-top: 20px;
-  margin-left: 50px;
-  margin-bottom: 50px;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-bottom: 5%;
 }
 
 .column {
-  max-height: 500px;
+  max-height: 50%;
   width: 30%;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 2%;
   display: flex;
-  margin-top: 20px;
-  margin-bottom: 60px;
+  margin-top: 2%;
+  margin-bottom: 6%;
   align-items: baseline;
 }
 
 .imgdiv {
   display: flex;
-  gap: 10px;
+  gap: 1%;
   justify-content: flex-start;
   width: 100%;
 }
@@ -181,13 +259,13 @@
   display: flex;
   align-items: flex-start;
   width: 100%;
-  height: 230px;
+  height: 23%;
 }
 
 .btncontainer {
   display: flex;
-  margin-top: 26px;
-  gap: 20px;
+  margin-top: 3%;
+  gap: 2%;
   text-align: justify;
   padding: 0 1px;
 }
@@ -201,18 +279,18 @@
   color: #282938;
   font-weight: 400;
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 6%;
   align-items: baseline;
   justify-content: flex-end;
 }
 
 .scrollToTop {
   position: fixed;
-  bottom: 20px;
-  right: 60px;
+  bottom: 2%;
+  right: 6%;
   background-color: #c1eaff;
   color: white;
-  padding: 10px;
+  padding: 1%;
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -231,8 +309,8 @@
   font-weight: 500;
   letter-spacing: 0.16px;
   justify-content: center;
-  width: 130px;
-  height: 50px;
+  width: 13%;
+  height: 5%;
   background-color: #06327d;
   cursor: pointer;
   font-size: 16px;
@@ -246,16 +324,16 @@
   font-weight: 500;
   letter-spacing: 0.16px;
   justify-content: center;
-  width: 130px;
-  height: 50px;
+  width: 13%;
+  height: 5%;
   background-color: #06327d;
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
   transition: background-color 0.3s;
   border-radius: 8px;
-  margin-left: 30px;
-  margin-top: 60px;
+  margin-left: 3%;
+  margin-top: 6%;
 }
 
 .buttongradient3 {
@@ -263,16 +341,16 @@
   font-weight: 500;
   letter-spacing: 0.16px;
   justify-content: center;
-  width: 130px;
-  height: 50px;
+  width: 13%;
+  height: 5%;
   background-color: #06327d;
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
   transition: background-color 0.3s;
   border-radius: 8px;
-  margin-top: -40px;
-  margin-bottom: 10px;
+  margin-top: -4%;
+  margin-bottom: 1%;
 }
 
 .button:hover {
@@ -282,65 +360,321 @@
   text-decoration: none;
   color: white;
 }
-@media (max-width: 991px) {
-  .div73 {
-    max-width: 100%;
-    flex-wrap: wrap;
-    margin-top: 40px;
-  }
 
-  .div76 {
-    white-space: initial;
-  }
-
-  .div78 {
-    padding: 0 20px;
-  }
-
-  .div81 {
+@media (min-width: 1200px) {
+  .financesection {
+    align-self: center;
+    display: flex;
     flex-direction: column;
-    align-items: stretch;
-    gap: 0px;
+    justify-content: center;
+    width: 100%;
+    margin-top: 6%;
+    margin-left: 6%;
   }
 
-  .column {
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
+  }
+
+  .h1 {
+    font-size: 3.5rem; /* Öka rubrikstorleken */
+    text-align: center; /* Centrera rubriken */
+    margin-left: 15%;
+  }
+
+  .imgdiv1 {
+    display: flex;
+    flex-wrap: nowrap; /* Lägg knapparna på en rad */
+    justify-content: space-between; /* Jämnt fördela knapparna */
+    gap: 3%; /* Lägg till större avstånd */
+    margin-top: 4%;
+    align-items: center;
+  }
+
+  .imgFinanceButton {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 2%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px; /* Rundade hörn */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    width: 300px;
+    height: 200px;
+  }
+
+  .imgFinanceButton img {
+    width: 50%; /* Öka bildstorleken */
+  }
+
+  .imgFinanceButton span {
+    font-size: 20px; /* Öka textstorleken */
   }
 
   .scrollToTop {
-    bottom: 20px;
-    right: 20px;
-  }
-  .imgfront {
-    width: 60%;
-    height: 80%;
-    margin-left: 100px;
+    bottom: 30px; /* Justera positionen */
+    right: 30px; /* Justera positionen */
+    width: 50px; /* Öka storleken */
+    height: 50px; /* Öka storleken */
+    font-size: 24px; /* Öka textstorleken */
   }
 }
-@media (max-width: 768px) {
-  .div73 {
-    width: 250px;
-    margin: 10px auto; /* Centrerar innehållet */
+
+@media (max-width: 991px) {
+  .redovdiv {
+    margin-top: 160px;
+    margin-bottom: 6%;
+  }
+  .section {
+    margin-left: 30%;
+    margin-top: 2%;
+  }
+  .frapportsection {
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-bottom: 6%;
+  }
+  .h2divdark {
+    margin-left: 45%;
+    width: 9%;
+  }
+  .h1 {
+    font-size: 2.5rem; /* Justera rubrikstorleken */
+    margin-left: 0; /* Ta bort margin för centrering */
+    text-align: center; /* Centrera rubriken */
+    margin-bottom: 3%; /* Lägg till utrymme under rubriken */
+    margin-left: 150px;
   }
 
-  .textcontainer {
-    width: 300px;
-    margin-left: 300px;
-    text-align: center;
+  .h1div {
+    margin-left: 15%;
+  }
+
+  .ptextunder {
+    width: 90%;
+  }
+  .div73 {
+    width: 80%;
+  }
+
+  .div81 {
+    display: flex;
+    flex-direction: column; /* Stacka kolumner vertikalt */
+    gap: 3%; /* Lägg till mellanrum mellan kolumner */
+    justify-content: center; /* Centrera kolumnerna */
+    align-items: center; /* Centrera kolumnerna */
   }
 
   .column {
+    width: 80%; /* Ta upp hela bredden */
+    display: flex;
+    justify-content: center; /* Centrera innehållet */
+  }
+
+  .itemsbox {
+    width: 90%; /* Se till att innehållet tar upp det mesta av bredden */
+    margin: 0 auto; /* Centrera varje box */
+  }
+
+  .imgdiv1 {
+    align-items: center;
+    flex-direction: row;
+    gap: 5%;
+  }
+
+  .imgFinanceButton {
+    width: 35%; /* Justera bredd vid behov */
+    padding: 1%; /* Minska padding */
+    margin: 0; /* Ta bort eventuell margin */
+  }
+
+  .imgFinanceButton img {
+    width: 65%; /* Justera bildstorleken om det behövs */
+  }
+
+  .imgFinanceButton span {
+    font-size: 15px; /* Justera textstorlek för mindre skärmar */
+  }
+
+  .imgrevision {
+    width: 75%;
+  }
+
+  .scrollToTop {
+    bottom: 2%; /* Justera positionen */
+    right: 2%; /* Justera positionen */
+    width: 40px; /* Justera storleken */
+    height: 40px; /* Justera storleken */
+    font-size: 20px; /* Justera textstorleken */
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    margin-left: 20%;
+    margin-top: 20%;
+  }
+  .h1 {
+    font-size: 2rem; /* Minska rubrikstorleken */
+    text-align: center; /* Centrera rubriken */
+    margin: 0 0 30px 0; /* Lägg till utrymme under */
+    margin-left: 6%;
+  }
+
+  .div73 {
+    width: 90%;
+  }
+  .div81 {
+    display: flex;
+    flex-direction: column; /* Stacka kolumner vertikalt */
+    gap: 2%; /* Lägg till mellanrum mellan kolumner */
+    justify-content: center; /* Centrera kolumnerna */
+    align-items: center; /* Centrera kolumnerna */
+  }
+
+  .imgrevision {
+    width: 50%;
+  }
+
+  .frapportsection {
+    margin: 2% auto 6% auto; /* Centrera och justera marginalerna */
+    padding: 0 5%; /* Lägg till padding för bättre balans */
+  }
+
+  .h1 {
+    font-size: 2rem; /* Minska rubrikstorleken */
+    text-align: center; /* Centrera rubriken */
+    margin: 0 0 20px 0; /* Lägg till utrymme under */
+    margin-left: 20%;
+  }
+
+  .h1div {
+    margin-bottom: 2%;
+  }
+  .h2divdark {
+    margin-top: -20%;
+  }
+
+  .column {
+    width: 100%; /* Ta hela bredden */
+    display: flex;
+    justify-content: center;
+  }
+
+  .itemsbox {
+    width: 90%; /* Använd större del av skärmbredden */
+    margin: 0 auto; /* Centrera varje box */
+    padding: 10px;
+  }
+
+  .imgFinanceButton {
+    width: 90%; /* Anpassa knappbredd till nästan hela skärmen */
+    padding: 10px;
+    margin: 5px 0; /* Lägger till mellanrum mellan knappar */
+  }
+
+  .imgFinanceButton img {
+    width: 50px; /* Justera bildstorleken */
+    height: auto;
+  }
+
+  .imgFinanceButton span {
+    font-size: 14px; /* Anpassa textstorleken */
+    text-align: center;
+  }
+
+  .scrollToTop {
+    bottom: 10px; /* Flytta upp */
+    right: 10px;
+    width: 40px; /* Justera storlek */
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .imgdiv1 {
+    display: flex;
+    flex-wrap: wrap; /* Gör så att knappar bryts snyggt */
+    justify-content: center; /* Centrera knapparna */
+    gap: 10px; /* Lägg till utrymme mellan knapparna */
+    margin-left: 20%;
+  }
+}
+
+/* Media query för min-width: 1200px */
+@media (min-width: 1200px) {
+  .frapportsection {
+    max-width: 1200px; /* Begränsa sektionens bredd */
+    margin: 4% auto; /* Centrera sektionen */
+    padding: 20px;
+  }
+
+  .redovdiv {
+    margin-top: 60px;
+    margin-bottom: 6%;
     width: 100%;
   }
-
-  .imgfront {
-    width: 60%;
-    height: 40%;
-    margin: 0 auto; /* Centrerar bilderna */
-    display: block; /* Säkerställer att de tar upp rätt utrymme */
+  .h1 {
+    font-size: 3.5rem; /* Öka rubrikstorleken */
+    text-align: center; /* Centrera rubriken */
+    margin-bottom: 30px;
   }
 
-  .ptext {
-    padding: 0 10px; /* Lite padding runt texten */
+  .div81 {
+    display: flex;
+    flex-direction: row; /* Placera elementen på rad */
+    gap: 3%; /* Avstånd mellan elementen */
+    justify-content: space-between; /* Fördela jämnt */
+    align-items: center;
+  }
+
+  .column {
+    width: 30%; /* Justera bredden för att dela upp kolumner */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .itemsbox {
+    width: 100%; /* Anpassa bredden */
+    padding: 20px;
+  }
+
+  .imgFinanceButton {
+    width: 300px; /* Fixerad knappstorlek */
+    height: 200px;
+    padding: 20px;
+  }
+
+  .imgFinanceButton img {
+    width: 70px; /* Öka bildstorleken */
+    height: auto;
+  }
+
+  .imgFinanceButton span {
+    font-size: 18px; /* Öka textstorleken */
+    text-align: center;
+  }
+
+  .scrollToTop {
+    bottom: 30px; /* Justera positionen */
+    right: 30px;
+    width: 50px; /* Öka storleken */
+    height: 50px;
+    font-size: 24px;
+  }
+
+  .imgdiv1 {
+    display: flex;
+    justify-content: space-between; /* Fördela knapparna jämnt */
+    flex-wrap: nowrap; /* Inga radbrytningar */
+    gap: 30px; /* Större avstånd mellan knappar */
   }
 }

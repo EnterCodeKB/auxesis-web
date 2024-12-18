@@ -1,4 +1,5 @@
-@media (min-width: 1200px) {
+/*app/styles/heroSection.module.css*/
+@media (min-width: 991px) {
   .heroSection {
     position: relative;
     display: flex;
@@ -17,6 +18,7 @@
     width: 150px;
     height: auto;
     margin-right: 1200px;
+    margin-top: 60px;
   }
 
   .div13 {
@@ -94,65 +96,45 @@
 
 @media (max-width: 991px) {
   .heroSection {
-    margin-top: 60px;
+    height: 20vh;
   }
 
-  .div13 {
-    padding: 40px 20px;
-    height: 60vh;
-    background-position: top;
+  .logo {
+    width: 120px;
   }
 
   .divh1 {
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 
   .h2 {
-    font-size: 28px;
-    margin-top: 10px;
-  }
-
-  .column {
-    text-align: center;
-  }
-
-  .div16 {
-    margin: 0;
-    padding: 10px;
+    font-size: 2rem;
+    margin-top: -25px;
+    line-height: 2.5rem;
+    margin-left: 80px;
   }
 }
 
-/* Mindre skärmar (max-width: 768px) */
 @media (max-width: 768px) {
   .heroSection {
-    margin-top: 140px;
-    width: 90%;
-  }
-
-  .div13 {
     height: auto;
     padding: 20px;
   }
 
+  .logo {
+    width: 100px;
+  }
+
   .divh1 {
-    font-size: 28px;
-    line-height: 36px;
-    margin: 0 auto;
-    width: 90%;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
   }
 
   .h2 {
-    font-size: 20px;
-    margin-top: 10px;
-  }
-
-  .column {
-    text-align: center;
-    width: 100%;
-  }
-
-  .div16 {
-    padding: 0 15px;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    margin-top: -20px;
+    margin-left: 55px;
   }
 }

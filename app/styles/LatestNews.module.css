@@ -1,8 +1,9 @@
+/*app/styles/LatestNews.module.css*/
 .latestNewsSection {
   padding: 40px 20px;
   text-align: center;
   margin-top: 30px;
-  margin-left: 140px;
+  margin-left: 100px;
 }
 
 .whiteboard {
@@ -101,4 +102,108 @@
 
 .nwesblockreadmore:hover {
   background-color: #0056b3;
+}
+
+@media (max-width: 991px) {
+  .latestNewsSection {
+    margin-left: 20px; /* Minska marginalen på vänster sida */
+    padding: 20px; /* Justera padding för bättre passform */
+  }
+
+  .whiteboard {
+    padding: 15px; /* Minska padding på sektionen */
+    margin-bottom: 40px; /* Justera avstånd */
+    margin-top: 40px;
+  }
+
+  .title {
+    font-size: 1.8rem; /* Minska rubrikstorleken */
+  }
+
+  .newsContainer {
+    gap: 15px; /* Minska gap mellan korten */
+  }
+
+  .newsCard {
+    width: 280px; /* Minska kortens bredd */
+    padding: 15px; /* Justera padding */
+  }
+
+  .newsImage {
+    height: 250px; /* Anpassa höjd på bilderna */
+  }
+
+  .newsTitle {
+    font-size: 1rem; /* Anpassa rubrikstorlek */
+  }
+
+  .newsSubtitle {
+    font-size: 0.9rem; /* Minska undertitelns storlek */
+  }
+
+  .readMoreButton {
+    padding: 8px 15px; /* Mindre padding för knappen */
+    font-size: 0.9rem; /* Minska textstorleken */
+  }
+
+  .nwesblockButton {
+    margin-right: 50px; /* Justera positionen */
+  }
+
+  .nwesblockreadmore {
+    font-size: 0.9rem; /* Anpassa knappens textstorlek */
+    padding: 8px 15px; /* Justera padding */
+  }
+}
+
+@media (max-width: 768px) {
+  .latestNewsSection {
+    margin-left: 100px; /* Justera vänstermarginalen ytterligare */
+    padding: 10px; /* Mindre padding för sektionen */
+  }
+
+  .whiteboard {
+    padding: 10px; /* Minimera padding */
+    margin-bottom: 30px; /* Ytterligare minskning av avstånd */
+    margin-top: 30px;
+  }
+
+  .title {
+    font-size: 1.5rem; /* Mindre rubrikstorlek */
+  }
+
+  .newsContainer {
+    gap: 10px; /* Minska gapet ytterligare */
+  }
+
+  .newsCard {
+    width: 100%; /* Korten täcker hela bredden */
+    padding: 10px; /* Mindre padding */
+  }
+
+  .newsImage {
+    height: 200px; /* Mindre höjd för bilder */
+  }
+
+  .newsTitle {
+    font-size: 0.9rem; /* Anpassa rubrikstorlek */
+  }
+
+  .newsSubtitle {
+    font-size: 0.8rem; /* Minska undertitelns storlek */
+  }
+
+  .readMoreButton {
+    padding: 6px 10px; /* Mindre padding */
+    font-size: 0.8rem; /* Mindre textstorlek */
+  }
+
+  .nwesblockButton {
+    margin-right: 20px; /* Justera positionen för knappen */
+  }
+
+  .nwesblockreadmore {
+    font-size: 0.8rem; /* Mindre knappstorlek */
+    padding: 6px 10px; /* Justera padding */
+  }
 }

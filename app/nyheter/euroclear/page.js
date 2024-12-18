@@ -5,13 +5,13 @@ export default function Euroclear() {
     <div className={styles.details}>
       <h1> Euroclear​</h1>
       <h4>2023-08-18</h4>
-      <p>
+      <p className={styles.ptext}>
         AUXESIS PHARMA HOLDING AB (publ) är nu avstämningsbolag och igång med
         Euroclear Sweden AB som värdepappersinstitut. Detta är sista fasen,
         enligt ABL, på vägen mot börsnotering och nu ska vi välja vilken
         Corporate Finance grupp vi kommer att samarbeta med, för att ta oss dit.
       </p>
-      <p>
+      <p className={styles.ptext}>
         nu med att registrera företagets aktionärer i Euroclear systemet. Som
         kund hos Euroclear Sweden blir Auxesis Pharma en del av navet i den
         svenska finansmarknaden. När bolagets aktier är registrerade hos

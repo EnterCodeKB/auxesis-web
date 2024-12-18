@@ -1,8 +1,5 @@
 "use client";
-import { useEffect } from "react";
 import styles from "../../styles/Team.module.css";
-import Teamet from "../../components/Teamet";
-import UtvecklingsTeamet from "../../components/UtvecklingsTeamet";
 
 export default function Team() {
   const Items = [
@@ -39,7 +36,7 @@ export default function Team() {
       `,
       imageUrl: "../team/Charlotta-profilbild-1-295x300.jpg",
     },
-    /*
+
     {
       rubrik: "Lars Larsson",
       title: "CFO och affärsrådgivare, ekonomi, finansiering och management ",
@@ -63,7 +60,7 @@ export default function Team() {
       `,
       imageUrl: "../team/A095535F-73B4-48B8-AB4C-2E9498AB43A2.png",
     },
-    /*
+
     {
       rubrik: "Peter Hedberg",
       title: "Immateriella rättigheter, affärsjuridiska avtal & tvistlösning",
@@ -74,30 +71,58 @@ export default function Team() {
 `,
       imageUrl: "../team/Peter-Ramberg600_web.jpg",
     },
-*/
-    /*
+
     {
       rubrik: "Peter Åberg",
       title:
-        "Affärsrådgivare, organisationsutvecklare inom medtech och läkemedel  ",
+        "Affärsrådgivare, organisationsutvecklare inom medtech och läkemedel. Ingår i ASA.P läkemedelsutvecklings teamet. ",
       description: `
       <p>Peter Åberg har mer än tjugo års erfarenhet som organisationsutvecklare och ledare. Har utvecklat framgångsrika organisationer och innehaft positioner som VD, marknads- och hållbarhetsdirektör från start-up till börsbolag inom medicinteknik, farmakologi, tillverkningsindustrin och tjänsteföretag.</p>
       <p>Inom vården har Peter varit klinisk chef för läkare och administrativ personal. Har varit VD och hållbarhetsdirektör för ett rekryteringsföretag och utsågs två år i rad till Dagens Industris Supergasell som Sveriges snabbast växande företag i alla kategorier.</p>
       <p>Peter har en Med kand med toxikolog samt genomgått IFL på Handelshögskolans executive program samt Försvarsmaktens olika ledarprogram. Dessutom utvecklar han internationella hållbarhetsstandarder, ISO, inom ledarskap, organisation, hållbarhet och är FN-representant i Sverige för hållbar miljö, kvalité och affärsutveckling. </p>
       <p>Peter är för närvarande en av ALMI:s hållbarhetsexperter.</p>
 `,
-      imageUrl: "../team/1FE0C436-29BB-4B18-BAC0-A9D1704F0F6F.jpeg",
+      imageUrl: "../team/Peter1.png",
+    },
+    {
+      rubrik: "Susanna Liljedahl,",
+      title:
+        "Civilingenjör, PM, anläggning. Ingår i ASA.P läkemedelsutvecklings teamet.",
+      description: `
+        <p>Över 10 års erfarenhet från AstraZenecas
+        forskningsavdelning  </p>
+        <p>På Zelmic är hon specialiserad på topisk leverans
+        av läkemedel med in-vitro modellering,
+        formuleringsutveckling, hållbarhetsstudier, hudens
+        penetrationsförmåga, valideringsstudier och
+        paketering av läkemedelsdoser till kund med
+        tillhörande etikettsregler </p>
+        `,
+      imageUrl: "/team/Susanna Lilje1.jpg",
+    },
+    {
+      rubrik: "Marie Gårdmark",
+      title: "Msci Pharm, PhD, ingår i ASA.P läkemedelsutvecklings teamet. ",
+      description: `
+      <p>Dr Gårdmark har 10 års erfarenhet från ledande roller i små och stora läkemedelsföretag främst inom regulatorisk FoU, vilket exemplifieras av utveckling och implementering av globala regulatoriska strategier, due diligence-aktiviteter och vetenskapliga rådgivningsmöten i EU och USA.</p>
+      <p>Hennes huvudfokus har varit klinisk och preklinisk forskning med flera års erfarenhet från tidig läkemedelsutveckling.  Hennes vetenskapliga bakgrund är inom klinisk farmakologi och farmakometri.</p>
+      <p>Bakgrund inom Läkemedelsverket</p>
+ 
+      `,
+      imageUrl: "/team/Marie Gårdmark.jpg",
     },
 
-    
-      rubrik: "Annika Möllström",
-      title: "Strategisk och operativ kommunikation ",
+    {
+      rubrik: "Agneta Larhed",
+      title: "Msci Pharm, PhD, ingår i ASA.P läkemedelsutvecklings teamet.",
       description: `
-      <p>Annika har lång erfarenhet av strategisk och operativ kommunikation, PR och pressfrågor för kunder inom privat sektor, myndighet och ideell sektor. </p>
-      <p>Hon är en rutinerad konsult med bred utbildning som med lätthet arbetar med olika kanaler.</p>
-`,
-      imageUrl: "../team/Annika.png",
-    },*/
+      <p>Agneta har varit verksam som forskare och chef inom både akademisk och industriell läkemedelsinnovation och produktutveckling i mer än 10 år.</p>
+      <p>Hennes arbete fokuserade på läkemedelsabsorption, läkemedelsleverans och formuleringsutveckling, och täckte en rad formuleringar och doseringsformer som tabletter, geler och mikropartiklar. Dessutom har hon varit delaktig i utvecklingen av kurser och symposier och är idag styrelseledamot i den vetenskapliga sektionen Farmaceutik i Läkemedelsakademien.</p>
+
+      <p>Bakgrund inom Läkemedelsverket</p>
+      `,
+      imageUrl: "/team/Agneta Larhed.jpg",
+    },
   ];
 
   const scrollToTop = () => {
@@ -113,37 +138,7 @@ export default function Team() {
       </p>
       <img className={styles.infografik} src="/team/infografik1.png" alt="" />
 
-      <div className={styles.firstRow}></div>
-
-      <h2 className={styles.presentation}>VD OCH GRUNDAREN </h2>
-
-      <div className={styles.ContainerFullPage1}>
-        <img
-          src="../team/4DF7E618-AFD1-48C9-A7D8-C06E869B29C7.jpeg"
-          alt="title1"
-          className={styles.image}
-        />
-
-        <div className={styles.content}>
-          <h3 className={styles.rubrik1}>Roar Adelsten </h3>
-          <h5 className={styles.title1}>VD, grundare och styrelseledamot</h5>
-          <div className={styles.description1}>
-            Roar Adelsten är grundaren av Auxesis Pharma Holding AB, Auxesis
-            MedTech AB och Auxesis Animal Care AB. Roar har under sin
-            yrkeskarriär arbetat nästan 30 år inom läkemedelsindustrin som VD,
-            Field Manager och medicinsk konsult, bland annat på Pfizer AS i
-            Norge. Han har erfarenhet av medicinindustrin i Sverige, Norge och
-            USA och har arbetat med kirurgisk rekonstruktiv ortopedi, led- och
-            benartroplastik, kirurgiska instrument med mera. Roar har en BS i
-            nationalekonomi och marknadsföring från IHM Business School i Oslo,
-            Norge. Han har också en grundutbildning i medicin och är certifierad
-            läkemedelskonsulent från Oslo Universitet.
-          </div>
-        </div>
-      </div>
       <div className={styles.bolagsstyrelse}>
-        <h2 className={styles.presentation}>BOLAGSSTYRELSE </h2>
-
         <div className={styles.ContainerFullPage}>
           {Items.map((item, index) => (
             <div key={index} className={styles.Item}>
@@ -166,8 +161,7 @@ export default function Team() {
           ))}
         </div>
       </div>
-      <Teamet />
-      <UtvecklingsTeamet />
+
       <div className={styles.scrollToTop} onClick={scrollToTop}>
         ⬆️
       </div>

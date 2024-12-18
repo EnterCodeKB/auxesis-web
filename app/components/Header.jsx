@@ -205,9 +205,6 @@ export default function Header() {
                 <Link href="/nyheter/senastenytt" onClick={closeMenu}>
                   <div className={styles.subLink}>Senaste nytt</div>
                 </Link>
-                <Link href="/produkter/nyhetsbrev" onClick={closeMenu}>
-                  <div className={styles.subLink}>Arkiv</div>
-                </Link>
               </div>
             )}
           </div>
@@ -254,10 +251,10 @@ export default function Header() {
             </div>
             {activeDropdown === "press" && (
               <div className={styles.dropdownContent}>
-                <Link href="/press/pressrum" onClick={closeMenu}>
+                {/*  <Link href="/press/pressrum" onClick={closeMenu}>
                   <div className={styles.subLink}>Pressrum </div>
                 </Link>
-
+*/}
                 <Link href="/press/auxesisimedia" onClick={closeMenu}>
                   <div className={styles.subLink}>Auxesis i media</div>
                 </Link>

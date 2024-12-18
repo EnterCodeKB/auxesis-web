@@ -1,4 +1,3 @@
-// produkter/layout.js
 import styles from "../styles/Produkter.module.css";
 import HeroPr from "../components/HeroSectionPr";
 

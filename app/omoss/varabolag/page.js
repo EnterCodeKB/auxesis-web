@@ -34,9 +34,9 @@ export default function Bolag() {
 
   return (
     <>
-      <section>
+      <section className={styles.section}>
         <div className={styles.textarea}>
-          <h1>En solid koncern med tre bolag</h1>
+          <h1 className={styles.h1}>En solid koncern med tre bolag</h1>
 
           <div className={styles.bolagstree}>
             <div className={styles.loggansdiv}>
@@ -85,11 +85,10 @@ export default function Bolag() {
                   forskningsområden. Auxesis Pharma Holding AB (publ) fokuserar
                   på utveckling av innovativa läkemedel för behandling av lokal
                   smärta och irritation på huden, både för människor och djur.{" "}
-                  <br />
-                  <br />
-                  <span>
-                    <h4>Auxesis affärsidé:</h4>
-                  </span>{" "}
+                </p>
+                <br />
+                <h4 className={styles.h4}>Auxesis affärsidé:</h4>
+                <p className={styles.ptext}>
                   Med utgångspunkt i egna patent utvecklar Auxesis innovativa
                   läkemedel som effektivt lindrar smärta och irritation på
                   huden. Produkterna är enkla att använda och tillgängliga för
@@ -99,11 +98,10 @@ export default function Bolag() {
                   uppnått något unikt: att stabilisera acetylsalicylsyra (ASA) i
                   flytande form. Denna stabilisering, kombinerad med andra redan
                   godkända läkemedel, möjliggör en applicering direkt på huden.{" "}
-                  <br />
-                  <br />{" "}
-                  <span>
-                    <h4>Milstolpar och framtid</h4>{" "}
-                  </span>
+                </p>
+                <br />
+                <h4 className={styles.h4}>Milstolpar och framtid</h4>{" "}
+                <p className={styles.ptext}>
                   Sommaren 2025 firar bolaget 10 år. Sedan starten har Auxesis
                   genomgått en resa från idéstadiet, via forskning och
                   kapitalisering, till prekliniska tester och globalt
@@ -126,7 +124,7 @@ export default function Bolag() {
                   prototyptillverkning och licensen för att producera och
                   marknadsföra våra medicinska produkter i Norden och licenser
                   för resten av världen.
-                  <br />
+                  <br /> <br />
                   För att säkerställa högsta möjliga standard och effektivitet
                   etablerar vi en egen, toppmodern fabrik i Östersund. Fabriken
                   skräddarsys för att producera våra egna produkter. Genom att

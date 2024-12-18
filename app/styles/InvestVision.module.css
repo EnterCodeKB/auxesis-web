@@ -1,0 +1,205 @@
+.hidden {
+  opacity: 0;
+  transform: translateY(60px); /* Startar nedanför sin normala position */
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0); /* Flyttar till sin normala position */
+}
+
+.effekt {
+  background-color: #c9e7f153;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.vision {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 2%; /* Lägg till padding för mindre skärmar */
+  margin: 0 auto; /* Centrerar visionen */
+  margin-left: 3%;
+  margin-top: 5%;
+}
+
+.h2vision {
+  margin-left: 0; /* Ta bort onödiga marginaler */
+  color: #23559b;
+  text-align: center; /* Centrera texten */
+}
+
+.affärside {
+  margin-top: 5%;
+  margin-bottom: 6%;
+}
+
+.whiteboard4 {
+  padding: 2%;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 60px;
+  gap: 2%;
+  width: 100%;
+  margin-bottom: 6%;
+}
+
+.h2 {
+  margin-left: -130px;
+  color: #23559b;
+}
+.h2div {
+  margin-left: 550px;
+  color: #23559b;
+}
+
+.ptext {
+  font-size: 20px; /* Use rem for responsiveness */
+  line-height: 1.2; /* Improve readability */
+  margin-bottom: 1rem;
+  color: #555;
+  margin-top: 34px;
+  margin-left: 5%;
+}
+
+/* För tablets och mindre skärmar */
+@media (max-width: 991px) {
+  .ptext {
+    font-size: 18px;
+    text-align: left; /* Behåll vänsterjusteringen */
+  }
+
+  .vision {
+    padding: 2%;
+    margin-top: 20%;
+    text-align: center;
+    margin-left: 10%;
+  }
+
+  .h1vision {
+    text-align: center;
+    margin-left: 5%;
+  }
+
+  .h2vision {
+    font-size: 24px;
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .effekt {
+    max-width: 90%;
+    padding: 16px;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .affärside {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding: 0 20px;
+  }
+
+  .ptext {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
+
+/* För mobiler och ännu mindre skärmar */
+@media (max-width: 768px) {
+  .vision {
+    padding: 2%;
+    margin-top: 1%;
+    text-align: center;
+    margin-left: 5%;
+  }
+  .h1vision {
+    text-align: center;
+    margin-left: 80px;
+  }
+
+  .h2vision {
+    font-size: 20px;
+    text-align: left; /* Vänsterjustera texten */
+  }
+
+  .effekt {
+    max-width: 100%; /* Använd hela bredden på mindre skärmar */
+    padding: 12px;
+    font-size: 18px;
+    text-align: left; /* Vänsterjustera innehållet */
+  }
+
+  .affärside {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+
+  .ptext {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .vision {
+    width: 120%;
+    margin: 0 auto;
+    padding: 4%;
+    margin-left: 3%;
+    margin-top: 5%;
+  }
+
+  .h2vision {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .effekt {
+    max-width: 80%;
+    padding: 2%;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .affärside {
+    margin-top: 6%;
+    margin-bottom: 6%;
+    padding: 0;
+  }
+
+  .ptext {
+    font-size: 20px;
+    line-height: 1.8;
+  }
+
+  .affärside {
+    margin-top: 5%;
+    margin-bottom: 6%;
+  }
+
+  .whiteboard4 {
+    padding: 2%;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 60px;
+    gap: 2%;
+    width: 100%;
+    margin-bottom: 6%;
+  }
+}

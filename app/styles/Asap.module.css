@@ -1,0 +1,168 @@
+.sectionA {
+  max-width: 100%; /* Limit the maximum width */
+  padding: 20px; /* Add padding for spacing */
+  margin: 0 auto; /* Center the content */
+  margin-top: 200px;
+  margin-bottom: 70px;
+  margin-left: 60px;
+}
+
+.imgirritation {
+  width: 100%; /* Make the image responsive */
+  max-width: 500px; /* Set a max-width */
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+}
+.textcontainer {
+  margin-right: 20px;
+  width: 90%;
+}
+
+.divh2 {
+  margin-top: -50px;
+  margin-right: 210px;
+}
+@media (max-width: 991px) {
+  .produktinfo {
+    flex-direction: column; /* Staplar innehåll vertikalt */
+    align-items: center;
+  }
+
+  .sectionA {
+    margin-left: 150px;
+    width: 100%;
+  }
+  .container1 {
+    margin-right: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .produktinfo {
+    flex-direction: column; /* Staplar innehåll vertikalt */
+    align-items: center;
+  }
+
+  .servettext,
+  .handsdiv {
+    text-align: center;
+  }
+
+  .hands {
+    max-width: 300px; /* Minska bildstorlek för medelstora skärmar */
+  }
+
+  .ptext {
+    font-size: 18px; /* Justera textstorlek för mindre skärmar */
+  }
+  .ulList {
+    text-align: left;
+    margin-top: -20px;
+  }
+
+  .ptext {
+    font-size: 18px; /* Justera textstorlek för mindre skärmar */
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .produktinfo {
+    gap: 10px;
+  }
+
+  .h4 {
+    margin-left: 0px;
+    font-size: larger;
+  }
+
+  .produktinfo {
+    margin-top: -260px;
+  }
+  .hands {
+    max-width: 250px; /* Ytterligare minskning för små skärmar */
+    margin-left: -20px;
+  }
+
+  .ptext {
+    font-size: 16px;
+  }
+
+  .sectionA {
+    margin-left: 100px;
+    width: 100%;
+  }
+
+  .h2utveckling {
+    margin-left: 30px;
+    text-align: center;
+  }
+  .imgirritation {
+    margin-left: -1px;
+  }
+  .ulList {
+    font-size: 0.9rem;
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .produktinfo {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+  }
+
+  .servettext {
+    width: 100%;
+  }
+
+  .servettdiv {
+    margin-left: -30px;
+    margin-top: 50px;
+  }
+  .ptext {
+    font-size: 22px;
+    line-height: 1.8;
+    color: #555;
+  }
+  .servett {
+    width: 60vh;
+  }
+  .hands {
+    max-width: 500px; /* Större bilder för bredare skärmar */
+  }
+
+  .textcontainer2 {
+    max-width: 80%;
+    margin: 0 auto;
+    font-size: 1.2rem; /* Ökar textstorlek */
+  }
+  .imgprodukt {
+    width: 100%; /* Make the image responsive */
+    max-width: 700px; /* Set a max-width */
+    margin: 20px auto; /* Center the image */
+    display: block; /* Ensure it's a block element */
+  }
+
+  .sistadiv {
+    margin-top: 100px;
+  }
+
+  .ulList {
+    font-size: 1.1rem; /* Ökar storlek på listtext */
+    line-height: 1.8; /* Ökar mellanrum för läsbarhet */
+  }
+  .scrollToTop {
+    font-size: 2rem; /* Gör knappen större */
+    bottom: 30px; /* Ger mer utrymme nedtill */
+    right: 30px;
+  }
+}

@@ -1,0 +1,236 @@
+.h2 {
+  margin-bottom: 20px; /* Add space below the heading */
+}
+
+.agare {
+  width: 90%; /* Use percentage for responsiveness */
+  max-width: 1200px; /* Set a max-width */
+  padding: 60px;
+  margin: 0 auto; /* Center the container */
+}
+
+/*ÄGARE*/
+.section {
+  width: 100%;
+}
+
+.aegare {
+  padding: 20px;
+  margin-top: -50px;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.aegarecontainer {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-left: 100px;
+  gap: 20px;
+  width: 80%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-left: 12%;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.whiteboard1 {
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-left: 6%;
+  gap: 2%;
+  width: 100%;
+}
+
+.whiteboard2 {
+  padding: 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 80%;
+  margin-left: 12%;
+  margin-top: -30px;
+  margin-bottom: 5%;
+}
+
+.whiteboard3 {
+  padding: 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 80%;
+  margin-left: 12%;
+  margin-top: -30px;
+  margin-bottom: 5%;
+}
+
+.aegaretext {
+  display: flex;
+  justify-content: flex-start;
+  width: 40%;
+  margin-left: 60px;
+}
+
+.h2 {
+  margin-left: -130px;
+  color: #23559b;
+}
+.h2div {
+  margin-left: 550px;
+  color: #23559b;
+}
+.h2roar {
+  margin-left: -175px;
+  color: #23559b;
+}
+.h1div {
+  font-size: 58px; /* Använd rem för bättre skalbarhet */
+  font-weight: 700;
+  color: #1c1e53;
+  display: flex;
+  justify-content: center;
+}
+.ptext {
+  font-size: 20px; /* Use rem for responsiveness */
+  line-height: 1.2; /* Improve readability */
+  margin-bottom: 1rem;
+  color: #555;
+  margin-top: 34px;
+  margin-left: 60px;
+}
+.ptext2 {
+  font-size: 20px; /* Use rem for responsiveness */
+  line-height: 1.2; /* Improve readability */
+  margin-bottom: 1rem;
+  color: #555;
+  margin-top: 34px;
+  margin-left: 3s0px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.ptext1 {
+  font-size: 20px; /* Use rem for responsiveness */
+  line-height: 1.2; /* Improve readability */
+  margin-bottom: 1rem;
+  color: #555;
+  margin-top: 34px;
+}
+
+.aegare {
+  margin-top: 100px;
+}
+
+/*ÄGARE CSS*/
+/* För tablets och mindre skärmar */
+@media (max-width: 991px) {
+  .section {
+    width: 100%; /* Full bredd */
+    padding: 20px; /* Lägg till padding */
+    margin: 0 auto; /* Centrera layout */
+    margin-top: 150px;
+    margin-left: 15%;
+  }
+
+  .aegarecontainer {
+    flex-direction: column; /* Stacka innehållet vertikalt */
+    align-items: center; /* Centrera element */
+    gap: 20px; /* Lägg till mellanrum mellan barn */
+    padding: 20px; /* Mindre padding */
+    margin: 40px auto; /* Anpassa marginaler */
+  }
+
+  .whiteboard1,
+  .whiteboard2,
+  .whiteboard3 {
+    flex-direction: column; /* Vertikal layout */
+    padding: 15px; /* Mindre padding */
+    margin: 20px auto; /* Justera marginaler */
+    width: 90%; /* Gör innehållet mer kompakt */
+  }
+
+  .aegaretext {
+    width: 100%; /* Full bredd */
+    text-align: justify; /* Justera texten */
+    margin-top: 10px; /* Lägg till marginal */
+    margin-left: 1%;
+  }
+
+  .ptext1,
+  .ptext2 {
+    font-size: 18px; /* Anpassa textstorlek */
+    line-height: 1.5; /* Förbättra läsbarhet */
+    margin-bottom: 10px; /* Lägg till bottmarginal */
+  }
+
+  .h2 {
+    font-size: 28px; /* Anpassa rubrikstorlek */
+    margin-bottom: 10px; /* Lägg till bottmarginal */
+    text-align: center; /* Centrera rubriker */
+  }
+}
+
+/* För mobiler och mindre skärmar */
+@media (max-width: 768px) {
+  .section {
+    width: 100%; /* Full bredd */
+    padding: 10px; /* Mindre padding */
+    margin: 20px auto; /* Justera marginaler */
+    flex-direction: column; /* Stacka innehållet vertikalt */
+    align-items: center; /* Centrera element */
+    margin-left: 10%;
+  }
+
+  .aegarecontainer {
+    flex-direction: column; /* Stacka innehållet vertikalt */
+    align-items: center; /* Centrera element */
+    gap: 15px; /* Lägg till mellanrum mellan barn */
+    padding: 10px; /* Mindre padding */
+  }
+
+  .whiteboard1,
+  .whiteboard2,
+  .whiteboard3 {
+    flex-direction: column; /* Vertikal layout */
+    align-items: center; /* Centrera element */
+
+    padding: 10px; /* Mindre padding */
+    margin: 15px auto; /* Justera marginaler */
+    width: 95%; /* Gör innehållet kompaktare */
+  }
+
+  .aegaretext {
+    width: 100%; /* Full bredd */
+    text-align: justify; /* Justera texten */
+    margin-top: 5px; /* Lägg till marginal */
+  }
+
+  .ptext1,
+  .ptext2 {
+    font-size: 16px; /* Anpassa textstorlek för mobiler */
+    line-height: 1.4; /* Förbättra läsbarhet */
+    margin-bottom: 10px; /* Lägg till bottmarginal */
+  }
+
+  .h2 {
+    font-size: 24px; /* Mindre rubrikstorlek */
+    margin-bottom: 10px; /* Lägg till bottmarginal */
+    text-align: center; /* Centrera rubriker */
+  }
+}
+@media (min-width: 1200px) {
+  .section {
+    width: 100%;
+    margin-left: 4%;
+  }
+  .ptext {
+    font-size: 20px;
+    line-height: 1.8;
+  }
+}

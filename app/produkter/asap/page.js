@@ -1,5 +1,5 @@
 "use client";
-import styles from "../../styles/Produkter.module.css";
+import styles from "../../styles/Asap.module.css";
 
 export default function AsaP() {
   const scrollToTop = () => {
@@ -8,7 +8,7 @@ export default function AsaP() {
 
   return (
     <>
-      <section className={styles.section}>
+      <section className={styles.sectionA}>
         <div className={styles.container1}>
           <div className={styles.textcontainer}>
             <h2>Receptfritt preparat för människa - ASA.P® </h2>

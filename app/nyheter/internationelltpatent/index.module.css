@@ -1,0 +1,93 @@
+.title {
+  font-size: 2rem; /* Använd rem för bättre skalbarhet */
+  font-weight: 700;
+  text-align: center;
+  color: #1c1e53;
+  margin-left: 80px;
+  margin-bottom: -50px;
+}
+
+.h1intpatent {
+  line-height: 4rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: 570;
+}
+.downloadButton {
+  margin-left: 40%;
+}
+.downloadButton {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #0070f3;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-bottom: 60px;
+}
+
+.downloadButton:hover {
+  background-color: #005bb5;
+}
+@media (max-width: 991px) {
+  .section {
+    margin-left: 15%;
+    width: 100%;
+  }
+  .h1intpatent {
+    margin-top: 60px;
+  }
+  .button {
+    margin-left: 20%;
+  }
+  .downloadButton {
+    margin-left: 200px;
+  }
+  .scrollToTop {
+    font-size: 1.2rem; /* Mindre knappstorlek */
+    bottom: 15px; /* Justera avstånd från botten */
+    right: 15px; /* Justera avstånd från höger */
+    background-color: #0070f3;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .scrollToTop:hover {
+    background-color: #0056b3;
+  }
+  .downloadButton {
+    margin-left: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .section {
+    margin-left: 10%;
+    width: 100%;
+  }
+  .h1intpatent {
+    margin-top: -50px;
+  }
+  .button {
+    margin-left: 15%;
+  }
+
+  .scrollToTop {
+    font-size: 1.2rem; /* Mindre knappstorlek */
+    bottom: 15px; /* Justera avstånd från botten */
+    right: 15px; /* Justera avstånd från höger */
+    background-color: #0070f3;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .scrollToTop:hover {
+    background-color: #0056b3;
+  }
+}

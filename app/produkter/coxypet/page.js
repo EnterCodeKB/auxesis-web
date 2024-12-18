@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "../../styles/Produkter.module.css";
+import styles from "../../styles/ProduktCoxypet.module.css";
 
 export default function Coxypet() {
   const scrollToTop = () => {
@@ -25,7 +25,7 @@ export default function Coxypet() {
               läkemedel både i förebyggande syfte vid risk för infektion och vid
               behandling av pågående smärta.{" "}
             </p>
-            <p>
+            <p className={styles.ptext}>
               Boskapsdjur, inklusive kor och grisar, behandlas regelbundet med
               antibiotika i förebyggande syfte vilket leder till betydande
               förluster av mjölk- och köttproduktion under behandlingen.
@@ -83,13 +83,13 @@ export default function Coxypet() {
         </div>
 
         <div className={styles.textcontainer2}>
-          <p>
+          <h4 className={styles.h4}>
             Marknadspotentialen är stark eftersom preparatet innebär flera
             fördelar:
-          </p>
+          </h4>
         </div>
 
-        <ul className={styles.ulList}>
+        <ul className={styles.ulListc}>
           <li>
             Djurägare kan använda preparatet utan att kontakta en veterinär.
           </li>

@@ -108,31 +108,95 @@
   color: #666;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .logo {
-    width: 100px;
+    width: 80px; /* Minskat logotypstorlek */
     height: auto;
-    margin-top: 70px;
-    margin-left: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
   }
+
   .hamburgerBtn {
-    display: block; /* Show hamburger menu */
+    display: block; /* Visa hamburgermenyn */
+    margin-left: auto; /* Flytta till höger */
+    margin-top: 10px;
   }
 
   .menu {
-    display: flex; /* Enable sliding menu */
+    width: 250px; /* Justera bredden för mindre skärmar */
   }
 
-  .languageContainer {
-    margin-bottom: 20px;
+  .mainLink {
+    font-size: 1rem; /* Justera textstorlek */
+  }
+
+  .dropdownContent,
+  .subDropdownContent {
+    gap: 5px; /* Minska mellanrummet mellan dropdown-alternativ */
+  }
+
+  .subLink {
+    font-size: 0.9rem;
+  }
+
+  .subSubLink {
+    font-size: 0.8rem;
+    padding-left: 10px;
+  }
+
+  .closeBtn {
+    font-size: 20px; /* Anpassa storlek på stängningsknappen */
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 70px; /* Ytterligare minskning för mindre skärmar */
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .hamburgerBtn {
+    margin-right: 10px; /* Justera marginal för att hålla det responsivt */
+    margin-top: 10px;
   }
 
   .hamburgerIcon {
-    width: 40px;
-    height: 40px;
-    background-color: #23559b;
-    border-radius: 8px;
-    margin-right: 50px;
-    margin-top: 30px;
+    width: 30px; /* Anpassa storleken på ikonen */
+    height: 30px;
+  }
+
+  .menu {
+    width: 80%; /* Gör menyn bredare */
+    right: -80%; /* Dölj menyn till höger */
+  }
+
+  .menuOpen {
+    right: 0; /* Visa menyn korrekt */
+  }
+
+  .mainLink {
+    font-size: 0.9rem; /* Minska textstorlek ytterligare */
+    padding: 10px; /* Ge lite utrymme för länkar */
+  }
+
+  .dropdownContent,
+  .subDropdownContent {
+    gap: 5px; /* Mindre mellanrum */
+  }
+
+  .subLink {
+    font-size: 0.8rem; /* Ytterligare minskning av dropdown-länkstorlek */
+  }
+
+  .subSubLink {
+    font-size: 0.7rem; /* Anpassa för undermenyer */
+    padding-left: 5px;
+  }
+
+  .closeBtn {
+    font-size: 18px; /* Mindre stängningsikon */
+    right: 5px;
+    top: 5px;
   }
 }

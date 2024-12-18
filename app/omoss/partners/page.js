@@ -12,8 +12,8 @@ export default function Partners() {
   };
 
   return (
-    <section>
-      <h1>Välrenommerade partners</h1>
+    <section className={styles.section}>
+      <h1 className={styles.h1}>Välrenommerade partners</h1>
       <p className={styles.ptext}>
         Auxesis är i en uppstartfas där erfarna och specialiserade partners är
         avgörande för att snabbt komma i gång med verksamheten. Våra

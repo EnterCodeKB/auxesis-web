@@ -16,6 +16,7 @@ export default function MedTech() {
           prototyptillverkning och licensen för att producera och marknadsföra
           våra medicinska produkter i Norden och licenser för resten av världen.
         </p>
+        <br />
         <h3 className={styles.h3}>Toppmodern fabrik</h3>
         <p className={styles.ptext}>
           Auxesis MedTech AB kommer att fokusera på att sälja och marknadsföra

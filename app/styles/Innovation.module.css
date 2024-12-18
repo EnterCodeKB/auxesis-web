@@ -1,15 +1,98 @@
 .divh1 {
-  margin-left: 70px;
   line-height: 3.5rem;
   display: flex;
   text-align: center;
+  justify-content: center; /* Centrerar rubriken horisontellt */
 }
 
 .section {
   margin-top: 100px;
   margin-bottom: 60px;
+  padding: 0 20px; /* Lägger till padding för små skärmar */
 }
 
+.section1,
 .section2 {
-  margin-top: 60px;
+  max-width: 1200px; /* Sätt en maxbredd för större skärmar */
+  margin: 0 auto; /* Centrera innehållet */
+  margin-bottom: 40px; /* Lägg till utrymme mellan sektionerna */
+}
+
+.ptext {
+  font-size: 20px;
+  line-height: 1.6; /* Förbättra läsbarheten */
+  margin-top: 20px;
+  color: #555;
+  text-align: justify; /* Justera texten för bättre läsbarhet */
+}
+
+/* Responsiv design */
+@media (max-width: 991px) {
+  .divh1 {
+    font-size: 36px; /* Minska storleken på rubriken */
+    margin-left: 0; /* Ta bort vänstermarginalen */
+    text-align: center;
+  }
+
+  .ptext {
+    font-size: 18px; /* Justera textstorleken */
+    line-height: 1.4; /* Anpassa radavståndet */
+    text-align: justify; /* Bibehåll justerad text */
+  }
+
+  .section {
+    padding: 0 15px; /* Minska padding för små skärmar */
+  }
+
+  .section1,
+  .section2 {
+    margin-bottom: 30px; /* Mindre avstånd mellan sektionerna */
+  }
+}
+
+@media (max-width: 768px) {
+  .divh1 {
+    font-size: 28px; /* Ännu mindre rubrikstorlek */
+    line-height: 1.2; /* Minska radavståndet */
+  }
+
+  .divh2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .ptext {
+    font-size: 16px; /* Anpassa textstorlek för mobiler */
+    line-height: 1.4;
+  }
+  .section {
+    margin-left: 100px;
+    margin-top: -1px;
+  }
+  .section1,
+  .section2 {
+    margin-bottom: 20px; /* Minska utrymme mellan sektionerna */
+  }
+}
+
+@media (min-width: 1200px) {
+  .divh1 {
+    font-size: 52px; /* Öka rubrikstorleken på stora skärmar */
+    line-height: 4rem;
+  }
+
+  .ptext {
+    font-size: 22px; /* Gör texten större */
+    line-height: 1.8; /* Förbättra radavståndet */
+  }
+
+  .section {
+    margin-top: 120px;
+    margin-bottom: 80px;
+  }
+
+  .section1,
+  .section2 {
+    margin-bottom: 50px; /* Extra utrymme för stora skärmar */
+  }
 }

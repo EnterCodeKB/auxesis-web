@@ -17,21 +17,21 @@ export default function HomePage() {
   };
   return (
     <>
+      {/*  <div className={styles.background}>
+        <img
+          src="/bgbild2.jpg"
+          alt="Background"
+          className={styles.backgroundImage}
+  />*/}
       <LatestNews newsItems={newsItems} />
       <div className={styles.div}>
         <section>
-          {/* <div className={styles.background}>
-            <img
-              src="/secondbgbild.jpg"
-              alt="Background"
-              className={styles.backgroundImage}
-            />
-          </div>*/}
           <Middle />
         </section>
         <Card />
         <Finance />
       </div>
+
       <div className={styles.scrollToTop} onClick={scrollToTop}>
         ⬆️
       </div>

@@ -48,6 +48,9 @@
   margin-top: 69px;
 }
 @media (max-width: 991px) {
+  .section {
+    margin-left: 60px;
+  }
   .div175 {
     max-width: 100%;
     margin-top: 40px;

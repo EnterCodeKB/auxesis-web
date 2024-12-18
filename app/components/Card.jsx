@@ -5,7 +5,7 @@ export default function Card() {
     <section>
       <div className={styles.cardsdiv}>
         <div className={styles.text1}>
-          <h1>OLIKA SMÄRTOR</h1>
+          <h2 className={styles.h2div}>OLIKA SMÄRTOR</h2>
           <p className={styles.ptext}>
             Smärta kan yttra sig på olika sätt beroende på dess orsak och
             intensitet. Den kan sträcka sig från mild obehag, såsom klåda eller

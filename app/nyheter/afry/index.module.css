@@ -1,0 +1,143 @@
+/* Grundläggande styling för att centrera allting */
+.details {
+  max-width: 1100px;
+  margin: 40px auto; /* Centrera hela sektionen horisontellt */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  text-align: center; /* Centrera all text */
+  display: flex; /* Gör layouten till en flexbox */
+  flex-direction: column; /* Stapla alla element vertikalt */
+  align-items: center; /* Centrera horisontellt */
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 6%;
+}
+
+.details h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1c1e53;
+}
+
+.details h4 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #6f7287;
+}
+
+.ptext {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  text-align: center; /* Centrera p-text */
+  line-height: 1.8;
+  width: 80%; /* Begränsa textens bredd för bättre läsbarhet */
+}
+
+.ptext p {
+  margin-bottom: 15px;
+}
+
+.articlesimage2 {
+  display: flex;
+  justify-content: center; /* Centrera bilderna horisontellt */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.image1 {
+  width: 60%; /* Anpassa bildens bredd */
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+/* === Responsiv design === */
+
+/* Mellanstora skärmar (max-width: 991px) */
+@media (max-width: 991px) {
+  .details {
+    padding: 15px;
+    width: 95%;
+    margin-left: 12%;
+    margin-top: 16%;
+    margin-bottom: 6%;
+  }
+
+  .details h1 {
+    font-size: 2rem;
+  }
+
+  .details h4 {
+    font-size: 1rem;
+  }
+
+  .ptext {
+    font-size: 1rem;
+    width: 90%; /* Gör texten bredare men fortfarande centrerad */
+  }
+
+  .image1 {
+    width: 80%; /* Anpassa bredden för mellanstora skärmar */
+    max-width: 400px;
+  }
+}
+
+/* Små skärmar (max-width: 768px) */
+@media (max-width: 768px) {
+  .details {
+    padding: 10px;
+    width: 90%;
+    margin: 20px auto;
+    margin-left: 12%;
+    margin-bottom: 6%;
+  }
+
+  .details h1 {
+    font-size: 1.8rem;
+  }
+
+  .details h4 {
+    font-size: 0.9rem;
+  }
+
+  .ptext {
+    font-size: 0.95rem;
+    width: 100%; /* Full bredd för små skärmar */
+  }
+
+  .articlesimage2 {
+    flex-direction: column; /* Stapla bilderna vertikalt */
+    gap: 15px;
+  }
+
+  .image1 {
+    width: 100%; /* Full bredd på små skärmar */
+    max-width: 300px;
+  }
+}
+
+/* Stora skärmar (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .details {
+    max-width: 1200px;
+    padding: 30px;
+  }
+
+  .details h1 {
+    font-size: 3rem;
+  }
+
+  .ptext {
+    font-size: 1.2rem;
+  }
+
+  .image1 {
+    width: 50%;
+    max-width: 600px;
+  }
+}

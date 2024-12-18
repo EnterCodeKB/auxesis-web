@@ -92,33 +92,122 @@
   height: 10px;
   background-color: #06327dde;
   border-radius: 50%;
+  margin-left: -80px;
 }
 
 /* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  .section1,
+/* Media Queries for Responsiveness */
+
+/* Mellanstora skärmar (max-width: 991px) */
+@media (max-width: 991px) {
+  .kontaktsection {
+    margin-left: 30; /* Justera marginalen för centrering */
+    margin-top: 100px; /* Anpassad marginal för mindre utrymme */
+    margin-bottom: 100px;
+    height: auto; /* Tillåt sektionen att justera höjden dynamiskt */
+  }
+
+  .kontakt {
+    flex-direction: column; /* Stapla innehållet vertikalt */
+    align-items: center; /* Centrera horisontellt */
+    margin-left: 100px;
+    margin-top: -50px; /* Minska toppmarginal */
+    gap: 40px;
+  }
+
   .section2 {
-    width: 100%; /* Sektionerna blir 100% breda */
-    padding: 15px; /* Mindre padding för bättre passform */
+    margin-left: 0; /* Centrera sektionen */
+    width: 90%; /* Anpassa bredden */
+    margin-top: 0;
+    margin-bottom: 60px; /* Justera bottenmarginal */
   }
 
-  .circlecontainer {
-    flex-direction: column; /* Gör cirklarna vertikala för bättre mobilanpassning */
-    align-items: center;
-    width: 100%;
-    gap: 10px;
+  .squarecontainer {
+    margin-left: 0; /* Centrera innehållet */
+    width: 100%; /* Ta upp full bredd */
   }
 
-  .circle {
-    width: 10px; /* Minska storleken på cirklarna */
-    height: 10px;
-  }
-
-  .h2div {
-    font-size: 2rem; /* Ytterligare minskning av textstorlek */
+  .kontaktikoner {
+    width: 50px; /* Minska ikonstorleken */
   }
 
   .ptext {
-    font-size: 1.2rem; /* Anpassa textstorleken på kontaktinfo för mobil */
+    font-size: 1.3rem; /* Anpassa textstorlek */
+  }
+
+  .circlecontainer {
+    margin-left: 0; /* Centrera cirklar */
+    gap: 10px; /* Justera avståndet mellan cirklarna */
+  }
+
+  .circle {
+    width: 8px;
+    height: 8px;
+    margin-left: 0; /* Ta bort negativ marginal */
+  }
+}
+
+/* Små skärmar (max-width: 768px) */
+@media (max-width: 768px) {
+  .kontaktsection {
+    margin-left: 30px; /* Centrera sektionen */
+    margin-top: 10px; /* Minska toppmarginal */
+    margin-bottom: 80px; /* Justera bottenmarginal */
+    height: auto; /* Anpassa höjden efter innehåll */
+    padding: 10px; /* Lägg till padding */
+  }
+
+  .h1div {
+    font-size: 2.2rem; /* Minska rubrikstorlek */
+    margin-bottom: 40px;
+    text-align: center; /* Centrera rubriken */
+  }
+
+  .kontakt {
+    flex-direction: column; /* Stapla innehållet vertikalt */
+    align-items: center;
+    margin-left: 150px; /* Centrera */
+    margin-top: 50px;
+  }
+
+  .section2 {
+    width: 100%; /* Full bredd */
+    margin-left: 0;
+    padding: 10px;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .squarecontainer {
+    margin-left: 0;
+    gap: 15px; /* Justera avstånd mellan rader */
+  }
+
+  .kontaktinner {
+    flex-direction: column; /* Stapla ikon och text */
+    gap: 10px;
+    text-align: center; /* Centrera text */
+  }
+
+  .kontaktikoner {
+    width: 40px; /* Minska ikonstorlek */
+  }
+
+  .ptext {
+    font-size: 1.1rem; /* Minska textstorlek */
+  }
+
+  .circlecontainer {
+    flex-direction: row; /* Behåll cirklar på rad */
+    flex-wrap: wrap; /* Tillåt brytning */
+    justify-content: center;
+    margin-top: 20px;
+    gap: 8px; /* Justera avstånd */
+  }
+
+  .circle {
+    width: 6px; /* Mindre cirklar */
+    height: 6px;
+    margin-left: 0;
   }
 }

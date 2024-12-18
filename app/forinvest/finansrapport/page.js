@@ -1,82 +1,51 @@
 "use client";
-import styles from "../../styles/Finance.module.css";
 
-export default function Protokol() {
+import styles from "../../styles/Finance.module.css";
+import Link from "next/link";
+
+export default function ProFinanceRapport() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
     <>
-      <section className={styles.section}>
-        <h2 className={styles.h2divdark}>Protokoll från Årsstämman</h2>
-        <p>
-          Du kan ladda ner protokollet som en PDF-fil genom att klicka på
-          knappen nedan.
-        </p>
-        <a
-          href="/Finance/240618 Protokoll årsstämma.pdf"
-          download="Protokoll-Arsstamma-Auxesis-2023.pdf"
-          className={styles.downloadButton}
-        >
-          Ladda ner PDF
-        </a>
-      </section>
-      <section className={styles.section}>
-        <h2 className={styles.h2divdark}>Årsredovisning 2023-12-31</h2>
-        <p>
-          Godkänd årsredovisning 2023-12-31 finns tillgänglig här. <br />
-          Klicka på länken för att ladda ner rapporten.
-        </p>
-        <a
-          href="/Finance/Arsredovisning-2023-559195-6486.pdf"
-          download="Arsredovisning-2023-559195-6486.pdf"
-          className={styles.downloadButton}
-        >
-          Ladda ner PDF
-        </a>
-      </section>
+      <section className={styles.frapportsection}>
+        <h1 className={styles.h1}>Finansiella rapporter</h1>
+        <div className={styles.imgdiv1}>
+          <Link href="/forinvest/finansrapport/bolagsstamma">
+            <button className={styles.imgFinanceButton}>
+              <img
+                className={styles.icons}
+                src="/Finance/bolagsordning.png"
+                alt="Bolagsordning"
+              />
+              <span>Bolagsstämma</span>
+            </button>
+          </Link>
 
-      <section className={styles.section}>
-        <h2 className={styles.h2divdark}>Årsredovisning 2022-12-31</h2>
-        <p>
-          Godkänd årsredovisning 2022-12-31 finns tillgänglig här. <br />
-          Klicka på länken för att ladda ner rapporten.
-        </p>
-        <a
-          href="/Finance/2022-Arsredovisning-Auxesis-Pharma-Holding-AB-2022-signed.pdf"
-          download="Arsredovisning-Auxesis-Pharma-Holding-AB-2022-signed.pdf"
-          className={styles.downloadButton}
-        >
-          Ladda ner PDF
-        </a>
-      </section>
+          <Link href="/forinvest/finansrapport/vaerdering">
+            <button className={styles.imgFinanceButton}>
+              <img
+                className={styles.icons}
+                src="/Finance/vardering.png"
+                alt="Värdering"
+              />
+              <span>Värdering</span>
+            </button>
+          </Link>
 
-      <section className={styles.section}>
-        <h2 className={styles.h2divdark}>Revisionsberättelse 2023</h2>
-        <p>
-          Revisionsberättelse 2023 för AUXESIS PHARMA HOLDING AB (publ) med
-          organisationsnummer 559195-6486.
-        </p>
-        <a
-          href="/Finance/23ECB23C-11F8-441B-BA8C-73867BC9DE37.jpeg"
-          download="Revisionsberättelse"
-          className={styles.downloadButton}
-        >
-          Ladda ner här
-        </a>
-      </section>
-
-      <section className={styles.section}>
-        <h2 className={styles.h2divdark}>Bolagsordning</h2>
-        <p>Bolagsordning AUXESIS PHARMA HOLDING AB (publ)</p>
-        <a
-          href="/Finance/23ECB23C-11F8-441B-BA8C-73867BC9DE37.jpeg"
-          download="Revisionsberättelse"
-          className={styles.downloadButton}
-        >
-          Ladda ner här
-        </a>
+          <Link href="/forinvest/finansrapport/arsredovisning">
+            <button className={styles.imgFinanceButton}>
+              <img
+                className={styles.icons}
+                src="/Finance/protokol.png"
+                alt="Protokoll Årsredovisning"
+              />
+              <span>Årsredovisning</span>
+            </button>
+          </Link>
+        </div>
       </section>
 
       <div className={styles.scrollToTop} onClick={scrollToTop}>
