@@ -38,7 +38,7 @@ export default function About() {
 
   return (
     <>
-      <section className={styles.section}>
+      <section className={styles.omoss}>
         <h1 className={styles.h1div}>
           Nytt läkemedelsföretag förändrar spelplanen{" "}
         </h1>

@@ -106,7 +106,7 @@
 
 @media (max-width: 991px) {
   .latestNewsSection {
-    margin-left: 20px; /* Minska marginalen på vänster sida */
+    margin-left: 100px; /* Minska marginalen på vänster sida */
     padding: 20px; /* Justera padding för bättre passform */
   }
 

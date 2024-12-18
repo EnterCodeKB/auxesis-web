@@ -75,7 +75,7 @@
 /* Små skärmar (max-width: 768px) */
 @media (max-width: 768px) {
   .details {
-    padding: 10px;
+    padding: 2%;
     width: 90%;
     margin: 20px auto; /* Centrera och minska utrymme */
     margin-top: 6%;

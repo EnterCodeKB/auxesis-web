@@ -12,7 +12,7 @@ export default function Partners() {
   };
 
   return (
-    <section className={styles.section}>
+    <section className={styles.partnerssection}>
       <h1 className={styles.h1}>Välrenommerade partners</h1>
       <p className={styles.ptext}>
         Auxesis är i en uppstartfas där erfarna och specialiserade partners är

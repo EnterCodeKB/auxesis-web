@@ -8,7 +8,7 @@ export default function IntPatent() {
 
   return (
     <>
-      <section className={styles.section}>
+      <section className={styles.intpatent}>
         <h1 className={styles.h1intpatent}>
           Auxesis Pharma har ansökt om <br />
           internationellt patent – <br /> ett steg mot global framgång

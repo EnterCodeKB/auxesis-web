@@ -1,5 +1,6 @@
 /* Grundläggande styling för alla skärmar */
-.section {
+.halbara,
+.agenda {
   display: flex;
   flex-direction: column;
   align-items: center; /* Centrera innehållet horisontellt */
@@ -8,10 +9,18 @@
   padding: 20px;
   margin: 0 auto; /* Centrera sektionen */
   max-width: 1100px; /* Begränsa bredden */
+  margin-top: ;
 }
 
-.section1,
-.section2 {
+.section11,
+.section22 {
+  margin: 40px auto; /* Lägg till vertikalt mellanrum och centrera */
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%; /* Bredd för att passa in på alla skärmar */
+}
+.section31,
+.section42 {
   margin: 40px auto; /* Lägg till vertikalt mellanrum och centrera */
   padding: 20px;
   border-radius: 10px;
@@ -39,15 +48,31 @@
 
 /* Mellanstora skärmar (max-width: 991px) */
 @media (max-width: 991px) {
-  .section {
+  .halbara,
+  .agenda {
     padding: 15px;
     width: 95%;
+    margin-left: 30%;
+    margin-top: 20%;
+    margin-bottom: 6%;
   }
 
-  .section1,
-  .section2 {
+  .section11,
+  .section22 {
     padding: 15px;
     width: 95%;
+    margin-left: 50%;
+    margin-top: 26%;
+    margin-bottom: 10%;
+  }
+
+  .section31,
+  .section42 {
+    padding: 15px;
+    width: 95%;
+    margin-left: 50%;
+    margin-top: 16%;
+    margin-bottom: 10%;
   }
 
   .h1,
@@ -64,15 +89,34 @@
   }
 }
 
+.divli {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.imgbox {
+  max-width: 600px;
+}
+
 /* Små skärmar (max-width: 768px) */
 @media (max-width: 768px) {
-  .section {
+  .halbara,
+  .agenda {
     padding: 10px;
     width: 100%;
+    margin-top: -5%;
+    margin-bottom: 6%;
+    margin-left: 35%;
   }
 
-  .section1,
-  .section2 {
+  .section11,
+  .section22 {
+    padding: 10px;
+    margin: 20px auto;
+  }
+
+  .section31,
+  .section42 {
     padding: 10px;
     margin: 20px auto;
   }
@@ -90,11 +134,26 @@
     text-align: justify;
     max-width: 100%;
   }
+
+  .ul {
+    padding-left: 10px; /* Minska vänster-padding för listor */
+  }
+
+  .divli {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .imgbox {
+    width: 100%;
+    max-width: 400px;
+  }
 }
 
 /* Stora skärmar (min-width: 1200px) */
 @media (min-width: 1200px) {
-  .section {
+  .halbara,
+  .agenda {
     max-width: 1200px;
     padding: 30px;
   }
@@ -111,15 +170,21 @@
     max-width: 80%;
   }
 
-  .section1,
-  .section2 {
+  .section11,
+  .section22 {
+    width: 80%;
+    margin: 50px auto;
+  }
+  .section31,
+  .section42 {
     width: 80%;
     margin: 50px auto;
   }
 }
 /*AGENDA*/
 /* Grundläggande styling för alla skärmar */
-.section {
+.halbara,
+.agenda {
   display: flex;
   flex-direction: column;
   align-items: center; /* Centrera innehållet horisontellt */
@@ -131,9 +196,8 @@
   font-family: Arial, sans-serif;
 }
 
-.section1,
-.section2,
-.section3,
+.section11,
+.section22 .section3,
 .section4 {
   margin: 40px auto;
   padding: 20px;
@@ -180,87 +244,6 @@
   display: block; /* Centrera bilden */
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* === Responsiv design === */
-
-/* Mellanstora skärmar (max-width: 991px) */
-@media (max-width: 991px) {
-  .section {
-    padding: 15px;
-  }
-
-  .section1,
-  .section2,
-  .section3,
-  .section4 {
-    width: 95%;
-    padding: 15px;
-  }
-
-  .h1,
-  .h2 {
-    font-size: 2rem;
-    text-align: center;
-    width: 20%;
-  }
-
-  .ptext {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-
-  .divli {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-
-  .imgbox {
-    max-width: 600px;
-  }
-}
-
-/* Små skärmar (max-width: 768px) */
-@media (max-width: 768px) {
-  .section {
-    padding: 10px;
-    width: 100%;
-  }
-
-  .section1,
-  .section2,
-  .section3,
-  .section4 {
-    width: 100%;
-    padding: 10px;
-    margin: 20px 0;
-  }
-
-  .h1,
-  .h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    text-align: center; /* Vänsterjustera rubriker */
-  }
-
-  .ptext {
-    font-size: 0.95rem;
-    text-align: left; /* Vänsterjustera text */
-  }
-
-  .ul {
-    padding-left: 10px; /* Minska vänster-padding för listor */
-  }
-
-  .divli {
-    font-size: 0.95rem;
-    line-height: 1.4;
-  }
-
-  .imgbox {
-    width: 100%;
-    max-width: 400px;
-  }
 }
 
 /* Stora skärmar (min-width: 1200px) */

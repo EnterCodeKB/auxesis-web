@@ -1,4 +1,4 @@
-import styles from "../../styles/Info.module.css";
+import styles from "../medtechreg/index.module.css";
 
 export default function Info() {
   return (

@@ -107,11 +107,14 @@
   margin: 0 auto;
 }
 @media (max-width: 991px) {
-  .section {
-    padding: 10px;
-    margin: 0 auto;
+  .section,
+  .omoss {
+    margin-top: 100px;
   }
-
+  .omoss {
+    margin-top: 100px;
+    margin-left: 25%;
+  }
   .h1div {
     font-size: 2rem;
     line-height: 2.5rem;
@@ -152,7 +155,11 @@
 /* Small Screens (max-width: 768px) */
 @media (max-width: 768px) {
   .section {
-    margin-left: 80px;
+    margin-top: 100px;
+  }
+
+  .omoss {
+    margin-top: 60px;
   }
 
   .h1div {

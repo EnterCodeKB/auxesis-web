@@ -1,0 +1,309 @@
+/*app/styles/Finance.module.css*/
+/* För Invest */
+.protokolSection {
+  margin-top: 15%;
+  margin-left: 15%;
+  margin-bottom: 6%;
+}
+.h1 {
+  margin-left: 13%;
+}
+.ptext {
+  font-size: 20px; /* Use rem for responsiveness */
+  line-height: 1.2; /* Improve readability */
+  margin-bottom: 1rem;
+  color: #555;
+  display: flex;
+  text-align: left;
+  align-items: flex-start;
+  margin-left: 3%;
+}
+
+.scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #23559b;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.scrollToTop:hover {
+  background-color: #1d4a8b;
+  transform: scale(1.1);
+}
+
+/*PROTOKOL2023*/
+.protokol {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+.imgprotokol {
+  width: 90%;
+  margin-top: -2%;
+}
+
+.section {
+  text-align: center;
+  margin: 2rem;
+  margin-left: 5%;
+}
+
+.downloadButton {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #0070f3;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 2%;
+}
+
+.downloadButton:hover {
+  background-color: #005bb5;
+}
+
+.btncontainer {
+  display: flex;
+  margin-top: 3%;
+  gap: 2%;
+  text-align: justify;
+  padding: 0 1px;
+}
+
+.itemsbox {
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: #282938;
+  font-weight: 400;
+  width: 100%;
+  margin-bottom: 6%;
+  align-items: baseline;
+  justify-content: flex-end;
+}
+
+.scrollToTop {
+  position: fixed;
+  bottom: 2%;
+  right: 6%;
+  background-color: #c1eaff;
+  color: white;
+  padding: 1%;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.scrollToTop:hover {
+  background-color: #194276;
+}
+
+.button:hover {
+  border-color: #a3dcef;
+}
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+@media (min-width: 1200px) {
+  .financesection {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-top: 6%;
+    margin-left: 6%;
+  }
+
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 45%;
+  }
+
+  .h1 {
+    font-size: 3.5rem; /* Öka rubrikstorleken */
+    text-align: center; /* Centrera rubriken */
+    margin-left: 15%;
+  }
+
+  .imgdiv1 {
+    display: flex;
+    flex-wrap: nowrap; /* Lägg knapparna på en rad */
+    justify-content: space-between; /* Jämnt fördela knapparna */
+    gap: 3%; /* Lägg till större avstånd */
+    margin-top: 4%;
+    align-items: center;
+  }
+
+  .imgFinanceButton {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 2%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px; /* Rundade hörn */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    width: 300px;
+    height: 200px;
+  }
+
+  .imgFinanceButton img {
+    width: 50%; /* Öka bildstorleken */
+  }
+
+  .imgFinanceButton span {
+    font-size: 20px; /* Öka textstorleken */
+  }
+
+  .scrollToTop {
+    bottom: 30px; /* Justera positionen */
+    right: 30px; /* Justera positionen */
+    width: 50px; /* Öka storleken */
+    height: 50px; /* Öka storleken */
+    font-size: 24px; /* Öka textstorleken */
+  }
+}
+
+@media (max-width: 991px) {
+  .protokolSection {
+    margin-top: 45%;
+    margin-left: 15%;
+    margin-bottom: 6%;
+  }
+
+  .h1 {
+    font-size: 2.5rem; /* Justera rubrikstorleken */
+    margin-left: 0; /* Ta bort margin för centrering */
+    text-align: center; /* Centrera rubriken */
+    margin-bottom: 3%; /* Lägg till utrymme under rubriken */
+    margin-left: 150px;
+  }
+
+  .h1div {
+    margin-left: 15%;
+  }
+
+  .scrollToTop {
+    bottom: 2%; /* Justera positionen */
+    right: 2%; /* Justera positionen */
+    width: 40px; /* Justera storleken */
+    height: 40px; /* Justera storleken */
+    font-size: 20px; /* Justera textstorleken */
+  }
+}
+
+@media (max-width: 768px) {
+  .protokolSection {
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-bottom: 6%;
+  }
+  .h1 {
+    font-size: 2rem; /* Minska rubrikstorleken */
+    text-align: center; /* Centrera rubriken */
+    margin: 0 0 30px 0; /* Lägg till utrymme under */
+    margin-left: 6%;
+  }
+
+  .h1 {
+    font-size: 2rem; /* Minska rubrikstorleken */
+    text-align: center; /* Centrera rubriken */
+    margin: 0 0 20px 0; /* Lägg till utrymme under */
+    margin-left: 20%;
+  }
+
+  .imgFinanceButton {
+    width: 90%; /* Anpassa knappbredd till nästan hela skärmen */
+    padding: 10px;
+    margin: 5px 0; /* Lägger till mellanrum mellan knappar */
+  }
+
+  .imgFinanceButton img {
+    width: 50px; /* Justera bildstorleken */
+    height: auto;
+  }
+
+  .imgFinanceButton span {
+    font-size: 14px; /* Anpassa textstorleken */
+    text-align: center;
+  }
+
+  .scrollToTop {
+    bottom: 10px; /* Flytta upp */
+    right: 10px;
+    width: 40px; /* Justera storlek */
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
+/* Media query för min-width: 1200px */
+@media (min-width: 1200px) {
+  .protokolSection {
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-bottom: 6%;
+  }
+
+  .h1 {
+    font-size: 3.5rem; /* Öka rubrikstorleken */
+    text-align: center; /* Centrera rubriken */
+    margin-bottom: 30px;
+  }
+
+  .imgFinanceButton {
+    width: 300px; /* Fixerad knappstorlek */
+    height: 200px;
+    padding: 20px;
+  }
+
+  .imgFinanceButton img {
+    width: 70px; /* Öka bildstorleken */
+    height: auto;
+  }
+
+  .imgFinanceButton span {
+    font-size: 18px; /* Öka textstorleken */
+    text-align: center;
+  }
+
+  .scrollToTop {
+    bottom: 30px; /* Justera positionen */
+    right: 30px;
+    width: 50px; /* Öka storleken */
+    height: 50px;
+    font-size: 24px;
+  }
+
+  .imgdiv1 {
+    display: flex;
+    justify-content: space-between; /* Fördela knapparna jämnt */
+    flex-wrap: nowrap; /* Inga radbrytningar */
+    gap: 30px; /* Större avstånd mellan knappar */
+  }
+}

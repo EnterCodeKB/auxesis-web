@@ -4,7 +4,6 @@ import RootLayout from "./layout";
 import Card from "./components/Card";
 import Hero from "./components/HeroSection";
 import Middle from "./components/middleSection";
-import Blog from "./components/Blog";
 import Quiry from "./components/Quiry";
 import styles from "./styles/Page.module.css";
 import Finance from "./components/Finance";

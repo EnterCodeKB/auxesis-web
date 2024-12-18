@@ -1,4 +1,4 @@
-import styles from "../../styles/Info.module.css";
+import styles from "../ofksponsor/index.module.css";
 
 export default function Ofksponsor() {
   return (
@@ -13,6 +13,7 @@ export default function Ofksponsor() {
         Roar Adelsten, VD för  AUXESIS PHARMA HOLDING AB (publ).  
       </p>
       <img
+        className={styles.image1}
         src="/Nyheter/58845DD7-1D38-46E2-8EE6-0860339E7401_4_5005_c.jpeg"
         alt=""
       />
@@ -57,7 +58,7 @@ export default function Ofksponsor() {
       </p>
       <div className={styles.articlesimage1}>
         <img
-          className={styles.image1}
+          className={styles.image2}
           src="/Nyheter/ostersund_web-scaled.jpg"
           alt="Öfksponsor"
         />

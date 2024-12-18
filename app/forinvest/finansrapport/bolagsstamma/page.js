@@ -9,10 +9,10 @@ export default function Protokol() {
 
   return (
     <>
-      <section className={styles.section}>
+      <section className={styles.bolagsstamma}>
         <h2 className={styles.h2divdark}>Protokoll från Årsstämman</h2>
         <p>
-          Du kan visa protokollet som en PDF-fil genom att klicka på knappen
+          Du kan se protokollet som en PDF-fil genom att klicka på knappen
           nedan.
         </p>
         <a

@@ -1,4 +1,4 @@
-import styles from "../../styles/Info.module.css";
+import styles from "../patentasokanregistrerad/index.module.css";
 
 export default function Patent() {
   return (

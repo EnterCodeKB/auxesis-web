@@ -1,4 +1,4 @@
-import styles from "../../styles/Info.module.css";
+import styles from "../euroclear/index.module.css";
 
 export default function Euroclear() {
   return (

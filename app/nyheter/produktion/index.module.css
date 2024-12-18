@@ -133,7 +133,7 @@
   .details {
     width: 90%;
     margin: 16% auto 6% auto;
-    padding: 10px;
+    padding: 2%;
     display: flex; /* Gör .details till flexbox */
     flex-direction: column; /* Stapla elementen vertikalt */
     align-items: center; /* Centrera alla barn horisontellt */

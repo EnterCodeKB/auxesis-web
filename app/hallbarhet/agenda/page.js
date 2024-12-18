@@ -1,12 +1,12 @@
 import React from "react";
-import styles from "../../styles/Hallbarhet.module.css";
+import styles from "../agenda/index.module.css";
 
 const Agenda = () => {
   return (
-    <section>
+    <section className={styles.agenda}>
       <h1>Ansvar och transparens är avgörande</h1>
 
-      <div className={styles.section1}>
+      <div className={styles.section11}>
         <p className={styles.ptext}>
           Auxesis har ett transparent förhållningssätt och företaget ska tydligt
           redovisa sin påverkan på samhälle och miljö. Vidare har vi integrerat
@@ -21,7 +21,7 @@ const Agenda = () => {
           genomtänkt och systematiskt sätt.{" "}
         </p>
       </div>
-      <div className={styles.section2}>
+      <div className={styles.section22}>
         {" "}
         <h2>ISO-certifiering inom en snar framtid </h2>
         <p className={styles.ptext}>

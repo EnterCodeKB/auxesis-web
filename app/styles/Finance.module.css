@@ -36,6 +36,16 @@
   align-items: flex-start;
   margin-left: 3%;
 }
+.redovptext {
+  font-size: 20px; /* Use rem for responsiveness */
+  line-height: 1.2; /* Improve readability */
+  margin-bottom: 1rem;
+  color: #555;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-left: 15%;
+}
 
 .imgdiv1 {
   display: flex;
@@ -113,6 +123,7 @@
 
 .h2divdark {
   color: #1c1e53;
+  margin-left: 10%;
 }
 
 .ptextunder {
@@ -192,7 +203,28 @@
   margin-top: -2%;
 }
 
-.section {
+.bolagsstamma {
+  text-align: center;
+  margin: 2rem;
+  margin-left: 5%;
+}
+
+.vaerdering {
+  text-align: center;
+  margin: 2rem;
+  margin-left: 5%;
+}
+.avstamningsbolag {
+  text-align: center;
+  margin: 2rem;
+  margin-left: 5%;
+}
+.intpatent {
+  text-align: center;
+  margin: 2rem;
+  margin-left: 5%;
+}
+.kallelse {
   text-align: center;
   margin: 2rem;
   margin-left: 5%;
@@ -208,6 +240,7 @@
   font-weight: bold;
   transition: background-color 0.3s ease;
   margin-top: 2%;
+  margin-left: 45%;
 }
 
 .downloadButton:hover {
@@ -219,9 +252,14 @@
   display: flex;
   flex-direction: column;
   margin-top: 5%;
+  width: 100%;
+  margin-left: 250px;
 }
 .imgrevision {
-  width: 130%;
+  width: 80%;
+  margin-top: 6%;
+  margin-bottom: 2%;
+  margin-left: 30%;
 }
 
 .div81 {
@@ -309,8 +347,8 @@
   font-weight: 500;
   letter-spacing: 0.16px;
   justify-content: center;
-  width: 13%;
-  height: 5%;
+  width: 130px;
+  height: 50px;
   background-color: #06327d;
   cursor: pointer;
   font-size: 16px;
@@ -324,8 +362,8 @@
   font-weight: 500;
   letter-spacing: 0.16px;
   justify-content: center;
-  width: 13%;
-  height: 5%;
+  width: 130px;
+  height: 50px;
   background-color: #06327d;
   cursor: pointer;
   font-size: 16px;
@@ -341,8 +379,8 @@
   font-weight: 500;
   letter-spacing: 0.16px;
   justify-content: center;
-  width: 13%;
-  height: 5%;
+  width: 130px;
+  height: 50px;
   background-color: #06327d;
   cursor: pointer;
   font-size: 16px;
@@ -372,7 +410,11 @@
     margin-left: 6%;
   }
 
-  .section {
+  .kallelse,
+  .bolagsstamma,
+  .vaerdering,
+  .avstamningsbolag,
+  .intpatent {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -433,9 +475,13 @@
     margin-top: 160px;
     margin-bottom: 6%;
   }
-  .section {
+  .kallelse,
+  .bolagsstamma,
+  .vaerdering,
+  .avstamningsbolag,
+  .intpatent {
     margin-left: 30%;
-    margin-top: 2%;
+    margin-top: 20%;
   }
   .frapportsection {
     margin-top: 15%;
@@ -443,8 +489,9 @@
     margin-bottom: 6%;
   }
   .h2divdark {
-    margin-left: 45%;
-    width: 9%;
+    margin-left: 55%;
+    width: 10%;
+    text-align: center;
   }
   .h1 {
     font-size: 2.5rem; /* Justera rubrikstorleken */
@@ -518,9 +565,14 @@
 }
 
 @media (max-width: 768px) {
-  .section {
+  .kallelse,
+  .bolagsstamma,
+  .vaerdering,
+  .avstamningsbolag,
+  .intpatent {
     margin-left: 20%;
     margin-top: 20%;
+    margin-bottom: 4%;
   }
   .h1 {
     font-size: 2rem; /* Minska rubrikstorleken */
@@ -555,7 +607,9 @@
     margin: 0 0 20px 0; /* Lägg till utrymme under */
     margin-left: 20%;
   }
-
+  .downloadButton {
+    margin-bottom: 6%;
+  }
   .h1div {
     margin-bottom: 2%;
   }

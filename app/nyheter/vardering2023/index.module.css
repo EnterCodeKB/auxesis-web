@@ -1,508 +1,113 @@
-.spotlights {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #c9e7f153;
-  padding: 10px;
-  text-align: center;
-  margin-left: 80px;
-  margin-top: 100px;
-  width: 100%; /* Gör bredden mer flexibel */
-  max-width: 1100px; /* Sätt en maxbredd för stora skärmar */
-}
-.h1 {
-  font-size: 58px; /* Använd rem för bättre skalbarhet */
-  font-weight: 570;
-  color: #1c1e53;
-  display: flex;
-  justify-content: center;
-  line-height: 4rem;
-}
-.title {
-  font-size: 2rem; /* Använd rem för bättre skalbarhet */
-  font-weight: 700;
-  text-align: center;
-  color: #1c1e53;
-  margin-left: 80px;
-  margin-bottom: -50px;
-}
-
-.h1intpatent {
-  line-height: 4rem;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-weight: 570;
-}
-.h2divdark {
-  margin-left: 200px;
-}
-.downloadButton {
-  margin-left: 100px;
-}
-.h1div {
-  line-height: 4rem;
-}
-.newsContainer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center; /* Centrera items när de är få */
-  align-items: center;
-}
-
-.newsContainerFullPage {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 24px;
-  row-gap: 60px;
-  margin-top: 40px;
-}
-
-.newsItem {
-  background: white;
-  height: 200px;
+/* Grundläggande styling för alla skärmar */
+.varderingssection {
+  max-width: 1100px;
+  margin: 40px auto; /* Centrera sektionen horisontellt */
+  padding: 20px;
+  background-color: #f9f9f9;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  width: 300px; /* Gör item bredd flexibel */
-  overflow: hidden;
-  text-align: left;
-  padding: 0 20px 40px; /* Lägg till padding för utrymme för knappen */
-}
-
-.date {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-top: -20px;
-  margin-bottom: 10px;
-}
-
-.image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.del1 {
-  position: relative;
-}
-
-.content {
-  padding: 10px;
-}
-
-.newsTitle {
-  font-size: 1.5rem;
-  font-weight: 590;
-  color: #23559b;
-}
-.description {
-  font-size: 1rem;
-  color: #6f7287;
-  margin-top: 10px;
-}
-.readMoreButton {
-  margin-top: 30px;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.readMoreButton:hover {
-  background-color: lightcyan;
-}
-
-.infoButton1 {
-  margin-top: 30px;
-  padding: 10px 20px;
-
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 500;
-  margin-bottom: 20px;
-}
-
-.infoButton:hover {
-  background-color: #0056b3;
-}
-
-/*Senaste nyheter*/
-.details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 40px;
-  width: 80%;
-  max-width: 90%; /* Limit the maximum width */
-  margin-left: 10%;
-  font-size: larger;
-  text-align: center;
-  margin-top: 60px;
-}
-
-.ptext {
-  font-size: 20px; /* Use rem for responsiveness */
-  line-height: 1.2; /* Improve readability */
-  margin-bottom: 1rem;
-  color: #555;
-  margin-bottom: 20px;
-  text-align: justify;
-  display: flex;
-  text-align: left;
-  flex-direction: column;
-}
-
-.articlesimage {
-  width: 60%;
-  height: auto;
-  object-fit: cover;
-  margin-bottom: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  text-align: center; /* Centrera rubrik och knapp */
+  margin-bottom: 6%;
+  margin-left: 6%;
+  margin-top: 6%;
 }
 
-/*PAGINERING*/
-.pagination {
+.divdardering {
   display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 20px;
+  flex-direction: column; /* Stapla rubriken och knappen vertikalt */
+  align-items: center; /* Centrera innehållet horisontellt */
+  gap: 20px; /* Skapa mellanrum mellan rubriken och knappen */
 }
 
-.pageButton {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.pageButton:hover {
-  background-color: #0056b3;
+.h2divdark {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1c1e53;
+  margin-bottom: 20px;
 }
 
 .downloadButton {
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 10px 20px;
   background-color: #0070f3;
   color: white;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
-  margin-bottom: 60px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .downloadButton:hover {
   background-color: #005bb5;
+  transform: scale(1.05); /* Gör knappen större vid hover */
 }
 
-.activePage {
-  background-color: #194276;
-  font-weight: bold;
-}
+/* === Responsiv design === */
 
-/*SÖKFUNKTIONEN*/
-.searchInput {
-  width: 80%;
-  max-width: 400px;
-  padding: 10px;
-  margin: 20px auto;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-}
+/* Mellanstora skärmar (max-width: 991px) */
 @media (max-width: 991px) {
-  .searchInput {
-    margin-left: 20%;
-    margin-top: 20px;
-  }
-  .spotlights {
-    flex-direction: column; /* Ändra till vertikal layout */
-    padding: 15px; /* Minska padding */
-    max-width: 50%; /* Låt layouten fylla skärmen */
-    margin-top: 200px;
+  .varderingssection {
+    padding: 15px;
+    width: 95%;
+    margin-top: 16%;
+    margin-left: 15%;
+    margin-bottom: 6%;
   }
 
-  .title {
-    font-size: 1.8rem; /* Anpassad rubrikstorlek */
-    font-weight: 700;
-    text-align: center;
-    color: #1c1e53;
-    margin-top: 200px;
-  }
-  .newsContainerFullPage {
-    flex-direction: column; /* Visa artiklar i en kolumn */
-    align-items: center; /* Centrera artiklar */
-    gap: 20px; /* Justera mellanrum mellan artiklar */
-    margin-top: 200px; /* Mindre utrymme överst */
-  }
-
-  .newsItem {
-    width: 320px; /* Låt artikeln fylla skärmen */
-    padding: 20px; /* Lägg till utrymme inuti artikeln */
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Minska skuggan */
-    margin-top: 10px; /* Mindre utrymme överst */
-  }
-
-  .newsTitle {
-    margin-top: -1%;
-    font-size: 1.3rem; /* Mindre rubrikstorlek */
-    margin-bottom: 10px; /* Lägg till utrymme under */
-  }
-
-  .description {
-    font-size: 0.9rem; /* Mindre textstorlek för beskrivning */
-    line-height: 1.5; /* Justera radavstånd */
-  }
-
-  .date {
-    font-size: 1rem; /* Justera datumstorlek */
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .readMoreButton {
-    font-size: 0.9rem; /* Mindre textstorlek för knappen */
-    padding: 8px 16px; /* Justera padding för knappen */
-  }
-
-  .newsContainerFullPage {
-    display: grid; /* Använd grid-layout */
-    grid-template-columns: repeat(2, 1fr); /* Visa två kolumner */
-    gap: 20px; /* Mellanrum mellan rader och kolumner */
-    margin: 20px 0; /* Centrera layouten och skapa utrymme */
-    padding: 0 10px; /* Lägg till inre marginaler */
-    margin-top: 20px; /* Mindre utrymme överst */
-    margin-left: 10%;
-  }
-
-  .newsItem {
-    max-width: 90%; /* Låt artikeln fylla större del av skärmen */
-    padding: 20px; /* Justera inre padding */
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-    margin-top: 10px; /* Mindre utrymme överst */
-  }
-
-  .newsTitle {
-    font-size: 1.4rem; /* Minska storlek något */
-    font-weight: 600;
-    color: #23559b;
-
-    margin-bottom: 10px; /* Avstånd under rubriken */
-  }
-
-  .date {
-    font-size: 1rem; /* Justera datumstorlek */
-    font-weight: 500;
-    margin-bottom: 10px; /* Avstånd under datumet */
-  }
-
-  .description {
-    font-size: 0.95rem; /* Mindre textstorlek */
-    color: #6f7287;
-    line-height: 1.5; /* Öka läsbarhet */
-    margin-bottom: 10px;
-  }
-
-  .readMoreButton {
-    font-size: 0.9rem; /* Mindre knapptext */
-    padding: 8px 16px; /* Kompakt padding */
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-    text-align: center;
-  }
-
-  .readMoreButton:hover {
-    background-color: lightcyan;
-    color: #007bff;
-  }
-
-  .searchInput {
-    width: 90%; /* Mer flexibel bredd */
-    max-width: 300px; /* Begränsa maxbredd */
-    padding: 10px; /* Mindre padding */
-    margin: 20px auto; /* Centrera inmatningsfältet */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    margin-left: 35%;
-    margin-top: 60px; /* Mindre utrymme överst */
-  }
-
-  .details {
-    width: 100%; /* Utnyttja full bredd */
-    margin: 0 auto; /* Centrera */
-    text-align: center; /* Centrera texten */
-    padding: 10px; /* Extra padding */
-  }
-
-  .details h1 {
-    font-size: 1.6rem; /* Anpassa rubrikstorlek */
-    margin-bottom: 15px; /* Lagom avstånd under */
-  }
-
-  .details h4 {
-    font-size: 1rem; /* Anpassa underrubrikstorlek */
-    margin-bottom: 10px;
-  }
-
-  .details p {
-    font-size: 0.9rem; /* Mindre textstorlek */
-    line-height: 1.4; /* Förbättra läsbarheten */
+  .h2divdark {
+    font-size: 2rem; /* Minska rubrikstorlek */
     margin-bottom: 15px;
   }
 
-  .articlesimage {
-    width: 90%; /* Mindre bildbredd */
-    margin: 20px auto; /* Centrera och skapa utrymme */
-    border-radius: 10px; /* Lägg till rundade hörn */
-  }
-
-  .pagination {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-  }
-
-  .pageButton {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 0.9rem; /* Mindre knappstorlek */
-    cursor: pointer;
-  }
-
-  .pageButton:hover {
-    background-color: #0056b3;
-  }
-
-  .scrollToTop {
-    font-size: 1.2rem; /* Mindre knappstorlek */
-    bottom: 15px; /* Justera avstånd från botten */
-    right: 15px; /* Justera avstånd från höger */
-    background-color: #0070f3;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 50%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  }
-
-  .scrollToTop:hover {
-    background-color: #0056b3;
-  }
-
-  .section,
-  .divdardering {
-    margin-top: 300px;
-  }
-  .h2divdark {
-    margin-left: 200px;
-    width: 50%;
-  }
   .downloadButton {
-    margin-left: 100px;
+    font-size: 0.9rem;
+    padding: 8px 16px; /* Minska padding för knappen */
   }
 }
 
+/* Små skärmar (max-width: 768px) */
 @media (max-width: 768px) {
-  .searchInput {
-    margin-left: 20%;
-    margin-top: -10px;
-  }
-  .spotlights {
-    flex-direction: column; /* Ändra till vertikal layout */
-    margin: 20px auto; /* Centrera på mindre skärmar */
-    padding: 15px; /* Minska padding */
-    max-width: 50%; /* Låt layouten fylla skärmen */
+  .varderingssection {
+    padding: 10px;
+    width: 90%;
+    margin-top: -3%;
   }
 
-  .title {
-    font-size: 1.5rem; /* Justera rubrikstorlek */
-    margin: 0 auto 20px; /* Centrera och lägg till utrymme under */
-  }
-
-  .newsContainerFullPage {
-    flex-direction: column; /* Visa artiklar i en kolumn */
-    align-items: center; /* Centrera artiklar */
-    gap: 20px; /* Justera mellanrum mellan artiklar */
-    margin-top: 20px; /* Mindre utrymme överst */
-  }
-
-  .newsItem {
-    width: 300px; /* Låt artikeln fylla skärmen */
-    padding: 20px; /* Lägg till utrymme inuti artikeln */
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Minska skuggan */
-  }
-
-  .newsTitle {
-    margin-top: -1%;
-    font-size: 1.3rem; /* Mindre rubrikstorlek */
-    margin-bottom: 10px; /* Lägg till utrymme under */
-  }
-
-  .description {
-    font-size: 0.9rem; /* Mindre textstorlek för beskrivning */
-    line-height: 1.5; /* Justera radavstånd */
-  }
-
-  .date {
-    font-size: 1rem; /* Justera datumstorlek */
-    margin-top: 10px;
+  .h2divdark {
+    font-size: 1.8rem;
+    text-align: center; /* Vänsterjustera rubriken */
     margin-bottom: 10px;
+    margin-left: 15%;
   }
 
-  .readMoreButton {
-    font-size: 0.9rem; /* Mindre textstorlek för knappen */
-    padding: 8px 16px; /* Justera padding för knappen */
+  .downloadButton {
+    width: 100%; /* Gör knappen fullbredd */
+    font-size: 0.85rem;
+    padding: 8px 12px; /* Justera padding */
+    text-align: center;
   }
 
-  .details {
-    width: 90%; /* Gör detaljerna bredare */
-    padding: 0 10px; /* Lägg till mindre sidpadding */
+  .divdardering {
+    align-items: flex-start; /* Vänsterjustera innehåll */
+  }
+}
+
+/* Stora skärmar (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .varderingssection {
+    max-width: 1200px;
+    padding: 30px;
   }
 
-  .details h1 {
-    font-size: 1.8rem; /* Mindre rubrikstorlek */
+  .h2divdark {
+    font-size: 3rem;
+    margin-bottom: 30px;
   }
 
-  .details h4 {
-    font-size: 1rem; /* Mindre underrubrikstorlek */
-  }
-
-  .details p {
-    font-size: 0.9rem; /* Justera textstorlek */
-  }
-
-  .articlesimage {
-    width: 100%; /* Fullbredd på bilden */
-    margin: 20px 0; /* Lägg till utrymme ovanför och under */
-  }
-
-  .searchInput {
-    width: 90%; /* Låt sökfältet ta upp mer plats */
-    padding: 8px; /* Mindre padding */
-    font-size: 0.9rem; /* Justera textstorlek */
-  }
-
-  .scrollToTop {
-    font-size: 1rem; /* Mindre ikonstorlek */
-    bottom: 10px; /* Justera avstånd från botten */
-    right: 10px; /* Justera avstånd från höger */
+  .downloadButton {
+    font-size: 1.2rem;
+    padding: 12px 24px;
   }
 }

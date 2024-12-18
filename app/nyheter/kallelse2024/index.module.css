@@ -1,5 +1,5 @@
 /* Grundläggande styling för alla skärmar */
-.section {
+.kallelse {
   display: flex;
   flex-direction: column; /* Stapla innehållet vertikalt */
   align-items: center; /* Centrera horisontellt */
@@ -71,7 +71,7 @@
 
 /* Mellanstora skärmar (max-width: 991px) */
 @media (max-width: 991px) {
-  .section {
+  .kallelse {
     padding: 15px;
     width: 95%;
     margin-top: 16%;
@@ -98,7 +98,7 @@
 
 /* Små skärmar (max-width: 768px) */
 @media (max-width: 768px) {
-  .section {
+  .kallelse {
     padding: 10px;
     width: 90%;
     margin: 20px auto;
@@ -129,7 +129,7 @@
 
 /* Stora skärmar (min-width: 1200px) */
 @media (min-width: 1200px) {
-  .section {
+  .kallelse {
     max-width: 1200px;
     padding: 30px;
   }

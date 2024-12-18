@@ -1,10 +1,10 @@
-.section {
+.produkthistorik {
   max-width: 100%; /* Limit the maximum width */
   padding: 20px; /* Add padding for spacing */
   margin: 0 auto; /* Center the content */
   margin-top: 200px;
   margin-bottom: 70px;
-  margin-left: 60px;
+  margin-left: 100px;
 }
 .h4 {
   margin-left: -115px;
@@ -159,8 +159,9 @@
     align-items: center;
   }
 
-  .section {
+  .produkthistorik {
     margin-top: 260px;
+    margin-left: 160px;
   }
   .produktinfo {
     flex-direction: column; /* Staplar innehåll vertikalt */
@@ -190,7 +191,7 @@
 }
 
 @media (max-width: 768px) {
-  .section {
+  .produkthistorik {
     margin-top: 260px;
   }
 
@@ -231,10 +232,10 @@
 }
 
 @media (min-width: 1200px) {
-  .section {
+  .produkthistorik {
     margin-bottom: 80px;
     padding: 0 50px;
-    margin-left: 80px;
+    margin-left: 100px;
     margin-top: 260px;
   }
 

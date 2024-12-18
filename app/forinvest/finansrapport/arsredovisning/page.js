@@ -12,9 +12,9 @@ export default function Protokol() {
       <div className={styles.redovdiv}>
         <section className={styles.section}>
           <h2 className={styles.h2divdark}>Årsredovisning 2023-12-31</h2>
-          <p>
-            Godkänd årsredovisning 2023-12-31 finns tillgänglig här. <br />
-            Klicka på länken för att visa rapporten.
+          <p className={styles.redovptext}>
+            Godkänd årsredovisning 2023-12-31 finns tillgänglig här. Klicka på
+            länken för att visa rapporten.
           </p>
           <a
             href="/Finance/Arsredovisning-2023-559195-6486.pdf"
@@ -27,7 +27,7 @@ export default function Protokol() {
         </section>
         <section className={styles.section}>
           <h2 className={styles.h2divdark}>Revisionsberättelse 2023</h2>
-          <p>
+          <p className={styles.redovptext}>
             Revisionsberättelse 2023 för AUXESIS PHARMA HOLDING AB (publ) med
             organisationsnummer 559195-6486.
           </p>
@@ -43,9 +43,9 @@ export default function Protokol() {
 
         <section className={styles.section}>
           <h2 className={styles.h2divdark}>Årsredovisning 2022-12-31</h2>
-          <p>
-            Godkänd årsredovisning 2022-12-31 finns tillgänglig här. <br />
-            Klicka på länken för att visa rapporten.
+          <p className={styles.redovptext}>
+            Godkänd årsredovisning 2022-12-31 finns tillgänglig här. Klicka på
+            länken för att visa rapporten.
           </p>
           <a
             href="/Finance/2022-Arsredovisning-Auxesis-Pharma-Holding-AB-2022-signed.pdf"
@@ -58,7 +58,7 @@ export default function Protokol() {
         </section>
         <section className={styles.section}>
           <h2 className={styles.h2divdark}>Revisionsberättelse 2022</h2>
-          <p>
+          <p className={styles.redovptext}>
             Revisionsberättelse 2023 för AUXESIS PHARMA HOLDING AB (publ) med
             organisationsnummer 559195-6486.
           </p>

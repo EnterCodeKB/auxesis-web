@@ -38,7 +38,7 @@ export default function Historik() {
 
   return (
     <>
-      <section className={styles.section}>
+      <section className={styles.produkthistorik}>
         <div className={styles.produktinfo}>
           <div className={styles.servettext}>
             <h1>Banbrytande produkter </h1>

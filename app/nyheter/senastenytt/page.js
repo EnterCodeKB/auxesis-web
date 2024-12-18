@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, useMemo } from "react"; // Använd useMemo för stabil beräkning
-import { newsItems, paginate } from "../../data/newsItems"; // Importera data och hjälpfunktion
+import { useState, useMemo, useEffect } from "react";
+import { newsItems, paginate } from "../../data/newsItems";
 import styles from "../../styles/Info.module.css";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import Button1 from "../../components/Button1";
 
 const ITEMS_PER_PAGE = 9;
@@ -16,9 +16,11 @@ const scrollToTop = () => {
 
 export default function Nyheter() {
   const router = useRouter();
+  const searchParams = useSearchParams();
 
-  // State för paginering och sökning
-  const [currentPage, setCurrentPage] = useState(1);
+  // Hämta nuvarande sida från query-parametrar eller sätt till 1
+  const initialPage = parseInt(searchParams.get("page") || "1", 10);
+  const [currentPage, setCurrentPage] = useState(initialPage);
   const [searchQuery, setSearchQuery] = useState("");
 
   // Kopiera och sortera nyheterna efter datum
@@ -49,6 +51,13 @@ export default function Nyheter() {
     () => paginate(filteredNews, currentPage, ITEMS_PER_PAGE),
     [filteredNews, currentPage]
   );
+
+  // Uppdatera URL:en när sidan ändras
+  useEffect(() => {
+    const query = new URLSearchParams(searchParams);
+    query.set("page", currentPage.toString());
+    router.replace(`?${query.toString()}`);
+  }, [currentPage, searchParams, router]);
 
   // Hantera sidbyte
   const handlePageChange = (page) => {

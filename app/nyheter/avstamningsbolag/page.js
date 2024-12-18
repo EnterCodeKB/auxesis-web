@@ -8,7 +8,7 @@ export default function AvstamningsBolag() {
 
   return (
     <>
-      <section className={styles.section}>
+      <section className={styles.avstamningsbolag}>
         <div className={styles.whiteboard}>
           <h2>
             Viktig information till alla aktieägare i <br />

@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "../../styles/Hallbarhet.module.css";
+import styles from "../hallbaraaffarer/index.module.css";
 
 const Miljo = () => {
   return (
-    <section>
-      <div className={styles.section1}>
+    <section className={styles.halbara}>
+      <div className={styles.section31}>
         <h1>Goda affärer är hållbara </h1>
         <p className={styles.ptext}>
           På Auxesis Pharma arbetar vi inom Agenda 2030:s samtliga områden med
@@ -16,7 +16,7 @@ const Miljo = () => {
           som kan påverka miljön.
         </p>
       </div>
-      <div className={styles.section2}>
+      <div className={styles.section42}>
         <h2>Innovativa förpackningar</h2>
         <p className={styles.ptext}>
           Produkterna vi producerar ska vara innovativa i hållbara och

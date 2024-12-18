@@ -1,0 +1,152 @@
+/* Grundläggande styling för alla skärmar */
+.agenda {
+  max-width: 1200px;
+  margin: 40px auto; /* Centrera sektionen horisontellt */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.agenda h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #1c1e53;
+  margin-bottom: 30px;
+}
+
+.agenda h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #23559b;
+  margin-bottom: 20px;
+}
+
+.ptext {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.divli {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.imgbox {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === Responsiv design === */
+
+/* Mellanstora skärmar (max-width: 991px) */
+@media (max-width: 991px) {
+  .agenda {
+    padding: 15px;
+    width: 95%;
+    margin-left: 15%;
+    margin-top: 20%;
+    margin-bottom: 10%;
+  }
+
+  .agenda h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .agenda h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .ptext {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  .divli {
+    font-size: 0.9rem;
+  }
+
+  .imgbox {
+    width: 90%; /* Anpassa bildens bredd */
+    max-width: 600px;
+  }
+}
+
+/* Små skärmar (max-width: 768px) */
+@media (max-width: 768px) {
+  .agenda {
+    padding: 10px;
+    width: 90%;
+    margin-top: -2%;
+  }
+
+  .agenda h1 {
+    font-size: 1.8rem;
+    text-align: left; /* Vänsterjustera rubriken */
+    margin-bottom: 15px;
+  }
+
+  .agenda h2 {
+    font-size: 1.5rem;
+    text-align: left; /* Vänsterjustera underrubriken */
+    margin-bottom: 10px;
+  }
+
+  .ptext {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  .divli {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+  }
+
+  .imgbox {
+    width: 100%; /* Full bredd för små skärmar */
+    max-width: 400px;
+    margin-top: 20px;
+  }
+}
+
+/* Stora skärmar (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .agenda {
+    max-width: 1200px;
+    padding: 30px;
+  }
+
+  .agenda h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+  }
+
+  .agenda h2 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+  }
+
+  .ptext {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+  }
+
+  .divli {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+
+  .imgbox {
+    max-width: 900px;
+    margin-top: 50px;
+  }
+}

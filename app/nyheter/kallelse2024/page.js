@@ -8,7 +8,7 @@ export default function Kallelse() {
 
   return (
     <>
-      <section className={styles.section}>
+      <section className={styles.kallelse}>
         <h2 className={styles.h2divdark}>
           AUXESIS PHARMA Kallelse till årsstämma 2024
         </h2>

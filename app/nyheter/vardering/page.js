@@ -1,11 +1,11 @@
-import styles from "../../styles/Info.module.css";
+import styles from "../vardering/index.module.css";
 
 export default function Vardering() {
   return (
     <div className={styles.details}>
       <h1> Värdering AUXESIS​</h1>
       <h4>22024-03-01</h4>
-      <p>
+      <p className={styles.ptext}>
         Fintegrity AB - Scenario One Pager värdering av aktierna i AUXESIS
         PHARMA HOLDING AB (publ) inför lansering av bolagets smärtstillande
         produkt ASA.P® finns nu tillgänglig.

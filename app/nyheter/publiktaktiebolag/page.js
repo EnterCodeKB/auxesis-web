@@ -1,4 +1,4 @@
-import styles from "../../styles/Info.module.css";
+import styles from "../publiktaktiebolag/index.module.css";
 
 export default function Publikt() {
   return (

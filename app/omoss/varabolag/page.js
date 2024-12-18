@@ -34,7 +34,7 @@ export default function Bolag() {
 
   return (
     <>
-      <section className={styles.section}>
+      <section className={styles.varabolag}>
         <div className={styles.textarea}>
           <h1 className={styles.h1}>En solid koncern med tre bolag</h1>
 
@@ -72,6 +72,9 @@ export default function Bolag() {
           <div className={styles.ularea}>
             <div className={styles.auxesis}>
               <div className={styles.auxesisbild}>
+                <p>
+                  <br />
+                </p>
                 <h2 className={styles.divh2}>Auxesis Pharma Holding AB</h2>
               </div>
               <div className={styles.auxesistext}>

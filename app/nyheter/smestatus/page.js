@@ -1,4 +1,4 @@
-import styles from "../../styles/Info.module.css";
+import styles from "../smestatus/index.module.css";
 
 export default function Smestatus() {
   return (

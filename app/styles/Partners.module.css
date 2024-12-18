@@ -9,6 +9,7 @@
   align-items: center;
   gap: 30px;
   padding: 20px;
+  margin-top: 60px;
 }
 
 .ptext {
@@ -115,13 +116,13 @@
 
 /* För mellanstora skärmar (surfplattor) */
 @media (max-width: 991px) {
-  .section {
-    margin-left: 150px;
-    margin-top: 160px;
-  }
   .partners {
     gap: 20px;
     padding: 15px;
+  }
+  .partnerssection {
+    margin-left: 150px;
+    margin-top: 160px;
   }
 
   .h1 {
@@ -158,6 +159,10 @@
     gap: 15px;
     padding: 10px;
   }
+  .partnerssection {
+    margin-left: 100px;
+    margin-top: 20px;
+  }
 
   .title {
     font-size: 24px;
@@ -191,10 +196,12 @@
 
 /* För större skärmar (desktops) */
 @media (min-width: 1200px) {
-  .partners {
-    max-width: 1200px;
-    margin: 0 auto;
+  .partnerssection {
+    max-width: 90%;
+    margin: 20px auto;
     padding: 30px;
+    margin-top: 60px;
+    margin-left: 100px;
   }
 
   .title {

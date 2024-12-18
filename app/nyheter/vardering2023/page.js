@@ -2,7 +2,7 @@ import styles from "../vardering2023/index.module.css";
 
 export default function Vardering2023() {
   return (
-    <section className={styles.section}>
+    <section className={styles.varderingssection}>
       <div className={styles.divdardering}>
         <h2 className={styles.h2divdark}>Värderingsrapport 2024-02-13</h2>
         <a

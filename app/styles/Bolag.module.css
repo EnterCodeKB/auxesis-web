@@ -1,5 +1,6 @@
 @media (min-width: 991px) {
-  .section {
+  .varabolag,
+  .omoss {
     margin-left: 100px;
   }
 
@@ -274,12 +275,16 @@
   }
 }
 @media (max-width: 991px) {
-  .section {
+  .varabolag,
+  .omoss {
     margin-left: 150px;
+    margin-top: 16%;
   }
   .bolagstree {
     flex-direction: column;
     align-items: center;
+    background-color: #f9f9f9;
+
     margin-top: 40px;
   }
 
@@ -312,12 +317,20 @@
 
 /* Small Screens (max-width: 768px) */
 @media (max-width: 768px) {
-  .section {
+  .omoss,
+  .varabolag {
     margin-left: 130px;
   }
   .bolagstree {
     flex-direction: column;
     align-items: center;
+    background-color: #f9f9f9;
+  }
+
+  .bolag1,
+  .bolag2,
+  .bolag3 {
+    font-size: 2rem;
   }
 
   .bolagsdiv {
@@ -333,7 +346,10 @@
   .animalcarebild {
     text-align: center;
   }
-
+  .divh2 {
+    font-size: 2rem;
+    margin-top: 3%;
+  }
   .bolagsbord {
     width: 90%;
     margin: 20px auto;

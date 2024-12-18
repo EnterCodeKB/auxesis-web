@@ -442,6 +442,7 @@
     align-items: center; /* Centrera artiklar */
     gap: 20px; /* Justera mellanrum mellan artiklar */
     margin-top: 20px; /* Mindre utrymme överst */
+    margin-left: -20px;
   }
 
   .newsItem {

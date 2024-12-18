@@ -1,61 +1,60 @@
 /* Grundläggande styling för alla skärmar */
-.info {
-  max-width: 1100px;
+.halbara {
+  max-width: 100%;
   margin: 40px auto; /* Centrera sektionen horisontellt */
   padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #333;
-  text-align: center; /* Centrera text */
   margin-top: 6%;
-  margin-bottom: 6%;
   margin-left: 10%;
+  margin-bottom: 6%;
 }
 
-.info h2 {
+.halbara h1 {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 20px;
+  text-align: center;
   color: #1c1e53;
+  margin-bottom: 30px;
 }
 
-.info div {
-  font-size: 1.2rem;
+.halbara h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #23559b;
   margin-bottom: 20px;
-  color: #6f7287;
 }
 
-.info p {
+.ptext {
   font-size: 1.1rem;
-  text-align: justify;
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 /* === Responsiv design === */
 
 /* Mellanstora skärmar (max-width: 991px) */
 @media (max-width: 991px) {
-  .info {
+  .halbara {
     padding: 15px;
     width: 95%;
-    margin-top: 20%;
-    margin-bottom: 6%;
     margin-left: 15%;
+    margin-top: 20%;
+    margin-bottom: 10%;
   }
 
-  .info h2 {
+  .halbara h1 {
     font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .halbara h2 {
+    font-size: 1.8rem;
     margin-bottom: 15px;
   }
 
-  .info div {
-    font-size: 1rem;
-  }
-
-  .info p {
+  .ptext {
     font-size: 1rem;
     margin-bottom: 15px;
   }
@@ -63,50 +62,51 @@
 
 /* Små skärmar (max-width: 768px) */
 @media (max-width: 768px) {
-  .info {
+  .halbara {
     padding: 10px;
     width: 90%;
-    margin-top: 6%;
-    margin-bottom: 6%;
+    margin-top: -2%;
     margin-left: 15%;
   }
 
-  .info h2 {
+  .halbara h1 {
     font-size: 1.8rem;
-    text-align: center; /* Vänsterjustera rubriken */
+    text-align: left; /* Vänsterjustera rubriken */
+    margin-bottom: 15px;
+  }
+
+  .halbara h2 {
+    font-size: 1.5rem;
+    text-align: left; /* Vänsterjustera underrubriken */
     margin-bottom: 10px;
   }
 
-  .info div {
-    font-size: 0.9rem;
-    text-align: center; /* Vänsterjustera datumet */
-  }
-
-  .info p {
+  .ptext {
     font-size: 0.95rem;
-    text-align: justify;
+    line-height: 1.5;
     margin-bottom: 10px;
   }
 }
 
 /* Stora skärmar (min-width: 1200px) */
 @media (min-width: 1200px) {
-  .info {
+  .halbara {
     max-width: 1200px;
     padding: 30px;
   }
 
-  .info h2 {
+  .halbara h1 {
     font-size: 3rem;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
-  .info div {
-    font-size: 1.5rem;
+  .halbara h2 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
   }
 
-  .info p {
+  .ptext {
     font-size: 1.2rem;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 }
