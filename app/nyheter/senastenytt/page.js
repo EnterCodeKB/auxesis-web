@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, Suspense } from "react";
 import { newsItems, paginate } from "../../data/newsItems";
 import styles from "../../styles/Info.module.css";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -14,7 +14,7 @@ const scrollToTop = () => {
   }
 };
 
-export default function Nyheter() {
+function NyheterContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -134,5 +134,13 @@ export default function Nyheter() {
         </div>
       )}
     </section>
+  );
+}
+
+export default function Nyheter() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <NyheterContent />
+    </Suspense>
   );
 }

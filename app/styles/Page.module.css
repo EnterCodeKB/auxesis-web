@@ -1,4 +1,4 @@
-.div {
+.pagediv {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,7 +22,7 @@
   width: 200vh;
 }
 
-.div {
+.pagediv {
   margin-top: 20px;
   padding: 20px;
 }

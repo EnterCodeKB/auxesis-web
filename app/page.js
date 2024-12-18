@@ -22,7 +22,7 @@ export default function HomePage() {
           className={styles.backgroundImage}
   />*/}
       <LatestNews newsItems={newsItems} />
-      <div className={styles.div}>
+      <div className={styles.pagediv}>
         <section>
           <Middle />
         </section>
