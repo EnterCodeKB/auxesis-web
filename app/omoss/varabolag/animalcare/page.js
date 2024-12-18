@@ -1,5 +1,4 @@
 "use client";
-import styles from "../../styles/Bolag.module.css";
 
 export default function AnimalCare() {
   const scrollToTop = () => {

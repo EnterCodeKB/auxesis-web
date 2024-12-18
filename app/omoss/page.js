@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
-import styles from "../styles/Omoss.module.css";
+import styles from "../omoss/omossSida.module.css";
 
 export default function About() {
   const animatedBoxRef = useRef(null);

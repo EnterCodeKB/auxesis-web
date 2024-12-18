@@ -1,0 +1,207 @@
+/* Döljer elementet initialt */
+.hidden {
+  opacity: 0;
+  transform: translateY(60px); /* Startar nedanför sin normala position */
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/*UNIKA PRODUKTER*/
+
+/* Visar elementet när det blivit synligt */
+.visible {
+  opacity: 1;
+  transform: translateY(0); /* Flyttar till sin normala position */
+}
+
+.h1div {
+  line-height: 3rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Sektionens styling */
+.section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-bottom: 60px;
+}
+
+/* Styling för rubriker */
+.h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Styling för textparagrafer */
+.ptext {
+  font-size: 20px; /* Use rem for responsiveness */
+  line-height: 1.2; /* Improve readability */
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.ptextinramat {
+  font-size: 2rem; /* Use rem for responsiveness */
+  line-height: 1.2; /* Improve readability */
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+/* Animerad box som visar affärsidé */
+.animatedBox {
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.6;
+  border: 2px solid #888;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling för bildspelet och bilden */
+.andrast {
+  margin-bottom: 100px;
+}
+
+.imgdiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.bee {
+  max-width: 60%;
+  height: auto;
+}
+
+/* Specifik stil för bilder i spel */
+.imgspel {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+
+/* Effektsektion för receptfritt läkemedel */
+.effekt {
+  background-color: #c9e7f153;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+@media (max-width: 991px) {
+  .section,
+  .omoss {
+    margin-top: 100px;
+  }
+  .omoss {
+    margin-top: 100px;
+    margin-left: 25%;
+  }
+  .h1div {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .ptext {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+
+  .animatedBox {
+    font-size: 1.2rem;
+    padding: 12px;
+  }
+
+  .bee {
+    max-width: 70%;
+    margin: 20px auto;
+  }
+
+  .imgspel {
+    width: 120px;
+  }
+
+  .effekt {
+    padding: 12px;
+    max-width: 100%;
+  }
+}
+
+/* Small Screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .section {
+    margin-top: 100px;
+  }
+
+  .omoss {
+    margin-top: 60px;
+  }
+
+  .h1div {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .ptext {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+
+  .animatedBox {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .bee {
+    max-width: 100%;
+    margin: 20px auto;
+  }
+
+  .imgspel {
+    width: 100px;
+  }
+
+  .effekt {
+    padding: 10px;
+    max-width: 100%;
+    margin: 10px auto;
+  }
+
+  .imgdiv {
+    flex-direction: column;
+    align-items: center;
+  }
+}

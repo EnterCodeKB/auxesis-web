@@ -1,5 +1,5 @@
 "use client";
-import styles from "../../styles/Bolag.module.css";
+import styles from "../varabolag/varabolagSida.module.css";
 import React, { useEffect, useRef } from "react";
 
 export default function Bolag() {

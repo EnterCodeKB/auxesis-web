@@ -1,0 +1,41 @@
+.investorPage {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.mainLink {
+  cursor: pointer;
+  padding: 10px 15px;
+  background-color: #0056b3;
+  color: white;
+  border-radius: 5px;
+}
+
+.dropdownContent {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 100;
+}
+
+.subLink {
+  padding: 10px;
+  color: #0056b3;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.subLink:hover {
+  background-color: #f1f1f1;
+}

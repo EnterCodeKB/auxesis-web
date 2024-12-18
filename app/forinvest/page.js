@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import styles from "../../styles/Investorer.module.css";
+import styles from "../forinvest/investsida.module.css";
 
 export default function Investorer() {
   const [activeDropdown, setActiveDropdown] = useState(null);
