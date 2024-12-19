@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
+
 import LanguageSwitcher from "./LanguageSwitcher";
 import styles from "../styles/Header.module.css";
 
@@ -30,9 +32,11 @@ export default function Header() {
     <header className={styles.header}>
       {/* Hamburger Button */}
       <button className={styles.hamburgerBtn} onClick={toggleMenu}>
-        <img
+        <Image
           src="/hamburgare.png"
           alt="Hamburger Menu"
+          width={60}
+          height={60}
           className={styles.hamburgerIcon}
         />
       </button>

@@ -12,6 +12,14 @@
   z-index: 1000;
 }
 
+.Header_hamburgerIcon__iSXpL {
+  width: 60px;
+  height: 60px;
+  background-color: #23559b;
+  border-radius: 8px;
+  opacity: 1 !important; /* Gör elementet synligt */
+}
+
 .languageContainer {
   display: flex;
   gap: 10px;
@@ -154,6 +162,12 @@
     width: 70px; /* Ytterligare minskning för mindre skärmar */
     margin-top: 10px;
     margin-left: 10px;
+  }
+
+  .Header_hamburgerIcon__iSXpL {
+    width: 30px;
+    height: 30px;
+    opacity: 1 !important; /* Se till att elementet är synligt */
   }
 
   .hamburgerBtn {
