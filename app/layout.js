@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./globals.css";
 
-import Hero from "./components/HeroSection";
+import Hero from "./components/heroSection";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { usePathname } from "next/navigation";
 import CookieBanner from "./components/CookieBanner";
