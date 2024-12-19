@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // Lägg till andra Next.js konfigurationsalternativ här
+  images: {
+    formats: ["image/avif", "image/webp"], // Aktivera AVIF och WebP
+    domains: ["example.com"], // Externa domäner om nödvändigt
+  },
 };
 
 export default nextConfig;
