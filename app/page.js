@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
-import RootLayout from "./layout";
 import Card from "./components/Card";
-import Hero from "./components/HeroSection";
 import Middle from "./components/middleSection";
 import styles from "./styles/Page.module.css";
 import Finance from "./components/Finance";
