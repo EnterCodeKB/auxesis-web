@@ -1,4 +1,4 @@
-/** @type {import('next').NextConfig} */
+//** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   images: {
@@ -6,7 +6,8 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "auxesis.se",
+        hostname: "raw.githubusercontent.com", // GitHubs värd för råa filer
+        pathname: "/helenaltv/auxesis/**", // Byt ut mot rätt användarnamn och repo
       },
     ],
   },

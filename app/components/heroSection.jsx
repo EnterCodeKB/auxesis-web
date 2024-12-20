@@ -1,18 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../styles/heroPr.module.css";
-
-const LanguageSwitcher = () => (
-  <div className={styles.languageSwitcher}>
-    <Link href="/">
-      <button>Sv</button>
-    </Link>
-    <Link href="/en">
-      <button>En</button>
-    </Link>
-  </div>
-);
+import styles from "../styles/heroSection.module.css";
+import bgbild from "../../public/produkter/5216B2EC-B52C-4624-8893-85EED9576B09.jpeg";
 
 export default function HeroSection() {
   return (
@@ -25,15 +15,6 @@ export default function HeroSection() {
         <div className={styles.div14}>
           <div className={styles.column}>
             <div className={styles.div15}>
-              <Link href="/">
-                <Image
-                  src={logo}
-                  alt="Loggan"
-                  width={130}
-                  height={130}
-                  className="mr-[1150px] mt-6"
-                />
-              </Link>
               <div className={styles.div16}>
                 <h2 className={styles.divh1}>
                   ETT INNOVATIVT <br /> LÄKEMEDELSFÖRETAG
