@@ -1,5 +1,6 @@
 import * as React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "../styles/heroSection.module.css";
 
 const LanguageSwitcher = () => {
@@ -14,14 +15,23 @@ const LanguageSwitcher = () => {
     </div>
   );
 };
+
 export default function HeroSection() {
   return (
     <div className={styles.heroSection}>
       <div className={styles.div13}>
+        <div className={styles.backgroundImage}>
+          <Image
+            src="/webbg.jpg"
+            alt="Background"
+            fill
+            priority
+            style={{ objectFit: 'cover' }}
+          />
+        </div>
         <div className={styles.div14}>
           <div className={styles.column}>
             <div className={styles.div15}>
-              {/* Logo */}
               <Link href="/">
                 <img
                   src="/278149D3-C96F-4CEE-BC16-3D7AB9E4DABE.png"
