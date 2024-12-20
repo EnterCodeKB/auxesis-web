@@ -1,0 +1,73 @@
+.animatedText {
+  display: flex;
+  flex-direction: column;
+  margin-top: -30px;
+  margin-left: 750px;
+  text-align: center;
+  margin-bottom: -40px;
+}
+
+.divh1 {
+  color: white;
+  font-size: 50px;
+  line-height: 1.2;
+  margin: 0;
+  animation: slideInLeft 1.5s ease forwards;
+}
+
+.h2 {
+  color: white;
+  font-size: 50px;
+  line-height: 1.2;
+  margin: 10px 0 0 0;
+  animation: slideInRight 1.5s ease forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Anpassningar för olika skärmstorlekar */
+@media (max-width: 991px) {
+  .divh1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .h2 {
+    font-size: 2rem;
+    margin-top: -25px;
+    line-height: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .divh1 {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  .h2 {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    margin-top: -20px;
+  }
+}

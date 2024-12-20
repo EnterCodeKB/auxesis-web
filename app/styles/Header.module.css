@@ -23,8 +23,7 @@
 .Header_hamburgerIcon__iSXpL {
   width: 60px;
   height: 60px;
-  background-color: #23559b;
-  border-radius: 8px;
+
   opacity: 1 !important; /* Gör elementet synligt */
 }
 .hamburgerIcon {
