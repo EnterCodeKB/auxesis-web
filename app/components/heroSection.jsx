@@ -22,15 +22,7 @@ export default function HeroSection() {
   return (
     <div className={styles.heroSection}>
       <div className={styles.div13}>
-        <div className={styles.backgroundImage}>
-          <Image
-            src={bgbild}
-            alt="Background"
-            fill
-            priority
-            style={{ objectFit: "cover" }}
-          />
-        </div>
+        <div className={styles.backgroundImage}></div>
         <div className={styles.div14}>
           <div className={styles.column}>
             <div className={styles.div15}>
