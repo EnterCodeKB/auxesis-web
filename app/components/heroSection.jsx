@@ -23,12 +23,12 @@ export default function HeroSection() {
           <div className={styles.column}>
             <div className={styles.div15}>
               <div className={styles.logoContainer}>
-                <img
+                <Image
                   src="/a2a740ff-fd20-4149-b99f-b720cd3b70c3.png"
                   alt="Logo"
+                  width={100}
+                  height={100}
                   className={styles.logo}
-                  width="100"
-                  height="100"
                 />
               </div>
 
