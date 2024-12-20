@@ -22,7 +22,7 @@ export default function HeroSection() {
       <div className={styles.div13}>
         <div className={styles.backgroundImage}>
           <Image
-            src="https://i.ibb.co/5TPdHpG/webbg.png"
+            src="/webbg.png"
             alt="Background"
             fill
             priority

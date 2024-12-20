@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     formats: ["image/avif", "image/webp"], // Aktivera AVIF och WebP
-    domains: ["i.ibb.co"], // Externa domäner om nödvändigt
+    domains: ["auxesis.se"], // Externa domäner om nödvändigt
   },
 };
 
