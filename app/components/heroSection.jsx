@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/heroSection.module.css";
 import bgbild from "../../public/produkter/5216B2EC-B52C-4624-8893-85EED9576B09.jpeg";
-import logo from "../../public/Finance/vitlogo.png";
+import logo from "../../public/vitochblattlogo.jpg";
 
 const LanguageSwitcher = () => (
   <div className={styles.languageSwitcher}>
