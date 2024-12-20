@@ -19,6 +19,11 @@
   border-radius: 8px;
   opacity: 1 !important; /* Gör elementet synligt */
 }
+.hamburgerIcon {
+  /* Add your styles here */
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
 
 .languageContainer {
   display: flex;
