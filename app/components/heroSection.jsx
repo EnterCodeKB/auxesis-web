@@ -32,7 +32,7 @@ export default function HeroSection() {
                   alt="Loggan"
                   width={130}
                   height={130}
-                  className="mr-[1150px] mt-6"
+                  className="logo mr-[1150px] mt-6"
                 />
                 <img className={styles.logo} />
               </Link>
