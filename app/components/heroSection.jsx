@@ -1,9 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../styles/heroSection.module.css";
-import bgbild from "../../public/produkter/5216B2EC-B52C-4624-8893-85EED9576B09.jpeg";
-import logo from "../../public/vitochblattlogo.jpg";
+import styles from "../styles/heroPr.module.css";
 
 const LanguageSwitcher = () => (
   <div className={styles.languageSwitcher}>
