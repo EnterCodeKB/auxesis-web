@@ -2,7 +2,7 @@ import * as React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/heroSection.module.css";
-import webbg from "../public/webbg.png";
+import webb2bg from "../../public/webb2bg.png";
 
 const LanguageSwitcher = () => {
   return (
@@ -23,7 +23,7 @@ export default function HeroSection() {
       <div className={styles.div13}>
         <div className={styles.backgroundImage}>
           <Image
-            src={webbg}
+            src={webb2bg}
             alt="Background"
             fill
             priority
