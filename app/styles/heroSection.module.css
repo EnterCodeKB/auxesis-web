@@ -15,6 +15,14 @@
     margin-right: 1200px;
     margin-top: 100px;
   }
+  .hamburgerIcon {
+    color: white; /* Gör ikonen vit */
+    transition: color 0.2s;
+  }
+
+  .hamburgerIcon:hover {
+    color: lightgray; /* Ändra färgen vid hovring om så önskas */
+  }
 
   .div13 {
     background-image: url("/produkter/5216B2EC-B52C-4624-8893-85EED9576B09.jpeg");
