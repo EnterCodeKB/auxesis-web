@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    formats: ["image/avif", "image/webp", "image/jpeg", "image/png", "image/jpg"],
+    formats: ["image/avif", "image/webp"],
     domains: ["auxesis.se"], // Externa domäner om nödvändigt
   },
 };
