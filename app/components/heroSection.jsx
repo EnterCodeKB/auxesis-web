@@ -22,6 +22,7 @@ export default function HeroSection() {
         <div className={styles.div14}>
           <div className={styles.column}>
             <div className={styles.div15}>
+              {/* 
               <div className={styles.logoContainer}>
                 <Image
                   src="/a2a740ff-fd20-4149-b99f-b720cd3b70c3.png"
@@ -31,7 +32,7 @@ export default function HeroSection() {
                   className={styles.logo}
                 />
               </div>
-
+              */}
               <div className={styles.div18}></div>
             </div>
           </div>
