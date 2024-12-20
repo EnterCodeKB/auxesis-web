@@ -2,7 +2,8 @@ import * as React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/heroSection.module.css";
-import webb2bg from "../../public/webb2bg.png";
+import bgbild from "../../public/produkter/5216B2EC-B52C-4624-8893-85EED9576B09.jpeg";
+import logo from "../../public/Finance/vitlogo.png";
 
 const LanguageSwitcher = () => {
   return (
@@ -23,22 +24,25 @@ export default function HeroSection() {
       <div className={styles.div13}>
         <div className={styles.backgroundImage}>
           <Image
-            src={webb2bg}
+            src={bgbild}
             alt="Background"
             fill
             priority
-            style={{ objectFit: 'cover' }}
+            style={{ objectFit: "cover" }}
           />
         </div>
         <div className={styles.div14}>
           <div className={styles.column}>
             <div className={styles.div15}>
               <Link href="/">
-                <img
-                  src="/278149D3-C96F-4CEE-BC16-3D7AB9E4DABE.png"
+                <Image
+                  src={logo}
                   alt="Loggan"
-                  className={styles.logo}
+                  width={130}
+                  height={130}
+                  className="mr-[1150px] mt-6"
                 />
+                <img className={styles.logo} />
               </Link>
               <div className={styles.div16}>
                 <h2 className={styles.divh1}>
