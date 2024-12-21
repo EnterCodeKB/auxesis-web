@@ -21,9 +21,7 @@ export default function LoginPage() {
   return (
     <div className="login-container">
       <h1 className="login-heading">Sidan är under konstruktion</h1>
-      <p className="login-subheading">
-        Vänligen logga in för att få tillgång till sidan.
-      </p>
+      <p className="login-subheading"></p>
       <input
         type="password"
         placeholder="Ange lösenord"
