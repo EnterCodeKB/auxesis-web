@@ -1,4 +1,5 @@
-/* Header styling */
+/* Huvudheader */
+
 .header {
   position: fixed;
   top: 0;
@@ -6,60 +7,38 @@
   width: 100%;
   height: 80px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end; /* Flytta innehållet till höger */
   align-items: center;
   padding: 0 20px;
+  background-color: #23559b;
   z-index: 1000;
 }
-.hamburgerIcon {
-  color: white; /* Gör ikonen vit */
-  transition: color 0.2s;
-}
 
-.hamburgerIcon:hover {
-  color: lightgray; /* Ändra färgen vid hovring om så önskas */
-}
-
-.Header_hamburgerIcon__iSXpL {
-  width: 60px;
-  height: 60px;
-
-  opacity: 1 !important; /* Gör elementet synligt */
-}
-.hamburgerIcon {
-  /* Add your styles here */
-  border-radius: 50%;
-  transition: transform 0.3s ease;
-}
-
-.languageContainer {
-  display: flex;
-  gap: 10px;
-  margin-top: -50px;
-  margin-bottom: 50px;
-}
-
-/* Hamburger button */
+/* Hamburgerknapp */
 .hamburgerBtn {
   background: none;
   border: none;
   cursor: pointer;
-  margin-left: 1250px;
-  margin-top: 20px;
+  margin-right: 50px; /* Flytta hamburgaren 50px till vänster */
 }
 
 .hamburgerIcon {
-  width: 60px;
-  height: 60px;
-  background-color: #23559b;
-  border-radius: 8px;
+  color: white;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease, color 0.2s;
+}
+
+.hamburgerIcon:hover {
+  color: lightgray;
+  transform: scale(1.1);
 }
 
 /* Sliding menu */
 .menu {
   position: fixed;
   top: 0;
-  right: -300px; /* Hidden initially */
+  right: 0;
   width: 300px;
   height: 100%;
   background-color: white;
@@ -67,15 +46,16 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
-  transform: translateX(0);
-  transition: right 0.3s ease-in-out;
+  transform: translateX(100%); /* Skjut menyn utanför skärmen */
+  transition: transform 0.3s ease-in-out;
   z-index: 999;
 }
 
 .menuOpen {
-  right: 0;
+  transform: translateX(0); /* Skjut menyn tillbaka på skärmen */
 }
 
+/* Stängningsknapp */
 .closeBtn {
   position: absolute;
   top: 20px;
@@ -84,13 +64,25 @@
   border: none;
   font-size: 24px;
   cursor: pointer;
-  color: #333; /* Anpassa färgen efter din design */
+  color: #333;
 }
 
+/* Navigation */
 .nav {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+/* Länkstil */
+.link {
+  text-decoration: none;
+  color: inherit; /* Ärver färgen från föräldern */
+}
+
+.link:hover {
+  text-decoration: none; /* Ingen understrykning vid hover */
+  color: #23559b; /* Ändra färg vid hover */
 }
 
 .mainLink {
@@ -100,101 +92,49 @@
   cursor: pointer;
 }
 
-.dropdownContent,
-.subDropdownContent {
+.mainLink:hover {
+  color: #23559b;
+}
+
+.dropdownContent {
   display: none;
-  color: #23559b;
-}
-
-.subDropdownContent {
-  color: #23559b;
-}
-
-.dropdown:hover .dropdownContent,
-.subDropdown:hover .subDropdownContent {
-  display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.dropdown:hover .dropdownContent {
+  display: flex;
 }
 
 .subLink {
   font-size: 1rem;
   color: #23559b;
+  cursor: pointer;
 }
 
-.subSubLink {
-  font-size: 0.9rem;
-  padding-left: 15px;
-  color: #666;
+.subLink:hover {
+  color: #1c1e53;
 }
 
-@media (max-width: 991px) {
-  .logo {
-    width: 80px; /* Minskat logotypstorlek */
-    height: auto;
-    margin-top: 20px;
-    margin-left: 10px;
+/* Responsiv design */
+
+/* För små skärmar (max-width: 480px) */
+@media (max-width: 480px) {
+  .header {
+    height: 70px;
+    padding: 0 10px;
   }
 
   .hamburgerBtn {
-    display: block; /* Visa hamburgermenyn */
-    margin-left: auto; /* Flytta till höger */
-    margin-top: 10px;
-  }
-
-  .menu {
-    width: 250px; /* Justera bredden för mindre skärmar */
-  }
-
-  .mainLink {
-    font-size: 1rem; /* Justera textstorlek */
-  }
-
-  .dropdownContent,
-  .subDropdownContent {
-    gap: 5px; /* Minska mellanrummet mellan dropdown-alternativ */
-  }
-
-  .subLink {
-    font-size: 0.9rem;
-  }
-
-  .subSubLink {
-    font-size: 0.8rem;
-    padding-left: 10px;
-  }
-
-  .closeBtn {
-    font-size: 20px; /* Anpassa storlek på stängningsknappen */
-  }
-}
-
-@media (max-width: 768px) {
-  .logo {
-    width: 70px; /* Ytterligare minskning för mindre skärmar */
-    margin-top: 10px;
-    margin-left: 10px;
-  }
-
-  .Header_hamburgerIcon__iSXpL {
-    width: 30px;
-    height: 30px;
-    opacity: 1 !important; /* Se till att elementet är synligt */
-  }
-
-  .hamburgerBtn {
-    margin-right: 10px; /* Justera marginal för att hålla det responsivt */
-    margin-top: 10px;
+    margin-right: 40px; /* Flytta hamburgaren något till vänster */
   }
 
   .hamburgerIcon {
-    width: 30px; /* Anpassa storleken på ikonen */
+    width: 30px;
     height: 30px;
   }
-
   .menu {
-    width: 80%; /* Gör menyn bredare */
-    right: -80%; /* Dölj menyn till höger */
+    width: 80%; /* Menyn täcker 80% av skärmens bredd */
   }
 
   .menuOpen {
@@ -202,27 +142,64 @@
   }
 
   .mainLink {
-    font-size: 0.9rem; /* Minska textstorlek ytterligare */
-    padding: 10px; /* Ge lite utrymme för länkar */
+    font-size: 1rem; /* Anpassa textstorlek för länkar */
+  }
+}
+
+/* För mellanstora skärmar (min-width: 768px och max-width: 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    height: 80px;
+    padding: 0 20px;
   }
 
-  .dropdownContent,
-  .subDropdownContent {
-    gap: 5px; /* Mindre mellanrum */
+  .hamburgerBtn {
+    margin-right: 50px; /* Justera hamburgarens position */
+  }
+
+  .hamburgerIcon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .menu {
+    width: 300px; /* Anpassa menyns bredd */
+  }
+
+  .mainLink {
+    font-size: 1.1rem; /* Anpassa textstorlek */
   }
 
   .subLink {
-    font-size: 0.8rem; /* Ytterligare minskning av dropdown-länkstorlek */
+    font-size: 0.9rem; /* Anpassa storlek för sublänkar */
+  }
+}
+
+/* För stora skärmar (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .header {
+    height: 80px;
+    padding: 0 20px;
   }
 
-  .subSubLink {
-    font-size: 0.7rem; /* Anpassa för undermenyer */
-    padding-left: 5px;
+  .hamburgerBtn {
+    margin-right: 50px; /* Flytta hamburgaren 50px från höger */
   }
 
-  .closeBtn {
-    font-size: 18px; /* Mindre stängningsikon */
-    right: 5px;
-    top: 5px;
+  .hamburgerIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .menu {
+    width: 300px; /* Standardstorlek för menyn */
+  }
+
+  .mainLink {
+    font-size: 1.2rem; /* Standardstorlek för länkar */
+  }
+
+  .subLink {
+    font-size: 1rem; /* Standardstorlek för sublänkar */
   }
 }

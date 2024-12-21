@@ -2,10 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { FaBars } from "react-icons/fa";
-
-import LanguageSwitcher from "./LanguageSwitcher";
 import styles from "../styles/Header.module.css";
 
 export default function Header() {
@@ -33,26 +30,22 @@ export default function Header() {
     <header className={styles.header}>
       {/* Hamburger Button */}
       <button className={styles.hamburgerBtn} onClick={toggleMenu}>
-        <FaBars size={60} className={styles.hamburgerIcon} />
+        <FaBars size={30} className={styles.hamburgerIcon} />
       </button>
 
       {/* Sliding Menu */}
       <div
         className={`${styles.menu} ${isMenuOpen ? styles.menuOpen : ""}`}
-        onClick={(e) => e.stopPropagation()} // Förhindrar att klick på menyn stänger allt
+        onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
         <button className={styles.closeBtn} onClick={closeMenu}>
-          &times; {/* Kryssikonen */}
+          &times;
         </button>
 
-        {/* Language Switcher 
-        <div className={styles.languageContainer}>
-          <LanguageSwitcher />
-        </div>
-*/}
         <nav className={styles.nav}>
-          <Link href="/" onClick={closeMenu}>
+          {/* Main Links */}
+          <Link href="/" className={styles.link} onClick={closeMenu}>
             <div className={styles.mainLink}>HEM</div>
           </Link>
 
@@ -66,49 +59,35 @@ export default function Header() {
             </div>
             {activeDropdown === "omoss" && (
               <div className={styles.dropdownContent}>
-                <Link href="/omoss" onClick={closeMenu}>
+                <Link href="/omoss" className={styles.link} onClick={closeMenu}>
                   <div className={styles.subLink}>Unika produkter</div>
                 </Link>
-                <Link href="/omoss/varabolag" onClick={closeMenu}>
+                <Link
+                  href="/omoss/varabolag"
+                  className={styles.link}
+                  onClick={closeMenu}
+                >
                   <div className={styles.subLink}>Våra bolag</div>
                 </Link>
-                <Link href="/omoss/vartteam" onClick={closeMenu}>
+                <Link
+                  href="/omoss/vartteam"
+                  className={styles.link}
+                  onClick={closeMenu}
+                >
                   <div className={styles.subLink}>Team</div>
                 </Link>
-                <Link href="/omoss/partners" onClick={closeMenu}>
+                <Link
+                  href="/omoss/partners"
+                  className={styles.link}
+                  onClick={closeMenu}
+                >
                   <div className={styles.subLink}>Partners</div>
                 </Link>
-
-                {/* Sub-dropdown: 
-                <div className={styles.subDropdown}>
-                  <div className={styles.subLink}>För investorer</div>
-                  <div className={styles.subDropdownContent}>
-                    <Link href="/omoss/investorer/agare" onClick={closeMenu}>
-                      <div className={styles.subSubLink}>Ägare</div>
-                    </Link>
-                    <Link href="/omoss/investorer/styrelse" onClick={closeMenu}>
-                      <div className={styles.subSubLink}>
-                        Styrelse och ledning
-                      </div>
-                    </Link>
-                    <Link href="/omoss/investorer/vision" onClick={closeMenu}>
-                      <div className={styles.subSubLink}>
-                        Affärsidé och vision
-                      </div>
-                    </Link>
-                    <Link
-                      href="/omoss/investorer/ir-kontakt"
-                      onClick={closeMenu}
-                    >
-                      <div className={styles.subSubLink}>IR-kontakt</div>
-                    </Link>
-                  </div>
-                </div>*/}
               </div>
             )}
           </div>
 
-          {/* Dropdown: För investorer */}
+          {/* Dropdown: FÖR INVESTERARE */}
           <div className={styles.dropdown}>
             <div
               className={styles.mainLink}
@@ -118,47 +97,41 @@ export default function Header() {
             </div>
             {activeDropdown === "forinvest" && (
               <div className={styles.dropdownContent}>
-                <Link href="/forinvest/agare" onClick={closeMenu}>
+                <Link
+                  href="/forinvest/agare"
+                  className={styles.link}
+                  onClick={closeMenu}
+                >
                   <div className={styles.subLink}>Ägare</div>
                 </Link>
-                <Link href="/forinvest/styrelse" onClick={closeMenu}>
+                <Link
+                  href="/forinvest/styrelse"
+                  className={styles.link}
+                  onClick={closeMenu}
+                >
                   <div className={styles.subLink}>Styrelse och ledning</div>
                 </Link>
-                <Link href="/forinvest/vision" onClick={closeMenu}>
+                <Link
+                  href="/forinvest/vision"
+                  className={styles.link}
+                  onClick={closeMenu}
+                >
                   <div className={styles.subLink}>Affärsidé och vision</div>
                 </Link>
-                <Link href="/forinvest/finansrapport" onClick={closeMenu}>
+                <Link
+                  href="/forinvest/finansrapport"
+                  className={styles.link}
+                  onClick={closeMenu}
+                >
                   <div className={styles.subLink}>Finansiella rapporter</div>
                 </Link>
-                <Link href="/forinvest/ir-kontakt" onClick={closeMenu}>
+                <Link
+                  href="/forinvest/ir-kontakt"
+                  className={styles.link}
+                  onClick={closeMenu}
+                >
                   <div className={styles.subLink}>IR-kontakt</div>
                 </Link>
-
-                {/* Sub-dropdown: För investorer */}
-                <div className={styles.subDropdown}>
-                  <div className={styles.subLink}> </div>
-                  <div className={styles.subDropdownContent}>
-                    <Link href="/omoss/investorer/agare" onClick={closeMenu}>
-                      <div className={styles.subSubLink}>Ägare</div>
-                    </Link>
-                    <Link href="/omoss/investorer/styrelse" onClick={closeMenu}>
-                      <div className={styles.subSubLink}>
-                        Styrelse och ledning
-                      </div>
-                    </Link>
-                    <Link href="/omoss/investorer/vision" onClick={closeMenu}>
-                      <div className={styles.subSubLink}>
-                        Affärsidé och vision
-                      </div>
-                    </Link>
-                    <Link
-                      href="/omoss/investorer/ir-kontakt"
-                      onClick={closeMenu}
-                    >
-                      <div className={styles.subSubLink}>IR-kontakt</div>
-                    </Link>
-                  </div>
-                </div>
               </div>
             )}
           </div>
@@ -173,25 +146,46 @@ export default function Header() {
             </div>
             {activeDropdown === "produkter" && (
               <div className={styles.dropdownContent}>
-                <Link href="/produkter/historik" onClick={closeMenu}>
+                <Link
+                  href="/produkter/historik"
+                  className={styles.link}
+                  onClick={closeMenu}
+                >
                   <div className={styles.subLink}>Historik</div>
                 </Link>
-                <Link href="/produkter/asap" onClick={closeMenu}>
+                <Link
+                  href="/produkter/asap"
+                  className={styles.link}
+                  onClick={closeMenu}
+                >
                   <div className={styles.subLink}>ASA.P®️</div>
                 </Link>
-                <Link href="/produkter/coxypet" onClick={closeMenu}>
+                <Link
+                  href="/produkter/coxypet"
+                  className={styles.link}
+                  onClick={closeMenu}
+                >
                   <div className={styles.subLink}>CoxyPet®️</div>
                 </Link>
-                <Link href="/produkter/produktutveckling" onClick={closeMenu}>
+                <Link
+                  href="/produkter/produktutveckling"
+                  className={styles.link}
+                  onClick={closeMenu}
+                >
                   <div className={styles.subLink}>Produktutveckling</div>
                 </Link>
-                <Link href="/produkter/patent" onClick={closeMenu}>
+                <Link
+                  href="/produkter/patent"
+                  className={styles.link}
+                  onClick={closeMenu}
+                >
                   <div className={styles.subLink}>Patent</div>
                 </Link>
               </div>
             )}
           </div>
-          {/* NYHETER dropdown */}
+
+          {/* Dropdown: NYHETER */}
           <div className={styles.dropdown}>
             <div
               className={styles.mainLink}
@@ -201,18 +195,18 @@ export default function Header() {
             </div>
             {activeDropdown === "nyheter" && (
               <div className={styles.dropdownContent}>
-                <Link href="/nyheter/senastenytt" onClick={closeMenu}>
+                <Link
+                  href="/nyheter/senastenytt"
+                  className={styles.link}
+                  onClick={closeMenu}
+                >
                   <div className={styles.subLink}>Senaste nytt</div>
                 </Link>
               </div>
             )}
           </div>
 
-          {/* HÅLLBARHET dropdown 
-          <Link href="/hallbarhet" onClick={closeMenu}>
-            <div className={styles.mainLink}></div>
-          </Link>*/}
-
+          {/* Dropdown: HÅLLBARHET */}
           <div className={styles.dropdown}>
             <div
               className={styles.mainLink}
@@ -222,25 +216,30 @@ export default function Header() {
             </div>
             {activeDropdown === "hallbarhet" && (
               <div className={styles.dropdownContent}>
-                <Link href="/hallbarhet/hallbaraaffarer" onClick={closeMenu}>
+                <Link
+                  href="/hallbarhet/hallbaraaffarer"
+                  className={styles.link}
+                  onClick={closeMenu}
+                >
                   <div className={styles.subLink}>Hållbara affärer</div>
                 </Link>
-                <Link href="/hallbarhet/agenda" onClick={closeMenu}>
+                <Link
+                  href="/hallbarhet/agenda"
+                  className={styles.link}
+                  onClick={closeMenu}
+                >
                   <div className={styles.subLink}>Agenda 2030</div>
                 </Link>
               </div>
             )}
           </div>
-          <Link href="/innovation" onClick={closeMenu}>
-            <div className={styles.mainLink}>INNOVATION</div>
-          </Link>
 
           {/* Kontakt */}
-          <Link href="/kontakt" onClick={closeMenu}>
+          <Link href="/kontakt" className={styles.link} onClick={closeMenu}>
             <div className={styles.mainLink}>KONTAKT</div>
           </Link>
 
-          {/* PRESS dropdown */}
+          {/* Dropdown: PRESS */}
           <div className={styles.dropdown}>
             <div
               className={styles.mainLink}
@@ -250,11 +249,11 @@ export default function Header() {
             </div>
             {activeDropdown === "press" && (
               <div className={styles.dropdownContent}>
-                {/*  <Link href="/press/pressrum" onClick={closeMenu}>
-                  <div className={styles.subLink}>Pressrum </div>
-                </Link>
-*/}
-                <Link href="/press/auxesisimedia" onClick={closeMenu}>
+                <Link
+                  href="/press/auxesisimedia"
+                  className={styles.link}
+                  onClick={closeMenu}
+                >
                   <div className={styles.subLink}>Auxesis i media</div>
                 </Link>
               </div>

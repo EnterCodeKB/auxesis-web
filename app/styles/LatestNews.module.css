@@ -2,8 +2,7 @@
 .latestNewsSection {
   padding: 40px 20px;
   text-align: center;
-  margin-top: 30px;
-  margin-left: 100px;
+  margin-top: 200px;
 }
 
 .whiteboard {
@@ -106,8 +105,8 @@
 
 @media (max-width: 991px) {
   .latestNewsSection {
-    margin-left: 100px; /* Minska marginalen på vänster sida */
     padding: 20px; /* Justera padding för bättre passform */
+    margin-top: -100px; /* Justera marginaler */
   }
 
   .whiteboard {
@@ -158,8 +157,8 @@
 
 @media (max-width: 768px) {
   .latestNewsSection {
-    margin-left: 100px; /* Justera vänstermarginalen ytterligare */
     padding: 10px; /* Mindre padding för sektionen */
+    margin-top: 40px;
   }
 
   .whiteboard {

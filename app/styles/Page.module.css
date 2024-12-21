@@ -1,11 +1,10 @@
+/* Grundstilar */
 .pagediv {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  font-family: Arial, sans-serif;
-  overflow-x: hidden;
   width: 100%;
 }
 
@@ -15,54 +14,40 @@
   background-position: center;
   width: 100%;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.backgroundImage {
-  height: 450px; /* Anpassa höjden som passar din design */
-  width: 200vh;
+/* Responsiv design */
+
+/* Små skärmar (max-width: 480px) */
+@media (max-width: 480px) {
+  .pagediv {
+    padding: 10px;
+  }
+
+  .background {
+    height: 200px; /* Anpassa bakgrundshöjd */
+  }
 }
 
-.pagediv {
-  margin-top: 20px;
-  padding: 20px;
+/* Mellanstora skärmar (min-width: 768px) */
+@media (min-width: 768px) {
+  .pagediv {
+    padding: 15px;
+  }
+
+  .background {
+    height: 350px;
+  }
 }
 
-.languageSwitcher {
-  margin-bottom: 20px;
-}
+/* Stora skärmar (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .pagediv {
+    padding: 20px;
+  }
 
-.languageSwitcher button {
-  background-color: #0070f3;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  margin: 0 10px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.languageSwitcher button:hover {
-  background-color: #005bb5;
-}
-.scrollToTop {
-  position: fixed;
-  bottom: 20px;
-  right: 60px;
-  background-color: #c1eaff;
-  color: white;
-  padding: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-}
-
-.scrollToTop:hover {
-  background-color: #194276;
+  .background {
+    height: 450px;
+  }
 }

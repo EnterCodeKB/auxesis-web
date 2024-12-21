@@ -1,203 +1,73 @@
-.team {
-  margin-left: 100px;
-  width: 100%;
-  margin-top: 100px;
-}
-
-.bolagsstyrelse {
-  width: 100%;
-  margin-left: -5px;
-  margin-top: 80px;
-}
-
-.ContainerFullPage {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 24px;
-  row-gap: 80px;
-}
-
-.Item {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  width: 330px; /* Fixed width for items */
-  overflow: hidden;
-  text-align: left;
-  flex-shrink: 0; /* Ensure items don't shrink */
-}
-
-.image {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
-
-.content {
+.container {
+  max-width: 1200px;
+  margin: 250px auto; /* Lägg till 50px margin på toppen */
   padding: 20px;
 }
 
-.rubrik {
-  font-size: 32px;
-  font-weight: 700;
-  color: #333333;
-  margin-bottom: 10px;
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #23559b;
+}
+
+.subheading {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px; /* Öka avståndet mellan korten */
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  border-radius: 50%; /* Gör bilden rund */
+  margin-bottom: 15px;
+  width: 100px; /* Standardstorlek */
+  height: 100px;
+}
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #23559b;
+}
+
+@media (max-width: 480px) {
+  .description {
+    max-height: 200px;
+    overflow-y: auto; /* Scroll om texten är för lång */
+    padding-right: 5px;
+  }
 }
 
 .title {
-  font-size: 24px;
-  font-weight: 700;
-  color: #4f4f4f;
+  font-size: 1rem;
+  color: #666;
   margin-bottom: 10px;
 }
 
 .description {
-  font-size: 16px;
-  color: #666666;
-  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.5;
 }
 
-.infografik {
-  width: 1000px;
-  margin-left: 30px;
-}
-
-.divh1 {
-  font-size: 64px;
-  font-weight: 700;
-  margin: -30px 0 50px;
-  color: #333333;
-}
-
-.ptext {
-  margin-left: 50px;
-}
-
-/* Scroll button */
-.scrollToTop {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #c1eaff;
-  color: white;
-  padding: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-}
-
-.scrollToTop:hover {
-  background-color: #194276;
-}
-
-/* Responsive Design */
-
-/* For screens smaller than 991px */
-@media (max-width: 991px) {
-  .team {
-    margin-left: 100px;
-    margin-top: 200px;
-  }
-
-  .ContainerFullPage {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .Item {
-    width: 90%; /* Make items full width */
-    margin-bottom: 20px;
-  }
-
-  .infografik {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .divh1 {
-    font-size: 48px;
-    text-align: center;
-  }
-
-  .ptext {
-    font-size: 18px;
-    margin-left: 0;
-    text-align: center;
-  }
+@media (min-width: 768px) {
   .image {
-    width: 100vh;
-    height: auto !important;
-  }
-}
-
-/* For screens smaller than 768px */
-@media (max-width: 768px) {
-  .team {
-    margin-top: -20px;
-    margin-left: 50px;
-  }
-  .ContainerFullPage {
-    gap: 16px;
-  }
-
-  .Item {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .divh1 {
-    font-size: 36px;
-    margin: 20px 0;
-    text-align: center;
-  }
-
-  .ptext {
-    font-size: 16px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .infografik {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .image {
-    width: 90vh;
-    height: auto !important;
-  }
-}
-
-/* For screens larger than 1200px */
-@media (min-width: 1200px) {
-  .ContainerFullPage {
-    gap: 32px;
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-
-  .Item {
-    width: 400px;
-    margin: 0;
-  }
-
-  .divh1 {
-    font-size: 72px;
-  }
-
-  .ptext {
-    font-size: 20px;
-    text-align: left;
-    margin-left: 50px;
-  }
-
-  .infografik {
-    width: 1200px;
-    margin: 0 auto;
+    width: 150px; /* Större bild för större skärmar */
+    height: 150px;
   }
 }

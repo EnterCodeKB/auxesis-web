@@ -1,220 +1,75 @@
-/*app/styles/Card.module.css*/
-/* Base styles */
-.cardsdiv {
-  margin-top: -60px;
-  margin-left: 20px;
-}
-
-.text1 {
-  margin-left: 60px;
-}
-
-.div44 {
-  align-self: center;
-  margin-top: 47px;
-  width: 100%;
-  max-width: 1400px;
-  padding: 0 10px;
-}
-
-.h2div {
-  display: flex;
-  justify-content: center;
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
   text-align: center;
 }
 
-.div45 {
-  gap: 24px;
-  display: flex;
-  margin-top: 20px;
+.heading {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #23559b;
 }
 
-.imgContainer {
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Alltid 3 kolumner */
+  gap: 20px;
+}
+
+.card {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 300px; /* Mindre höjd för korten */
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.img {
-  width: 100%;
-  height: 400px;
+.card:hover {
+  transform: scale(1.05);
+}
+
+.image {
   object-fit: cover;
-  display: block;
-  border-radius: 8px;
+  width: 100%;
+  height: 100%;
 }
 
-.overlay {
+.textContainer {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: var(--Dark-blue, #282938);
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  padding: 16px;
+  padding: 20px;
   text-align: center;
 }
 
-.imgContainer:hover .overlay {
-  opacity: 1;
+.title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
-.div47 {
-  margin-top: 0;
-  color: #23559b;
-  font: 500 24px/150% Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+.description {
+  font-size: 1rem;
+  line-height: 1.5;
 }
-
-.div48 {
-  margin-top: 10px;
-  width: 90%;
-  font: 400 16px/28px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  line-height: normal;
-  width: 33%;
-  margin-left: 20px;
-}
-
-.div46 {
-  background-color: var(--Grey, #f4f6fc);
-  display: flex;
-  flex-direction: column;
-  color: var(--Dark-blue, #282938);
-  width: 100%;
-  padding: 0;
-  position: relative;
-}
-
-/* Hover effekt för desktop */
-.imgContainer:hover .overlay {
-  opacity: 1;
-}
-
-/* Focus-within för mobiler 
-.imgContainer:focus-within .overlay {
-  opacity: 1;
-}*/
-/* För medelstora skärmar (tablets och små laptops) */
-@media (max-width: 991px) {
-  .cardsdiv {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 20px;
-    margin-top: 20px;
-    width: 100%;
-    margin-left: 20px;
-  }
-
-  .text1 {
-    text-align: center;
-    margin-left: 10px;
-    margin-bottom: 20px; /* Lägg till utrymme under text */
-  }
-
-  .div44 {
-    padding: 0;
-  }
-
-  .div45 {
-    flex-direction: column;
-  }
-
-  .column {
-    width: 100%;
-    margin-left: 0;
-    margin-bottom: 15px;
-  }
-
-  .img {
-    width: 100%;
-  }
-  .imgContainer {
-  }
-
-  .img {
-    object-fit: cover; /* Fyll containern utan att förvränga bilden */
-  }
-  .div47 {
-    font-size: 1.2rem; /* Anpassa rubrikstorlek */
-    text-align: center; /* Centrera text */
-  }
-
-  .div48 {
-    font-size: 1rem; /* Anpassa textstorlek */
-    line-height: 1.4;
-    text-align: justify;
-    width: 100%; /* Anpassa bredd */
-  }
-}
-
-/* För små skärmar (mobiler) */
 @media (max-width: 768px) {
-  .cardsdiv {
-    margin-left: 30;
-    padding: 0 10px;
+  .description {
+    font-size: 0.8rem; /* Mindre textstorlek för små skärmar */
+    max-height: 120px; /* Minska höjden för texten */
   }
+}
 
-  .text1 {
-    text-align: center;
-    margin-left: 0; /* Justera centrering */
-    margin-bottom: 20px; /* Lägg till mellanrum under text */
-  }
-
-  .div44 {
-    padding: 0;
-  }
-
-  .div45 {
-    flex-direction: column;
-    gap: 10px; /* Mindre avstånd mellan bilder */
-  }
-
-  .column {
-    width: 100%;
-    margin-left: 0;
-    margin-bottom: 10px;
-  }
-
-  .img {
-    width: 100%;
-    height: auto; /* Anpassa för mindre skärmar */
-  }
-
-  .div47 {
-    font-size: 1rem; /* Mindre rubrikstorlek */
-    text-align: center;
-  }
-
-  .div48 {
-    font-size: 0.9rem; /* Anpassa textstorlek */
-    line-height: 1.3;
-    text-align: justify;
-    padding: 0 5px; /* Lägg till padding för bättre läsbarhet */
-  }
-
-  .imgContainer {
-    height: 180px; /* Mindre höjd för mobiler */
-    height: auto;
-  }
-  .img {
-    object-fit: cover; /* Fyll containern utan att förvränga bilden */
-    height: 400px; /* Mindre höjd för mobiler */
-  }
-  .overlay {
-    padding: 10px;
-    font-size: 0.9rem;
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr; /* Endast en kolumn på små skärmar */
   }
 }

@@ -14,7 +14,6 @@ export default function HomePage() {
   };
   return (
     <>
-      <AnimatedText />
       <LatestNews newsItems={newsItems} />
       <div className={styles.pagediv}>
         <section>
