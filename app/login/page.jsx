@@ -29,7 +29,7 @@ export default function LoginPage() {
       <p className={styles.loginSubheading}>
         Denna sida är endast till för administratörer och behörig personal.{" "}
         <br />
-        Kunder behöver inte logga in för att använda våra tjänster.
+        Besökare behöver inte logga in för att använda våra tjänster.
       </p>
       <input
         type="password"
