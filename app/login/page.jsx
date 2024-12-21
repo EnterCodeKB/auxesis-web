@@ -2,10 +2,11 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import styles from "../styles/Login.module.css";
+import styles from "../login/index.module.css";
 
 export default function LoginPage() {
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
   const router = useRouter();
 
   const handleLogin = () => {

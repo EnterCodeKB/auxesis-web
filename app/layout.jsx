@@ -19,14 +19,24 @@ export default function RootLayout({ children }) {
     // Kontrollera autentisering
     const isAuthenticated = localStorage.getItem("authenticated");
 
-    // Logga ut automatiskt efter 15 minuter
-    const logoutTimeout = setTimeout(() => {
-      localStorage.removeItem("authenticated");
+    // Om användaren inte är autentiserad och inte redan är på "/login", omdirigera
+    if (!isAuthenticated && pathname !== "/login") {
       router.push("/login");
-    }, 5 * 60 * 1000); // 5 minuter
+    }
 
-    return () => clearTimeout(logoutTimeout); // Rensa timeout vid navigering
+    // Om användaren är autentiserad, sätt en timeout för automatisk utloggning
+    if (isAuthenticated) {
+      const logoutTimeout = setTimeout(() => {
+        localStorage.removeItem("authenticated");
+        router.push("/login");
+      }, 5 * 60 * 1000); // 5 minuter
+
+      return () => clearTimeout(logoutTimeout); // Rensa timeout vid navigering
+    }
   }, [pathname, router]);
+
+  // Undanta header, hero och footer från "/login"
+  const isLoginPage = pathname === "/login";
 
   return (
     <html lang="sv">
@@ -40,14 +50,14 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
-        <Header />
-        <Hero />
+        {!isLoginPage && <Header />}
+        {!isLoginPage && <Hero />}
         <div className="container">
           <main>{children}</main>
         </div>
-        <Footer />
-        <Footer2 />
-        <CookieBanner />
+        {!isLoginPage && <Footer />}
+        {!isLoginPage && <Footer2 />}
+        {!isLoginPage && <CookieBanner />}
       </body>
     </html>
   );

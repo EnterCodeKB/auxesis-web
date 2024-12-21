@@ -8,6 +8,7 @@
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
+  margin-top: 100px;
 }
 
 .heading {
@@ -44,6 +45,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: 100px;
 }
 
 .button:hover {
