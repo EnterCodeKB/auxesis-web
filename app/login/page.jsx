@@ -22,10 +22,7 @@ export default function LoginPage() {
   return (
     <div style={{ textAlign: "center", padding: "50px" }}>
       <h1>Sidan är under konstruktion</h1>
-      <p>
-        Vi arbetar hårt för att förbättra din upplevelse. Vänligen logga in för
-        att få tillgång till förhandsgranskning.
-      </p>
+      <p>Vi arbetar hårt för att förbättra din upplevelse.</p>
       <input
         type="password"
         placeholder="Ange lösenord"
