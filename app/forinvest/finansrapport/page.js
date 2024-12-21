@@ -39,7 +39,7 @@ export default function ProFinanceRapport() {
             <button className={styles.imgFinanceButton}>
               <img
                 className={styles.icons}
-                src="/Finance/protokolJpeg1.jpeg"
+                src="/Finance/protokolSvg1.svg"
                 alt="Protokoll Årsredovisning"
               />
               <span>Årsredovisning</span>
