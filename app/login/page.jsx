@@ -21,8 +21,16 @@ export default function LoginPage() {
 
   return (
     <div style={{ textAlign: "center", padding: "50px" }}>
-      <h1>Sidan är under konstruktion</h1>
-      <p>Vi arbetar hårt för att förbättra din upplevelse.</p>
+      <h1 className={styles.heading}>Sidan är under konstruktion</h1>
+      <p className={styles.subheading}>
+        Vi arbetar hårt för att förbättra din upplevelse.
+      </p>
+      <h2 className={styles.loginHeading}>Inloggning för Administration</h2>
+      <p className={styles.loginSubheading}>
+        Denna sida är endast till för administratörer och behörig personal.{" "}
+        <br />
+        Kunder behöver inte logga in för att använda våra tjänster.
+      </p>
       <input
         type="password"
         placeholder="Ange lösenord"
