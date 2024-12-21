@@ -7,15 +7,26 @@ import "./globals.css";
 
 import Hero from "./components/heroSection";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import { useEffect } from "react";
 import CookieBanner from "./components/CookieBanner";
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
-  const hideHeroPaths = ["/produkter"];
-  const shouldHideHero = hideHeroPaths.some((path) =>
-    pathname.startsWith(path)
-  );
+  const router = useRouter();
+
+  useEffect(() => {
+    // Kontrollera autentisering
+    const isAuthenticated = localStorage.getItem("authenticated");
+
+    // Logga ut automatiskt efter 15 minuter
+    const logoutTimeout = setTimeout(() => {
+      localStorage.removeItem("authenticated");
+      router.push("/login");
+    }, 5 * 60 * 1000); // 5 minuter
+
+    return () => clearTimeout(logoutTimeout); // Rensa timeout vid navigering
+  }, [pathname, router]);
 
   return (
     <html lang="sv">
@@ -30,13 +41,13 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <Header />
-        {!shouldHideHero && <Hero />}
+        <Hero />
         <div className="container">
           <main>{children}</main>
         </div>
         <Footer />
         <Footer2 />
-        <CookieBanner /> {/* Lägg till cookie-bannern här */}
+        <CookieBanner />
       </body>
     </html>
   );

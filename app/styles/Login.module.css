@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Gör att sidan fyller hela höjden på skärmen */
+  background-color: #f4f4f9; /* En mjuk bakgrundsfärg */
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.heading {
+  font-size: 2rem;
+  color: #23559b; /* Matchar din färgpalett */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.subheading {
+  font-size: 1rem;
+  color: #555; /* Ljusare grå färg för undertext */
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Lätt skugga för bättre definition */
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #23559b; /* Din huvudfärg */
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #1c4484; /* Mörkare nyans vid hovring */
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
