@@ -12,7 +12,7 @@ export default function HeroPr() {
               {/* Logo */}
               <Link href="/">
                 <img
-                  src="/278149D3-C96F-4CEE-BC16-3D7AB9E4DABE.png"
+                  src="/278149D3-C96F-4CEE-BC16-3D7AB9E4DABEJpeg.jpg"
                   alt="Loggan"
                   className={styles.logo}
                 />

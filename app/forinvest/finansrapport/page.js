@@ -17,7 +17,7 @@ export default function ProFinanceRapport() {
             <button className={styles.imgFinanceButton}>
               <img
                 className={styles.icons}
-                src="/Finance/bolagsordning.png"
+                src="/Finance/bolagsordningJpeg1.jpeg"
                 alt="Bolagsordning"
               />
               <span>Bolagsstämma</span>
@@ -28,7 +28,7 @@ export default function ProFinanceRapport() {
             <button className={styles.imgFinanceButton}>
               <img
                 className={styles.icons}
-                src="/Finance/vardering.png"
+                src="/Finance/varderingJpeg1.jpeg"
                 alt="Värdering"
               />
               <span>Värdering</span>
@@ -39,7 +39,7 @@ export default function ProFinanceRapport() {
             <button className={styles.imgFinanceButton}>
               <img
                 className={styles.icons}
-                src="/Finance/protokol.png"
+                src="/Finance/protokolJpeg1.jpeg"
                 alt="Protokoll Årsredovisning"
               />
               <span>Årsredovisning</span>

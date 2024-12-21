@@ -21,7 +21,7 @@ export default function Finance() {
               <div className={styles.imgdiv}>
                 <img
                   loading="finance-bild1"
-                  src="/bild1-finance.png"
+                  src="/bild1-financeJpeg.jpg"
                   className={styles.imgfront}
                 />
               </div>
@@ -57,7 +57,7 @@ export default function Finance() {
               <div className={styles.imgdiv}>
                 <img
                   loading="finance-bild2"
-                  srcSet="/finance-bild2.png"
+                  srcSet="/finance-bild2Jpeg.jpg"
                   className={styles.imgfront}
                 />
               </div>
@@ -92,7 +92,7 @@ export default function Finance() {
               <div className={styles.imgdiv}>
                 <img
                   loading="finance-bild3"
-                  srcSet="/finance-bild3.png"
+                  srcSet="/finance-bild3Jpeg.jpg"
                   className={styles.imgfront}
                 />{" "}
               </div>

@@ -48,7 +48,17 @@ export default function CardGrid() {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.heading}>Vår Expertis</h1>
+      <h1 className={styles.heading}>OLIKA SMÄRTOR</h1>
+      <p>
+        {" "}
+        Smärta kan yttra sig på olika sätt beroende på dess orsak och
+        intensitet. Den kan sträcka sig från mild obehag, såsom klåda eller
+        irritation orsakad av insektsbett, till mer intensiva känslor som
+        brännande, stickande eller svullnad från giftiga stick eller skador. Hos
+        människor kan smärta ofta beskrivas och behandlas effektivt, men hos
+        djur varierar uttrycken för smärta, vilket gör det svårare att
+        diagnostisera och hantera.
+      </p>
       <div className={styles.grid}>
         {cardData.map((card, index) => (
           <div
