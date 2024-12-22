@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
     if (isAuthenticated) {
       const logoutTimeout = setTimeout(() => {
         localStorage.removeItem("authenticated");
-        router.push("/login");
+        router.push("/");
       }, 35 * 60 * 1000); // 35 minuter
 
       return () => clearTimeout(logoutTimeout); // Rensa timeout vid navigering
