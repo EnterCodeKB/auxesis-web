@@ -1,132 +1,62 @@
 "use client";
 
-import styles from "../styles/Finance.module.css";
+import Image from "next/image";
 import Link from "next/link";
+import styles from "../styles/Finance.module.css";
+
+const financeData = [
+  {
+    image: "/bild1-financeJpeg.jpg",
+    title: "Euroclear ",
+    description:
+      "AUXESIS PHARMA HOLDING AB (publ) är nu avstämningsbolag och igång med Euroclear Sweden AB som värdepappersinstitut. Läs här mer om alla våra mål",
+    link: "/nyheter/euroclear ",
+  },
+  {
+    image: "/finance-bild2Jpeg.jpg",
+    title: "Protokoll Årsstämman",
+    description:
+      "Protokoll från Årsstämman 2023 för AUXESIS PHARMA HOLDING AB (publ) med organisationsnummer 559195-6486.",
+    link: "/forinvest/finansrapport/bolagsstamma",
+  },
+  {
+    image: "/finance-bild3Jpeg.jpg",
+    title: "Revisionsberättelse 2023",
+    description:
+      "Revisionsberättelse 2023 för AUXESIS PHARMA HOLDING AB (publ) med organisationsnummer 559195-6486.",
+    link: "/revision2023",
+  },
+];
 
 export default function Finance() {
   return (
-    <>
-      <div className={styles.financesection}>
-        <div className={styles.div73}>
-          <h1 className={styles.h1div}>Finansiell information</h1>
-          <p className={styles.ptextunder}>
-            Här presenterar vi information för partners och investerare med
-            nyheter och uppdateringar från Auxesis Pharma.
-          </p>
-        </div>
-
-        <div className={styles.div81}>
-          <div className={styles.column}>
-            <div className={styles.itemsbox}>
-              <div className={styles.imgdiv}>
-                <img
-                  loading="finance-bild1"
-                  src="/bild1-financeJpeg.jpg"
-                  className={styles.imgfront}
-                />
-              </div>
-              <div className={styles.textcontainer}>
-                <div className={styles.textrubriken}>Euroclear </div>
-                <p className={styles.ptext}>
-                  AUXESIS PHARMA HOLDING AB (publ) är nu avstämningsbolag och
-                  igång med Euroclear Sweden AB som värdepappersinstitut. Läs
-                  här mer om alla våra mål{" "}
-                </p>
-                <p></p>
-                <div className={styles.btncontainer}>
-                  <div className={styles.btnbox}>
-                    <button
-                      className={styles.buttongradient}
-                      onClick={() => handleScrollToTop()}
-                    >
-                      <Link
-                        className={styles.link}
-                        href="/nyheter/euroclear "
-                        scroll={true}
-                      >
-                        Läs mer
-                      </Link>
-                    </button>
-                  </div>
-                </div>
-              </div>
+    <div className={styles.container}>
+      <h1 className={styles.heading}>Finansiell information</h1>
+      <p>
+        {" "}
+        Här presenterar vi information för partners och investerare med nyheter
+        och uppdateringar från Auxesis Pharma.
+      </p>
+      <div className={styles.grid}>
+        {financeData.map((item, index) => (
+          <div key={index} className={styles.card}>
+            <Image
+              src={item.image}
+              alt={item.title}
+              width={300}
+              height={150}
+              className={styles.image}
+            />
+            <div className={styles.textContainer}>
+              <h2 className={styles.title}>{item.title}</h2>
+              <p className={styles.description}>{item.description}</p>
             </div>
+            <Link href={item.link}>
+              <button className={styles.button}>Läs mer</button>
+            </Link>
           </div>
-          <div className={styles.column}>
-            <div className={styles.itemsbox}>
-              <div className={styles.imgdiv}>
-                <img
-                  loading="finance-bild2"
-                  srcSet="/finance-bild2Jpeg.jpg"
-                  className={styles.imgfront}
-                />
-              </div>
-              <div className={styles.textcontainer2}>
-                <div className={styles.textrubriken}>Protokoll Årsstämman</div>
-                <p className={styles.ptext}>
-                  Protokoll från Årsstämman 2023 för AUXESIS PHARMA HOLDING AB
-                  (publ) med organisationsnummer 559195-6486.{" "}
-                </p>
-                <div className={styles.btncontainer}>
-                  <div className={styles.btnbox}>
-                    <button
-                      className={styles.buttongradient2}
-                      onClick={() => handleScrollToTop()}
-                    >
-                      <Link
-                        className={styles.link}
-                        href="/forinvest/finansrapport/bolagsstamma
-                        "
-                        scroll={true}
-                      >
-                        Läs mer
-                      </Link>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className={styles.column}>
-            <div className={styles.itemsbox}>
-              <div className={styles.imgdiv}>
-                <img
-                  loading="finance-bild3"
-                  srcSet="/finance-bild3Jpeg.jpg"
-                  className={styles.imgfront}
-                />{" "}
-              </div>
-              <div className={styles.textcontainer3}>
-                <div className={styles.textrubriken}>
-                  Revisionsberättelse 2023
-                </div>
-                <p className={styles.ptext}>
-                  Revisionsberättelse 2023 för AUXESIS PHARMA HOLDING AB (publ)
-                  med organisationsnummer 559195-6486.{" "}
-                </p>
-                <p></p>
-                <p></p>
-                <div className={styles.btncontainer}>
-                  <div className={styles.btnbox}>
-                    <button
-                      className={styles.buttongradient3}
-                      onClick={() => handleScrollToTop()}
-                    >
-                      <Link
-                        className={styles.link}
-                        href="/revision2023"
-                        scroll={true}
-                      >
-                        Läs mer
-                      </Link>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 }
