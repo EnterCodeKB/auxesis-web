@@ -15,6 +15,12 @@ export default function RootLayout({ children }) {
   const pathname = usePathname();
   const router = useRouter();
 
+  // Lista över sidor där hero-sektionen ska döljas
+  const hideHeroPaths = ["/produkter"];
+  const shouldHideHero = hideHeroPaths.some((path) =>
+    pathname.startsWith(path)
+  );
+
   useEffect(() => {
     // Kontrollera autentisering
     const isAuthenticated = localStorage.getItem("authenticated");
@@ -29,7 +35,7 @@ export default function RootLayout({ children }) {
       const logoutTimeout = setTimeout(() => {
         localStorage.removeItem("authenticated");
         router.push("/login");
-      }, 15 * 60 * 1000); // 15 minuter
+      }, 35 * 60 * 1000); // 35 minuter
 
       return () => clearTimeout(logoutTimeout); // Rensa timeout vid navigering
     }
@@ -50,11 +56,14 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
+        {/* Visa Header om det inte är "/login" */}
         {!isLoginPage && <Header />}
-        {!isLoginPage && <Hero />}
+        {/* Visa Hero om det inte är "/login" och Hero ska inte döljas */}
+        {!isLoginPage && !shouldHideHero && <Hero />}
         <div className="container">
           <main>{children}</main>
         </div>
+        {/* Visa Footer om det inte är "/login" */}
         {!isLoginPage && <Footer />}
         {!isLoginPage && <Footer2 />}
         {!isLoginPage && <CookieBanner />}
