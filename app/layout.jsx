@@ -22,22 +22,24 @@ export default function RootLayout({ children }) {
   );
 
   useEffect(() => {
-    // Kontrollera autentisering
-    const isAuthenticated = localStorage.getItem("authenticated");
+    const isAuthenticated = Boolean(localStorage.getItem("authenticated"));
+    console.log("Autentiserad:", isAuthenticated, "Pathname:", pathname);
 
-    // Om användaren inte är autentiserad och inte redan är på "/login", omdirigera
     if (!isAuthenticated && pathname !== "/login") {
       router.push("/login");
     }
 
-    // Om användaren är autentiserad, sätt en timeout för automatisk utloggning
+    if (isAuthenticated && pathname === "/login") {
+      router.push("/");
+    }
+
     if (isAuthenticated) {
       const logoutTimeout = setTimeout(() => {
         localStorage.removeItem("authenticated");
-        router.push("/");
-      }, 35 * 60 * 1000); // 35 minuter
+        router.push("/login");
+      }, 35 * 60 * 1000);
 
-      return () => clearTimeout(logoutTimeout); // Rensa timeout vid navigering
+      return () => clearTimeout(logoutTimeout);
     }
   }, [pathname, router]);
 
@@ -48,7 +50,7 @@ export default function RootLayout({ children }) {
     <html lang="sv">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Your Website Title</title>
+        <title>Auxesis Pharma Holding AB(publ)</title>
         <meta name="description" content="Your Website Description" />
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
@@ -61,7 +63,7 @@ export default function RootLayout({ children }) {
         {/* Visa Hero om det inte är "/login" och Hero ska inte döljas */}
         {!isLoginPage && !shouldHideHero && <Hero />}
         <div className="container">
-          <main>{children}</main>
+          <main>{children || <p>Inget innehåll att visa.</p>}</main>
         </div>
         {/* Visa Footer om det inte är "/login" */}
         {!isLoginPage && <Footer />}
