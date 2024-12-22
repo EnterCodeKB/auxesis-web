@@ -1,6 +1,17 @@
 import * as React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "../styles/heroPr.module.css";
+
+const MyImage = ({ src, alt, width, height, className }) => (
+  <Image
+    src={src}
+    alt={alt}
+    width={width}
+    height={height}
+    className={className}
+  />
+);
 
 export default function HeroPr() {
   return (
@@ -12,7 +23,7 @@ export default function HeroPr() {
               {/* Logo */}
               <Link href="/">
                 <img
-                  src="/278149D3-C96F-4CEE-BC16-3D7AB9E4DABEJpeg.jpg"
+                  src="/Finance/278149D3-C96F-4CEE-BC16-3D7AB9E4DABE.png"
                   alt="Loggan"
                   className={styles.logo}
                 />
