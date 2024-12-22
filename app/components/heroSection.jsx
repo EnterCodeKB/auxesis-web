@@ -8,10 +8,13 @@ import styles from "../styles/heroSection.module.css";
 const MyImage = ({ src, alt, width, height, className }) => (
   <Image
     src={src}
-    alt={alt}
-    width={width}
-    height={height}
-    className={className}
+    alt={alt || "Default description"}
+    width={width || 100}
+    height={height || 100}
+    className={className || ""}
+    onError={(e) => {
+      e.target.src = "/produkter/fallback-image.png"; // En fallback-bild
+    }}
   />
 );
 
