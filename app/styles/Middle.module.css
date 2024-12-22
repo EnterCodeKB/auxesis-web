@@ -1,109 +1,103 @@
+/* Wrapper Styling */
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width: 1200px;
+  margin: 60px auto; /* Lägger till 60px marginal ovanför */
   padding: 20px;
-  width: 100%;
-  max-width: 1300px;
-  margin: 0 auto;
-  margin-left: 20px;
+  font-family: Arial, sans-serif;
 }
 
+/* Heading Styling */
 .heading {
+  font-size: 2rem;
+  color: #23559b;
   text-align: center;
   margin-bottom: 20px;
-  margin-top: -100px;
 }
 
+/* Content Styling */
 .content {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
   align-items: flex-start;
-  width: 100%;
 }
 
+/* Video Container Styling */
 .videoContainer {
   flex: 1;
-  display: flex;
-  justify-content: center;
+  min-width: 300px;
+  max-width: 600px;
+  text-align: center;
 }
 
 .video {
   width: 100%;
-  max-width: 600px;
+  height: auto;
   border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Text Container Styling */
 .textContainer {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-}
-
-.text {
-  font-size: 1rem;
-  line-height: 1.6;
+  min-width: 300px;
+  max-width: 600px;
   text-align: justify;
 }
 
-.footerText {
-  margin-top: 20px;
-  font-size: 0.9rem;
-  text-align: center;
-  line-height: 1.4;
-  color: #232536;
+.ptext {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-@media (max-width: 991px) {
-  .content {
-    flex-direction: column;
-    align-items: center;
-  }
+/* Responsiv design */
 
-  .video {
-    width: 90%;
-  }
-
-  .textContainer {
-    width: 90%;
-  }
-
-  .text {
-    font-size: 0.95rem;
-    text-align: justify;
-  }
-}
-
-@media (max-width: 768px) {
-  .wrapper {
-    width: 100%;
-  }
+/* För små skärmar (max-width: 480px) */
+@media (max-width: 480px) {
   .heading {
-    font-size: 2.2rem;
-    margin-bottom: 10px;
+    font-size: 1.8rem;
+  }
+
+  .ptext {
+    font-size: 0.9rem;
   }
 
   .content {
     flex-direction: column;
     align-items: center;
-    gap: 15px;
   }
 
-  .video {
-    width: 100%;
-  }
-
+  .videoContainer,
   .textContainer {
-    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* För medelstora skärmar (min-width: 768px) */
+@media (min-width: 768px) {
+  .heading {
+    font-size: 2rem;
   }
 
-  .text {
-    font: 400 16px/28px Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+  .ptext {
+    font-size: 1rem;
   }
-  .footerText {
-    font-size: 0.9rem;
+}
+
+/* För stora skärmar (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .ptext {
+    font-size: 1.1rem;
+  }
+
+  .content {
+    gap: 40px;
   }
 }
