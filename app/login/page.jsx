@@ -6,14 +6,13 @@ import styles from "../login/index.module.css";
 
 export default function LoginPage() {
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
   const router = useRouter();
 
   const handleLogin = () => {
+    // Kontrollera lösenordet
     if (password === "Boomertank349%€") {
-      // Ändra "ditt-lösenord" till ett valfritt lösenord
-      localStorage.setItem("authenticated", "true");
-      router.push("/"); // Skicka användaren till startsidan
+      localStorage.setItem("authenticated", "true"); // Sätt autentisering
+      router.push("/"); // Omdirigera till startsidan
     } else {
       alert("Fel lösenord!");
     }
