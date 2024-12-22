@@ -22,11 +22,7 @@ export default function HeroPr() {
             <div className={styles.div15}>
               {/* Logo */}
               <Link href="/">
-                <img
-                  src="/Finance/278149D3-C96F-4CEE-BC16-3D7AB9E4DABE.png"
-                  alt="Loggan"
-                  className={styles.logo}
-                />
+                <img src="/vitlogga.png" alt="Loggan" className={styles.logo} />
               </Link>
               <div className={styles.div16}>
                 <h2 className={styles.divh1}>
