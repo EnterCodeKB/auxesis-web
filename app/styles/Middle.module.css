@@ -1,7 +1,7 @@
 /* Wrapper Styling */
 .wrapper {
   max-width: 1200px;
-  margin: 60px auto; /* Lägger till 60px marginal ovanför */
+  margin: 1px auto; /* Lägger till 60px marginal ovanför */
   padding: 20px;
   font-family: Arial, sans-serif;
 }
