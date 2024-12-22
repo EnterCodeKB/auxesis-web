@@ -1,189 +1,111 @@
-/* Grundläggande styling för alla skärmar */
-.details {
-  max-width: 1100px;
-  margin: 40px auto;
+.container {
+  max-width: 800px;
+  margin: 250px auto 50px auto; /* Lägger till 150px marginal ovanför */
   padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  margin-top: 6%;
-  margin-left: 10%;
+  text-align: left;
 }
 
-.details h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
+.imageContainer {
   text-align: center;
-  margin-bottom: 20px;
-  color: #1c1e53;
-}
-
-.details h2 {
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin-top: 20px;
-  color: #23559b;
-}
-
-.details h4 {
-  font-size: 1.2rem;
-  text-align: center;
-  color: #6f7287;
-}
-
-.details p {
-  font-size: 1.1rem;
-  margin-bottom: 15px;
-  text-align: justify;
+  margin-bottom: 30px;
 }
 
 .img1,
-.image2 {
+.img2 {
   width: 100%;
-  max-height: 400px;
-  object-fit: cover;
+  max-width: 600px;
+  height: auto;
   border-radius: 10px;
-  margin: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 2rem;
+  color: #23559b;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.date {
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #23559b;
+  margin: 20px 0 10px 0;
+}
+
+.text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .infoButton {
-  display: block;
-  width: 200px;
-  margin: 20px auto;
-  padding: 10px 15px;
-  background-color: #007bff;
+  background-color: #23559b;
   color: white;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  text-align: center;
-  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  display: block;
+  margin: 20px auto;
 }
 
 .infoButton:hover {
-  background-color: #0056b3;
+  background-color: #1a4178;
 }
 
-.articlesimage {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.image2 {
-  width: 80%;
-  max-width: 600px;
-  border-radius: 10px;
-}
-
-/* === Responsiv design === */
-
-/* För mellanstora skärmar (max-width: 991px) */
-@media (max-width: 991px) {
-  .details {
-    margin: 20px auto;
-    padding: 15px;
-    width: 100%;
-    margin-top: 16%;
-    margin-left: 15%;
-    margin-bottom: 6%;
-  }
-
-  .details h1 {
-    font-size: 2rem;
-  }
-  .h2 {
-    text-align: center;
-  }
-
-  .details h2 {
-    font-size: 1.5rem;
-  }
-
-  .details h4 {
-    font-size: 1rem;
-  }
-
-  .details p {
-    font-size: 1rem;
-  }
-
-  .infoButton {
-    width: 180px;
-    font-size: 0.9rem;
-    padding: 8px 12px;
-  }
-
-  .img1,
-  .image2 {
-    max-height: 300px;
-  }
-
-  .articlesimage {
-    margin-top: 10px;
-  }
-}
+/* Responsiv design */
 
 /* För små skärmar (max-width: 768px) */
 @media (max-width: 768px) {
-  .details {
-    width: 90%;
-    margin: 16% auto 6% auto;
-    padding: 2%;
-    display: flex; /* Gör .details till flexbox */
-    flex-direction: column; /* Stapla elementen vertikalt */
-    align-items: center; /* Centrera alla barn horisontellt */
-    text-align: center; /* Centrera text för rubriker och knappar */
-    margin-left: 15%;
-    margin-top: -1%;
-  }
-
-  /* Undanta <p>-taggen från centrering */
-  .details p {
-    text-align: justify; /* Behåll vänsterjusterad text */
-    width: 100%; /* Säkerställ full bredd */
-    margin: 10px 0; /* Lägg till utrymme runt p-taggar */
-  }
-
-  .details h1 {
-    font-size: 1.8rem;
-    text-align: center; /* Centrera rubriken */
-    margin-bottom: 10px;
-  }
-
-  .details h2 {
-    font-size: 1.3rem;
-    text-align: center; /* Centrera underrubriken */
-  }
-
-  .details h4 {
-    font-size: 0.9rem;
-    text-align: center; /* Centrera datum */
-  }
-
-  .infoButton {
-    width: 100%; /* Full bredd för knappen */
-    font-size: 0.85rem;
+  .container {
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 120px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .text {
+    font-size: 0.9rem;
   }
 
   .img1,
-  .image2 {
-    max-height: 250px;
-    width: 100%;
-    object-fit: cover;
-    margin-top: 10px;
-    border-radius: 8px;
+  .img2 {
+    max-width: 100%; /* Anpassa bilder till skärmbredden */
+  }
+}
+
+/* För stora skärmar (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 900px;
+    margin-top: 260px;
   }
 
-  .articlesimage {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center; /* Centrera bilden */
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.8rem;
+  }
+
+  .text {
+    font-size: 1.1rem;
   }
 }

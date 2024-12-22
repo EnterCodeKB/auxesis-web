@@ -20,14 +20,12 @@ export default function IntPatent() {
           och är ett strategiskt initiativ för att stärka bolagets immateriella
           skydd på den globala marknaden.
         </p>
-        <br />
         <p className={styles.ptext}>
           Att få ett internationellt patent beviljat skulle vara ett betydande
           erkännande av vår innovationskraft och kvaliteten på vår teknologi.
           Detta stärker vår position som en ledande aktör inom branschen och ger
           oss en tydlig konkurrensfördel i ett snabbt växande globalt landskap.
         </p>
-        <br />
         <p className={styles.ptext}>
           "Vi är stolta över att driva innovation och skapa lösningar som gör
           skillnad. Detta patent är inte bara en milstolpe för Auxesis Pharma
@@ -38,7 +36,6 @@ export default function IntPatent() {
           Vi ser fram emot att bygga vidare på detta framgångsrika resultat och
           förstärka vår närvaro på den internationella marknaden.
         </p>
-        <br />
         <div className={styles.button}>
           <a
             href="/patent/International Patent Application No. PCT_EP2024_084182.pdf"

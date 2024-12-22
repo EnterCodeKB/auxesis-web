@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "../../../styles/Finance.module.css";
+import styles from "./index.module.css";
 
 export default function Protokol() {
   const scrollToTop = () => {
@@ -9,9 +9,9 @@ export default function Protokol() {
 
   return (
     <>
-      <section className={styles.bolagsstamma}>
-        <h2 className={styles.h2divdark}>Protokoll från Årsstämman</h2>
-        <p>
+      <section className={styles.container}>
+        <h2 className={styles.title}>Protokoll från Årsstämman</h2>
+        <p className={styles.text}>
           Du kan se protokollet som en PDF-fil genom att klicka på knappen
           nedan.
         </p>

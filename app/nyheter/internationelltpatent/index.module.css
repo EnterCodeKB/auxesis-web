@@ -1,140 +1,77 @@
-/* Grundläggande styling för alla skärmar */
 .intpatent {
-  max-width: 100%;
-  margin: 40px auto; /* Centrera sektionen horisontellt */
+  max-width: 800px;
+  margin: 150px auto 50px auto; /* Lägger till 150px marginal ovanför */
   padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
   font-family: Arial, sans-serif;
-  line-height: 1.5;
-  color: #333;
-  text-align: center; /* Centrera rubriker och text */
-  margin-bottom: 6%;
-  margin-left: 6%;
-  margin-top: 6%;
 }
 
 .h1intpatent {
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 2rem;
+  color: #23559b;
+  text-align: center;
   margin-bottom: 20px;
-  color: #1c1e53;
-  line-height: 1.4;
 }
 
 .ptext {
-  font-size: 1.1rem;
-  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
   margin-bottom: 20px;
-  line-height: 1.8;
 }
 
 .button {
-  margin-top: 30px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .downloadButton {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #0070f3;
+  background-color: #23559b;
   color: white;
   text-decoration: none;
+  padding: 10px 20px;
   border-radius: 5px;
-  font-weight: bold;
-  font-size: 1rem;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease;
 }
 
 .downloadButton:hover {
-  background-color: #005bb5;
-  transform: scale(1.05); /* Gör knappen större vid hover */
+  background-color: #1a4178;
 }
 
-/* === Responsiv design === */
+/* Responsiv design */
 
-/* Mellanstora skärmar (max-width: 991px) */
-@media (max-width: 991px) {
-  .intpatent {
-    padding: 15px;
-    width: 95%;
-    margin-left: 20%;
-    margin-top: 16%;
-    margin-bottom: 6%;
-  }
-
-  .h1intpatent {
-    font-size: 2rem;
-    margin-bottom: 15px;
-  }
-
-  .ptext {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 15px;
-  }
-
-  .downloadButton {
-    font-size: 0.9rem;
-    padding: 8px 16px; /* Minska padding för knappen */
-  }
-}
-
-/* Små skärmar (max-width: 768px) */
+/* För små skärmar (max-width: 768px) */
 @media (max-width: 768px) {
   .intpatent {
     padding: 10px;
-    width: 90%;
-    margin-top: 1%;
-    margin-left: 15%;
-    margin-bottom: 6%;
+    margin-top: 120px; /* Lite mindre marginal på små skärmar */
   }
 
   .h1intpatent {
     font-size: 1.8rem;
-    text-align: left; /* Vänsterjustera rubriken */
-    margin-bottom: 10px;
   }
 
   .ptext {
-    font-size: 0.95rem;
-    text-align: justify;
-    line-height: 1.5;
-    margin-bottom: 10px;
-  }
-
-  .button {
-    margin-top: 20px;
+    font-size: 0.9rem;
   }
 
   .downloadButton {
-    width: 100%; /* Gör knappen fullbredd */
-    font-size: 0.85rem;
-    padding: 8px 12px;
-    text-align: center;
+    padding: 8px 16px; /* Mindre knappstorlek */
   }
 }
 
-/* Stora skärmar (min-width: 1200px) */
-@media (min-width: 1200px) {
+/* För stora skärmar (min-width: 1024px) */
+@media (min-width: 1024px) {
   .intpatent {
-    max-width: 100%;
-    padding: 30px;
+    max-width: 900px;
+    margin-top: 260px;
   }
 
   .h1intpatent {
-    font-size: 3rem;
-    margin-bottom: 30px;
+    font-size: 2.5rem;
   }
 
   .ptext {
-    font-size: 1.2rem;
-    line-height: 2;
-    margin-bottom: 20px;
-  }
-
-  .downloadButton {
-    font-size: 1.2rem;
-    padding: 12px 24px;
+    font-size: 1.1rem;
   }
 }
