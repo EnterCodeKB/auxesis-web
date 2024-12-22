@@ -23,6 +23,8 @@
 
 .hamburgerIcon {
   color: white;
+  background-color: #23559b;
+  border-radius: 3px;
   width: 40px;
   height: 40px;
   transition: transform 0.3s ease, color 0.2s;

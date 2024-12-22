@@ -1,9 +1,11 @@
+/* Container */
 .container {
   max-width: 1200px;
-  margin: 250px auto; /* Lägg till 50px margin på toppen */
+  margin: 60px auto;
   padding: 20px;
 }
 
+/* Rubriker */
 .heading {
   text-align: center;
   font-size: 2rem;
@@ -18,10 +20,25 @@
   color: #666;
 }
 
+/* Infografik */
+.infografikContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.infografik {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px; /* Öka avståndet mellan korten */
+  gap: 30px;
 }
 
 .card {
@@ -33,24 +50,19 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Bild */
 .image {
-  border-radius: 50%; /* Gör bilden rund */
+  border-radius: 50%;
   margin-bottom: 15px;
-  width: 100px; /* Standardstorlek */
+  width: 100px;
   height: 100px;
 }
+
+/* Text */
 .name {
   font-size: 1.2rem;
   font-weight: bold;
   color: #23559b;
-}
-
-@media (max-width: 480px) {
-  .description {
-    max-height: 200px;
-    overflow-y: auto; /* Scroll om texten är för lång */
-    padding-right: 5px;
-  }
 }
 
 .title {
@@ -65,9 +77,72 @@
   line-height: 1.5;
 }
 
+/* Responsiva regler */
+
+/* För små skärmar (max-width: 480px) */
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .description {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+
+  .image {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* För medelstora skärmar (min-width: 768px) */
 @media (min-width: 768px) {
   .image {
-    width: 150px; /* Större bild för större skärmar */
+    width: 150px;
     height: 150px;
+  }
+
+  .infografik {
+    width: 80%;
+  }
+
+  .card {
+    padding: 30px;
+  }
+}
+
+/* För stora skärmar (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr); /* Fyra kolumner på större skärmar */
+    gap: 40px; /* Öka mellanrum mellan korten */
+  }
+
+  .infografik {
+    width: 60%; /* Gör infografik-bilden mindre för bättre layout */
+  }
+
+  .container {
+    max-width: 1400px; /* Öka bredden på behållaren */
+    padding: 40px;
+    margin-top: 260px;
+  }
+
+  .heading {
+    font-size: 2.5rem; /* Större rubrik för stora skärmar */
+  }
+
+  .subheading {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 40px;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.8;
   }
 }

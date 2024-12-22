@@ -106,11 +106,21 @@ const teamMembers = [
 export default function VartTeam() {
   return (
     <div className={styles.container}>
-      <h1 className={styles.heading}>Vårt Team</h1>
+      <h1 className={styles.heading}>Kvalificerat team med bred expertis</h1>
       <p className={styles.subheading}>
-        Ett kvalificerat team med bred expertis för att möta framtidens
-        utmaningar.
+        Auxesis har ett kvalificerat team med en bra sammansättning av
+        kompetenser för att hantera bolagets samlade uppdrag och utmaningar:
       </p>
+      {/* Infografik Bild */}
+      <div className={styles.infografikContainer}>
+        <Image
+          src="/team/infografik1.png"
+          alt="Infografik"
+          width={800}
+          height={400}
+          className={styles.infografik}
+        />
+      </div>
       <div className={styles.grid}>
         {teamMembers.map((member, index) => (
           <div key={index} className={styles.card}>

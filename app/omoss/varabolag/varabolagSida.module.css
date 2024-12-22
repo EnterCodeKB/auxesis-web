@@ -1,373 +1,135 @@
-@media (min-width: 991px) {
-  .varabolag,
-  .omoss {
-    margin-left: 100px;
-  }
-
-  .textarea {
-    width: 100%;
-    margin-left: -30px;
-  }
-  .divh2 {
-    color: #1c1e53;
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 100px;
-  }
-
-  .h4 {
-    color: #23559b;
-  }
-  .ptext {
-    width: 100%;
-    font-size: 20px; /* Use rem for responsiveness */
-    line-height: 1.5; /* Improve readability */
-    margin-bottom: 1rem;
-    color: #555;
-  }
-
-  .ularea {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: -80px;
-  }
-
-  .textareaunder {
-    margin-top: 70px;
-  }
-
-  .loggansimg1 {
-    width: auto !important;
-    margin-left: -30px;
-    margin-top: -35px;
-  }
-
-  .loggansdiv {
-    width: 50%;
-  }
-
-  .bolagstree {
-    width: 100%;
-    height: 500px;
-    display: flex;
-    flex-direction: row;
-    background-color: #f9f9f9;
-    margin-bottom: 50px;
-    margin-top: 60px;
-    margin-left: 160px;
-  }
-
-  /* Animation */
-  .bolag1,
-  .bolag2,
-  .bolag3 {
-    opacity: 0;
-    transform: translateX(100%);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-  }
-
-  .bolag1.visible {
-    opacity: 1;
-    transform: translateX(0);
-    transition-delay: 0s;
-  }
-
-  .bolag2.visible {
-    opacity: 1;
-    transform: translateX(0);
-    transition-delay: 0.5s;
-  }
-
-  .bolag3.visible {
-    opacity: 1;
-    transform: translateX(0);
-    transition-delay: 1s;
-  }
-
-  .bolag1 {
-    margin-top: 60px;
-  }
-
-  .bolag2 {
-    margin-top: 70px;
-  }
-
-  .bolag3 {
-    margin-top: 80px;
-  }
-
-  .auxesistext,
-  .medthechtext,
-  .animalcaretext {
-    width: 100%;
-    margin-top: 20px;
-  }
-
-  .h3 {
-    font-size: 34px;
-    margin-top: 40px;
-  }
-  .loggansimg1 {
-    width: 500vh;
-  }
-
-  .auxesisbild,
-  .medthechbild,
-  .animalcarebild {
-    margin-left: -90px;
-    color: #1c1e53;
-  }
-
-  /* Image */
-  .bolagsbord {
-    width: 100%;
-    margin-right: 300px;
-    margin-top: -170px;
-  }
-  .imgprodukt {
-    width: 100%;
-    max-width: 1000px;
-  }
-
-  .imgcoxypet {
-    width: 100%;
-    max-width: 700px;
-  }
-
-  /* Dropdown */
-  .dropdownContent {
-    display: none;
-    position: absolute;
-    background-color: white;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-    right: 0;
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 8px;
-  }
-
-  .dropdown:hover .dropdownContent,
-  .dropdownContent.show {
-    display: block;
-  }
-
-  .subLink {
-    padding: 12px 16px;
-    text-align: left;
-    text-decoration: none;
-    display: block;
-    color: #333;
-    font-weight: bold;
-  }
-
-  .subLink:hover {
-    background-color: #f1f1f1;
-    color: #0070f3;
-  }
-
-  .dropdown {
-    position: relative;
-  }
-
-  .scrollToTop {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #c1eaff;
-    color: white;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-  }
-
-  .scrollToTop:hover {
-    background-color: #194276;
-  }
+/* Wrapper Section */
+.varabolag {
+  margin: 200px auto; /* Increased margin-top */
+  max-width: 1200px;
+  padding: 20px;
+  margin-bottom: 60px;
 }
-/* Media queries for smaller screens */
-@media (min-width: 1200px) {
-  .bolagstree {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 40px;
-    margin: 0 auto;
-    max-width: 1400px;
-  }
 
-  .bolagsdiv {
-    width: 60%;
-    margin-left: 0;
-    text-align: left;
-  }
-
-  .loggansimg1 {
-    width: 40%;
-    margin-right: 40px;
-  }
-
-  .auxesisbild,
-  .medthechbild,
-  .animalcarebild {
-    margin-left: 20px;
-    text-align: left;
-  }
-
-  .bolagsbord {
-    width: 50%;
-    margin-left: 20%;
-
-    margin-top: -100px;
-  }
-
-  .ptext {
-    font-size: 22px;
-    line-height: 1.6;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-
-  .h3 {
-    font-size: 36px;
-    margin-top: 40px;
-    text-align: center;
-  }
-
-  .scrollToTop {
-    bottom: 30px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    font-size: 24px;
-  }
-
-  .auxesistext,
-  .medthechtext,
-  .animalcaretext {
-    width: 75%;
-    margin: 0 auto;
-  }
-
-  .ularea {
-    margin-top: 20px;
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .loggansdiv {
-    width: 30%;
-    margin-right: 60px;
-  }
-
-  .textarea {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+/* Main Heading */
+.h1 {
+  font-size: 2.5rem;
+  color: #23559b;
+  text-align: center;
+  margin-bottom: 30px;
 }
-@media (max-width: 991px) {
-  .varabolag,
-  .omoss {
-    margin-left: 150px;
-    margin-top: 16%;
-  }
-  .bolagstree {
-    flex-direction: column;
-    align-items: center;
-    background-color: #f9f9f9;
 
-    margin-top: 40px;
-  }
+/* Tree Layout */
+.bolagstree {
+  margin: 20px 0;
+}
 
-  .bolagsdiv {
-    width: 100%;
-    margin-left: 0;
-    text-align: center;
-  }
+.bolag1,
+.bolag2,
+.bolag3 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #1c1e53;
+  margin: 40px 10px 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
 
-  .loggansimg1 {
-    display: none;
-  }
+.bolag1.visible,
+.bolag2.visible,
+.bolag3.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
-  .auxesisbild,
-  .medthechbild,
-  .animalcarebild {
-    margin-left: 0;
-    text-align: center;
-  }
+/* Text Area Styling */
+.textarea {
+  margin-top: 20px;
+  padding: 20px;
+  text-align: justify;
+}
 
-  .bolagsbord {
-    width: 100%;
-    margin-left: 0;
-    margin-top: -100px;
-  }
+/* Individual Bolag Sections */
+.auxesis,
+.medtech,
+.animalcare {
+  margin-top: 100px;
+}
+
+.divh2 {
+  font-size: 2rem;
+  color: #23559b;
+}
+
+.ptext {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Image Styling */
+.bolagsbord {
+  width: 50%; /* Bilden är hälften så stor */
+  border-radius: 10px;
+  margin-top: -10px; /* Marginal över bilden */
+  margin-left: auto; /* Centrerar horisontellt */
+  margin-right: auto; /* Centrerar horisontellt */
+  display: block; /* Gör att centreringsreglerna fungerar på blocknivån */
+}
+
+/* Responsiv design */
+
+/* Små skärmar (max-width: 480px) */
+@media (max-width: 480px) {
   .h1 {
-    text-align: center;
-  }
-}
-
-/* Small Screens (max-width: 768px) */
-@media (max-width: 768px) {
-  .omoss,
-  .varabolag {
-    margin-left: 130px;
-  }
-  .bolagstree {
-    flex-direction: column;
-    align-items: center;
-    background-color: #f9f9f9;
+    font-size: 2rem;
   }
 
   .bolag1,
   .bolag2,
   .bolag3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
-  .bolagsdiv {
-    text-align: center;
-  }
-
-  .loggansimg1 {
-    display: none;
-  }
-
-  .auxesisbild,
-  .medthechbild,
-  .animalcarebild {
-    text-align: center;
-  }
   .divh2 {
-    font-size: 2rem;
-    margin-top: 3%;
-  }
-  .bolagsbord {
-    width: 90%;
-    margin: 20px auto;
+    font-size: 1.5rem;
   }
 
   .ptext {
-    font-size: 18px;
+    font-size: 0.9rem;
     line-height: 1.4;
   }
 
-  .h3 {
-    font-size: 24px;
+  .bolagsbord {
+    margin-top: 20px;
+  }
+}
+
+/* Medelstora skärmar (min-width: 768px) */
+@media (min-width: 768px) {
+  .h1 {
+    font-size: 2.2rem;
   }
 
-  .scrollToTop {
-    bottom: 15px;
-    right: 15px;
-    width: 35px;
-    height: 35px;
-    font-size: 18px;
+  .divh2 {
+    font-size: 1.8rem;
+  }
+
+  .ptext {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+/* Stora skärmar (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .h1 {
+    font-size: 2.5rem;
+    margin-top: 60px;
+  }
+
+  .divh2 {
+    font-size: 2rem;
+  }
+
+  .ptext {
+    font-size: 1.1rem;
+    line-height: 1.6;
   }
 }

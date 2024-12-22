@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
-import styles from "../omoss/omossSida.module.css";
+import styles from "./omossSida.module.css";
 
 export default function About() {
   const animatedBoxRef = useRef(null);
@@ -40,7 +40,7 @@ export default function About() {
     <>
       <section className={styles.omoss}>
         <h1 className={styles.h1div}>
-          Nytt läkemedelsföretag förändrar spelplanen{" "}
+          Nytt läkemedelsföretag förändrar spelplanen
         </h1>
         <p className={styles.ptext}>
           AUXESIS PHARMA HOLDING AB (publ) är ett publikt företag som fokuserar
@@ -49,14 +49,16 @@ export default function About() {
         </p>
         <p
           ref={animatedBoxRef}
-          className={`${styles.animatedBox} ${styles.hidden} text-xl leading-tight border-2 border-gray-500 p-6 rounded-lg shadow-lg bg-gray-100`}
+          className={`${styles.animatedBox} ${styles.hidden}`}
         >
           Vår affärsidé: Auxesis utvecklar, baserat på eget patent, innovativa
           läkemedel som snabbt tar bort smärta och irritation på huden hos både
           människor och djur och som är lättillgängligt för konsumenter och
           olika yrkesgrupper.
         </p>
-        <h2>Banbrytande innovation som blockerar smärtsignalen </h2>
+        <h2 className={styles.subHeading}>
+          Banbrytande innovation som blockerar smärtsignalen
+        </h2>
         <p className={styles.ptext}>
           Acetylsalicylsyra (ASA) är en av de mest välkända substanserna för
           smärtlindring och har använts i läkemedel sedan slutet av 1800-talet,
@@ -64,21 +66,9 @@ export default function About() {
           Efter flera års forskning och tusentals försök har Auxesis tillsammans
           med professor Moustapha Hassan och hans team lyckats göra det som
           ingen annan har lyckats med förut: Att stabilisera ASA i flytande
-          form. <br /> <br />
-          Med ASA i flytande form finns möjligheter att utveckla helt nya
-          beredningsformer som enkelt kan appliceras direkt på huden och ta
-          bortsmärta eller irritation inom några minuter. <br /> <br />
-          Genom att tillsätta andra farmaceutiska aktiva substanser bibehålls
-          effekten till dess att kroppen har läkt sig själv. Studier pekar på
-          att ASA.P stannar på huden och inte går ut i blodomloppet. <br />{" "}
-          <br />
-          Baserat på eget patent är Auxesis först med att utveckla innovativa
-          och lättillgängliga läkemedel som inte bara lindrar utan snabbt tar
-          bort smärta och irritation på huden, både hos människor och djur.{" "}
-          <br />
-          Produktens namn är ASA.P®.
+          form.
         </p>
-        <div className={`${styles.andrast} flex items-center justify-between`}>
+        <div className={styles.flexContainer}>
           <div ref={imgspelRef} className={styles.imgdiv}>
             <img
               ref={beeRef}
@@ -86,7 +76,7 @@ export default function About() {
               src="/bin.png"
               alt="Bee"
             />
-          </div>{" "}
+          </div>
           <div ref={effektRef} className={`${styles.effekt} ${styles.hidden}`}>
             <h2 className={styles.h2}>Receptfritt läkemedel</h2>
             <p className={styles.ptext}>
@@ -94,16 +84,12 @@ export default function About() {
               av smärta och irritation på huden orsakad av insektsbett, maneter,
               brännässlor och andra allergiframkallande växter, mindre
               brännskador, solbränna, utslag och eksem.
-            </p>
-            <p className={styles.ptext}>
+              <br /> <br />
               Preparatet ASA.P® har snabb verkan och blockerar smärtsignalen
               till hjärnan inom några minuter. ASA.P® blockerar smärtan med
               bibehållen effekt tills kroppen läker sig själv. ASA.P® har också
-              antiinflammatoriska egenskaper.{" "}
-            </p>
-            <p className={styles.ptext}>
-              För närvarande finns två varumärken registrerade globalt: ASA.P®
-              och CoxyPet®.
+              antiinflammatoriska egenskaper. För närvarande finns två
+              varumärken registrerade globalt: ASA.P® och CoxyPet®.{" "}
             </p>
           </div>
         </div>
