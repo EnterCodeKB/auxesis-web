@@ -1,73 +1,137 @@
-/* Grundläggande styling för alla skärmar */
+/* Grundinställningar för hela sektionen */
 .agenda {
   max-width: 1200px;
-  margin: 40px auto; /* Centrera sektionen horisontellt */
+  margin: 260px auto; /* Centrerar sektionen med marginal från toppen */
   padding: 20px;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
+  text-align: center;
 }
 
+/* Rubrik */
 .agenda h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-align: center;
-  color: #1c1e53;
+  font-size: 2.4rem;
+  color: #23559b;
   margin-bottom: 30px;
 }
 
+/* Underrubriker */
 .agenda h2 {
   font-size: 2rem;
-  font-weight: 600;
   color: #23559b;
+  margin-top: 30px;
   margin-bottom: 20px;
 }
 
+/* Text */
 .ptext {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
   margin-bottom: 20px;
-  text-align: justify;
+  text-align: justify; /* Jämn textjustering */
 }
 
+/* Lista */
 .divli {
   font-size: 1rem;
-  margin-bottom: 10px;
+  color: #444;
+  margin: 10px 0;
+  text-align: left;
 }
 
+/* Bild */
 .imgbox {
-  width: 100%;
-  max-width: 800px;
   display: block;
+  max-width: 100%; /* Bilden anpassas till föräldrarnas bredd */
+  height: auto;
   margin: 40px auto;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* === Responsiv design === */
+/* Avsnittsstyling */
+.section11,
+.section22,
+.section3,
+.section4 {
+  margin-bottom: 40px;
+}
 
-/* Mellanstora skärmar (max-width: 991px) */
-@media (max-width: 991px) {
+/* För stora skärmar (över 1200px) */
+@media (min-width: 1200px) {
   .agenda {
-    padding: 15px;
-    width: 95%;
-    margin-left: 15%;
-    margin-top: 20%;
-    margin-bottom: 10%;
+    padding: 40px;
+    margin: 200px auto;
+  }
+
+  .agenda h1 {
+    font-size: 3rem;
+  }
+
+  .agenda h2 {
+    font-size: 2.4rem;
+  }
+
+  .ptext {
+    font-size: 1.4rem;
+    line-height: 2;
+  }
+
+  .divli {
+    font-size: 1.2rem;
+  }
+
+  .imgbox {
+    max-width: 80%;
+  }
+}
+
+/* För mellan skärmar (768px - 1200px) */
+@media (max-width: 1200px) and (min-width: 768px) {
+  .agenda {
+    padding: 20px;
+    margin: 150px auto;
+  }
+
+  .agenda h1 {
+    font-size: 2.4rem;
+  }
+
+  .agenda h2 {
+    font-size: 2rem;
+  }
+
+  .ptext {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+
+  .divli {
+    font-size: 1rem;
+  }
+
+  .imgbox {
+    max-width: 90%;
+  }
+}
+
+/* För små skärmar (max 768px) */
+@media (max-width: 768px) {
+  .agenda {
+    padding: 10px;
+    margin: 100px auto;
   }
 
   .agenda h1 {
     font-size: 2rem;
-    margin-bottom: 20px;
   }
 
   .agenda h2 {
     font-size: 1.8rem;
-    margin-bottom: 15px;
   }
 
   .ptext {
     font-size: 1rem;
-    margin-bottom: 15px;
+    line-height: 1.6;
   }
 
   .divli {
@@ -75,78 +139,30 @@
   }
 
   .imgbox {
-    width: 90%; /* Anpassa bildens bredd */
-    max-width: 600px;
+    max-width: 100%;
   }
 }
 
-/* Små skärmar (max-width: 768px) */
-@media (max-width: 768px) {
+/* För mycket små skärmar (max 480px) */
+@media (max-width: 480px) {
   .agenda {
-    padding: 10px;
-    width: 90%;
-    margin-top: -2%;
+    margin: 80px auto;
   }
 
   .agenda h1 {
     font-size: 1.8rem;
-    text-align: left; /* Vänsterjustera rubriken */
-    margin-bottom: 15px;
   }
 
   .agenda h2 {
     font-size: 1.5rem;
-    text-align: left; /* Vänsterjustera underrubriken */
-    margin-bottom: 10px;
   }
 
   .ptext {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     line-height: 1.5;
-    margin-bottom: 10px;
   }
 
   .divli {
-    font-size: 0.85rem;
-    margin-bottom: 8px;
-  }
-
-  .imgbox {
-    width: 100%; /* Full bredd för små skärmar */
-    max-width: 400px;
-    margin-top: 20px;
-  }
-}
-
-/* Stora skärmar (min-width: 1200px) */
-@media (min-width: 1200px) {
-  .agenda {
-    max-width: 1200px;
-    padding: 30px;
-  }
-
-  .agenda h1 {
-    font-size: 3rem;
-    margin-bottom: 40px;
-  }
-
-  .agenda h2 {
-    font-size: 2.2rem;
-    margin-bottom: 25px;
-  }
-
-  .ptext {
-    font-size: 1.2rem;
-    margin-bottom: 25px;
-  }
-
-  .divli {
-    font-size: 1.1rem;
-    margin-bottom: 12px;
-  }
-
-  .imgbox {
-    max-width: 900px;
-    margin-top: 50px;
+    font-size: 0.8rem;
   }
 }

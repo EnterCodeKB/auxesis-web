@@ -1,32 +1,41 @@
+/* Container for Euroclear Section */
 .container {
   max-width: 800px;
-  margin: 150px auto 50px auto; /* Lägger till 150px marginal ovanför */
+  margin: 150px auto; /* Center content with top margin */
   padding: 20px;
-  text-align: left;
-  font-family: Arial, sans-serif;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Title */
 .title {
   font-size: 2rem;
-  color: #23559b;
-  text-align: center;
+  font-weight: bold;
+  color: #23559b; /* Primary color */
   margin-bottom: 20px;
+  text-align: center;
 }
 
+/* Date */
 .date {
   font-size: 1rem;
-  color: #666;
-  text-align: center;
+  color: #555;
   margin-bottom: 20px;
 }
 
+/* Text Styling */
 .text {
   font-size: 1rem;
   line-height: 1.6;
   color: #333;
   margin-bottom: 20px;
+  text-align: justify; /* Better readability for long paragraphs */
 }
 
+/* Link Styling */
 .link {
   color: #23559b;
   text-decoration: none;
@@ -37,34 +46,66 @@
   text-decoration: underline;
 }
 
+/* Image Container */
 .imageContainer {
-  text-align: center;
-  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .image {
   width: 100%;
-  max-width: 300px;
+  max-width: 300px; /* Adjust the size of the image */
   height: auto;
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsiv design */
 
-/* För små skärmar (max-width: 768px) */
-@media (max-width: 768px) {
+/* För små skärmar (max-width: 480px) */
+@media (max-width: 480px) {
   .container {
     padding: 10px;
-    margin-top: 120px; /* Lite mindre marginal på små skärmar */
+    margin: 80px auto;
   }
 
   .title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+  }
+
+  .date {
+    font-size: 0.9rem;
+  }
+
+  .text {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .image {
+    max-width: 200px; /* Smaller image for small screens */
+  }
+}
+
+/* För mindre surfplattor och telefoner (max-width: 768px) */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+    margin: 100px auto;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .date {
+    font-size: 1rem;
   }
 
   .text {
     font-size: 0.9rem;
+    line-height: 1.5;
   }
 
   .image {
@@ -72,18 +113,52 @@
   }
 }
 
-/* För stora skärmar (min-width: 1024px) */
-@media (min-width: 1024px) {
+/* För tablets och mindre laptops (max-width: 991px) */
+@media (max-width: 991px) {
   .container {
-    max-width: 900px;
-    margin-top: 260px; /* Sänk ned containern ytterligare */
+    padding: 20px;
+    margin: 120px auto;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .date {
+    font-size: 1.1rem;
+  }
+
+  .text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .image {
+    max-width: 280px;
+  }
+}
+
+/* För stora skärmar (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1000px;
+    margin-top: 260px;
   }
 
   .title {
     font-size: 2.5rem;
   }
 
+  .date {
+    font-size: 1.3rem;
+  }
+
   .text {
     font-size: 1.1rem;
+    line-height: 1.8;
+  }
+
+  .image {
+    max-width: 300px; /* Keep consistent size for larger screens */
   }
 }

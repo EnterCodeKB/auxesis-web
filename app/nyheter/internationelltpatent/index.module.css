@@ -1,77 +1,148 @@
+/* Main section */
 .intpatent {
   max-width: 800px;
-  margin: 150px auto 50px auto; /* Lägger till 150px marginal ovanför */
+  margin: 150px auto; /* Center the content */
   padding: 20px;
-  text-align: left;
-  font-family: Arial, sans-serif;
-}
-
-.h1intpatent {
-  font-size: 2rem;
-  color: #23559b;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Heading */
+.h1intpatent {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #23559b; /* Primary color */
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+/* Text styling */
 .ptext {
   font-size: 1rem;
   line-height: 1.6;
-  color: #333;
+  color: #555;
   margin-bottom: 20px;
+  text-align: justify; /* Improved readability */
 }
 
+/* Button container */
 .button {
-  text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
+/* Download button */
 .downloadButton {
-  background-color: #23559b;
-  color: white;
-  text-decoration: none;
+  display: inline-block;
   padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #23559b;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .downloadButton:hover {
   background-color: #1a4178;
+  transform: scale(1.05);
+}
+
+.downloadButton:active {
+  background-color: #194276;
+  transform: scale(0.95);
 }
 
 /* Responsiv design */
 
-/* För små skärmar (max-width: 768px) */
-@media (max-width: 768px) {
+/* För små skärmar (max-width: 480px) */
+@media (max-width: 480px) {
   .intpatent {
-    padding: 10px;
-    margin-top: 120px; /* Lite mindre marginal på små skärmar */
+    padding: 15px;
+    margin: 80px auto;
   }
 
   .h1intpatent {
     font-size: 1.8rem;
+    line-height: 1.4;
+  }
+
+  .ptext {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .downloadButton {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+/* För mindre surfplattor och telefoner (max-width: 768px) */
+@media (max-width: 768px) {
+  .intpatent {
+    padding: 20px;
+    margin: 100px auto;
+  }
+
+  .h1intpatent {
+    font-size: 2rem;
+    line-height: 1.4;
   }
 
   .ptext {
     font-size: 0.9rem;
+    line-height: 1.5;
   }
 
   .downloadButton {
-    padding: 8px 16px; /* Mindre knappstorlek */
+    font-size: 1rem;
+    padding: 10px 20px;
   }
 }
 
-/* För stora skärmar (min-width: 1024px) */
-@media (min-width: 1024px) {
+/* För tablets och mindre laptops (max-width: 991px) */
+@media (max-width: 991px) {
   .intpatent {
-    max-width: 900px;
+    padding: 25px;
+    margin: 120px auto;
+  }
+
+  .h1intpatent {
+    font-size: 2.2rem;
+  }
+
+  .ptext {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .downloadButton {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+/* För stora skärmar (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .intpatent {
+    max-width: 1000px;
     margin-top: 260px;
   }
 
   .h1intpatent {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .ptext {
     font-size: 1.1rem;
+    line-height: 1.8;
+  }
+
+  .downloadButton {
+    font-size: 1.2rem;
+    padding: 12px 24px;
   }
 }

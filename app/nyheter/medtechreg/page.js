@@ -1,3 +1,4 @@
+"use client";
 import styles from "../medtechreg/index.module.css";
 
 export default function Info() {
@@ -14,7 +15,6 @@ export default function Info() {
           apotek i Sverige, Danmark och Finland. Vi återkommer med en ny hemsida
           och mer information.
         </p>
-        <p></p>
       </div>
     </>
   );

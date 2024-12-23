@@ -1,5 +1,5 @@
 "use client";
-import styles from "../../styles/Finance.module.css";
+import styles from "./avstamning.module.css";
 
 export default function AvstamningsBolag() {
   const scrollToTop = () => {

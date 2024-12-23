@@ -4,11 +4,10 @@ export default function Zelmic() {
   return (
     <div className={styles.details}>
       <h1 className={styles.h1div}>
-        {" "}
         När nu Auxesis Pharma ska in i testproduktionsfasen så har vi nu ingått
         partnerskap med Zelmic AB.​
       </h1>
-      <h4>2024-07-10</h4>
+      <h4 className={styles.h4}>2024-07-10</h4>
 
       <div className={styles.ptext}>
         <p>

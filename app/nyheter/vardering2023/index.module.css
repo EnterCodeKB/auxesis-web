@@ -1,113 +1,112 @@
-/* Grundläggande styling för alla skärmar */
+/* Section for Värdering */
 .varderingssection {
-  max-width: 1100px;
-  margin: 40px auto; /* Centrera sektionen horisontellt */
+  max-width: 800px;
+  margin: 150px auto; /* Center content with top margin */
   padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
-  text-align: center; /* Centrera rubrik och knapp */
-  margin-bottom: 6%;
-  margin-left: 6%;
-  margin-top: 6%;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.divdardering {
-  display: flex;
-  flex-direction: column; /* Stapla rubriken och knappen vertikalt */
-  align-items: center; /* Centrera innehållet horisontellt */
-  gap: 20px; /* Skapa mellanrum mellan rubriken och knappen */
-}
-
+/* Heading styling */
 .h2divdark {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #1c1e53;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #23559b; /* Primary color */
   margin-bottom: 20px;
+  text-align: center;
 }
 
+/* Download button styling */
 .downloadButton {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #0070f3;
+  font-size: 16px;
   color: white;
-  text-decoration: none;
+  background-color: #23559b;
   border-radius: 5px;
-  font-weight: bold;
-  font-size: 1rem;
+  text-decoration: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .downloadButton:hover {
-  background-color: #005bb5;
-  transform: scale(1.05); /* Gör knappen större vid hover */
+  background-color: #1c4484;
+  transform: scale(1.05);
 }
 
-/* === Responsiv design === */
+.downloadButton:active {
+  background-color: #194276;
+  transform: scale(0.95);
+}
 
-/* Mellanstora skärmar (max-width: 991px) */
-@media (max-width: 991px) {
+/* Responsiv design */
+
+/* För små skärmar (max-width: 480px) */
+@media (max-width: 480px) {
   .varderingssection {
-    padding: 15px;
-    width: 95%;
-    margin-top: 16%;
-    margin-left: 15%;
-    margin-bottom: 6%;
+    padding: 10px;
+    margin: 80px auto;
   }
 
   .h2divdark {
-    font-size: 2rem; /* Minska rubrikstorlek */
-    margin-bottom: 15px;
+    font-size: 1.5rem;
   }
 
   .downloadButton {
-    font-size: 0.9rem;
-    padding: 8px 16px; /* Minska padding för knappen */
+    font-size: 14px;
+    padding: 8px 16px;
   }
 }
 
-/* Små skärmar (max-width: 768px) */
+/* För mindre surfplattor och telefoner (max-width: 768px) */
 @media (max-width: 768px) {
   .varderingssection {
-    padding: 10px;
-    width: 90%;
-    margin-top: -3%;
+    padding: 15px;
+    margin: 100px auto;
+  }
+
+  .h2divdark {
+    font-size: 1.6rem;
+  }
+
+  .downloadButton {
+    font-size: 15px;
+    padding: 9px 18px;
+  }
+}
+
+/* För tablets och mindre laptops (max-width: 991px) */
+@media (max-width: 991px) {
+  .varderingssection {
+    padding: 20px;
+    margin: 120px auto;
   }
 
   .h2divdark {
     font-size: 1.8rem;
-    text-align: center; /* Vänsterjustera rubriken */
-    margin-bottom: 10px;
-    margin-left: 15%;
   }
 
   .downloadButton {
-    width: 100%; /* Gör knappen fullbredd */
-    font-size: 0.85rem;
-    padding: 8px 12px; /* Justera padding */
-    text-align: center;
-  }
-
-  .divdardering {
-    align-items: flex-start; /* Vänsterjustera innehåll */
+    font-size: 16px;
+    padding: 10px 20px;
   }
 }
 
-/* Stora skärmar (min-width: 1200px) */
+/* För stora skärmar (min-width: 1200px) */
 @media (min-width: 1200px) {
   .varderingssection {
-    max-width: 1200px;
-    padding: 30px;
+    max-width: 1000px;
+    margin-top: 260px;
   }
 
   .h2divdark {
-    font-size: 3rem;
-    margin-bottom: 30px;
+    font-size: 2.5rem;
   }
 
   .downloadButton {
-    font-size: 1.2rem;
+    font-size: 18px;
     padding: 12px 24px;
   }
 }

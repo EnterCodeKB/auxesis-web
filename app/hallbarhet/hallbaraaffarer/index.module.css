@@ -1,112 +1,97 @@
-/* Grundläggande styling för alla skärmar */
 .halbara {
-  max-width: 100%;
-  margin: 40px auto; /* Centrera sektionen horisontellt */
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  margin-top: 6%;
-  margin-left: 10%;
-  margin-bottom: 6%;
+  max-width: 1200px; /* Begränsa bredden */
+  margin: 250px auto; /* Centrerar sektionen och ger marginal ovan */
+  padding: 20px; /* Padding runt innehållet */
+  text-align: center; /* Centrera texten */
 }
 
 .halbara h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-align: center;
-  color: #1c1e53;
-  margin-bottom: 30px;
-}
-
-.halbara h2 {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 2.4rem;
   color: #23559b;
   margin-bottom: 20px;
 }
 
-.ptext {
-  font-size: 1.1rem;
+.halbara h2 {
+  font-size: 2rem;
+  color: #23559b;
+  margin-top: 40px;
   margin-bottom: 20px;
-  text-align: justify;
 }
 
-/* === Responsiv design === */
+.ptext {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: justify; /* Gör texten jämn på båda sidor */
+}
 
-/* Mellanstora skärmar (max-width: 991px) */
-@media (max-width: 991px) {
+.section31,
+.section42 {
+  margin-bottom: 40px;
+}
+
+/* För större skärmar (över 1200px) */
+@media (min-width: 1200px) {
   .halbara {
-    padding: 15px;
-    width: 95%;
-    margin-left: 15%;
-    margin-top: 20%;
-    margin-bottom: 10%;
+    max-width: 1400px; /* Större bredd för stora skärmar */
+    padding: 40px;
+  }
+
+  .halbara h1 {
+    font-size: 3rem; /* Större rubrik */
+    margin-bottom: 30px;
+  }
+
+  .halbara h2 {
+    font-size: 2.4rem; /* Större underrubrik */
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .ptext {
+    font-size: 1.4rem; /* Större textstorlek */
+    line-height: 2; /* Ökad radavstånd */
+  }
+}
+
+/* För mindre skärmar (max-width: 768px) */
+@media (max-width: 768px) {
+  .halbara {
+    padding: 10px;
+    margin: 100px auto;
   }
 
   .halbara h1 {
     font-size: 2rem;
-    margin-bottom: 20px;
   }
 
   .halbara h2 {
     font-size: 1.8rem;
-    margin-bottom: 15px;
   }
 
   .ptext {
     font-size: 1rem;
-    margin-bottom: 15px;
+    line-height: 1.6;
   }
 }
 
-/* Små skärmar (max-width: 768px) */
-@media (max-width: 768px) {
+/* För mycket små skärmar (max-width: 480px) */
+@media (max-width: 480px) {
   .halbara {
-    padding: 10px;
-    width: 90%;
-    margin-top: -2%;
-    margin-left: 15%;
+    margin: 80px auto;
   }
 
   .halbara h1 {
     font-size: 1.8rem;
-    text-align: left; /* Vänsterjustera rubriken */
-    margin-bottom: 15px;
   }
 
   .halbara h2 {
     font-size: 1.5rem;
-    text-align: left; /* Vänsterjustera underrubriken */
-    margin-bottom: 10px;
   }
 
   .ptext {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin-bottom: 10px;
-  }
-}
-
-/* Stora skärmar (min-width: 1200px) */
-@media (min-width: 1200px) {
-  .halbara {
-    max-width: 1200px;
-    padding: 30px;
-  }
-
-  .halbara h1 {
-    font-size: 3rem;
-    margin-bottom: 40px;
-  }
-
-  .halbara h2 {
-    font-size: 2.2rem;
-    margin-bottom: 25px;
-  }
-
-  .ptext {
-    font-size: 1.2rem;
-    margin-bottom: 25px;
+    font-size: 0.9rem;
+    line-height: 1.4;
   }
 }

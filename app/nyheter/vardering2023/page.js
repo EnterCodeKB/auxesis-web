@@ -1,3 +1,4 @@
+"use client";
 import styles from "../vardering2023/index.module.css";
 
 export default function Vardering2023() {

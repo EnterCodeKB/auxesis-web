@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../styles/Finance.module.css";
+import styles from "../styles/Finance1.module.css";
 
 const financeData = [
   {
@@ -10,7 +10,7 @@ const financeData = [
     title: "Euroclear ",
     description:
       "AUXESIS PHARMA HOLDING AB (publ) är nu avstämningsbolag och igång med Euroclear Sweden AB som värdepappersinstitut. Läs här mer om alla våra mål",
-    link: "/nyheter/euroclear ",
+    link: "/nyheter/euroclear",
   },
   {
     image: "/finance-bild2Jpeg.jpg",
@@ -33,7 +33,6 @@ export default function Finance() {
     <div className={styles.container}>
       <h1 className={styles.heading}>Finansiell information</h1>
       <p>
-        {" "}
         Här presenterar vi information för partners och investerare med nyheter
         och uppdateringar från Auxesis Pharma.
       </p>
@@ -50,10 +49,10 @@ export default function Finance() {
             <div className={styles.textContainer}>
               <h2 className={styles.title}>{item.title}</h2>
               <p className={styles.description}>{item.description}</p>
+              <Link href={item.link}>
+                <button className={styles.button}>Läs mer</button>
+              </Link>
             </div>
-            <Link href={item.link}>
-              <button className={styles.button}>Läs mer</button>
-            </Link>
           </div>
         ))}
       </div>

@@ -1,17 +1,14 @@
+"use client";
 import styles from "../publiktaktiebolag/index.module.css";
 
 export default function Publikt() {
   return (
     <div className={styles.details}>
       <h1 className={styles.h1div}>
-        {" "}
         AUXESIS PHARMA HOLDING AB (publ) blir publikt aktiebolag ​
       </h1>
       <h4>2022-09-21</h4>
       <div className={styles.ptext}>
-        {/*MIN TEXT */}
-        {/*DEN GAMLA TEXTEN:  AUXESIS PHARMA HOLDING AB (publ) är nu registrerat i Bolagsverket som ett publikt aktiebolag med aktiekapital på 500.000:-.
-Ett publikt aktiebolag har rätt att sprida aktier, teckningsrätter och andra värdepapper till allmänheten. */}
         <p>
           AUXESIS PHARMA HOLDING AB (publ) har nu officiellt registrerats hos
           Bolagsverket som ett publikt aktiebolag med ett aktiekapital om 500
@@ -21,7 +18,6 @@ Ett publikt aktiebolag har rätt att sprida aktier, teckningsrätter och andra v
           och investeringar.
         </p>
         <br />
-
         <p>
           Som publikt aktiebolag tar AUXESIS PHARMA ytterligare ett steg i sin
           tillväxtresa och fortsätter att stärka sitt engagemang för att

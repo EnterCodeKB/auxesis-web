@@ -12,7 +12,6 @@ export default function Kallelse() {
         <h2 className={styles.h2divdark}>
           AUXESIS PHARMA Kallelse till årsstämma 2024
         </h2>
-
         <a
           href="/Nyheter/kallelse/240618 AUXESIS Kallelse till årsstämma.pdf"
           download="AUXESIS Kallelse till årsstämma.pdf"

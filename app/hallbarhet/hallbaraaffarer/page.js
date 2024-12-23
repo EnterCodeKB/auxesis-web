@@ -5,7 +5,7 @@ const Miljo = () => {
   return (
     <section className={styles.halbara}>
       <div className={styles.section31}>
-        <h1>Goda affärer är hållbara </h1>
+        <h1>Goda affärer är hållbara</h1>
         <p className={styles.ptext}>
           På Auxesis Pharma arbetar vi inom Agenda 2030:s samtliga områden med
           fokus på ekonomisk, social och miljömässig hållbarhet. Hållbarhet
@@ -24,10 +24,9 @@ const Miljo = () => {
           förbrukade preparatet ska kunna läggas i avfallssortering eller lämnas
           till apotekens återvinningssystem eller motsvarande i andra länder.
           Det bidrar till en mer hållbar tillväxt för Auxesis Pharma och för
-          samhället.{" "}
+          samhället.
         </p>
       </div>
-      <div></div>
     </section>
   );
 };

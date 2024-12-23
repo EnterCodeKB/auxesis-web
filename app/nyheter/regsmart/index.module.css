@@ -1,125 +1,112 @@
-/* Grundläggande styling för alla skärmar */
 .details {
-  max-width: 1100px;
-  margin: 40px auto; /* Centrera sektionen horisontellt */
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
-  line-height: 1.8;
-  color: #333;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centrera horisontellt */
-  text-align: center; /* Centrera rubriker och datum */
-  margin-top: 6%;
-  margin-bottom: 6%;
-  margin-left: 10%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+  text-align: center;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .h1div {
   font-size: 2.5rem;
-  font-weight: 700;
+  color: #23559b;
   margin-bottom: 20px;
-  color: #1c1e53;
-  line-height: 1.2;
+  text-align: center;
 }
 
-.details h4 {
+.h4 {
   font-size: 1.2rem;
-  margin-bottom: 20px;
-  color: #6f7287;
+  color: #555;
+  margin-bottom: 30px;
 }
-
 .ptext {
-  font-size: 1.1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
   margin-bottom: 20px;
-  text-align: justify; /* Justera texten för bättre läsbarhet */
-  width: 80%; /* Begränsa textbredd */
+  text-align: left; /* Default alignment for paragraphs */
+  width: 100%;
 }
 
-.ptext p {
-  margin-bottom: 15px;
+/* Larger Screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .details {
+    max-width: 1400px; /* Wider container for larger screens */
+    padding: 40px;
+    margin: 0 auto;
+    margin-top: 260px;
+    margin-bottom: 60px;
+  }
+
+  .h1div {
+    font-size: 3rem; /* Larger font size for heading */
+    margin-bottom: 30px;
+  }
+
+  .h4 {
+    font-size: 1.5rem; /* Larger subheading */
+    margin-bottom: 40px;
+  }
+
+  .ptext {
+    font-size: 1.2rem; /* Slightly larger text for readability */
+    line-height: 1.8; /* Improved line spacing */
+    max-width: 1200px; /* Limit text width for readability */
+    margin: 0 auto 30px auto; /* Center the paragraphs */
+  }
 }
 
-.ptext br {
-  display: none; /* Ta bort onödiga radbrytningar */
-}
-
-/* === Responsiv design === */
-
-/* Mellanstora skärmar (max-width: 991px) */
+/* Medium Screens (max-width: 991px) */
 @media (max-width: 991px) {
   .details {
     padding: 15px;
-    width: 95%; /* Gör sektionen bredare */
-    margin-top: 16%;
-    margin-bottom: 6%;
-    margin-left: 15%;
+    text-align: left; /* Adjust text alignment for better readability */
   }
 
   .h1div {
     font-size: 2rem;
-    margin-bottom: 15px;
-  }
-
-  .details h4 {
-    font-size: 1rem;
-    margin-bottom: 15px;
-  }
-
-  .ptext {
-    font-size: 1rem;
-    width: 90%; /* Öka textbredden för att utnyttja utrymme */
-  }
-}
-
-/* Små skärmar (max-width: 768px) */
-@media (max-width: 768px) {
-  .details {
-    padding: 2%;
-    width: 90%;
-    margin: 20px auto; /* Centrera och minska utrymme */
-    margin-top: 6%;
-    margin-bottom: 6%;
-    margin-left: 15%;
-  }
-
-  .h1div {
-    font-size: 1.8rem;
-    text-align: left; /* Vänsterjustera rubriken */
-    margin-bottom: 10px;
-  }
-
-  .details h4 {
-    font-size: 0.9rem;
-    text-align: left; /* Vänsterjustera datum */
-    margin-bottom: 10px;
+    text-align: center;
   }
 
   .ptext {
     font-size: 0.95rem;
-    line-height: 1.6;
-    text-align: justify; /* Behåll justerad text */
-    width: 100%; /* Ta full bredd */
+    line-height: 1.5;
   }
 }
 
-/* Stora skärmar (min-width: 1200px) */
-@media (min-width: 1200px) {
+/* Small Screens (max-width: 768px) */
+@media (max-width: 768px) {
   .details {
-    max-width: 1200px;
-    padding: 30px;
+    padding: 10px;
   }
 
   .h1div {
-    font-size: 3rem;
-    margin-bottom: 30px;
+    font-size: 1.8rem;
   }
 
   .ptext {
-    font-size: 1.2rem;
-    width: 70%; /* Begränsa textbredd för bättre layout */
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .details {
+    padding: 8px;
+  }
+
+  .h1div {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .ptext {
+    font-size: 0.85rem;
+    line-height: 1.4;
   }
 }
