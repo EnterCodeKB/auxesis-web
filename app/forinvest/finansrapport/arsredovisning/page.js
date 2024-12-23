@@ -56,6 +56,7 @@ export default function Protokol() {
             Visa PDF
           </a>
         </section>
+        {/* 
         <section className={styles.section}>
           <h2 className={styles.h2divdark}>Revisionsberättelse 2022</h2>
           <p className={styles.redovptext}>
@@ -70,7 +71,7 @@ export default function Protokol() {
           >
             Visa här
           </a>
-        </section>
+        </section>*/}
       </div>
 
       <div className={styles.scrollToTop} onClick={scrollToTop}>
