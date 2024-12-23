@@ -16,7 +16,7 @@ export default function Protokol() {
           nedan.
         </p>
         <a
-          href="/Finance/240618%20Protokoll%20a%CC%8Arssta%CC%88mma.pdf"
+          href="/Finance/240618-protokoll-arsstamma.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.downloadButton}
