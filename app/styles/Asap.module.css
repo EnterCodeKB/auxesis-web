@@ -1,168 +1,137 @@
+/* Grundläggande layout */
 .sectionA {
-  max-width: 100%; /* Limit the maximum width */
-  padding: 20px; /* Add padding for spacing */
-  margin: 0 auto; /* Center the content */
-  margin-top: 200px;
-  margin-bottom: 70px;
-  margin-left: 60px;
-}
-
-.imgirritation {
-  width: 100%; /* Make the image responsive */
-  max-width: 500px; /* Set a max-width */
-  margin-top: 30px;
-  margin-left: 100px;
+  padding: 20px;
+  margin: 260px auto;
+  max-width: 1200px;
+  font-family: Arial, sans-serif;
 }
 
 .container1 {
   display: flex;
-  flex-direction: row;
-  margin-top: 100px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
 }
+
 .textcontainer {
-  margin-right: 20px;
-  width: 90%;
+  flex: 1 1 50%;
+  padding: 10px;
 }
 
-.divh2 {
-  margin-top: -50px;
-  margin-right: 210px;
+.textcontainer h2 {
+  font-size: 2.5rem;
+  color: #23559b;
+  margin-bottom: 20px;
 }
-@media (max-width: 991px) {
-  .produktinfo {
-    flex-direction: column; /* Staplar innehåll vertikalt */
-    align-items: center;
-  }
 
-  .sectionA {
-    margin-left: 150px;
-    width: 100%;
-  }
+.ptext {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.imgirritation {
+  flex: 1 1 40%;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.ulList {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #555;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.ulList li {
+  margin-bottom: 10px;
+}
+
+.scrollToTop {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: #23559b;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Responsiv design */
+
+/* För små skärmar (max-width: 480px) */
+@media (max-width: 480px) {
   .container1 {
-    margin-right: 20px;
-    width: 100%;
-    display: flex;
     flex-direction: column;
-  }
-
-  .produktinfo {
-    flex-direction: column; /* Staplar innehåll vertikalt */
-    align-items: center;
-  }
-
-  .servettext,
-  .handsdiv {
     text-align: center;
   }
 
-  .hands {
-    max-width: 300px; /* Minska bildstorlek för medelstora skärmar */
+  .textcontainer h2 {
+    font-size: 2rem;
   }
 
   .ptext {
-    font-size: 18px; /* Justera textstorlek för mindre skärmar */
-  }
-  .ulList {
-    text-align: left;
-    margin-top: -20px;
+    font-size: 1rem;
   }
 
-  .ptext {
-    font-size: 18px; /* Justera textstorlek för mindre skärmar */
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .produktinfo {
-    gap: 10px;
-  }
-
-  .h4 {
-    margin-left: 0px;
-    font-size: larger;
-  }
-
-  .produktinfo {
-    margin-top: -260px;
-  }
-  .hands {
-    max-width: 250px; /* Ytterligare minskning för små skärmar */
-    margin-left: -20px;
-  }
-
-  .ptext {
-    font-size: 16px;
-  }
-
-  .sectionA {
-    margin-left: 100px;
-    width: 100%;
-  }
-
-  .h2utveckling {
-    margin-left: 30px;
-    text-align: center;
-  }
   .imgirritation {
-    margin-left: -1px;
+    max-width: 300px;
   }
+
   .ulList {
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding-left: 10px;
   }
 }
 
-@media (min-width: 1200px) {
-  .produktinfo {
-    display: flex;
-    flex-direction: row;
-    margin-top: 50px;
+/* För medelstora skärmar (min-width: 768px) */
+@media (min-width: 768px) {
+  .container1 {
+    flex-wrap: wrap;
   }
 
-  .servettext {
-    width: 100%;
+  .textcontainer h2 {
+    font-size: 2.2rem;
   }
 
-  .servettdiv {
-    margin-left: -30px;
-    margin-top: 50px;
-  }
   .ptext {
-    font-size: 22px;
-    line-height: 1.8;
-    color: #555;
-  }
-  .servett {
-    width: 60vh;
-  }
-  .hands {
-    max-width: 500px; /* Större bilder för bredare skärmar */
+    font-size: 1.1rem;
   }
 
-  .textcontainer2 {
-    max-width: 80%;
-    margin: 0 auto;
-    font-size: 1.2rem; /* Ökar textstorlek */
-  }
-  .imgprodukt {
-    width: 100%; /* Make the image responsive */
-    max-width: 700px; /* Set a max-width */
-    margin: 20px auto; /* Center the image */
-    display: block; /* Ensure it's a block element */
-  }
-
-  .sistadiv {
-    margin-top: 100px;
+  .imgirritation {
+    max-width: 350px;
   }
 
   .ulList {
-    font-size: 1.1rem; /* Ökar storlek på listtext */
-    line-height: 1.8; /* Ökar mellanrum för läsbarhet */
+    font-size: 1.1rem;
+    padding-left: 15px;
   }
-  .scrollToTop {
-    font-size: 2rem; /* Gör knappen större */
-    bottom: 30px; /* Ger mer utrymme nedtill */
-    right: 30px;
+}
+
+/* För stora skärmar (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .container1 {
+    flex-wrap: nowrap;
+  }
+
+  .textcontainer h2 {
+    font-size: 2.5rem;
+  }
+
+  .ptext {
+    font-size: 1.2rem;
+  }
+
+  .imgirritation {
+    max-width: 400px;
+  }
+
+  .ulList {
+    font-size: 1.2rem;
+    padding-left: 20px;
   }
 }

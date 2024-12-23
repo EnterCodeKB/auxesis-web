@@ -1,45 +1,48 @@
+"use client";
+
 import styles from "../../styles/InvestAgare.module.css";
 
 export default function Aegare() {
   return (
     <>
       <section className={styles.section}>
-        <h1>Solid ägarstruktur </h1>
+        <h1 className={styles.title}>Solid ägarstruktur</h1>
 
-        <div className={styles.aegarecontainer}>
-          <div className={styles.whiteboard1}>
-            <h2> Roar Adelsten:</h2>
+        <div className={styles.aegareContainer}>
+          {/* Whiteboard 1 */}
+          <div className={styles.whiteboard}>
+            <h2 className={styles.subtitle}>Roar Adelsten</h2>
+            <p className={styles.ptext}>
+              Äger 64,4 procent (privat och via bolag).
+              <br />
+              Grundare, VD och affärsutvecklare inom Auxesis-koncernen sedan
+              2014.
+            </p>
+          </div>
 
-            <div className={styles.aegaretext}>
-              <p className={styles.ptext2}>
-                Äger 64,4 procent (privat och via bolag).
-                <br />
-                Grundare, VD och affärsutvecklare inom Auxesis-koncernen sedan
-                2014.
-              </p>
-            </div>
+          {/* Whiteboard 2 */}
+          <div className={styles.whiteboard}>
+            <p className={styles.ptext}>
+              Övriga ägare har sammantaget 35,6 procent och är i huvudsak
+              privatpersoner och mindre företag.
+            </p>
+          </div>
+
+          {/* Whiteboard 3 */}
+          <div className={styles.whiteboard}>
+            <p className={styles.ptext}>
+              Auxesis har cirka 700 aktieägare.
+              <br />
+              Källa för aktieinnehaven är Euroclear Sweden som ansvarar för
+              aktieboken.
+              <br />
+              Siffrorna är per 2024-11-30.
+              <br />
+              Auxesis äger 100 procent av dotterbolagen Auxesis Animal Care AB
+              och Auxesis Medtech AB.
+            </p>
           </div>
         </div>
-        <div className={styles.whiteboard2}>
-          <p className={styles.ptext2}>
-            Övriga ägare har sammantaget 35,6 procent och är i huvudsak
-            privatpersoner och mindre företag.{" "}
-          </p>
-        </div>
-        <div className={styles.whiteboard3}>
-          <p className={styles.ptext2}>
-            Auxesis har cirka 700 aktieägare. <br />
-            Källa för aktieinnehaven är Euroclear Sweden som ansvarar för
-            aktieboken. <br /> Siffrorna är per 2024-11-30.
-            <br />
-            Auxesis äger 100 procent av dotterbolagen Auxesis Animal Care AB och
-            Auxesis Medtech AB.
-          </p>
-        </div>
-
-        {/*  <div>
-          <img className={styles.world} src="/world.jpeg" alt="world" />
-        </div>*/}
       </section>
     </>
   );

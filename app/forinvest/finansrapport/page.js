@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "../../styles/Finance.module.css";
+import styles from "./finansrapport.module.css";
 import Link from "next/link";
 
 export default function ProFinanceRapport() {
@@ -10,40 +10,40 @@ export default function ProFinanceRapport() {
 
   return (
     <>
-      <section className={styles.frapportsection}>
+      <section className={styles.frapportSection}>
         <h1 className={styles.h1}>Finansiella rapporter</h1>
-        <div className={styles.imgdiv1}>
+        <div className={styles.buttonGrid}>
           <Link href="/forinvest/finansrapport/bolagsstamma">
-            <button className={styles.imgFinanceButton}>
+            <div className={styles.imgFinanceButton}>
               <img
                 className={styles.icons}
                 src="/Finance/bolagsordning.png"
                 alt="Bolagsordning"
               />
-              <span>Bolagsstämma</span>
-            </button>
+              <span className={styles.buttonText}>Bolagsstämma</span>
+            </div>
           </Link>
 
           <Link href="/forinvest/finansrapport/vaerdering">
-            <button className={styles.imgFinanceButton}>
+            <div className={styles.imgFinanceButton}>
               <img
                 className={styles.icons}
                 src="/Finance/vardering.png"
                 alt="Värdering"
               />
-              <span>Värdering</span>
-            </button>
+              <span className={styles.buttonText}>Värdering</span>
+            </div>
           </Link>
 
           <Link href="/forinvest/finansrapport/arsredovisning">
-            <button className={styles.imgFinanceButton}>
+            <div className={styles.imgFinanceButton}>
               <img
                 className={styles.icons}
                 src="/Finance/protokol.png"
-                alt="Protokoll Årsredovisning"
+                alt="Årsredovisning"
               />
-              <span>Årsredovisning</span>
-            </button>
+              <span className={styles.buttonText}>Årsredovisning</span>
+            </div>
           </Link>
         </div>
       </section>

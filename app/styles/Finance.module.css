@@ -96,6 +96,10 @@
 
 /* För stora skärmar (min-width: 1024px) */
 @media (min-width: 1024px) {
+  .container {
+    max-width: 900px; /* Större maximalbredde */
+    margin-top: 260px;
+  }
   .grid {
     grid-template-columns: repeat(3, 1fr); /* Tre kolumner på stora skärmar */
   }
@@ -316,11 +320,6 @@
   margin-left: 5%;
 }
 
-.vaerdering {
-  text-align: center;
-  margin: 2rem;
-  margin-left: 5%;
-}
 .avstamningsbolag {
   text-align: center;
   margin: 2rem;
@@ -644,20 +643,6 @@
     gap: 5%;
   }
 
-  .imgFinanceButton {
-    width: 35%; /* Justera bredd vid behov */
-    padding: 1%; /* Minska padding */
-    margin: 0; /* Ta bort eventuell margin */
-  }
-
-  .imgFinanceButton img {
-    width: 65%; /* Justera bildstorleken om det behövs */
-  }
-
-  .imgFinanceButton span {
-    font-size: 15px; /* Justera textstorlek för mindre skärmar */
-  }
-
   .imgrevision {
     width: 75%;
   }
@@ -736,22 +721,6 @@
     padding: 10px;
   }
 
-  .imgFinanceButton {
-    width: 90%; /* Anpassa knappbredd till nästan hela skärmen */
-    padding: 10px;
-    margin: 5px 0; /* Lägger till mellanrum mellan knappar */
-  }
-
-  .imgFinanceButton img {
-    width: 50px; /* Justera bildstorleken */
-    height: auto;
-  }
-
-  .imgFinanceButton span {
-    font-size: 14px; /* Anpassa textstorleken */
-    text-align: center;
-  }
-
   .scrollToTop {
     bottom: 10px; /* Flytta upp */
     right: 10px;
@@ -778,7 +747,7 @@
   }
 
   .redovdiv {
-    margin-top: 60px;
+    margin-top: 260px;
     margin-bottom: 6%;
     width: 100%;
   }

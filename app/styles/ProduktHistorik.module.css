@@ -1,306 +1,199 @@
+/* Grundläggande layout */
 .produkthistorik {
-  max-width: 100%; /* Limit the maximum width */
-  padding: 20px; /* Add padding for spacing */
-  margin: 0 auto; /* Center the content */
-  margin-top: 200px;
-  margin-bottom: 70px;
-  margin-left: 100px;
-}
-.h4 {
-  margin-left: -115px;
-  font-size: larger;
-}
-
-.h3 {
-  font-size: 2.5rem; /* Use rem for responsiveness */
-  margin-bottom: 1rem; /* Add space below headings */
+  padding: 20px;
+  margin: 160px 150px auto;
+  max-width: 1200px;
+  font-family: Arial, sans-serif;
 }
 
 .produktinfo {
   display: flex;
-  flex-direction: row;
-  margin-top: 50px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
-.servettext {
-  width: 100%;
+.servettext,
+.handsdiv {
+  flex: 1 1 50%;
+  margin: 10px;
 }
 
-.servettdiv {
-  margin-left: -30px;
-  margin-top: 50px;
-}
-
-.servett {
-  width: 60vh;
-}
-
-.hands {
-  width: 50vh;
-  margin-left: 100px;
+.servettext h1 {
+  font-size: 2.5rem;
+  color: #23559b;
+  margin-bottom: 20px;
 }
 
 .ptext {
-  font-size: 20px; /* Use rem for responsiveness */
-  line-height: 1.2; /* Improve readability */
-  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
   color: #555;
 }
 
-.imgprodukt {
-  width: 100%; /* Make the image responsive */
-  max-width: 700px; /* Set a max-width */
-  margin: 20px auto; /* Center the image */
-  display: block; /* Ensure it's a block element */
-}
-
-.sistadiv {
-  margin-top: 100px;
-}
-
-.textcontainer {
-  margin-right: 20px;
-  width: 90%;
-}
-
-.divh2 {
-  margin-top: -50px;
-  margin-right: 210px;
-}
-
-/*PRODUKTUTVECKLING*/
-
-.imgakne {
-  width: 100%; /* Make the image responsive */
-  max-width: 500px; /* Set a max-width */
-  margin-left: 100px;
-  margin-top: 50px;
-}
-.h2utveckling {
-  margin-left: -60px;
-}
-
-/* ANIMATION: Döljer elementet initialt */
-
-.hidden {
-  opacity: 0;
-  transform: translateY(60px); /* Startar nedanför sin normala position */
-  transition: opacity 1s ease, transform 1s ease;
-}
-
-/* Visar elementet när det blivit synligt */
-.visible {
-  opacity: 1;
-  transform: translateY(0); /* Flyttar till sin normala position */
-}
-
-/* Animerad box som visar affärsidé */
-
-.animatedBox {
-  text-align: center;
-  font-size: 18px;
-  line-height: 1.6;
-  border: 2px solid #888;
-  padding: 16px;
-  border-radius: 8px;
-  background-color: #f0f0f0;
-  color: #333;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-/* Specifik stil för bilder i spel */
-.imgspel {
-  width: 150px;
+.hands {
+  width: 100%;
+  max-width: 400px;
   height: auto;
-  border-radius: 50%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-right: 20px;
-}
-
-/* Effektsektion för receptfritt läkemedel */
-.effekt {
-  background-color: #c9e7f153;
-  padding: 16px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  max-width: 800px;
+  display: block;
   margin: 0 auto;
 }
 
-/*Sista diven*/
+.animations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.animatedBox {
+  flex: 1 1 calc(50% - 20px); /* 50% bredd med mellanrum */
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(20px); /* Startar utanför synlighet */
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sistadiv {
+  margin-bottom: 40px;
+}
+
+.sistadiv h2 {
+  font-size: 2rem;
+  color: #23559b;
+  margin-bottom: 20px;
+}
+
+.sistadiv p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.allaprodukter {
+  text-align: center;
+}
 
 .imgallaprodukter {
-  width: 160vh;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto;
 }
 
 .scrollToTop {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #c1eaff;
-  color: white;
-  padding: 10px;
-  border-radius: 50%;
+  margin-top: 20px;
+  font-size: 2rem;
+  color: #23559b;
   cursor: pointer;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  font-size: 1.5rem;
-  z-index: 1000;
+  text-align: center;
 }
 
-.scrollToTop:hover {
-  background-color: #194276;
-}
-@media (max-width: 991px) {
-  .produktinfo,
-  .animations {
-    flex-direction: column; /* Staplar innehåll vertikalt */
-    align-items: center;
-  }
+/* Responsiv design */
 
-  .produkthistorik {
-    margin-top: 260px;
-    margin-left: 160px;
-  }
+/* För små skärmar (max-width: 480px) */
+@media (max-width: 480px) {
   .produktinfo {
-    flex-direction: column; /* Staplar innehåll vertikalt */
-    align-items: center;
-  }
-
-  .servettext,
-  .handsdiv {
+    flex-direction: column;
     text-align: center;
   }
 
-  .hands {
-    max-width: 300px; /* Minska bildstorlek för medelstora skärmar */
+  .servettext h1 {
+    font-size: 2rem;
   }
 
   .ptext {
-    font-size: 18px; /* Justera textstorlek för mindre skärmar */
-  }
-
-  .ptext {
-    font-size: 18px; /* Justera textstorlek för mindre skärmar */
-    margin-top: 20px;
-  }
-  .imgallaprodukter {
-    width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .produkthistorik {
-    margin-top: 260px;
-  }
-
-  .produktinfo,
-  .animations {
-    gap: 10px;
-  }
-
-  .h4 {
-    margin-left: 0px;
-    font-size: larger;
+    font-size: 1rem;
   }
 
   .hands {
-    max-width: 250px; /* Ytterligare minskning för små skärmar */
-    margin-left: -20px;
+    max-width: 300px;
   }
 
   .animatedBox {
-    min-width: 100%; /* Ta upp hela bredden på små skärmar */
-  }
-
-  .ptext {
-    font-size: 16px;
-  }
-
-  .imgallaprodukter {
-    width: 100%;
-  }
-
-  .imgirritation {
-    margin-left: -1px;
-  }
-  .ulList {
-    font-size: 0.9rem;
-    padding-left: 10px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .produkthistorik {
-    margin-bottom: 80px;
-    padding: 0 50px;
-    margin-left: 100px;
-    margin-top: 260px;
-  }
-
-  .produktinfo {
-    display: flex;
-    flex-direction: row;
-    margin-top: 50px;
-  }
-
-  .servettext {
-    width: 100%;
-  }
-
-  .servettdiv {
-    margin-left: -30px;
-    margin-top: 50px;
-  }
-  .ptext {
-    font-size: 22px;
-    line-height: 1.8;
-    color: #555;
-  }
-  .servett {
-    width: 60vh;
-  }
-  .hands {
-    max-width: 500px; /* Större bilder för bredare skärmar */
-  }
-
-  .imgallaprodukter {
-    max-width: 1000px; /* Öka storlek för produktbild */
-  }
-
-  .animatedBox {
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.6;
-    border: 2px solid #888;
-    padding: 16px;
-    border-radius: 8px;
-    background-color: #f0f0f0;
-    color: #333;
-    margin-top: 20px;
+    flex: 1 1 100%; /* Full bredd */
     margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
-  .imgprodukt {
-    width: 100%; /* Make the image responsive */
-    max-width: 700px; /* Set a max-width */
-    margin: 20px auto; /* Center the image */
-    display: block; /* Ensure it's a block element */
+  .sistadiv h2 {
+    font-size: 1.5rem;
   }
 
-  .sistadiv {
-    margin-top: 100px;
+  .sistadiv p {
+    font-size: 1rem;
+  }
+}
+
+/* För medelstora skärmar (min-width: 768px) */
+@media (min-width: 768px) {
+  .produktinfo {
+    flex-wrap: wrap;
   }
 
-  .ulList {
-    font-size: 1.1rem; /* Ökar storlek på listtext */
-    line-height: 1.8; /* Ökar mellanrum för läsbarhet */
+  .servettext h1 {
+    font-size: 2.2rem;
   }
-  .scrollToTop {
-    font-size: 2rem; /* Gör knappen större */
-    bottom: 30px; /* Ger mer utrymme nedtill */
-    right: 30px;
+
+  .hands {
+    max-width: 350px;
+  }
+
+  .animatedBox {
+    flex: 1 1 calc(50% - 10px); /* 50% bredd */
+  }
+
+  .sistadiv h2 {
+    font-size: 1.8rem;
+  }
+
+  .sistadiv p {
+    font-size: 1.1rem;
+  }
+}
+
+/* För stora skärmar (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .produktinfo {
+    flex-wrap: nowrap;
+    margin-top: 60px;
+  }
+
+  .servettext h1 {
+    font-size: 2.5rem;
+  }
+
+  .ptext {
+    font-size: 1.2rem;
+  }
+
+  .hands {
+    max-width: 400px;
+  }
+
+  .animatedBox {
+    flex: 1 1 calc(50% - 20px); /* 50% bredd */
+  }
+
+  .sistadiv h2 {
+    font-size: 2rem;
+  }
+
+  .sistadiv p {
+    font-size: 1.2rem;
   }
 }

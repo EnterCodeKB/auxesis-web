@@ -1,4 +1,5 @@
 "use client";
+
 import styles from "../../styles/ProduktPatent.module.css";
 
 export default function Patent() {
@@ -20,10 +21,10 @@ export default function Patent() {
         <ol className={styles.olList}>
           <h2 className={styles.fasdiv}>Fas 1</h2>
           <li>
-            Svensk patentansökan till PRV (Local filing application) – månad 0.{" "}
+            Svensk patentansökan till PRV (Local filing application) – månad 0.
           </li>
           <li>
-            Internationell patententansökan (PCT filing application) – månad 12.{" "}
+            Internationell patententansökan (PCT filing application) – månad 12.
           </li>
           <li>
             Internationell sökrapport (International search report) med
@@ -33,7 +34,7 @@ export default function Patent() {
             Publicering av patentansökan (International Publication) – månad 18.
           </li>
 
-          <h2 className={styles.fasdiv}>Fas 2 </h2>
+          <h2 className={styles.fasdiv}>Fas 2</h2>
 
           <li>
             Begäran förberedande patentbarhetsprövning (Demand for International

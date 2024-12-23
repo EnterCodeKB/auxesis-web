@@ -1,0 +1,102 @@
+.sectionU {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px; /* Mellanrum mellan text och bild */
+  margin: 200px 100px auto; /* Centrerar sektionen på sidan */
+  max-width: 1200px; /* Maxbredd för stora skärmar */
+  padding: 20px;
+}
+
+.textcontainer {
+  flex: 1;
+}
+
+.textcontainer h2 {
+  font-size: 2rem;
+  color: #23559b;
+  margin-bottom: 16px;
+}
+
+.textcontainer p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.imgakne {
+  flex-shrink: 0; /* Förhindrar att bilden krymper */
+  width: 300px; /* Standardstorlek på bilden */
+  height: auto; /* Bevarar proportionerna */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  object-fit: contain;
+}
+
+/* Responsiv design */
+
+/* Små skärmar (max-width: 480px) */
+@media (max-width: 480px) {
+  .sectionU {
+    flex-direction: column; /* Stapla text och bild vertikalt */
+    text-align: center;
+  }
+
+  .textcontainer {
+    text-align: center; /* Centrera texten */
+  }
+
+  .textcontainer h2 {
+    font-size: 1.6rem;
+  }
+
+  .textcontainer p {
+    font-size: 1rem;
+  }
+
+  .imgakne {
+    width: 200px; /* Mindre bild för mobilskärmar */
+    margin: 0 auto; /* Centrerar bilden */
+  }
+}
+
+/* Mellanstora skärmar (max-width: 768px) */
+@media (max-width: 768px) {
+  .sectionU {
+    flex-direction: column; /* Stapla text och bild vertikalt */
+    text-align: center;
+  }
+
+  .textcontainer h2 {
+    font-size: 1.8rem;
+  }
+
+  .textcontainer p {
+    font-size: 1.1rem;
+  }
+
+  .imgakne {
+    width: 250px; /* Justera för mellanstora skärmar */
+    margin: 0 auto;
+  }
+}
+
+/* Stora skärmar (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .sectionU {
+    flex-direction: row; /* Text och bild sida vid sida */
+  }
+
+  .textcontainer h2 {
+    font-size: 2.4rem;
+  }
+
+  .textcontainer p {
+    font-size: 1.3rem;
+  }
+
+  .imgakne {
+    width: 350px; /* Större bild för stora skärmar */
+  }
+}

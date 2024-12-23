@@ -1,3 +1,5 @@
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
 /* Globala inloggningsstilar */
 .login-container {
   display: flex;
@@ -44,6 +46,8 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .login-button:hover {
@@ -57,18 +61,18 @@
 }
 
 /* Basstilar */
-* {
-  margin: 0;
-  padding: 0;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
-  font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: #c9e7f153; /* Ljusblå bakgrund */
+  background-color: #c9e7f1;
 }
 body,
 html {
@@ -96,13 +100,13 @@ p {
   color: #555;
 }
 a {
-  text-decoration: none; /* Ta bort understrykning */
-  color: inherit; /* Ärver förälderns färg */
+  text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
-  text-decoration: none; /* Ingen understrykning vid hover */
-  color: #23559b; /* Ändra färg vid hover */
+  text-decoration: none;
+  color: #23559b;
 }
 
 /* Scroll to top */
@@ -121,10 +125,15 @@ a:hover {
   align-items: center;
   justify-content: center;
   z-index: 1000;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .scrollToTop:hover {
   background-color: #194276;
+}
+
+.scrollToTop:active {
+  transform: scale(0.9);
 }
 
 /* Responsiv design */
@@ -132,21 +141,22 @@ a:hover {
 /* För små skärmar (max-width: 480px) */
 @media (max-width: 480px) {
   h1 {
-    font-size: 2rem; /* Mindre rubrikstorlek */
+    font-size: 2rem;
   }
 
   h2 {
-    font-size: 1.8rem; /* Justera underrubrikstorlek */
+    font-size: 1.8rem;
   }
 
   p {
-    font-size: 0.9rem; /* Mindre textstorlek */
+    font-size: 0.9rem;
   }
 
   .scrollToTop {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     font-size: 1rem;
+    padding: 8px;
   }
 }
 
@@ -165,8 +175,8 @@ a:hover {
   }
 
   .scrollToTop {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     font-size: 1.25rem;
   }
 }
@@ -189,14 +199,5 @@ a:hover {
     width: 50px;
     height: 50px;
     font-size: 1.5rem;
-  }
-  a {
-    text-decoration: none; /* Ta bort understrykning */
-    color: inherit; /* Ärver förälderns färg */
-  }
-
-  a:hover {
-    text-decoration: none; /* Ingen understrykning vid hover */
-    color: #23559b; /* Ändra färg vid hover */
   }
 }

@@ -33,7 +33,7 @@ export default function Footer() {
           <Link href="https://www.linkedin.com/in/auxesis-pharma-holding-ab-publ-2b354a224">
             <img
               className={styles.imglinkedin}
-              src="/linkedinJpeg.jpeg"
+              src="/linkedinlogo 2.png"
               alt="linkedin"
             />
           </Link>

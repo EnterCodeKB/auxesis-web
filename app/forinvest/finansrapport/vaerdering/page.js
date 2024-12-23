@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "../../../styles/Finance.module.css";
+import styles from "./vaerdering.module.css";
 
 export default function Vaerdering() {
   const scrollToTop = () => {
