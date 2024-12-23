@@ -1,7 +1,7 @@
 /* Grundläggande layout */
 .produkthistorik {
   padding: 20px;
-  margin: 160px 150px auto;
+  margin: 40px 150px auto;
   max-width: 1200px;
   font-family: Arial, sans-serif;
 }
@@ -170,7 +170,7 @@
 @media (min-width: 1024px) {
   .produktinfo {
     flex-wrap: nowrap;
-    margin-top: 60px;
+    margin-top: 40px;
   }
 
   .servettext h1 {

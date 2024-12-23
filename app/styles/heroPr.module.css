@@ -1,139 +1,206 @@
-@media (min-width: 991px) {
-  .heroSection {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30vh;
-    width: 100%;
-    margin-top: 80px;
-  }
+/* Globala stilar */
+.heroSection {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  height: auto;
+}
 
-  .logo {
-    width: 150px;
-    height: auto;
-    margin-right: 1200px;
-    margin-top: 100px;
+.logo {
+  width: 120px;
+  height: auto;
+  margin: 20px auto; /* Centrera logotypen */
+}
+
+.div13 {
+  background-image: url("/produkter/5216B2EC-B52C-4624-8893-85EED9576B09.jpeg");
+  background-size: cover;
+  background-position: center; /* Centrerar bakgrundsbilden */
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.div14 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  text-align: center;
+}
+
+.div18 {
+  margin-top: 20px;
+  margin-left: 0; /* Tar bort margin för att centrera texten */
+  display: flex;
+  justify-content: center; /* Centrerar innehållet horisontellt */
+  align-items: center; /* Centrerar innehållet vertikalt */
+}
+
+.divh1 {
+  color: #23559b;
+  font-size: 2.5rem;
+  line-height: 1.4;
+  animation: slideInLeft 1.5s ease forwards;
+}
+
+.h2 {
+  color: #23559b;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 10px 0 0 0;
+  animation: slideInRight 1.5s ease forwards;
+  animation-delay: 0.5s;
+}
+
+/* Animationer */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsiv design */
+
+/* För små mobiler (max-width: 480px) */
+@media (max-width: 480px) {
+  .heroSection {
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 10px;
   }
 
   .div13 {
-    background-image: url("/produkter/5216B2EC-B52C-4624-8893-85EED9576B09.jpeg");
-    background-size: cover;
-    background-position: top center; /* Placera bilden vid toppen */
-    background-repeat: no-repeat !important;
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-
-  .div14 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .column {
-    text-align: center;
-  }
-
-  .div16 {
-    display: flex;
-    flex-direction: column;
-    margin-right: 600px;
-    background: none;
-    margin-top: 40px;
-  }
-
-  .divh1 {
-    visibility: hidden; /* Gör texten osynlig */
-  }
-
-  .h2 {
-    color: #23559b;
-    font-size: 50px;
-    line-height: 1.2;
-    margin: 10px 0 0 0;
-    animation: slideInRight 1.5s ease forwards;
-    animation-delay: 0.5s;
-  }
-
-  @keyframes slideInLeft {
-    from {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-
-  @keyframes slideInRight {
-    from {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-}
-@media (min-width: 1200px) {
-  .heroSection {
-    height: 30vh;
-    width: 120%;
-    margin-top: 80px;
-  }
-
-  .divh1 {
-    visibility: hidden; /* Gör texten osynlig */
-  }
-  .logo {
-    width: 150px;
-    margin-right: 1200px;
-    margin-top: 60px;
-  }
-}
-
-@media (max-width: 991px) {
-  .heroSection {
-    height: 20px;
-    padding: 20px;
-  }
-
-  .div13 {
-    background-image: none;
+    background-image: none; /* Ta bort bakgrundsbilden */
+    padding: 10px;
   }
 
   .logo {
-    width: 120px;
+    width: 80px;
+    margin-top: 10px;
   }
 
-  .divh1,
+  .div18 {
+    margin-top: 15px;
+    flex-direction: column; /* Lägg texten i kolumnlayout */
+  }
+
+  .divh1 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
   .h2 {
-    font-size: 2rem;
+    font-size: 1.3rem;
+    line-height: 1.3;
+    margin-top: 5px;
   }
 }
 
+/* För mobiler och mindre tablets (max-width: 768px) */
 @media (max-width: 768px) {
   .heroSection {
-    padding: 20px;
     flex-direction: column;
-    height: 20px;
+    padding: 20px;
   }
 
   .logo {
     width: 100px;
   }
 
-  .divh1,
+  .div18 {
+    margin-top: 20px;
+    flex-direction: column; /* Lägg texten i kolumnlayout */
+  }
+
+  .divh1 {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+
+  .h2 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin-top: 10px;
+  }
+}
+
+/* För tablets och mindre laptops (max-width: 991px) */
+@media (max-width: 991px) {
+  .heroSection {
+    height: auto;
+    padding: 20px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .div18 {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  .divh1 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
   .h2 {
     font-size: 1.8rem;
-    line-height: 2.2rem;
+    line-height: 1.4;
+    margin-top: 10px;
+  }
+}
+
+/* För stora skärmar (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .heroSection {
+    height: 50vh;
+  }
+
+  .logo {
+    width: 150px;
+    margin-top: 50px;
+  }
+
+  .div18 {
+    margin-top: 30px;
+  }
+
+  .divh1 {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+
+  .h2 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    margin-top: 15px;
   }
 }

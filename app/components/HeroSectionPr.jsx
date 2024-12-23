@@ -2,6 +2,7 @@ import * as React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/heroPr.module.css";
+import AnimatedText2 from "../components/AnimatedText2";
 
 const MyImage = ({ src, alt, width, height, className }) => (
   <Image
@@ -24,14 +25,10 @@ export default function HeroPr() {
               <Link href="/">
                 <img src="/vitlogga.png" alt="Loggan" className={styles.logo} />
               </Link>
-              <div className={styles.div16}>
-                <h2 className={styles.divh1}>
-                  ETT INNOVATIVT <br /> LÄKEMEDELSFÖRETAG
-                  <br />
-                  MED BANBRYTANDE PATENT
-                </h2>
+
+              <div className={styles.div18}>
+                <AnimatedText2 />
               </div>
-              <div className={styles.div18}></div>
             </div>
           </div>
           <div className={styles.column2}></div>

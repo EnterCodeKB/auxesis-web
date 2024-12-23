@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/heroSection.module.css";
+import AnimatedText from "../components/AnimatedText";
 
 // MyImage-komponenten
 const MyImage = ({ src, alt, width, height, className }) => (
@@ -46,7 +47,9 @@ export default function HeroSection() {
                 />
               </Link>
 
-              <div className={styles.div18}></div>
+              <div className={styles.div18}>
+                <AnimatedText />
+              </div>
             </div>
           </div>
           <div className={styles.column2}></div>
