@@ -23,11 +23,10 @@
 
 /* Text */
 .ptext {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
   margin-bottom: 20px;
-  text-align: justify; /* Jämn textjustering */
 }
 
 /* Lista */
@@ -72,8 +71,7 @@
   }
 
   .ptext {
-    font-size: 1.4rem;
-    line-height: 2;
+    font-size: 1.1rem;
   }
 
   .divli {

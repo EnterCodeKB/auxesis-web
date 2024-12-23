@@ -20,9 +20,9 @@
 }
 
 .textcontainer p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.6;
-  color: #555;
+  color: #333;
 }
 
 .imgakne {
@@ -93,7 +93,7 @@
   }
 
   .textcontainer p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   .imgakne {

@@ -9,9 +9,10 @@ export default function AsaP() {
   return (
     <>
       <section className={styles.sectionA}>
+        <h2>Receptfritt preparat för människa - ASA.P® </h2>
+
         <div className={styles.container1}>
           <div className={styles.textcontainer}>
-            <h2>Receptfritt preparat för människa - ASA.P® </h2>
             <p className={styles.ptext}>
               Det finns idag ingen känd OTC-produkt (receptfritt läkemedel) på
               marknaden som snabbt tar bort smärta och irritation på huden. De

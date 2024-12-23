@@ -9,7 +9,6 @@
   padding: 20px;
   margin: 0 auto; /* Centrera sektionen */
   max-width: 1100px; /* Begränsa bredden */
-  margin-top: ;
 }
 
 .section11,
@@ -37,9 +36,9 @@
 }
 
 .ptext {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
   margin: 0 auto;
   max-width: 90%;
 }
@@ -165,8 +164,8 @@
   }
 
   .ptext {
-    font-size: 1.2rem;
-    line-height: 1.8;
+    font-size: 1.1rem;
+    line-height: 1.6;
     max-width: 80%;
   }
 
@@ -216,9 +215,8 @@
 
 .ptext {
   font-size: 1.1rem;
-  line-height: 1.8;
+  line-height: 1.6;
   color: #555;
-  text-align: justify; /* Jämnt justerad text */
   margin: 0 auto;
   max-width: 90%;
 }
@@ -263,8 +261,8 @@
   }
 
   .ptext {
-    font-size: 1.2rem;
-    line-height: 1.8;
+    font-size: 1.1rem;
+    line-height: 1.6;
     max-width: 80%;
   }
 

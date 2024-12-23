@@ -20,8 +20,7 @@ export default function Styrelse() {
           <li>Lars Larsson, ekonomi och finans</li>
           <li>Peter Åberg, Läkemedelsutveckling och hållbarhet</li>
           <li>
-            Rune Nordström, arbetande styrelseordförande, affärsrådgivning, PR,
-            HR och IR
+            Rune Nordström, styrelseordförande, affärsrådgivning, PR, HR och IR
           </li>
         </ul>
 

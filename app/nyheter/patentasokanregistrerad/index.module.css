@@ -32,7 +32,6 @@
   line-height: 1.6;
   color: #333;
   margin-bottom: 20px;
-  text-align: justify; /* Improved readability */
 }
 
 /* Responsiv design */
@@ -117,6 +116,6 @@
 
   .ptext {
     font-size: 1.1rem;
-    line-height: 1.8;
+    line-height: 1.6;
   }
 }

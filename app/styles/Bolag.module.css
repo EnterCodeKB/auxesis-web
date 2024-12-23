@@ -21,9 +21,9 @@
   .ptext {
     width: 100%;
     font-size: 20px; /* Use rem for responsiveness */
-    line-height: 1.5; /* Improve readability */
-    margin-bottom: 1rem;
-    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
   }
 
   .ularea {
@@ -228,7 +228,7 @@
   }
 
   .ptext {
-    font-size: 22px;
+    font-size: 1.1rem;
     line-height: 1.6;
     max-width: 1000px;
     margin: 0 auto;

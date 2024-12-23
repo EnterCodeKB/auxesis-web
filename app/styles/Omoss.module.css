@@ -43,9 +43,9 @@
 /* Styling för textparagrafer */
 .ptext {
   font-size: 20px; /* Use rem for responsiveness */
-  line-height: 1.2; /* Improve readability */
-  margin-bottom: 1rem;
-  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
 }
 
 .ptextinramat {

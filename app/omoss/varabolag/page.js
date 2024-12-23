@@ -43,7 +43,7 @@ export default function Bolag() {
               className={`${styles.bolag1} ${styles.hidden}`}
               ref={(el) => (bolagRefs.current[0] = el)}
             >
-              Auxesis Pharma Holding AB
+              Auxesis Pharma Holding AB(publ)
             </h2>
             <h2
               className={`${styles.bolag2} ${styles.hidden}`}
@@ -63,7 +63,9 @@ export default function Bolag() {
             {/* Första bolaget */}
             <div className={styles.auxesis}>
               <div className={styles.auxesisbild}>
-                <h2 className={styles.divh2}>Auxesis Pharma Holding AB</h2>
+                <h2 className={styles.divh2}>
+                  Auxesis Pharma Holding AB(publ)
+                </h2>
               </div>
               <div className={styles.auxesistext}>
                 <p className={styles.ptext}>
@@ -96,7 +98,7 @@ export default function Bolag() {
                   genomgått en resa från idéstadiet, via forskning och
                   kapitalisering, till prekliniska tester och globalt
                   PCT-patentskydd. Målet är att uppnå godkännande för den
-                  banbrytande produkten ASA.PÒ år 2026, följt av en
+                  banbrytande produkten ASA.P® år 2026, följt av en
                   börsintroduktion. För närvarande har Auxesis två globala
                   varumärken registrerade: ASA.P® och CoxyPet®.
                 </p>

@@ -31,7 +31,6 @@
   line-height: 1.6;
   color: #333;
   margin-bottom: 20px;
-  text-align: justify; /* Better readability for long text */
 }
 
 /* Image container */
@@ -142,7 +141,7 @@
 
   .ptext {
     font-size: 1.1rem;
-    line-height: 1.8;
+    line-height: 1.6;
   }
 
   .image1 {

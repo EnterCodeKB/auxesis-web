@@ -12,7 +12,7 @@ export default function Partners() {
     {
       name: "RAMBERG Advokater",
       link: "https://ramberglaw.se/",
-      image: "/partners/ram_law_logo.png",
+      image: "/partners/ram_law_logoJpeg.jpg",
       description:
         "Ramberg Advokater i Stockholm är en fullservicebyrå med spetskompetens inom flera rättsområden. Ramberg ger juridiskt stöd till Auxesis och hjälper till med affärsjuridik, varumärkesfrågor och alla typer av regulatoriska frågor kopplade till juridik över hela världen.",
     },
@@ -61,7 +61,7 @@ export default function Partners() {
     {
       name: "Edlund & Partners",
       link: "https://edlundpartners.se/",
-      image: "/partners/edlund.png",
+      image: "/partners/edlundJpeg.jpg",
       description:
         "Auxesis har Edlund & Partners som revisionsfirma. Edlund & Partners har kompetens och erfarenhet och rätt att hjälpa bolag med börsnoteringar.",
     },
