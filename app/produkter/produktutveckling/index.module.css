@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 20px; /* Mellanrum mellan text och bild */
-  margin: 200px 100px auto; /* Centrerar sektionen på sidan */
+  margin: 100px 100px auto; /* Centrerar sektionen på sidan */
   max-width: 1200px; /* Maxbredd för stora skärmar */
   padding: 20px;
 }
