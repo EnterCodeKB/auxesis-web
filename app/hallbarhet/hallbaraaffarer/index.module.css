@@ -49,8 +49,8 @@
   }
 
   .ptext {
-    font-size: 1.4rem; /* Större textstorlek */
-    line-height: 2; /* Ökad radavstånd */
+    font-size: 1.1rem; /* Större textstorlek */
+    line-height: 1.6; /* Ökad radavstånd */
   }
 }
 
@@ -90,6 +90,6 @@
   }
 
   .ptext {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
