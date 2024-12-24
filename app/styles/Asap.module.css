@@ -91,7 +91,6 @@
 /* För medelstora skärmar (min-width: 768px) */
 @media (min-width: 768px) {
   .container1 {
-    flex-wrap: wrap;
   }
 
   .textcontainer h2 {

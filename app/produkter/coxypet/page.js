@@ -29,7 +29,7 @@ export default function Coxypet() {
             </p>
           </div>
           <img
-            className={styles.image}
+            className={styles.image1}
             src="/produkter/theo2.png"
             alt="Hund Theo"
           />
@@ -59,7 +59,7 @@ export default function Coxypet() {
         </div>
 
         <div className={styles.contentSection}>
-          <div className={styles.textBlock}>
+          <div className={styles.textBlock3}>
             <h2>Stor potential med flera fördelar</h2>
             <p>
               CoxyPet® bygger på banbrytande forskning inom veterinärmedicin och
@@ -75,7 +75,7 @@ export default function Coxypet() {
           </div>
           <img
             className={styles.image}
-            src="/produkter/kosan.png"
+            src="/kosan2024.png"
             alt="Ko på ängen"
           />
         </div>
