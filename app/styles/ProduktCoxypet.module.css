@@ -69,13 +69,9 @@
     font-size: 1rem;
   }
 
-  .image {
-    max-width: 30%; /* Minska bilden ytterligare för mellanstora skärmar */
-    margin-bottom: 20px;
-  }
+  .image,
   .image1 {
-    max-width: 20%; /* Minska bilden ytterligare för mellanstora skärmar */
-    margin-bottom: 20px;
+    display: none; /* Dölj bilderna helt */
   }
 }
 
@@ -98,13 +94,9 @@
     font-size: 1.1rem;
   }
 
-  .image {
-    max-width: 30%; /* Minska bilden ytterligare för mellanstora skärmar */
-    margin-bottom: 20px;
-  }
+  .image,
   .image1 {
-    max-width: 20%; /* Minska bilden ytterligare för mellanstora skärmar */
-    margin-bottom: 20px;
+    display: none; /* Dölj bilderna helt */
   }
 }
 
