@@ -7,7 +7,6 @@ import "./globals.css";
 import Hero from "./components/heroSection";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { usePathname, useRouter } from "next/navigation";
-import { useEffect } from "react";
 import CookieBanner from "./components/CookieBanner";
 
 export default function RootLayout({ children }) {
@@ -18,17 +17,6 @@ export default function RootLayout({ children }) {
   const shouldShowHero =
     !pathname.startsWith("/login") &&
     !hideHeroPaths.some((path) => pathname.startsWith(path));
-
-  useEffect(() => {
-    const isAuthenticated = Boolean(localStorage.getItem("authenticated"));
-
-    if (pathname === "/login") return;
-
-    // Redirect only for admin pages if unauthenticated
-    if (!isAuthenticated && pathname.startsWith("/admin")) {
-      router.push("/login");
-    }
-  }, [pathname, router]);
 
   const isLoginPage = pathname === "/login";
 

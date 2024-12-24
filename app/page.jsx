@@ -13,19 +13,6 @@ import AnimatedText from "./components/AnimatedText";
 export default function HomePage() {
   const router = useRouter();
 
-  useEffect(() => {
-    // Kontrollera om vi ska omdirigera till "Under Construction"-sidan
-    if (
-      process.env.NODE_ENV === "production" &&
-      router.pathname !== "/under-construction"
-    ) {
-      const bypass = localStorage.getItem("bypassConstruction");
-      if (!bypass) {
-        router.push("/under-construction");
-      }
-    }
-  }, [router]);
-
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
