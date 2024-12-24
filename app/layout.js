@@ -21,23 +21,12 @@ export default function RootLayout({ children }) {
 
   useEffect(() => {
     const isAuthenticated = Boolean(localStorage.getItem("authenticated"));
-    console.log("Autentiserad:", isAuthenticated, "Pathname:", pathname);
 
-    if (!isAuthenticated && pathname !== "/login") {
+    if (pathname === "/login") return;
+
+    // Redirect only for admin pages if unauthenticated
+    if (!isAuthenticated && pathname.startsWith("/admin")) {
       router.push("/login");
-    }
-
-    if (isAuthenticated && pathname === "/login") {
-      router.push("/");
-    }
-
-    if (isAuthenticated) {
-      const logoutTimeout = setTimeout(() => {
-        localStorage.removeItem("authenticated");
-        router.push("/login");
-      }, 35 * 60 * 1000);
-
-      return () => clearTimeout(logoutTimeout);
     }
   }, [pathname, router]);
 
