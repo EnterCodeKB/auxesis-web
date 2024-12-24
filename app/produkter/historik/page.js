@@ -88,7 +88,7 @@ export default function Historik() {
             className={`${styles.animatedBox} ${styles.hidden} text-xl leading-tight border-2 border-gray-500 p-6 rounded-lg shadow-lg bg-gray-100`}
           >
             <h3>Acetylsalicylsyrans (ASA) historia </h3>
-            <p>
+            <p className={styles.ptext}>
               Inom örtmedicinen har man sedan urminnes tider, minst så långt
               tillbaka som 2500 f.Kr., använt salicylsyra – ett naturligt ämne
               besläktat med det syntetiska aspirin – som utvinns från växter som
@@ -108,7 +108,7 @@ export default function Historik() {
             <h3>
               Hur aspirin och andra antiinflammatoriska läkemedel fungerar{" "}
             </h3>
-            <p>
+            <p className={styles.ptext}>
               På 1970-talet upptäckte forskare att skador på mänsklig vävnad
               utlöser frisättning av prostaglandiner – hormonliknande molekyler
               som orsakar feber och inflammation. <br />
@@ -123,23 +123,23 @@ export default function Historik() {
         </div>
         <div className={styles.sistadiv}>
           <h2>Vad är hudsmärta och hur reagerar kroppen?</h2>
-          <p>
+          <p className={styles.ptext}>
             Nervbanorna som går från det perifera nervsystemet till hjärnan
             transporterar information från olika sensoriska receptorer vars
             signaler sammanställs till sinnesförnimmelser i hjärnan.
           </p>
-          <p>
+          <p className={styles.ptext}>
             Dessa nervbanor kallas sensoriska nerver. De överför signaler om
             till exempel beröring, värme, kyla och smärta.
           </p>
-          <p>
+          <p className={styles.ptext}>
             En grundläggande egenskap hos de nervceller som skickar sina trådar
             in i huden och registrerar beröring, så kallade första ordningens
             neuroner i det taktila systemet, är att den enskilda nervcellens
             tråd förgrenar sig i huden så att varje nervcell har många känsliga
             zoner.
           </p>
-          <p>
+          <p className={styles.ptext}>
             Det finns smärtreceptorer i huden och i nästan hela kroppen som
             reagerar på värme, kyla, inflammation och när vi gör oss illa.
             Mottagarna skickar sedan signaler vidare till hjärnan via

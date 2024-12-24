@@ -10,7 +10,7 @@
   width: 100%;
 }
 
-.divh1 {
+.divh2 {
   color: white;
   font-size: 50px;
   line-height: 1.2;
@@ -53,16 +53,16 @@
 /* För små mobiler (max-width: 480px) */
 @media (max-width: 480px) {
   .animatedText {
-    margin-right: 0; /* Ta bort margin-right */
+    margin-left: -10px;
   }
 
-  .divh1 {
-    font-size: 1.6rem;
+  .divh2 {
+    font-size: 1.2rem;
     line-height: 1.2;
   }
 
   .h2 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.2;
     margin-top: 5px;
   }
@@ -72,15 +72,16 @@
 @media (max-width: 768px) {
   .animatedText {
     margin-right: 0; /* Ta bort margin-right */
+    margin-left: -10px;
   }
 
-  .divh1 {
-    font-size: 2rem;
+  .divh2 {
+    font-size: 1.2rem;
     line-height: 1.3;
   }
 
   .h2 {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     line-height: 1.3;
     margin-top: 8px;
   }
@@ -90,10 +91,11 @@
 @media (max-width: 991px) {
   .animatedText {
     margin-right: 0; /* Ta bort margin-right */
+    margin-left: -30px;
   }
 
-  .divh1 {
-    font-size: 2.5rem;
+  .divh2 {
+    font-size: 2rem;
     line-height: 1.4;
   }
 
@@ -110,7 +112,7 @@
     margin-right: 500px; /* Justera för bredare skärmar */
   }
 
-  .divh1 {
+  .divh2 {
     font-size: 2.5rem; /* Öka rubrikstorleken */
     line-height: 1.2;
   }

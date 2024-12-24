@@ -1,29 +1,16 @@
-/* Grundläggande layout */
+/* Global styles */
 .produkthistorik {
   padding: 20px;
-  margin: 40px 150px auto;
+  margin: 0 auto;
   max-width: 1200px;
-  font-family: Arial, sans-serif;
 }
 
 .produktinfo {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  gap: 20px;
   margin-bottom: 40px;
-}
-
-.servettext,
-.handsdiv {
-  flex: 1 1 50%;
-  margin: 10px;
-}
-
-.servettext h1 {
-  font-size: 2.5rem;
-  color: #23559b;
-  margin-bottom: 20px;
 }
 
 .ptext {
@@ -31,169 +18,116 @@
   line-height: 1.6;
   color: #333;
 }
+.servettext {
+  flex: 1;
+}
+
+.handsdiv {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
 
 .hands {
-  width: 100%;
-  max-width: 400px;
+  max-width: 100%;
   height: auto;
-  display: block;
-  margin: 0 auto;
+  border-radius: 10px;
 }
 
 .animations {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 20px;
-  justify-content: center;
   margin-bottom: 40px;
 }
 
 .animatedBox {
-  flex: 1 1 calc(50% - 20px); /* 50% bredd med mellanrum */
-  background-color: #f4f4f4;
-  border: 1px solid #ddd;
-  border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: opacity 1s ease, transform 1s ease;
-}
-
-.hidden {
-  opacity: 0;
-  transform: translateY(20px); /* Startar utanför synlighet */
-}
-
-.visible {
-  opacity: 1;
-  transform: translateY(0);
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 10px;
 }
 
 .sistadiv {
   margin-bottom: 40px;
 }
 
-.sistadiv h2 {
-  font-size: 2rem;
-  color: #23559b;
-  margin-bottom: 20px;
-}
-
-.sistadiv p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #555;
-  margin-bottom: 10px;
-}
-
 .allaprodukter {
   text-align: center;
+  margin: 40px 0;
 }
 
 .imgallaprodukter {
-  width: 100%;
-  max-width: 800px;
+  max-width: 100%;
   height: auto;
-  margin: 0 auto;
+  border-radius: 10px;
 }
 
-.scrollToTop {
-  margin-top: 20px;
-  font-size: 2rem;
-  color: #23559b;
-  cursor: pointer;
-  text-align: center;
-}
+/* Media Queries */
 
-/* Responsiv design */
-
-/* För små skärmar (max-width: 480px) */
+/* Extra small screens (max-width: 480px) */
 @media (max-width: 480px) {
   .produktinfo {
     flex-direction: column;
     text-align: center;
   }
 
-  .servettext h1 {
-    font-size: 2rem;
+  .servettext,
+  .handsdiv {
+    flex: unset;
+    width: 100%;
   }
 
-  .ptext {
-    font-size: 1rem;
-  }
-
-  .hands {
-    max-width: 300px;
-  }
-
-  .animatedBox {
-    flex: 1 1 100%; /* Full bredd */
-    margin-bottom: 20px;
-  }
-
-  .sistadiv h2 {
-    font-size: 1.5rem;
-  }
-
-  .sistadiv p {
-    font-size: 1rem;
+  .animations .animatedBox {
+    text-align: center;
   }
 }
 
-/* För medelstora skärmar (min-width: 768px) */
-@media (min-width: 768px) {
+/* Small screens (max-width: 768px) */
+@media (max-width: 768px) {
   .produktinfo {
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
   }
 
-  .servettext h1 {
-    font-size: 2.2rem;
-  }
-
-  .hands {
-    max-width: 350px;
-  }
-
-  .animatedBox {
-    flex: 1 1 calc(50% - 10px); /* 50% bredd */
-  }
-
-  .sistadiv h2 {
-    font-size: 1.8rem;
-  }
-
-  .sistadiv p {
-    font-size: 1.1rem;
+  .servettext,
+  .handsdiv {
+    width: 100%;
   }
 }
 
-/* För stora skärmar (min-width: 1024px) */
-@media (min-width: 1024px) {
+/* Medium screens (max-width: 991px) */
+@media (max-width: 991px) {
   .produktinfo {
-    flex-wrap: nowrap;
-    margin-top: 40px;
+    flex-direction: row;
+    gap: 20px;
   }
 
-  .servettext h1 {
-    font-size: 2.5rem;
+  .servettext {
+    text-align: left;
   }
 
-  .ptext {
-    font-size: 1.1rem;
+  .handsdiv {
+    justify-content: flex-end;
   }
+}
 
-  .hands {
-    max-width: 400px;
+/* Large screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .produktinfo {
+    gap: 40px;
   }
 
   .animatedBox {
-    flex: 1 1 calc(50% - 20px); /* 50% bredd */
-  }
-
-  .sistadiv h2 {
-    font-size: 2rem;
-  }
-
-  .sistadiv p {
+    padding: 30px;
     font-size: 1.2rem;
+  }
+
+  .allaprodukter {
+    margin: 60px 0;
+  }
+
+  .imgallaprodukter {
+    max-width: 80%;
   }
 }
