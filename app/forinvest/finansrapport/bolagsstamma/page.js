@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./index.module.css";
+import styles from "../bolagsstamma/bolags.module.css";
 
 export default function Protokol() {
   const scrollToTop = () => {
@@ -9,7 +9,7 @@ export default function Protokol() {
 
   return (
     <>
-      <section className={styles.container}>
+      <div className={styles.container}>
         <h2 className={styles.title}>Protokoll från Årsstämman</h2>
         <p className={styles.text}>
           Du kan se protokollet som en PDF-fil genom att klicka på knappen
@@ -23,7 +23,7 @@ export default function Protokol() {
         >
           Visa PDF
         </a>
-      </section>
+      </div>
 
       <div className={styles.scrollToTop} onClick={scrollToTop}>
         ⬆️

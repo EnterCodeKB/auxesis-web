@@ -70,11 +70,11 @@
   }
 
   .image {
-    max-width: 20%; /* Minska bilden ytterligare för mellanstora skärmar */
+    max-width: 30%; /* Minska bilden ytterligare för mellanstora skärmar */
     margin-bottom: 20px;
   }
   .image1 {
-    max-width: 10%; /* Minska bilden ytterligare för mellanstora skärmar */
+    max-width: 20%; /* Minska bilden ytterligare för mellanstora skärmar */
     margin-bottom: 20px;
   }
 }
@@ -99,11 +99,11 @@
   }
 
   .image {
-    max-width: 20%; /* Minska bilden ytterligare för mellanstora skärmar */
+    max-width: 30%; /* Minska bilden ytterligare för mellanstora skärmar */
     margin-bottom: 20px;
   }
   .image1 {
-    max-width: 10%; /* Minska bilden ytterligare för mellanstora skärmar */
+    max-width: 20%; /* Minska bilden ytterligare för mellanstora skärmar */
     margin-bottom: 20px;
   }
 }

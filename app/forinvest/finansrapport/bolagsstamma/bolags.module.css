@@ -1,11 +1,10 @@
 .container {
   max-width: 800px;
-  margin: 100px auto 50px auto; /* Marginal för att ge utrymme under hjältesektionen */
   padding: 20px;
   font-family: Arial, sans-serif;
   text-align: center;
+  background-color: deeppink;
 }
-
 /* Title Styles */
 .title {
   font-size: 2rem;
@@ -61,8 +60,8 @@
 @media (max-width: 480px) {
   .container {
     margin-top: 20px;
+    padding: 10px; /* Minska padding */
   }
-
   .title {
     font-size: 1.8rem;
   }
@@ -80,8 +79,8 @@
 @media (min-width: 768px) {
   .container {
     margin-top: 20px;
+    padding: 10px; /* Minska padding */
   }
-
   .title {
     font-size: 2rem;
   }
@@ -93,9 +92,12 @@
 
 /* För stora skärmar (min-width: 1024px) */
 @media (min-width: 1024px) {
-  .container {
-    max-width: 900px;
-    margin-top: 260px;
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 900px; /* Anpassa max-bredd */
+      margin-left: auto; /* Centrerar sektionen */
+      margin-right: auto; /* Centrerar sektionen */
+    }
   }
 
   .title {
