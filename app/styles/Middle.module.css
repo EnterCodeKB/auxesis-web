@@ -69,9 +69,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .video {
-    display: none !important;
-  }
+
   .videoContainer,
   .textContainer {
     max-width: 100%;
@@ -86,9 +84,6 @@
 
   .ptext {
     font-size: 1rem;
-  }
-  .video {
-    display: none !important;
   }
 }
 
