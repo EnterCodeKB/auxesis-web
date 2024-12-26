@@ -5,6 +5,16 @@
   max-width: 1200px;
   margin-top: 40px;
 }
+.h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #23559b;
+}
+
+.h2 {
+  font-size: 2rem;
+  text-align: center;
+}
 
 .produktinfo {
   display: flex;

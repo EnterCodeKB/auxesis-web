@@ -41,7 +41,7 @@ export default function Historik() {
       <section className={styles.produkthistorik}>
         <div className={styles.produktinfo}>
           <div className={styles.servettext}>
-            <h1>Banbrytande produkter </h1>
+            <h1 className={styles.h1}>Banbrytande produkter </h1>
             <p className={styles.ptext}>
               Auxesis utvecklar flera preparat som blockerar smärtsignalen till
               hjärnan och tar bort smärta på huden. <br /> <br /> Forskningen
@@ -55,7 +55,9 @@ export default function Historik() {
 
         <div className={styles.produktinfo}>
           <div>
-            <h2>Auxesis stabiliserar ASA i flytande form</h2>
+            <h2 className={styles.h2}>
+              Auxesis stabiliserar ASA i flytande form
+            </h2>
             <p className={styles.ptext}>
               Acetylsalicylsyra (ASA) är en av de mest välkända substanserna för
               smärtlindring och har använts i läkemedel sedan slutet av

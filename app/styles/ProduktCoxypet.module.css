@@ -5,6 +5,15 @@
   font-family: Arial, sans-serif;
 }
 
+.h1 {
+  font-size: 3rem;
+  color: #23559b;
+}
+
+.h2 {
+  font-size: 2rem;
+  color: #23559b;
+}
 .contentSection {
   display: flex;
   justify-content: space-between;
@@ -102,6 +111,9 @@
 
 /* Stora skärmar (min-width: 1024px) */
 @media (min-width: 1024px) {
+  .sectionContainer {
+    margin-top: 60px;
+  }
   .contentSection {
     flex-direction: row;
   }

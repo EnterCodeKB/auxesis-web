@@ -1,6 +1,6 @@
 /* Wrapper Section */
 .varabolag {
-  margin: 40px auto; /* Increased margin-top */
+  margin: 20px auto; /* Increased margin-top */
   max-width: 1200px;
   padding: 20px;
   margin-bottom: 60px;
@@ -8,8 +8,7 @@
 
 /* Main Heading */
 .h1 {
-  font-size: 2.5rem;
-  color: #23559b;
+  font-size: 3rem;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -42,7 +41,6 @@
 .textarea {
   margin-top: 20px;
   padding: 20px;
-  text-align: justify;
 }
 
 /* Individual Bolag Sections */
@@ -119,7 +117,7 @@
 /* Stora skärmar (min-width: 1024px) */
 @media (min-width: 1024px) {
   .h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-top: 40px;
   }
 

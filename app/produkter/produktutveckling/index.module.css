@@ -30,7 +30,6 @@
   width: 300px; /* Standardstorlek på bilden */
   height: auto; /* Bevarar proportionerna */
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   object-fit: contain;
 }
 
@@ -86,6 +85,7 @@
 @media (min-width: 1024px) {
   .sectionU {
     flex-direction: row; /* Text och bild sida vid sida */
+    margin-bottom: 60px;
   }
 
   .textcontainer h2 {

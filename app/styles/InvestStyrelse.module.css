@@ -10,8 +10,8 @@
 }
 
 .h1styrelse {
-  font-size: 2rem;
-  color: #2c3e50;
+  font-size: 3rem;
+  color: #23559b;
   margin-bottom: 20px;
   font-weight: bold;
 }
@@ -30,7 +30,7 @@
 }
 
 .h2ul {
-  font-size: 1.5rem; /* Håll rubriken tydlig och framträdande */
+  font-size: 2rem; /* Håll rubriken tydlig och framträdande */
   color: #23559b; /* Använd den blå färgen för konsekvent branding */
   margin-top: 30px; /* Utrymme ovanför för separation */
   margin-bottom: 15px; /* Utrymme under för tydlig avstånd */

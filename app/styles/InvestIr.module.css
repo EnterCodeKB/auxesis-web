@@ -28,16 +28,17 @@
 }
 
 .h1div {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
-  color: #1c1e53;
+  color: #23559b;
   margin-bottom: 20px;
   text-align: center;
 }
 
 .h2namn {
-  font-size: 34px;
+  font-size: 2rem;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .irptext {
@@ -60,7 +61,7 @@
 }
 
 .h2 {
-  color: #1c1e53;
+  color: #23559b;
   font-size: 28px;
   margin-bottom: 10px;
 }
@@ -90,7 +91,7 @@
 .h1div {
   font-size: 58px; /* Använd rem för bättre skalbarhet */
   font-weight: 700;
-  color: #1c1e53;
+  color: #23559b;
   display: flex;
   justify-content: center;
 }
@@ -196,7 +197,7 @@
   }
 
   .h2vision {
-    font-size: 28px;
+    font-size: 2rem;
     text-align: center;
   }
 

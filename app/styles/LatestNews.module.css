@@ -1,25 +1,22 @@
 .latestNewsSection {
-  padding: 20px 20px;
+  margin-top: 20px;
   text-align: center;
-  margin-top: 5px;
 }
 
 .whiteboard {
-  padding: 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 60px;
   margin-top: 20px;
   width: 100%;
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 30px;
-  margin-top: -40px;
-  color: #1c1e53;
+  margin-top: 40px;
+  color: #23559b;
 }
 
 .newsContainer {
@@ -65,10 +62,10 @@
   margin-top: auto;
   padding: 10px 20px;
   background-color: #ebf4f9;
-  color: #007bff;
+  color: #23559b;
   border: 1px solid;
   border-radius: 5px;
-  border-color: #007bff;
+  border-color: #23559b;
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
@@ -88,7 +85,7 @@
 
 .nwesblockreadmore {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #23559b;
   color: white;
   border: none;
   border-radius: 5px;
@@ -220,8 +217,7 @@
 
   .whiteboard {
     padding: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 40px;
   }
 
   .title {
@@ -268,13 +264,12 @@
 /* För extra stora skärmar (min-width: 1200px) */
 @media (min-width: 1200px) {
   .latestNewsSection {
-    padding: 40px;
-    margin-top: 60px;
+    margin-top: 40px;
   }
 
   .whiteboard {
     padding: 30px;
-    margin-top: 60px;
+    margin-top: 40px;
     margin-bottom: 60px;
   }
 

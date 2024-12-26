@@ -12,7 +12,9 @@ export default function Coxypet() {
       <section className={styles.sectionC}>
         <div className={styles.contentSection}>
           <div className={styles.textBlock}>
-            <h2>Naturligt och innovativt preparat för djur - CoxyPet®</h2>
+            <h2 className={styles.h2}>
+              Naturligt och innovativt preparat för djur - CoxyPet®
+            </h2>
             <p>
               Det finns globalt mer än 1,5 miljoner nötkreatur, 960 miljoner
               grisar, 600 miljoner hästar, 900 miljoner hundar, 600 miljoner
@@ -42,7 +44,7 @@ export default function Coxypet() {
             alt="Coxypet"
           />
           <div className={styles.textBlock}>
-            <h2>Reducerar användningen av antibiotika</h2>
+            <h2 className={styles.h2}>Reducerar användningen av antibiotika</h2>
             <p>
               CoxyPet® erbjuder naturliga och innovativa lösningar för
               medicinering av djur. Hudsmärtan kan behandlas med CoxyPet®, dels
@@ -60,7 +62,7 @@ export default function Coxypet() {
 
         <div className={styles.contentSection}>
           <div className={styles.textBlock3}>
-            <h2>Stor potential med flera fördelar</h2>
+            <h2 className={styles.h2}>Stor potential med flera fördelar</h2>
             <p>
               CoxyPet® bygger på banbrytande forskning inom veterinärmedicin och
               innehåller flera substanser med botande effekt. Det unika med

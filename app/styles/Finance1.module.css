@@ -1,7 +1,7 @@
 /* Container */
 .container {
   max-width: 1200px;
-  margin: 50px auto;
+  margin: 20px auto;
   padding: 20px;
   text-align: center;
 }
@@ -172,6 +172,9 @@
 
 /* För stora skärmar (min-width: 1200px) */
 @media (min-width: 1200px) {
+  .container {
+    margin-top: 20px;
+  }
   .grid {
     grid-template-columns: repeat(3, 1fr); /* Tre kolumner */
     gap: 30px;
