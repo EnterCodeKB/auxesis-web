@@ -1,97 +1,98 @@
-.divh1 {
-  line-height: 3.5rem;
-  display: flex;
-  text-align: center;
-  justify-content: center; /* Centrerar rubriken horisontellt */
-}
-
+/* Sektion Styling */
 .section {
-  margin-top: 100px;
-  margin-bottom: 60px;
-  padding: 0 20px; /* Lägger till padding för små skärmar */
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
 }
 
+/* Första sektionen */
 .section1,
 .section2 {
-  max-width: 1200px; /* Sätt en maxbredd för större skärmar */
-  margin: 0 auto; /* Centrera innehållet */
-  margin-bottom: 40px; /* Lägg till utrymme mellan sektionerna */
+  margin-bottom: 40px;
+}
+
+.divh1,
+.divh2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #23559b;
+  text-align: center;
 }
 
 .ptext {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.2rem;
+  line-height: 1.8;
   color: #333;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* Responsiv design */
-@media (max-width: 991px) {
-  .divh1 {
-    font-size: 36px; /* Minska storleken på rubriken */
-    margin-left: 0; /* Ta bort vänstermarginalen */
-    text-align: center;
-  }
 
-  .ptext {
-    font-size: 18px; /* Justera textstorleken */
-    line-height: 1.4; /* Anpassa radavståndet */
-    text-align: justify; /* Bibehåll justerad text */
-  }
-
+/* För små skärmar (max-width: 480px) */
+@media (max-width: 480px) {
   .section {
-    padding: 0 15px; /* Minska padding för små skärmar */
+    padding: 10px;
   }
 
-  .section1,
-  .section2 {
-    margin-bottom: 30px; /* Mindre avstånd mellan sektionerna */
-  }
-}
-
-@media (max-width: 768px) {
-  .divh1 {
-    font-size: 28px; /* Ännu mindre rubrikstorlek */
-    line-height: 1.2; /* Minska radavståndet */
-  }
-
+  .divh1,
   .divh2 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
+    font-size: 1.8rem;
   }
+
   .ptext {
-    font-size: 16px; /* Anpassa textstorlek för mobiler */
-    line-height: 1.4;
-  }
-  .section {
-    margin-left: 100px;
-    margin-top: -1px;
-  }
-  .section1,
-  .section2 {
-    margin-bottom: 20px; /* Minska utrymme mellan sektionerna */
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left; /* Ändra till vänsterjusterad text */
   }
 }
 
-@media (min-width: 1200px) {
-  .divh1 {
-    font-size: 52px; /* Öka rubrikstorleken på stora skärmar */
-    line-height: 4rem;
+/* För mindre surfplattor och telefoner (max-width: 768px) */
+@media (max-width: 768px) {
+  .section {
+    padding: 15px;
+  }
+
+  .divh1,
+  .divh2 {
+    font-size: 2rem;
   }
 
   .ptext {
-    font-size: 1.1rem; /* Gör texten större */
-    line-height: 1.6; /* Förbättra radavståndet */
+    font-size: 1.1rem;
+    line-height: 1.6;
   }
+}
 
+/* För tablets och mindre laptops (max-width: 991px) */
+@media (max-width: 991px) {
   .section {
-    margin-top: 120px;
-    margin-bottom: 80px;
+    padding: 20px;
   }
 
-  .section1,
-  .section2 {
-    margin-bottom: 50px; /* Extra utrymme för stora skärmar */
+  .divh1,
+  .divh2 {
+    font-size: 2.2rem;
+  }
+
+  .ptext {
+    font-size: 1.15rem;
+    line-height: 1.7;
+  }
+}
+
+/* För stora skärmar (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .section {
+    padding: 30px;
+  }
+
+  .divh1,
+  .divh2 {
+    font-size: 3rem;
+  }
+
+  .ptext {
+    font-size: 1.25rem;
+    line-height: 1.8;
   }
 }

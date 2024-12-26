@@ -185,6 +185,11 @@ export default function Header() {
             )}
           </div>
 
+          {/* Innovation */}
+          <Link href="/innovation" className={styles.link} onClick={closeMenu}>
+            <div className={styles.mainLink}>INNOVATION</div>
+          </Link>
+
           {/* Dropdown: NYHETER */}
           <div className={styles.dropdown}>
             <div
