@@ -9,7 +9,7 @@ export default function Footer2() {
         <div className={styles.div231}>
           <div className={styles.div234}>
             <div className={styles.div235}>
-              Webbdesign och utveckling skapad av EnterCode Sweden AB
+              Utvecklad av EnterCode Sweden AB
             </div>
           </div>
         </div>
