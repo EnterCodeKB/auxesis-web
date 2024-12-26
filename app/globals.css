@@ -1,6 +1,6 @@
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
-/* Globala inloggningsstilar */
+/* Globala inloggningsstilar #c9e7f1*/
 
 /* Basstilar */
 *,
@@ -14,7 +14,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: #f9f9f9;
+  background-color: #c9e7f1;
 }*/
 
 body {
@@ -22,7 +22,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: #c9e7f1;
+  background-color: #e1eff4;
 }
 body,
 html {
