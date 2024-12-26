@@ -17,7 +17,7 @@ const LatestNews = ({ newsItems }) => {
   return (
     <section className={styles.latestNewsSection}>
       <div className={styles.whiteboard}>
-        <h2 className={styles.title}>Senaste Nyheter</h2>
+        <h1 className={styles.title}>Senaste Nyheter</h1>
         <div className={styles.newsContainer}>
           {latestNews.map((item) => (
             <div key={item.slug} className={styles.newsCard}>
