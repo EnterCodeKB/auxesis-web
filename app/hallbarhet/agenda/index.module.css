@@ -1,7 +1,7 @@
 /* Grundinställningar för hela sektionen */
 .agenda {
   max-width: 1200px;
-  margin: 260px auto; /* Centrerar sektionen med marginal från toppen */
+  margin: 40px auto; /* Centrerar sektionen med marginal från toppen */
   padding: 20px;
   text-align: center;
 }
@@ -59,7 +59,7 @@
 @media (min-width: 1200px) {
   .agenda {
     padding: 40px;
-    margin: 200px auto;
+    margin: 40px auto;
   }
 
   .agenda h1 {
@@ -87,7 +87,7 @@
 @media (max-width: 1200px) and (min-width: 768px) {
   .agenda {
     padding: 20px;
-    margin: 150px auto;
+    margin: 40px auto;
   }
 
   .agenda h1 {
@@ -116,7 +116,7 @@
 @media (max-width: 768px) {
   .agenda {
     padding: 10px;
-    margin: 100px auto;
+    margin: 40px auto;
   }
 
   .agenda h1 {
@@ -144,7 +144,7 @@
 /* För mycket små skärmar (max 480px) */
 @media (max-width: 480px) {
   .agenda {
-    margin: 80px auto;
+    margin: 40px auto;
   }
 
   .agenda h1 {

@@ -1,6 +1,6 @@
 .frapportSection {
   max-width: 1200px;
-  margin: 250px auto 50px;
+  margin: 40px auto 50px;
   padding: 20px;
   text-align: center;
   font-family: Arial, sans-serif;
@@ -115,7 +115,7 @@
 /* För stora skärmar (min-width: 1024px) */
 @media (min-width: 1024px) {
   .frapportSection {
-    margin: 240px auto 50px;
+    margin: 40px auto 50px;
   }
   .h1 {
     font-size: 2.5rem;

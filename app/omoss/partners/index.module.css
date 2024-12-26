@@ -1,6 +1,6 @@
 .partnersSection {
   max-width: 1200px;
-  margin: 150px auto 50px;
+  margin: 50px auto 50px;
   padding: 20px;
   font-family: Arial, sans-serif;
   text-align: center;
@@ -134,7 +134,7 @@
 @media (min-width: 1024px) {
   .partnersSection {
     max-width: 1400px;
-    margin-top: 260px;
+    margin-top: 40px;
   }
 
   .title {

@@ -1,7 +1,7 @@
 /* Om Oss Section */
 .omoss {
   max-width: 1200px;
-  margin: 60px auto;
+  margin: 40px auto;
   padding: 20px;
   font-family: Arial, sans-serif;
 }
@@ -135,7 +135,7 @@
 @media (min-width: 1024px) {
   .h1div {
     font-size: 2.5rem;
-    margin-top: 300px;
+    margin-top: 30px;
   }
 
   .ptext {

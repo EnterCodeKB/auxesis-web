@@ -1,6 +1,6 @@
 /* Wrapper Section */
 .varabolag {
-  margin: 200px auto; /* Increased margin-top */
+  margin: 40px auto; /* Increased margin-top */
   max-width: 1200px;
   padding: 20px;
   margin-bottom: 60px;
@@ -120,7 +120,7 @@
 @media (min-width: 1024px) {
   .h1 {
     font-size: 2.5rem;
-    margin-top: 60px;
+    margin-top: 40px;
   }
 
   .divh2 {
