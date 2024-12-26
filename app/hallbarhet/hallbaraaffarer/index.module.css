@@ -1,12 +1,12 @@
 .halbara {
   max-width: 1200px; /* Begränsa bredden */
-  margin: 250px auto; /* Centrerar sektionen och ger marginal ovan */
+  margin: 40px auto; /* Centrerar sektionen och ger marginal ovan */
   padding: 20px; /* Padding runt innehållet */
   text-align: center; /* Centrera texten */
 }
 
 .halbara h1 {
-  font-size: 2.4rem;
+  font-size: 3rem;
   color: #23559b;
   margin-bottom: 20px;
 }
@@ -43,7 +43,7 @@
   }
 
   .halbara h2 {
-    font-size: 2.4rem; /* Större underrubrik */
+    font-size: 2rem; /* Större underrubrik */
     margin-top: 50px;
     margin-bottom: 30px;
   }
