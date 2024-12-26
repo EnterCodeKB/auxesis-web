@@ -55,7 +55,7 @@
   border-radius: 50%;
   margin-bottom: 15px;
   width: 100px;
-  height: 100px;
+  height: auto;
 }
 
 /* Text */
@@ -121,6 +121,13 @@
 
   .infografik {
     width: 60%; /* Gör infografik-bilden mindre för bättre layout */
+  }
+  /* Bild */
+  .image {
+    border-radius: 50%;
+    margin-bottom: 15px;
+    width: 27vh;
+    height: 200px;
   }
 
   .container {
