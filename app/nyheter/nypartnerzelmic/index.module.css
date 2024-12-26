@@ -1,7 +1,7 @@
 /* Container for the details */
 .details {
   max-width: 800px;
-  margin: 150px auto; /* Center the content */
+  margin: 40px auto; /* Center the content */
   padding: 20px;
   background-color: #f9f9f9; /* Light background for contrast */
   border-radius: 8px;
@@ -39,7 +39,7 @@
 @media (max-width: 991px) {
   .details {
     padding: 15px;
-    margin: 100px auto;
+    margin: 40px auto;
   }
 
   .h1div {
@@ -60,7 +60,7 @@
 @media (max-width: 768px) {
   .details {
     padding: 10px;
-    margin: 80px auto;
+    margin: 40px auto;
   }
 
   .h1div {
@@ -81,7 +81,7 @@
 @media (min-width: 1200px) {
   .details {
     max-width: 1000px;
-    margin-top: 260px;
+    margin-top: 40px;
   }
 
   .h1div {

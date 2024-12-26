@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 40px;
   padding: 20px;
   text-align: center;
 }
@@ -87,7 +87,7 @@
 /* Large Screens (min-width: 1200px) */
 @media (min-width: 1200px) {
   .huvuddiv {
-    margin-top: 260px;
+    margin-top: 40px;
   }
   .media {
     gap: 40px;

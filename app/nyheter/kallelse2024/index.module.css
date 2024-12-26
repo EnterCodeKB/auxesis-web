@@ -113,7 +113,7 @@
 /* För stora skärmar (min-width: 1024px) */
 @media (min-width: 1024px) {
   .kallelse {
-    padding: 260px 50px 60px;
+    padding: 40px 50px 60px;
   }
 
   .h2divdark {

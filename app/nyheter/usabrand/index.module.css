@@ -1,6 +1,6 @@
 .container {
   max-width: 800px;
-  margin: 150px auto 50px auto; /* Lägger till 150px marginal ovanför */
+  margin: 40px auto 50px auto; /* Lägger till 150px marginal ovanför */
   padding: 20px;
   font-family: Arial, sans-serif;
   text-align: left;
@@ -48,7 +48,7 @@
 @media (max-width: 768px) {
   .container {
     padding: 10px;
-    margin-top: 120px; /* Mindre marginal för små skärmar */
+    margin-top: 40px; /* Mindre marginal för små skärmar */
   }
 
   .title {
@@ -68,7 +68,7 @@
 @media (min-width: 1024px) {
   .container {
     max-width: 900px;
-    margin-top: 260px;
+    margin-top: 40px;
   }
 
   .title {

@@ -1,7 +1,7 @@
 /* Container for the information section */
 .info {
   max-width: 800px;
-  margin: 150px auto; /* Center content with top margin */
+  margin: 40px auto; /* Center content with top margin */
   padding: 20px;
   background-color: #f9f9f9; /* Light background for contrast */
   border-radius: 8px;
@@ -41,7 +41,7 @@
 @media (max-width: 480px) {
   .info {
     padding: 10px;
-    margin: 80px auto;
+    margin: 40px auto;
   }
 
   .info h2 {
@@ -62,7 +62,7 @@
 @media (max-width: 768px) {
   .info {
     padding: 15px;
-    margin: 100px auto;
+    margin: 40px auto;
   }
 
   .info h2 {
@@ -83,7 +83,7 @@
 @media (max-width: 991px) {
   .info {
     padding: 20px;
-    margin: 120px auto;
+    margin: 40px auto;
   }
 
   .info h2 {
@@ -104,7 +104,7 @@
 @media (min-width: 1200px) {
   .info {
     max-width: 1000px;
-    margin-top: 260px;
+    margin-top: 40px;
   }
 
   .info h2 {
