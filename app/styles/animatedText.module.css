@@ -108,7 +108,7 @@
 /* För stora skärmar (min-width: 1200px) */
 @media (min-width: 1200px) {
   .animatedText {
-    margin-top: -50px; /* Extra justering för stora skärmar */
+    margin-top: 20px; /* Extra justering för stora skärmar */
     margin-right: 500px; /* Justera för bredare skärmar */
   }
 

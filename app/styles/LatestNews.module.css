@@ -1,24 +1,24 @@
-/*app/styles/LatestNews.module.css*/
 .latestNewsSection {
-  padding: 40px 20px;
+  padding: 20px 20px;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 5px;
 }
 
 .whiteboard {
   padding: 20px;
-  background-color: #f9f9f9;
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin-bottom: 60px;
-  margin-top: 60px;
+  margin-top: 20px;
   width: 100%;
 }
+
 .title {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-top: -40px;
   color: #1c1e53;
 }
 
@@ -36,7 +36,6 @@
   width: 330px;
   padding: 20px;
   text-align: center;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -103,105 +102,219 @@
   background-color: #0056b3;
 }
 
-@media (max-width: 991px) {
+/* För små skärmar (max-width: 480px) */
+@media (max-width: 480px) {
   .latestNewsSection {
-    padding: 20px; /* Justera padding för bättre passform */
+    padding: 10px;
+    margin-top: 20px;
   }
 
   .whiteboard {
-    padding: 15px; /* Minska padding på sektionen */
-    margin-bottom: 40px; /* Justera avstånd */
-    margin-top: 40px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   .title {
-    font-size: 1.8rem; /* Minska rubrikstorleken */
+    font-size: 1.5rem;
   }
 
   .newsContainer {
-    gap: 15px; /* Minska gap mellan korten */
+    gap: 10px;
+  }
+
+  .newsCard {
+    width: 100%; /* Ta upp hela bredden */
+    padding: 10px;
+  }
+
+  .newsImage {
+    height: 200px;
+  }
+
+  .newsTitle {
+    font-size: 1rem;
+  }
+
+  .newsSubtitle {
+    font-size: 0.9rem;
+  }
+
+  .readMoreButton {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .nwesblockButton {
+    justify-content: center;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  .nwesblockreadmore {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
+
+/* För mellanstora skärmar (max-width: 768px) */
+@media (max-width: 768px) {
+  .latestNewsSection {
+    padding: 15px;
+    margin-top: 30px;
+  }
+
+  .whiteboard {
+    padding: 15px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .newsContainer {
+    gap: 15px;
   }
 
   .newsCard {
     width: 280px; /* Minska kortens bredd */
-    padding: 15px; /* Justera padding */
+    padding: 15px;
   }
 
   .newsImage {
-    height: 250px; /* Anpassa höjd på bilderna */
+    height: 250px;
   }
 
   .newsTitle {
-    font-size: 1rem; /* Anpassa rubrikstorlek */
+    font-size: 1rem;
   }
 
   .newsSubtitle {
-    font-size: 0.9rem; /* Minska undertitelns storlek */
+    font-size: 0.9rem;
   }
 
   .readMoreButton {
-    padding: 8px 15px; /* Mindre padding för knappen */
-    font-size: 0.9rem; /* Minska textstorleken */
+    padding: 8px 15px;
+    font-size: 0.9rem;
   }
 
   .nwesblockButton {
-    margin-right: 50px; /* Justera positionen */
+    justify-content: center;
+    margin-right: 0;
   }
 
   .nwesblockreadmore {
-    font-size: 0.9rem; /* Anpassa knappens textstorlek */
-    padding: 8px 15px; /* Justera padding */
+    font-size: 0.9rem;
+    padding: 8px 15px;
   }
 }
 
-@media (max-width: 768px) {
+/* För stora skärmar (max-width: 991px) */
+@media (max-width: 991px) {
   .latestNewsSection {
-    padding: 10px; /* Mindre padding för sektionen */
+    padding: 20px;
     margin-top: 40px;
   }
 
   .whiteboard {
-    padding: 10px; /* Minimera padding */
-    margin-bottom: 30px; /* Ytterligare minskning av avstånd */
-    margin-top: 30px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   .title {
-    font-size: 1.5rem; /* Mindre rubrikstorlek */
+    font-size: 2rem;
   }
 
   .newsContainer {
-    gap: 10px; /* Minska gapet ytterligare */
+    gap: 20px;
   }
 
   .newsCard {
-    width: 100%; /* Korten täcker hela bredden */
-    padding: 10px; /* Mindre padding */
+    width: 300px;
+    padding: 20px;
   }
 
   .newsImage {
-    height: 200px; /* Mindre höjd för bilder */
+    height: 280px;
   }
 
   .newsTitle {
-    font-size: 0.9rem; /* Anpassa rubrikstorlek */
+    font-size: 1.1rem;
   }
 
   .newsSubtitle {
-    font-size: 0.8rem; /* Minska undertitelns storlek */
+    font-size: 1rem;
   }
 
   .readMoreButton {
-    padding: 6px 10px; /* Mindre padding */
-    font-size: 0.8rem; /* Mindre textstorlek */
+    padding: 10px 20px;
+    font-size: 1rem;
   }
 
   .nwesblockButton {
-    margin-right: 20px; /* Justera positionen för knappen */
+    justify-content: flex-end;
+    margin-right: 100px;
   }
 
   .nwesblockreadmore {
-    font-size: 0.8rem; /* Mindre knappstorlek */
-    padding: 6px 10px; /* Justera padding */
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+/* För extra stora skärmar (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .latestNewsSection {
+    padding: 40px;
+    margin-top: 60px;
+  }
+
+  .whiteboard {
+    padding: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .newsContainer {
+    gap: 30px;
+  }
+
+  .newsCard {
+    width: 330px;
+    padding: 20px;
+  }
+
+  .newsImage {
+    height: 300px;
+  }
+
+  .newsTitle {
+    font-size: 1.2rem;
+  }
+
+  .newsSubtitle {
+    font-size: 1.1rem;
+  }
+
+  .readMoreButton {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+  }
+
+  .nwesblockButton {
+    justify-content: flex-end;
+    margin-right: 150px;
+  }
+
+  .nwesblockreadmore {
+    font-size: 1.1rem;
+    padding: 12px 25px;
   }
 }

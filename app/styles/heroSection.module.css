@@ -1,176 +1,97 @@
-@media (min-width: 991px) {
+/* För större skärmar (min-width: 1200px) */
+@media (min-width: 1200px) {
   .heroSection {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30vh;
-    width: 100%;
-    margin-top: 80px;
-    margin-bottom: 60px;
-  }
-
-  .backgroundImage {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .logoContainer {
-  }
-
-  .logo {
-    display: block !important;
-    visibility: visible !important;
-  }
-
-  .div13 {
-    background-image: url("/webbg.jpeg");
-    background-size: cover;
-    background-position: center;
-    width: 190vh;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-
-  .div15 {
-    margin-top: -100px;
-  }
-  .logo {
-    width: 150px;
-    height: auto;
-    margin-right: 1200px;
-    margin-top: 150px;
+    height: 80vh;
+    width: 100vw; /* Full bredd */
+    margin: 0; /* Ingen margin */
+    padding: 0; /* Ingen padding */
+    overflow: hidden; /* Döljer eventuellt överskjutande innehåll */
   }
 
   .backgroundImage {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
+    width: 100%; /* Täcker hela bredden */
+    height: 100%; /* Täcker hela höjden */
+    background-size: cover;
+    background-position: center;
     z-index: -1;
   }
 
-  .div14 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-  }
-
-  .column {
-    text-align: center;
-  }
-
-  .div16 {
-    display: flex;
-    flex-direction: column;
-    margin-right: 600px;
-    background: none;
-    margin-top: 40px;
-  }
-
-  .divh1 {
-    color: #23559b;
-    font-size: 50px;
-    line-height: 1.2;
-    margin: 0;
-    animation: slideInLeft 1.5s ease forwards;
-  }
-
-  .h2 {
-    color: #23559b;
-    font-size: 50px;
-    line-height: 1.2;
-    margin: 10px 0 0 0;
-    margin-top: -1px;
-    animation: slideInRight 1.5s ease forwards;
-  }
-
-  @keyframes slideInLeft {
-    from {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-
-  @keyframes slideInRight {
-    from {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  .logo {
+    width: 13%;
+    height: auto;
+    margin-top: -5%;
   }
 }
 
-/*HUVUDRUBRIKEN /HEM*/
-
+/* För medelstora skärmar (max-width: 991px) */
 @media (max-width: 991px) {
   .heroSection {
-    height: 20vh;
-    margin-bottom: 60px;
+    height: 60vh;
+    width: 100vw; /* Full bredd */
+    margin: 0;
+    padding: 0;
   }
 
   .backgroundImage {
-    display: none;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
   }
 
   .logo {
-    width: 120px;
-  }
-
-  .divh1 {
-    font-size: 2rem;
-    line-height: 2.5rem;
-  }
-
-  .h2 {
-    font-size: 2rem;
-    margin-top: -25px;
-    line-height: 2.5rem;
-    margin-left: 80px;
+    width: 140px;
+    height: auto;
   }
 }
 
+/* För små skärmar (max-width: 768px) */
 @media (max-width: 768px) {
   .heroSection {
     height: auto;
-    padding: 20px;
-    margin-bottom: 60px;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
   }
 
   .backgroundImage {
-    display: none;
+    width: 100%;
+    height: auto; /* Automatisk höjd för att behålla proportioner */
+    background-size: cover;
+    background-position: center;
   }
 
   .logo {
     width: 100px;
+    height: auto;
+  }
+}
+
+/* För extra små skärmar (max-width: 480px) */
+@media (max-width: 480px) {
+  .heroSection {
+    height: auto;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
   }
 
-  .divh1 {
-    font-size: 1.8rem;
-    line-height: 2.2rem;
+  .backgroundImage {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
   }
 
-  .h2 {
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    margin-top: -20px;
-    margin-left: 55px;
+  .logo {
+    width: 80px;
+    height: auto;
   }
 }
