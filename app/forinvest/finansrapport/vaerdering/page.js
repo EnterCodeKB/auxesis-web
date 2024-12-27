@@ -10,7 +10,9 @@ export default function Vaerdering() {
   return (
     <>
       <section className={styles.vaerdering}>
-        <h2 className={styles.h2divdark}>Värderingsrapport 2024-02-13</h2>
+        <h2 className={styles.h2divdark}>
+          Värderingsrapport <br /> 2024-02-13
+        </h2>
         <a
           href="/Finance/Värdering 2024.pdf"
           target="_blank"

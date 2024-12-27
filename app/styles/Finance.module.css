@@ -2,15 +2,19 @@
 
 .container {
   max-width: 1200px;
-  margin: 50px auto;
+  margin: 40px auto;
   padding: 20px;
   text-align: center;
 }
 
 .heading {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 40px;
   color: #23559b;
+  text-align: center;
+}
+.redovptext {
+  text-align: center;
 }
 
 .grid {
@@ -77,6 +81,10 @@
 .button:hover {
   background-color: #1a4178;
 }
+.h2divdark {
+  width: 100%;
+  text-align: center;
+}
 
 /* Responsiv design */
 
@@ -85,7 +93,13 @@
   .grid {
     grid-template-columns: 1fr; /* Endast en kolumn på små skärmar */
   }
-
+  .redovptext {
+    text-align: center;
+  }
+  .h2divdark {
+    width: 100%;
+    text-align: center;
+  }
   .card {
     height: auto; /* Tillåt flexibel höjd för små skärmar */
   }
@@ -99,13 +113,20 @@
       1fr
     ); /* Två kolumner på mellanstora skärmar */
   }
+  .redovptext {
+    text-align: center;
+  }
+  .h2divdark {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /* För stora skärmar (min-width: 1024px) */
 @media (min-width: 1024px) {
   .container {
     max-width: 900px; /* Större maximalbredde */
-    margin-top: 260px;
+    margin-top: 40px;
   }
   .grid {
     grid-template-columns: repeat(3, 1fr); /* Tre kolumner på stora skärmar */
@@ -113,6 +134,9 @@
 
   .card {
     height: 400px; /* Enhetlig höjd */
+  }
+  .redovptext {
+    text-align: center;
   }
 }
 
@@ -129,15 +153,16 @@
   margin-bottom: 16%;
 }
 .redovdiv {
-  margin-top: 160px;
+  margin-top: 40px;
   margin-bottom: 6%;
   width: 100%;
+  text-align: center;
 }
 
 .frapportsection {
   max-width: 80%; /* Limit the maximum width */
   margin: 0 auto; /* Center the content */
-  margin-top: 10%;
+  margin-top: 4%;
   margin-left: 10%;
   margin-bottom: 6%;
 }
@@ -150,19 +175,18 @@
   line-height: 1.6;
   color: #333;
   display: flex;
-  text-align: left;
+  text-align: center;
   align-items: flex-start;
   margin-left: 3%;
 }
 .redovptext {
-  font-size: 20px; /* Use rem for responsiveness */
-  line-height: 1.2; /* Improve readability */
+  width: 100%;
+  font-size: 1.2rem; /* Use rem for responsiveness */
+  line-height: 1.6; /* Improve readability */
   margin-bottom: 1rem;
-  color: #555;
-  display: flex;
+  color: #333;
   text-align: center;
   align-items: center;
-  margin-left: 15%;
 }
 
 .imgdiv1 {
@@ -241,7 +265,8 @@
 
 .h2divdark {
   color: #1c1e53;
-  margin-left: 10%;
+  text-align: center;
+  width: 100%;
 }
 
 .ptextunder {
@@ -353,7 +378,7 @@
   font-weight: bold;
   transition: background-color 0.3s ease;
   margin-top: 2%;
-  margin-left: 45%;
+  align-items: center;
 }
 
 .downloadButton:hover {
@@ -540,6 +565,9 @@
     text-align: center; /* Centrera rubriken */
     margin-left: 15%;
   }
+  .redovptext {
+    text-align: center;
+  }
 
   .imgdiv1 {
     display: flex;
@@ -585,7 +613,8 @@
 
 @media (max-width: 991px) {
   .redovdiv {
-    margin-top: 160px;
+    margin-top: 40px;
+    text-align: center;
     margin-bottom: 6%;
   }
   .kallelse,
@@ -602,8 +631,7 @@
     margin-bottom: 6%;
   }
   .h2divdark {
-    margin-left: 55%;
-    width: 10%;
+    width: 100%;
     text-align: center;
   }
   .h1 {
@@ -679,6 +707,9 @@
     margin: 0 0 30px 0; /* Lägg till utrymme under */
     margin-left: 6%;
   }
+  .redovptext {
+    text-align: center;
+  }
 
   .div73 {
     width: 90%;
@@ -713,7 +744,8 @@
     margin-bottom: 2%;
   }
   .h2divdark {
-    margin-top: -20%;
+    margin-top: 4%;
+    text-align: center;
   }
 
   .column {
@@ -754,9 +786,10 @@
   }
 
   .redovdiv {
-    margin-top: 260px;
+    margin-top: 40px;
     margin-bottom: 6%;
     width: 100%;
+    text-align: center;
   }
   .h1 {
     font-size: 3.5rem; /* Öka rubrikstorleken */
