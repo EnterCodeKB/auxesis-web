@@ -78,7 +78,7 @@ export default function Historik() {
           <div className={styles.handsdiv}>
             <img
               className={styles.hands}
-              src="/produkter/hand.png"
+              src="/produkter/hands1.png"
               alt="Händerna "
             />
           </div>

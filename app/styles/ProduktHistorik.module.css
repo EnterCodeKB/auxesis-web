@@ -35,7 +35,6 @@
 
 .handsdiv {
   flex: 1;
-  display: flex;
   justify-content: center;
 }
 
@@ -103,14 +102,14 @@
 
   .servettext,
   .handsdiv {
-    width: 100%;
+    width: 50%;
   }
 }
 
 /* Medium screens (max-width: 991px) */
 @media (max-width: 991px) {
   .produktinfo {
-    flex-direction: row;
+    flex-direction: column;
     gap: 20px;
   }
 
@@ -119,7 +118,7 @@
   }
 
   .handsdiv {
-    justify-content: flex-end;
+    width: 50%;
   }
 }
 
