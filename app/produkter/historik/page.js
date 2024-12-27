@@ -53,11 +53,11 @@ export default function Historik() {
           </div>
         </div>
 
-        <div className={styles.produktinfo}>
-          <div>
-            <h2 className={styles.h2}>
-              Auxesis stabiliserar ASA i flytande form
-            </h2>
+        <div className={styles.produktinfo1}>
+          <h2 className={styles.h2}>
+            Auxesis stabiliserar ASA i flytande form
+          </h2>
+          <div className={styles.divasa}>
             <p className={styles.ptext}>
               Acetylsalicylsyra (ASA) är en av de mest välkända substanserna för
               smärtlindring och har använts i läkemedel sedan slutet av
@@ -74,13 +74,14 @@ export default function Historik() {
               till dess att kroppen har läkt sig själv. Studier visar att
               substansen stannar på huden och inte går ut i blodomloppet.
             </p>
-          </div>
-          <div className={styles.handsdiv}>
-            <img
-              className={styles.hands}
-              src="/produkter/hands1.png"
-              alt="Händerna "
-            />
+
+            <div className={styles.handsdiv}>
+              <img
+                className={styles.hands}
+                src="/produkter/hands1.png"
+                alt="Händerna "
+              />
+            </div>
           </div>
         </div>
 
