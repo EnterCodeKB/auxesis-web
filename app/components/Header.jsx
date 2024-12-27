@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { FaBars } from "react-icons/fa";
 import styles from "../styles/Header.module.css";
 
@@ -25,12 +26,34 @@ export default function Header() {
     setIsMenuOpen(false);
     setActiveDropdown(null);
   };
+  const MyImage = ({ src, alt, width, height, className }) => (
+    <Image
+      src={src}
+      alt={alt || "Default description"}
+      width={width || 100}
+      height={height || 100}
+      className={className || ""}
+      onError={(e) => {
+        e.target.src = "/produkter/fallback-image.png"; // En fallback-bild
+      }}
+    />
+  );
 
   return (
     <header className={styles.header}>
+      {/* Logotyp */}
+      <Link href="/" className={styles.logo}>
+        <MyImage
+          src="/Finance/278149D3-C96F-4CEE-BC16-3D7AB9E4DABE.png"
+          alt="Logo"
+          width={70}
+          height={70}
+          className={styles.logo}
+        />
+      </Link>
       {/* Hamburger Button */}
       <button className={styles.hamburgerBtn} onClick={toggleMenu}>
-        <FaBars size={30} className={styles.hamburgerIcon} />
+        <FaBars size={40} className={styles.hamburgerIcon} />
       </button>
 
       {/* Sliding Menu */}

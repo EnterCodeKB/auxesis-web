@@ -4,16 +4,6 @@ import Image from "next/image";
 import styles from "../styles/heroPr.module.css";
 import AnimatedText2 from "../components/AnimatedText2";
 
-const MyImage = ({ src, alt, width, height, className }) => (
-  <Image
-    src={src}
-    alt={alt}
-    width={width}
-    height={height}
-    className={className}
-  />
-);
-
 export default function HeroPr() {
   return (
     <div className={styles.heroSection}>
@@ -21,11 +11,6 @@ export default function HeroPr() {
         <div className={styles.div14}>
           <div className={styles.column}>
             <div className={styles.div15}>
-              {/* Logo */}
-              <Link href="/">
-                <img src="/vitlogga.png" alt="Loggan" className={styles.logo} />
-              </Link>
-
               <div className={styles.div18}>
                 <AnimatedText2 />
               </div>

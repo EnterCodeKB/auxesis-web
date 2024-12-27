@@ -37,7 +37,7 @@ export default function HeroSection() {
         <div className={styles.div14}>
           <div className={styles.column}>
             <div className={styles.div15}>
-              <Link href="/">
+              {/* <Link href="/">
                 <MyImage
                   src="/Finance/278149D3-C96F-4CEE-BC16-3D7AB9E4DABE.png"
                   alt="Logo"
@@ -45,7 +45,7 @@ export default function HeroSection() {
                   height={80}
                   className={styles.logo}
                 />
-              </Link>
+              </Link>*/}
 
               <div className={styles.div18}>
                 <AnimatedText />

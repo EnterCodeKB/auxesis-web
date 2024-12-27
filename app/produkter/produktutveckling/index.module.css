@@ -4,9 +4,8 @@
   justify-content: space-between;
   align-items: center;
   gap: 20px; /* Mellanrum mellan text och bild */
-  margin: 100px 100px auto; /* Centrerar sektionen på sidan */
+  margin: 40px 40px auto; /* Centrerar sektionen på sidan */
   max-width: 1200px; /* Maxbredd för stora skärmar */
-  padding: 20px;
 }
 
 .textcontainer {
@@ -86,6 +85,7 @@
   .sectionU {
     flex-direction: row; /* Text och bild sida vid sida */
     margin-bottom: 60px;
+    margin-top: 80px;
   }
 
   .textcontainer h2 {

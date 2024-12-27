@@ -1,5 +1,6 @@
 .latestNewsSection {
   text-align: center;
+  margin-top: 20px;
 }
 
 .whiteboard {
@@ -97,6 +98,12 @@
 .nwesblockreadmore:hover {
   background-color: #0056b3;
 }
+/* Anpassning för iPad Air (820px bred) */
+@media (min-width: 768px) and (max-width: 834px) {
+  .latestNewsSection {
+    margin-top: 20px; /* Justera efter behov */
+  }
+}
 
 /* För små skärmar (max-width: 480px) */
 @media (max-width: 480px) {
@@ -154,20 +161,22 @@
 }
 
 /* För mellanstora skärmar (max-width: 768px) */
-@media (max-width: 768px) {
+@media (max-width: 480px) and (max-width: 768px) {
   .latestNewsSection {
     padding: 15px;
-    margin-top: 30px;
+    margin-top: 40px;
   }
 
   .whiteboard {
     padding: 15px;
     margin-top: 40px;
     margin-bottom: 40px;
+    margin-top: 40px;
   }
 
   .title {
     font-size: 1.8rem;
+    margin-top: 40px;
   }
 
   .newsContainer {
@@ -211,12 +220,12 @@
 @media (max-width: 991px) {
   .latestNewsSection {
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   .whiteboard {
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   .title {
