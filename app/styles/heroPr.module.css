@@ -86,7 +86,7 @@
   .heroSection {
     flex-direction: column;
     margin-top: 20px;
-    padding: 10px;
+    width: 100%;
   }
 
   .div13 {
@@ -94,6 +94,7 @@
     background-size: cover;
     background-position: center;
     height: 300px; /* Justera höjden */
+    width: 100%;
   }
 
   .div18 {
@@ -118,7 +119,7 @@
 @media (max-width: 768px) {
   .heroSection {
     flex-direction: column;
-    padding: 20px;
+    width: 100%;
   }
 
   .div13 {
@@ -126,11 +127,7 @@
     background-size: cover;
     background-position: center;
     height: 350px; /* Anpassa höjden */
-  }
-
-  .logo {
-    width: 100px;
-    margin: 0 auto; /* Centrerar logotypen */
+    width: 100%;
   }
 
   .div18 {
@@ -155,7 +152,6 @@
 @media (max-width: 991px) {
   .heroSection {
     height: auto;
-    padding: 20px;
   }
 
   .div13 {
@@ -163,6 +159,7 @@
     background-size: cover;
     background-position: center;
     height: 400px; /* Normal höjd */
+    width: 100%;
   }
 
   .div18 {
@@ -194,6 +191,7 @@
     background-size: cover;
     background-position: center;
     height: 500px;
+    width: 100%;
   }
 
   .div18 {
