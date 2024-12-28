@@ -3,6 +3,7 @@
   max-width: 1200px;
   margin: 40px auto;
   padding: 20px;
+  margin-top: -20px;
 }
 
 /* Första sektionen */
@@ -70,6 +71,7 @@
 @media (max-width: 991px) {
   .section {
     padding: 20px;
+    margin-top: -40px;
   }
 
   .divh1,
@@ -86,7 +88,7 @@
 /* För stora skärmar (min-width: 1200px) */
 @media (min-width: 1200px) {
   .section {
-    margin-top: 40px;
+    margin-top: -40px;
     margin-bottom: 60px;
   }
   .h1 {

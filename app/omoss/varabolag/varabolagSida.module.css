@@ -1,12 +1,15 @@
 /* Wrapper Section */
 .varabolag {
-  margin: 20px auto; /* Increased margin-top */
+  margin: 0 auto;
   max-width: 1200px;
-  padding: 20px;
-  margin-bottom: 60px;
+  width: 100%; /* Lägg till en bredd */
+  margin-top: -60px; /* Justera margin-top */
 }
-
-/* Main Heading */
+.h1,
+.divh2 {
+  margin: 0 auto; /* Centrerar rubriker */
+  text-align: center; /* Säkerställ att texten är centrerad */
+}
 .h1 {
   font-size: 3rem;
   text-align: center;
@@ -118,7 +121,6 @@
 @media (min-width: 1024px) {
   .h1 {
     font-size: 3rem;
-    margin-top: 40px;
   }
 
   .divh2 {

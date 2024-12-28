@@ -1,11 +1,12 @@
 .vaerdering {
   max-width: 800px;
-  margin: 260px auto; /* 260px från toppen och centrerad horisontellt */
-  padding: 20px;
+  margin: 0px auto; /* 260px från toppen och centrerad horisontellt */
+  margin-top: -40px;
   text-align: center;
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   border-radius: 12px;
+  padding: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -47,8 +48,7 @@
 @media (max-width: 480px) {
   .vaerdering {
     max-width: 90%;
-    padding: 15px;
-    margin: 150px auto; /* Justerad toppmarginal för små skärmar */
+    margin: 0px auto; /* Justerad toppmarginal för små skärmar */
   }
 
   .h2divdark {
@@ -66,8 +66,7 @@
 @media (min-width: 768px) {
   .vaerdering {
     max-width: 700px;
-    padding: 20px;
-    margin: 200px auto; /* Justerad toppmarginal för medelstora skärmar */
+    margin: 0px auto; /* Justerad toppmarginal för medelstora skärmar */
   }
 
   .h2divdark {
@@ -85,8 +84,9 @@
 @media (min-width: 1024px) {
   .vaerdering {
     max-width: 800px;
-    padding: 25px;
-    margin: 260px auto; /* 260px från toppen för stora skärmar */
+    margin-top: -40px;
+
+    margin: 0px auto; /* 260px från toppen för stora skärmar */
   }
 
   .h2divdark {

@@ -1,6 +1,6 @@
 .latestNewsSection {
   text-align: center;
-  margin-top: 20px;
+  margin-top: -40px; /* Justera margin-top */
 }
 
 .whiteboard {
@@ -220,7 +220,7 @@
 @media (max-width: 991px) {
   .latestNewsSection {
     padding: 20px;
-    margin-top: 20px;
+    margin-top: -60px; /* Justera margin-top */
   }
 
   .whiteboard {
@@ -272,7 +272,7 @@
 /* För extra stora skärmar (min-width: 1200px) */
 @media (min-width: 1200px) {
   .latestNewsSection {
-    margin-top: 20px;
+    margin-top: -60px; /* Justera margin-top */
   }
 
   .whiteboard {

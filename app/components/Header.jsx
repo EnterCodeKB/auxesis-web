@@ -51,6 +51,10 @@ export default function Header() {
           className={styles.logo}
         />
       </Link>
+      <div className={styles.headersh1div}>
+        {" "}
+        <h2 className={styles.headersh1}>AUXESIS PHARMA HOLDING AB(publ)</h2>
+      </div>
       {/* Hamburger Button */}
       <button className={styles.hamburgerBtn} onClick={toggleMenu}>
         <FaBars size={40} className={styles.hamburgerIcon} />

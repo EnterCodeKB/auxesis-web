@@ -3,6 +3,7 @@
   margin: 150px auto 50px auto;
   padding: 20px;
   font-family: Arial, sans-serif;
+  margin-top: -20px;
 }
 
 .title {
@@ -127,12 +128,17 @@
     font-size: 1.4rem;
   }
 }
+@media (max-width: 1024px) {
+  .container {
+    margin-top: -20px;
+  }
+}
 
 /* För stora skärmar (min-width: 1024px) */
 @media (min-width: 1024px) {
   .container {
     max-width: 1200px;
-    margin-top: 40px;
+    margin-top: -40px;
   }
 
   .title {

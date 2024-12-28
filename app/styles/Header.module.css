@@ -13,6 +13,25 @@
   z-index: 1000;
 }
 
+.headersh1div {
+  margin-right: 550px;
+  margin-top: 30px;
+}
+.headersh1div {
+  margin-right: 550px;
+  margin-top: 30px;
+}
+
+.headersh1 {
+  font-size: 1.8rem;
+  color: #092650;
+}
+
+.header h2 {
+  font-size: 1.8rem;
+  color: #092650;
+}
+
 /* Logotyp */
 .logo {
   display: flex;
@@ -126,7 +145,9 @@
     height: 80px;
     padding: 0 10px;
   }
-
+  .headersh1div {
+    display: none; /* Dölj div för små skärmar */
+  }
   .logo img {
     width: 60px; /* Mindre logotypstorlek för mobiler */
   }
@@ -140,14 +161,36 @@
     width: 80%;
   }
 }
-
+@media (max-width: 768px) {
+  .headersh1div {
+    display: none; /* Dölj även här */
+  }
+}
+@media (max-width: 1024px) {
+  .headersh1div {
+    display: none; /* Dölj även här */
+  }
+}
 /* För stora skärmar (min-width: 1024px) */
 @media (min-width: 1024px) {
-  .header {
-    padding: 0 40px;
+  .headersh1div {
+    display: block; /* Säkerställ att div syns */
+    margin-right: 450px;
+    margin-top: 30px;
+  }
+
+  .headersh1 {
+    font-size: 2rem; /* Justera storlek för större skärmar */
   }
 
   .logo img {
     width: 80px; /* Större logotypstorlek för desktops */
+  }
+}
+@media (min-width: 1440px) {
+  .headersh1div {
+    display: block; /* Säkerställ att div syns */
+    margin-right: 950px;
+    margin-top: 30px;
   }
 }

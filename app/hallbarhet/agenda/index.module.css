@@ -4,6 +4,7 @@
   margin: 40px auto; /* Centrerar sektionen med marginal från toppen */
   padding: 20px;
   text-align: center;
+  margin-top: -40px;
 }
 
 /* Rubrik */
@@ -60,6 +61,7 @@
   .agenda {
     padding: 40px;
     margin: 40px auto;
+    margin-top: -60px;
   }
 
   .agenda h1 {
@@ -88,6 +90,7 @@
   .agenda {
     padding: 20px;
     margin: 40px auto;
+    margin-top: -40px;
   }
 
   .agenda h1 {

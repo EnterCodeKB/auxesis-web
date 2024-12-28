@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 40px;
+  margin-top: -40px;
   padding: 20px;
   text-align: center;
 }
@@ -87,7 +87,7 @@
 /* Large Screens (min-width: 1200px) */
 @media (min-width: 1200px) {
   .huvuddiv {
-    margin-top: 40px;
+    margin-top: -40px;
   }
   .media {
     gap: 40px;
@@ -109,6 +109,9 @@
 
 /* Medium Screens (max-width: 991px) */
 @media (max-width: 991px) {
+  .huvuddiv {
+    margin-top: -40px;
+  }
   .huvuddiv h1 {
     font-size: 2rem;
   }

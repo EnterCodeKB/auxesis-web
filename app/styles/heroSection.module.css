@@ -15,7 +15,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 80%;
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -33,7 +33,7 @@
 /* För stora skärmar (min-width: 1200px) */
 @media (min-width: 1200px) {
   .heroSection {
-    height: 80vh;
+    height: 60vh;
   }
 
   .backgroundImage {
@@ -48,7 +48,7 @@
 /* För medelstora skärmar (max-width: 991px) */
 @media (max-width: 991px) {
   .heroSection {
-    height: 60vh;
+    height: 40vh;
   }
 
   .backgroundImage {
@@ -63,13 +63,14 @@
 /* För små skärmar (max-width: 768px) */
 @media (max-width: 768px) {
   .heroSection {
-    height: auto;
+    height: 30vh;
   }
 
   .backgroundImage {
     background-image: url("/images/small-bg.jpg"); /* Mindre bild för snabbare laddning */
     background-size: cover;
     background-position: center;
+    width: 100%;
   }
 
   .logo {
@@ -80,7 +81,7 @@
 /* För extra små skärmar (max-width: 480px) */
 @media (max-width: 480px) {
   .heroSection {
-    height: auto;
+    height: 20vh;
   }
 
   .backgroundImage {

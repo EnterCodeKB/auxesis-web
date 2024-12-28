@@ -3,6 +3,7 @@
   margin: 40px auto; /* Centrerar sektionen och ger marginal ovan */
   padding: 20px; /* Padding runt innehållet */
   text-align: center; /* Centrera texten */
+  margin-top: -40px;
 }
 
 .halbara h1 {
@@ -35,6 +36,7 @@
   .halbara {
     max-width: 1400px; /* Större bredd för stora skärmar */
     padding: 40px;
+    margin-top: -60px;
   }
 
   .halbara h1 {
@@ -59,6 +61,7 @@
   .halbara {
     padding: 10px;
     margin: 100px auto;
+    margin-top: -40px;
   }
 
   .halbara h1 {

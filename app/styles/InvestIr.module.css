@@ -9,6 +9,7 @@
   margin-top: 40px;
   margin-bottom: 10%;
   gap: 20px; /* Add spacing between elements */
+  margin-top: -20px;
 }
 
 .irptext {
@@ -102,7 +103,7 @@
   .ir-container {
     flex-direction: column; /* Stack elements vertically */
     align-items: center;
-    margin-top: 20%;
+    margin-top: -20px;
     margin-bottom: 6%;
     margin-left: 10%;
   }
@@ -194,6 +195,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px;
+    margin-top: -40px;
   }
 
   .h2vision {

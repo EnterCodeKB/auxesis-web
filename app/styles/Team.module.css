@@ -2,7 +2,7 @@
 .container {
   max-width: 1200px;
   margin: 60px auto;
-  padding: 20px;
+  margin-top: -40px; /* Justera margin-top */
 }
 
 /* Rubriker */
@@ -111,7 +111,11 @@
     padding: 30px;
   }
 }
-
+@media (max-width: 1024px) {
+  .container {
+    margin-top: -20px; /* Justera margin-top */
+  }
+}
 /* För stora skärmar (min-width: 1024px) */
 @media (min-width: 1024px) {
   .grid {
@@ -132,8 +136,7 @@
 
   .container {
     max-width: 1400px; /* Öka bredden på behållaren */
-    padding: 40px;
-    margin-top: 40px;
+    margin-top: -40px; /* Justera margin-top */
   }
 
   .heading {
@@ -150,6 +153,6 @@
 
   .description {
     font-size: 1rem;
-    line-height: 1.8;
+    line-height: 1.6;
   }
 }

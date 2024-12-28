@@ -25,6 +25,7 @@
   margin: 40px auto 50px;
   padding: 20px;
   font-family: Arial, sans-serif;
+  margin-top: -20px;
 }
 
 .h1vision {
@@ -107,6 +108,9 @@
   .ptext {
     font-size: 1rem;
   }
+  .vision {
+    margin-top: -20px;
+  }
 }
 
 /* Responsiv design */
@@ -143,13 +147,14 @@
 
   .vision {
     margin: 30px auto 40px; /* Anpassa topp- och bottenspace */
+    margin-top: -20px;
   }
 }
 
 /* Stora skärmar (min-width: 1024px) */
 @media (min-width: 1024px) {
   .vision {
-    margin-top: 40px;
+    margin-top: -40px;
   }
 
   .h1vision {
