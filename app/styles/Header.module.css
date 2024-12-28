@@ -8,7 +8,7 @@
   justify-content: space-between; /* Sprid innehållet mellan logotyp och menyer */
   align-items: center;
   padding: 0 20px;
-  background-color: #ffffff;
+  background-color: #e1eff4;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
