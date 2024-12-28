@@ -69,7 +69,10 @@
     align-items: center;
   }
 
-  .videoContainer,
+  .videoContainer {
+    display: none; /* Dölj videon på små skärmar */
+  }
+
   .textContainer {
     max-width: 100%;
   }

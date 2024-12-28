@@ -30,6 +30,8 @@ export default function Footer() {
             +46 (0)8-771 43 00 <br />
             auxesis@auxesispharma.com
           </h4>
+          <img src="./footer/QR.png" width={80} alt="" />
+          &nbsp;&nbsp;&nbsp;&nbsp;
           <Link href="https://www.linkedin.com/in/auxesis-pharma-holding-ab-publ-2b354a224">
             <img
               className={styles.imglinkedin}
