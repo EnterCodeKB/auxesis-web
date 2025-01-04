@@ -1,14 +1,14 @@
 /* Container */
 .container {
   max-width: 1200px;
-  margin: 60px auto;
-  margin-top: -40px; /* Justera margin-top */
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /* Rubriker */
 .heading {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
   color: #23559b;
 }
@@ -53,9 +53,10 @@
 /* Bild */
 .image {
   border-radius: 50%;
-  margin-bottom: 15px;
-  width: 100px;
-  height: auto;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 0 auto 15px;
 }
 
 /* Text */
@@ -79,80 +80,68 @@
 
 /* Responsiva regler */
 
-/* För små skärmar (max-width: 480px) */
+/* Små skärmar (max-width: 480px) */
 @media (max-width: 480px) {
   .grid {
     grid-template-columns: 1fr;
-  }
-
-  .description {
-    max-height: 200px;
-    overflow-y: auto;
   }
 
   .image {
     width: 80px;
     height: 80px;
   }
+
+  .description {
+    max-height: 150px;
+    overflow-y: auto;
+  }
 }
 
-/* För medelstora skärmar (min-width: 768px) */
+/* Medelstora skärmar (min-width: 768px) */
 @media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .image {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Stora skärmar (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
   .image {
     width: 150px;
     height: 150px;
   }
+}
 
-  .infografik {
-    width: 80%;
+/* Extra stora skärmar (min-width: 1440px) */
+@media (min-width: 1440px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .image {
+    width: 200px;
+    height: 200px;
   }
 
   .card {
     padding: 30px;
   }
-}
-@media (max-width: 1024px) {
-  .container {
-    margin-top: -20px; /* Justera margin-top */
-  }
-}
-/* För stora skärmar (min-width: 1024px) */
-@media (min-width: 1024px) {
-  .grid {
-    grid-template-columns: repeat(4, 1fr); /* Fyra kolumner på större skärmar */
-    gap: 40px; /* Öka mellanrum mellan korten */
-  }
-
-  .infografik {
-    width: 60%; /* Gör infografik-bilden mindre för bättre layout */
-  }
-  /* Bild */
-  .image {
-    border-radius: 50%;
-    margin-bottom: 15px;
-    width: 27vh;
-    height: 200px;
-  }
-
-  .container {
-    max-width: 1400px; /* Öka bredden på behållaren */
-    margin-top: -40px; /* Justera margin-top */
-  }
 
   .heading {
-    font-size: 2.5rem; /* Större rubrik för stora skärmar */
-  }
-
-  .subheading {
-    font-size: 1.5rem;
-  }
-
-  .card {
-    padding: 40px;
+    font-size: 3rem;
   }
 
   .description {
     font-size: 1rem;
-    line-height: 1.6;
   }
 }
