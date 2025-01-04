@@ -75,12 +75,7 @@ export default function CookiePolicy() {
         AUXESIS PHARMA HOLDING AB
         <br />
         E-post:{" "}
-        <a
-          href="mailto:auxesis@auxesispharma.com
-"
-        >
-          auxesis@auxesispharma.com
-        </a>
+        <a href="mailto:auxesis@auxesispharma.com">auxesis@auxesispharma.com</a>
         <br />
         Telefon: 08-771 43 00
       </p>

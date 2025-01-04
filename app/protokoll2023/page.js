@@ -9,7 +9,7 @@ export default function Protokol() {
   return (
     <>
       <section className={styles.protokolSection}>
-        <h2>Protokoll från Årsstämman 2023</h2>
+        <h2>Protokoll från årsstämman 2023</h2>
         <p>
           Du kan ladda ner protokollet som en PDF-fil genom att klicka på
           knappen nedan.

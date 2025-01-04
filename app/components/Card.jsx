@@ -38,7 +38,7 @@ const cardData = [
   {
     title: "Boskap",
     description:
-      "Boskapet kan uppleva smärta från insektsbett eller utslag som kan orsaka klåda, svullnad och obehag. Dessa djur visar ofta sin smärta genom att vifta med svansen, gnida sig mot ytor eller försöka nå det drabbade området med sina ben. Eftersom de inte kan uttrycka smärta på samma sätt som människor, kan det vara svårt att bedöma deras lidande.",
+      "Boskap kan uppleva smärta från insektsbett eller utslag som kan orsaka klåda, svullnad och obehag. Dessa djur visar ofta sin smärta genom att vifta med svansen, gnida sig mot ytor eller försöka nå det drabbade området med sina ben. Eftersom de inte kan uttrycka smärta på samma sätt som människor, kan det vara svårt att bedöma deras lidande.",
     image: "/horse.jpeg",
   },
 ];

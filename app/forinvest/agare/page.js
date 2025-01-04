@@ -22,6 +22,8 @@ export default function Aegare() {
 
           {/* Whiteboard 2 */}
           <div className={styles.whiteboard}>
+            <h2 className={styles.subtitle}>Övriga ägare</h2>
+
             <p className={styles.ptext}>
               Övriga ägare har sammantaget 35,6 procent och är i huvudsak
               privatpersoner och mindre företag.
@@ -30,6 +32,8 @@ export default function Aegare() {
 
           {/* Whiteboard 3 */}
           <div className={styles.whiteboard}>
+            <h2 className={styles.subtitle}>Aktieägare</h2>
+
             <p className={styles.ptext}>
               Auxesis har cirka 700 aktieägare.
               <br />
