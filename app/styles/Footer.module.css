@@ -1,52 +1,64 @@
+/* Huvudbehållare */
 .div201 {
-  width: 100%; /* Täcker hela skärmens bredd */
+  width: 100%;
   background-color: #23559b;
-  padding: 20px; /* Standard padding */
-  box-sizing: border-box;
-  color: white;
+  padding: 20px;
+  color: white; /* Gör all text vit */
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
-  flex-wrap: wrap; /* Tillåt innehåll att brytas */
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
-.footertext {
-  color: white;
-  font-size: 20px;
-  line-height: 1.3;
-  margin-bottom: 0.5rem;
-}
-
+/* Inre behållare */
 .div202 {
   display: flex;
-  width: 100%;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 auto;
+  width: 100%;
   max-width: 1200px;
-  flex-wrap: wrap; /* Tillåt radbrytning */
+  margin: 0 auto;
 }
 
+/* Kolumner */
 .column {
   flex: 1;
-  margin: 0 20px;
-  min-width: 200px; /* Förhindra att kolumner blir för smala */
+  min-width: 250px;
+  margin: 10px;
+  text-align: left;
+  color: white; /* Säkerställ att texten är vit */
+}
+
+/* Rubriker */
+.h4rubrik {
+  color: white; /* Vit text för rubriker */
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 .divh4 {
-  display: flex;
-  flex-direction: row;
-}
-.h4rubrik {
-  color: white;
+  font-size: 1.2rem;
+  color: white; /* Vit text för sekundära rubriker */
   margin-bottom: 10px;
-  font-size: 1.5rem;
 }
 
+/* Text */
+.footertext {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  color: white; /* Vit text för innehåll */
+}
+
+/* Ikoner */
 .icondivh4 {
-  font-size: 1.5rem; /* Justera storleken */
-  margin-top: 30px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: white; /* Gör även ikoner vita */
 }
 
+/* LinkedIn-logga */
 .imglinkedin {
   width: 50px;
   margin-top: 10px;
@@ -58,108 +70,109 @@
   transform: scale(1.1);
 }
 
+/* QR-kod */
+.qrImage {
+  margin-top: 10px;
+  width: 80px;
+  height: auto;
+}
+
 /* Responsiv design */
 
-/* För små skärmar (max-width: 480px) */
+/* Små skärmar (max-width: 480px) */
 @media (max-width: 480px) {
-  .div201 {
-    width: 100%; /* Säkerställ full bredd */
-    overflow: hidden; /* Förhindra horisontell scroll */
-    flex-direction: column; /* Stapla innehåll vertikalt */
-    align-items: center;
-    padding: 15px 10px;
-  }
-
   .div202 {
     flex-direction: column;
     align-items: center;
-    gap: 10px;
   }
 
   .column {
-    width: 100%; /* Kolumner tar full bredd */
-    margin: 10px 0; /* Lägg till avstånd mellan sektioner */
+    width: 100%;
     text-align: center;
   }
 
-  .footertext {
-    font-size: 16px;
-    line-height: 1.3;
-  }
-
+  .h4rubrik,
   .divh4 {
     font-size: 1.2rem;
   }
 
-  .imglinkedin {
+  .footertext {
+    font-size: 0.9rem;
+  }
+
+  .imglinkedin,
+  .qrImage {
     width: 40px;
-    margin-top: 5px;
   }
 }
 
-/* För mellanstora skärmar (min-width: 768px) */
+/* Medelstora skärmar (min-width: 768px) */
 @media (min-width: 768px) {
-  .div201 {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px 15px;
-  }
-
   .div202 {
     flex-direction: row;
-    justify-content: space-between;
-    max-width: 900px;
+    justify-content: space-around;
   }
 
   .column {
-    margin: 10px;
     width: calc(33.33% - 20px);
-    text-align: left;
   }
 
-  .footertext {
-    font-size: 18px;
-  }
-
+  .h4rubrik,
   .divh4 {
     font-size: 1.4rem;
   }
 
-  .imglinkedin {
-    width: 40px;
-    margin-top: 8px;
+  .footertext {
+    font-size: 1rem;
   }
 }
 
-/* För stora skärmar (min-width: 1024px) */
+/* Stora skärmar (min-width: 1024px) */
 @media (min-width: 1024px) {
-  .div201 {
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 20px;
-  }
-
   .div202 {
-    flex-direction: row;
     max-width: 1200px;
+    justify-content: space-between;
   }
 
   .column {
-    margin: 0 20px;
     width: calc(33.33% - 40px);
   }
 
-  .footertext {
-    font-size: 20px;
-    line-height: 1.5;
-  }
-
+  .h4rubrik,
   .divh4 {
     font-size: 1.5rem;
   }
 
-  .imglinkedin {
+  .footertext {
+    font-size: 1.1rem;
+  }
+
+  .imglinkedin,
+  .qrImage {
     width: 50px;
-    margin-top: 10px;
+  }
+}
+
+/* Extra stora skärmar (min-width: 1440px) */
+@media (min-width: 1440px) {
+  .div202 {
+    max-width: 1400px;
+  }
+
+  .column {
+    margin: 20px;
+  }
+
+  .h4rubrik {
+    font-size: 1.6rem;
+  }
+
+  .footertext {
+    font-size: 1.2rem;
+  }
+
+  .imglinkedin,
+  .qrImage {
+    width: 60px;
   }
 }
