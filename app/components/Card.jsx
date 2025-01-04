@@ -32,7 +32,7 @@ const cardData = [
   {
     title: "Små barn",
     description:
-      "Små barn kan uppleva irritation och smärta från olika tillstånd tex som barnsjukdomar eller bett, vilket kan vara obehagligt för dem. För att lindra dessa symtom behövs smärtstillande medel, men det finns för närvarande inga salvor som är helt säkra för barn.",
+      "Små barn kan uppleva irritation och smärta från olika tillstånd tex vid barnsjukdomar eller bett, vilket kan vara obehagligt för dem. För att lindra dessa symtom behövs smärtstillande medel, men det finns för närvarande inga salvor som är helt säkra för barn.",
     image: "/flicka.jpeg",
   },
   {
@@ -52,7 +52,7 @@ export default function CardGrid() {
       <p>
         {" "}
         Smärta kan yttra sig på olika sätt beroende på dess orsak och
-        intensitet. Den kan sträcka sig från mild obehag, såsom klåda eller
+        intensitet. Den kan sträcka sig från milt obehag, såsom klåda eller
         irritation orsakad av insektsbett, till mer intensiva känslor som
         brännande, stickande eller svullnad från giftiga stick eller skador. Hos
         människor kan smärta ofta beskrivas och behandlas effektivt, men hos

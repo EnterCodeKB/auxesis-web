@@ -70,9 +70,9 @@ export default function Vision() {
             ut i blodomloppet.
           </p>
           <p className={styles.ptext}>
-            Baserat på egna patenter är Auxesis först med att utveckla
-            innovativa och tillgängliga läkemedel som inte bara lindrar utan
-            snabbt tar bort smärta och irritation på huden.
+            Baserat på egna patent är Auxesis först med att utveckla innovativa
+            och tillgängliga läkemedel som inte bara lindrar utan snabbt tar
+            bort smärta och irritation på huden.
           </p>
         </div>
       </div>

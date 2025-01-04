@@ -25,7 +25,7 @@ export default function Aegare() {
             <h2 className={styles.subtitle}>Övriga ägare</h2>
 
             <p className={styles.ptext}>
-              Övriga ägare har sammantaget 35,6 procent och är i huvudsak
+              Övriga ägare har sammantaget 35,6 procent ägande och är i huvudsak
               privatpersoner och mindre företag.
             </p>
           </div>
