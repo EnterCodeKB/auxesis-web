@@ -3,6 +3,7 @@
 import Footer2 from "./components/underFooter";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop"; // Importera din komponent
 import "./globals.css";
 import Hero from "./components/heroSection";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -24,7 +25,7 @@ export default function RootLayout({ children }) {
     <html lang="sv">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Auxesis Pharma Holding AB(publ)</title>
+        <title>Auxesis Pharma Holding AB (publ)</title>
         <meta name="description" content="Your Website Description" />
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
         {!isLoginPage && <Footer />}
         {!isLoginPage && <Footer2 />}
         {!isLoginPage && <CookieBanner />}
+        <ScrollToTop /> {/* Lägg till ScrollToTop-komponenten */}
       </body>
     </html>
   );

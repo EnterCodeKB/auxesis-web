@@ -1,0 +1,48 @@
+.scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #c1eaff;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.scrollToTop:hover {
+  background-color: #194276;
+  transform: scale(1.1);
+}
+
+.scrollToTop:active {
+  transform: scale(0.9);
+}
+
+/* Responsivitet */
+@media (max-width: 480px) {
+  .scrollToTop {
+    font-size: 20px;
+    padding: 8px;
+  }
+}
+
+@media (min-width: 768px) {
+  .scrollToTop {
+    font-size: 24px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .scrollToTop {
+    font-size: 28px;
+    padding: 12px;
+  }
+}

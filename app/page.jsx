@@ -13,10 +13,6 @@ import AnimatedText from "./components/AnimatedText";
 export default function HomePage() {
   const router = useRouter();
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
     <>
       <LatestNews newsItems={newsItems} />
@@ -26,10 +22,6 @@ export default function HomePage() {
         </section>
         <Card />
         <Finance />
-      </div>
-
-      <div className={styles.scrollToTop} onClick={scrollToTop}>
-        ⬆️
       </div>
     </>
   );
