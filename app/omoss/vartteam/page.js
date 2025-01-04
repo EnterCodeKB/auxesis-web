@@ -117,7 +117,7 @@ export default function VartTeam() {
       {/* Infografik Bild */}
       <div className={styles.infografikContainer}>
         <Image
-          src="/team/infografik1.png"
+          src="/team/infografik2.png"
           alt="Infografik"
           width={800}
           height={400}
