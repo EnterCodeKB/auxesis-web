@@ -66,8 +66,9 @@ const teamMembers = [
   {
     name: "Peter Åberg",
     title:
-      "Affärsrådgivare, organisationsutvecklare inom medtech och läkemedel. Ingår i ASA.P läkemedelsutvecklings teamet.  ",
+      "Affärsrådgivare, organisationsutvecklare inom medtech och läkemedel. ",
     description:
+      "Peter ingår i ASA.P läkemedelsutvecklings teamet.<br /><br />" +
       "Peter Åberg har mer än tjugo års erfarenhet som organisationsutvecklare och ledare. Har utvecklat framgångsrika organisationer och innehaft positioner som VD, marknads- och hållbarhetsdirektör från start-up till börsbolag inom medicinteknik, farmakologi, tillverkningsindustrin och tjänsteföretag.  <br /><br />" +
       "Inom vården har Peter varit klinisk chef för läkare och administrativ personal. Har varit VD och hållbarhetsdirektör för ett rekryteringsföretag och utsågs två år i rad till Dagens Industris Supergasell som Sveriges snabbast växande företag i alla kategorier.<br /><br />  " +
       "Peter har en Med kand med toxikolog samt genomgått IFL på Handelshögskolans executive program samt Försvarsmaktens olika ledarprogram.  " +
@@ -76,17 +77,18 @@ const teamMembers = [
   },
   {
     name: "Susanna Liljedahl",
-    title:
-      "Civilingenjör, PM, anläggning. Ingår i ASA.P läkemedelsutvecklings teamet ",
+    title: "Civilingenjör och PM. ",
     description:
+      "Susanna ingår i ASA.P läkemedelsutvecklings teamet.<br /><br />" +
       "Över 10 års erfarenhet från AstraZenecas forskningsavdelning  <br /><br />" +
       "På Zelmic är hon specialiserad på topisk leverans av läkemedel med in-vitro modellering, formuleringsutveckling, hållbarhetsstudier, hudens penetrationsförmåga, valideringsstudier och paketering av läkemedelsdoser till kund med tillhörande etikettsregler ",
     image: "/team/Susanna Lilje.jpeg",
   },
   {
     name: "Agneta Larhed",
-    title: "Msci Pharm, PhD, ingår i ASA.P läkemedelsutvecklings teamet",
+    title: "MSci Pharm och PhD.",
     description:
+      "Agneta ingår i ASA.P läkemedelsutvecklings teamet.<br /><br />" +
       "Agneta har varit verksam som forskare och chef inom både akademisk och industriell läkemedelsinnovation och produktutveckling i mer än 10 år. <br /><br />" +
       "Hennes arbete fokuserade på läkemedelsabsorption, läkemedelsleverans och formuleringsutveckling, och täckte en rad formuleringar och doseringsformer som tabletter, geler och mikropartiklar. <br /><br />  " +
       "Dessutom har hon varit delaktig i utvecklingen av kurser och symposier och är idag styrelseledamot i den vetenskapliga sektionen Farmaceutik i Läkemedelsakademien.",
@@ -94,8 +96,9 @@ const teamMembers = [
   },
   {
     name: "Marie Gårdmark",
-    title: "Msci Pharm, PhD, ingår i ASA.P läkemedelsutvecklings teamet",
+    title: "MSci Pharm och PhD.",
     description:
+      "Marie ingår i ASA.P läkemedelsutvecklings teamet.<br /><br />" +
       "Dr Gårdmark har 10 års erfarenhet från ledande roller i små och stora läkemedelsföretag främst inom regulatorisk FoU, vilket exemplifieras av utveckling och implementering av globala regulatoriska strategier, due diligence-aktiviteter och vetenskapliga rådgivningsmöten i EU och USA. <br /><br />" +
       "Hennes huvudfokus har varit klinisk och preklinisk forskning med flera års erfarenhet från tidig läkemedelsutveckling.  Hennes vetenskapliga bakgrund är inom klinisk farmakologi och farmakometri.</<br /><br />  " +
       "Bakgrund inom Läkemedelsverket",
