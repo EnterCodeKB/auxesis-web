@@ -32,7 +32,7 @@ export default function Teamet() {
         "Styrelseordförande och affärsrådgivare, bolagsutveckling, PR och IR",
       description: `
       <p>Rune Nordström är arbetande styrelseordförande i Auxesis. Han är en driven entreprenör med lång erfarenhet från bolagsstyrning, ledning, marknadsföring, civilsamhället, politik och kommunikation. </p>
-      <p>Rune är medgrundare till Thinc som är en börsnoterad koncern på Spotlight stock market. Tidigare har han haft ledande befattningar som direktör på Svenska Kommunförbundet och Landstingsförbundet (nuvarande SKR) och som informationschef på den tidigare statliga myndigheten Arbetslivsinstitutet.</p>
+      <p>Tidigare har han haft ledande befattningar som direktör på Svenska Kommunförbundet och Landstingsförbundet (nuvarande SKR) och som informationschef på den tidigare statliga myndigheten Arbetslivsinstitutet.</p>
       `,
       imageUrl: "../team/Rune_web-e1688155760282.jpg",
     },
@@ -54,7 +54,7 @@ export default function Teamet() {
       <p>Helena Adelsten är en mångsidig och professionell med en akademisk bakgrund inom IT och ekonomi, expert inom logistik och systemutveckling.</p>
       <p>Som mjukvaruingenjör och webbutvecklare designar hon och utvecklar appar och programvaror. Det innebär att man skapar kod, testar den och implementerar den i olika system eller applikationer. </p>
       <p>Vidare arbetar hon med att lösa problem, förbättra prestanda och säkerställa att programvaran fungerar korrekt och effektivt, skapa helt nya produkter eller tjänster med nya metoder, och hon utvecklar nya algoritmer i avancerade tekniker samt förbättrar användarupplevelsen.</p>
-      <p>Helena är också grundare av EnterCode Sweden KB, som bedriver verksamhet inom webbutveckling, webbproduktion och webbprogrammering med fokus på kundanpassade tjänster samt erbjuder teknisk support.</p>
+      <p>Helena bedriver verksamhet inom webbutveckling, webbproduktion och webbprogrammering med fokus på kundanpassade tjänster samt erbjuder teknisk support.</p>
 
       `,
 
