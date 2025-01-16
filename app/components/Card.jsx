@@ -14,7 +14,7 @@ const cardData = [
   {
     title: "Brännmaneter",
     description:
-      "Brännmaneter kan orsaka intensiv smärta, som känns som brännande, stickande eller svidande. De frigör gift genom sina nässelceller, vilket kan leda till rodnad, svullnad och klåda på huden. Behandling inkluderar sköljning med havsvatten och eventuell medicinsk vård beroende på allvarlighetsgrad.",
+      "Brännmaneter kan orsaka intensiv smärta, som känns som brännande, stickande eller svidande. De frigör gift genom sina nässelceller, vilket kan leda till rodnad, svullnad och klåda på huden. Behandling inkluderar sköljning med havsvatten och eventuellt medicinsk vård beroende på allvarlighetsgrad.",
     image: "/maneter.jpeg",
   },
   {
@@ -26,7 +26,7 @@ const cardData = [
   {
     title: "Getingbett",
     description:
-      "Getingbett kan vara betydligt mer smärtsamma än myggbett. När en geting biter, injicerar den gift genom sin sting, vilket kan orsaka en kraftig smärta och en brännande känsla. Vanliga symtom är svullnad, rodnad och klåda. I vissa fall kan allergiska reaktioner uppstå.",
+      "Getingbett kan vara betydligt mer smärtsamma än myggbett. När en geting biter, injicerar den gift genom sin gadd, vilket kan orsaka en kraftig smärta och en brännande känsla.",
     image: "/C4587CDD-9AA9-4295-AF5F-2B26D7FB291D.jpeg",
   },
   {

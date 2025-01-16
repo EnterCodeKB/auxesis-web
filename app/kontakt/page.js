@@ -5,7 +5,7 @@ export default function Kontakt() {
     <>
       <div className={styles.kontaktsection}>
         <div className={styles.section1}>
-          <h1 className={styles.h1div}>Kontakta Oss</h1>
+          <h1 className={styles.h1div}>Kontakta oss</h1>
         </div>
         <div className={styles.kontakt}>
           <div className={styles.section2}>

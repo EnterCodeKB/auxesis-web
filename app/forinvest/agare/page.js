@@ -1,11 +1,14 @@
 "use client";
 
 import styles from "../../styles/InvestAgare.module.css";
+import BackArrow from "../../components/BackArrow";
 
 export default function Aegare() {
   return (
     <>
       <section className={styles.section}>
+        <BackArrow mainLink="/" label="Hem" />
+
         <h1 className={styles.title}>Solid ägarstruktur</h1>
 
         <div className={styles.aegareContainer}>

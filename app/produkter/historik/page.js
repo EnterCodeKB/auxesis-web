@@ -2,6 +2,7 @@
 import { useEffect, useRef } from "react";
 
 import styles from "../../styles/ProduktHistorik.module.css";
+import BackArrow from "../../components/BackArrow";
 
 export default function Historik() {
   const animatedBoxRef = useRef(null);
@@ -32,13 +33,12 @@ export default function Historik() {
       observer.disconnect();
     };
   }, []);
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
 
   return (
     <>
       <section className={styles.produkthistorik}>
+        <BackArrow mainLink="/" label="Hem" />
+
         <div className={styles.produktinfo}>
           <div className={styles.servettext}>
             <h1 className={styles.h1}>Banbrytande produkter </h1>
@@ -78,7 +78,7 @@ export default function Historik() {
             <div className={styles.handsdiv}>
               <img
                 className={styles.hands}
-                src="/produkter/hands1.png"
+                src="/produkter/hands12.png"
                 alt="Händerna "
               />
             </div>
@@ -158,9 +158,6 @@ export default function Historik() {
           />
         </div>
       </section>
-      <div className={styles.scrollToTop} onClick={scrollToTop}>
-        ⬆️
-      </div>
     </>
   );
 }

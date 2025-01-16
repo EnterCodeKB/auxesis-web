@@ -45,12 +45,14 @@
   list-style-type: disc;
   padding-left: 20px;
   color: #555;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
 .ulList li {
   margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .scrollToTop {
@@ -98,7 +100,8 @@
   }
 
   .ptext {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    line-height: 1.6;
   }
 
   .imgirritation {
@@ -106,7 +109,8 @@
   }
 
   .ulList {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    line-height: 1.8;
     padding-left: 15px;
   }
 }
@@ -125,7 +129,8 @@
   }
 
   .ptext {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    line-height: 1.6;
   }
 
   .imgirritation {
@@ -134,7 +139,8 @@
   }
 
   .ulList {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    line-height: 1;
     padding-left: 20px;
   }
 }

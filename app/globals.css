@@ -14,7 +14,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: #c9e7f1;
+  background-color: #eef5f8;
 }*/
 
 body {
@@ -22,7 +22,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: #e1eff4;
+  background-color: #eef5f8;
 }
 body,
 html {
@@ -37,7 +37,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  color: #23559b;
+  color: #133464;
 }
 
 /* Text */

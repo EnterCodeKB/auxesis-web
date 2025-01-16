@@ -1,9 +1,12 @@
 import React from "react";
 import styles from "../agenda/index.module.css";
+import BackArrow from "../../components/BackArrow";
 
 const Agenda = () => {
   return (
     <section className={styles.agenda}>
+      <BackArrow mainLink="/" label="Hem" />
+
       <h1>Ansvar och transparens är avgörande</h1>
 
       <div className={styles.section11}>

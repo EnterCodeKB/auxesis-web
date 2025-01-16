@@ -7,9 +7,7 @@ import Link from "next/link";
 const AuxesisMedia = () => {
   const router = useRouter();
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  
 
   return (
     <section className={styles.huvuddiv}>
@@ -190,9 +188,7 @@ const AuxesisMedia = () => {
           </div>
         </div>*/}
 
-          <div className={styles.scrollToTop} onClick={scrollToTop}>
-            ⬆️
-          </div>
+         
         </div>
       </section>
     </section>

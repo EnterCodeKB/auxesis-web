@@ -31,7 +31,7 @@ const financeData = [
 export default function Finance() {
   return (
     <div className={styles.container}>
-      <h1 className={styles.heading}>Finansiell information</h1>
+      <h1 className={styles.heading}>FINANSIELL INFORMATION</h1>
       <p>
         Här presenterar vi information för partners och investerare med nyheter
         och uppdateringar från Auxesis Pharma.

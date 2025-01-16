@@ -1,14 +1,13 @@
 "use client";
 import styles from "../../../styles/Finance.module.css";
+import BackArrow from "../../../components/BackArrow";
 
 export default function Protokol() {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
     <>
       <section className={styles.section}>
+        <BackArrow mainLink="/forinvest/finansrapport" label="Finansrapport" />
+
         <h2 className={styles.h2divdark}>Protokoll från årsstämman</h2>
         <p>
           Du kan ladda ner protokollet som en PDF-fil genom att klicka på
@@ -78,10 +77,6 @@ export default function Protokol() {
           Ladda ner här
         </a>
       </section>
-
-      <div className={styles.scrollToTop} onClick={scrollToTop}>
-        ⬆️
-      </div>
     </>
   );
 }

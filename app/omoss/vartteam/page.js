@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import styles from "../../styles/Team.module.css";
+import BackArrow from "../../components/BackArrow";
 
 const teamMembers = [
   {
@@ -109,6 +110,8 @@ const teamMembers = [
 export default function VartTeam() {
   return (
     <div className={styles.container}>
+      <BackArrow mainLink="/omoss" label="Om Oss" />
+
       <h1 className={styles.heading}>Kvalificerat team med bred expertis</h1>
       <p className={styles.subheading}>
         Auxesis har ett kvalificerat team med en bra sammansättning av

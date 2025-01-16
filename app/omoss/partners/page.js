@@ -2,12 +2,9 @@
 
 import styles from "./index.module.css";
 import Link from "next/link";
+import BackArrow from "../../components/BackArrow";
 
 export default function Partners() {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   const partnersData = [
     {
       name: "RAMBERG Advokater",
@@ -69,6 +66,8 @@ export default function Partners() {
 
   return (
     <section className={styles.partnersSection}>
+      <BackArrow mainLink="/omoss" label="Om Oss" />
+
       <h1 className={styles.title}>Välrenommerade partners</h1>
       <p className={styles.description}>
         Auxesis är i en uppstartfas där erfarna och specialiserade partners är
@@ -97,10 +96,6 @@ export default function Partners() {
             </div>
           </div>
         ))}
-      </div>
-
-      <div className={styles.scrollToTop} onClick={scrollToTop}>
-        ⬆️
       </div>
     </section>
   );

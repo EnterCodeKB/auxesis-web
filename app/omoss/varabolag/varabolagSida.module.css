@@ -21,18 +21,6 @@
   margin: 20px 0;
 }
 
-.bolag1,
-.bolag2,
-.bolag3 {
-  font-size: 1.8rem;
-  text-align: center;
-  color: #1c1e53;
-  margin: 40px 10px 0;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
 .bolag1.visible,
 .bolag2.visible,
 .bolag3.visible {
@@ -54,8 +42,6 @@
 }
 
 .divh2 {
-  font-size: 2rem;
-  color: #23559b;
 }
 
 .ptext {
@@ -68,7 +54,7 @@
 .bolagsbord {
   width: 50%; /* Bilden är hälften så stor */
   border-radius: 10px;
-  margin-top: -10px; /* Marginal över bilden */
+  margin-top: -160px; /* Marginal över bilden */
   margin-left: auto; /* Centrerar horisontellt */
   margin-right: auto; /* Centrerar horisontellt */
   display: block; /* Gör att centreringsreglerna fungerar på blocknivån */

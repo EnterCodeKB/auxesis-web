@@ -2,9 +2,7 @@
 import styles from "../protokoll2023/index.module.css";
 
 export default function Protokol() {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+ 
 
   return (
     <>
@@ -22,9 +20,7 @@ export default function Protokol() {
           Ladda ner PDF
         </a>
       </section>
-      <div className={styles.scrollToTop} onClick={scrollToTop}>
-        ⬆️
-      </div>
+     
     </>
   );
 }

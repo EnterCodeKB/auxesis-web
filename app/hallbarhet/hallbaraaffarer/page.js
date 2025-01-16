@@ -1,9 +1,12 @@
 import React from "react";
 import styles from "../hallbaraaffarer/index.module.css";
+import BackArrow from "../../components/BackArrow";
 
 const Miljo = () => {
   return (
     <section className={styles.halbara}>
+      <BackArrow mainLink="/" label="Hem" />
+
       <div className={styles.section31}>
         <h1>Goda affärer är hållbara</h1>
         <p className={styles.ptext}>

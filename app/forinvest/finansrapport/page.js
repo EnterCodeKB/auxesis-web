@@ -4,9 +4,7 @@ import styles from "./finansrapport.module.css";
 import Link from "next/link";
 
 export default function ProFinanceRapport() {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+ 
 
   return (
     <>
@@ -48,9 +46,6 @@ export default function ProFinanceRapport() {
         </div>
       </section>
 
-      <div className={styles.scrollToTop} onClick={scrollToTop}>
-        ⬆️
-      </div>
     </>
   );
 }

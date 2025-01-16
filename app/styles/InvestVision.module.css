@@ -24,7 +24,6 @@
   width: 100%;
   margin: 150px auto 50px;
   padding: 20px;
-  font-family: Arial, sans-serif;
 }
 
 .h1vision {
@@ -78,7 +77,7 @@
   }
 
   .ptext {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.6;
   }
 
@@ -103,6 +102,7 @@
 
   .ptext {
     font-size: 1rem;
+    line-height: 1.6;
   }
 }
 
@@ -123,7 +123,8 @@
   }
 
   .ptext {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    line-height: 1.6;
   }
 
   .whiteboard4 {

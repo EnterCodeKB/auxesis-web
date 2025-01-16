@@ -3,23 +3,36 @@
 import Footer2 from "./components/underFooter";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import ScrollToTop from "./components/ScrollToTop"; // Importera din komponent
+import ScrollToTop from "./components/ScrollToTop"; // Importera ScrollToTop-komponenten
 import "./globals.css";
 import Hero from "./components/heroSection";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation"; // Endast usePathname används
 import CookieBanner from "./components/CookieBanner";
+import BackArrow from "./components/BackArrow"; // Importera BackArrow-komponenten
 
 export default function RootLayout({ children }) {
-  const pathname = usePathname();
-  const router = useRouter();
+  const pathname = usePathname(); // Endast denna används nu
 
   const hideHeroPaths = ["/produkter"];
   const shouldShowHero =
     !pathname.startsWith("/login") &&
     !hideHeroPaths.some((path) => pathname.startsWith(path));
 
-  const isLoginPage = pathname === "/login";
+  // Navigering tillbaka logik
+  const mainLinks = {
+    "/forinvest/agare": "/",
+    "/forinvest/styrelse": "/forinvest/agare",
+    "/forinvest/vision": "/forinvest/agare",
+
+    "/innovation": "/",
+    "/hallbarhet/hallbaraaffarer": "/",
+    "/hallbarhet/agenda": "/",
+    "/kontakt": "/",
+    "/press": "/",
+  };
+
+  const mainLink = mainLinks[pathname] || null; // Default till null om ingen match hittas
 
   return (
     <html lang="sv">
@@ -33,15 +46,15 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
-        {!isLoginPage && <Header />}
+        <Header />
         {shouldShowHero && <Hero />}
         <div className="container">
           <main>{children || <p>Inget innehåll att visa.</p>}</main>
         </div>
-        {!isLoginPage && <Footer />}
-        {!isLoginPage && <Footer2 />}
-        {!isLoginPage && <CookieBanner />}
-        <ScrollToTop /> {/* Lägg till ScrollToTop-komponenten */}
+        <Footer />
+        <Footer2 />
+        <CookieBanner />
+        <ScrollToTop />
       </body>
     </html>
   );

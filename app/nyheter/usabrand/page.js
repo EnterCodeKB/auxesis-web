@@ -14,7 +14,7 @@ export default function Usabrand() {
         schampon. Produkterna är avsedda för behandling av smärta, infektioner,
         sårvård och hudåkommor som solbränna och eksem där varumärket ASA.P
         täcker därmed ett brett spektrum av medicinska och veterinärmedicinska
-        användningsområden. Detta godkännande är nr 27 av dom 32 länder vi har
+        användningsområden. Godkännande är nr 27 av dom 32 länder vi har
         ansökt skydd för. Vi har även ansökt nya länder i Sydamerika och Afrika
         denna hösten.
       </p>

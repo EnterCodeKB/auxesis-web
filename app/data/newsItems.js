@@ -123,7 +123,7 @@ export const newsItems = [
           `,
     imageUrl: "/Nyheter/Ostersunds_FK_logo.svg_.png",
     slug: "ofksponsor",
-    isLatest: true, // Ej senaste
+    isLatest: true,
   },
   {
     title: "Patentansökan är nu officiellt registrerad!",

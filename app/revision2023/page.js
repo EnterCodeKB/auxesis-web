@@ -2,9 +2,7 @@
 import styles from "./index.module.css";
 
 export default function Revision() {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  
 
   return (
     <>
@@ -16,9 +14,7 @@ export default function Revision() {
           className={styles.image}
         />
       </section>
-      <div className={styles.scrollToTop} onClick={scrollToTop}>
-        ⬆️
-      </div>
+      
     </>
   );
 }

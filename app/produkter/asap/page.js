@@ -1,14 +1,13 @@
 "use client";
 import styles from "../../styles/Asap.module.css";
+import BackArrow from "../../components/BackArrow";
 
 export default function AsaP() {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
     <>
       <section className={styles.sectionA}>
+        <BackArrow mainLink="/produkter/historik" label="Produkter" />
+
         <h2>Receptfritt preparat för människa - ASA.P® </h2>
 
         <div className={styles.container1}>
@@ -58,9 +57,6 @@ export default function AsaP() {
           </div>
         </div>
       </section>
-      <div className={styles.scrollToTop} onClick={scrollToTop}>
-        ⬆️
-      </div>
     </>
   );
 }

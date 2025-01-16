@@ -3,47 +3,111 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation"; // Från next/navigation
 import { FaBars } from "react-icons/fa";
 import styles from "../styles/Header.module.css";
+
+const DropdownMenu = ({
+  title,
+  links,
+  isActive,
+  toggleDropdown,
+  closeMenu,
+  currentPath,
+}) => {
+  return (
+    <div className={styles.dropdown}>
+      <div
+        className={`${styles.mainLink} ${isActive ? styles.active : ""}`}
+        onClick={() => toggleDropdown(title)}
+      >
+        {title}
+        <span className={`${styles.arrow} ${isActive ? styles.rotate : ""}`}>
+          ▼
+        </span>
+      </div>
+      {isActive && (
+        <div className={styles.dropdownContent}>
+          {links.map((link, index) => (
+            <Link
+              key={index}
+              href={link.href}
+              className={`${styles.link} ${
+                currentPath === link.href ? styles.active : ""
+              }`}
+              onClick={() => closeMenu(link.href)}
+            >
+              <div className={styles.subLink}>{link.label}</div>
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const router = useRouter();
+  const pathname = usePathname();
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
-  const toggleDropdown = (menu) => {
-    if (activeDropdown === menu) {
-      setActiveDropdown(null);
-    } else {
-      setActiveDropdown(menu);
+  const toggleDropdown = (menu) =>
+    setActiveDropdown(activeDropdown === menu ? null : menu);
+
+  const closeMenu = (linkHref) => {
+    setIsMenuOpen(false);
+    setActiveDropdown(null);
+    if (linkHref) {
+      router.push(linkHref); // Navigera till vald länk
     }
   };
 
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-    setActiveDropdown(null);
-  };
-  const MyImage = ({ src, alt, width, height, className }) => (
-    <Image
-      src={src}
-      alt={alt || "Default description"}
-      width={width || 100}
-      height={height || 100}
-      className={className || ""}
-      onError={(e) => {
-        e.target.src = "/produkter/fallback-image.png"; // En fallback-bild
-      }}
-    />
-  );
+  const dropdowns = [
+    {
+      title: "VAD ÄR AUXESIS",
+      links: [
+        { href: "/omoss", label: "Om oss" },
+        { href: "/omoss/varabolag", label: "Våra bolag" },
+        { href: "/omoss/vartteam", label: "Team" },
+        { href: "/omoss/partners", label: "Partners" },
+      ],
+    },
+    {
+      title: "FÖR INVESTERARE",
+      links: [
+        { href: "/forinvest/agare", label: "Ägare" },
+        { href: "/forinvest/styrelse", label: "Styrelse och ledning" },
+        { href: "/forinvest/finansrapport", label: "Finansiella rapporter" },
+        { href: "/forinvest/ir-kontakt", label: "IR-kontakt" },
+      ],
+    },
+    {
+      title: "PRODUKTER",
+      links: [
+        { href: "/produkter/historik", label: "Historik" },
+        { href: "/produkter/asap", label: "ASA.P®️" },
+        { href: "/produkter/coxypet", label: "CoxyPet®️" },
+        { href: "/produkter/produktutveckling", label: "Produktutveckling" },
+        { href: "/produkter/patent", label: "Patent" },
+      ],
+    },
+    {
+      title: "HÅLLBARHET",
+      links: [
+        { href: "/hallbarhet/hallbaraaffarer", label: "Hållbara affärer" },
+        { href: "/hallbarhet/agenda", label: "Agenda 2030" },
+      ],
+    },
+  ];
 
   return (
     <header className={styles.header}>
       {/* Logotyp */}
       <Link href="/" className={styles.logo}>
-        <MyImage
+        <Image
           src="/Finance/278149D3-C96F-4CEE-BC16-3D7AB9E4DABE.png"
           alt="Logo"
           width={70}
@@ -52,8 +116,7 @@ export default function Header() {
         />
       </Link>
       <div className={styles.headersh1div}>
-        {" "}
-        <h2 className={styles.headersh1}>AUXESIS PHARMA HOLDING AB(publ)</h2>
+        <h2 className={styles.headersh1}></h2>
       </div>
       {/* Hamburger Button */}
       <button className={styles.hamburgerBtn} onClick={toggleMenu}>
@@ -65,232 +128,57 @@ export default function Header() {
         className={`${styles.menu} ${isMenuOpen ? styles.menuOpen : ""}`}
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Close Button */}
-        <button className={styles.closeBtn} onClick={closeMenu}>
+        <button className={styles.closeBtn} onClick={() => closeMenu()}>
           &times;
         </button>
-
         <nav className={styles.nav}>
-          {/* Main Links */}
-          <Link href="/" className={styles.link} onClick={closeMenu}>
+          <Link href="/" className={styles.link} onClick={() => closeMenu("/")}>
             <div className={styles.mainLink}>HEM</div>
           </Link>
 
-          {/* Dropdown: OM OSS */}
-          <div className={styles.dropdown}>
-            <div
-              className={styles.mainLink}
-              onClick={() => toggleDropdown("omoss")}
-            >
-              OM OSS
-            </div>
-            {activeDropdown === "omoss" && (
-              <div className={styles.dropdownContent}>
-                <Link href="/omoss" className={styles.link} onClick={closeMenu}>
-                  <div className={styles.subLink}>Unika produkter</div>
-                </Link>
-                <Link
-                  href="/omoss/varabolag"
-                  className={styles.link}
-                  onClick={closeMenu}
-                >
-                  <div className={styles.subLink}>Våra bolag</div>
-                </Link>
-                <Link
-                  href="/omoss/vartteam"
-                  className={styles.link}
-                  onClick={closeMenu}
-                >
-                  <div className={styles.subLink}>Team</div>
-                </Link>
-                <Link
-                  href="/omoss/partners"
-                  className={styles.link}
-                  onClick={closeMenu}
-                >
-                  <div className={styles.subLink}>Partners</div>
-                </Link>
-              </div>
-            )}
-          </div>
+          {dropdowns.map((dropdown, index) => (
+            <DropdownMenu
+              key={index}
+              title={dropdown.title}
+              links={dropdown.links}
+              isActive={activeDropdown === dropdown.title}
+              toggleDropdown={toggleDropdown}
+              closeMenu={closeMenu}
+              currentPath={pathname}
+            />
+          ))}
 
-          {/* Dropdown: FÖR INVESTERARE */}
-          <div className={styles.dropdown}>
-            <div
-              className={styles.mainLink}
-              onClick={() => toggleDropdown("forinvest")}
-            >
-              FÖR INVESTERARE
-            </div>
-            {activeDropdown === "forinvest" && (
-              <div className={styles.dropdownContent}>
-                <Link
-                  href="/forinvest/agare"
-                  className={styles.link}
-                  onClick={closeMenu}
-                >
-                  <div className={styles.subLink}>Ägare</div>
-                </Link>
-                <Link
-                  href="/forinvest/styrelse"
-                  className={styles.link}
-                  onClick={closeMenu}
-                >
-                  <div className={styles.subLink}>Styrelse och ledning</div>
-                </Link>
-                <Link
-                  href="/forinvest/vision"
-                  className={styles.link}
-                  onClick={closeMenu}
-                >
-                  <div className={styles.subLink}>Affärsidé och vision</div>
-                </Link>
-                <Link
-                  href="/forinvest/finansrapport"
-                  className={styles.link}
-                  onClick={closeMenu}
-                >
-                  <div className={styles.subLink}>Finansiella rapporter</div>
-                </Link>
-                <Link
-                  href="/forinvest/ir-kontakt"
-                  className={styles.link}
-                  onClick={closeMenu}
-                >
-                  <div className={styles.subLink}>IR-kontakt</div>
-                </Link>
-              </div>
-            )}
-          </div>
-
-          {/* Dropdown: PRODUKTER */}
-          <div className={styles.dropdown}>
-            <div
-              className={styles.mainLink}
-              onClick={() => toggleDropdown("produkter")}
-            >
-              PRODUKTER
-            </div>
-            {activeDropdown === "produkter" && (
-              <div className={styles.dropdownContent}>
-                <Link
-                  href="/produkter/historik"
-                  className={styles.link}
-                  onClick={closeMenu}
-                >
-                  <div className={styles.subLink}>Historik</div>
-                </Link>
-                <Link
-                  href="/produkter/asap"
-                  className={styles.link}
-                  onClick={closeMenu}
-                >
-                  <div className={styles.subLink}>ASA.P®️</div>
-                </Link>
-                <Link
-                  href="/produkter/coxypet"
-                  className={styles.link}
-                  onClick={closeMenu}
-                >
-                  <div className={styles.subLink}>CoxyPet®️</div>
-                </Link>
-                <Link
-                  href="/produkter/produktutveckling"
-                  className={styles.link}
-                  onClick={closeMenu}
-                >
-                  <div className={styles.subLink}>Produktutveckling</div>
-                </Link>
-                <Link
-                  href="/produkter/patent"
-                  className={styles.link}
-                  onClick={closeMenu}
-                >
-                  <div className={styles.subLink}>Patent</div>
-                </Link>
-              </div>
-            )}
-          </div>
-
-          {/* Innovation */}
-          <Link href="/innovation" className={styles.link} onClick={closeMenu}>
+          <Link
+            href="/innovation"
+            className={styles.link}
+            onClick={() => closeMenu("/innovation")}
+          >
             <div className={styles.mainLink}>INNOVATION</div>
           </Link>
 
-          {/* Dropdown: NYHETER */}
-          <div className={styles.dropdown}>
-            <div
-              className={styles.mainLink}
-              onClick={() => toggleDropdown("nyheter")}
-            >
-              NYHETER
-            </div>
-            {activeDropdown === "nyheter" && (
-              <div className={styles.dropdownContent}>
-                <Link
-                  href="/nyheter/senastenytt"
-                  className={styles.link}
-                  onClick={closeMenu}
-                >
-                  <div className={styles.subLink}>Senaste nytt</div>
-                </Link>
-              </div>
-            )}
-          </div>
-
-          {/* Dropdown: HÅLLBARHET */}
-          <div className={styles.dropdown}>
-            <div
-              className={styles.mainLink}
-              onClick={() => toggleDropdown("hallbarhet")}
-            >
-              HÅLLBARHET
-            </div>
-            {activeDropdown === "hallbarhet" && (
-              <div className={styles.dropdownContent}>
-                <Link
-                  href="/hallbarhet/hallbaraaffarer"
-                  className={styles.link}
-                  onClick={closeMenu}
-                >
-                  <div className={styles.subLink}>Hållbara affärer</div>
-                </Link>
-                <Link
-                  href="/hallbarhet/agenda"
-                  className={styles.link}
-                  onClick={closeMenu}
-                >
-                  <div className={styles.subLink}>Agenda 2030</div>
-                </Link>
-              </div>
-            )}
-          </div>
-
-          {/* Kontakt */}
-          <Link href="/kontakt" className={styles.link} onClick={closeMenu}>
-            <div className={styles.mainLink}>KONTAKT</div>
+          <Link
+            href="/nyheter"
+            className={styles.link}
+            onClick={() => closeMenu("/nyheter")}
+          >
+            <div className={styles.mainLink}>NYHETER</div>
           </Link>
 
-          {/* Dropdown: PRESS */}
-          <div className={styles.dropdown}>
-            <div
-              className={styles.mainLink}
-              onClick={() => toggleDropdown("press")}
-            >
-              PRESS
-            </div>
-            {activeDropdown === "press" && (
-              <div className={styles.dropdownContent}>
-                <Link
-                  href="/press/auxesisimedia"
-                  className={styles.link}
-                  onClick={closeMenu}
-                >
-                  <div className={styles.subLink}>Auxesis i media</div>
-                </Link>
-              </div>
-            )}
-          </div>
+          <Link
+            href="/press"
+            className={styles.link}
+            onClick={() => closeMenu("/press")}
+          >
+            <div className={styles.mainLink}>PRESS</div>
+          </Link>
+
+          <Link
+            href="/kontakt"
+            className={styles.link}
+            onClick={() => closeMenu("/kontakt")}
+          >
+            <div className={styles.mainLink}>KONTAKT</div>
+          </Link>
         </nav>
       </div>
     </header>

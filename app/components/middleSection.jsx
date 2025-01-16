@@ -4,8 +4,8 @@ export default function MiddleSection() {
   return (
     <section className={styles.wrapper}>
       <h2 className={styles.heading}>
-        Auxesis Pharma – Forskning och innovation för lokal smärtlindring och
-        hudhälsa
+        AUXESIS PHARMA - FORSKNING OCH INNOVATION FÖR LOKAL SMÄRTLINDRING OCH
+        HUDHÄLSA
       </h2>
       <div className={styles.content}>
         <div className={styles.videoContainer}>
@@ -35,7 +35,7 @@ export default function MiddleSection() {
           </p>
           <p className={styles.ptext}>
             Auxesis Pharma arbetar kontinuerligt för att skapa hållbara och
-            effektiva lösningar som är förankrade i vetenskaplig excellens.
+            effektiva lösningar som är framtagna på vetenskaplig grund.
           </p>
         </div>
       </div>

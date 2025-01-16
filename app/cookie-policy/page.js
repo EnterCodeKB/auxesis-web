@@ -1,8 +1,11 @@
 import styles from "../styles/CookiePolicy.module.css";
+import BackArrow from "../../components/BackArrow";
 
 export default function CookiePolicy() {
   return (
     <div className={styles["cookie-policy-container"]}>
+      <BackArrow mainLink="/" label="Hem" />
+
       <h1>Cookiepolicy för Auxesis Pharma Holding AB(publ)</h1>
       <p>
         Denna cookiepolicy förklarar hur vi använder cookies på vår webbplats.

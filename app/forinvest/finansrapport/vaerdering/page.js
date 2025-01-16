@@ -1,15 +1,14 @@
 "use client";
 
 import styles from "./vaerdering.module.css";
+import BackArrow from "../../../components/BackArrow";
 
 export default function Vaerdering() {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
     <>
       <section className={styles.vaerdering}>
+        <BackArrow mainLink="/forinvest/finansrapport" label="Finansrapport" />
+
         <h2 className={styles.h2divdark}>
           Värderingsrapport <br /> 2024-02-13
         </h2>
@@ -22,10 +21,6 @@ export default function Vaerdering() {
           Visa här
         </a>
       </section>
-
-      <div className={styles.scrollToTop} onClick={scrollToTop}>
-        ⬆️
-      </div>
     </>
   );
 }

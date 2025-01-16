@@ -1,0 +1,101 @@
+.backArrow {
+  position: fixed;
+  bottom: 420px;
+  left: 20px; /* Placerad till vänster för att spegla ScrollToTop på höger */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* För mellanrum mellan pilen och texten */
+  background-color: #23559b;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.backArrow:hover {
+  background-color: #1b4372;
+  transform: scale(1.05);
+}
+
+.backArrow:active {
+  transform: scale(0.95);
+}
+
+.arrow {
+  font-size: 24px;
+}
+
+.text {
+  font-size: 14px;
+  white-space: nowrap; /* Förhindrar att texten radbryts */
+}
+
+/* Responsiv design */
+@media (max-width: 480px) {
+  .backArrow {
+    font-size: 14px;
+    padding: 8px 12px;
+    gap: 6px; /* Justera mellanrum för mindre skärmar */
+  }
+
+  .arrow {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .backArrow {
+    font-size: 16px;
+    padding: 10px 15px;
+    gap: 8px;
+  }
+
+  .arrow {
+    font-size: 22px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .backArrow {
+    font-size: 18px;
+    padding: 8px 20px;
+    gap: 10px;
+  }
+
+  .arrow {
+    font-size: 24px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .backArrow {
+    font-size: 20px;
+    padding: 12px 24px;
+    gap: 12px;
+  }
+
+  .arrow {
+    font-size: 28px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+}

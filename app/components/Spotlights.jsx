@@ -2,7 +2,7 @@
 import React from "react";
 import Carousel from "./Carousel";
 import styles from "../styles/Spotlights.module.css";
-import { latestNews } from "../nyheter/senastenytt/page";
+import { latestNews } from "../nyheter/page";
 
 const Spotlights = () => {
   return (
@@ -11,9 +11,7 @@ const Spotlights = () => {
       <Carousel items={latestNews} />
       <button
         className={styles.readMoreButton}
-        onClick={() =>
-          (window.location.href = "/nyheter/senastenyheter/page.js")
-        }
+        onClick={() => (window.location.href = "/nyheter/page.js")}
       >
         Läs mer
       </button>

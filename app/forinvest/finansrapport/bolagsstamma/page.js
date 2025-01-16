@@ -1,16 +1,17 @@
 "use client";
 
 import styles from "../bolagsstamma/bolags.module.css";
+import BackArrow from "../../../components/BackArrow";
 
 export default function Protokol() {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
     <>
-      <div className={styles.container}>
-        <h2 className={styles.title}>Protokoll från årsstämman</h2>
+      <BackArrow mainLink="/forinvest/finansrapport" label="Finansrapport" />
+
+      <section className={styles.container}>
+        <BackArrow mainLink="/forinvest/finansrapport" label="Finansrapport" />
+
+        <h2 className={styles.h2divdark}>Protokoll från årsstämman</h2>
         <p className={styles.text}>
           Du kan se protokollet som en PDF-fil genom att klicka på knappen
           nedan.
@@ -23,11 +24,7 @@ export default function Protokol() {
         >
           Visa PDF
         </a>
-      </div>
-
-      <div className={styles.scrollToTop} onClick={scrollToTop}>
-        ⬆️
-      </div>
+      </section>
     </>
   );
 }

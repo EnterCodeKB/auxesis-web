@@ -1,15 +1,14 @@
 "use client";
 
 import styles from "../../../styles/Finance.module.css";
+import BackArrow from "../../../components/BackArrow";
 
 export default function Protokol() {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
     <>
       <div className={styles.redovdiv}>
+        <BackArrow mainLink="/forinvest/finansrapport" label="Finansrapport" />
+
         <section className={styles.section}>
           <h2 className={styles.h2divdark}>Årsredovisning 2023-12-31</h2>
           <p className={styles.redovptext}>
@@ -72,10 +71,6 @@ export default function Protokol() {
             Visa här
           </a>
         </section>*/}
-      </div>
-
-      <div className={styles.scrollToTop} onClick={scrollToTop}>
-        ⬆️
       </div>
     </>
   );

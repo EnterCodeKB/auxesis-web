@@ -1,6 +1,7 @@
 "use client";
 
 import styles from "../../styles/ProduktCoxypet.module.css";
+import BackArrow from "../../components/BackArrow";
 
 export default function Coxypet() {
   const scrollToTop = () => {
@@ -10,6 +11,8 @@ export default function Coxypet() {
   return (
     <>
       <section className={styles.sectionC}>
+        <BackArrow mainLink="/produkter/historik" label="Produkter" />
+
         <div className={styles.contentSection}>
           <div className={styles.textBlock}>
             <h2 className={styles.h2}>
@@ -44,7 +47,7 @@ export default function Coxypet() {
             alt="Coxypet"
           />
           <div className={styles.textBlock}>
-            <h2 className={styles.h2}>Reducerar användningen av antibiotika</h2>
+            <h2 className={styles.h2}>Reducera användningen av antibiotika</h2>
             <p>
               CoxyPet® erbjuder naturliga och innovativa lösningar för
               medicinering av djur. Hudsmärtan kan behandlas med CoxyPet®, dels

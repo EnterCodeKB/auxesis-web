@@ -1,6 +1,7 @@
 "use client";
 
 import styles from "../../styles/ProduktPatent.module.css";
+import BackArrow from "../../components/BackArrow";
 
 export default function Patent() {
   const scrollToTop = () => {
@@ -10,6 +11,8 @@ export default function Patent() {
   return (
     <>
       <section className={styles.patentsection}>
+        <BackArrow mainLink="/produkter/historik" label="Produkter" />
+
         <h1>Patent söks i flera länder</h1>
         <p className={styles.ptext}>
           Auxesis Pharma lämnade den 29 november 2023 in en svensk patentansökan

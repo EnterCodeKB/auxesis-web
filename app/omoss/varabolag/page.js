@@ -1,6 +1,7 @@
 "use client";
 import styles from "../varabolag/varabolagSida.module.css";
 import React, { useEffect, useRef } from "react";
+import BackArrow from "../../components/BackArrow";
 
 export default function Bolag() {
   const bolagRefs = useRef([]);
@@ -34,34 +35,15 @@ export default function Bolag() {
 
   return (
     <>
+      <BackArrow mainLink="/omoss" label="Om Oss" />
+
       <section className={styles.varabolag}>
         <div className={styles.textarea}>
           <h1 className={styles.h1}>En solid koncern med tre bolag</h1>
 
-          <div className={styles.bolagstree}>
-            <h2
-              className={`${styles.bolag1} ${styles.hidden}`}
-              ref={(el) => (bolagRefs.current[0] = el)}
-            >
-              Auxesis Pharma Holding AB(publ)
-            </h2>
-            <h2
-              className={`${styles.bolag2} ${styles.hidden}`}
-              ref={(el) => (bolagRefs.current[1] = el)}
-            >
-              Auxesis MedTech AB
-            </h2>
-            <h2
-              className={`${styles.bolag3} ${styles.hidden}`}
-              ref={(el) => (bolagRefs.current[2] = el)}
-            >
-              Auxesis Animal Care AB
-            </h2>
-          </div>
-
           <div className={styles.ularea}>
             {/* Första bolaget */}
-            <div className={styles.auxesis}>
+            <div className={`${styles.auxesis} ${styles.card}`}>
               <div className={styles.auxesisbild}>
                 <h2 className={styles.divh2}>
                   Auxesis Pharma Holding AB(publ)
@@ -106,7 +88,7 @@ export default function Bolag() {
             </div>
 
             {/* Andra bolaget */}
-            <div className={styles.medtech}>
+            <div className={`${styles.medtech} ${styles.card}`}>
               <div className={styles.medtechbild}>
                 <h2 className={styles.divh2}>Auxesis MedTech AB</h2>
               </div>
@@ -127,7 +109,7 @@ export default function Bolag() {
             </div>
 
             {/* Tredje bolaget */}
-            <div className={styles.animalcare}>
+            <div className={`${styles.animalcare} ${styles.card}`}>
               <div className={styles.animalcarebild}>
                 <h2 className={styles.divh2}>Auxesis Animal Care AB</h2>
               </div>
