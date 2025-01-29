@@ -1,19 +1,31 @@
 "use client";
 
-import React from "react";
-import { useRouter } from "next/navigation"; // Rätt import för App Router
+import React, { useEffect, useState } from "react";
+import { useRouter } from "next/navigation"; // Rätt import för navigering
 import Card from "./components/Card";
 import Middle from "./components/middleSection";
 import styles from "./styles/Page.module.css";
 import Finance from "./components/Finance";
 import LatestNews from "./components/LatestNews";
+import SearchComponent from "./components/SearchComponent";
 import { newsItems } from "./data/newsItems"; // Anpassa vägen om det behövs
+import { searchData } from "./data/searchData"; // Importera datan
 
 export default function HomePage() {
   const router = useRouter();
 
+  const handleResultClick = (item) => {
+    console.log("Navigerar till:", item.link);
+    router.push(item.link); // Navigerar till den valda sidan
+  };
   return (
     <>
+      {/* Sökkomponenten */}
+      <SearchComponent
+        placeholder="Sök på webbplatsen..."
+        onResultClick={handleResultClick} // Skickar med funktionen som prop
+      />
+
       <LatestNews newsItems={newsItems} />
       <div className={styles.pagediv}>
         <section>

@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
+import HeroPr from "../../components/HeroSectionPr";
 
 import styles from "../../styles/ProduktHistorik.module.css";
 import BackArrow from "../../components/BackArrow";
@@ -36,6 +37,7 @@ export default function Historik() {
 
   return (
     <>
+      <HeroPr />
       <section className={styles.produkthistorik}>
         <BackArrow mainLink="/" label="Hem" />
 

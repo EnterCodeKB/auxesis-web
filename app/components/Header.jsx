@@ -37,7 +37,9 @@ const DropdownMenu = ({
               }`}
               onClick={() => closeMenu(link.href)}
             >
-              <div className={styles.subLink}>{link.label}</div>
+              <div className={styles.subLink}>
+                <span className={styles.productText}>{link.label}</span>
+              </div>
             </Link>
           ))}
         </div>
@@ -88,8 +90,9 @@ export default function Header() {
       title: "PRODUKTER",
       links: [
         { href: "/produkter/historik", label: "Historik" },
-        { href: "/produkter/asap", label: "ASA.P®️" },
-        { href: "/produkter/coxypet", label: "CoxyPet®️" },
+        { href: "/produkter/asap", label: "ASA.P\u00AE" }, // Unicode för ®
+        { href: "/produkter/coxypet", label: "CoxyPet\u00AE" }, // Unicode för ®
+
         { href: "/produkter/produktutveckling", label: "Produktutveckling" },
         { href: "/produkter/patent", label: "Patent" },
       ],

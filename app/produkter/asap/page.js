@@ -1,10 +1,12 @@
 "use client";
 import styles from "../../styles/Asap.module.css";
 import BackArrow from "../../components/BackArrow";
+import HeroProduct from "../../components/HeroSectionProduct";
 
 export default function AsaP() {
   return (
     <>
+      <HeroProduct />
       <section className={styles.sectionA}>
         <BackArrow mainLink="/produkter/historik" label="Produkter" />
 
