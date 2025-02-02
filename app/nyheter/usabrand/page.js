@@ -12,11 +12,11 @@ export default function Usabrand() {
         smärtlindring, läkemedel för både människor och djur, samt olika
         medicinska produkter som kylsprayer, massage-geler och medicinerade
         schampon. Produkterna är avsedda för behandling av smärta, infektioner,
-        sårvård och hudåkommor som solbränna och eksem där varumärket ASA.P
-        täcker därmed ett brett spektrum av medicinska och veterinärmedicinska
-        användningsområden. Godkännande är nr 27 av dom 32 länder vi har
-        ansökt skydd för. Vi har även ansökt nya länder i Sydamerika och Afrika
-        denna hösten.
+        sårvård och hudåkommor såsom solbränna och eksem. Varumärket ASA.P
+        täcker därmed ett brett spektrum av både medicinska och
+        veterinärmedicinska användningsområden. Godkännande är nr 27 av dom 32
+        länder vi har ansökt skydd för. Vi har även ansökt nya länder i
+        Sydamerika och Afrika denna hösten.
       </p>
       <div className={styles.imageContainer}>
         <img

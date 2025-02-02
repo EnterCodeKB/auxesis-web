@@ -104,6 +104,13 @@ export default function Header() {
         { href: "/hallbarhet/agenda", label: "Agenda 2030" },
       ],
     },
+    {
+      title: "PRESS",
+      links: [
+        { href: "/press/auxesisimedia", label: "Auxesis i media" },
+        { href: "/press/presskontakt", label: "Presskontakt" },
+      ],
+    },
   ];
 
   return (
@@ -138,6 +145,13 @@ export default function Header() {
           <Link href="/" className={styles.link} onClick={() => closeMenu("/")}>
             <div className={styles.mainLink}>HEM</div>
           </Link>
+          <Link
+            href="/nyheter"
+            className={styles.link}
+            onClick={() => closeMenu("/nyheter")}
+          >
+            <div className={styles.mainLink}>NYHETER</div>
+          </Link>
 
           {dropdowns.map((dropdown, index) => (
             <DropdownMenu
@@ -159,21 +173,20 @@ export default function Header() {
             <div className={styles.mainLink}>INNOVATION</div>
           </Link>
 
-          <Link
-            href="/nyheter"
-            className={styles.link}
-            onClick={() => closeMenu("/nyheter")}
-          >
-            <div className={styles.mainLink}>NYHETER</div>
-          </Link>
-
-          <Link
-            href="/press"
-            className={styles.link}
-            onClick={() => closeMenu("/press")}
-          >
-            <div className={styles.mainLink}>PRESS</div>
-          </Link>
+          {/* Press dropdown - Den ska komma efter Innovation */}
+          {dropdowns
+            .filter((dropdown) => dropdown.title === "PRESS")
+            .map((dropdown, index) => (
+              <DropdownMenu
+                key={index}
+                title={dropdown.title}
+                links={dropdown.links}
+                isActive={activeDropdown === dropdown.title}
+                toggleDropdown={toggleDropdown}
+                closeMenu={closeMenu}
+                currentPath={pathname}
+              />
+            ))}
 
           <Link
             href="/kontakt"

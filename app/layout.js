@@ -14,7 +14,7 @@ import BackArrow from "./components/BackArrow"; // Importera BackArrow-komponent
 export default function RootLayout({ children }) {
   const pathname = usePathname(); // Endast denna används nu
 
-  const hideHeroPaths = ["/produkter"];
+  const hideHeroPaths = ["/produkter", "/hallbarhet"];
   const shouldShowHero =
     !pathname.startsWith("/login") &&
     !hideHeroPaths.some((path) => pathname.startsWith(path));

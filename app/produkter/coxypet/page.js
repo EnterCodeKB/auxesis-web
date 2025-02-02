@@ -4,10 +4,6 @@ import styles from "../../styles/ProduktCoxypet.module.css";
 import BackArrow from "../../components/BackArrow";
 import HeroPr from "../../components/HeroSectionPr";
 export default function Coxypet() {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
     <>
       <HeroPr />
@@ -86,10 +82,6 @@ export default function Coxypet() {
           />
         </div>
       </section>
-
-      <div className={styles.scrollToTop} onClick={scrollToTop}>
-        ⬆️
-      </div>
     </>
   );
 }

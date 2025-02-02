@@ -2,14 +2,12 @@
 
 import styles from "../../styles/ProduktPatent.module.css";
 import BackArrow from "../../components/BackArrow";
+import HeroPatent from "../../components/HeroSectionPatent";
 
 export default function Patent() {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
     <>
+      <HeroPatent />
       <section className={styles.patentsection}>
         <BackArrow mainLink="/produkter/historik" label="Produkter" />
 
@@ -65,9 +63,6 @@ export default function Patent() {
           />
         </div>
       </section>
-      <div className={styles.scrollToTop} onClick={scrollToTop}>
-        ⬆️
-      </div>
     </>
   );
 }

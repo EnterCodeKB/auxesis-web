@@ -1,0 +1,190 @@
+/* Globala stilar */
+.heroSection {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  height: auto;
+}
+
+.div13 {
+  background-image: url("/patent/patentschema.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+
+.div14 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  text-align: center;
+}
+
+.div18 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.divh1 {
+  color: #23559b;
+  font-size: 2.5rem;
+  line-height: 1.4;
+  animation: slideInLeft 1.5s ease forwards;
+}
+
+.h2 {
+  color: #23559b;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 10px 0 0 0;
+  animation: slideInRight 1.5s ease forwards;
+  animation-delay: 0.5s;
+}
+
+/* Responsiv design */
+
+/* För små mobiler (max-width: 480px) */
+@media (max-width: 480px) {
+  .heroSection {
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .div13 {
+    background-image: url("/patent/patentschema.png");
+    background-size: cover;
+    background-position: center;
+    height: aut; /* Justera höjden */
+    width: 100%;
+  }
+
+  .div18 {
+    margin-top: 15px;
+    flex-direction: column;
+    margin: 20px auto 0 auto; /* Centrera i mitten */
+  }
+
+  .divh1 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .h2 {
+    font-size: 1.3rem;
+    line-height: 1.3;
+    margin-top: 5px;
+  }
+}
+
+/* För mobiler och mindre tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .heroSection {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .div13 {
+    background-image: url("/patent/patentschema.png");
+    background-size: cover;
+    background-position: center;
+    height: 350px; /* Anpassa höjden */
+    width: 100%;
+  }
+
+  .div18 {
+    margin-top: 20px;
+    flex-direction: column;
+    margin: 20px auto 0 auto;
+  }
+
+  .divh1 {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+
+  .h2 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin-top: 10px;
+  }
+}
+
+/* För tablets och mindre laptops (max-width: 991px) */
+@media (max-width: 991px) {
+  .heroSection {
+    height: auto;
+  }
+
+  .div13 {
+    background-image: url("/patent/patentschema.png");
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Normal höjd */
+    width: 100%;
+  }
+
+  .div18 {
+    margin-top: 20px;
+    flex-direction: column;
+    margin: 20px auto 0 auto;
+  }
+
+  .divh1 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  .h2 {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    margin-top: 10px;
+  }
+}
+
+/* För stora skärmar (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .heroSection {
+    height: 700px;
+  }
+
+  .div13 {
+    background-image: url("/patent/patentschema.png");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 100%;
+  }
+
+  .div18 {
+    margin-top: 120px;
+    margin-left: 900px;
+    justify-content: flex-start;
+  }
+
+  .divh1 {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+
+  .h2 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    margin-top: 15px;
+  }
+}
