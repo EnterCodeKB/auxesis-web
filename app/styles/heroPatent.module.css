@@ -160,14 +160,14 @@
 /* För stora skärmar (min-width: 1200px) */
 @media (min-width: 1200px) {
   .heroSection {
-    height: 700px;
+    height: 650px;
   }
 
   .div13 {
     background-image: url("/patent/patentschema.png");
     background-size: cover;
     background-position: center;
-    height: 600px;
+    height: 500px;
     width: 100%;
   }
 

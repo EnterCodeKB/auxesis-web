@@ -1,98 +1,76 @@
+/* Hela sektionen */
 .halbara {
-  max-width: 1200px; /* Begränsa bredden */
-  margin: 40px auto; /* Centrerar sektionen och ger marginal ovan */
-  padding: 20px; /* Padding runt innehållet */
-  text-align: center; /* Centrera texten */
-  margin-top: -40px;
+  width: 100vw;
+  min-height: 100vh; /* Ändrat från height till min-height */
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  margin-bottom: 80px; /* Nu borde det fungera! */
 }
 
-.halbara h1 {
-  font-size: 3rem;
-  color: #23559b;
-  margin-bottom: 20px;
+.mainHeading {
+  text-align: center;
+
+  margin-bottom: 30px;
+  font-weight: bold;
 }
 
-.halbara h2 {
-  font-size: 2rem;
-  color: #23559b;
-  margin-top: 40px;
-  margin-bottom: 20px;
+/* Containrar för sektionerna */
+.sectionContainer,
+.sectionContainerReverse {
+  display: flex;
+  width: 100%;
+  height: 50vh; /* Varje sektion tar upp halva skärmen */
 }
 
-.ptext {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #333;
-  margin-bottom: 20px;
+/* Standard: Bild vänster, text höger */
+.sectionContainer .imageContainer {
+  order: 1; /* Bild till vänster */
 }
 
-.section31,
-.section42 {
-  margin-bottom: 40px;
+.sectionContainer .textContainer {
+  order: 2; /* Text till höger */
 }
 
-/* För större skärmar (över 1200px) */
-@media (min-width: 1200px) {
-  .halbara {
-    max-width: 1400px; /* Större bredd för stora skärmar */
-    padding: 40px;
-    margin-top: -60px;
-  }
-
-  .halbara h1 {
-    font-size: 3rem; /* Större rubrik */
-    margin-bottom: 30px;
-  }
-
-  .halbara h2 {
-    font-size: 2rem; /* Större underrubrik */
-    margin-top: 50px;
-    margin-bottom: 30px;
-  }
-
-  .ptext {
-    font-size: 1.1rem; /* Större textstorlek */
-    line-height: 1.6; /* Ökad radavstånd */
-  }
+/* Reverse: Text vänster, bild höger */
+.sectionContainerReverse .imageContainer {
+  order: 2; /* Bild till höger */
 }
 
-/* För mindre skärmar (max-width: 768px) */
+.sectionContainerReverse .textContainer {
+  order: 1; /* Text till vänster */
+}
+
+/* Bildcontainer */
+.imageContainer {
+  width: 50%;
+  height: 100%;
+  position: relative; /* För Next.js Image */
+}
+
+/* Textcontainer */
+.textContainer {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: white; /* Säkerställer kontrast */
+}
+
+/* Responsiv design */
 @media (max-width: 768px) {
-  .halbara {
-    padding: 10px;
-    margin: 100px auto;
-    margin-top: -40px;
+  .sectionContainer,
+  .sectionContainerReverse {
+    flex-direction: column;
+    height: auto;
   }
 
-  .halbara h1 {
-    font-size: 2rem;
-  }
-
-  .halbara h2 {
-    font-size: 1.8rem;
-  }
-
-  .ptext {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-}
-
-/* För mycket små skärmar (max-width: 480px) */
-@media (max-width: 480px) {
-  .halbara {
-    margin: 80px auto;
-  }
-
-  .halbara h1 {
-    font-size: 1.8rem;
-  }
-
-  .halbara h2 {
-    font-size: 1.5rem;
-  }
-
-  .ptext {
-    font-size: 1rem;
+  .imageContainer,
+  .textContainer {
+    width: 100%;
+    height: auto;
   }
 }
