@@ -1,210 +1,66 @@
-/* Globala stilar */
 .heroSection {
-  position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  width: 100%;
-  text-align: center;
+  justify-content: center;
+  width: 100vw; /* Hela skärmens bredd */
   height: auto;
+  padding: 0;
+  margin: 0;
+  margin-top: 60px;
 }
 
 .div13 {
-  background-image: url("/agenda/chema4.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 600px;
+  width: 100vw; /* Hela bredden */
+  height: auto; /* Automatisk höjd så att bilden inte beskärs */
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0;
+  position: relative;
+}
+
+.responsiveImage {
+  width: 100%;
+  height: auto; /* Automatisk höjd så att bilden inte beskärs */
+  object-fit: contain; /* Se till att hela bilden syns */
+  background-color: #f3f3f3; /* Om det blir tomma ytor, lägg en neutral färg */
 }
 
 .div14 {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
 }
 
 .column {
-  text-align: center;
+  width: 50%;
 }
 
-.div18 {
-  margin-top: 20px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+.column2 {
+  width: 50%;
 }
 
-.divh1 {
-  color: #23559b;
-  font-size: 2.5rem;
-  line-height: 1.4;
-  animation: slideInLeft 1.5s ease forwards;
-}
-
-.h2 {
-  color: #23559b;
-  font-size: 2rem;
-  line-height: 1.2;
-  margin: 10px 0 0 0;
-  animation: slideInRight 1.5s ease forwards;
-  animation-delay: 0.5s;
-}
-
-/* Responsiv design */
-
-/* För små mobiler (max-width: 480px) */
-/* För mycket små skärmar (max-width: 480px) */
-@media (max-width: 480px) {
-  .heroSection {
-    flex-direction: column;
-    margin-top: 20px;
-    width: 100%;
-  }
-
-  .div13 {
-    background-image: url("/agenda/chema4.png");
-    background-size: contain; /* Ändrat från cover till contain */
-    background-position: center;
-    background-repeat: no-repeat; /* Undvik upprepning */
-    min-height: 250px; /* Anpassad höjd för små skärmar */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .div18 {
-    margin-top: 15px;
-    flex-direction: column;
-    width: 100%;
-    text-align: center; /* Centrera texten */
-  }
-
-  .divh1 {
-    font-size: 1.4rem;
-    line-height: 1.3;
-    padding: 10px;
-  }
-
-  .h2 {
-    font-size: 1.2rem;
-    line-height: 1.3;
-    margin-top: 5px;
-    padding: 5px;
-  }
-}
-
-/* För mobiler och mindre tablets (max-width: 768px) */
+/* Responsivt för mindre skärmar */
 @media (max-width: 768px) {
   .heroSection {
     flex-direction: column;
-    width: 100%;
+    margin-top: 80px;
   }
 
   .div13 {
-    background-image: url("/agenda/chema4.png");
-    background-size: contain; /* Ändrat från cover till contain */
-    background-position: center;
-    background-repeat: no-repeat; /* Undvik upprepning */
-    min-height: 250px; /* Anpassad höjd för små skärmar */
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    width: 100vw;
+    height: auto; /* Anpassar höjden efter bildens proportioner */
+  }
+
+  .div14 {
+    flex-direction: column;
     align-items: center;
   }
 
-  .div18 {
-    margin-top: 20px;
-    flex-direction: column;
-    margin: 20px auto 0 auto;
-    text-align: center;
-  }
-
-  .divh1 {
-    font-size: 1.6rem;
-    line-height: 1.4;
-    padding: 10px;
-  }
-
-  .h2 {
-    font-size: 1.4rem;
-    line-height: 1.4;
-    margin-top: 5px;
-  }
-
-  .h2 {
-    font-size: 1.5rem;
-    line-height: 1.3;
-    margin-top: 10px;
-  }
-}
-
-/* För tablets och mindre laptops (max-width: 991px) */
-@media (max-width: 991px) {
-  .heroSection {
-    height: auto;
-  }
-
-  .div13 {
-    background-image: url("/agenda/chema4.png");
-    background-size: cover;
-    background-position: center;
-    height: 400px; /* Normal höjd */
+  .column,
+  .column2 {
     width: 100%;
-  }
-
-  .div18 {
-    margin-top: 20px;
-    flex-direction: column;
-    margin: 20px auto 0 auto;
-  }
-
-  .divh1 {
-    font-size: 2rem;
-    line-height: 1.5;
-  }
-
-  .h2 {
-    font-size: 1.8rem;
-    line-height: 1.4;
-    margin-top: 10px;
-  }
-}
-
-/* För stora skärmar (min-width: 1200px) */
-@media (min-width: 1200px) {
-  .heroSection {
-    height: 600px;
-  }
-
-  .div13 {
-    background-image: url("/agenda/chema4.png");
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    width: 100%;
-  }
-
-  .div18 {
-    margin-top: 120px;
-    margin-left: 900px;
-    justify-content: flex-start;
-  }
-
-  .divh1 {
-    font-size: 3rem;
-    line-height: 1.5;
-  }
-
-  .h2 {
-    font-size: 2.5rem;
-    line-height: 1.5;
-    margin-top: 15px;
   }
 }
