@@ -55,13 +55,6 @@ export default function Patent() {
           ansökan med så stora möjligheter som möjligt till framtida
           registrering och godkända patent i utvalda länder.
         </p>
-        <div>
-          <img
-            className={styles.imgpatent}
-            src="/produkter/produktutveckling2.png"
-            alt="Produktutveckling Auxesis"
-          />
-        </div>
       </section>
     </>
   );
