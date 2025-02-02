@@ -71,7 +71,7 @@
     background-size: cover;
     background-position: center;
     height: aut; /* Justera höjden */
-    width: 100%;
+    width: 80%;
   }
 
   .div18 {
@@ -96,7 +96,7 @@
 @media (max-width: 768px) {
   .heroSection {
     flex-direction: column;
-    width: 100%;
+    width: 80%;
   }
 
   .div13 {
