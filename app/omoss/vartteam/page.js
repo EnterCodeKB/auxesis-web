@@ -64,7 +64,7 @@ const teamMembers = [
   {
     name: "Peter Åberg",
     title:
-      "Affärsrådgivare, organisationsutvecklare inom medtech och läkemedel. ",
+      "Affärsrådgivare, organisationsutvecklare inom medtech och läkemedel ",
     description:
       "Peter Åberg, del av ASA.P:s läkemedelsutvecklingsteam, har över 20 års erfarenhet som ledare och organisationsutvecklare. <br />" +
       "Han har haft roller som VD och hållbarhetsdirektör inom medicinteknik, farmakologi och tillverkningsindustrin. <br /><br />" +
@@ -81,7 +81,7 @@ const teamMembers = [
   },
   {
     name: "Agneta Larhed",
-    title: "MSci Pharm och PhD.",
+    title: "MSci Pharm och PhD",
     description:
       "Agneta är regulatorisk rådgivare åt Auxesis sedan augusti 2024 inom läkemedelskvalitet.<br /><br />" +
       "Hennes fokus är de kvalitetskrav som ställs på läkemedelssubstanser och läkemedelsprodukter inför kliniska studier och inför marknadsgodkännande.<br /><br />" +
@@ -90,7 +90,7 @@ const teamMembers = [
   },
   {
     name: "Marie Gårdmark",
-    title: "MSci Pharm och PhD.",
+    title: "MSci Pharm och PhD",
     description:
       "Marie är regulatorisk rådgivare åt Auxesis sedan augusti 2024 inom pre-klinik och klinik.<br />" +
       "Marie har många års erfarenhet från ledande roller på regulatorisk myndighet och inom FoU, med fokus på globala strategier, due diligence och vetenskapliga rådgivningsmöten i EU och USA. <br /><br />" +
