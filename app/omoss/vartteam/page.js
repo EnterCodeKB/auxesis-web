@@ -73,29 +73,28 @@ const teamMembers = [
   },
   {
     name: "Susanna Liljedahl",
-    title: "Civilingenjör och PM. ",
+    title: "MSc Chem Eng och PM ",
     description:
-      "Susanna ingår i ASA.P läkemedelsutvecklings teamet.<br /><br />" +
-      "Över 10 års erfarenhet från AstraZenecas forskningsavdelning  <br /><br />" +
-      "på Zelmic är hon specialiserad på topisk leverans av läkemedel med in-vitro modellering, formuleringsutveckling, hållbarhetsstudier, hudens penetrationsförmåga, valideringsstudier och paketering av läkemedelsdoser till kund med tillhörande etikettsregler. ",
+      "Susanna ingår i ASA.P läkemedelsutvecklingsteam sedan september 2024 inom formuleringsutveckling och tillverkning av IMP. Susanna är projektledare på Zelmic.<br /><br />" +
+      "Susanna har över 10 års erfarenhet som forskare och projektledare på bl a AstraZeneca med fokus på formulerings- och processutveckling av läkemedel. Susanna sitter med i ledningsgruppsteam och har drivit produkt- och processutveckling inom ett flertal bolag. ",
     image: "/team/Susanna Lilje.jpeg",
   },
   {
     name: "Agneta Larhed",
     title: "MSci Pharm och PhD.",
     description:
-      "Agneta ingår i ASA.P:s läkemedelsutvecklingsteam och har över 10 års erfarenhet som forskare och chef inom läkemedelsinnovation.<br /><br />" +
-      "Hennes fokus har varit på absorption, leverans och formuleringsutveckling för tabletter, geler och mikropartiklar.  <br /><br />" +
-      "Hon är styrelseledamot i Farmaceutik vid Läkemedelsakademien och har bidragit till kurser och symposier.",
+      "Agneta är regulatorisk rådgivare åt Auxesis sedan augusti 2024 inom läkemedelskvalitet.<br /><br />" +
+      "Hennes fokus är de kvalitetskrav som ställs på läkemedelssubstanser och läkemedelsprodukter inför kliniska studier och inför marknadsgodkännande.<br /><br />" +
+      "Agneta har tidigare haft ledande roller inom FoU, formuleringsutveckling på företag och på regulatoriska myndigheter.",
     image: "/team/AgnetaJpeg.jpeg",
   },
   {
     name: "Marie Gårdmark",
     title: "MSci Pharm och PhD.",
     description:
-      "Marie ingår i ASA.P:s läkemedelsutvecklingsteam.<br />" +
-      "Dr Gårdmark har 10 års erfarenhet från ledande roller inom regulatorisk FoU, med fokus på globala strategier, due diligence och vetenskapliga rådgivningsmöten i EU och USA.  <br /><br />" +
-      "Hon har arbetat med klinisk och preklinisk forskning, främst inom tidig läkemedelsutveckling, och har en bakgrund inom klinisk farmakologi och farmakometri.",
+      "Marie är regulatorisk rådgivare åt Auxesis sedan augusti 2024 inom pre-klinik och klinik.<br />" +
+      "Marie har många års erfarenhet från ledande roller på regulatorisk myndighet och inom FoU, med fokus på globala strategier, due diligence och vetenskapliga rådgivningsmöten i EU och USA. <br /><br />" +
+      "Hon har arbetat med klinisk och preklinisk forskning, främst inom tidig läkemedelsutveckling.",
     image: "/team/MarieJpeg.jpeg",
   },
 ];
