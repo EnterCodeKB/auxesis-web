@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname, useRouter } from "next/navigation"; // Från next/navigation
+import { usePathname, useRouter } from "next/navigation";
 import { FaBars } from "react-icons/fa";
 import styles from "../styles/Header.module.css";
 
@@ -12,14 +12,17 @@ const DropdownMenu = ({
   links,
   isActive,
   toggleDropdown,
-  closeMenu,
+  navigateToLink,
   currentPath,
 }) => {
   return (
     <div className={styles.dropdown}>
       <div
         className={`${styles.mainLink} ${isActive ? styles.active : ""}`}
-        onClick={() => toggleDropdown(title)}
+        onClick={(e) => {
+          e.stopPropagation();
+          toggleDropdown(title);
+        }}
       >
         {title}
         <span className={`${styles.arrow} ${isActive ? styles.rotate : ""}`}>
@@ -27,7 +30,10 @@ const DropdownMenu = ({
         </span>
       </div>
       {isActive && (
-        <div className={styles.dropdownContent}>
+        <div
+          className={styles.dropdownContent}
+          onClick={(e) => e.stopPropagation()}
+        >
           {links.map((link, index) => (
             <Link
               key={index}
@@ -35,7 +41,7 @@ const DropdownMenu = ({
               className={`${styles.link} ${
                 currentPath === link.href ? styles.active : ""
               }`}
-              onClick={() => closeMenu(link.href)}
+              onClick={() => navigateToLink(link.href)}
             >
               <div className={styles.subLink}>
                 <span className={styles.productText}>{link.label}</span>
@@ -56,15 +62,19 @@ export default function Header() {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
-  const toggleDropdown = (menu) =>
+  const toggleDropdown = (menu) => {
     setActiveDropdown(activeDropdown === menu ? null : menu);
+  };
 
-  const closeMenu = (linkHref) => {
-    setIsMenuOpen(false);
-    setActiveDropdown(null);
+  const navigateToLink = (linkHref) => {
+    setIsMenuOpen(false); // Stäng huvudmenyn
     if (linkHref) {
       router.push(linkHref); // Navigera till vald länk
     }
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
   };
 
   const dropdowns = [
@@ -90,9 +100,8 @@ export default function Header() {
       title: "PRODUKTER",
       links: [
         { href: "/produkter/historik", label: "Historik" },
-        { href: "/produkter/asap", label: "ASA.P\u00AE" }, // Unicode för ®
-        { href: "/produkter/coxypet", label: "CoxyPet\u00AE" }, // Unicode för ®
-
+        { href: "/produkter/asap", label: "ASA.P®" },
+        { href: "/produkter/coxypet", label: "CoxyPet®" },
         { href: "/produkter/produktutveckling", label: "Produktutveckling" },
         { href: "/produkter/patent", label: "Patent" },
       ],
@@ -114,8 +123,7 @@ export default function Header() {
   ];
 
   return (
-    <header className={styles.header}>
-      {/* Logotyp */}
+    <header className={styles.header} onClick={() => setActiveDropdown(null)}>
       <Link href="/" className={styles.logo}>
         <Image
           src="/Finance/278149D3-C96F-4CEE-BC16-3D7AB9E4DABE.png"
@@ -128,27 +136,35 @@ export default function Header() {
       <div className={styles.headersh1div}>
         <h2 className={styles.headersh1}></h2>
       </div>
-      {/* Hamburger Button */}
-      <button className={styles.hamburgerBtn} onClick={toggleMenu}>
+      <button
+        className={styles.hamburgerBtn}
+        onClick={(e) => {
+          e.stopPropagation();
+          toggleMenu();
+        }}
+      >
         <FaBars size={40} className={styles.hamburgerIcon} />
       </button>
 
-      {/* Sliding Menu */}
       <div
         className={`${styles.menu} ${isMenuOpen ? styles.menuOpen : ""}`}
         onClick={(e) => e.stopPropagation()}
       >
-        <button className={styles.closeBtn} onClick={() => closeMenu()}>
+        <button className={styles.closeBtn} onClick={closeMenu}>
           &times;
         </button>
-        <nav className={styles.nav}>
-          <Link href="/" className={styles.link} onClick={() => closeMenu("/")}>
+        <nav className={styles.nav} onClick={(e) => e.stopPropagation()}>
+          <Link
+            href="/"
+            className={styles.link}
+            onClick={() => navigateToLink("/")}
+          >
             <div className={styles.mainLink}>HEM</div>
           </Link>
           <Link
             href="/nyheter"
             className={styles.link}
-            onClick={() => closeMenu("/nyheter")}
+            onClick={() => navigateToLink("/nyheter")}
           >
             <div className={styles.mainLink}>NYHETER</div>
           </Link>
@@ -160,7 +176,7 @@ export default function Header() {
               links={dropdown.links}
               isActive={activeDropdown === dropdown.title}
               toggleDropdown={toggleDropdown}
-              closeMenu={closeMenu}
+              navigateToLink={navigateToLink}
               currentPath={pathname}
             />
           ))}
@@ -168,30 +184,15 @@ export default function Header() {
           <Link
             href="/innovation"
             className={styles.link}
-            onClick={() => closeMenu("/innovation")}
+            onClick={() => navigateToLink("/innovation")}
           >
             <div className={styles.mainLink}>INNOVATION</div>
           </Link>
 
-          {/* Press dropdown - Den ska komma efter Innovation */}
-          {dropdowns
-            .filter((dropdown) => dropdown.title === "PRESS")
-            .map((dropdown, index) => (
-              <DropdownMenu
-                key={index}
-                title={dropdown.title}
-                links={dropdown.links}
-                isActive={activeDropdown === dropdown.title}
-                toggleDropdown={toggleDropdown}
-                closeMenu={closeMenu}
-                currentPath={pathname}
-              />
-            ))}
-
           <Link
             href="/kontakt"
             className={styles.link}
-            onClick={() => closeMenu("/kontakt")}
+            onClick={() => navigateToLink("/kontakt")}
           >
             <div className={styles.mainLink}>KONTAKT</div>
           </Link>
