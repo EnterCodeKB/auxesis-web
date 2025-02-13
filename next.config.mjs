@@ -11,6 +11,10 @@ const nextConfig = {
       },
     ],
   },
+  i18n: {
+    locales: ["sv", "en"], // Svenska och engelska
+    defaultLocale: "sv", // Standard är svenska
+  },
 };
 
 export default nextConfig;
