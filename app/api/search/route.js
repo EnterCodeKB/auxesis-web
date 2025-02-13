@@ -265,7 +265,11 @@ export async function GET(req) {
   const results = pages.filter(
     (page) =>
       page.name.toLowerCase().includes(searchQuery) ||
-      page.content.toLowerCase().includes(searchQuery)
+      page.content.toLowerCase().includes(searchQuery) ||
+      (page.keywords &&
+        page.keywords.some((keyword) =>
+          keyword.toLowerCase().includes(searchQuery)
+        ))
   );
 
   return Response.json(results);
