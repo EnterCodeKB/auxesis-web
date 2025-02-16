@@ -1,5 +1,5 @@
 "use client";
-import styles from "../varabolag/varabolagSida.module.css";
+import styles from "./ourcompany.module.css";
 import React, { useEffect, useRef } from "react";
 import BackArrow from "../../components/BackArrow";
 

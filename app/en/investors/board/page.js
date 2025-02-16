@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "../../styles/InvestStyrelse.module.css";
+import styles from "../../../styles/InvestStyrelse.module.css";
 
 export default function Styrelse() {
   return (
