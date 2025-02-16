@@ -1,5 +1,5 @@
 "use client";
-import styles from "../../styles/Press.module.css";
+import styles from "../../../styles/Press.module.css";
 import * as React from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";

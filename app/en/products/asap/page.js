@@ -1,5 +1,5 @@
 "use client";
-import styles from "../../styles/Asap.module.css";
+import styles from "../../../styles/Asap.module.css";
 import BackArrow from "../../components/BackArrow";
 import HeroProduct from "../../components/HeroSectionProduct";
 
