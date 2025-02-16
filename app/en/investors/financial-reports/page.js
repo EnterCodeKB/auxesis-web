@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./finansrapport.module.css";
+import styles from "./financialreport.module.css";
 import Link from "next/link";
 
 export default function ProFinanceRapport() {
