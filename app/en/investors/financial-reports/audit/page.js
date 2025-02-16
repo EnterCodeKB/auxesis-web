@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "../../../styles/Finance.module.css";
+import styles from "../../../../styles/Finance.module.css";
 import BackArrow from "../../../components/BackArrow";
 
 export default function Protokol() {
