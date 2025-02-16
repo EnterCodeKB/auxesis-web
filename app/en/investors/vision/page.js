@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import styles from "./vision.module.css";
+import styles from "./envision.module.css";
 
 export default function Vision() {
   const effektRef = useRef(null);

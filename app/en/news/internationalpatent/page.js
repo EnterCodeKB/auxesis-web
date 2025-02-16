@@ -1,5 +1,5 @@
 "use client";
-import styles from "../internationelltpatent/index.module.css";
+import styles from "./index.module.css";
 
 export default function IntPatent() {
   const scrollToTop = () => {

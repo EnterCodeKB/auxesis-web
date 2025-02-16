@@ -1,5 +1,5 @@
 "use client";
-import styles from "../protokoll2023/index.module.css";
+import styles from "./index.module.css";
 
 export default function Protokol() {
   return (

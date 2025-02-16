@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./vaerdering.module.css";
+import styles from "./valuation.module.css";
 import BackArrow from "../../../components/BackArrow";
 
 export default function Vaerdering() {
