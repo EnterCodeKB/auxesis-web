@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./PressKontakt.module.css";
+import styles from "./presscontact.module.css";
 
 const PressKontakt = () => {
   return (

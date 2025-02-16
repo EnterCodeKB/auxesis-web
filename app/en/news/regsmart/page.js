@@ -1,4 +1,4 @@
-import styles from "../regsmart/index.module.css";
+import styles from "./index.module.css";
 
 export default function RegSmart() {
   return (

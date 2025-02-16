@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../agenda/index.module.css";
+import styles from "./index.module.css";
 import BackArrow from "../../components/BackArrow";
 import HeroAgenda from "../../components/HeroSectionAgenda";
 

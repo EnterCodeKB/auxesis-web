@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import styles from "../hallbaraaffarer/index.module.css";
+import styles from "./index.module.css";
 import BackArrow from "../../components/BackArrow";
 
 const Miljo = () => {

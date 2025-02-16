@@ -1,4 +1,4 @@
-import styles from "../usabrand/index.module.css";
+import styles from "./index.module.css";
 
 export default function Usabrand() {
   return (
