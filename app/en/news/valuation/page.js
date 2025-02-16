@@ -1,5 +1,5 @@
 "use client";
-import styles from "../vardering/index.module.css";
+import styles from "./index.module.css";
 
 export default function Vardering() {
   return (

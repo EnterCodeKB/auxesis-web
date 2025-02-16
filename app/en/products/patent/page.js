@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "../../styles/ProduktPatent.module.css";
+import styles from "../../../styles/ProduktPatent.module.css";
 import BackArrow from "../../components/BackArrow";
 import HeroPatent from "../../components/HeroSectionPatent";
 

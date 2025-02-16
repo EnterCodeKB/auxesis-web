@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "../../styles/ProduktCoxypet.module.css";
+import styles from "../../../styles/ProduktCoxypet.module.css";
 import BackArrow from "../../components/BackArrow";
 import HeroPr from "../../components/HeroSectionPr";
 export default function Coxypet() {
