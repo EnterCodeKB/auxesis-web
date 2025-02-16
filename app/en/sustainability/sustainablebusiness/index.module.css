@@ -1,0 +1,76 @@
+/* Hela sektionen */
+.halbara {
+  width: 100vw;
+  min-height: 100vh; /* Ändrat från height till min-height */
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  margin-bottom: 80px; /* Nu borde det fungera! */
+}
+
+.mainHeading {
+  text-align: center;
+
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Containrar för sektionerna */
+.sectionContainer,
+.sectionContainerReverse {
+  display: flex;
+  width: 100%;
+  height: 50vh; /* Varje sektion tar upp halva skärmen */
+}
+
+/* Standard: Bild vänster, text höger */
+.sectionContainer .imageContainer {
+  order: 1; /* Bild till vänster */
+}
+
+.sectionContainer .textContainer {
+  order: 2; /* Text till höger */
+}
+
+/* Reverse: Text vänster, bild höger */
+.sectionContainerReverse .imageContainer {
+  order: 2; /* Bild till höger */
+}
+
+.sectionContainerReverse .textContainer {
+  order: 1; /* Text till vänster */
+}
+
+/* Bildcontainer */
+.imageContainer {
+  width: 50%;
+  height: 100%;
+  position: relative; /* För Next.js Image */
+}
+
+/* Textcontainer */
+.textContainer {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: white; /* Säkerställer kontrast */
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+  .sectionContainer,
+  .sectionContainerReverse {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .imageContainer,
+  .textContainer {
+    width: 100%;
+    height: auto;
+  }
+}

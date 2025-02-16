@@ -1,0 +1,151 @@
+.container {
+  max-width: 1200px;
+  margin: 150px auto 50px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin-top: -20px;
+}
+
+.title {
+  font-size: 2rem;
+  color: #23559b;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.searchInput {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 0 auto 20px auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.newsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.newsItem {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.newsTitle {
+  font-size: 1.5rem;
+  color: #23559b;
+  margin-bottom: 10px;
+}
+
+.date {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.noNews {
+  text-align: center;
+  color: #666;
+  font-size: 1rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pageButton {
+  background-color: #23559b;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pageButton:hover {
+  background-color: #1a4178;
+}
+
+.activePage {
+  background-color: #1a4178;
+}
+
+/* Responsiv design */
+
+/* För små skärmar (max-width: 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+    margin-top: 120px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .newsTitle {
+    font-size: 1.3rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .pageButton {
+    padding: 8px 12px;
+  }
+}
+
+/* För medelstora skärmar (min-width: 768px) */
+@media (min-width: 768px) {
+  .container {
+    padding: 20px;
+    margin-top: 150px;
+  }
+
+  .newsTitle {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    margin-top: -20px;
+  }
+}
+
+/* För stora skärmar (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin-top: -40px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+}

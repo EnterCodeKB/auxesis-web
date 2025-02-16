@@ -1,60 +1,68 @@
 "use client";
 
 import Footer2 from "./components/underFooter";
+import Footer2EN from "./en/components/underFooter"; // ✅ Engelska Footer2
 import Header from "./components/Header";
+import HeaderEN from "./en/components/Header"; // ✅ Engelska Header
 import Footer from "./components/Footer";
-import ScrollToTop from "./components/ScrollToTop"; // Importera ScrollToTop-komponenten
-import "./globals.css";
+import FooterEN from "./en/components/Footer"; // ✅ Engelska Footer
 import Hero from "./components/heroSection";
+import HeroEN from "./en/components/HeroSection"; // ✅ Engelska Hero
+import ScrollToTop from "./components/ScrollToTop";
+import "./globals.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { usePathname } from "next/navigation"; // Endast usePathname används
 import CookieBanner from "./components/CookieBanner";
-import BackArrow from "./components/BackArrow"; // Importera BackArrow-komponenten
+import BackArrow from "./components/BackArrow";
+import LanguageSwitcher from "./components/LanguageSwitcher"; // ✅ Språkväxlare
+import { usePathname } from "next/navigation";
 
 export default function RootLayout({ children }) {
-  const pathname = usePathname(); // Endast denna används nu
+  const pathname = usePathname();
 
-  const hideHeroPaths = ["/produkter", "/hallbarhet"];
-  const shouldShowHero =
-    !pathname.startsWith("/login") &&
-    !hideHeroPaths.some((path) => pathname.startsWith(path));
+  // Kolla om vi är på den engelska delen av webbplatsen
+  const isEnglish = pathname.startsWith("/en");
 
-  // Navigering tillbaka logik
-  const mainLinks = {
-    "/forinvest/agare": "/",
-    "/forinvest/styrelse": "/forinvest/agare",
-    "/forinvest/vision": "/forinvest/agare",
-
-    "/innovation": "/",
-    "/hallbarhet/hallbaraaffarer": "/",
-    "/hallbarhet/agenda": "/",
-    "/kontakt": "/",
-    "/press": "/",
-  };
-
-  const mainLink = mainLinks[pathname] || null; // Default till null om ingen match hittas
+  // Kontrollera om Hero ska visas
+  const hideHeroPaths = isEnglish
+    ? ["/en/products", "/en/sustainability"]
+    : ["/produkter", "/hallbarhet"];
+  const shouldShowHero = !hideHeroPaths.some((path) =>
+    pathname.startsWith(path)
+  );
 
   return (
-    <html lang="sv">
+    <html lang={isEnglish ? "en" : "sv"}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Auxesis Pharma Holding AB (publ)</title>
-        <meta name="description" content="Your Website Description" />
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-          rel="stylesheet"
-        />
       </head>
       <body>
-        <Header />
-        {shouldShowHero && <Hero />}
+        {/* Dynamisk header */}
+        {isEnglish ? <HeaderEN /> : <Header />}
+
+        {/* Dynamisk Hero */}
+        {shouldShowHero && (isEnglish ? <HeroEN /> : <Hero />)}
+
         <div className="container">
-          <main>{children || <p>Inget innehåll att visa.</p>}</main>
+          <main>
+            {children || (
+              <p>
+                {isEnglish
+                  ? "No content available."
+                  : "Inget innehåll att visa."}
+              </p>
+            )}
+          </main>
         </div>
-        <Footer />
-        <Footer2 />
+
+        {/* Dynamisk Footer */}
+        {isEnglish ? <FooterEN /> : <Footer />}
+        {isEnglish ? <Footer2EN /> : <Footer2 />}
+
         <CookieBanner />
         <ScrollToTop />
+
+        {/* Språkväxlare alltid synlig */}
+        <LanguageSwitcher />
       </body>
     </html>
   );

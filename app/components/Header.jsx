@@ -1,3 +1,4 @@
+//app/components/Header.jsx
 "use client";
 
 import React, { useState } from "react";
@@ -5,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { FaBars } from "react-icons/fa";
+import LanguageSwitcher from "../components/LanguageSwitcher";
 import styles from "../styles/Header.module.css";
 
 const DropdownMenu = ({
@@ -198,6 +200,7 @@ export default function Header() {
           </Link>
         </nav>
       </div>
+      <LanguageSwitcher />
     </header>
   );
 }

@@ -23,7 +23,7 @@ export default function Euroclear() {
         ska vara registrerade i ett avstämningsregister hos en
         värdepapperscentral. Anledningen till att ett bolag väljer att bli ett
         avstämningsbolag är ofta att bolaget önskar införas på en marknadsplats
-        såsom börsmarknaden.
+        såsom börsmarknaden. <br />
         <a
           className={styles.link}
           href="https://www.euroclear.com/sweden/"

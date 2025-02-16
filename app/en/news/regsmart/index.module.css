@@ -1,0 +1,112 @@
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+  text-align: center;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.h1div {
+  font-size: 2.5rem;
+  color: #23559b;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.h4 {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+.ptext {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: left; /* Default alignment for paragraphs */
+  width: 100%;
+}
+
+/* Larger Screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .details {
+    max-width: 1400px; /* Wider container for larger screens */
+    padding: 40px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
+  .h1div {
+    font-size: 3rem; /* Larger font size for heading */
+    margin-bottom: 30px;
+  }
+
+  .h4 {
+    font-size: 1.5rem; /* Larger subheading */
+    margin-bottom: 40px;
+  }
+
+  .ptext {
+    font-size: 1.2rem; /* Slightly larger text for readability */
+    line-height: 1.8; /* Improved line spacing */
+    max-width: 1200px; /* Limit text width for readability */
+    margin: 0 auto 30px auto; /* Center the paragraphs */
+  }
+}
+
+/* Medium Screens (max-width: 991px) */
+@media (max-width: 991px) {
+  .details {
+    padding: 15px;
+    text-align: left; /* Adjust text alignment for better readability */
+  }
+
+  .h1div {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .ptext {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+/* Small Screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .details {
+    padding: 10px;
+  }
+
+  .h1div {
+    font-size: 1.8rem;
+  }
+
+  .ptext {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .details {
+    padding: 8px;
+  }
+
+  .h1div {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .ptext {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+}

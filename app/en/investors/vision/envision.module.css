@@ -1,0 +1,180 @@
+.hidden {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.effekt {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 80%;
+  margin: 20px auto;
+  font-weight: bold;
+}
+
+.vision {
+  width: 100%;
+  margin: 40px auto 50px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin-top: -20px;
+}
+
+.h1vision {
+  font-size: 2.5rem;
+
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.whiteboard4 {
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.h2 {
+  margin-bottom: 20px;
+}
+
+.affärside {
+  margin-top: 30px;
+}
+
+.ptext {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Responsiv design */
+
+/* Små skärmar (max-width: 480px) */
+@media (max-width: 480px) {
+  .h1vision {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .effekt {
+    width: 100%;
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  .ptext {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .whiteboard4 {
+    padding: 20px;
+  }
+}
+
+/* Medelstora skärmar (min-width: 768px) */
+@media (min-width: 768px) {
+  .h1vision {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .effekt {
+    font-size: 1.1rem;
+  }
+
+  .ptext {
+    font-size: 1rem;
+  }
+  .vision {
+    margin-top: -20px;
+  }
+}
+
+/* Responsiv design */
+
+/* För skärmar (max-width: 991px) */
+@media (max-width: 991px) {
+  .h1vision {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .effekt {
+    width: 90%; /* Öka bredden för att fylla mer av skärmen */
+    font-size: 1rem;
+    padding: 20px;
+  }
+
+  .ptext {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+  }
+
+  .whiteboard4 {
+    padding: 25px;
+  }
+
+  .vision {
+    margin: 30px auto 40px; /* Anpassa topp- och bottenspace */
+    margin-top: -20px;
+  }
+}
+
+/* Stora skärmar (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .vision {
+    margin-top: -40px;
+  }
+
+  .h1vision {
+    font-size: 3rem;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .effekt {
+    width: 80%;
+    font-size: 1.2rem;
+  }
+
+  .ptext {
+    font-size: 1.1rem;
+  }
+
+  .whiteboard4 {
+    padding: 40px;
+  }
+}

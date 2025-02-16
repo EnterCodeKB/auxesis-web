@@ -1,0 +1,133 @@
+/* Sektion för kallelse */
+.kallelse {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.h2divdark {
+  font-size: 2rem;
+  color: #23559b;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.downloadButton {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #23559b;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.downloadButton:hover {
+  background-color: #1c4484;
+  transform: scale(1.05);
+}
+
+.downloadButton:active {
+  background-color: #194276;
+  transform: scale(0.95);
+}
+
+/* Scroll-to-top knapp */
+.scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #23559b;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.scrollToTop:hover {
+  background-color: #1c4484;
+  transform: scale(1.1);
+}
+
+.scrollToTop:active {
+  background-color: #194276;
+  transform: scale(0.95);
+}
+
+/* Responsiv design */
+
+/* För små skärmar (max-width: 480px) */
+@media (max-width: 480px) {
+  .kallelse {
+    padding: 20px;
+  }
+
+  .h2divdark {
+    font-size: 1.5rem;
+  }
+
+  .downloadButton {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .scrollToTop {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+}
+
+/* För mellanstora skärmar (min-width: 768px) */
+@media (min-width: 768px) {
+  .kallelse {
+    padding: 30px 40px;
+  }
+
+  .h2divdark {
+    font-size: 1.8rem;
+  }
+
+  .downloadButton {
+    font-size: 15px;
+    padding: 10px 18px;
+  }
+
+  .scrollToTop {
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+  }
+}
+
+/* För stora skärmar (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .kallelse {
+    padding: 40px 50px 60px;
+  }
+
+  .h2divdark {
+    font-size: 2.5rem;
+  }
+
+  .downloadButton {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+
+  .scrollToTop {
+    width: 50px;
+    height: 50px;
+    font-size: 1.75rem;
+  }
+}

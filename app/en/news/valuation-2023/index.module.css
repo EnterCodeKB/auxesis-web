@@ -1,0 +1,112 @@
+/* Section for Värdering */
+.varderingssection {
+  max-width: 800px;
+  margin: 40px auto; /* Center content with top margin */
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Heading styling */
+.h2divdark {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #23559b; /* Primary color */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Download button styling */
+.downloadButton {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #23559b;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.downloadButton:hover {
+  background-color: #1c4484;
+  transform: scale(1.05);
+}
+
+.downloadButton:active {
+  background-color: #194276;
+  transform: scale(0.95);
+}
+
+/* Responsiv design */
+
+/* För små skärmar (max-width: 480px) */
+@media (max-width: 480px) {
+  .varderingssection {
+    padding: 10px;
+    margin: 40px auto;
+  }
+
+  .h2divdark {
+    font-size: 1.5rem;
+  }
+
+  .downloadButton {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+/* För mindre surfplattor och telefoner (max-width: 768px) */
+@media (max-width: 768px) {
+  .varderingssection {
+    padding: 15px;
+    margin: 40px auto;
+  }
+
+  .h2divdark {
+    font-size: 1.6rem;
+  }
+
+  .downloadButton {
+    font-size: 15px;
+    padding: 9px 18px;
+  }
+}
+
+/* För tablets och mindre laptops (max-width: 991px) */
+@media (max-width: 991px) {
+  .varderingssection {
+    padding: 20px;
+    margin: 40px auto;
+  }
+
+  .h2divdark {
+    font-size: 1.8rem;
+  }
+
+  .downloadButton {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+/* För stora skärmar (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .varderingssection {
+    max-width: 1000px;
+    margin-top: 40px;
+  }
+
+  .h2divdark {
+    font-size: 2.5rem;
+  }
+
+  .downloadButton {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+}

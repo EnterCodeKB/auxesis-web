@@ -1,0 +1,81 @@
+.container {
+  max-width: 800px;
+  margin: 40px auto 50px auto; /* Lägger till 150px marginal ovanför */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+.title {
+  font-size: 2rem;
+  color: #23559b;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.date {
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Mellanrum mellan bilderna */
+  flex-wrap: wrap; /* Gör att bilderna läggs på nästa rad om utrymme saknas */
+}
+
+.image {
+  max-width: 100%;
+  width: 300px; /* Sätter en maxbredd för bilderna */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsiv design */
+
+/* För små skärmar (max-width: 768px) */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+    margin-top: 40px; /* Mindre marginal för små skärmar */
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .text {
+    font-size: 0.9rem;
+  }
+
+  .image {
+    width: 100%; /* Anpassar bilden till skärmbredden */
+  }
+}
+
+/* För stora skärmar (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 900px;
+    margin-top: 40px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .text {
+    font-size: 1.1rem;
+  }
+}

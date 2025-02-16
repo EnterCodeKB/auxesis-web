@@ -1,20 +1,17 @@
-//** @type {import('next').NextConfig} */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    formats: ["image/avif", "image/webp"], // Aktivera AVIF och WebP
+    formats: ["image/avif", "image/webp"],
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "raw.githubusercontent.com", // GitHubs värd för råa filer
-        pathname: "/helenaltv/auxesis/**", // Byt ut mot rätt användarnamn och repo
+        hostname: "raw.githubusercontent.com",
+        pathname: "/helenaltv/auxesis/**",
       },
     ],
   },
-  i18n: {
-    locales: ["sv", "en"], // Svenska och engelska
-    defaultLocale: "sv", // Standard är svenska
-  },
+  // ❌ Ta bort i18n eftersom vi använder en manuell /en/ mapp
 };
 
 export default nextConfig;

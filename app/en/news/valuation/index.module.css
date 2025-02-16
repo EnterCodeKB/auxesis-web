@@ -1,0 +1,191 @@
+/* Container for Värdering */
+.details {
+  max-width: 800px;
+  margin: 40px auto; /* Center content with top margin */
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Main heading */
+.details h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #23559b; /* Primary color */
+  margin-bottom: 20px;
+}
+
+/* Date heading */
+.details h4 {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Text styling */
+.ptext {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Section for the report */
+.section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Report heading */
+.h2divdark {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #23559b;
+  margin-bottom: 20px;
+}
+
+/* Download button */
+.downloadButton {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #23559b;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.downloadButton:hover {
+  background-color: #1c4484;
+  transform: scale(1.05);
+}
+
+.downloadButton:active {
+  background-color: #194276;
+  transform: scale(0.95);
+}
+
+/* Responsiv design */
+
+/* För små skärmar (max-width: 480px) */
+@media (max-width: 480px) {
+  .details {
+    padding: 10px;
+    margin: 40px auto;
+  }
+
+  .details h1 {
+    font-size: 1.5rem;
+  }
+
+  .details h4 {
+    font-size: 0.9rem;
+  }
+
+  .ptext {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .h2divdark {
+    font-size: 1.4rem;
+  }
+
+  .downloadButton {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+/* För mindre surfplattor och telefoner (max-width: 768px) */
+@media (max-width: 768px) {
+  .details {
+    padding: 15px;
+    margin: 40px auto;
+  }
+
+  .details h1 {
+    font-size: 1.6rem;
+  }
+
+  .details h4 {
+    font-size: 1rem;
+  }
+
+  .ptext {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .h2divdark {
+    font-size: 1.6rem;
+  }
+
+  .downloadButton {
+    font-size: 15px;
+    padding: 9px 18px;
+  }
+}
+
+/* För tablets och mindre laptops (max-width: 991px) */
+@media (max-width: 991px) {
+  .details {
+    padding: 20px;
+    margin: 40px auto;
+  }
+
+  .details h1 {
+    font-size: 1.8rem;
+  }
+
+  .details h4 {
+    font-size: 1.1rem;
+  }
+
+  .ptext {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .h2divdark {
+    font-size: 1.7rem;
+  }
+
+  .downloadButton {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+/* För stora skärmar (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .details {
+    max-width: 1000px;
+    margin-top: 40px;
+  }
+
+  .details h1 {
+    font-size: 2.5rem;
+  }
+
+  .details h4 {
+    font-size: 1.3rem;
+  }
+
+  .ptext {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .h2divdark {
+    font-size: 2rem;
+  }
+
+  .downloadButton {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+}
