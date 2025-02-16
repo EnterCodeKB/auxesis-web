@@ -1,5 +1,5 @@
 "use client";
-import styles from "./avstamning.module.css";
+import styles from "./index.module.css";
 
 export default function AvstamningsBolag() {
   const scrollToTop = () => {
