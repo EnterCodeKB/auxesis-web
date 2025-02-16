@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/Innovation.module.css";
+import styles from "../../styles/Innovation.module.css";
 
 const Innovation = () => {
   return (

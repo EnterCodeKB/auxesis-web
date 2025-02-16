@@ -1,4 +1,4 @@
-import styles from "../../styles/InvestIr.module.css";
+import styles from "../../../styles/InvestIr.module.css";
 
 export default function IrKontakt() {
   return (

@@ -1,4 +1,4 @@
-import styles from "../nypartnerzelmic/index.module.css";
+import styles from "./index.module.css";
 
 export default function Zelmic() {
   return (
