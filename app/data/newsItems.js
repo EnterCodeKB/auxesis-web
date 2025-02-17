@@ -2,6 +2,18 @@
 
 export const newsItems = [
   {
+    title: " Peter Åberg blir ny VD i Auxesis Pharma Holding AB (publ) ",
+    subtitle: "2025/02/15",
+    description: `
+        <p></p>
+          `,
+    imageUrl: "/team/Peter.png",
+
+    slug: "nyvd",
+    isLatest: true, // Märkt som senaste
+  },
+
+  {
     title: " Auxesis Pharma har ansökt om internationellt patent ",
     subtitle: "2024/11/29",
     description: `
