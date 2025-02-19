@@ -2,7 +2,7 @@
 
 import Footer2 from "./components/underFooter";
 import Hero from "./components/heroSection";
-import HeroEN from "./en/components/heroSection"; // Engelska Hero
+import HeroEN from "./en/components/HeroSection"; // Engelska Hero
 import Footer2EN from "./en/components/underFooter"; // Engelska Footer2
 import Header from "./components/Header";
 import HeaderEN from "./en/components/Header"; // Engelska Header
