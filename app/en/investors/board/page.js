@@ -5,32 +5,30 @@ import styles from "../../../styles/InvestStyrelse.module.css";
 export default function Styrelse() {
   return (
     <div className={styles.styrelse}>
-      <h1 className={styles.h1styrelse}>
-        EN Väl sammansatt styrelse och ledning
-      </h1>
+      <h1 className={styles.h1styrelse}>Well-Composed Board and Leadership</h1>
 
       <p className={styles.ptext}>
-        Auxesis Pharma har en väl sammansatt styrelse och ledning som
-        representerar olika kompetenser.
+        Auxesis Pharma has a well-structured board and leadership team, bringing
+        together diverse expertise.
       </p>
 
       <div className={styles.menu}>
-        <h2 className={styles.h2ul}>Auxesis Pharma ledningsgrupp</h2>
+        <h2 className={styles.h2ul}>Auxesis Pharma Executive Management</h2>
         <ul className={styles.ulList}>
-          <li>Roar Adelsten, VD</li>
-          <li>Charlotta Larsson, sälj och marknad</li>
-          <li>Lars Larsson, ekonomi och finans</li>
-          <li>Peter Åberg, Läkemedelsutveckling och hållbarhet</li>
+          <li>Roar Adelsten, Owner</li>
+          <li>Charlotta Larsson, Sales & Marketing</li>
+          <li>Lars Larsson, Finance & Economy</li>
           <li>
-            Rune Nordström, styrelseordförande, affärsrådgivning, PR, HR och IR
+            Peter Åberg, CEO and Pharmaceutical Development & Sustainability
           </li>
+          <li>Rune Nordström, Chairperson, PR, HR & IR</li>
         </ul>
 
-        <h2 className={styles.h2ul}>Auxesis Pharma styrelse</h2>
+        <h2 className={styles.h2ul}>Auxesis Pharma Board of Directors</h2>
         <ul className={styles.ulList2}>
-          <li>Roar Adelsten, VD och styrelseledamot</li>
-          <li>Rune Nordström, styrelseordförande</li>
-          <li>Charlotta Larsson, styrelseledamot</li>
+          <li>Roar Adelsten, Owner och Board Member</li>
+          <li>Rune Nordström, Chairperson</li>
+          <li>Charlotta Larsson, Board Member</li>
         </ul>
       </div>
     </div>

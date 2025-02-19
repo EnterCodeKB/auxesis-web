@@ -2,58 +2,57 @@
 
 import styles from "../../../styles/ProduktPatent.module.css";
 import BackArrow from "../../components/BackArrow";
-import HeroPatent from "../../components/HeroSectionPatent";
+import HeroPatent from "../../../en/components/HeroSectionPatent";
 
 export default function Patent() {
   return (
     <>
       <HeroPatent />
       <section className={styles.patentsection}>
-        <BackArrow mainLink="/produkter/historik" label="Produkter" />
+        <BackArrow mainLink="/en/products/history" label="Patent" />
 
-        <h1>EN Patent söks i flera länder</h1>
+        <h1>Patent Applications in Multiple Countries</h1>
         <p className={styles.ptext}>
-          Auxesis Pharma lämnade den 29 november 2023 in en svensk patentansökan
-          till Patent- och registreringsverket (PRV) för uppfinningen ASA.P®. Då
-          påbörjades patentprocessen enligt internationella regler och rutiner.
-          Processen omfattar översiktligt sju steg i två faser:
+          On November 29, 2023, Auxesis Pharma submitted a Swedish patent
+          application for ASA.P® to the Swedish Patent and Registration Office
+          (PRV), initiating the patent process in accordance with international
+          regulations and procedures. <br /> The process consists of seven key
+          steps across two phases:
         </p>
 
         <ol className={styles.olList}>
-          <h2 className={styles.fasdiv}>Fas 1</h2>
+          <h2 className={styles.fasdiv}>Phase 1</h2>
           <li>
-            Svensk patentansökan till PRV (Local filing application) – månad 0.
+            Swedish Patent Application (Local Filing Application) – Month 0
           </li>
           <li>
-            Internationell patententansökan (PCT filing application) – månad 12.
+            International Patent Application (PCT Filing Application) – Month 12
           </li>
           <li>
             Internationell sökrapport (International search report) med
             skriftligt utlåtande – månad 16.
           </li>
           <li>
-            Publicering av patentansökan (International Publication) – månad 18.
+            Publication of the Patent Application (International Publication) –
+            Month 18{" "}
           </li>
 
-          <h2 className={styles.fasdiv}>Fas 2</h2>
+          <h2 className={styles.fasdiv}>Phase 2</h2>
 
           <li>
-            Begäran förberedande patentbarhetsprövning (Demand for International
-            Preliminary Examination) – månad 22.
+            Request for Preliminary Patentability Examination (Demand for
+            International Preliminary Examination) – Month 22
           </li>
+          <li>Preliminary Examination and Patentability Report – Month 28</li>
           <li>
-            Preliminär bedömning av patentbarheten (Preliminary Examination and
-            Patentability Report) – månad 28.
-          </li>
-          <li>
-            Fullföljande av patentansökningar i utvalda länder (National Phase)
-            – månad 30.
+            Finalization of National Patent Applications (National Phase) –
+            Month 30
           </li>
         </ol>
         <p className={styles.ptext}>
-          Patentprocessens första 30 månader syftar till att skapa en bra
-          ansökan med så stora möjligheter som möjligt till framtida
-          registrering och godkända patent i utvalda länder.
+          The first 30 months of the patent process are dedicated to developing
+          a strong application with the best possible prospects for future
+          registration and patent approvals in selected countries.
         </p>
       </section>
     </>

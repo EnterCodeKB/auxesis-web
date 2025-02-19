@@ -46,36 +46,42 @@ export default function About() {
   return (
     <>
       <section className={styles.omoss}>
-        <h1>EN Nytt läkemedelsföretag förändrar spelplanen</h1>
-        <h2 className={styles.h2div}>Affärsidé</h2>
+        <h1 className={styles.h1div}>A Pharmaceutical Game-Changer</h1>
+        <h2 className={styles.h2div}>Auxesis' Business Idea</h2>
         <p
           ref={animatedBoxRef}
           className={`${styles.animatedBox} ${styles.hidden}`}
         >
-          Auxesis utvecklar, baserat på eget patent, innovativa läkemedel som
-          snabbt tar bort smärta och irritation på huden hos både människor och
-          djur och som är lättillgängligt för konsumenter och olika
-          yrkesgrupper.
+          AUXESIS DEVELOPS, BASED ON ITS OWN PATENT, INOVATIVE MEDECINES THAT
+          QUICKLY REMOVE PAIN AND IRRITATION ON THE SKIN OF BOTH HUMANS AND
+          ANIMALS AND THAT ARE EASILY ACCESSIBLE TO CONSUMERS AND VARIOUS
+          PROFESSIONAL GROUPS.
         </p>
         <br />
         <p className={styles.ptext}>
-          AUXESIS PHARMA HOLDING AB(publ) är ett publikt företag som fokuserar
-          på utveckling av läkemedel för människor och djur inom kategorin
-          ”lokal smärta och irritation på huden”.
+          AUXESIS PHARMA HOLDING AB (publ), hereafter “Auxesis”, is a public
+          company focused on the development of human and animal pharmaceuticals
+          in the category of local skin pain and irritation.
         </p>
-        <BackArrow mainLink="/" label="Hem" />
+        <BackArrow mainLink="/en/" label="Home" />
 
         <h2 className={styles.subHeading}>
-          Banbrytande innovation som blockerar smärtsignalen
+          Unique Innovation That Blocks The Pain
         </h2>
         <p className={styles.ptext}>
-          Acetylsalicylsyra (ASA) är en av de mest välkända substanserna för
-          smärtlindring och har använts i läkemedel sedan slutet av 1800-talet,
-          inklusive Treo, Bamyl, Aspirin. <br /> <br />
-          Efter flera års forskning och tusentals försök har Auxesis tillsammans
-          med professor Moustapha Hassan och hans team lyckats göra det som
-          ingen annan har lyckats med förut: Att stabilisera ASA i flytande
-          form.
+          After years of research and thousands of trials, Auxesis, together
+          with Professor Moustapha Hassan and his team at Karolinska Institutet,
+          Stockholm, have managed to do what no one else has done before;
+          stabilise Acetylsalicylic Acid (ASA) in liquid form, allowing it to be
+          applied to the skin.
+        </p>
+        <p className={styles.ptext}>
+          Currently, there are two trademarks registered globally; ASA.P® and
+          CoxyPet®.
+        </p>
+        <p className={styles.ptext}>
+          ASA.P® is the first over-the-counter consumer product that quickly
+          removes pain and irritation on the skin.
         </p>
         <div className={styles.flexContainer}>
           <div ref={imgspelRef} className={styles.imgdiv}>
@@ -87,19 +93,23 @@ export default function About() {
             />
           </div>
           <div ref={effektRef} className={`${styles.effekt} ${styles.hidden}`}>
-            <h2 className={styles.h2}>Receptfritt läkemedel</h2>
+            <h2 className={styles.h2}>Over-The-Counter Consumer Product</h2>
             <p className={styles.ptext}>
-              ASA.P® är ett receptfritt läkemedel för humant bruk för behandling
-              av smärta och irritation på huden orsakad av insektsbett, maneter,
-              brännässlor och andra allergiframkallande växter, mindre
-              brännskador, solbränna, utslag och eksem.
+              ASA.P® is an over-the-counter medicine for human use to treat pain
+              and irritation on the skin caused by insect bites, jellyfish,
+              stinging nettles and other allergenic plants, minor burns,
+              sunburn, rashes and eczema.
               <br /> <br />
-              Preparatet ASA.P® har snabb verkan och blockerar smärtsignalen
-              till hjärnan inom några minuter. ASA.P® blockerar smärtan med
-              bibehållen effekt tills kroppen läker sig själv. ASA.P® har också
-              antiinflammatoriska egenskaper. För närvarande finns två
-              varumärken registrerade globalt: ASA.P® och CoxyPet®.
+              ASA.P® is the first over-the-counter consumer product that quickly
+              removes pain and irritation on the skin:
             </p>
+            <li> Quick effect, pain gone within minutes.</li>
+            <li>One application is enough.</li>
+            <li>
+              Blocks the pain with rapid effect until the body has healed
+              itself.
+            </li>
+            <li>Anti-inflammatory</li>
           </div>
         </div>
       </section>
@@ -111,36 +121,35 @@ export default function About() {
           className={`${styles.animatedBox2} ${styles.hidden}`}
         >
           {" "}
-          ATT MED VETENSKAP SOM GRUND OMDEFINIERA LÄKEMEDLESKATEGORIN SMÄRTA OCH
-          IRRITATION PÅ HUDEN.
+          TO REDEFINE THE PHARMACEUTICAL CATEGORY OF PAIN AND SKIN IRRITATION
+          WITH SCIENCE AS THE DOUNDATION
         </p>
 
         <div>
           <p className={styles.ptext}>
-            Acetylsalicylsyra (ASA) är en av de mest välkända substanserna för
-            smärtlindring och har använts i läkemedel sedan slutet av
-            1800-talet, inklusive Treo, Bamyl, Aspirin.
+            Acetylsalicylic acid (ASA) is one of the most well-known substances
+            for pain relief and has been used in pharmaceuticals since the late
+            19th century, including in Treo, Bamyl, and Aspirin.
           </p>
 
           <p className={styles.ptext}>
-            Efter flera års forskning och tusentals försök har Auxesis
-            tillsammans med professor Moustapha Hassan och hans team lyckats
-            göra det som ingen annan har gjort tidigare: Att stabilisera ASA i
-            flytande form.
+            After years of research and thousands of trials, Auxesis, together
+            with Professor Moustapha Hassan and his team, has achieved what no
+            one else has before: stabilizing ASA in liquid form.
           </p>
           <p className={styles.ptext}>
-            Med ASA i flytande form finns möjligheter att utveckla helt nya
-            beredningsformer som enkelt kan appliceras direkt på huden och ta
-            bort smärta eller irritation inom några minuter genom att blockera
-            smärtsignalen till hjärnan. Genom att tillsätta andra farmaceutiskt
-            aktiva substanser bibehålls effekten till dess att kroppen har läkt
-            sig själv. Studier pekar på att ASA.P stannar på huden och inte går
-            ut i blodomloppet.
+            With ASA in liquid form, there are new possibilities to develop
+            entirely new formulations that can be easily applied directly to the
+            skin, eliminating pain or irritation within minutes by blocking the
+            pain signal to the brain. By adding other pharmaceutically active
+            substances, the effect is maintained until the body has healed
+            itself. Studies indicate that ASA.P remains on the skin and does not
+            enter the bloodstream.
           </p>
           <p className={styles.ptext}>
-            Baserat på egna patent är Auxesis först med att utveckla innovativa
-            och tillgängliga läkemedel som inte bara lindrar utan snabbt tar
-            bort smärta och irritation på huden.
+            Based on proprietary patents, Auxesis is the first to develop
+            innovative and accessible pharmaceuticals that not only relieve but
+            rapidly eliminate pain and irritation on the skin.
           </p>
         </div>
       </section>

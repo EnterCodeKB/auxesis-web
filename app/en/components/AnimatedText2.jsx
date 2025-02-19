@@ -8,9 +8,9 @@ export default function AnimatedText2() {
     <div className={styles.animatedText}>
       <h2 className={styles.divh2}>
         AN INNOVATIVE
-        <br /> PHARMACEUTICAL COMPANY
+        <br /> PHARMACEUTICAL COMPANY WITH
       </h2>
-      <h2 className={styles.h2}>WITH GROUNDBREAKING PATENTS</h2>
+      <h2 className={styles.h2}> GROUNDBREAKING PATENTS</h2>
     </div>
   );
 }

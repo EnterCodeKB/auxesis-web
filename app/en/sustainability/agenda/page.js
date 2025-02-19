@@ -8,90 +8,98 @@ const Agenda = () => {
     <>
       <HeroAgenda />
       <section className={styles.agenda}>
-        <BackArrow mainLink="/" label="Hem" />
+        <BackArrow mainLink="/en" label="Home" />
 
-        <h1>Ansvar och transparens är avgörande</h1>
+        <h1>Responsibility and Transparency Are Key</h1>
 
         <div className={styles.section11}>
           <p className={styles.ptext}>
-            Auxesis har ett transparent förhållningssätt och företaget ska
-            tydligt redovisa sin påverkan på samhälle och miljö. Vidare har vi
-            integrerat socialt ansvarstagande i kärnverksamheten. För oss är
-            sociala och miljömässiga faktorer en del av affärsstrategin snarare
-            än separata stuprörsinitiativ.
+            Auxesis upholds a transparent approach, ensuring that the company's
+            impact on society and the environment is clearly communicated.
+            Furthermore, social responsibility is fully integrated into our core
+            operations. For us, social and environmental factors are an
+            essential part of our business strategy, rather than isolated
+            initiatives.
           </p>
           <p className={styles.ptext}>
-            Grunden i Auxesis samlade hållbarhetsarbete är våra värderingar:
-            nytänkande, pålitlighet och omtänksamhet. Värderingarna genomsyrar
-            allt vi gör och uttrycks genom vårt hållbarhetsarbete på ett
-            tydligt, genomtänkt och systematiskt sätt.{" "}
+            The foundation of Auxesis' comprehensive sustainability efforts lies
+            in our core values: innovation, reliability, and care. These values
+            are embedded in everything we do and are reflected in our
+            sustainability work in a clear, thoughtful, and systematic manner.
           </p>
         </div>
         <div className={styles.section22}>
           {" "}
-          <h2>ISO-certifiering inom en snar framtid </h2>
+          <h2>ISO Certification in the Near Future</h2>
           <p className={styles.ptext}>
-            Under 2025 inleder Auxesis Pharma arbetet med ISO-certifiering för
-            14001 (miljö) och 9001 (kvalitet). Det stärker vårt systematiska
-            hållbarhetsarbete och gör att vi möter EU:s kommande regelverk inom
-            hållbarhet.
+            In 2025, Auxesis Pharma will begin the process of obtaining ISO
+            14001 (Environmental Management) and ISO 9001 (Quality Management)
+            certification. This reinforces our systematic sustainability efforts
+            and ensures compliance with upcoming EU sustainability regulations.
           </p>
           <p className={styles.ptext}>
-            Förutom ISO-certifieringen ligger cirkulära flöden, våra värderingar
-            och Agenda 2030:s målområden till grund för vår verksamhet.{" "}
+            In addition to ISO certification, our operations are guided by
+            circular economy principles, our core values, and the UN Agenda 2030
+            goals.
           </p>
         </div>
         <div className={styles.section3}>
           {" "}
-          <h2>Cirkulära flöden styr produktionen </h2>
+          <h2>Circular Flows Drive Production</h2>
           <p className={styles.ptext}>
-            När Auxesis produktion startar kommer vi att arbeta i cirkulära
-            flöden för att:{" "}
+            When Auxesis begins production, we will operate within a circular
+            economy framework to:
           </p>
           <ul>
-            <li className={styles.divli}>Minimera materialanvändning.</li>
-            <li className={styles.divli}>Öka andelen återvunnet material.</li>
-            <li className={styles.divli}>Maximera avfallsåtervinning.</li>
+            <li className={styles.divli}>Minimize material consumption</li>
             <li className={styles.divli}>
-              Utveckla mätetal för förbättringsåtgärder.
+              Increase the use of recycled materials
+            </li>
+            <li className={styles.divli}>
+              Maximize waste recovery and recycling
+            </li>
+            <li className={styles.divli}>
+              Develop measurable indicators for continuous improvement
             </li>
           </ul>
         </div>
         <div className={styles.section4}>
           {" "}
-          <h2>Agenda 2030 är grunden </h2>
+          <h2>Agenda 2030 as the Foundation</h2>
           <p className={styles.ptext}>
-            Agenda 2030 har sju delområden som alla påverkar Auxesis verksamhet:
+            Agenda 2030 includes seven key areas that directly influence
+            Auxesis' operations:
           </p>
           <ul>
             <li className={styles.divli}>
-              Organisationsstyrning: Vi har ett etiskt och transparent ledarskap
-              som uppmuntrar socialt ansvarstagande.
+              Organizational Governance – We uphold ethical and transparent
+              leadership that fosters social responsibility.
             </li>
             <li className={styles.divli}>
-              Mänskliga rättigheter: Vi har respekt för alla individers
-              grundläggande rättigheter, oavsett sammanhang.
+              Human Rights – We respect fundamental rights for all individuals,
+              regardless of context.
             </li>
             <li className={styles.divli}>
-              Arbetsvillkor: Vi prioriterar rättvisa och säkra
-              arbetsförhållanden, inkludering och icke-diskriminering.
+              Working Conditions – We prioritize fair and safe working
+              environments, inclusion, and non-discrimination.
             </li>
             <li className={styles.divli}>
-              Miljö: För tillverkning av läkemedel prioriterar vi aktiviteter
-              för bevarande av miljön genom hållbara verksamhetsmetoder.
+              Environment – In pharmaceutical manufacturing, we emphasize
+              sustainable practices to protect the environment.
             </li>
             <li className={styles.divli}>
-              God affärssed: Vi har en tydlig och genomarbetad etisk praxis,
-              bekämpning av korruption och ansvarsfulla marknadsföringsmetoder.
+              Business Ethics – We adhere to a clear and well-structured ethical
+              framework, including anti-corruption measures and responsible
+              marketing.
             </li>
             <li className={styles.divli}>
-              Konsumentfrågor: Vi prioriterar produkters och tjänsters säkerhet,
-              tillgänglighet och kvalitet.
+              Consumer Issues – We focus on product and service safety,
+              accessibility, and quality.
             </li>
             <li className={styles.divli}>
-              Samhällsengagemang och utveckling: Vi ger bidrag till
-              samhällsutveckling, ekonomiskt och socialt och vi deltar i olika
-              frivillighetsorganisationer.{" "}
+              Community Engagement & Development – We contribute to social and
+              economic development and actively participate in various
+              non-profit initiatives.
             </li>
           </ul>
         </div>

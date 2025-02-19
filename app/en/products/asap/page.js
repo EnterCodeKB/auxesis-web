@@ -8,22 +8,22 @@ export default function AsaP() {
     <>
       <HeroProduct />
       <section className={styles.sectionA}>
-        <BackArrow mainLink="/produkter/historik" label="Produkter" />
+        <BackArrow mainLink="/en/products/history" label="ASAP" />
 
-        <h2>EN Receptfritt preparat för människa - ASA.P® </h2>
+        <h2>Over-the-Counter Product for Humans – ASA.P®</h2>
 
         <div className={styles.container1}>
           <div className={styles.textcontainer}>
             <p className={styles.ptext}>
-              Det finns idag ingen känd OTC-produkt (receptfritt läkemedel) på
-              marknaden som snabbt tar bort smärta och irritation på huden. De
-              produkter som för närvarande finns tillgängliga ger lindrande och
-              svalkande effekt under en kort period och appliceringen måste
-              upprepas regelbundet. <br /> <br />
-              Preparatet ASA.P® är ett receptfritt läkemedel för humant bruk för
-              behandling av smärta och irritation på huden orsakad av
-              insektsbett, maneter, brännässlor och andra allergiframkallande
-              växter, mindre brännskador, solbränna, utslag och eksem.
+              There is currently no known **OTC (over-the-counter) product** on
+              the market that rapidly alleviates pain and irritation on the
+              skin. Existing products provide a soothing and cooling effect for
+              a short period, requiring frequent reapplication.
+              <br /> <br />
+              ASA.P® is an **over-the-counter (OTC) medication** for human use,
+              designed to treat pain and irritation on the skin caused by insect
+              bites, jellyfish stings, nettles, and other allergenic plants, as
+              well as minor burns, sunburn, rashes, and eczema.
             </p>
           </div>
           <div>
@@ -37,24 +37,21 @@ export default function AsaP() {
         <div className={styles.container1}>
           <div className={styles.textcontainer}>
             <h2 className={styles.divh2}>
-              Blockerar smärtan tills kroppen läkt sig själv
+              Blocks Pain Until the Body Heals Itself
             </h2>
             <p className={styles.ptext}>
-              ASA.P® är den första receptfria konsumentprodukten som snabbt tar
-              bort smärta och irritation på huden:
+              ASA.P® is the first over-the-counter consumer product that rapidly
+              relieves pain and irritation on the skin.
             </p>
             <br />
             <ul className={styles.ulList}>
-              <li>Snabb effekt, smärtan borta inom några minuter.</li>
+              <li>Fast-acting – pain disappears within minutes.</li>
               <br />
-              <li>En applicering räcker.</li>
+              <li>Single application – no need for repeated use.</li>
               <br />
-              <li>
-                Blockerar smärtan med snabb effekt tills kroppen har läkt sig
-                själv.
-              </li>
+              <li>Blocks pain quickly until the body has healed itself.</li>
               <br />
-              <li>Antiinflammatorisk.</li>
+              <li>Anti-inflammatory properties.</li>
             </ul>
           </div>
         </div>

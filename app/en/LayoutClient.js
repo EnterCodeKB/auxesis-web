@@ -1,7 +1,6 @@
 "use client";
 
 import Header from "./components/Header";
-import Hero from "./components/HeroSection";
 import Footer from "./components/Footer";
 import Footer2 from "./components/underFooter";
 import ScrollToTop from "../components/ScrollToTop";
@@ -13,7 +12,11 @@ import { usePathname } from "next/navigation";
 export default function LayoutClient({ children }) {
   const pathname = usePathname();
 
-  const hideHeroPaths = ["/en/products", "/en/sustainability"];
+  const hideHeroPaths = [
+    "/en/products",
+    "/en/sustainability",
+    "/en/about/ourteam",
+  ];
   const shouldShowHero = !hideHeroPaths.some((path) =>
     pathname.startsWith(path)
   );
@@ -21,7 +24,7 @@ export default function LayoutClient({ children }) {
   return (
     <>
       <Header />
-      {shouldShowHero && <Hero />}
+
       <div className="container">
         <main>{children || <p>No content available.</p>}</main>
       </div>

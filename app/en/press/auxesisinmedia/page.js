@@ -9,7 +9,7 @@ const AuxesisMedia = () => {
 
   return (
     <section className={styles.huvuddiv}>
-      <h1>EN Auxesis Pharma i media</h1>
+      <h1>Auxesis Pharma in the Media</h1>
 
       <section className={styles.press}>
         <div className={styles.media}>
@@ -25,11 +25,11 @@ const AuxesisMedia = () => {
               <h3 className={styles.title}>Östersunds Posten Sport</h3>
               <div className={styles.description}>
                 <p>
-                  Företaget som ska rädda ÖFK vill starta läkemedelstillverkning
-                  i Östersund. Tanken är att fotbollsspelarna ska annonsera
-                  smärtlindrande preparat. – Det är en bra metod för oss att bli
-                  kända, både i kommunen och i Jämtland, säger företagsägaren
-                  Roar Adelsten.
+                  The company aiming to save ÖFK plans to start pharmaceutical
+                  production in Östersund. The idea is for football players to
+                  advertise pain-relief products. “It is a great way for us to
+                  gain recognition, both in the municipality and in Jämtland,”
+                  says company owner Roar Adelsten.
                 </p>
               </div>
               <div>
@@ -38,7 +38,7 @@ const AuxesisMedia = () => {
                     className={styles.infoButton}
                     onClick={() => handleInfoClick(itemsUrl)}
                   >
-                    Läs mer här
+                    Read more here
                   </button>
                 </Link>
               </div>
@@ -57,10 +57,10 @@ const AuxesisMedia = () => {
               <h3 className={styles.title}>P4 Sveriges Radio Podcast</h3>
               <div className={styles.description}>
                 <p>
-                  Ett medicinskt företag som ger Östersund fotbollsklubb en stor
-                  donation vill starta en fabrik i Östersund. – För en
-                  smärtstillande produkt som vi hoppas få patent på snart, säger
-                  företagets VD och grundare Roar Adelsten.
+                  A medical company that is making a large donation to Östersund
+                  Football Club plans to establish a factory in Östersund. “For
+                  a pain-relief product that we hope to patent soon,” says the
+                  company’s CEO and founder, Roar Adelsten.
                 </p>
                 <div>
                   <Link href="https://sverigesradio.se/artikel/ofk-donator-vill-bygga-fabrik-i-ostersund">
@@ -68,7 +68,7 @@ const AuxesisMedia = () => {
                       className={styles.infoButton}
                       onClick={() => handleInfoClick(itemsUrl)}
                     >
-                      Läs mer här
+                      Read more here
                     </button>
                   </Link>
                 </div>
@@ -88,13 +88,13 @@ const AuxesisMedia = () => {
               <h3 className={styles.title}>Idrottens Affärer</h3>
               <div className={styles.description}>
                 <p>
-                  – Vi ville hitta något som vi tror kan ge någon form av
-                  avkastning i framtiden. Och så kom vi i kontakt med det här
-                  företaget, Captigenics. Det är egentligen en ÖFK-supporter
-                  baserad i Stockholm som varit konsult och jobbat åt dem. Det
-                  är han som har kopplat oss, avslöjar Bengt Olofsson som också
-                  uppger att det är ett medicinföretag som utvecklar produkter
-                  för smärtlindring.
+                  “We wanted to find something that we believe could generate a
+                  return in the future. Then we came into contact with this
+                  company, Captigenics. It was actually an ÖFK supporter based
+                  in Stockholm who worked as a consultant for them. He was the
+                  one who connected us,” reveals Bengt Olofsson, who also states
+                  that it is a pharmaceutical company developing pain-relief
+                  products.
                 </p>
               </div>
               <div>
@@ -103,7 +103,7 @@ const AuxesisMedia = () => {
                     className={styles.infoButton}
                     onClick={() => handleInfoClick(itemsUrl)}
                   >
-                    Läs mer här
+                    Read more here
                   </button>
                 </Link>
               </div>

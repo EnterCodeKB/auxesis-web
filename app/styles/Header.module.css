@@ -219,9 +219,4 @@
   }
 }
 @media (min-width: 1440px) {
-  .headersh1div {
-    display: block; /* Säkerställ att div syns */
-    margin-right: 450px;
-    margin-top: 30px;
-  }
 }

@@ -11,7 +11,7 @@ const Spotlights = () => {
       <Carousel items={latestNews} />
       <button
         className={styles.readMoreButton}
-        onClick={() => (window.location.href = "/en/nyheter/page.js")}
+        onClick={() => (window.location.href = "/en/news/page.js")}
       >
         Read more{" "}
       </button>

@@ -3,7 +3,7 @@ import styles from "../../../styles/Info.module.css";
 export default function Redovisning2023() {
   return (
     <div className={styles.details}>
-      <h1> Godkänd Årsredovisning 2023-12-31 </h1>
+      <h1>Approved Annual Report – December 31, 2023 </h1>
       <h4>22024-08-30</h4>
       <p></p>
       <div className={styles.articlesimage}>

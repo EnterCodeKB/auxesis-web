@@ -18,8 +18,7 @@ export default function Aegare() {
             <p className={styles.ptext}>
               Äger 64,4 procent (privat och via bolag).
               <br />
-              Grundare, VD och affärsutvecklare inom Auxesis-koncernen sedan
-              2014.
+              Grundare och affärsutvecklare inom Auxesis-koncernen sedan 2014.
             </p>
           </div>
 

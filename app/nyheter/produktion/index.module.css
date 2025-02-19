@@ -35,9 +35,10 @@
 }
 
 .subtitle {
-  font-size: 1.5rem;
-  color: #23559b;
+  font-size: 1.3rem;
+  color: #333;
   margin: 20px 0 10px 0;
+  text-align: center;
 }
 
 .text {
@@ -77,7 +78,7 @@
   }
 
   .subtitle {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   .text {
@@ -102,7 +103,7 @@
   }
 
   .subtitle {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
   }
 
   .text {

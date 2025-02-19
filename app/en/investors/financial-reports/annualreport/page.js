@@ -7,13 +7,16 @@ export default function Protokol() {
   return (
     <>
       <div className={styles.redovdiv}>
-        <BackArrow mainLink="/forinvest/finansrapport" label="Finansrapport" />
+        <BackArrow
+          mainLink="/en/investors/financial-reports"
+          label="Financial Reports"
+        />
 
         <section className={styles.section}>
-          <h2 className={styles.h2divdark}>EN Årsredovisning 2023-12-31</h2>
+          <h2 className={styles.h2divdark}>Annual Report 2023-12-31</h2>
           <p className={styles.redovptext}>
-            Godkänd årsredovisning 2023-12-31 finns tillgänglig här. Klicka på
-            länken för att visa rapporten.
+            The approved annual report for 2023-12-31 is available here. Click
+            the link to view the report.
           </p>
           <a
             href="/Finance/Arsredovisning-2023-559195-6486.pdf"
@@ -21,14 +24,14 @@ export default function Protokol() {
             rel="noopener noreferrer"
             className={styles.downloadButton}
           >
-            Visa PDF
+            View PDF
           </a>
         </section>
         <section className={styles.section}>
-          <h2 className={styles.h2divdark}>Revisionsberättelse 2023</h2>
+          <h2 className={styles.h2divdark}>Audit Report 2023</h2>
           <p className={styles.redovptext}>
-            Revisionsberättelse 2023 för AUXESIS PHARMA HOLDING AB (publ) med
-            organisationsnummer 559195-6486.
+            The audit report for 2023 for AUXESIS PHARMA HOLDING AB (publ), with
+            organization number 559195-6486.
           </p>
           <a
             href="/Finance/23ECB23C-11F8-441B-BA8C-73867BC9DE37.jpeg"
@@ -36,15 +39,15 @@ export default function Protokol() {
             rel="noopener noreferrer"
             className={styles.downloadButton}
           >
-            Visa här
+            View here
           </a>
         </section>
 
         <section className={styles.section}>
-          <h2 className={styles.h2divdark}>Årsredovisning 2022-12-31</h2>
+          <h2 className={styles.h2divdark}>Annual Report 2022-12-31</h2>
           <p className={styles.redovptext}>
-            Godkänd årsredovisning 2022-12-31 finns tillgänglig här. Klicka på
-            länken för att visa rapporten.
+            The approved annual report for 2022-12-31 is available here. Click
+            the link to view the report.
           </p>
           <a
             href="/Finance/2022-Arsredovisning-Auxesis-Pharma-Holding-AB-2022-signed.pdf"
@@ -52,7 +55,7 @@ export default function Protokol() {
             rel="noopener noreferrer"
             className={styles.downloadButton}
           >
-            Visa PDF
+            View PDF
           </a>
         </section>
         {/* 

@@ -14,7 +14,7 @@ export default function IrKontakt() {
           </p>
           <h2 className={styles.h2namn}>Roar Adelsten</h2>
           <p className={styles.irptext}>
-            VD och grundare <br />
+            Grundare och styrelseledamot <br />
             E-post: roar.adelsten@auxesispharma.com <br />
             Mobil: 46 (0) 73 627 15 65
           </p>

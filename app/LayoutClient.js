@@ -21,7 +21,6 @@ export default function LayoutClient({ children }) {
   return (
     <>
       <Header />
-      {shouldShowHero && <Hero />}
       <div className="container">
         <main>{children || <p>Inget innehåll att visa.</p>}</main>
       </div>

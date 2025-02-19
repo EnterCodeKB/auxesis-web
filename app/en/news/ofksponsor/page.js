@@ -4,14 +4,16 @@ import styles from "../ofksponsor/index.module.css";
 export default function Ofksponsor() {
   return (
     <div className={styles.details}>
-      <h1>ÖFK-sponsor ett steg närmare fabrik i Östersund​</h1>
+      <h1>ÖFK Sponsorship – A Step Closer to a Factory in Östersund</h1>
       <h4>2023-12-15</h4>
       <p>
-        Än saknas tillverkning men aktier för flera miljoner kronor skänktes för
-        att rädda ÖFK:s elitlicens. Nu har företaget bakom gåvan tagit ett steg
-        närmare en fabrik i Östersund genom att ta patent på sin version av
-        smärtstillande aspirin. – Den första produkten blir en våtservett, säger
-        Roar Adelsten, VD för AUXESIS PHARMA HOLDING AB (publ).
+        Production Yet to Begin, but Major Step Taken Toward Östersund Factory
+        While production has not yet started, shares worth several million SEK
+        were donated to help save ÖFK’s elite license. Now, the company behind
+        the donation has taken a significant step toward establishing a factory
+        in Östersund by securing a patent for its pain-relieving aspirin
+        innovation. “The first product will be a wet wipe,” says Roar Adelsten,
+        CEO of AUXESIS PHARMA HOLDING AB (publ).
       </p>
       <img
         className={styles.image1}
@@ -20,40 +22,41 @@ export default function Ofksponsor() {
       />
       <h4>Maria Lindholm Östersunds-Posten</h4>
       <p>
-        Han och hans partners var i Östersund i samband med den sista
-        hemmamatchen i superettan. Någon match hann de inte se men de blev
-        presenterade inför publiken före avspark som ekonomiskt räddande änglar.
-        I augusti presenterade ÖFK nyheten att klubben hade fått en donation i
-        form av 110 000 aktier i företaget AUXESIS PHARMA HOLDING AB (publ).
-        Aktierna uppskattades till ett värde av 6 miljoner kronor. Klubben sålde
-        merparten av aktierna och kunde på så sätt öka den pott som krävdes för
-        att rädda ekonomin, enligt uppgift med 4,3 miljoner kronor. Sedan dess
-        har företaget haft regelbunden kontakt med kommunen. Planerna går ut på
-        att etablera produktion i Östersund. <br />
+        Adelsten and his partners visited Östersund during ÖFK’s final home
+        match in Superettan. Although they didn’t have time to watch the game,
+        they were introduced to the crowd before kickoff as the club’s financial
+        saviors. In August, ÖFK announced that the club had received a donation
+        of 110,000 shares in AUXESIS PHARMA HOLDING AB (publ), valued at 6
+        million SEK. By selling most of the shares, the club was able to raise
+        4.3 million SEK, a crucial amount for stabilizing its finances. Since
+        then, Auxesis Pharma has been in regular contact with the municipality,
+        working toward establishing production in Östersund.
         <br />
-        Men för att börja tillverka läkemedel krävs både patent och godkännande
-        från Läkemedelsverket. Och nu har Auxesis registrerat det förstnämnda. –
-        Vi har registrerat de verksamma delarna, berättar Roar Adelsten, VD för
-        det nystartade bolaget. Idén går ut på att stabilisera smärtstillande
-        aspirin som normalt löses i form av en brustablett. I stället vill
-        Auxesis ta fram ett sätt att tillverka den smärtstillande medicinen i
-        produkter som appliceras direkt på huden. Salva har nämnts tidigare men
-        först ut kommer en våtservett att tillverkas, enligt Roar Adelsten.
+        <br />
+        To manufacture pharmaceuticals, both patents and regulatory approval
+        from the Swedish Medical Products Agency are required. Auxesis has now
+        secured the patent. “We have registered the active components,” confirms
+        Roar Adelsten, CEO of the newly established company. The core innovation
+        involves stabilizing pain-relieving aspirin, which traditionally
+        dissolves in effervescent tablets. Instead, Auxesis aims to develop a
+        method for applying the medication directly to the skin. While earlier
+        discussions mentioned an ointment, the first product to be released will
+        be a wet wipe. “For example, if you get stung by nettles or burn
+        yourself while baking during the holiday season, our product provides
+        quick relief. We are also targeting minor burns, such as sunburns,”
+        Adelsten explains. With the patent now registered, the company is
+        searching for a contract manufacturer to produce the wet wipes on a
+        small scale. Alternatively, production may take place in laboratories at
+        the Karolinska Institute, where the company has access to facilities.
       </p>
       <p>
-        – Man kan tänka sig att man bränner sig på nässlor eller så här års till
-        jul, när man tar ut plåtar ur ugnen och bränner sig.  Lättare
-        brännskador som solskador tänker vi också på, säger han. I och med
-        patentregistreringen letar nu bolaget efter en lego-tillverkare som kan
-        tillverka våtservetterna i liten skala, alternativt kan de tas fram i de
-        laboratorium som företaget har tillgång till på Karolinska institutet,
-        enligt Roar Adelsten.  Nästa steg är att testa dem på människor och
-        ansöka om ett marknadsgodkännande från Läkemedelsverket. <br />
-        <br />  – Vid nyår ska vi ta beslut om vi ska hyra en befintlig lokal i
-        Östersund eller om vi ska bygga nytt från scratch. Vi har kikat på
-        lokaler och det är höga krav som ställs i och med att det är
-        tillverkning av ett farmaceutiskt preparat. En fördel är förstås att äga
-        lokalen själva, men det är inte bestämt ännu, säger Roar Adelsten.
+        The next step is testing the product on humans and applying for market
+        approval from the Swedish Medical Products Agency. “By the end of the
+        year, we will decide whether to rent an existing facility in Östersund
+        or build a new one from scratch. We have looked at several locations,
+        but the requirements for pharmaceutical manufacturing are strict. Owning
+        the facility ourselves would be an advantage, but no final decision has
+        been made yet,” says Roar Adelsten.
       </p>
       <p>
         https://www.op.se/2023-12-15/ofk-sponsor-ett-steg-narmare-fabrik-i-ostersund

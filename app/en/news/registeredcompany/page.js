@@ -2,65 +2,69 @@
 import styles from "./registeredcompany.module.css";
 
 export default function AvstamningsBolag() {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
     <>
       <section className={styles.avstamningsbolag}>
         <div className={styles.whiteboard}>
           <h2>
-            Viktig information till alla aktieägare i <br />
-            AUXESIS PHARMA HOLDING AB (publ)
+            Important Information for All Shareholders of AUXESIS PHARMA HOLDING
+            AB (publ)
           </h2>
           <p className={styles.ptext}>
-            Bolaget är nu i full gång med att bli avstämningsbolag, vilket
-            innebär ytterligare ett steg mot börsetablering. Att bli
-            avstämningsbolag innebär att alla aktieägare måste införskaffa så
-            kallade aktiedepåer och det hos institutioner som erbjuder sådant.
-            Banker är till exempel ett sådant alternativ. Det är i dessa depåer
-            som registrering av aktieinnehavet i Bolaget kommer att ske.
+            The company is now in the process of becoming a registered
+            securities company, marking another step towards a stock market
+            listing. Becoming a registered securities company requires all
+            shareholders to acquire a securities account (depå) through an
+            institution that offers such services. Banks are one option for
+            this. These accounts will be used for the registration of
+            shareholdings in the company.
           </p>
           <p className={styles.ptext}>
-            Bolaget beräknar ha genomfört avstämningsbolagsprocessen innan juni
-            (2023) månads utgång, men det kräver också att en hel del
-            aktiviteter sker enligt plan. En av dessa aktiviteter är att samla
-            upp alla Bolagets aktieägares depåer. Där behöver vi din hjälp.
+            The company expects to complete the registration process by the end
+            of June 2023. However, this requires that several key activities
+            proceed as planned. One of these activities is gathering all
+            shareholders' securities account details, and we need your help with
+            this.
           </p>
           <p className={styles.ptext}>
-            Vi vet att flera redan har etablerade aktiedepåer, men också att
-            många inte har det. För att vara helt säkra på att Bolaget har
-            uppdaterade och korrekta uppgifter vill vi att ALLA som är
-            aktieägare i Bolaget senast den 5:e maj 2023 meddelar oss det
-            aktiedepånummer och institut du vill få aktierna i Bolaget
-            elektroniskt distribuerade till. OBS! inte ISK-konto, endast
-            depåkonto gäller
+            We understand that some shareholders already have securities
+            accounts, while others may not. To ensure that the company has
+            accurate and up-to-date records, we request that ALL shareholders
+            provide their securities account number and the institution where
+            they wish to have their shares electronically registered no later
+            than May 5, 2023. Please note that ISK accounts are not valid—only
+            standard securities accounts are applicable.
           </p>
           <p className={styles.ptext}>
-            Det gör du enklast genom att skicka ett mail till oss på
-            info@auxesis.se. Ange i mailet ditt person och/eller
-            organisationsnummer (för företag), samt det institut din depå finns
-            hos samt dess nummer/ identitet. Gärna även namn på bankkontakt.
+            You can easily submit this information by emailing us at
+            info@auxesis.se. <br /> Please include in your email:{" "}
+            <li>
+              Your personal or organizational registration number (for
+              companies)
+            </li>{" "}
+            <li>
+              {" "}
+              The institution where your securities account is held and its
+              account number/ID
+            </li>
+            <li>Preferably, the name of your bank contact</li>
           </p>
           <p className={styles.ptext}>
-            Har du ingen aktiedepå kan du själv ordna det via internet. Bolaget
-            använder sig av Avanza Bank som emissionsinstitut och hos Avanza
-            bank kan du själv, via nätet, öppna en sådan aktiedepå.
+            If you do not yet have a securities account, you can open one
+            online. The company uses Avanza Bank as its issuing institution, and
+            you can open a securities account with Avanza Bank online at
             https://www.avanza.se/start.
           </p>
           <p className={styles.ptext}>
-            OBS! Om du får två e-mail eller fler beror det på att du sannolikt
-            har flera aktieposter. Då behöver du i så fall bara svara på ett,
-            såvida du inte har fördelat ditt innehav på olika bolag och dig som
-            privatperson. Då måste vi ha info om respektive depå.
+            <span className={styles.importanttext}>Important: </span> If you
+            receive multiple emails, it is likely because you hold multiple
+            shareholdings. In this case, you only need to respond once, unless
+            your holdings are distributed across different companies or between
+            a company and your private account. In such cases, we need
+            information for each respective securities account.
           </p>
         </div>
       </section>
-
-      <div className={styles.scrollToTop} onClick={scrollToTop}>
-        ⬆️
-      </div>
     </>
   );
 }

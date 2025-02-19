@@ -8,26 +8,26 @@ export default function Coxypet() {
     <>
       <HeroPr />
       <section className={styles.sectionC}>
-        <BackArrow mainLink="/produkter/historik" label="Produkter" />
+        <BackArrow mainLink="/en/products/history" label="Coxypet" />
 
         <div className={styles.contentSection}>
           <div className={styles.textBlock}>
             <h2 className={styles.h2}>
-              EN Naturligt och innovativt preparat för djur - CoxyPet®
+              A Natural and Innovative Remedy for Animals - CoxyPet®
             </h2>
             <p>
-              Det finns globalt mer än 1,5 miljoner nötkreatur, 960 miljoner
-              grisar, 600 miljoner hästar, 900 miljoner hundar, 600 miljoner
-              katter.
+              There are more than 1.5 billion cattle, 960 million pigs, 600
+              million horses, 900 million dogs, and 600 million cats worldwide.
               <br />
-              Användning av Acetylsalicylsyra oralt eller genom injektion inom
-              veterinärmedicin avråds starkt i många länder och är förbjuden i
-              vissa, däribland USA och Storbritannien.
+              The use of acetylsalicylic acid orally or by injection in
+              veterinary medicine is strongly discouraged in many countries and
+              is prohibited in some, including the United States and the United
+              Kingdom.
             </p>
             <p>
-              Boskapsdjur, inklusive kor och grisar, behandlas regelbundet med
-              antibiotika i förebyggande syfte vilket leder till betydande
-              förluster av mjölk- och köttproduktion under behandlingen.
+              Livestock, including cows and pigs, are regularly treated with
+              antibiotics as a preventive measure, leading to significant losses
+              in milk and meat production during treatment.
             </p>
           </div>
           <img
@@ -44,35 +44,38 @@ export default function Coxypet() {
             alt="Coxypet"
           />
           <div className={styles.textBlock}>
-            <h2 className={styles.h2}>Reducera användningen av antibiotika</h2>
+            <h2 className={styles.h2}>Reduce the Use of Antibiotics</h2>
             <p>
-              CoxyPet® erbjuder naturliga och innovativa lösningar för
-              medicinering av djur. Hudsmärtan kan behandlas med CoxyPet®, dels
-              för att ta bort smärtan och minska inflammationen, dels för att
-              förbättra djurhållningen.
+              CoxyPet® offers natural and innovative solutions for animal
+              medication. Skin pain can be treated with CoxyPet®, not only to
+              relieve pain and reduce inflammation but also to improve animal
+              welfare.
             </p>
             <p>
-              Användningen av CoxyPet® med lokal applicering kan reducera
-              beroendet av antibiotika och andra läkemedel och därmed bidra till
-              minskad resistens mot antibiotika samt minskning av klimat- och
-              miljöpåverkan.
+              The use of CoxyPet® through local application can reduce reliance
+              on antibiotics and other medications, thereby helping to decrease
+              antibiotic resistance and minimize climate and environmental
+              impact.
             </p>
           </div>
         </div>
 
         <div className={styles.contentSection}>
           <div className={styles.textBlock3}>
-            <h2 className={styles.h2}>Stor potential med flera fördelar</h2>
+            <h2 className={styles.h2}>
+              Great Potential with Multiple Benefits
+            </h2>
             <p>
-              CoxyPet® bygger på banbrytande forskning inom veterinärmedicin och
-              innehåller flera substanser med botande effekt. Det unika med
-              CoxyPet® är att djurhållaren själv kan applicera preparatet utan
-              risk för överdosering, vilket gör det både säkert och effektivt.
+              CoxyPet® is based on groundbreaking research in veterinary
+              medicine and contains several substances with curative effects.
+              What makes CoxyPet® unique is that animal caretakers can apply the
+              treatment themselves without the risk of overdosing, making it
+              both safe and effective.
             </p>
             <p>
-              Denna innovation representerar ett betydande framsteg inom modern
-              djurhållning och öppnar nya möjligheter för att förbättra
-              djurhälsan på ett hållbart sätt.
+              This innovation represents a significant advancement in modern
+              animal care and opens new opportunities to improve animal health
+              in a sustainable way.
             </p>
           </div>
           <img

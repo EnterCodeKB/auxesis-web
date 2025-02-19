@@ -11,68 +11,68 @@ export default function Partners() {
       link: "https://ramberglaw.se/",
       image: "/partners/ram_law_logoJpeg.jpg",
       description:
-        "Ramberg Advokater i Stockholm är en fullservicebyrå med spetskompetens inom flera rättsområden. Ramberg ger juridiskt stöd till Auxesis och hjälper till med affärsjuridik, varumärkesfrågor och alla typer av regulatoriska frågor kopplade till juridik över hela världen.",
+        "Ramberg Advokater in Stockholm is a full-service law firm with expertise in multiple legal areas. Ramberg provides legal support to Auxesis, assisting with business law, trademark matters, and all types of regulatory issues related to law worldwide.",
     },
     {
       name: "IQVIA och Svensk Läkemedelsstatistik",
       link: "https://www.iqvia.com/locations/nordics",
       image: "/partners/sl.jpeg",
       description:
-        "Iqvia och Svensk Läkemedelsstatistik tillhandahåller exakta och omfattande analyser av läkemedelsbranschen i Sverige och globalt. Genom noggranna analyser och skräddarsydda konsulttjänster erbjuds Auxesis värdefulla insikter för beslutsfattande.",
+        "IQVIA and Svensk Läkemedelsstatistik provide accurate and comprehensive analyses of the pharmaceutical industry in Sweden and globally. Through in-depth analyses and tailored consulting services, Auxesis gains valuable insights for decision-making.",
     },
     {
       name: "Granath Reklam AB",
       link: "https://granathreklam.se/",
       image: "/partners/granath.png",
       description:
-        "Granath hjälper Auxesis med kommunikation, reklam och varumärkesfrågor inför lansering av ASA.P®. Det är en fullservicebyrå som skapar distinkt kommunikation som når målgrupperna på ett effektivt och framgångsrikt sätt.",
+        "Granath supports Auxesis with communication, advertising, and branding ahead of the launch of ASA.P®. As a full-service agency, Granath creates distinctive communication that effectively and successfully reaches target audiences.",
     },
     {
       name: "RegSmart Life Science AB",
       link: "https://regsmart.se/",
       image: "/partners/reg.jpeg",
       description:
-        "RegSmart Life Science AB hjälper Auxesis med regulatoriska frågor kopplat till kommersialisering av ASA.P®. De navigerar i ett komplext och föränderligt regulatoriskt landskap.",
+        "RegSmart Life Science AB supports Auxesis with regulatory matters related to the commercialization of ASA.P®. They navigate a complex and ever-evolving regulatory landscape.",
     },
     {
       name: "Zelmic AB",
       link: "https://zelmic.se/",
       image: "/partners/zelmic.png",
       description:
-        "Zelmic utvecklar topikala och transdermala läkemedelsformuleringar och stödjer Auxesis formuleringar. De är ett erfaret, privatägt CRO och CDMO.",
+        "Zelmic develops topical and transdermal drug formulations and supports Auxesis in its formulations. They are an experienced, privately owned CRO and CDMO.",
     },
     {
       name: "AFRY",
       link: "https://afry.com/sv",
       image: "/partners/Afry.jpeg",
       description:
-        "AFRY hjälper Auxesis i processen att planera och konstruera en hållbar produktionsmodell. AFRY stöttar Auxesis med medicinsk forskning, Läkemedelsverket och uppförandet av fabriksenheten i Östersund.",
+        "AFRY assists Auxesis in planning and developing a sustainable production model. They support Auxesis with medical research, regulatory compliance with the Swedish Medical Products Agency, and the establishment of the manufacturing facility in Östersund.",
     },
     {
       name: "EIP",
       link: "https://eip.com/global/",
       image: "/partners/eip_logo_black.svg",
       description:
-        "Auxesis samarbetar med EIP gällande patent för ASA.P® och andra kommande patentansökningar. EIP har bred och internationell kompetens när det gäller att formulera bra patentansökningar över hela världen.",
+        "Auxesis collaborates with EIP on patents for ASA.P® and other upcoming patent applications. EIP has extensive international expertise in drafting strong patent applications worldwide.",
     },
     {
       name: "Edlund & Partners",
       link: "https://edlundpartners.se/",
       image: "/partners/edlundJpeg.jpg",
       description:
-        "Auxesis har Edlund & Partners som revisionsfirma. Edlund & Partners har kompetens och erfarenhet och rätt att hjälpa bolag med börsnoteringar.",
+        "Auxesis has appointed Edlund & Partners as its auditing firm. Edlund & Partners possesses the expertise and experience to assist companies with stock market listings.",
     },
   ];
 
   return (
     <section className={styles.partnersSection}>
-      <BackArrow mainLink="/omoss" label="Om Oss" />
+      <BackArrow mainLink="/en/about" label="About Us" />
 
-      <h1 className={styles.title}>Välrenommerade partners</h1>
+      <h1 className={styles.title}>Reputable Partners</h1>
       <p className={styles.description}>
-        Auxesis är i en uppstartfas där erfarna och specialiserade partners är
-        avgörande för att snabbt komma i gång med verksamheten. Våra
-        samarbetspartners finns inom en rad olika verksamhetsområden.
+        Auxesis is in its startup phase, where experienced and specialized
+        partners are essential for swiftly launching operations. Our partners
+        span a wide range of industries and expertise.
       </p>
 
       <div className={styles.partnersGrid}>
@@ -90,7 +90,7 @@ export default function Partners() {
               <p className={styles.partnerDescription}>{partner.description}</p>
               <Link href={partner.link}>
                 <button className={styles.partnerButton}>
-                  Mer om {partner.name}
+                  More about {partner.name}
                 </button>
               </Link>
             </div>

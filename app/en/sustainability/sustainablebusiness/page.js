@@ -7,9 +7,9 @@ const Miljo = () => {
   return (
     <>
       <section className={styles.halbara}>
-        <BackArrow mainLink="/" label="Hem" />
+        <BackArrow mainLink="/en" label="Home" />
         <h1 className={styles.mainHeading}>
-          EN Hållbar Innovation för Framtidens Hälsa
+          Sustainable Innovation for the Future of Health
         </h1>
 
         {/* Första sektionen med bild till vänster och text till höger */}
@@ -23,15 +23,16 @@ const Miljo = () => {
             />
           </div>
           <div className={styles.textContainer}>
-            <h2>Goda affärer är hållbara</h2>
+            <h2>Good business is sustainable</h2>
             <p className={styles.ptext}>
-              På Auxesis Pharma arbetar vi inom Agenda 2030:s samtliga områden
-              med fokus på ekonomisk, social och miljömässig hållbarhet.
-              Hållbarhet påverkar både utveckling och lansering av våra
-              läkemedel. Ett läkemedels livscykel är lång. Att tillverka
-              produkter med så lite miljöpåverkan som möjligt innebär ett
-              dagligt arbete med att utvärdera vilka faser i vår utveckling,
-              forskning, produktion och försäljning som kan påverka miljön.
+              At Auxesis Pharma, we actively engage in all areas of Agenda 2030,
+              with a strong focus on economic, social, and environmental
+              sustainability. Sustainability plays a crucial role in both the
+              development and launch of our pharmaceuticals. A drug’s life cycle
+              is long, and minimizing its environmental impact requires
+              continuous effort. Every day, we assess which stages of our
+              development, research, production, and sales can be improved to
+              reduce our environmental footprint.
             </p>
           </div>
         </div>
@@ -39,14 +40,14 @@ const Miljo = () => {
         {/* Andra sektionen med text till vänster och bild till höger */}
         <div className={styles.sectionContainerReverse}>
           <div className={styles.textContainer}>
-            <h2>Innovativa förpackningar</h2>
+            <h2>Innovative Packaging</h2>
             <p className={styles.ptext}>
-              Produkterna vi producerar ska vara innovativa i hållbara och
-              återvinningsbara förpackningar som inte påverkar miljön. Rester av
-              det förbrukade preparatet ska kunna läggas i avfallssortering
-              eller lämnas till apotekens återvinningssystem eller motsvarande i
-              andra länder. Det bidrar till en mer hållbar tillväxt för Auxesis
-              Pharma och för samhället.
+              The products we develop will feature innovative, sustainable, and
+              recyclable packaging with minimal environmental impact. Any
+              residual product should be easily disposed of through waste
+              sorting or returned to pharmacy recycling systems or their
+              equivalents in other countries. This approach supports sustainable
+              growth for both Auxesis Pharma and society as a whole.
             </p>
           </div>
           <div className={styles.imageContainer}>

@@ -22,42 +22,46 @@ export default function Produktion() {
         />
       </div>
       <h1 className={styles.title}>
-        Auxesis MedTech AB tecknade avtal om en ny produktionsanläggning i
+        Auxesis MedTech AB Signs Agreement for a New Production Facility in
         Östersund
       </h1>
       <h4 className={styles.date}>2024-09-21</h4>
       <h2 className={styles.subtitle}>
-        Den 17 september 2024 besökte Auxesis Östersund för att skriva på
-        kontraktet för den lokal som ska bli Auxesis produktionsanläggning.
+        On September 17, 2024, Auxesis MedTech AB visited Östersund to sign the
+        contract for the facility that will become the company’s new production
+        plant.
       </h2>
       <p className={styles.text}>
-        – Närmsta året kommer vi använda till att få allting på plats så att vi
-        därefter kan komma i gång med produktionen, säger vd:n Roar Adelsten
-        till tidningen Östersunds-Posten. Fabrikslokalerna är omkring 600
-        kvadratmeter som ska anpassas efter Auxesis behov och krav på
-        fabrikslokaler för läkemedelsproduktion. Hyresvärd är Persson Invest
-        Fastigheter i Östersund.
+        "The coming year will be spent getting everything in place so that we
+        can then start production," says CEO Roar Adelsten to the newspaper
+        Östersunds-Posten. The factory premises, covering approximately 600
+        square meters, will be adapted to meet Auxesis' requirements for
+        pharmaceutical production. The landlord is Persson Invest Fastigheter in
+        Östersund.
       </p>
-      <h2 className={styles.subtitle}>Många arbetstillfällen</h2>
+      <h2 className={styles.subtitle}>Many Job Opportunities</h2>
       <p className={styles.text}>
-        Östersunds-Posten beskriver hur Auxesis planerar för tvåskiftsproduktion
-        med 12-14 personer som jobbar per skift för att producera 27 000
-        produkter varje dygn när produktionen är i full drift. Tidningen
-        konstaterar att det kommer att bli en hel del arbetstillfällen för
-        Östersunds kommun, och Auxesis CFO Lars Larsson svarar: – Ja,
-        maskinproduktionen kommer behöva övervakning. Sedan kommer det bli
-        logistiktjänster eftersom vi kommer ha lager här. Och så blir det ett
-        laboratorium, där vätskorna som ska in i maskinen ska förberedas, säger
-        Larsson.
+        Östersunds-Posten reports that Auxesis is planning a two-shift
+        production with 12-14 employees per shift, aiming to produce 27,000
+        products per day once operations are in full swing. The newspaper
+        highlights the significant job opportunities this will bring to
+        Östersund Municipality. Auxesis CFO Lars Larsson comments: "Yes, the
+        machine production will require supervision. Additionally, we will need
+        logistics services since we will have a warehouse here. There will also
+        be a laboratory where the liquids for the machines will be prepared,"
+        says Larsson.
       </p>
-      <h2 className={styles.subtitle}>Den nya etableringen engagerar</h2>
+      <h2 className={styles.subtitle}>
+        Strong Engagement for the New Establishment
+      </h2>
       <p className={styles.text}>
-        Att ha produktion och laboratorium på en ort utanför Stockholm har klara
-        fördelar anser vd Roar Adelsten som ser fram emot pionjärandan och
-        engagemanget för det nya Life Science-bolaget i Östersund.
+        Having a production facility and laboratory outside Stockholm comes with
+        clear advantages, according to CEO Roar Adelsten, who looks forward to
+        the pioneering spirit and strong engagement surrounding the new Life
+        Science company in Östersund.
       </p>
       <button className={styles.infoButton} onClick={handleInfoClick}>
-        Läs mer på ÖP
+        Read more on ÖP
       </button>
       <div className={styles.imageContainer}>
         <img

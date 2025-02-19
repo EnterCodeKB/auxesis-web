@@ -39,7 +39,9 @@ export default function Bolag() {
 
       <section className={styles.varabolag}>
         <div className={styles.textarea}>
-          <h1 className={styles.h1}>EN En solid koncern med tre bolag</h1>
+          <h1 className={styles.h1}>
+            A Solid Group with Three Companies in one group
+          </h1>
 
           <div className={styles.ularea}>
             {/* Första bolaget */}
@@ -51,38 +53,42 @@ export default function Bolag() {
               </div>
               <div className={styles.auxesistext}>
                 <p className={styles.ptext}>
-                  <strong>Auxesis Pharma Holding AB (publ)</strong> är ett
-                  publikt avstämningsbolag, vilket innebär att det är ett
-                  aktiebolag vars bolagsordning innehåller ett förbehåll om att
-                  företagets aktier ska vara registrerade i ett
-                  avstämningsregister (läs mer på Bolagsverket). Företaget är
-                  moderbolag och innehar rättigheterna till patent inom
-                  specifika medicinska forskningsområden. Auxesis Pharma Holding
-                  AB (publ) fokuserar på utveckling av innovativa läkemedel för
-                  behandling av lokal smärta och irritation på huden, både för
-                  människor och djur.
+                  <strong>Auxesis Pharma Holding AB (publ)</strong>Auxesis
+                  Pharma Holding AB is the parent company and owns the rights to
+                  patents in specific medical research areas. Auxesis Pharma
+                  Holding in turn owns two subsidiaries: Auxesis MedTech AB and
+                  Auxesis Animal Care AB. It is a publicly registered company,
+                  meaning it is a limited company whose articles of association
+                  include a provision that the company's shares must be
+                  registered in a securities register (read more on
+                  Bolagsverket). The company is a parent company and holds the
+                  rights to patents within specific medical research areas.
+                  Auxesis Pharma Holding AB (publ) focuses on the development of
+                  innovative pharmaceuticals for the treatment of localized pain
+                  and skin irritation, for both humans and animals.
                 </p>
-                <h4 className={styles.h4}>Affärsidé</h4>
+                <h4 className={styles.h4}>Business Idea</h4>
                 <p className={styles.ptext}>
-                  Med utgångspunkt i egna patent utvecklar Auxesis innovativa
-                  läkemedel som effektivt lindrar smärta och irritation på
-                  huden. Produkterna är enkla att använda och tillgängliga för
-                  både konsumenter och professionella yrkesgrupper. Efter flera
-                  års forskning och tusentals tester har Auxesis, i samarbete
-                  med forskarteamet vid Karolinska Institutet i Stockholm,
-                  uppnått något unikt: att stabilisera acetylsalicylsyra (ASA) i
-                  flytande form. Denna stabilisering, kombinerad med andra redan
-                  godkända läkemedel, möjliggör en applicering direkt på huden.
+                  Building on its own patents, Auxesis develops innovative
+                  pharmaceuticals that effectively relieve pain and skin
+                  irritation. The products are easy to use and accessible to
+                  both consumers and professional sectors. After years of
+                  research and thousands of tests, Auxesis, in collaboration
+                  with the research team at Karolinska Institutet in Stockholm,
+                  has achieved something unique: stabilizing acetylsalicylic
+                  acid (ASA) in liquid form. This stabilization, combined with
+                  other already approved pharmaceuticals, enables direct
+                  application to the skin.
                 </p>
-                <h4 className={styles.h4}>Milstolpar och framtid</h4>
+                <h4 className={styles.h4}>Milestones and Future</h4>
                 <p className={styles.ptext}>
-                  Sommaren 2025 firar bolaget 10 år. Sedan starten har Auxesis
-                  genomgått en resa från idéstadiet, via forskning och
-                  kapitalisering, till prekliniska tester och globalt
-                  PCT-patentskydd. Målet är att uppnå godkännande för den
-                  banbrytande produkten ASA.P® år 2026, följt av en
-                  börsintroduktion. För närvarande har Auxesis två globala
-                  varumärken registrerade: ASA.P® och CoxyPet®.
+                  In the summer of 2025, the company will celebrate 10 years.
+                  Since its inception, Auxesis has evolved from an initial idea
+                  through research and capitalization to preclinical testing and
+                  global PCT patent protection. The goal is to achieve approval
+                  for the groundbreaking product ASA.P® by 2026, followed by a
+                  public listing. Currently, Auxesis has two globally registered
+                  trademarks: ASA.P® and CoxyPet®.
                 </p>
               </div>
             </div>
@@ -94,16 +100,17 @@ export default function Bolag() {
               </div>
               <div className={styles.medtechtext}>
                 <p className={styles.ptext}>
-                  <strong>Auxesis MedTech AB </strong> grundades 2024 och ingår
-                  i Auxesis Pharma Holding AB. Auxesis MedTech AB kommer
-                  inledningsvis inneha prototyptillverkning och licensen för att
-                  producera och marknadsföra våra medicinska produkter i Norden
-                  och licenser för resten av världen. För att säkerställa högsta
-                  möjliga standard och effektivitet etablerar vi en egen,
-                  toppmodern fabrik i Östersund. Fabriken skräddarsys för att
-                  producera våra egna produkter. Genom att ha full kontroll över
-                  produktionsprocessen kan vi garantera en unik och anpassad
-                  kvalitet av produkterna samt kontrollerade leveranser.
+                  <strong>Auxesis MedTech AB </strong> was founded in 2024 and
+                  is part of Auxesis Pharma Holding AB. Initially, Auxesis
+                  MedTech AB will manage prototype manufacturing and hold the
+                  license to produce and market our medical products in the
+                  Nordic region, as well as licenses for the rest of the world.
+                  To ensure the highest possible standards and efficiency, we
+                  are establishing our own state-of-the-art factory in
+                  Östersund, specifically designed for the production of our own
+                  products. By maintaining full control over the production
+                  process, we can guarantee a unique and customized product
+                  quality, as well as controlled deliveries.
                 </p>
               </div>
             </div>
@@ -115,13 +122,13 @@ export default function Bolag() {
               </div>
               <div className={styles.animalcaretext}>
                 <p className={styles.ptext}>
-                  <strong> Auxesis Animal Care AB </strong>utvecklar produkter
-                  för djurvårdsmarknaden med fokus på hund, katt och
-                  boskapsindustri. Bland både djurägare och veterinärer finns
-                  det efterfrågan och marknad för en produkt som hanterar smärta
-                  på djurens hud. Därför kommer vi att styra vår forskning och
-                  utveckling i nästa steg mot kategorin veterinärmedicinska
-                  läkemedel.
+                  <strong> Auxesis Animal Care AB </strong>develops products for
+                  the animal care market, focusing on dogs, cats, and the
+                  livestock industry. There is a clear demand and market need
+                  among both pet owners and veterinarians for a product that
+                  effectively addresses pain on animals' skin. Therefore, in the
+                  next phase, we will direct our research and development
+                  towards the veterinary pharmaceutical category.
                 </p>
               </div>
             </div>

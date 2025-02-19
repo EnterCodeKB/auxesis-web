@@ -1,19 +1,19 @@
 "use client";
 
 import Footer2 from "./components/underFooter";
-import Footer2EN from "./en/components/underFooter"; // ✅ Engelska Footer2
-import Header from "./components/Header";
-import HeaderEN from "./en/components/Header"; // ✅ Engelska Header
-import Footer from "./components/Footer";
-import FooterEN from "./en/components/Footer"; // ✅ Engelska Footer
 import Hero from "./components/heroSection";
-import HeroEN from "./en/components/HeroSection"; // ✅ Engelska Hero
+import HeroEN from "./en/components/heroSection"; // Engelska Hero
+import Footer2EN from "./en/components/underFooter"; // Engelska Footer2
+import Header from "./components/Header";
+import HeaderEN from "./en/components/Header"; // Engelska Header
+import Footer from "./components/Footer";
+import FooterEN from "./en/components/Footer"; // Engelska Footer
 import ScrollToTop from "./components/ScrollToTop";
 import "./globals.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import CookieBanner from "./components/CookieBanner";
 import BackArrow from "./components/BackArrow";
-import LanguageSwitcher from "./components/LanguageSwitcher"; // ✅ Språkväxlare
+import LanguageSwitcher from "./components/LanguageSwitcher"; // Språkväxlare
 import { usePathname } from "next/navigation";
 
 export default function RootLayout({ children }) {
@@ -62,7 +62,6 @@ export default function RootLayout({ children }) {
         <ScrollToTop />
 
         {/* Språkväxlare alltid synlig */}
-        <LanguageSwitcher />
       </body>
     </html>
   );

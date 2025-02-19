@@ -3,18 +3,18 @@ import styles from "./index.module.css";
 export default function Afry() {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>EN Ny partner - AFRY​</h1>
+      <h1 className={styles.title}>New Partner – AFRY ​</h1>
       <h4 className={styles.date}>2024-07-11</h4>
       <div className={styles.text}>
         <p>
-          AFRY sysselsätter tusentals högutbildade specialister inom
-          tillverkningsprocesser och -linjer, utrustning och uppföljning. Med
-          gedigen expertis utformar AFRY projektteam som utvecklar innovativa
-          produkter, processer eller nya system.
+          AFRY employs thousands of highly skilled specialists in manufacturing
+          processes, production lines, equipment, and monitoring. With extensive
+          expertise, AFRY assembles specialized project teams to develop
+          innovative products, processes, and systems.
         </p>
         <p>
-          Deras referensprojekt omfattar Pharma & Biotech, Healthcare samt
-          Medical devices and Cosmetics.
+          Their reference projects span multiple industries, including Pharma &
+          Biotech, Healthcare, Medical Devices, and Cosmetics.
         </p>
         <p>
           <a

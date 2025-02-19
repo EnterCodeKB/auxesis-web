@@ -8,7 +8,7 @@
   text-align: center;
   padding: 20px;
   width: 100%;
-  height: 100%; /* Tar upp hela höjden inom bakgrunden */
+  height: 120%; /* Tar upp hela höjden inom bakgrunden */
 }
 
 .div13 {
@@ -17,7 +17,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 400px; /* Justera höjden för att passa innehållet */
+  height: 500px; /* Justera höjden för att passa innehållet */
   display: flex;
   justify-content: center;
   align-items: center;

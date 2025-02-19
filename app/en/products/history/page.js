@@ -39,42 +39,41 @@ export default function Historik() {
     <>
       <HeroPr />
       <section className={styles.produkthistorik}>
-        <BackArrow mainLink="/" label="Hem" />
+        <BackArrow mainLink="/en" label="Home" />
 
         <div className={styles.produktinfo}>
           <div className={styles.servettext}>
-            <h1 className={styles.h1}>EN Banbrytande produkter </h1>
+            <h1 className={styles.h1}>Groundbreaking Products</h1>
             <p className={styles.ptext}>
-              Auxesis utvecklar flera preparat som blockerar smärtsignalen till
-              hjärnan och tar bort smärta på huden. <br /> <br /> Forskningen
-              omfattar produkter för människa och kan också vara användbar för
-              husdjur och boskap även om vissa receptanpassningar behöver
-              anpassas per djurart krävs. Kosmetika- och hudvårdsindustrin är
-              ytterligare en målgrupp.
+              Auxesis is developing multiple formulations that block pain
+              signals to the brain, effectively eliminating pain on the skin.{" "}
+              <br /> <br /> Our research focuses on products for human use, with
+              potential applications for pets and livestock, though specific
+              formulation adjustments may be required for different animal
+              species. Additionally, the cosmetics and skincare industry
+              represents another key target market.
             </p>
           </div>
         </div>
 
         <div className={styles.produktinfo1}>
-          <h2 className={styles.h2}>
-            Auxesis stabiliserar ASA i flytande form
-          </h2>
+          <h2 className={styles.h2}>Auxesis Stabilizes ASA in Liquid Form</h2>
           <div className={styles.divasa}>
             <p className={styles.ptext}>
-              Acetylsalicylsyra (ASA) är en av de mest välkända substanserna för
-              smärtlindring och har använts i läkemedel sedan slutet av
-              1800-talet, inklusive Treo, Bamyl, Aspirin.
-              <br /> <br /> Efter flera års forskning och tusentals försök har
-              Auxesis tillsammans med professor Moustapha Hassan och hans team
-              lyckats göra det som ingen annan har gjort tidigare: Att
-              stabilisera ASA i flytande form.
+              Acetylsalicylic acid (ASA) is one of the most well-known
+              pain-relieving substances and has been used in medications since
+              the late 1800s, including Treo, Bamyl, and Aspirin.
+              <br /> <br /> After years of research and thousands of trials,
+              Auxesis, in collaboration with Professor Moustapha Hassan and his
+              team, has achieved what no one else has done before: stabilizing
+              ASA in liquid form.
               <br /> <br />
-              Med ASA i flytande form finns möjligheter att utveckla helt nya
-              beredningsformer som enkelt kan appliceras direkt på huden och ta
-              bort smärta eller irritation inom några minuter. Genom att
-              tillsätta andra farmaceutiskt aktiva substanser bibehålls effekten
-              till dess att kroppen har läkt sig själv. Studier visar att
-              substansen stannar på huden och inte går ut i blodomloppet.
+              With liquid ASA, entirely new formulations can be developed,
+              allowing for easy direct application to the skin, effectively
+              relieving pain or irritation within minutes. By adding other
+              pharmaceutically active substances, the effect is sustained until
+              the body has healed itself. Studies indicate that the substance
+              remains on the skin and does not enter the bloodstream.
             </p>
 
             <div className={styles.handsdiv}>
@@ -92,17 +91,18 @@ export default function Historik() {
             ref={animatedBoxRef}
             className={`${styles.animatedBox} ${styles.hidden} text-xl leading-tight border-2 border-gray-500 p-6 rounded-lg shadow-lg bg-gray-100`}
           >
-            <h3>Acetylsalicylsyrans (ASA) historia </h3>
+            <h3>The History of Acetylsalicylic Acid (ASA)</h3>
             <p className={styles.ptext}>
-              Inom örtmedicinen har man sedan urminnes tider, minst så långt
-              tillbaka som 2500 f.Kr., använt salicylsyra – ett naturligt ämne
-              besläktat med det syntetiska aspirin – som utvinns från växter som
-              myrten, pil och ängsvädd.
+              In herbal medicine, salicylic acid—a natural compound related to
+              synthetic aspirin—has been used since ancient times, dating back
+              at least to 2500 BCE. It is extracted from plants such as myrtle,
+              willow, and meadowsweet.
               <br />
-              <br /> År 1897 lyckades Dr. Felix Hoffmann, en tysk forskare vid
-              Friedrich Bayer & Co., för första gången producera
-              acetylsalicylsyra (ASA) för oral användning. <br />
-              Detta markerade födelsen av både Aspirin och läkemedelsindustrin.
+              <br /> In 1897, Dr. Felix Hoffmann, a German scientist at
+              Friedrich Bayer & Co., successfully synthesized acetylsalicylic
+              acid (ASA) for oral use for the first time. <br />
+              This breakthrough marked the birth of both Aspirin and the modern
+              pharmaceutical industry.
             </p>
           </div>
 
@@ -110,46 +110,43 @@ export default function Historik() {
             ref={effektRef}
             className={`${styles.animatedBox} ${styles.hidden} text-xl leading-tight border-2 border-gray-500 p-6 rounded-lg shadow-lg bg-gray-100`}
           >
-            <h3>
-              Hur aspirin och andra antiinflammatoriska läkemedel fungerar{" "}
-            </h3>
+            <h3>How Aspirin and Other Anti-Inflammatory Drugs Work</h3>
             <p className={styles.ptext}>
-              På 1970-talet upptäckte forskare att skador på mänsklig vävnad
-              utlöser frisättning av prostaglandiner – hormonliknande molekyler
-              som orsakar feber och inflammation. <br />
-              De fann också att aspirin blockerar produktionen av dessa
-              molekyler på något sätt.
+              In the 1970s, researchers discovered that damage to human tissue
+              triggers the release of prostaglandins—hormone-like molecules that
+              cause fever and inflammation.
               <br />
-              <br /> Andra antiinflammatoriska läkemedel, såsom Ibuprofen och
-              Naproxen, verkar genom att fysiskt blockera enzymets kanaler
-              snarare än att kemiskt förändra dem.
+              They also found that aspirin blocks the production of these
+              molecules, though the exact mechanism was initially unclear.
+              <br />
+              <br /> Other anti-inflammatory drugs, such as Ibuprofen and
+              Naproxen, work by physically blocking enzyme channels rather than
+              chemically altering them.
             </p>
           </div>
         </div>
         <div className={styles.sistadiv}>
-          <h2>Vad är hudsmärta och hur reagerar kroppen?</h2>
+          <h2>What Is Skin Pain and How Does the Body React?</h2>
           <p className={styles.ptext}>
-            Nervbanorna som går från det perifera nervsystemet till hjärnan
-            transporterar information från olika sensoriska receptorer vars
-            signaler sammanställs till sinnesförnimmelser i hjärnan.
+            The nerve pathways that connect the peripheral nervous system to the
+            brain transport information from various sensory receptors, which
+            the brain processes into sensations.
           </p>
           <p className={styles.ptext}>
-            Dessa nervbanor kallas sensoriska nerver. De överför signaler om
-            till exempel beröring, värme, kyla och smärta.
+            These pathways, known as sensory nerves, transmit signals related to
+            touch, heat, cold, and pain.
           </p>
           <p className={styles.ptext}>
-            En grundläggande egenskap hos de nervceller som skickar sina trådar
-            in i huden och registrerar beröring, så kallade första ordningens
-            neuroner i det taktila systemet, är att den enskilda nervcellens
-            tråd förgrenar sig i huden så att varje nervcell har många känsliga
-            zoner.
+            A fundamental characteristic of the first-order neurons in the
+            tactile system—which extend into the skin to detect touch—is that
+            each neuron’s fiber branches out, forming multiple sensitive zones
+            across the skin.
           </p>
           <p className={styles.ptext}>
-            Det finns smärtreceptorer i huden och i nästan hela kroppen som
-            reagerar på värme, kyla, inflammation och när vi gör oss illa.
-            Mottagarna skickar sedan signaler vidare till hjärnan via
-            nervcellerna. I själva nervcellen fortplantas informationen som
-            elektriska impulser.
+            The skin, along with nearly the entire body, contains pain receptors
+            that respond to heat, cold, inflammation, and injury. These
+            receptors send signals through nerve cells to the brain, where the
+            information is transmitted as electrical impulses.
           </p>
         </div>
         <div className={styles.allaprodukter}>

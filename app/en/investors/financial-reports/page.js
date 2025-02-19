@@ -7,38 +7,38 @@ export default function ProFinanceRapport() {
   return (
     <>
       <section className={styles.frapportSection}>
-        <h1 className={styles.h1}>EN Finansiella rapporter</h1>
+        <h1 className={styles.h1}>Financial Reports</h1>
         <div className={styles.buttonGrid}>
-          <Link href="/forinvest/finansrapport/bolagsstamma">
+          <Link href="/en/investors/financial-reports/generalmeeting">
             <div className={styles.imgFinanceButton}>
               <img
                 className={styles.icons}
                 src="/Finance/bolagsordning.png"
                 alt="Bolagsordning"
               />
-              <span className={styles.buttonText}>Bolagsstämma</span>
+              <span className={styles.buttonText}>General Meeting</span>
             </div>
           </Link>
 
-          <Link href="/forinvest/finansrapport/vaerdering">
+          <Link href="/en/investors/financial-reports/valuation">
             <div className={styles.imgFinanceButton}>
               <img
                 className={styles.icons}
                 src="/Finance/vardering.png"
                 alt="Värdering"
               />
-              <span className={styles.buttonText}>Värdering</span>
+              <span className={styles.buttonText}>Valuation</span>
             </div>
           </Link>
 
-          <Link href="/forinvest/finansrapport/arsredovisning">
+          <Link href="/en/investors/financial-reports/annualreport">
             <div className={styles.imgFinanceButton}>
               <img
                 className={styles.icons}
                 src="/Finance/protokol.png"
                 alt="Årsredovisning"
               />
-              <span className={styles.buttonText}>Årsredovisning</span>
+              <span className={styles.buttonText}>Annual Report</span>
             </div>
           </Link>
         </div>

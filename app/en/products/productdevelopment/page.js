@@ -10,7 +10,10 @@ export default function ProduktUtveckling() {
 
   return (
     <section className={styles.sectionU}>
-      <BackArrow mainLink="/produkter/historik" label="Produkter" />
+      <BackArrow
+        mainLink="/en/products/productdevelopment/page.js"
+        label="Product development"
+      />
 
       <div>
         <img
@@ -21,24 +24,24 @@ export default function ProduktUtveckling() {
       </div>
       <div className={styles.textcontainer}>
         <img
-          src="/produkter/bluepalette4.png"
+          src="/produkter/productdevelopment.png"
           alt="Blå bg"
           width={600}
           height={400}
           className={styles.bluepalette}
         />
         <p className={styles.ptext}>
-          Produktutvecklingsstrategin är att utveckla innovativa läkemedel som
-          snabbt tar bort smärta och irritation på huden hos både människor och
-          djur baserat på egna patent.
+          The product development strategy focuses on creating innovative
+          medications that rapidly relieve pain and irritation on the skin for
+          both humans and animals, based on proprietary patents.
           <br /> <br />
-          Med det egna patentet som grund går Auxesis vidare för att utveckla
-          receptbelagda läkemedel samt kosmetiska produkter som snabbt tar bort
-          smärta och irritation på huden hos människor som ska vara
-          lättillgängligt för konsumenter och olika professionella grupper.
+          Building on its patent, Auxesis is advancing the development of
+          prescription medications and cosmetic products designed to provide
+          fast-acting pain and irritation relief. These products will be easily
+          accessible to both consumers and various professional groups.
           <br />
-          Ett tillämpningsområde är Cosmeceuticals – kosmetiska produkter med
-          medicinska fördelar.
+          One key application area is cosmeceuticals—cosmetic products with
+          medical benefits.
         </p>
         <div className={styles.imageGridContainer}>
           {/* Första kolumnen */}
@@ -49,8 +52,9 @@ export default function ProduktUtveckling() {
               className={styles.image}
             />
             <p className={styles.imageText}>
-              ASA.P® OTC <br /> Nya indikationer <br /> och <br />
-              beredningsformer
+              ASA.P® OTC <br /> New Indications
+              <br /> and <br />
+              Formulations
             </p>
           </div>
 
@@ -62,9 +66,10 @@ export default function ProduktUtveckling() {
               className={styles.image}
             />
             <p className={styles.imageText}>
-              CoxyPet® <br /> Smärtstillande <br />
-              läkemedel för <br />
-              husdjur och <br /> boskap
+              CoxyPet® <br /> Pain-Relieving <br />
+              Medication for
+              <br />
+              Pets and <br /> Livestock
             </p>
           </div>
 
@@ -76,7 +81,7 @@ export default function ProduktUtveckling() {
               className={styles.image}
             />
             <p className={styles.imageText}>
-              ASA.P® RX <br /> Receptbelagda <br /> versioner av <br />
+              ASA.P® RX <br /> Prescription <br /> Versions of <br />
               ASA.P®
             </p>
           </div>

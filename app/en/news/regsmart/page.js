@@ -5,40 +5,40 @@ export default function RegSmart() {
     <div className={styles.details}>
       <h1 className={styles.h1div}>
         {" "}
-        Ny partner – <br />
-        RegSmart Life Sciences AB​
+        New Partner – <br />
+        RegSmart Life Sciences AB
       </h1>
       <h4>2024-07-11</h4>
       <div className={styles.ptext}>
         <p>
-          Vi har nu etablerat ett samarbete med RegSmart Life Sciences AB för
-          att få vägledning mot aktuella sökande och godkännande processer hos
-          Svenska Läkemedelsverket.{" "}
+          We have now established a partnership with RegSmart Life Sciences AB
+          to receive guidance on current applications and approval processes
+          with the Swedish Medical Products Agency.
         </p>
         <br />
 
         <p>
-          RegSmart Life Science är ett regulatoriskt konsultföretag inom
-          läkemedel och medicintekniska produkter som hjälper kunden att
-          navigera i ett komplext och föränderligt regulatoriskt landskap. Med
-          lång regulatorisk erfarenhet från ledande befattningar på en
-          tillsynsmyndighet och från små och stora life science-företag
-          underlättar vi kundens arbete genom att veta ”vad som ska göras, när
-          och hur”. <br />
+          RegSmart Life Sciences is a regulatory consulting firm specializing in
+          pharmaceuticals and medical technology products, helping clients
+          navigate the complex and evolving regulatory landscape. With extensive
+          regulatory experience from senior positions at regulatory authorities
+          and both small and large life science companies, RegSmart simplifies
+          the process by knowing what needs to be done, when, and how. <br />
           <br />
-          RegSmart Life Sciences tillhandahåller lämpliga råd och stöd i
-          förhållande till europeiska och amerikanska regulatoriska krav, vilket
-          hjälper kunden att utveckla en regulatorisk plan som en del av din
-          övergripande projektstrategi.
+          RegSmart Life Sciences provides tailored advice and support regarding
+          European and U.S. regulatory requirements, assisting clients in
+          developing a regulatory plan as part of their overall project
+          strategy.
         </p>
         <br />
 
         <p>
-          Företagets expertis är att analysera och tolka den vägledning som
-          tillhandahålls och beslut som tas av tillsynsmyndigheter i EU och USA
-          och hjälpa till att svara på de specifika frågorna i kundens projekt.
-          RegSmart Life Sciences tillhandahåller stöd från tidig forskning under
-          hela din produktlivscykel, alltid med målproduktprofilen i åtanke.
+          The company’s expertise lies in analyzing and interpreting regulatory
+          guidelines and decisions from authorities in the EU and the U.S.,
+          helping clients respond to specific regulatory questions within their
+          projects. RegSmart Life Sciences supports clients from early-stage
+          research throughout the entire product lifecycle, always keeping the
+          target product profile in focus.
         </p>
       </div>
     </div>

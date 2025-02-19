@@ -7,13 +7,24 @@ import BackArrow from "../../components/BackArrow";
 const teamMembers = [
   {
     name: "Roar Adelsten",
-    title: "VD, grundare och styrelseledamot",
+    title: "Grundare och styrelseledamot",
     description:
       "Roar Adelsten grundade Auxesis Pharma Holding AB, MedTech AB och Animal Care AB. <br /><br />" +
       "Han har nästan 30 års erfarenhet inom läkemedelsindustrin som VD, Field Manager och medicinsk konsult, bland annat på Pfizer AS i Norge. <br /><br />  " +
       "Roar har arbetat i Sverige, Norge och USA med ortopedi, kirurgiska instrument och led- samt benartroplastik.",
 
     image: "/team/4DF7E618-AFD1-48C9-A7D8-C06E869B29C7.jpeg",
+  },
+
+  {
+    name: "Peter Åberg",
+    title:
+      "VD och affärsrådgivare, organisationsutvecklare inom medtech och läkemedel ",
+    description:
+      "Peter Åberg, del av ASA.P:s läkemedelsutvecklingsteam, har över 20 års erfarenhet som ledare och organisationsutvecklare. <br />" +
+      "Han har haft roller som VD och hållbarhetsdirektör inom medicinteknik, farmakologi och tillverkningsindustrin. <br /><br />" +
+      "Peter är Med kand i toxikologi, FN-representant och arbetar med internationella hållbarhetsstandarder för ledarskap, miljö och affärsutveckling.",
+    image: "/team/PeterJpeg1.jpeg",
   },
   {
     name: "Lars Larsson",
@@ -26,11 +37,10 @@ const teamMembers = [
   },
   {
     name: "Rune Nordström",
-    title:
-      "Styrelseordförande och affärsrådgivare, bolagsutveckling, PR och IR",
+    title: "Styrelseordförande och PR och IR",
     description:
       "Rune Nordström är arbetande styrelseordförande i Auxesis och en erfaren entreprenör inom bolagsstyrning, ledning, marknadsföring och kommunikation.<br /><br />" +
-      "Han är medgrundare till börsnoterade Thinc och har haft ledande roller som direktör på SKR:s föregångare och som informationschef på Arbetslivsinstitutet.",
+      "Han har haft ledande roller som direktör på SKR:s föregångare och som informationschef på Arbetslivsinstitutet.",
     image: "/team/Rune.jpeg",
   },
   {
@@ -49,7 +59,7 @@ const teamMembers = [
     description:
       "Helena Adelsten är mjukvaruingenjör och webbutvecklare med en akademisk bakgrund inom IT och ekonomi.  <br /><br />" +
       "Hon designar och utvecklar appar, löser problem, förbättrar prestanda och utvecklar nya algoritmer. <br /><br />  " +
-      "Som grundare av EnterCode Sweden KB fokuserar hon på webbutveckling, kundanpassade tjänster och teknisk support för att förbättra användarupplevelsen och skapa innovativa lösningar.",
+      "Som entreprenör fokuserar hon på webbutveckling, kundanpassade tjänster och teknisk support för att förbättra användarupplevelsen och skapa innovativa lösningar.",
     image: "/team/HelenaJpeg.jpeg",
   },
   {
@@ -61,16 +71,7 @@ const teamMembers = [
       "Med bred kompetens är Peter en uppskattad rådgivare för svenska och internationella företag.",
     image: "/team/Peter-RambergJpeg.jpeg",
   },
-  {
-    name: "Peter Åberg",
-    title:
-      "Affärsrådgivare, organisationsutvecklare inom medtech och läkemedel ",
-    description:
-      "Peter Åberg, del av ASA.P:s läkemedelsutvecklingsteam, har över 20 års erfarenhet som ledare och organisationsutvecklare. <br />" +
-      "Han har haft roller som VD och hållbarhetsdirektör inom medicinteknik, farmakologi och tillverkningsindustrin. <br /><br />" +
-      "Peter är Med kand i toxikologi, FN-representant och arbetar med internationella hållbarhetsstandarder för ledarskap, miljö och affärsutveckling.",
-    image: "/team/PeterJpeg1.jpeg",
-  },
+
   {
     name: "Susanna Liljedahl",
     title: "MSc Chem Eng och PM ",
@@ -106,19 +107,17 @@ export default function VartTeam() {
 
       <h1 className={styles.heading}>Kvalificerat team med bred expertis</h1>
       <p className={styles.subheading}>
-        Auxesis har ett kvalificerat team med en bra sammansättning av
-        kompetenser för att hantera bolagets samlade uppdrag och utmaningar:
+        På Auxesis Pharma Holding AB samlar vi expertis inom flera nyckelområden
+        för att driva innovation och tillväxt. Vår ledning styr strategiskt,
+        forsknings- och produktionsteam utvecklar och tillverkar med hög
+        kvalitet, och våra regulatoriska experter säkerställer regelefterlevnad.
+        Vi skyddar varumärken juridiskt, hanterar kommunikation och
+        investerarrelationer, samt driver försäljning och marknadsföring.
+        Ekonomi och finansiering stärker vår långsiktiga stabilitet. Tillsammans
+        formar vi framtidens läkemedelsutveckling.
       </p>
       {/* Infografik Bild */}
-      <div className={styles.infografikContainer}>
-        <Image
-          src="/team/infografik3.png"
-          alt="Infografik"
-          width={800}
-          height={400}
-          className={styles.infografik}
-        />
-      </div>
+
       <div className={styles.grid}>
         {teamMembers.map((member, index) => (
           <div key={index} className={styles.card}>

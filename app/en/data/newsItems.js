@@ -2,42 +2,55 @@
 
 export const newsItems = [
   {
-    title: " Auxesis Pharma har ansökt om internationellt patent ",
+    title:
+      " Peter Åberg Appointed as the New CEO of Auxesis Pharma Holding AB (publ)    ",
+    subtitle: "2025/02/15",
+    description: `
+        <p></p>
+          `,
+    imageUrl: "/team/Peter.png",
+
+    slug: "newceo",
+    isLatest: true, // Märkt som senaste
+  },
+
+  {
+    title: "Auxesis Pharma Has Applied for an International Patent ",
     subtitle: "2024/11/29",
     description: `
           <p></p>
             `,
     imageUrl: "/patent/D4DB271D-DC40-4CAE-A2F2-E55F9A89A57C.jpeg",
 
-    slug: "internationelltpatent",
+    slug: "internationalpatent",
     isLatest: true, // Märkt som senaste
   },
 
   {
-    title: "Auxesis MedTech AB har en produktionsanläggning",
+    title: "Auxesis MedTech AB Has a Production Facility    ",
     subtitle: "2024/09/21",
     description: `
           <p></p>
             `,
     imageUrl: "/Nyheter/entrelokal.jpeg",
 
-    slug: "produktion",
+    slug: "production",
     isLatest: true, // Märkt som senaste
   },
 
   {
-    title: "Varumärket ASA.P godkänns i USA​",
+    title: "The ASA.P® Trademark Approved in the USA    ​",
     subtitle: "2024/08/20",
     description: `
             <p></p>
             `,
     imageUrl: "/Nyheter/ASA.P - USA reg.79372694 (1)_Sida_2/1.png",
-    slug: "usabrand",
+    slug: "usa-brand",
     isLatest: true, // Märkt som senaste
   },
 
   {
-    title: "Ny partner - AFRY​",
+    title: "New Partner – AFRY    ​",
     subtitle: "2024/07/11",
     description: `
             <p></p>
@@ -47,7 +60,7 @@ export const newsItems = [
     isLatest: true, // Märkt som senaste
   },
   {
-    title: "Ny partner – RegSmart Life Sciences AB",
+    title: "New Partner – RegSmart Life Science AB    ",
     subtitle: "2024/07/11",
     description: `
             <p></p>`,
@@ -56,17 +69,17 @@ export const newsItems = [
     isLatest: true, // Märkt som senaste
   },
   {
-    title: "Ny partner Zelmic AB",
+    title: "New Partner – Zelmic AB    ",
     subtitle: "2024/07/10",
     description: `
             <p></p>
             `,
     imageUrl: "/partners/zelmic.png",
-    slug: "nypartnerzelmic",
+    slug: "newpartnerzelmic",
     isLatest: true, // Märkt som senaste
   },
   {
-    title: "Auxesis MedTech AB är nu registrerad",
+    title: "Auxesis MedTech AB is Now Registered    ",
     subtitle: "2024/05/23",
     description: `
             <p></p>
@@ -76,47 +89,47 @@ export const newsItems = [
     isLatest: true, // Märkt som senaste
   },
   {
-    title: "Viktig aktionärinformation ",
+    title: "Important Shareholder Information    ",
     subtitle: "2024/05/24",
     description: `
             <p></p>
             `,
     imageUrl: "",
-    slug: "avstamningsbolag",
+    slug: "registeredcompany",
     isLatest: true,
   },
   {
-    title: "AUXESIS Kallelse till årsstämma",
+    title: "AUXESIS – Notice of Annual General Meeting    ",
     subtitle: "2024/06/18",
     description: `
             <p></p>
             `,
     imageUrl: "",
-    slug: "kallelse2024",
+    slug: "notice2024",
     isLatest: true,
   },
   {
-    title: "Värdering AUXESIS",
+    title: "Auxesis Valuation    ",
     subtitle: "2024/03/01",
     description: `
             <p> </p>
             `,
     imageUrl: "/Loganstext.png",
-    slug: "vardering",
+    slug: "valuation",
     isLatest: true, // Ej senaste
   },
   {
-    title: "Ny SME status från EMA beviljad",
+    title: "New SME Status Granted by EMA    ",
     subtitle: "2024/01/23",
     description: `
             <p></p>
           `,
     imageUrl: "/Nyheter/EMA_Logo_standard.jpg",
-    slug: "smestatus",
+    slug: "sme-status",
     isLatest: true, // Ej senaste
   },
   {
-    title: "ÖFK-sponsor ett steg närmare fabrik i Östersund",
+    title: "ÖFK Sponsorship – A Step Closer to a Factory in Östersund    ",
     subtitle: "2023/12/15",
     description: `
             <p></p>
@@ -126,13 +139,13 @@ export const newsItems = [
     isLatest: true,
   },
   {
-    title: "Patentansökan är nu officiellt registrerad!",
+    title: "Patent Application Officially Registered!    ",
     subtitle: "2023/12/01",
     description: `
             <p></p>
             `,
     imageUrl: "/Loganstext.png",
-    slug: "patentasokanregistrerad",
+    slug: "patentapplication",
     isLatest: true,
   },
 
@@ -157,14 +170,14 @@ export const newsItems = [
   // isLatest: true, // Ej senaste
   //},
   {
-    title: "Värdering AUXESIS 03/2023​",
+    title: "Auxesis Valuation – March 2023    ​",
     subtitle: "2023/03/01",
     description: `
             <p></p>
            
             `,
     imageUrl: "/Loganstext.png",
-    slug: "vardering2023",
+    slug: "valuation-2023",
     isLatest: true, // Ej senaste
   },
   /*{
@@ -179,14 +192,14 @@ export const newsItems = [
       isLatest: true, // Ej senaste
     },*/
   {
-    title: "Publikt Aktiebolag​",
+    title: "Public Limited Company    ​",
     subtitle: "2022/09/21",
     description: `
             <p></p>
             
             `,
     imageUrl: "/Loganstext.png",
-    slug: "publiktaktiebolag",
+    slug: "public-limited-company",
     isLatest: true,
   },
 ];

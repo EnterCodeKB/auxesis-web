@@ -1,25 +1,28 @@
-/* Container for Avstämningsbolag */
-.avstamningsbolag {
+/* app/nyheter/nyvd/index.module.css */
+.details {
   max-width: 800px;
   margin: 40px auto; /* Center content with top margin */
   padding: 20px;
   background-color: #f9f9f9; /* Light background for contrast */
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.importanttext {
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-/* Whiteboard header */
-.whiteboard h2 {
+/* Main heading */
+.details h1 {
   font-size: 2rem;
   font-weight: bold;
   color: #23559b; /* Primary color */
   margin-bottom: 20px;
-  text-align: center;
+}
+
+/* Date heading */
+.details h4 {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
 }
 
 /* Text styling */
@@ -30,47 +33,35 @@
   margin-bottom: 20px;
 }
 
-/* Scroll-to-top button */
-.scrollToTop {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #23559b;
-  color: white;
-  padding: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  font-size: 24px;
+/* Image container */
+.articlesimage1 {
   display: flex;
-  align-items: center;
   justify-content: center;
-  z-index: 1000;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
 }
 
-.scrollToTop:hover {
-  background-color: #1c4484;
-  transform: scale(1.1);
-}
-
-.scrollToTop:active {
-  background-color: #194276;
-  transform: scale(0.95);
+.image1 {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsiv design */
 
 /* För små skärmar (max-width: 480px) */
 @media (max-width: 480px) {
-  .avstamningsbolag {
+  .details {
     padding: 10px;
     margin: 40px auto;
   }
 
-  .whiteboard h2 {
-    font-size: 1.4rem;
-    margin-bottom: 15px;
+  .details h1 {
+    font-size: 1.5rem;
+  }
+
+  .details h4 {
+    font-size: 0.9rem;
   }
 
   .ptext {
@@ -78,22 +69,24 @@
     line-height: 1.4;
   }
 
-  .scrollToTop {
-    width: 35px;
-    height: 35px;
-    font-size: 1.2rem;
+  .image1 {
+    max-width: 100%; /* Full width for smaller screens */
   }
 }
 
 /* För mindre surfplattor och telefoner (max-width: 768px) */
 @media (max-width: 768px) {
-  .avstamningsbolag {
+  .details {
     padding: 15px;
     margin: 40px auto;
   }
 
-  .whiteboard h2 {
+  .details h1 {
     font-size: 1.6rem;
+  }
+
+  .details h4 {
+    font-size: 1rem;
   }
 
   .ptext {
@@ -101,22 +94,24 @@
     line-height: 1.5;
   }
 
-  .scrollToTop {
-    width: 40px;
-    height: 40px;
-    font-size: 1.4rem;
+  .image1 {
+    max-width: 90%;
   }
 }
 
 /* För tablets och mindre laptops (max-width: 991px) */
 @media (max-width: 991px) {
-  .avstamningsbolag {
+  .details {
     padding: 20px;
     margin: 40px auto;
   }
 
-  .whiteboard h2 {
+  .details h1 {
     font-size: 1.8rem;
+  }
+
+  .details h4 {
+    font-size: 1.1rem;
   }
 
   .ptext {
@@ -124,22 +119,24 @@
     line-height: 1.6;
   }
 
-  .scrollToTop {
-    width: 45px;
-    height: 45px;
-    font-size: 1.4rem;
+  .image1 {
+    max-width: 80%;
   }
 }
 
 /* För stora skärmar (min-width: 1200px) */
 @media (min-width: 1200px) {
-  .avstamningsbolag {
+  .details {
     max-width: 1000px;
     margin-top: 40px;
   }
 
-  .whiteboard h2 {
+  .details h1 {
     font-size: 2.5rem;
+  }
+
+  .details h4 {
+    font-size: 1.3rem;
   }
 
   .ptext {
@@ -147,9 +144,7 @@
     line-height: 1.6;
   }
 
-  .scrollToTop {
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
+  .image1 {
+    max-width: 400px; /* Keep a fixed size for large screens */
   }
 }

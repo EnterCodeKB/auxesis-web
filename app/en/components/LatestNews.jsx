@@ -32,7 +32,7 @@ const LatestNews = ({ newsItems }) => {
                 className={styles.readMoreButton}
                 onClick={() => handleReadMore(item.slug)}
               >
-                Läs mer
+                Read more
               </button>
             </div>
           ))}

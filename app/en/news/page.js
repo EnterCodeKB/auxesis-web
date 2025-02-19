@@ -52,7 +52,7 @@ function NyheterContent() {
 
   const handlePageChange = (page) => {
     if (page >= 1 && page <= totalPages) {
-      router.push(`/nyheter?page=${page}`);
+      router.push(`/en/news?page=${page}`);
       scrollToTop();
     }
   };
@@ -65,15 +65,15 @@ function NyheterContent() {
   return (
     <section className={styles.container}>
       <BackArrow
-        mainLink={`/nyheter?page=${Math.max(currentPage - 1, 1)}`}
+        mainLink={`/en/news?page=${Math.max(currentPage - 1, 1)}`}
         label="Tillbaka"
       />
 
-      <h2 className={styles.title}>Alla nyheter</h2>
+      <h2 className={styles.title}>All News</h2>
 
       <input
         type="text"
-        placeholder="Sök efter nyheter"
+        placeholder="Search for news"
         value={searchQuery}
         onChange={handleSearchChange}
         className={styles.searchInput}
@@ -89,13 +89,13 @@ function NyheterContent() {
                 className={styles.description}
                 dangerouslySetInnerHTML={{ __html: item.description }}
               />
-              <Button1 onClick={() => router.push(`/nyheter/${item.slug}`)}>
-                Läs mer
+              <Button1 onClick={() => router.push(`/en/news/${item.slug}`)}>
+                Read more
               </Button1>
             </div>
           ))
         ) : (
-          <p className={styles.noNews}>Inga nyheter hittades.</p>
+          <p className={styles.noNews}>No news found</p>
         )}
       </div>
 

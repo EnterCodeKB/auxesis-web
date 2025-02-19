@@ -10,7 +10,7 @@
 }
 
 .div13 {
-  background-image: url("/produkter/bgprodukter1.png");
+  background-image: url("/team/heroteam.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -67,7 +67,7 @@
   }
 
   .div13 {
-    background-image: url("/produkter/bgprodukter1.png"); /* Behåll bilden */
+    background-image: url("/team/heroteam.jpg");
     background-size: cover;
     background-position: center;
     height: aut; /* Justera höjden */
@@ -100,7 +100,7 @@
   }
 
   .div13 {
-    background-image: url("/produkter/bgprodukter1.png");
+    background-image: url("/team/heroteam.jpg");
     background-size: cover;
     background-position: center;
     height: 350px; /* Anpassa höjden */
@@ -132,7 +132,7 @@
   }
 
   .div13 {
-    background-image: url("/produkter/bgprodukter1.png");
+    background-image: url("/team/heroteam.jpg");
     background-size: cover;
     background-position: center;
     height: 400px; /* Normal höjd */
@@ -160,16 +160,15 @@
 /* För stora skärmar (min-width: 1200px) */
 @media (min-width: 1200px) {
   .heroSection {
-    height: 700px;
+    height: 650px;
   }
 
   .div13 {
-    background-image: url("/produkter/bgprodukter1.png");
+    background-image: url("/team/heroteam.jpg");
     background-size: cover;
     background-position: center;
-    height: 800px;
-    width: 100%;
-    margin-top: 130px;
+    width: 80%;
+    height: 600px;
   }
 
   .div18 {

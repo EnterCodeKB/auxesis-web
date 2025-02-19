@@ -4,21 +4,21 @@ import styles from "./presscontact.module.css";
 const PressKontakt = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.heading}>EN Presskontakt</h1>
+      <h1 className={styles.heading}>Press Contact</h1>
       <p className={styles.intro}>
-        Välkommen till vår presskontakt. Här hittar du information för
-        journalister, media och andra intressenter som vill komma i kontakt med
-        oss angående pressfrågor och företagsnyheter.
+        Welcome to our press contact page. Here you will find information for
+        journalists, media, and other stakeholders who wish to get in touch with
+        us regarding press inquiries and company news.
       </p>
 
       {/* Kontaktuppgifter */}
       <div className={styles.contactBox}>
-        <h2 className={styles.subHeading}>Presskontakt</h2>
+        <h2 className={styles.subHeading}>Press Contact</h2>
         <p className={styles.ptext}>
-          <strong>Namn:</strong> Rune Nordström
+          <strong>Name: Rune Nordström</strong> Rune Nordström
         </p>
         <p className={styles.ptext}>
-          <strong>E-post:</strong>{" "}
+          <strong>Email:</strong>{" "}
           <a
             href="mailto:rune.nordstrom@auxesispharma.com"
             className={styles.link}
@@ -27,7 +27,7 @@ const PressKontakt = () => {
           </a>
         </p>
         <p className={styles.ptext}>
-          <strong>Mobil:</strong>{" "}
+          <strong>Mobile:</strong>{" "}
           <a href="tel:+46706026520" className={styles.link}>
             +46 (0)70-602 65 20
           </a>
@@ -36,11 +36,11 @@ const PressKontakt = () => {
 
       {/* Pressmeddelanden */}
       <div className={styles.section}>
-        <h2 className={styles.subHeading}>Senaste pressmeddelanden</h2>
+        <h2 className={styles.subHeading}>Latest Press Releases</h2>
         <p className={styles.ptext}>
-          För våra senaste pressmeddelanden, besök vår{" "}
-          <a href="/nyheter" className={styles.link}>
-            Nyhetssida
+          For our latest press releases, visit our <br />
+          <a href="/en/news" className={styles.link}>
+            News Page
           </a>
           .
         </p>

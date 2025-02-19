@@ -7,10 +7,13 @@ export default function Vaerdering() {
   return (
     <>
       <section className={styles.vaerdering}>
-        <BackArrow mainLink="/forinvest/finansrapport" label="Finansrapport" />
+        <BackArrow
+          mainLink="/en/investors/financial-reports"
+          label="Financial Reports"
+        />
 
         <h2 className={styles.h2divdark}>
-          EN Värderingsrapport <br /> 2024-02-13
+          Valuation Report <br /> 2024-02-13
         </h2>
         <a
           href="/Finance/Värdering 2024.pdf"
@@ -18,7 +21,7 @@ export default function Vaerdering() {
           rel="noopener noreferrer"
           className={styles.downloadButton}
         >
-          Visa här
+          View here
         </a>
       </section>
     </>

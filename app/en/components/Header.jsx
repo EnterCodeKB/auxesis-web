@@ -88,7 +88,6 @@ export default function Header() {
         { href: "/en/about/ourcompany", label: "Our Companies" },
         { href: "/en/about/ourteam", label: "Team" },
         { href: "/en/about/partners", label: "Partners" },
-        { href: "/en/about/uniqueproducts", label: "Unique Products" },
       ],
     },
     {
@@ -103,10 +102,6 @@ export default function Header() {
         {
           href: "/en/investors/ir-contact",
           label: "Investor Relations Contact",
-        },
-        {
-          href: "/en/investors/vision",
-          label: "Vision",
         },
       ],
     },

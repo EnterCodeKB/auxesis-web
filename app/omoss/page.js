@@ -46,7 +46,10 @@ export default function About() {
   return (
     <>
       <section className={styles.omoss}>
-        <h1> Nytt läkemedelsföretag förändrar spelplanen</h1>
+        <h1 className={styles.h1div}>
+          {" "}
+          Nytt läkemedelsföretag förändrar spelplanen
+        </h1>
         <h2 className={styles.h2div}>Affärsidé</h2>
         <p
           ref={animatedBoxRef}

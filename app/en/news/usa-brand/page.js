@@ -3,20 +3,23 @@ import styles from "./index.module.css";
 export default function Usabrand() {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Varumärket ASA.P godkännande från USA​</h1>
+      <h1 className={styles.title}>ASA.P Trademark Approved in the U.S. ​</h1>
       <h4 className={styles.date}>2024-08-20</h4>
       <p className={styles.text}>
-        Auxesis Pharma Holding AB har fått godkännande från USA för att använda
-        varumärket ASA.P för en rad medicinska och veterinärprodukter.
-        Godkännandet omfattar produkter som biologiska och kemiska preparat för
-        smärtlindring, läkemedel för både människor och djur, samt olika
-        medicinska produkter som kylsprayer, massage-geler och medicinerade
-        schampon. Produkterna är avsedda för behandling av smärta, infektioner,
-        sårvård och hudåkommor såsom solbränna och eksem. Varumärket ASA.P
-        täcker därmed ett brett spektrum av både medicinska och
-        veterinärmedicinska användningsområden. Godkännande är nr 27 av dom 32
-        länder vi har ansökt skydd för. Vi har även ansökt nya länder i
-        Sydamerika och Afrika denna hösten.
+        Auxesis Pharma Holding AB has received U.S. approval to use the ASA.P
+        trademark for a range of medical and veterinary products. The approval
+        covers products including biological and chemical preparations for pain
+        relief, medications for both humans and animals, and various medical
+        products such as cooling sprays, massage gels, and medicated shampoos.
+        <br /> <br />
+        These products are designed for the treatment of pain, infections, wound
+        care, and skin conditions, including sunburn and eczema. The ASA.P
+        trademark now encompasses a wide range of medical and veterinary
+        applications. <br />
+        <br />
+        This approval is number 27 out of the 32 countries where protection has
+        been applied for. Additionally, new trademark applications have been
+        submitted this fall in South America and Africa.
       </p>
       <div className={styles.imageContainer}>
         <img

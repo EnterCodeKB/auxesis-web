@@ -5,30 +5,30 @@ export default function Publikt() {
   return (
     <div className={styles.details}>
       <h1 className={styles.h1div}>
-        AUXESIS PHARMA HOLDING AB (publ) blir publikt aktiebolag ​
+        AUXESIS PHARMA HOLDING AB (publ) Becomes a Public Limited Company
       </h1>
       <h4>2022-09-21</h4>
       <div className={styles.ptext}>
         <p>
-          AUXESIS PHARMA HOLDING AB (publ) har nu officiellt registrerats hos
-          Bolagsverket som ett publikt aktiebolag med ett aktiekapital om 500
-          000 kronor. Denna statusförändring innebär att bolaget nu har rätt att
-          erbjuda aktier, teckningsrätter och andra värdepapper till
-          allmänheten, vilket öppnar upp nya möjligheter för framtida expansion
-          och investeringar.
+          AUXESIS PHARMA HOLDING AB (publ) has now been officially registered
+          with the Swedish Companies Registration Office (Bolagsverket) as a
+          public limited company with a share capital of 500,000 SEK. <br />
+          This status change grants the company the right to offer shares,
+          subscription rights, and other securities to the public, opening up
+          new opportunities for future expansion and investment.
         </p>
         <br />
         <p>
-          Som publikt aktiebolag tar AUXESIS PHARMA ytterligare ett steg i sin
-          tillväxtresa och fortsätter att stärka sitt engagemang för att
-          leverera värde till både aktieägare och marknaden. Den nya statusen
-          reflekterar bolagets långsiktiga vision om transparens och
-          tillgänglighet på kapitalmarknaden.
+          As a public limited company, AUXESIS PHARMA takes another step forward
+          in its growth journey, further strengthening its commitment to
+          delivering value to both shareholders and the market. The new status
+          reflects the company’s long-term vision of transparency and
+          accessibility in the capital market.
         </p>
         <br />
         <p>
-          Vi ser fram emot att dela denna spännande resa med våra aktieägare och
-          välkomnar nya investerare som vill bli en del av vår utveckling.
+          We look forward to sharing this exciting journey with our shareholders
+          and welcome new investors who wish to be part of our development.
         </p>
       </div>
     </div>
