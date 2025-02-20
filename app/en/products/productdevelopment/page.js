@@ -12,7 +12,7 @@ export default function ProduktUtveckling() {
     <section className={styles.sectionU}>
       <BackArrow
         mainLink="/en/products/productdevelopment/page.js"
-        label="Product development"
+        label="Products"
       />
 
       <div>

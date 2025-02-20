@@ -9,7 +9,7 @@ export default function Patent() {
     <>
       <HeroPatent />
       <section className={styles.patentsection}>
-        <BackArrow mainLink="/en/products/history" label="Patent" />
+        <BackArrow mainLink="/en/products/history" label="Products" />
 
         <h1>Patent Applications in Multiple Countries</h1>
         <p className={styles.ptext}>

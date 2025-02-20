@@ -8,7 +8,7 @@ export default function AsaP() {
     <>
       <HeroProduct />
       <section className={styles.sectionA}>
-        <BackArrow mainLink="/en/products/history" label="ASAP" />
+        <BackArrow mainLink="/en/products/history" label="Products" />
 
         <h2>Over-the-Counter Product for Humans – ASA.P®</h2>
 
