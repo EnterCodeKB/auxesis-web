@@ -4,15 +4,14 @@
   align-items: center;
   justify-content: center;
   width: 100vw; /* Hela skärmens bredd */
-  height: auto;
+  height: 420px;
   padding: 0;
   margin: 0;
-  margin-top: 60px;
+  margin-top: 170px;
 }
 
 .div13 {
-  width: 100vw; /* Hela bredden */
-  height: auto; /* Automatisk höjd så att bilden inte beskärs */
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;

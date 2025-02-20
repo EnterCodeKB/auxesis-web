@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../agenda/index.module.css";
+import styles from "./index.module.css";
 import BackArrow from "../../components/BackArrow";
 import HeroAgenda from "../../components/HeroSectionAgenda";
 
@@ -94,6 +94,9 @@ const Agenda = () => {
               frivillighetsorganisationer.{" "}
             </li>
           </ul>
+        </div>
+        <div>
+          <img className={styles.chema} src="/agenda/chema6.png" alt="Agenda" />
         </div>
       </section>
     </>

@@ -103,6 +103,9 @@ const Agenda = () => {
             </li>
           </ul>
         </div>
+        <div>
+          <img className={styles.chema} src="/agenda/chema6.png" alt="Agenda" />
+        </div>
       </section>
     </>
   );

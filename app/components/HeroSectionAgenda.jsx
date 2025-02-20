@@ -7,7 +7,7 @@ export default function HeroPr() {
       {/* Första sektionen med bilden */}
       <div className={styles.div13}>
         <img
-          src="/agenda/chema4.png"
+          src="/agenda/chema12.png"
           alt="Ekologisk hållbarhet - hållbar innovation"
           className={styles.responsiveImage}
         />

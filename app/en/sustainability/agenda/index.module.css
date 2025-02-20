@@ -1,10 +1,10 @@
 /* Grundinställningar för hela sektionen */
 .agenda {
   max-width: 1200px;
-  margin: 40px auto; /* Centrerar sektionen med marginal från toppen */
+  margin: 100px auto; /* Centrerar sektionen med marginal från toppen */
   padding: 20px;
   text-align: center;
-  margin-top: -40px;
+  margin-top: 40px;
 }
 
 /* Rubrik */
@@ -56,13 +56,17 @@
 .section4 {
   margin-bottom: 40px;
 }
+.chema {
+  width: 120%;
+  margin-left: -100px;
+}
 
 /* För stora skärmar (över 1200px) */
 @media (min-width: 1200px) {
   .agenda {
     padding: 40px;
     margin: 40px auto;
-    margin-top: -60px;
+    margin-top: 80px;
   }
 
   .agenda h1 {
