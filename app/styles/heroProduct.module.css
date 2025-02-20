@@ -160,14 +160,14 @@
 /* För stora skärmar (min-width: 1200px) */
 @media (min-width: 1200px) {
   .heroSection {
-    height: 700px;
+    height: 600px;
   }
 
   .div13 {
     background-image: url("/produkter/bgprodukter1.png");
     background-size: cover;
     background-position: center;
-    height: 800px;
+    height: 600px;
     width: 100%;
     margin-top: 130px;
   }

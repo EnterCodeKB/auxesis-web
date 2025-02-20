@@ -35,7 +35,7 @@ export default function Bolag() {
 
   return (
     <>
-      <BackArrow mainLink="/omoss" label="Om Oss" />
+      <BackArrow mainLink="/en/about" label="About Us" />
 
       <section className={styles.varabolag}>
         <div className={styles.textarea}>

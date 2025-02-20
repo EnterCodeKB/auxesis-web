@@ -63,7 +63,7 @@ export default function About() {
           company focused on the development of human and animal pharmaceuticals
           in the category of local skin pain and irritation.
         </p>
-        <BackArrow mainLink="/en/" label="Home" />
+        <BackArrow mainLink="/en" label="Home" />
 
         <h2 className={styles.subHeading}>
           Unique Innovation That Blocks The Pain

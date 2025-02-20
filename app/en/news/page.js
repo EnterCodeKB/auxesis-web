@@ -66,7 +66,7 @@ function NyheterContent() {
     <section className={styles.container}>
       <BackArrow
         mainLink={`/en/news?page=${Math.max(currentPage - 1, 1)}`}
-        label="Tillbaka"
+        label="Back"
       />
 
       <h2 className={styles.title}>All News</h2>
