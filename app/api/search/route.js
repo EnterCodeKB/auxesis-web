@@ -62,6 +62,8 @@ export async function GET(req) {
         "Susanna Liljedahl",
         "Agneta Larhed",
         "Marie Gårdmark",
+        "VD",
+        "styrelse",
       ],
     },
 
@@ -101,6 +103,7 @@ export async function GET(req) {
         "Rune Nordström",
         "Charlotta Larsson",
         "Peter Åberg",
+        "VD",
       ],
     },
 
@@ -207,7 +210,7 @@ export async function GET(req) {
       name: "Nyheter",
       link: "/nyheter",
       content: "Senaste uppdateringarna och nyheterna från vårt företag.",
-      keywords: ["uppdateringar", "nyheter", "pressmeddelande"],
+      keywords: ["uppdateringar", "nyheter", "pressmeddelande", "VD"],
     },
 
     {
@@ -258,6 +261,272 @@ export async function GET(req) {
       link: "/kontakt",
       content: "Vill du kontakta oss? Här hittar du vår kontaktinformation.",
       keywords: ["kontakt", "support", "hjälp"],
+    },
+
+    {
+      id: 1,
+      name: "About Us",
+      link: "/en/about",
+      content:
+        "Auxesis develops innovative medicines based on its own patent, which quickly relieve pain and irritation on the skin for both humans and animals, making them easily accessible to consumers and various professionals.",
+      keywords: [
+        "company",
+        "background",
+        "information",
+        "auxesis",
+        "business idea",
+        "pain",
+        "medicine",
+        "ASA",
+      ],
+    },
+
+    {
+      id: 2,
+      name: "Our Companies",
+      link: "/en/about/ourcompany",
+      content: "A solid corporate group with three companies...",
+      keywords: [
+        "Auxesis",
+        "Auxesis Pharma",
+        "Auxesis Pharma Holding AB (publ)",
+        "Auxesis MedTech AB",
+        "Auxesis Animal Care AB",
+        "pain",
+        "animals",
+        "Östersund",
+        "veterinary",
+        "production",
+      ],
+    },
+
+    {
+      id: 3,
+      name: "Our Team",
+      link: "/en/about/ourteam",
+      content:
+        "Auxesis has a qualified team with a strong combination of expertise...",
+      keywords: [
+        "Roar Adelsten",
+        "Lars Larsson",
+        "Rune Nordström",
+        "Charlotta Larsson",
+        "Helena Adelsten",
+        "Peter Hedberg",
+        "Peter Åberg",
+        "Susanna Liljedahl",
+        "Agneta Larhed",
+        "Marie Gårdmark",
+        "CEO",
+        "board",
+      ],
+    },
+
+    {
+      id: 4,
+      name: "Partners",
+      link: "/en/about/partners",
+      content: "Renowned partners...",
+      keywords: [
+        "RAMBERG Advokater",
+        "IQVIA and Swedish Pharmaceutical Statistics",
+        "Granath Advertising AB",
+        "RegSmart Life Science AB",
+        "Zelmic AB",
+        "AFRY",
+        "EIP",
+        "Edlund & Partners",
+      ],
+    },
+
+    {
+      id: 5,
+      name: "For Investors",
+      link: "/en/investors/shareholders",
+      content: "Solid ownership structure...",
+      keywords: ["Roar Adelsten", "owner", "shareholders"],
+    },
+
+    {
+      id: 6,
+      name: "Board & Management",
+      link: "/en/investors/board",
+      content: "Board and management...",
+      keywords: [
+        "Roar Adelsten",
+        "Lars Larsson",
+        "Rune Nordström",
+        "Charlotta Larsson",
+        "Peter Åberg",
+        "CEO",
+      ],
+    },
+
+    {
+      id: 7,
+      name: "Financial Reports",
+      link: "/en/investors/financial-reports",
+      content: "Financial reports...",
+      keywords: [
+        "investment",
+        "finance",
+        "economy",
+        "report",
+        "general meeting",
+        "annual report",
+      ],
+    },
+
+    {
+      id: 8,
+      name: "IR Contact",
+      link: "/en/investors/ir-contact",
+      content: "Investor relations contact...",
+      keywords: [
+        "Roar Adelsten",
+        "Rune Nordström",
+        "economy",
+        "report",
+        "general meeting",
+        "annual report",
+      ],
+    },
+
+    {
+      id: 9,
+      name: "Products",
+      link: "/en/products/history",
+      content:
+        "Auxesis develops several preparations that block pain signals to the brain and relieve skin pain.",
+      keywords: [
+        "medicine",
+        "preparation",
+        "products",
+        "pain",
+        "ASA",
+        "Aspirin",
+        "history",
+        "Acetylsalicylic acid",
+      ],
+    },
+
+    {
+      id: 10,
+      name: "ASA.P",
+      link: "/en/products/asap",
+      content: "Over-the-counter preparation for humans - ASA.P®",
+      keywords: ["asa.p", "over-the-counter", "humans", "pain relief"],
+    },
+
+    {
+      id: 11,
+      name: "CoxyPet",
+      link: "/en/products/coxypet",
+      content: "A natural and innovative preparation for animals...",
+      keywords: [
+        "coxypet",
+        "horses",
+        "cattle",
+        "cats",
+        "dogs",
+        "Acetylsalicylic acid",
+        "livestock",
+        "pigs",
+        "skin pain",
+        "animals",
+        "veterinary medicine",
+      ],
+    },
+
+    {
+      id: 12,
+      name: "Product Development",
+      link: "/en/products/productdevelopment",
+      content:
+        "The product development strategy focuses on developing innovative medicines...",
+      keywords: ["product", "product development", "cosmetic", "skin"],
+    },
+
+    {
+      id: 13,
+      name: "Patents",
+      link: "/en/products/patent",
+      content: "Patents are being applied for in multiple countries...",
+      keywords: [
+        "patent",
+        "patent application",
+        "Phase 1",
+        "Phase 2",
+        "international",
+        "international patent application",
+      ],
+    },
+
+    {
+      id: 14,
+      name: "News",
+      link: "/en/news",
+      content: "The latest updates and news from our company.",
+      keywords: ["updates", "news", "press release", "CEO"],
+    },
+
+    {
+      id: 15,
+      name: "Sustainability",
+      link: "/en/sustainability/sustainablebusiness",
+      content: "Good business is sustainable business...",
+      keywords: [
+        "environment",
+        "sustainability",
+        "business",
+        "responsibility",
+        "packaging",
+      ],
+    },
+
+    {
+      id: 16,
+      name: "Agenda",
+      link: "/en/sustainability/agenda",
+      content: "Responsibility and transparency are crucial...",
+      keywords: [
+        "agenda",
+        "transparency",
+        "responsibility",
+        "goals",
+        "ISO certification",
+        "Agenda 2030",
+        "recycled materials",
+        "recycling",
+        "non-discrimination",
+        "quality",
+        "safety",
+      ],
+    },
+
+    {
+      id: 17,
+      name: "Innovation",
+      link: "/en/innovation",
+      content: "Innovation is more than just a word for us...",
+      keywords: ["innovation", "development", "groundbreaking", "investment"],
+    },
+
+    {
+      id: 18,
+      name: "Press Contact",
+      link: "/en/press/presscontact",
+      content:
+        "Here you will find information for journalists, media, and other stakeholders...",
+      keywords: ["Rune Nordström", "press contact"],
+    },
+
+    {
+      id: 19,
+      name: "Contact Us",
+      link: "/en/contact",
+      content: "Want to get in touch? Here is our contact information.",
+      keywords: ["contact", "support", "help"],
     },
   ];
 
