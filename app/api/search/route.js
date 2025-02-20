@@ -1,13 +1,20 @@
 export async function GET(req) {
   const { searchParams } = new URL(req.url);
   const searchQuery = searchParams.get("q")?.toLowerCase() || "";
+  const lang = searchParams.get("lang") || "sv"; // Standard till svenska
 
   if (!searchQuery) {
-    return Response.json([]);
+    return new Response(JSON.stringify([]), {
+      status: 200,
+      headers: { "Content-Type": "application/json" },
+    });
   }
 
-  // 🔍 Här lägger vi till alla sidor vi vill att sökningen ska inkludera
-  const pages = [
+  console.log("Search query:", searchQuery);
+  console.log(" Language:", lang);
+
+  // 🔍 Definiera sidor på svenska och engelska separat
+  const pagesSv = [
     {
       id: 1,
       name: "Om oss",
@@ -262,7 +269,9 @@ export async function GET(req) {
       content: "Vill du kontakta oss? Här hittar du vår kontaktinformation.",
       keywords: ["kontakt", "support", "hjälp"],
     },
+  ];
 
+  const pagesEn = [
     {
       id: 1,
       name: "About Us",
@@ -530,16 +539,35 @@ export async function GET(req) {
     },
   ];
 
-  // 🔍 Filtrera sidor som innehåller sökordet i **titel eller innehåll**
-  const results = pages.filter(
-    (page) =>
-      page.name.toLowerCase().includes(searchQuery) ||
-      page.content.toLowerCase().includes(searchQuery) ||
-      (page.keywords &&
-        page.keywords.some((keyword) =>
-          keyword.toLowerCase().includes(searchQuery)
-        ))
-  );
+  const pages = lang === "en" ? pagesEn : pagesSv;
 
-  return Response.json(results);
+  console.log(
+    "📂 Pages used:",
+    lang === "en" ? "English Pages" : "Swedish Pages"
+  );
+  console.log("📃 Pages before search:", pages);
+
+  // 🔍 Filtrera sidor som matchar sökningen
+  const results = pages.filter((page) => {
+    const nameMatch = page.name.toLowerCase().includes(searchQuery);
+    const contentMatch = page.content.toLowerCase().includes(searchQuery);
+    const keywordMatch = page.keywords?.some((keyword) =>
+      keyword.toLowerCase().includes(searchQuery)
+    );
+
+    // Logga detaljer för varje sida som kontrolleras
+    console.log(`🔎 Checking page: ${page.name}`);
+    console.log("   - Name match:", nameMatch);
+    console.log("   - Content match:", contentMatch);
+    console.log("   - Keywords match:", keywordMatch);
+
+    return nameMatch || contentMatch || keywordMatch;
+  });
+
+  console.log(" Search results:", results);
+
+  return new Response(JSON.stringify(results), {
+    status: 200,
+    headers: { "Content-Type": "application/json" },
+  });
 }

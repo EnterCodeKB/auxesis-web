@@ -17,7 +17,6 @@ export async function GET(req) {
       </body>
     </html>
   `;
-
   const dom = new JSDOM(htmlContent);
   const pageText = dom.window.document.body.textContent.toLowerCase();
 

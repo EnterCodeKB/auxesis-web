@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  trailingSlash: true,
   images: {
     formats: ["image/avif", "image/webp"],
     remotePatterns: [
@@ -11,7 +12,15 @@ const nextConfig = {
       },
     ],
   },
-  // ❌ Ta bort i18n eftersom vi använder en manuell /en/ mapp
+
+  async rewrites() {
+    return [
+      {
+        source: "/api/:path*",
+        destination: "/api/:path*", // Försäkra att API-rutterna fungerar
+      },
+    ];
+  },
 };
 
 export default nextConfig;

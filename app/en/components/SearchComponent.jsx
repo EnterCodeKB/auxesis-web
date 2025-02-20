@@ -1,5 +1,9 @@
+"use client";
+
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
+
+const API_URL = "/api/search"; // Engelsk API-sökning
 
 const SearchComponent = ({ placeholder }) => {
   const [query, setQuery] = useState("");
@@ -10,13 +14,15 @@ const SearchComponent = ({ placeholder }) => {
     const searchTerm = e.target.value;
     setQuery(searchTerm);
 
-    if (searchTerm) {
+    if (searchTerm.trim()) {
       try {
-        const response = await fetch(`/api/search?q=${searchTerm}`);
+        const response = await fetch(
+          `${API_URL}?q=${encodeURIComponent(searchTerm)}&lang=en`
+        );
         const results = await response.json();
         setSearchResults(results);
       } catch (error) {
-        console.error("Fel vid API-anrop:", error);
+        console.error("Error fetching API:", error);
       }
     } else {
       setSearchResults([]);
@@ -24,14 +30,14 @@ const SearchComponent = ({ placeholder }) => {
   };
 
   const handleResultClick = (link) => {
-    router.push(link); // Navigera till sidan
+    router.push(link);
   };
 
   return (
     <div style={{ padding: "1rem", maxWidth: "600px", margin: "0 auto" }}>
       <input
         type="text"
-        placeholder={placeholder || "Sök..."}
+        placeholder={placeholder || "Search..."}
         value={query}
         onChange={handleSearch}
         style={{
@@ -47,16 +53,7 @@ const SearchComponent = ({ placeholder }) => {
         {query && searchResults.length > 0 ? (
           <ul style={{ listStyle: "none", padding: 0 }}>
             {searchResults.map((item) => (
-              <li
-                key={item.id}
-                style={{
-                  padding: "0.5rem",
-                  borderBottom: "1px solid #ddd",
-                  marginBottom: "0.5rem",
-                  cursor: "pointer",
-                }}
-                onClick={() => handleResultClick(item.link)}
-              >
+              <li key={item.id} onClick={() => handleResultClick(item.link)}>
                 <a
                   href={item.link}
                   style={{
