@@ -2,6 +2,8 @@
 
 import { usePathname, useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
+import Image from "next/image";
+import styles from "../styles/Header.module.css";
 
 const pathMap = {
   "/en/about/ourcompany": "/omoss/varabolag",
@@ -72,19 +74,11 @@ const LanguageSwitcher = () => {
   console.log(`🌍 Växlar språk från ${pathname} till ${newPathname}`);
 
   return (
-    <button
-      onClick={() => router.push(newPathname)}
-      style={{
-        padding: "8px 16px",
-        cursor: "pointer",
-        backgroundColor: "#f0f0f0",
-        border: "none",
-        borderRadius: "5px",
-        marginLeft: "10px",
-      }}
-    >
-      {isEnglish ? "SV" : "EN"}
-    </button>
+    <div className={styles.languageswitcher}>
+      <button onClick={() => router.push(newPathname)}>
+        {isEnglish ? "🇸🇪" : "🇬🇧"}
+      </button>
+    </div>
   );
 };
 

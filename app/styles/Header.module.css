@@ -170,6 +170,27 @@
   font-weight: bold;
 }
 
+.languageswitcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px; /* Lägg till lite utrymme om det behövs */
+}
+
+.languageswitcher button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.8rem; /* Gör flaggorna tydliga */
+  padding: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.languageswitcher button:hover {
+  transform: scale(1.1);
+}
+
 /* Responsiv design */
 
 /* För små skärmar (max-width: 480px) */
@@ -193,10 +214,30 @@
   .menu {
     width: 80%;
   }
+  .languageswitcher {
+    margin-right: 25px; /* Minska utrymmet om det behövs */
+  }
+
+  .languageswitcher button {
+    font-size: 1.4rem; /* Ytterligare minskning för små skärmar */
+    padding: 3px;
+  }
 }
 @media (max-width: 768px) {
   .headersh1div {
     display: none; /* Dölj även här */
+  }
+
+  .hamburgerBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 55%;
+  }
+
+  .languageswitcher button {
+    font-size: 1.6rem; /* Gör flaggorna lite mindre */
+    margin-right: 25px; /* Minska utrymmet om det behövs */
   }
 }
 @media (max-width: 1024px) {
