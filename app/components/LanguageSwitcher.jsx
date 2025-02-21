@@ -51,7 +51,7 @@ const reversePathMap = Object.fromEntries(
 );
 
 const LanguageSwitcher = () => {
-  const pathname = usePathname()?.replace(/\/$/, ""); // Tar bort trailing slash
+  const pathname = usePathname();
   const router = useRouter();
   const [isClient, setIsClient] = useState(false);
 
@@ -59,20 +59,17 @@ const LanguageSwitcher = () => {
     setIsClient(true);
   }, []);
 
-  if (!isClient || !pathname) return null; // Förhindra hydration error
+  if (!isClient) {
+    console.log("🔄 Hydration pågår, visar inte LanguageSwitcher ännu...");
+    return null;
+  }
 
   const isEnglish = pathname.startsWith("/en");
   const newPathname = isEnglish
     ? pathMap[pathname] || pathname.replace(/^\/en/, "") || "/"
     : reversePathMap[pathname] || `/en${pathname}`;
 
-  console.log("🔍 Current Pathname:", pathname);
-  console.log("🌍 New Pathname:", newPathname);
-
-  if (!newPathname) {
-    console.error("🚨 Fel: Ingen matchande path hittades för", pathname);
-    return null;
-  }
+  console.log(`🌍 Växlar språk från ${pathname} till ${newPathname}`);
 
   return (
     <button

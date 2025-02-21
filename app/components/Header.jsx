@@ -63,22 +63,13 @@ export default function Header() {
   const pathname = usePathname();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-
-  const toggleDropdown = (menu) => {
+  const toggleDropdown = (menu) =>
     setActiveDropdown(activeDropdown === menu ? null : menu);
-  };
-
   const navigateToLink = (linkHref) => {
-    setIsMenuOpen(false); // Stäng huvudmenyn
-    if (linkHref) {
-      router.push(linkHref); // Navigera till vald länk
-    }
-  };
-
-  const closeMenu = () => {
     setIsMenuOpen(false);
+    if (linkHref) router.push(linkHref);
   };
-
+  const closeMenu = () => setIsMenuOpen(false);
   const dropdowns = [
     {
       title: "VAD ÄR AUXESIS",
@@ -200,7 +191,9 @@ export default function Header() {
           </Link>
         </nav>
       </div>
-      <LanguageSwitcher />
+      <div className={styles.languageSwitcherContainer}>
+        <LanguageSwitcher />
+      </div>
     </header>
   );
 }
