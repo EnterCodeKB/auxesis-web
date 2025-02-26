@@ -2,9 +2,9 @@
 
 import { usePathname, useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import styles from "../styles/Header.module.css";
 
+// Path maps
 const pathMap = {
   "/en/about/ourcompany": "/omoss/varabolag",
   "/en/about/ourteam": "/omoss/vartteam",
@@ -26,34 +26,20 @@ const pathMap = {
   "/en/contact": "/kontakt",
   "/en/minutes2023": "/protokoll2023",
   "/en/news": "/nyheter",
-  "/en/news/afry": "/nyheter/afry",
-  "/en/news/annualreport2023": "/nyheter/arsredovisning2023",
-  "/en/news/euroclear": "/nyheter/euroclear",
-  "/en/news/internationalpatent": "/nyheter/internationelltpatent",
-  "/en/news/medtechreg": "/nyheter/medtechreg",
-  "/en/news/newceo": "/nyheter/nyvd",
-  "/en/news/newpartnerzelmic": "/nyheter/nypartnerzelmic",
-  "/en/news/newsletter": "/nyheter/nyhetsbrev",
-  "/en/news/notice2024": "/nyheter/kallelse2024",
-  "/en/news/ofksponsor": "/nyheter/ofksponsor",
-  "/en/news/patentapplication": "/nyheter/patentasokanregistrerad",
-  "/en/news/production": "/nyheter/produktion",
-  "/en/news/public-limited-company": "/nyheter/publiktaktiebolag",
-  "/en/news/registeredcompany": "/nyheter/avstamningsbolag",
-  "/en/news/regsmart": "/nyheter/regsmart",
-  "/en/news/sme-status": "/nyheter/smestatus",
-  "/en/news/usa-brand": "/nyheter/usabrand",
-  "/en/news/valuation": "/nyheter/vardering",
-  "/en/news/valuation-2023": "/nyheter/vardering2023",
-  "/en/audit2023": "/revision2023",
 };
 
+// Skapa en inverterad map för svenska → engelska
 const reversePathMap = Object.fromEntries(
   Object.entries(pathMap).map(([en, sv]) => [sv, en])
 );
 
+const normalizePath = (path) => {
+  // Tar bort trailing slash för att undvika missmatchning
+  return path.endsWith("/") && path !== "/" ? path.slice(0, -1) : path;
+};
+
 const LanguageSwitcher = () => {
-  const pathname = usePathname();
+  const pathname = normalizePath(usePathname()); // Rensar bort extra "/"
   const router = useRouter();
   const [isClient, setIsClient] = useState(false);
 
@@ -61,22 +47,37 @@ const LanguageSwitcher = () => {
     setIsClient(true);
   }, []);
 
-  if (!isClient) {
-    console.log("🔄 Hydration pågår, visar inte LanguageSwitcher ännu...");
-    return null;
-  }
+  if (!isClient) return null;
+
+  console.log("Nuvarande path:", pathname);
+  console.log("Är engelska sidan?", pathname.startsWith("/en"));
 
   const isEnglish = pathname.startsWith("/en");
+
   const newPathname = isEnglish
-    ? pathMap[pathname] || pathname.replace(/^\/en/, "") || "/"
-    : reversePathMap[pathname] || `/en${pathname}`;
+    ? pathMap[pathname] ??
+      pathMap[normalizePath(pathname)] ??
+      pathname.replace(/^\/en/, "") ??
+      "/"
+    : reversePathMap[pathname] ??
+      reversePathMap[normalizePath(pathname)] ??
+      `/en${pathname}`;
 
   console.log(`🌍 Växlar språk från ${pathname} till ${newPathname}`);
 
   return (
     <div className={styles.languageswitcher}>
-      <button onClick={() => router.push(newPathname)}>
-        {isEnglish ? "🇸🇪" : "🇬🇧"}
+      <button
+        onClick={() => {
+          if (newPathname) {
+            console.log(`Navigerar till: ${newPathname}`);
+            router.push(newPathname);
+          } else {
+            console.warn("🚨 Ingen giltig översättning hittades!");
+          }
+        }}
+      >
+        {isEnglish ? "🇸🇪 " : "🇬🇧 "}
       </button>
     </div>
   );
