@@ -57,7 +57,7 @@ const teamMembers = [
     name: "Helena Adelsten",
     title: "Webbutvecklare/ Management Support ",
     description:
-      "Helena Adelsten är mjukvaruingenjör och webbutvecklare med en akademisk bakgrund inom IT och ekonomi.  <br /><br />" +
+      "Helena Adelsten är mjukvaruingenjör och webbutvecklare med en akademisk bakgrund inom IT och ekonomi, samt många års erfarenhet av företagande.  <br /><br />" +
       "Hon designar och utvecklar appar, löser problem, förbättrar prestanda och utvecklar nya algoritmer. <br /><br />  " +
       "Som entreprenör fokuserar hon på webbutveckling, kundanpassade tjänster och teknisk support för att förbättra användarupplevelsen och skapa innovativa lösningar.",
     image: "/team/HelenaJpeg.jpeg",
