@@ -15,19 +15,19 @@ export default function Styrelse() {
       <div className={styles.menu}>
         <h2 className={styles.h2ul}>Auxesis Pharma ledningsgrupp</h2>
         <ul className={styles.ulList}>
-          <li>Peter Åberg, VD, Läkemedelsutveckling och hållbarhet</li>
+          <p>Peter Åberg, VD, Läkemedelsutveckling och hållbarhet</p>
 
-          <li>Roar Adelsten, vice VD</li>
-          <li>Charlotta Larsson, sälj och marknad</li>
-          <li>Lars Larsson, ekonomi och finans</li>
-          <li>Rune Nordström, styrelseordförande, PR, HR och IR</li>
+          <p>Roar Adelsten, vice VD</p>
+          <p>Charlotta Larsson, sälj och marknad</p>
+          <p>Lars Larsson, ekonomi och finans</p>
+          <p>Rune Nordström, styrelseordförande, PR, HR och IR</p>
         </ul>
 
         <h2 className={styles.h2ul}>Auxesis Pharma styrelse</h2>
         <ul className={styles.ulList2}>
-          <li>Roar Adelsten, vice VD och styrelseledamot</li>
-          <li>Rune Nordström, styrelseordförande</li>
-          <li>Charlotta Larsson, styrelseledamot</li>
+          <p>Roar Adelsten, vice VD och styrelseledamot</p>
+          <p>Rune Nordström, styrelseordförande</p>
+          <p>Charlotta Larsson, styrelseledamot</p>
         </ul>
       </div>
     </div>

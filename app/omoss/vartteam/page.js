@@ -9,7 +9,7 @@ const teamMembers = [
     name: "Roar Adelsten",
     title: "Grundare och styrelseledamot",
     description:
-      "Roar Adelsten grundade Auxesis Pharma Holding AB, MedTech AB och Animal Care AB. <br /><br />" +
+      "Roar Adelsten grundade Auxesis Pharma Holding AB, Auxesis MedTech AB och Auxesis Animal Care AB. <br /><br />" +
       "Han har nästan 30 års erfarenhet inom läkemedelsindustrin som VD, Field Manager och medicinsk konsult, bland annat på Pfizer AS i Norge. <br /><br />  " +
       "Roar har arbetat i Sverige, Norge och USA med ortopedi, kirurgiska instrument och led- samt benartroplastik.",
 
