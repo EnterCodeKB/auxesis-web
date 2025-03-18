@@ -73,7 +73,7 @@ const SearchComponent = ({ placeholder }) => {
         ) : query ? (
           <p>Inga resultat hittades för "{query}".</p>
         ) : (
-          <p>Skriv något för att börja söka.</p>
+          <p></p>
         )}
       </div>
     </div>
