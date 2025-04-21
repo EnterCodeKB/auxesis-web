@@ -2,6 +2,17 @@
 
 export const newsItems = [
   {
+    title: " CEO's Statement – Spring 2025   ",
+    subtitle: "2025/04/14",
+    description: `
+        <p></p>
+          `,
+    imageUrl: "/Nyheter/3BD7AA6E-8224-492B-8B2A-368C489D4E9E_1_105_c.jpeg",
+
+    slug: "ceostatement",
+    isLatest: true, // Märkt som senaste
+  },
+  {
     title:
       " Peter Åberg Appointed as the New CEO of Auxesis Pharma Holding AB (publ)    ",
     subtitle: "2025/02/15",
