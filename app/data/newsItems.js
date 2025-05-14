@@ -2,6 +2,17 @@
 
 export const newsItems = [
   {
+    title: " Nyhetsbrev – Våren 2025 ",
+    subtitle: "2025/05/13",
+    description: `
+        <p></p>
+          `,
+    imageUrl: "/Nyheter/börsen.jpeg",
+
+    slug: "majnyheter",
+    isLatest: true, // Märkt som senaste
+  },
+  {
     title: " VD HAR ORDET – Våren 2025 ",
     subtitle: "2025/04/14",
     description: `
