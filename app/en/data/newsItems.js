@@ -2,6 +2,17 @@
 
 export const newsItems = [
   {
+    title: "Newsletter – Spring 2025 ",
+    subtitle: "2025/05/13",
+    description: `
+        <p></p>
+          `,
+    imageUrl: "/Nyheter/börsen.jpeg",
+
+    slug: "majnewsletter",
+    isLatest: true, // Märkt som senaste
+  },
+  {
     title: " CEO's Statement – Spring 2025   ",
     subtitle: "2025/04/14",
     description: `
