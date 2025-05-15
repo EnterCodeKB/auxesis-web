@@ -25,7 +25,7 @@ export default function Produktion() {
       <h4 className={styles.date}>2025-05-13</h4>
       <h2 className={styles.subtitle}>
         Spring has arrived across the country, and summer is just around the
-        corner.
+        corner. <br /> <br />
       </h2>
       <p className={styles.text}>
         Over the past year, Auxesis Pharma has concentrated on the key
@@ -47,11 +47,10 @@ export default function Produktion() {
         that meets both Auxesis Pharma’s standards and regulatory requirements
         for functionality and performance. To ensure quality and delivery
         reliability, we will work exclusively with Swedish equipment suppliers.
-        <p></p>
-        The patent process is progressing according to plan. As we move closer
-        to a finalized and registered patent, we also see opportunities to apply
-        for additional patents.
-        <p></p>
+        <br /> <br /> The patent process is progressing according to plan. As we
+        move closer to a finalized and registered patent, we also see
+        opportunities to apply for additional patents.
+        <br /> <br />
         We are continuously exploring new opportunities in pharmaceutical
         development and patent protection, including in the field of burn care,
         where we see significant potential to reduce patient suffering. Our
@@ -69,15 +68,15 @@ export default function Produktion() {
         partnership with the audit firm Edlund & Partners in Östersund, who will
         support us in ensuring that Auxesis Pharma meets the administrative
         requirements set forth for a public listing from the outset.
-        <p></p>
+        <br /> <br />
         The exact timing of the IPO will depend on market conditions, regulatory
         progress, and the company’s continued development. Our shareholders will
         be kept informed as the process advances.
-        <p></p>
+        <br /> <br />
         We hope to see you at our Annual General Meeting on June 17 at 15:00
         (official notice will follow shortly).
-        <p></p> <p></p>We would like to conclude by wishing you a pleasant and
-        relaxing summer.
+        <br /> <br /> <br />
+        We would like to conclude by wishing you a pleasant and relaxing summer.
       </p>
 
       <div className={styles.imageContainer}>

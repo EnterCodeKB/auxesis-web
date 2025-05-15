@@ -24,7 +24,8 @@ export default function Produktion() {
       <h1 className={styles.title}>Nyhetsbrev – Våren 2025</h1>
       <h4 className={styles.date}>2025-05-13</h4>
       <h2 className={styles.subtitle}>
-        Våren har svept in över landet och sommaren står nu för dörren.
+        Våren har svept in över landet och sommaren står nu för dörren. <br />{" "}
+        <br />
       </h2>
       <p className={styles.text}>
         Auxesis Pharma har under det senaste året fokuserat på
@@ -46,11 +47,11 @@ export default function Produktion() {
         såväl Auxesis Pharmas som myndigheternas krav på funktionalitet och
         prestanda. För att säkerställa kvalitet och leveransförmåga kommer vi
         uteslutande att arbeta med svenska maskinleverantörer.
-        <p></p>
+        <br /> <br />
         Patentprocessen fortlöper enligt plan. I takt med att vi närmar oss ett
         färdigt och registrerat patent öppnas även möjligheter för att ansöka om
         nya patent.
-        <p></p>
+        <br /> <br />
         Vi utvärderar kontinuerligt nya möjligheter inom läkemedelsutveckling
         och patentskydd, bland annat inom brännskadevård där vi ser stor
         potential att minska patienters smärtlidande.
@@ -63,20 +64,20 @@ export default function Produktion() {
         receptbelagda produkter vid svårare bränn- och frätskador. Vi har inlett
         indikationsstudier tillsammans med ledande svenska och internationella
         forskare och kliniker inom området.
-        <p></p>
+        <br /> <br />
         Vi bedömer nu att tiden är mogen att inleda förberedelserna inför en
         börsintroduktion (IPO). Arbetet inleds under tidig höst i samarbete med
         revisionsbyrån Edlund & Partners i Östersund. De kommer att bistå oss
         med att säkerställa att Auxesis Pharma redan i ett tidigt skede
         uppfyller de administrativa kraven enligt det regelverk som gäller inför
         en börsnotering.
-        <p></p>
+        <br /> <br />
         Den exakta tidpunkten kommer att bero på marknadsförutsättningar,
         regulatoriska processer och bolagets fortsatta utveckling. Våra
         aktieägare kommer att informeras löpande i takt med att processen
-        fortskrider. <p></p> Vi hoppas få se dig på vår årsstämma den 17 juni
-        kl. 15.00 (kallelsen kommer inom kort). <p></p> <p></p>Vi vill avsluta
-        med att önska er en trevlig och avkopplande sommar!
+        fortskrider. <br /> <br /> Vi hoppas få se dig på vår årsstämma den 17
+        juni kl. 15.00 (kallelsen kommer inom kort). <br /> <br /> <br />
+        Vi vill avsluta med att önska er en trevlig och avkopplande sommar!
       </p>
 
       <div className={styles.imageContainer}>
