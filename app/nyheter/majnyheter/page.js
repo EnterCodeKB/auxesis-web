@@ -21,7 +21,7 @@ export default function Produktion() {
           alt="Auxesis väg till börsen"
         />
       </div>
-      <h1 className={styles.title}>Nyhetsbrev – Våren 2025</h1>
+      <h1 className={styles.title}>Nyhetsbrev – maj 2025</h1>
       <h4 className={styles.date}>2025-05-13</h4>
       <h2 className={styles.subtitle}>
         Våren har svept in över landet och sommaren står nu för dörren. <br />{" "}

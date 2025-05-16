@@ -1,8 +1,18 @@
 //app/data/newsItems.js
-
 export const newsItems = [
   {
-    title: " Nyhetsbrev – Våren 2025 ",
+    title: "Kallelse till årsstämma 2025 ",
+    subtitle: "2025/05/13",
+    description: `
+        <p></p>
+          `,
+    imageUrl: "/Nyheter/kallelse/kallelse.jpeg ",
+
+    slug: "kallelse2025",
+    isLatest: true, // Märkt som senaste
+  },
+  {
+    title: " Nyhetsbrev – maj 2025 ",
     subtitle: "2025/05/13",
     description: `
         <p></p>
@@ -13,7 +23,7 @@ export const newsItems = [
     isLatest: true, // Märkt som senaste
   },
   {
-    title: " VD HAR ORDET – Våren 2025 ",
+    title: " VD HAR ORDET – april 2025 ",
     subtitle: "2025/04/14",
     description: `
         <p></p>

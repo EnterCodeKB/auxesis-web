@@ -4,7 +4,7 @@ import styles from "../smestatus/index.module.css";
 export default function Smestatus() {
   return (
     <div className={styles.details}>
-      <h1>VD HAR ORDET – Våren 2025</h1>
+      <h1>VD HAR ORDET – april 2025</h1>
       <h4>2025-04-14</h4>
       <h3>
         Auxesis Pharma går framåt – med vetenskap, innovation och framtidstro
