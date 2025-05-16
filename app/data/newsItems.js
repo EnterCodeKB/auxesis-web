@@ -17,7 +17,7 @@ export const newsItems = [
     description: `
         <p></p>
           `,
-    imageUrl: "/Nyheter/börsen.jpeg",
+    imageUrl: "/Nyheter/stock.jpeg",
 
     slug: "majnyheter",
     isLatest: true, // Märkt som senaste
