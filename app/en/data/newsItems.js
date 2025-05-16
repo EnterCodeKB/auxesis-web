@@ -2,18 +2,29 @@
 
 export const newsItems = [
   {
-    title: "Newsletter – Spring 2025 ",
+    title: "Kallelse till årsstämma 2025 ",
     subtitle: "2025/05/13",
     description: `
         <p></p>
           `,
-    imageUrl: "/Nyheter/börsen.jpeg",
+    imageUrl: "/Nyheter/kallelse/kallelse.jpeg ",
+
+    slug: "generalmeeting2025",
+    isLatest: true, // Märkt som senaste
+  },
+  {
+    title: "Newsletter – Maj 2025 ",
+    subtitle: "2025/05/13",
+    description: `
+        <p></p>
+          `,
+    imageUrl: "/Nyheter/stock.jpeg",
 
     slug: "majnewsletter",
     isLatest: true, // Märkt som senaste
   },
   {
-    title: " CEO's Statement – Spring 2025   ",
+    title: " CEO's Statement – April 2025   ",
     subtitle: "2025/04/14",
     description: `
         <p></p>
