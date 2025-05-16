@@ -1,5 +1,5 @@
 "use client";
-import styles from "../../styles/kallelse.module.css";
+import styles from "../../styles/Kallelse.module.css";
 
 export default function Kallelse() {
   const scrollToTop = () => {
