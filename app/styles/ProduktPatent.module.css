@@ -1,7 +1,8 @@
 .patentsection {
   max-width: 1200px; /* Begränsa bredden */
-  margin: 40px 40px auto; /* Centrerar sektionen och ger marginal ovan */
   text-align: left; /* Vänsterjustera listan */
+  margin: 40px auto;
+  padding: 20px;
 }
 
 .patentsection h1 {
@@ -105,7 +106,7 @@
 /* Stora skärmar (min-width: 1024px) */
 @media (min-width: 1024px) {
   .patentsection {
-    margin-top: 40px;
+    margin-top: -40px;
   }
 
   .patentsection h1 {

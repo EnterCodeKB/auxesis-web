@@ -6,6 +6,7 @@ import styles from "../styles/Header.module.css";
 
 // Path maps
 const pathMap = {
+  "/en/about": "/omoss",
   "/en/about/ourcompany": "/omoss/varabolag",
   "/en/about/ourteam": "/omoss/vartteam",
   "/en/about/partners": "/omoss/partners",
@@ -16,13 +17,13 @@ const pathMap = {
   "/en/products/history": "/produkter/historik",
   "/en/products/asap": "/produkter/asap",
   "/en/products/coxypet": "/produkter/coxypet",
-  "/en/products/development": "/produkter/produktutveckling",
-  "/en/products/patents": "/produkter/patent",
+  "/en/products/productdevelopment": "/produkter/produktutveckling",
+  "/en/products/patent": "/produkter/patent",
   "/en/sustainability/sustainablebusiness": "/hallbarhet/hallbaraaffarer",
   "/en/sustainability/agenda": "/hallbarhet/agenda",
-  "/en/press/media": "/press/auxesisimedia",
-  "/en/press/contact": "/press/presskontakt",
-  "/en/innovation": "/inovation",
+  "/en/press/auxesisinmedia": "/press/auxesisimedia",
+  "/en/press/presscontact": "/press/presskontakt",
+  "/en/innovation": "/innovation",
   "/en/contact": "/kontakt",
   "/en/minutes2023": "/protokoll2023",
   "/en/news": "/nyheter",
