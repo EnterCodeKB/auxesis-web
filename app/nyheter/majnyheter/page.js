@@ -17,7 +17,7 @@ export default function Produktion() {
       <div className={styles.imageContainer}>
         <img
           className={styles.img1}
-          src="/Nyheter/börsen.jpeg"
+          src="/Nyheter/stock.jpeg"
           alt="Auxesis väg till börsen"
         />
       </div>
