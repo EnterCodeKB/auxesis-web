@@ -27,6 +27,18 @@ const teamMembers = [
     image: "/team/PeterJpeg1.jpeg",
   },
   {
+    name: "Magnus Larsson",
+    title: "Ordförande ",
+    description:
+      "Magnus Larsson är entreprenör som startat flera företag och verkat i olika roller.<br />" +
+      "Inom IT-branschen var han bl a en av grundarna till ett dotterbolag som världsledande inom distribution av IT produkter och drev upp försäljningen till 2,3 miljarder kr.  <br /><br /> " +
+      "Sedan dess har Magnus även arbetet som koncernchef samt ordförande i både börsnoterade samt privata företag. " +
+      "Parallellt under 2000-talet har Magnus haft en lång rad förtroendeuppdrag inom organisationen Svenskt Näringsliv." +
+      "Magnus är ekonom från Stockholms Universitet med inriktning redovisning och finansiering.",
+
+    image: "/team/magnus4.png",
+  },
+  {
     name: "Lars Larsson",
     title: "CFO och affärsrådgivare, ekonomi, finansiering och management ",
     description:
@@ -37,9 +49,9 @@ const teamMembers = [
   },
   {
     name: "Rune Nordström",
-    title: "Styrelseordförande och PR och IR",
+    title: "Styrelsemedlem och PR och IR",
     description:
-      "Rune Nordström är arbetande styrelseordförande i Auxesis och en erfaren entreprenör inom bolagsstyrning, ledning, marknadsföring och kommunikation.<br /><br />" +
+      "Rune Nordström är styrelsemedlem i Auxesis och en erfaren entreprenör inom bolagsstyrning, ledning, marknadsföring och kommunikation.<br /><br />" +
       "Han har haft ledande roller som direktör på SKR:s föregångare och som informationschef på Arbetslivsinstitutet.",
     image: "/team/Rune.jpeg",
   },

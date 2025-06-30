@@ -20,13 +20,14 @@ export default function Styrelse() {
           <p>Roar Adelsten, vice VD</p>
           <p>Charlotta Larsson, sälj och marknad</p>
           <p>Lars Larsson, ekonomi och finans</p>
-          <p>Rune Nordström, styrelseordförande, PR, HR och IR</p>
         </ul>
 
         <h2 className={styles.h2ul}>Auxesis Pharma styrelse</h2>
         <ul className={styles.ulList2}>
           <p>Roar Adelsten, vice VD och styrelseledamot</p>
-          <p>Rune Nordström, styrelseordförande</p>
+          <p>Magnus Larsson, styrelseordförande</p>
+          <p>Rune Nordström, styrelseledamot</p>
+
           <p>Charlotta Larsson, styrelseledamot</p>
         </ul>
       </div>
