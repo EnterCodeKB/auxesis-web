@@ -28,6 +28,19 @@ const teamMembers = [
     image: "/team/PeterJpeg1.jpeg",
   },
   {
+    name: "Magnus Larsson",
+    title: "Chairman",
+    description:
+      "Magnus Larsson is an entrepreneur who has founded several companies and held various roles.<br />" +
+      "In the IT industry, he was one of the co-founders of a subsidiary that became a world leader in IT product distribution, growing sales to SEK 2.3 billion.<br /><br />" +
+      "Since then, Magnus has also served as Group CEO and Chairman of both publicly listed and private companies. " +
+      "In parallel, throughout the 2000s, Magnus has held numerous positions of trust within the Confederation of Swedish Enterprise." +
+      "He holds a degree in economics from Stockholm University, with a focus on accounting and finance.",
+
+    image: "/team/magnus4.png",
+  },
+
+  {
     name: "Lars Larsson",
     title: "CFO and Business Advisor, Finance, Funding, and Management ",
     description:
@@ -38,10 +51,10 @@ const teamMembers = [
   },
   {
     name: "Rune Nordström",
-    title: "Styrelseordförande och PR och IR",
+    title: "Board Member",
     description:
-      "Rune Nordström is the Executive Chairman of Auxesis and an experienced entrepreneur in corporate governance, management, marketing, and communications.      <br /><br />" +
-      "He has held senior leadership roles as a Director at the predecessor of SKR and as Head of Communications at the Swedish National Institute for Working Life.",
+      "Rune Nordström is a board member of Auxesis and an experienced entrepreneur in corporate governance, management, marketing, and communication.<br /><br />" +
+      "He has held senior positions, including Director at the predecessor of the Swedish Association of Local Authorities and Regions (SKR), and Head of Communications at the National Institute for Working Life.",
     image: "/team/Rune.jpeg",
   },
   {

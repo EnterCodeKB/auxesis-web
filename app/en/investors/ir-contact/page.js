@@ -6,10 +6,10 @@ export default function IrKontakt() {
       <div className={styles["ir-container"]}>
         <div className={styles.ir}>
           <h1 className={styles.h1div}>IR Contact </h1>
-          <h2 className={styles.h2namn}>Rune Nordström</h2>
+          <h2 className={styles.h2namn}>Peter Åberg</h2>
           <p className={styles.irptext}>
             Chairman of the Board <br />
-            Email: rune.nordstrom@auxesispharma.com Mobile: +46 (0)70-602 65 20
+            Email: peter.aberg@auxesispharma.se Mobile: +46 (0)70 681 50 50
           </p>
           <h2 className={styles.h2namn}>Roar Adelsten</h2>
           <p className={styles.irptext}>

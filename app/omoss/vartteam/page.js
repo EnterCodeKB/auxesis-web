@@ -49,7 +49,7 @@ const teamMembers = [
   },
   {
     name: "Rune Nordström",
-    title: "Styrelsemedlem och PR och IR",
+    title: "Styrelsemedlem",
     description:
       "Rune Nordström är styrelsemedlem i Auxesis och en erfaren entreprenör inom bolagsstyrning, ledning, marknadsföring och kommunikation.<br /><br />" +
       "Han har haft ledande roller som direktör på SKR:s föregångare och som informationschef på Arbetslivsinstitutet.",

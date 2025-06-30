@@ -15,21 +15,18 @@ const PressKontakt = () => {
       <div className={styles.contactBox}>
         <h2 className={styles.subHeading}>Press Contact</h2>
         <p className={styles.ptext}>
-          <strong>Name: Rune Nordström</strong> Rune Nordström
+          <strong>Name: </strong>&nbsp; Peter Åberg
         </p>
         <p className={styles.ptext}>
           <strong>Email:</strong>{" "}
-          <a
-            href="mailto:rune.nordstrom@auxesispharma.com"
-            className={styles.link}
-          >
-            rune.nordstrom@auxesispharma.com
+          <a href="mailto:peter.aberg@auxesispharma.se" className={styles.link}>
+            peter.aberg@auxesispharma.se
           </a>
         </p>
         <p className={styles.ptext}>
           <strong>Mobile:</strong>{" "}
-          <a href="tel:+46706026520" className={styles.link}>
-            +46 (0)70-602 65 20
+          <a href="tel:+46706815050" className={styles.link}>
+            +46 (0)70 681 50 50
           </a>
         </p>
       </div>
