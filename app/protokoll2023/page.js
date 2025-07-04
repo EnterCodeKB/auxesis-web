@@ -2,8 +2,6 @@
 import styles from "../protokoll2023/index.module.css";
 
 export default function Protokol() {
- 
-
   return (
     <>
       <section className={styles.protokolSection}>
@@ -20,7 +18,6 @@ export default function Protokol() {
           Ladda ner PDF
         </a>
       </section>
-     
     </>
   );
 }

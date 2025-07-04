@@ -30,11 +30,9 @@ const teamMembers = [
     name: "Magnus Larsson",
     title: "Ordförande ",
     description:
-      "Magnus Larsson är entreprenör som startat flera företag och verkat i olika roller.<br />" +
-      "Inom IT-branschen var han bl a en av grundarna till ett dotterbolag som världsledande inom distribution av IT produkter och drev upp försäljningen till 2,3 miljarder kr.  <br /><br /> " +
-      "Sedan dess har Magnus även arbetet som koncernchef samt ordförande i både börsnoterade samt privata företag. " +
-      "Parallellt under 2000-talet har Magnus haft en lång rad förtroendeuppdrag inom organisationen Svenskt Näringsliv." +
-      "Magnus är ekonom från Stockholms Universitet med inriktning redovisning och finansiering.",
+      "Magnus Larsson är ekonom från Stockholms universitet med inriktning på redovisning och finansiering.<br />" +
+      "Han har grundat flera företag och haft ledande roller inom IT-branschen sedan 1980-talet.   <br /><br /> " +
+      "Magnus har varit koncernchef och ordförande i såväl börsnoterade som privata bolag, verkat som konsult inom ekonomistyrning och haft många förtroendeuppdrag inom Svenskt Näringsliv.",
 
     image: "/team/magnus4.png",
   },

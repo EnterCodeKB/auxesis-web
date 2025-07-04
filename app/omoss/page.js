@@ -75,10 +75,9 @@ export default function About() {
           Acetylsalicylsyra (ASA) är en av de mest välkända substanserna för
           smärtlindring och har använts i läkemedel sedan slutet av 1800-talet,
           inklusive Treo, Bamyl, Aspirin. <br /> <br />
-          Efter flera års forskning och tusentals försök har Auxesis tillsammans
-          med professor Moustapha Hassan och hans team lyckats göra det som
-          ingen annan har lyckats med förut: Att stabilisera ASA i flytande
-          form.
+          Efter flera års forskning och tusentals försök har Auxesis team
+          lyckats göra det som ingen annan har lyckats med förut: Att
+          stabilisera ASA i flytande form.
         </p>
         <div className={styles.flexContainer}>
           <div ref={imgspelRef} className={styles.imgdiv}>
@@ -126,10 +125,9 @@ export default function About() {
           </p>
 
           <p className={styles.ptext}>
-            Efter flera års forskning och tusentals försök har Auxesis
-            tillsammans med professor Moustapha Hassan och hans team lyckats
-            göra det som ingen annan har gjort tidigare: Att stabilisera ASA i
-            flytande form.
+            Efter flera års forskning och tusentals försök har Auxesis team
+            lyckats göra det som ingen annan har gjort tidigare: Att stabilisera
+            ASA i flytande form.
           </p>
           <p className={styles.ptext}>
             Med ASA i flytande form finns möjligheter att utveckla helt nya

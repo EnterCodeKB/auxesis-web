@@ -65,9 +65,8 @@ export default function Historik() {
               smärtlindring och har använts i läkemedel sedan slutet av
               1800-talet, inklusive Treo, Bamyl, Aspirin.
               <br /> <br /> Efter flera års forskning och tusentals försök har
-              Auxesis tillsammans med professor Moustapha Hassan och hans team
-              lyckats göra det som ingen annan har gjort tidigare: Att
-              stabilisera ASA i flytande form.
+              Auxesis team lyckats göra det som ingen annan har gjort tidigare:
+              Att stabilisera ASA i flytande form.
               <br /> <br />
               Med ASA i flytande form finns möjligheter att utveckla helt nya
               beredningsformer som enkelt kan appliceras direkt på huden och ta
