@@ -22,12 +22,19 @@ export default function HomePage() {
   };
   return (
     <>
-      {/* Sökkomponenten */}
-      <SearchComponent
-        placeholder="Sök på webbplatsen..."
-        onResultClick={handleResultClick} // Skickar med funktionen som prop
-      />
-
+      <div
+        style={{
+          padding: "1rem",
+          maxWidth: "400px",
+          marginTop: "-100px", // Flytta upp
+          marginLeft: "0", // Vänsterjustera
+        }}
+      >
+        <SearchComponent
+          placeholder="Sök på webbplatsen..."
+          onResultClick={handleResultClick} // Skickar med funktionen som prop
+        />
+      </div>
       <LatestNews newsItems={newsItems} />
       <div className={styles.pagediv}>
         <section>

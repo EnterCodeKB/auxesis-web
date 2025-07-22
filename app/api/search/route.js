@@ -61,6 +61,7 @@ export async function GET(req) {
       keywords: [
         "Roar Adelsten",
         "Lars Larsson",
+        "Magnus Larsson",
         "Rune Nordström",
         "Charlotta Larsson",
         "Helena Adelsten",
@@ -71,6 +72,7 @@ export async function GET(req) {
         "Marie Gårdmark",
         "VD",
         "styrelse",
+        "Ordförande",
       ],
     },
 
@@ -107,6 +109,7 @@ export async function GET(req) {
       keywords: [
         "Roar Adelsten",
         "Lars Larsson",
+        "Magnus Larsson",
         "Rune Nordström",
         "Charlotta Larsson",
         "Peter Åberg",
@@ -136,7 +139,7 @@ export async function GET(req) {
       content: "IR-kontakt...",
       keywords: [
         "Roar Adelsten",
-        "Rune Nordström",
+        "Peter Åberg",
         "ekonomi",
         "rapport",
         "bolagsstämma",
@@ -318,6 +321,7 @@ export async function GET(req) {
       keywords: [
         "Roar Adelsten",
         "Lars Larsson",
+        "Magnus Larsson",
         "Rune Nordström",
         "Charlotta Larsson",
         "Helena Adelsten",
@@ -364,6 +368,7 @@ export async function GET(req) {
       keywords: [
         "Roar Adelsten",
         "Lars Larsson",
+        "Magnus Larsson",
         "Rune Nordström",
         "Charlotta Larsson",
         "Peter Åberg",
@@ -527,7 +532,7 @@ export async function GET(req) {
       link: "/en/press/presscontact",
       content:
         "Here you will find information for journalists, media, and other stakeholders...",
-      keywords: ["Rune Nordström", "press contact"],
+      keywords: ["Peter Åberg", "press contact"],
     },
 
     {

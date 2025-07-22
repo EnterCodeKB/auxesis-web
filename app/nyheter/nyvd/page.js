@@ -1,5 +1,5 @@
 "use client";
-import styles from "../smestatus/index.module.css";
+import styles from "../../styles/Nyanstalld.module.css";
 
 export default function Smestatus() {
   return (
@@ -51,9 +51,7 @@ export default function Smestatus() {
       <p className={styles.ptext}>
         <strong>Kontakt:</strong>
       </p>
-      <p className={styles.ptext}>
-        Rune Nordström, styrelseordförande, 070 – 602 65 20
-      </p>
+
       <p className={styles.ptext}>Peter Åberg, VD, 070 – 681 50 50</p>
       <div className={styles.articlesimage1}>
         <img

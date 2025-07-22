@@ -1,6 +1,17 @@
 //app/data/newsItems.js
 export const newsItems = [
   {
+    title: "Ny ordförande i Auxesis Pharma Holding AB (publ)",
+    subtitle: "2025/06/17",
+    description: `
+        <p></p>
+          `,
+    imageUrl: "/team/magnus.jpg",
+
+    slug: "nyordforande2025",
+    isLatest: true, // Märkt som senaste
+  },
+  {
     title: "Kallelse till årsstämma 2025 ",
     subtitle: "2025/05/13",
     description: `

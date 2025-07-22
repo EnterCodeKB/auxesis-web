@@ -1,4 +1,4 @@
-/* app/nyheter/nyvd/index.module.css */
+/* Container for SME Status */
 .details {
   max-width: 800px;
   margin: 40px auto; /* Center content with top margin */
@@ -42,7 +42,7 @@
 
 .image1 {
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -145,6 +145,6 @@
   }
 
   .image1 {
-    max-width: 400px; /* Keep a fixed size for large screens */
+    max-width: 600px; /* Keep a fixed size for large screens */
   }
 }
