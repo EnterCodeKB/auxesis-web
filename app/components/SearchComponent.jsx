@@ -34,7 +34,7 @@ const SearchComponent = ({ placeholder }) => {
   };
 
   return (
-    <div style={{ padding: "1rem", maxWidth: "600px", margin: "0 auto" }}>
+    <div>
       <input
         type="text"
         placeholder={placeholder || "Sök..."}
@@ -52,11 +52,12 @@ const SearchComponent = ({ placeholder }) => {
       <div>
         {query && searchResults.length > 0 ? (
           <ul style={{ listStyle: "none", padding: 0 }}>
-            {searchResults.map((item) => (
-              <li key={item.id} onClick={() => handleResultClick(item.link)}>
+            {searchResults.map((item, index) => (
+              <li key={index}>
                 <a
-                  href={item.link}
+                  onClick={() => handleResultClick(item.link)}
                   style={{
+                    cursor: "pointer",
                     textDecoration: "none",
                     color: "#007BFF",
                     fontWeight: "bold",

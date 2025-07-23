@@ -16,6 +16,16 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.searchWrapper {
+  position: relative;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px; /* valfritt – ta bort om du vill ha exakt längst till vänster */
+  max-width: 800px;
+}
 
 /* Responsiv design */
 

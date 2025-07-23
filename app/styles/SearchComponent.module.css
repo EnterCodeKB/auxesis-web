@@ -1,0 +1,30 @@
+/* SearchComponent.module.css */
+
+/* styles/SearchComponent.module.css */
+.searchContainer {
+  position: relative;
+  top: -50px; /* Flytta uppåt */
+  left: 0; /* Håll längst till vänster */
+  padding: 1rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.resultLink {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.resultDescription {
+  font-size: 0.9rem;
+  color: #555;
+}

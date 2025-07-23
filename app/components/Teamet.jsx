@@ -82,16 +82,6 @@ export default function Teamet() {
 `,
       imageUrl: "/team/Peter1.png",
     },
-
-    /*
-      rubrik: "Annika Möllström",
-      title: "Strategisk och operativ kommunikation ",
-      description: `
-      <p>Annika har lång erfarenhet av strategisk och operativ kommunikation, PR och pressfrågor för kunder inom privat sektor, myndighet och ideell sektor. </p>
-      <p>Hon är en rutinerad konsult med bred utbildning som med lätthet arbetar med olika kanaler.</p>
-`,
-      imageUrl: "../team/Annika.png",
-    },*/
   ];
 
   return (

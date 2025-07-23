@@ -34,7 +34,7 @@ const SearchComponent = ({ placeholder }) => {
   };
 
   return (
-    <div style={{ padding: "1rem", maxWidth: "600px", margin: "0 auto" }}>
+    <>
       <input
         type="text"
         placeholder={placeholder || "Search..."}
@@ -49,34 +49,32 @@ const SearchComponent = ({ placeholder }) => {
           marginBottom: "1rem",
         }}
       />
-      <div>
-        {query && searchResults.length > 0 ? (
-          <ul style={{ listStyle: "none", padding: 0 }}>
-            {searchResults.map((item) => (
-              <li key={item.id} onClick={() => handleResultClick(item.link)}>
-                <a
-                  href={item.link}
-                  style={{
-                    textDecoration: "none",
-                    color: "#007BFF",
-                    fontWeight: "bold",
-                  }}
-                >
-                  {item.name}
-                </a>
-                <p style={{ fontSize: "0.9rem", color: "#555" }}>
-                  {item.content}
-                </p>
-              </li>
-            ))}
-          </ul>
-        ) : query ? (
-          <p>No results found for "{query}".</p>
-        ) : (
-          <p>Type something to start searching.</p>
-        )}
-      </div>
-    </div>
+      {query && searchResults.length > 0 ? (
+        <ul style={{ listStyle: "none", padding: 0 }}>
+          {searchResults.map((item) => (
+            <li key={item.id} onClick={() => handleResultClick(item.link)}>
+              <a
+                href={item.link}
+                style={{
+                  textDecoration: "none",
+                  color: "#007BFF",
+                  fontWeight: "bold",
+                }}
+              >
+                {item.name}
+              </a>
+              <p style={{ fontSize: "0.9rem", color: "#555" }}>
+                {item.content}
+              </p>
+            </li>
+          ))}
+        </ul>
+      ) : query ? (
+        <p>No results found for "{query}".</p>
+      ) : (
+        <p>Type something to start searching.</p>
+      )}
+    </>
   );
 };
 
