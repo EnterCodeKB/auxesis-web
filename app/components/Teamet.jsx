@@ -58,7 +58,7 @@ export default function Teamet() {
 
       `,
 
-      imageUrl: "../team/A095535F-73B4-48B8-AB4C-2E9498AB43A2.png",
+      imageUrl: "../team/helenanya.jpeg",
     },
     {
       rubrik: "Peter Hedberg",
