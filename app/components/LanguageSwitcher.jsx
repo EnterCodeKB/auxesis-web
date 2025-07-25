@@ -6,6 +6,8 @@ import styles from "../styles/Header.module.css";
 
 // Path maps
 const pathMap = {
+  "/": "/en",
+  "/en": "/",
   "/en/about": "/omoss",
   "/en/about/ourcompany": "/omoss/varabolag",
   "/en/about/ourteam": "/omoss/vartteam",
