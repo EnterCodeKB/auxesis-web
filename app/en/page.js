@@ -23,11 +23,12 @@ export default function HomePage() {
 
   return (
     <>
-      {/* Search Component */}
-      <SearchComponent
-        placeholder="Search on website..."
-        onResultClick={handleResultClick}
-      />
+      <div className={styles.searchWrapper}>
+        <SearchComponent
+          placeholder="Sök på webbplatsen..."
+          onResultClick={handleResultClick}
+        />
+      </div>
 
       <LatestNews newsItems={newsItems} />
       <div className={styles.pagediv}>

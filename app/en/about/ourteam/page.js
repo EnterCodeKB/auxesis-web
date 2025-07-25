@@ -74,7 +74,7 @@ const teamMembers = [
       "Helena Adelsten is a software engineer and web developer with an academic background in IT and economics.<br /><br />" +
       "She designs and develops applications, solves complex problems, optimizes performance, and creates new algorithms.<br /><br />  " +
       "As an entrepreneur, she specializes in web development, customized services, and technical support, focusing on enhancing user experience and delivering innovative solutions.",
-    image: "/team/HelenaJpeg.jpeg",
+    image: "/team/helenabildny1.png",
   },
   {
     name: "Peter Hedberg",
