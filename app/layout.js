@@ -10,9 +10,14 @@ export const metadata = {
     template: "%s | Auxesis Pharma",
   },
   description:
-    "Auxesis Pharma är ett svenskt forskningsbolag inom smärtlindring och läkemedelsutveckling. Vi arbetar för en bättre framtid för patienter med kronisk smärta.",
+    "Auxesis Pharma är ett svenskt forskningsbolag inom smärtlindring och läkemedelsutveckling.",
+  metadataBase: new URL("https://www.auxesis.se"),
   icons: {
-    icon: "/skyltenslogo.png",
+    icon: [
+      { url: "/skyltenslogo.png", sizes: "32x32", type: "image/png" },
+      { url: "/skyltenslogo.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: "/skyltenslogo.png",
   },
   openGraph: {
     title: "Auxesis Pharma Holding AB",
@@ -43,6 +48,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="sv">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/skyltenslogo.png" type="image/png" />
+      </head>
+
       <body>
         <AppLayoutClient>{children}</AppLayoutClient>
       </body>

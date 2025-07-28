@@ -24,7 +24,6 @@ export default function LayoutClient({ children }) {
   return (
     <>
       <Header />
-
       <div className="container">
         <main>{children || <p>No content available.</p>}</main>
       </div>

@@ -2,16 +2,17 @@
 
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useRouter } from "next/navigation";
-import Card from "../en/components/Card";
-import Middle from "../en/components/middleSection";
-import styles from "../styles/Page.module.css";
-import Finance from "../en/components/Finance";
-import LatestNews from "../en/components/LatestNews";
-import SearchComponent from "../en/components/SearchComponent.jsx";
-import { newsItems } from "../en/data/newsItems";
-import { searchData } from "../data/searchData";
+import Card from "./components/Card";
+import Middle from "./components/middleSection";
+import Finance from "./components/Finance";
+import LatestNews from "./components/LatestNews";
+import SearchComponent from "./components/SearchComponent.jsx";
+
+import styles from "@/styles/Page.module.css"; // använder @ för konsekvens
+import { newsItems } from "./data/newsItems";
+import { searchData } from "../data/searchData"; // svensk data kan vara gemensam
 
 export default function HomePage() {
   const router = useRouter();
@@ -25,12 +26,14 @@ export default function HomePage() {
     <>
       <div className={styles.searchWrapper}>
         <SearchComponent
-          placeholder="Sök på webbplatsen..."
+          placeholder="Search the site..."
           onResultClick={handleResultClick}
+          searchData={searchData} // om du använder det i SearchComponent
         />
       </div>
 
       <LatestNews newsItems={newsItems} />
+
       <div className={styles.pagediv}>
         <section>
           <Middle />
@@ -41,13 +44,3 @@ export default function HomePage() {
     </>
   );
 }
-
-const LanguageSwitcher = () => {
-  return (
-    <div className={styles.languageSwitcher}>
-      <Link href="/en">
-        <button>EN</button>
-      </Link>
-    </div>
-  );
-};
