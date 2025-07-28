@@ -35,6 +35,9 @@ export const metadata = {
     locale: "sv_SE",
     type: "website",
   },
+  other: {
+    "google-site-verification": "DIN_HTML_TAG_KOD_HÄR",
+  },
   twitter: {
     card: "summary_large_image",
     title: "Auxesis Pharma Holding AB",
