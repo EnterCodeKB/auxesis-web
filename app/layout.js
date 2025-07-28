@@ -1,67 +1,50 @@
-"use client";
-
-import Footer2 from "./components/underFooter";
-import Hero from "./components/heroSection";
-import HeroEN from "./en/components/HeroSection"; // Engelska Hero
-import Footer2EN from "./en/components/underFooter"; // Engelska Footer2
-import Header from "./components/Header";
-import HeaderEN from "./en/components/Header"; // Engelska Header
-import Footer from "./components/Footer";
-import FooterEN from "./en/components/Footer"; // Engelska Footer
-import ScrollToTop from "./components/ScrollToTop";
+// ⛔ INTE "use client" här!
 import "./globals.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import CookieBanner from "./components/CookieBanner";
-import BackArrow from "./components/BackArrow";
-import LanguageSwitcher from "./components/LanguageSwitcher"; // Språkväxlare
-import { usePathname } from "next/navigation";
+import AppLayoutClient from "./components/AppLayoutClient";
+
+// ✅ SEO metadata (server only)
+export const metadata = {
+  title: {
+    default: "Auxesis Pharma Holding AB (publ)",
+    template: "%s | Auxesis Pharma",
+  },
+  description:
+    "Auxesis Pharma är ett svenskt forskningsbolag inom smärtlindring och läkemedelsutveckling. Vi arbetar för en bättre framtid för patienter med kronisk smärta.",
+  icons: {
+    icon: "/skyltenslogo.png",
+  },
+  openGraph: {
+    title: "Auxesis Pharma Holding AB",
+    description:
+      "Svenskt forskningsbolag inom smärta och läkemedelsutveckling.",
+    url: "https://www.auxesis.se",
+    siteName: "Auxesis Pharma",
+    images: [
+      {
+        url: "/og-image.png", // lägg den här bilden i /public
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "sv_SE",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Auxesis Pharma Holding AB",
+    description:
+      "Ett svenskt forskningsbolag med fokus på smärtlindring och innovation inom läkemedel.",
+    images: ["/og-image.png"],
+  },
+  metadataBase: new URL("https://www.auxesis.se"),
+};
 
 export default function RootLayout({ children }) {
-  const pathname = usePathname();
-
-  // Kolla om vi är på den engelska delen av webbplatsen
-  const isEnglish = pathname.startsWith("/en");
-
-  // Kontrollera om Hero ska visas
-  const hideHeroPaths = isEnglish
-    ? ["/en/products", "/en/sustainability"]
-    : ["/produkter", "/hallbarhet"];
-  const shouldShowHero = !hideHeroPaths.some((path) =>
-    pathname.startsWith(path)
-  );
-
   return (
-    <html lang={isEnglish ? "en" : "sv"}>
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </head>
+    <html lang="sv">
       <body>
-        {/* Dynamisk header */}
-        {isEnglish ? <HeaderEN /> : <Header />}
-
-        {/* Dynamisk Hero */}
-        {shouldShowHero && (isEnglish ? <HeroEN /> : <Hero />)}
-
-        <div className="container">
-          <main>
-            {children || (
-              <p>
-                {isEnglish
-                  ? "No content available."
-                  : "Inget innehåll att visa."}
-              </p>
-            )}
-          </main>
-        </div>
-
-        {/* Dynamisk Footer */}
-        {isEnglish ? <FooterEN /> : <Footer />}
-        {isEnglish ? <Footer2EN /> : <Footer2 />}
-
-        <CookieBanner />
-        <ScrollToTop />
-
-        {/* Språkväxlare alltid synlig */}
+        <AppLayoutClient>{children}</AppLayoutClient>
       </body>
     </html>
   );
