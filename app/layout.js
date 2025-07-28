@@ -5,10 +5,8 @@ import AppLayoutClient from "./components/AppLayoutClient";
 
 // ✅ SEO metadata (server only)
 export const metadata = {
-  title: {
-    default: "Auxesis Pharma Holding AB (publ)",
-    template: "%s | Auxesis Pharma",
-  },
+  title: "Auxesis Pharma Holding AB (publ)",
+
   description:
     "Auxesis Pharma är ett svenskt forskningsbolag inom smärtlindring och läkemedelsutveckling.",
   metadataBase: new URL("https://www.auxesis.se"),
