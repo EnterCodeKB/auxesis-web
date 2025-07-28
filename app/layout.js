@@ -14,11 +14,12 @@ export const metadata = {
   metadataBase: new URL("https://www.auxesis.se"),
   icons: {
     icon: [
-      { url: "/skyltenslogo.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any", type: "image/x-icon" }, // för Google
       { url: "/skyltenslogo.png", sizes: "192x192", type: "image/png" },
     ],
     apple: "/skyltenslogo.png",
   },
+
   openGraph: {
     title: "Auxesis Pharma Holding AB",
     description:
