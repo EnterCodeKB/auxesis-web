@@ -4,7 +4,10 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import AppLayoutClient from "./components/AppLayoutClient";
 
 export const metadata = {
-  title: "Auxesis Pharma Holding AB (publ)",
+  title: {
+    default: "Auxesis Pharma – Innovativa läkemedel",
+    template: "%s | Auxesis Pharma",
+  },
   description:
     "Auxesis Pharma är ett svenskt forskningsbolag inom smärtlindring och läkemedelsutveckling.",
   metadataBase: new URL("https://www.auxesis.se"),
