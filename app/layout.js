@@ -1,4 +1,4 @@
-// ⛔ INTE "use client" här!
+import Script from "next/script";
 import "./globals.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import AppLayoutClient from "./components/AppLayoutClient";
