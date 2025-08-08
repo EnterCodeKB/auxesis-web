@@ -1,11 +1,12 @@
 .backArrow {
-  position: fixed;
-  bottom: 420px;
-  left: 20px; /* Placerad till vänster för att spegla ScrollToTop på höger */
   display: flex;
+  flex-direction: row; /* 💡 Lägg till denna rad */
   align-items: center;
   justify-content: center;
-  gap: 8px; /* För mellanrum mellan pilen och texten */
+  gap: 8px;
+  position: fixed;
+  bottom: 420px;
+  left: 20px;
   background-color: #23559b;
   color: white;
   padding: 8px 15px;
@@ -32,15 +33,14 @@
 
 .text {
   font-size: 14px;
-  white-space: nowrap; /* Förhindrar att texten radbryts */
+  white-space: nowrap;
 }
 
-/* Responsiv design */
 @media (max-width: 480px) {
   .backArrow {
     font-size: 14px;
     padding: 8px 12px;
-    gap: 6px; /* Justera mellanrum för mindre skärmar */
+    gap: 6px;
   }
 
   .arrow {

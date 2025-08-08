@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import styles from "./index.module.css";
+import styles from "./MajNyheter.module.css";
 
 export default function Produktion() {
   const router = useRouter();

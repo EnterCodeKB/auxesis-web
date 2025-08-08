@@ -4,13 +4,12 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import styles from "../styles/BackArrow.module.css";
 
-export default function BackArrow({ mainLink, label }) {
+export default function BackArrow() {
   const [isVisible, setIsVisible] = useState(false);
   const router = useRouter();
 
-  // Visa knappen endast efter scroll
   const toggleVisibility = () => {
-    if (window.pageYOffset > 300) {
+    if (typeof window !== "undefined" && window.pageYOffset > 300) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
@@ -18,19 +17,25 @@ export default function BackArrow({ mainLink, label }) {
   };
 
   const handleBack = () => {
-    router.push(mainLink);
+    router.back(); // 👈 Alltid ett steg bakåt
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", toggleVisibility);
+    window.addEventListener("scroll", toggleVisibility, { passive: true });
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
   return (
     isVisible && (
-      <div className={styles.backArrow} onClick={handleBack}>
+      <div
+        className={styles.backArrow}
+        onClick={handleBack}
+        role="button"
+        tabIndex={0}
+        onKeyDown={(e) => e.key === "Enter" && handleBack()}
+        aria-label="Gå tillbaka"
+      >
         <span className={styles.arrow}>←</span>
-        <span className={styles.text}>{label}</span>
       </div>
     )
   );

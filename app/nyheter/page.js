@@ -13,9 +13,12 @@ function NyheterContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
-  const initialPage = parseInt(searchParams.get("page") || "1", 10);
+  const initialPage = Number(searchParams.get("page")) || 1;
   const [currentPage, setCurrentPage] = useState(initialPage);
   const [searchQuery, setSearchQuery] = useState("");
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   const sortedNews = useMemo(
     () =>
@@ -64,10 +67,7 @@ function NyheterContent() {
 
   return (
     <section className={styles.container}>
-      <BackArrow
-        mainLink={`/nyheter?page=${Math.max(currentPage - 1, 1)}`}
-        label="Tillbaka"
-      />
+      <BackArrow />
 
       <h2 className={styles.title}>Alla nyheter</h2>
 

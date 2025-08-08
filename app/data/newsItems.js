@@ -1,6 +1,17 @@
 //app/data/newsItems.js
 export const newsItems = [
   {
+    title: "Nytt i augusti",
+    subtitle: "2025/08/08",
+    description: `
+        <p></p>
+          `,
+    imageUrl: "/Nyheter/augusti2025.jpeg ",
+
+    slug: "nyttiaugusti",
+    isLatest: true, // Märkt som senaste
+  },
+  {
     title: "Ny ordförande i Auxesis Pharma Holding AB (publ)",
     subtitle: "2025/06/17",
     description: `
