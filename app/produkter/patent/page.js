@@ -1,61 +1,132 @@
 "use client";
 
-import styles from "../../styles/ProduktPatent.module.css";
 import BackArrow from "../../components/BackArrow";
-import HeroPatent from "../../components/HeroSectionPatent";
+import React from "react";
+import styles from "./index.module.css";
 
 export default function Patent() {
+  const values = [
+    {
+      id: 1,
+      title: "Fas 1",
+      points: [
+        "Svensk patentansökan till PRV (Local filing) – månad 0.",
+        "Internationell patentansökan (PCT filing) – månad 12.",
+        "Internationell sökrapport + skriftligt utlåtande – månad 16.",
+        "Publicering av patentansökan (International Publication) – månad 18.",
+      ],
+    },
+    {
+      id: 2,
+      title: "Fas 2",
+      points: [
+        "Begäran om förberedande patentbarhetsprövning – månad 22.",
+        "Preliminär bedömning av patentbarheten – månad 28.",
+        "Fullföljande i utvalda länder (National Phase) – månad 30.",
+      ],
+    },
+  ];
+
+  const milestones = [
+    { month: 0, text: "✅ Local filing application " },
+    { month: 12, text: "PCT filing ✅" },
+    { month: 16, text: "✅ International search report" },
+    { month: 18, text: "International Publication ✅" },
+    { month: 22, text: "Demand for International Preliminary Examination" },
+    { month: 28, text: "Preliminary Examination and Patentability Report" },
+    { month: 30, text: "National Phase…" },
+  ];
   return (
     <>
-      <HeroPatent />
-      <section className={styles.patentsection}>
-        <BackArrow mainLink="/produkter/historik" label="Produkter" />
+      <div className={styles.aboutWrapper}>
+        {/* Sektion 1: Intro */}
+        <section className={styles.section} aria-labelledby="our-story-heading">
+          <div className={styles.container}>
+            <div className={styles.split}>
+              <div>
+                <h2 id="our-story-heading" className={styles.h2}>
+                  Patent söks i flera länder
+                </h2>
+                <p className={styles.lead}>
+                  Auxesis Pharma lämnade den 29 november 2023 in en svensk
+                  patentansökan till Patent- och registreringsverket (PRV) för
+                  uppfinningen ASA.P®. Då påbörjades patentprocessen enligt
+                  internationella regler och rutiner. Processen omfattar
+                  översiktligt sju steg i två faser:
+                </p>
+              </div>
+              <div className={styles.imageWrap}>
+                <img
+                  className={styles.image}
+                  src="/patent/patentpending.jpg"
+                  alt="Patent"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
 
-        <h1>Patent söks i flera länder</h1>
-        <p className={styles.ptext}>
-          Auxesis Pharma lämnade den 29 november 2023 in en svensk patentansökan
-          till Patent- och registreringsverket (PRV) för uppfinningen ASA.P®. Då
-          påbörjades patentprocessen enligt internationella regler och rutiner.
-          Processen omfattar översiktligt sju steg i två faser:
-        </p>
+        {/* Sektion 2: Faser */}
+        <section
+          className={`${styles.section} ${styles.muted}`}
+          aria-labelledby="values-heading"
+        >
+          <div className={styles.container}>
+            <h2 id="values-heading" className={`${styles.h2} ${styles.center}`}>
+              Patentprocessen
+            </h2>
 
-        <ol className={styles.olList}>
-          <h2 className={styles.fasdiv}>Fas 1</h2>
-          <li>
-            Svensk patentansökan till PRV (Local filing application) – månad 0.
-          </li>
-          <li>
-            Internationell patententansökan (PCT filing application) – månad 12.
-          </li>
-          <li>
-            Internationell sökrapport (International search report) med
-            skriftligt utlåtande – månad 16.
-          </li>
-          <li>
-            Publicering av patentansökan (International Publication) – månad 18.
-          </li>
+            <div className={styles.cardGrid}>
+              {values.map((value) => (
+                <div key={value.id} className={styles.card}>
+                  <h3 className={styles.h3}>{value.title}</h3>
+                  <ul className={styles.list}>
+                    {value.points.map((p, i) => (
+                      <li key={i}>{p}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
-          <h2 className={styles.fasdiv}>Fas 2</h2>
+        {/* Sektion 3: Tidslinje */}
+        <section className={styles.section} aria-labelledby="history-heading">
+          <div className={styles.container}>
+            <h2
+              id="history-heading"
+              className={`${styles.h2} ${styles.center}`}
+            >
+              Vår historia
+            </h2>
 
-          <li>
-            Begäran förberedande patentbarhetsprövning (Demand for International
-            Preliminary Examination) – månad 22.
-          </li>
-          <li>
-            Preliminär bedömning av patentbarheten (Preliminary Examination and
-            Patentability Report) – månad 28.
-          </li>
-          <li>
-            Fullföljande av patentansökningar i utvalda länder (National Phase)
-            – månad 30.
-          </li>
-        </ol>
-        <p className={styles.ptext}>
-          Patentprocessens första 30 månader syftar till att skapa en bra
-          ansökan med så stora möjligheter som möjligt till framtida
-          registrering och godkända patent i utvalda länder.
-        </p>
-      </section>
+            <div className={styles.timeline}>
+              <div className={styles.timelineLine} aria-hidden="true" />
+              <div className={styles.timelineItems}>
+                {milestones.map((m, index) => (
+                  <div
+                    key={m.month}
+                    className={`${styles.timelineRow} ${
+                      index % 2 === 0 ? styles.rowReverse : ""
+                    }`}
+                  >
+                    <div className={styles.side} />
+                    <div className={styles.dotWrap}>
+                      <span className={styles.dot} />
+                    </div>
+                    <div className={`${styles.side} ${styles.sideContent}`}>
+                      <span className={styles.badge}>Månad {m.month}</span>
+                      <p className={styles.timelineText}>{m.text}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </>
   );
 }
