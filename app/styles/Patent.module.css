@@ -188,3 +188,48 @@
     text-align: left;
   }
 }
+/* Sista bandet under sidan */
+.patentsection {
+  background: #f8fafc; /* matchar muted-bg */
+  border-top: 1px solid #e2e8f0; /* subtil avgränsning */
+  padding: 48px 0;
+}
+
+/* Själva textkortet */
+.ptext {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 24px;
+  background: #ffffff;
+  color: #334155;
+  font-size: clamp(1rem, 0.95rem + 0.3vw, 1.125rem);
+  line-height: 1.75;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(2, 6, 23, 0.06);
+  position: relative;
+}
+
+/* Dekorativ liten accent över texten */
+.ptext::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 56px;
+  height: 6px;
+  border-radius: 999px;
+  background: #013880; /* brand-blue */
+}
+
+/* Lite tightare på riktigt små skärmar */
+@media (max-width: 480px) {
+  .patentsection {
+    padding: 36px 0;
+  }
+  .ptext {
+    padding: 16px 18px;
+  }
+}

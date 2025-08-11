@@ -2,7 +2,7 @@
 
 import BackArrow from "../../components/BackArrow";
 import React from "react";
-import styles from "./index.module.css";
+import styles from "../../styles/Patent.module.css";
 
 export default function Patent() {
   const values = [
@@ -99,7 +99,7 @@ export default function Patent() {
               id="history-heading"
               className={`${styles.h2} ${styles.center}`}
             >
-              Vår historia
+              Timeline{" "}
             </h2>
 
             <div className={styles.timeline}>
@@ -126,7 +126,14 @@ export default function Patent() {
             </div>
           </div>
         </section>
-      </div>
+      </div>{" "}
+      <section className={styles.patentsection}>
+        <p className={styles.ptext}>
+          De första 30 månaderna av patentprocessen ägnas åt att utarbeta en
+          stark ansökan med bästa möjliga förutsättningar för framtida
+          registrering och patentgodkännanden i utvalda länder.
+        </p>
+      </section>
     </>
   );
 }
