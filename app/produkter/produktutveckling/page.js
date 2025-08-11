@@ -4,34 +4,35 @@ import styles from "./index.module.css";
 import BackArrow from "../../components/BackArrow";
 
 export default function ProduktUtveckling() {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
     <section className={styles.sectionU}>
       <BackArrow mainLink="/produkter/historik" label="Produkter" />
 
-      <div>
+      {/* Vänster: huvudbild */}
+      <div className={styles.mediaCol}>
         <img
           className={styles.imgakne}
           src="/produkter/akne.png"
-          alt="Akne behandling"
+          alt="Aknebehandling"
         />
       </div>
+
+      {/* Höger: text + grid */}
       <div className={styles.textcontainer}>
+        {/* Dekorativ bakgrundsbild */}
         <img
           src="/produkter/bluepalette4.png"
-          alt="Blå bg"
-          width={600}
-          height={400}
+          alt=""
+          aria-hidden="true"
           className={styles.bluepalette}
         />
+
         <p className={styles.ptext}>
           Produktutvecklingsstrategin är att utveckla innovativa läkemedel som
           snabbt tar bort smärta och irritation på huden hos både människor och
           djur baserat på egna patent.
-          <br /> <br />
+          <br />
+          <br />
           Med det egna patentet som grund går Auxesis vidare för att utveckla
           receptbelagda läkemedel samt kosmetiska produkter som snabbt tar bort
           smärta och irritation på huden hos människor som ska vara
@@ -40,44 +41,40 @@ export default function ProduktUtveckling() {
           Ett tillämpningsområde är Cosmeceuticals – kosmetiska produkter med
           medicinska fördelar.
         </p>
+
         <div className={styles.imageGridContainer}>
-          {/* Första kolumnen */}
           <div className={styles.column}>
             <img
               src="/produkter/tubeicon1.png"
-              alt="Tuben"
+              alt="ASA.P OTC"
               className={styles.image}
             />
             <p className={styles.imageText}>
-              ASA.P® OTC <br /> Nya indikationer <br /> och <br />
+              ASA.P® OTC <br /> Nya indikationer <br /> och <br />{" "}
               beredningsformer
             </p>
           </div>
 
-          {/* Andra kolumnen */}
           <div className={styles.column}>
             <img
               src="/produkter/petsicon1.png"
-              alt="Pets"
+              alt="CoxyPet"
               className={styles.image}
             />
             <p className={styles.imageText}>
-              CoxyPet® <br /> Smärtstillande <br />
-              läkemedel för <br />
+              CoxyPet® <br /> Smärtstillande <br /> läkemedel för <br />
               husdjur och <br /> boskap
             </p>
           </div>
 
-          {/* Tredje kolumnen */}
           <div className={styles.column}>
             <img
               src="/produkter/detoskopicon1.png"
-              alt="Detoskop"
+              alt="ASA.P RX"
               className={styles.image}
             />
             <p className={styles.imageText}>
-              ASA.P® RX <br /> Receptbelagda <br /> versioner av <br />
-              ASA.P®
+              ASA.P® RX <br /> Receptbelagda <br /> versioner av <br /> ASA.P®
             </p>
           </div>
         </div>
