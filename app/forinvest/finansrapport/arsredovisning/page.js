@@ -10,6 +10,22 @@ export default function Protokol() {
         <BackArrow />
 
         <section className={styles.section}>
+          <h2 className={styles.h2divdark}>Årsredovisning 2024-12-31</h2>
+          <p className={styles.redovptext}>
+            Godkänd årsredovisning 2024-12-31 finns tillgänglig här. Klicka på
+            länken för att visa rapporten.
+          </p>
+          <a
+            href="/Finance/2025 Årsredovisning - 559195-6486.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.downloadButton}
+          >
+            Visa PDF
+          </a>
+        </section>
+
+        <section className={styles.section}>
           <h2 className={styles.h2divdark}>Årsredovisning 2023-12-31</h2>
           <p className={styles.redovptext}>
             Godkänd årsredovisning 2023-12-31 finns tillgänglig här. Klicka på
