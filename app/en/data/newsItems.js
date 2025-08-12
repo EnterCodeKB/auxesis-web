@@ -2,7 +2,18 @@
 
 export const newsItems = [
   {
-    title: "Kallelse till årsstämma 2025 ",
+    title: "New Chairman of the Board at Auxesis Pharma Holding AB (publ)",
+    subtitle: "2025/06/17",
+    description: `
+        <p></p>
+          `,
+    imageUrl: "/team/magnus.jpg",
+
+    slug: "newchairman",
+    isLatest: true, // Märkt som senaste
+  },
+  {
+    title: "Notice of Annual General Meeting 2025 ",
     subtitle: "2025/05/13",
     description: `
         <p></p>
