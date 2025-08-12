@@ -2,6 +2,17 @@
 
 export const newsItems = [
   {
+    title: "August Highlights",
+    subtitle: "2025/08/08",
+    description: `
+        <p></p>
+          `,
+    imageUrl: "/Nyheter/augusti2025.jpeg ",
+
+    slug: "news-august2025",
+    isLatest: true, // Märkt som senaste
+  },
+  {
     title: "New Chairman of the Board at Auxesis Pharma Holding AB (publ)",
     subtitle: "2025/06/17",
     description: `

@@ -69,11 +69,11 @@ export default function Produktion() {
         under hösten och produktionsmaskiner kommer så småningom att installeras
         i våra produktionslokaler i Östersund. För tillverkning av
         produktionsmaskiner har vi nu tecknat ett letter of intent med
-        maskinfirman Höglunds Legotillverkning AB i Vallentuna. De har
-        erfarenhet av att producera högtekonologiska maskindelar och koppla ihop
-        mekanik, elektronik och montage till färdiga produktionsenheter. Här
-        kommer vi också att GMP certifiera anläggningen vilket är ett krav från
-        bl a Läkemedelsverket.
+        maskinfirman Högbloms Legomontage AB i Vallentuna. De har erfarenhet av
+        att producera högtekonologiska maskindelar och koppla ihop mekanik,
+        elektronik och montage till färdiga produktionsenheter. Här kommer vi
+        också att GMP certifiera anläggningen vilket är ett krav från bl a
+        Läkemedelsverket.
         <br /> <br />
         Vi kommer under hösten att flytta vårt huvudkontor i Stockholm till
         Karolinska Instiutet i Solna (Campus Solna) för att förutom
