@@ -6,7 +6,8 @@ import BackArrow from "../../../components/BackArrow";
 export default function Protokol() {
   return (
     <>
-      <BackArrow />
+      <section className={styles.container}>
+        <BackArrow />
 
         <h2 className={styles.h2divdark}>
           Minutes from the Annual General Meeting
