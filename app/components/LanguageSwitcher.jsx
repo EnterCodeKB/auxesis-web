@@ -29,6 +29,7 @@ const pathMap = {
   "/en/contact": "/kontakt",
   "/en/minutes2023": "/protokoll2023",
   "/en/news": "/nyheter",
+  "/en/news/news-august2025": "/nyheter/nyttiaugusti",
 };
 
 // Skapa en inverterad map för svenska → engelska
