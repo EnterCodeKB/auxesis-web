@@ -39,8 +39,7 @@ export default function Historik() {
     <>
       <HeroPr />
       <section className={styles.produkthistorik}>
-        <BackArrow mainLink="/en" label="Home" />
-
+        <BackArrow />
         <div className={styles.produktinfo}>
           <div className={styles.servettext}>
             <h1 className={styles.h1}>Groundbreaking Products</h1>

@@ -8,7 +8,7 @@ const Agenda = () => {
     <>
       <HeroAgenda />
       <section className={styles.agenda}>
-        <BackArrow mainLink="/" label="Hem" />
+        <BackArrow />
 
         <h1>Ansvar och transparens är avgörande</h1>
 

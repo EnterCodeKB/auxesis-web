@@ -39,8 +39,7 @@ export default function Historik() {
     <>
       <HeroPr />
       <section className={styles.produkthistorik}>
-        <BackArrow mainLink="/" label="Hem" />
-
+        <BackArrow />
         <div className={styles.produktinfo}>
           <div className={styles.servettext}>
             <h1 className={styles.h1}>Banbrytande produkter </h1>

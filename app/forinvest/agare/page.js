@@ -7,7 +7,7 @@ export default function Aegare() {
   return (
     <>
       <section className={styles.section}>
-        <BackArrow mainLink="/" label="Hem" />
+        <BackArrow />
 
         <h1 className={styles.title}>Solid ägarstruktur</h1>
 

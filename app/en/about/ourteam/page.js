@@ -119,8 +119,7 @@ export default function VartTeam() {
   return (
     <>
       <div className={styles.container}>
-        <BackArrow mainLink="/en/about" label="About Us" />
-
+        <BackArrow />
         <h1 className={styles.heading}>
           A Qualified Team with Broad Expertise
         </h1>

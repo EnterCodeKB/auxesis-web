@@ -10,10 +10,7 @@ export default function ProduktUtveckling() {
 
   return (
     <section className={styles.sectionU}>
-      <BackArrow
-        mainLink="/en/products/productdevelopment/page.js"
-        label="Products"
-      />
+      <BackArrow />
 
       <div>
         <img

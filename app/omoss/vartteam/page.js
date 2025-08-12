@@ -113,8 +113,7 @@ const teamMembers = [
 export default function VartTeam() {
   return (
     <div className={styles.container}>
-      <BackArrow mainLink="/omoss" label="Om Oss" />
-
+      <BackArrow />
       <h1 className={styles.heading}>Kvalificerat team med bred expertis</h1>
       <p className={styles.subheading}>
         På Auxesis Pharma Holding AB samlar vi expertis inom flera nyckelområden

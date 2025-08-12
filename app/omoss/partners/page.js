@@ -66,8 +66,7 @@ export default function Partners() {
 
   return (
     <section className={styles.partnersSection}>
-      <BackArrow mainLink="/omoss" label="Om Oss" />
-
+      <BackArrow />
       <h1 className={styles.title}>Välrenommerade partners</h1>
       <p className={styles.description}>
         Auxesis är i en uppstartfas där erfarna och specialiserade partners är

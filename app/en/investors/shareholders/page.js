@@ -7,8 +7,7 @@ export default function Aegare() {
   return (
     <>
       <section className={styles.section}>
-        <BackArrow mainLink="/en" label="Home" />
-
+        <BackArrow />
         <h1 className={styles.title}>Solid Ownership Structure</h1>
 
         <div className={styles.aegareContainer}>

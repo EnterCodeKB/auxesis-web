@@ -6,8 +6,7 @@ import BackArrow from "../../components/BackArrow";
 export default function ProduktUtveckling() {
   return (
     <section className={styles.sectionU}>
-      <BackArrow mainLink="/produkter/historik" label="Produkter" />
-
+      <BackArrow />
       {/* Vänster: huvudbild */}
       <div className={styles.mediaCol}>
         <img

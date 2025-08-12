@@ -7,10 +7,7 @@ export default function Vaerdering() {
   return (
     <>
       <section className={styles.vaerdering}>
-        <BackArrow
-          mainLink="/en/investors/financial-reports"
-          label="Financial Reports"
-        />
+        <BackArrow />
 
         <h2 className={styles.h2divdark}>
           Valuation Report <br /> 2024-02-13

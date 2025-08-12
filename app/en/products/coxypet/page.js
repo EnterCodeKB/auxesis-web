@@ -8,8 +8,7 @@ export default function Coxypet() {
     <>
       <HeroPr />
       <section className={styles.sectionC}>
-        <BackArrow mainLink="/en/products/history" label="Products" />
-
+        <BackArrow />
         <div className={styles.contentSection}>
           <div className={styles.textBlock}>
             <h2 className={styles.h2}>

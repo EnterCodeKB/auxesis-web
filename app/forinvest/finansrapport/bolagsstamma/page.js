@@ -6,11 +6,9 @@ import BackArrow from "../../../components/BackArrow";
 export default function Protokol() {
   return (
     <>
-      <BackArrow mainLink="/forinvest/finansrapport" label="Finansrapport" />
-
+      <BackArrow />
       <section className={styles.container}>
-        <BackArrow mainLink="/forinvest/finansrapport" label="Finansrapport" />
-
+        <BackArrow />
         <h2 className={styles.h2divdark}>Protokoll från årsstämman</h2>
         <p className={styles.text}>
           Du kan se protokollet som en PDF-fil genom att klicka på knappen

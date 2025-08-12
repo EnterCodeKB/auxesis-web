@@ -6,10 +6,7 @@ export default function Protokol() {
   return (
     <>
       <section className={styles.section}>
-        <BackArrow
-          mainLink="/en/investors/financial-reports"
-          label="Financial Reports"
-        />
+        <BackArrow />
 
         <h2 className={styles.h2divdark}>EN Protokoll från årsstämman</h2>
         <p>

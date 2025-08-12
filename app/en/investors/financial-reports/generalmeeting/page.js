@@ -6,16 +6,7 @@ import BackArrow from "../../../components/BackArrow";
 export default function Protokol() {
   return (
     <>
-      <BackArrow
-        mainLink="/en/investors/financial-reports"
-        label="Financial Reports"
-      />
-
-      <section className={styles.container}>
-        <BackArrow
-          mainLink="/en/investors/financial-reports"
-          label="Financial Reports"
-        />
+      <BackArrow />
 
         <h2 className={styles.h2divdark}>
           Minutes from the Annual General Meeting

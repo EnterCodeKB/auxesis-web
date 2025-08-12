@@ -66,8 +66,7 @@ export default function Partners() {
 
   return (
     <section className={styles.partnersSection}>
-      <BackArrow mainLink="/en/about" label="About Us" />
-
+      <BackArrow />
       <h1 className={styles.title}>Reputable Partners</h1>
       <p className={styles.description}>
         Auxesis is in its startup phase, where experienced and specialized

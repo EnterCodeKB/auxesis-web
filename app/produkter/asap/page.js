@@ -8,8 +8,7 @@ export default function AsaP() {
     <>
       <HeroProduct />
       <section className={styles.sectionA}>
-        <BackArrow mainLink="/produkter/historik" label="Produkter" />
-
+        <BackArrow />
         <h2>Receptfritt preparat för människa - ASA.P® </h2>
 
         <div className={styles.container1}>

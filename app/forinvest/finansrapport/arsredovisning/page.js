@@ -7,7 +7,7 @@ export default function Protokol() {
   return (
     <>
       <div className={styles.redovdiv}>
-        <BackArrow mainLink="/forinvest/finansrapport" label="Finansrapport" />
+        <BackArrow />
 
         <section className={styles.section}>
           <h2 className={styles.h2divdark}>Årsredovisning 2023-12-31</h2>

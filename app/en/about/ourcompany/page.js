@@ -35,8 +35,7 @@ export default function Bolag() {
 
   return (
     <>
-      <BackArrow mainLink="/en/about" label="About Us" />
-
+      <BackArrow />
       <section className={styles.varabolag}>
         <div className={styles.textarea}>
           <h1 className={styles.h1}>

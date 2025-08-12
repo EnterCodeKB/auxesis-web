@@ -35,8 +35,7 @@ export default function Bolag() {
 
   return (
     <>
-      <BackArrow mainLink="/omoss" label="Om Oss" />
-
+      <BackArrow />
       <section className={styles.varabolag}>
         <div className={styles.textarea}>
           <h1 className={styles.h1}>En solid koncern med tre bolag</h1>

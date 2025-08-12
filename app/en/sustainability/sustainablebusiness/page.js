@@ -7,11 +7,10 @@ const Miljo = () => {
   return (
     <>
       <section className={styles.halbara}>
-        <BackArrow mainLink="/en" label="Home" />
+        <BackArrow />{" "}
         <h1 className={styles.mainHeading}>
           Sustainable Innovation for the Future of Health
         </h1>
-
         {/* Första sektionen med bild till vänster och text till höger */}
         <div className={styles.sectionContainer}>
           <div className={styles.imageContainer}>
@@ -36,7 +35,6 @@ const Miljo = () => {
             </p>
           </div>
         </div>
-
         {/* Andra sektionen med text till vänster och bild till höger */}
         <div className={styles.sectionContainerReverse}>
           <div className={styles.textContainer}>
