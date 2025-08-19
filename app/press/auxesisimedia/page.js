@@ -7,14 +7,49 @@ import Link from "next/link";
 const AuxesisMedia = () => {
   const router = useRouter();
 
-  
-
   return (
     <section className={styles.huvuddiv}>
       <h1>Auxesis Pharma i media</h1>
 
       <section className={styles.press}>
         <div className={styles.media}>
+          <div className={styles.container}>
+            <Link href="https://www.di.se/pressreleaser/2025/08/19/gbc-investerar-i-auxesis-pharma-holding-ab-et-83bd0ebe-9330-5299-abcb-fee1f65be7cd/">
+              <img
+                src="/Nyheter/dagensindustri.jpeg"
+                alt="DI"
+                className={styles.image}
+              />
+            </Link>
+            <div className={styles.content}>
+              <h3 className={styles.title}>
+                GBC investerar i Auxesis Pharma Holding AB - ett banbrytande
+                bioteknikbolag inom smärtlindring
+              </h3>
+              <div className={styles.description}>
+                <p>
+                  Stockholm, 19/8-2025 - Growth By Capital Sweden AB (GBC) är
+                  ett nytt men snabbt växande investeringsbolag som på kort tid
+                  etablerat sig som en seriös aktör på den svenska
+                  riskkapitalmarknaden. Efter en första investering i
+                  energibolaget Etzy AB tar GBC nu nästa steg genom att gå in
+                  som delägare i det innovativa bioteknikbolaget Auxesis Pharma
+                  Holding AB (publ).
+                </p>
+                <div>
+                  <Link href="https://www.di.se/pressreleaser/2025/08/19/gbc-investerar-i-auxesis-pharma-holding-ab-et-83bd0ebe-9330-5299-abcb-fee1f65be7cd/">
+                    <button
+                      className={styles.infoButton}
+                      onClick={() => handleInfoClick(itemsUrl)}
+                    >
+                      Läs mer här
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className={styles.container}>
             <Link href="">
               <img
@@ -81,7 +116,7 @@ const AuxesisMedia = () => {
           <div className={styles.container}>
             <Link href="https://idrottensaffarer.se/affarer/2023/08/i-ofk-ar-det-mesta-mojligt">
               <img
-                src="/media/idrottensaffärer.png"
+                src="/media/idrottensaffarer.png"
                 alt="Idrottens Affärer"
                 className={styles.image}
               />
@@ -187,8 +222,6 @@ const AuxesisMedia = () => {
             </div>
           </div>
         </div>*/}
-
-         
         </div>
       </section>
     </section>

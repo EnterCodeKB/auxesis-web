@@ -1,6 +1,18 @@
 //app/data/newsItems.js
 export const newsItems = [
   {
+    title: "GBC pressmeddelande",
+    subtitle: "2025/08/19",
+    description: `
+        <p></p>
+          `,
+    imageUrl: "/Nyheter/dagensindustri.jpeg ",
+
+    slug: "dagensindustriartikel",
+    isLatest: true, // Märkt som senaste
+    link: "https://www.di.se/pressreleaser/2025/08/19/gbc-investerar-i-auxesis-pharma-holding-ab-et-83bd0ebe-9330-5299-abcb-fee1f65be7cd/",
+  },
+  {
     title: "Nytt i augusti",
     subtitle: "2025/08/08",
     description: `
